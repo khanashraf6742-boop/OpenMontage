@@ -1,0 +1,36 @@
+# Amendment & footnote trail affecting Chapter 6
+
+- **Rule 144** — Rule 144(x) inserted vide DoE OM No. F.7/10/2021-PPD dated 23.02.2023 (restrictions on bidders from countries sharing a land border).
+- **Rule 147** — Amended vide DoE OM No. F.1/26/2018-PPD dated 02.04.2019.
+- **Rule 148** — Deleted vide DoE OM No. F.1/26/2018-PPD dated 02.04.2019.
+- **Rule 149** — Sub-rules (i), (ii), (iii) amended vide DoE OM No. F.1/3/2024-PPD dated 10.07.2024 (₹25,000/₹5,00,000/₹30,00,000 → ₹50,000/₹10,00,000/₹10,00,000).
+- **Rule 149** — SOURCE CONFLICT FLAGGED: the official DoE compilation places the "automobiles — no ceiling" Note immediately after sub-rule (i). Some secondary compilations instead show a ₹30 lakh continuation for automobiles inside sub-rules (ii)/(iii). The official compilation position is reproduced here; verify with your department for automobile tenders.
+- **Rule 150** — Amended vide DoE OM No. F.1/26/2018-PPD dated 02.04.2019.
+- **Rule 151** — Amended vide DoE OM No. F.1/20/2018-PPD dated 02.11.2021.
+- **Rule 152** — Amended vide DoE OM No. F.26/2/2016-PPD dated 25.07.2017.
+- **Rule 153** — Amended vide DoE OM No. F.10/2/2019-PPD(Pt.) dated 17.02.2020.
+- **Rule 154** — Amended vide DoE OM No. F.1/3/2024-PPD dated 10.07.2024 (₹25,000 → ₹50,000).
+- **Rule 154** — Special higher limit for Scientific Ministries inserted vide DoE OM No. F.20/42/2021-PPD dated 20.05.2024 and further raised vide DoE OM No. F.20/42/2021-PPD dated 05.06.2025.
+- **Rule 155** — "In case a certain item is not available on the GeM portal" inserted vide DoE OM No. F.1.26/2018-PPD dated 02.04.2019.
+- **Rule 155** — Special higher limits for Scientific Ministries vide DoE OM No. F.20/42/2021-PPD dated 20.05.2024 and 05.06.2025.
+- **Rule 156** — Deleted vide DoE OM No. F.1/26/2018-PPD dated 02.04.2019.
+- **Rule 159** — Sub-rule (iv) deleted vide DoE OM No. F.1/26/2018-PPD dated 02.04.2019.
+- **Rule 160** — Sub-rule (iii) deleted vide DoE OM No. F.1/26/2018-PPD dated 02.04.2019.
+- **Rule 161** — Amended vide DoE OM No. F.1/3/2024-PPD dated 10.07.2024 (₹25 lakh → ₹50 lakh).
+- **Rule 161** — Rule 161(iv) amended vide DoE OM No. F.12/17/2019-PPD dated 15.05.2020 (GTE ₹200 crore limit).
+- **Rule 162** — Amended vide DoE OM No. F.1/3/2024-PPD dated 10.07.2024 (₹25 lakh → ₹50 lakh).
+- **Rule 162** — Publication on GeM + GeM-CPP inserted vide DoE OM No. F.1/26/2018-PPD dated 02.04.2019.
+- **Rule 170** — Startups exemption inserted vide DoE OM No. F.20/2/2014-PPD(Pt.) dated 25.07.2017.
+- **Rule 170** — Insurance Surety Bonds inserted vide DoE OM No. F.1/1/2022-PPD dated 02.02.2022.
+- **Rule 170** — e-Bank Guarantee inserted vide DoE OM No. F.1/4/2022-PPD dated 05.08.2022.
+- **Rule 170** — Two-packet/two-stage refund proviso inserted vide DoE OM No. F.1/2/2022-PPD dated 01.04.2022.
+- **Rule 171** — Amended vide DoE OM No. F.1/2/2023-PPD dated 01.01.2024 (3-5% for Goods/Consultancy/Non-Consultancy Services).
+- **Rule 171** — Insurance Surety Bond inserted vide DoE OM No. F.1/1/2022-PPD dated 02.02.2022.
+- **Rule 171** — e-Bank Guarantee inserted vide DoE OM No. F.1/4/2022-PPD dated 05.08.2022.
+- **Rule 173** — Sub-rule (xv) deleted vide DoE OM No. F.1/26/2018-PPD dated 02.04.2019.
+- **Rule 173** — Rule 173(xxii) threshold amended vide DoE OM No. F.1/3/2024-PPD dated 10.07.2024.
+- **Rule 174** — Sub-rule (iv) deleted vide DoE OM No. F.1/26/2018-PPD dated 02.04.2019.
+- **Rule 183** — Thresholds amended vide DoE OM No. F.1/3/2024-PPD dated 10.07.2024.
+- **Rule 183** — Publication on GeM + GeM-CPP inserted vide DoE OM No. F.1/26/2018-PPD dated 02.04.2019.
+- **Rule 201** — Thresholds amended vide DoE OM No. F.1/3/2024-PPD dated 10.07.2024.
+- **Rule 201** — Publication on GeM + GeM-CPP inserted vide DoE OM No. F.1/26/2018-PPD dated 02.04.2019.

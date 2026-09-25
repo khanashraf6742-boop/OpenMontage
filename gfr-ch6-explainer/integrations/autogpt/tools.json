@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "gfr-chapter-6-lookup",
+  "description": "GFR 2017 Chapter 6 (Procurement of Goods and Services, Rules 142-206) verbatim lookup. Use for any question about procurement rules, thresholds, tender procedures, bid security, performance security, purchase committees, GeM, consulting services or outsourcing of services.",
+  "base_url": "http://localhost:8080",
+  "auth": { "type": "none" },
+  "operations": [
+    {
+      "operationId": "gfr_search",
+      "method": "GET",
+      "path": "/api/search",
+      "summary": "Search all 67 rules of Chapter 6 by keyword, ranked",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "q": { "type": "string", "description": "Keywords, e.g. 'bid security', 'purchase committee', 'single tender'" },
+          "limit": { "type": "integer", "default": 5, "description": "Max rules to return" }
+        },
+        "required": ["q"]
+      },
+      "returns": "Ranked array of {score, rule, title, part, doc, api}"
+    },
+    {
+      "operationId": "gfr_get_rule",
+      "method": "GET",
+      "path": "/api/rules/{id}",
+      "summary": "Get one rule in full: verbatim text, Hinglish explanation, sub-rules, provisos, notes, exceptions, amendment footnotes",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "description": "Rule number: 155, 172(1), 175(2), 206. Parentheses may be URL-encoded or hyphenated." }
+        },
+        "required": ["id"]
+      },
+      "returns": "{rule, title, part, verbatim, hinglish, sub_rules[], provisos[], notes[], exceptions[], footnotes[]}"
+    },
+    {
+      "operationId": "gfr_provisions",
+      "method": "GET",
+      "path": "/api/provisions",
+      "summary": "List every sub-rule, proviso, note, exception and footnote, optionally for one rule",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "rule": { "type": "string", "description": "Optional. Omit for all 67 rules." }
+        }
+      },
+      "returns": "Array of provisions"
+    },
+    {
+      "operationId": "gfr_stats",
+      "method": "GET",
+      "path": "/api/stats",
+      "summary": "Corpus totals: rules, sub-rules, provisos, notes, exceptions, footnotes",
+      "parameters": { "type": "object", "properties": {} },
+      "returns": "Totals object"
+    }
+  ],
+  "usage_notes": [
+    "Always call gfr_search first when the user does not give a rule number.",
+    "Then call gfr_get_rule with the rule number to quote the verbatim text.",
+    "Quote the verbatim field exactly. Do not paraphrase thresholds, time limits or authorities.",
+    "Read the footnotes array before answering a question about a threshold - the 10.07.2024 amendment (OM No. F.1/3/2024-PPD) changed Rules 149, 155, 161, 162, 173(xxii), 183 and 201.",
+    "Rule 144(x) restricts bidders from countries sharing a land border on defence-of-India / national-security grounds (OM No. F.7/10/2021-PPD dated 23.02.2023).",
+    "Rule 206 says circumstances not covered by Rules 198-205 fall back to Rules 142-176 (goods), NOT the consulting-services rules.",
+    "The hinglish field is a plain-language explanation in Hindi-English mix. Use it to explain, not to quote."
+  ]
+}

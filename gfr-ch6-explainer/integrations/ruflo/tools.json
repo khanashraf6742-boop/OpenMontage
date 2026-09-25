@@ -1,0 +1,62 @@
+{
+  "name": "gfr-chapter-6",
+  "description": "GFR 2017 Chapter 6 — Procurement of Goods and Services (Rules 142-206). Verbatim rule text plus Hinglish explanation, with every sub-rule, proviso, note, exception and amendment footnote.",
+  "version": "1.0.0",
+  "source": "Department of Expenditure, Ministry of Finance — GFR 2017 compilation updated to 31.01.2026",
+  "base_url": "http://localhost:8080",
+  "tools": [
+    {
+      "id": "gfr_search",
+      "type": "http",
+      "method": "GET",
+      "url": "{{base_url}}/api/search",
+      "description": "Search all 67 rules by keyword. Returns ranked {score, rule, title, part, doc, api}. Use first when the user has not given a rule number.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "q": { "type": "string", "description": "Keywords" },
+          "limit": { "type": "integer", "default": 5 }
+        },
+        "required": ["q"]
+      }
+    },
+    {
+      "id": "gfr_get_rule",
+      "type": "http",
+      "method": "GET",
+      "url": "{{base_url}}/api/rules/{id}",
+      "description": "Get one rule in full: verbatim, hinglish, sub_rules[], provisos[], notes[], exceptions[], footnotes[].",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "description": "Rule number: 155, 172(1), 175(2), 206" }
+        },
+        "required": ["id"]
+      }
+    },
+    {
+      "id": "gfr_provisions",
+      "type": "http",
+      "method": "GET",
+      "url": "{{base_url}}/api/provisions",
+      "description": "List sub-rules, provisos, notes, exceptions and footnotes. Pass ?rule=155 for one rule, omit for all 67.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "rule": { "type": "string" }
+        }
+      }
+    }
+  ],
+  "flows": [
+    {
+      "id": "answer-provision-question",
+      "description": "Answer a question about a GFR Chapter 6 provision, quoting the verbatim text.",
+      "steps": [
+        { "tool": "gfr_search", "with": { "q": "{{question}}", "limit": 3 } },
+        { "tool": "gfr_get_rule", "with": { "id": "{{steps[0].results[0].rule}}" } },
+        { "emit": "verbatim_from_step_2" }
+      ]
+    }
+  ]
+}
