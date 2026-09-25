@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GFR 2017 — Chapter 6 (Part B): Procurement of Services | Hinglish Interactive Explainer · Episode 2</title>
+<style>
+  :root{
+    --ink:#241d2b; --maroon:#8c1d3f; --maroon-d:#6b1230; --saffron:#e08a1e; --cream:#fdf6ec;
+    --line:#e2d3bd; --good:#1c7c46; --bad:#b3261e; --shadow:0 10px 30px rgba(90,20,45,.18);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:"Segoe UI",Roboto,"Noto Sans Devanagari",system-ui,sans-serif;
+    background:linear-gradient(160deg,#4a1026 0%,#6b1230 45%,#3d0d20 100%); color:var(--ink);
+    min-height:100vh; padding:18px;
+  }
+  .wrap{max-width:1080px;margin:0 auto}
+  header.top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:12px;color:#fdeee6}
+  .badge{background:var(--saffron);color:#3a2200;font-weight:800;font-size:12px;letter-spacing:.08em;
+    padding:6px 10px;border-radius:999px;text-transform:uppercase}
+  header.top h1{font-size:18px;margin:0;font-weight:700}
+  header.top .src{font-size:12px;opacity:.85;margin-left:auto}
+  header.top a{color:#ffd9a8;font-size:12px;font-weight:800}
+
+  .stage{position:relative;width:100%;aspect-ratio:16/9;background:#3d0d20;border-radius:16px;
+    overflow:hidden;box-shadow:var(--shadow);border:3px solid rgba(255,255,255,.16)}
+  .scene{position:absolute;inset:0;display:none;animation:fade .5s ease}
+  .scene.on{display:block}
+  @keyframes fade{from{opacity:0;transform:scale(1.02)}to{opacity:1;transform:none}}
+  .scene img{width:100%;height:100%;object-fit:cover;display:block}
+  .scene.ken img{animation:ken 14s ease-in-out infinite alternate}
+  @keyframes ken{from{transform:scale(1)}to{transform:scale(1.07)}}
+
+  .bubble{position:absolute;background:#fff;border:3px solid var(--ink);border-radius:16px;
+    padding:9px 12px;font-size:clamp(11px,1.35vw,16px);line-height:1.32;box-shadow:4px 5px 0 rgba(36,29,43,.22);
+    animation:pop .45s cubic-bezier(.2,1.4,.4,1) both}
+  @keyframes pop{from{opacity:0;transform:translateY(10px) scale(.9)}to{opacity:1;transform:none}}
+  .bubble .who{display:block;font-size:.72em;font-weight:800;color:var(--maroon-d);text-transform:uppercase;
+    letter-spacing:.04em;margin-bottom:3px}
+  .bubble::after{content:"";position:absolute;bottom:-13px;left:26px;border:9px solid transparent;border-top-color:var(--ink)}
+  .bubble.rt::after{left:auto;right:26px}
+
+  .caption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(45,10,25,.93) 42%);
+    color:#fff;padding:38px 20px 14px;font-size:clamp(12px,1.6vw,19px);line-height:1.4;text-align:center}
+  .caption b{color:#ffc46b}
+  .cap-line{opacity:.25;transition:opacity .3s;margin:2px 0}
+  .cap-line.on{opacity:1}
+
+  .card{position:absolute;inset:0;background:var(--cream);padding:clamp(12px,2.4vw,26px);overflow:auto}
+  .card h2{margin:0 0 2px;font-size:clamp(15px,2.2vw,25px);color:var(--maroon-d)}
+  .card .kicker{font-size:clamp(10px,1.2vw,13px);font-weight:800;letter-spacing:.12em;color:#9a5b0d;
+    text-transform:uppercase;margin-bottom:8px}
+  .rulebox{border-left:6px solid var(--maroon);background:#fff;border-radius:10px;padding:10px 12px;
+    margin:8px 0;box-shadow:0 3px 10px rgba(0,0,0,.06)}
+  .rulebox .rn{font-weight:900;color:var(--maroon-d);font-size:clamp(12px,1.5vw,17px)}
+  .rulebox p{margin:5px 0 0;font-size:clamp(11px,1.35vw,15px);line-height:1.45}
+  .rulebox .cite{display:block;margin-top:6px;font-size:clamp(9px,1.1vw,12px);color:#6b6b6b;font-style:italic}
+  .hook{margin-top:10px;background:var(--saffron);color:#3a2200;font-weight:900;border-radius:10px;
+    padding:9px 12px;font-size:clamp(11px,1.5vw,17px);text-align:center}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  @media(max-width:640px){.grid2{grid-template-columns:1fr}}
+  .chip{display:inline-block;background:#f7e8ee;border:1px solid #e3bccb;border-radius:999px;
+    padding:3px 9px;margin:2px 3px 2px 0;font-size:clamp(9px,1.15vw,13px);font-weight:700;color:var(--maroon-d)}
+
+  .cover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
+    padding-top:6%;text-align:center;background:rgba(60,10,30,.5)}
+  .cover h2{font-size:clamp(20px,4.6vw,52px);margin:0;color:#fff;text-shadow:0 4px 14px rgba(0,0,0,.5);line-height:1.05}
+  .cover .sub{color:#ffc46b;font-weight:800;font-size:clamp(12px,2.2vw,24px);margin-top:8px}
+  .cover .tag{color:#ffe;margin-top:10px;font-size:clamp(10px,1.5vw,16px);background:rgba(0,0,0,.35);
+    padding:6px 14px;border-radius:999px}
+
+  .choose{position:absolute;inset:0;background:var(--cream);padding:clamp(12px,2.4vw,26px);overflow:auto}
+  .methods{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:8px}
+  @media(max-width:640px){.methods{grid-template-columns:1fr}}
+  .m{background:#fff;border:3px solid var(--line);border-radius:12px;padding:10px 12px;cursor:pointer;
+    font-size:clamp(10px,1.3vw,15px);transition:.15s}
+  .m:hover{border-color:var(--maroon);transform:translateY(-2px)}
+  .m.open{border-color:var(--saffron);background:#fff8ef}
+  .m b{color:var(--maroon-d);font-size:clamp(11px,1.5vw,18px)}
+  .m .det{display:none;margin-top:6px;border-top:1px dashed var(--line);padding-top:6px;line-height:1.45}
+  .m.open .det{display:block}
+
+  .quiz{position:absolute;inset:0;background:var(--cream);padding:clamp(12px,2.4vw,24px);overflow:auto}
+  .q{margin:10px 0;background:#fff;border-radius:12px;padding:11px 13px;box-shadow:0 3px 10px rgba(0,0,0,.06)}
+  .q .qt{font-weight:800;font-size:clamp(11px,1.4vw,16px)}
+  .opt{display:block;width:100%;text-align:left;margin:6px 0 0;padding:8px 10px;border-radius:9px;
+    border:2px solid var(--line);background:#fdf6ec;font-size:clamp(10px,1.3vw,14px);cursor:pointer;font-family:inherit}
+  .opt:hover{border-color:var(--maroon)}
+  .opt.ok{background:#e7f6ec;border-color:var(--good)}
+  .opt.no{background:#fdecea;border-color:var(--bad)}
+  .why{display:none;margin-top:7px;font-size:clamp(9px,1.2vw,13px);background:#fbeef3;border-left:4px solid var(--maroon);
+    padding:7px 9px;border-radius:0 8px 8px 0}
+  .why.show{display:block}
+  .score{font-weight:900;color:var(--maroon-d);font-size:clamp(12px,1.6vw,18px)}
+
+  .bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:12px;background:rgba(255,255,255,.12);
+    padding:10px 12px;border-radius:14px;backdrop-filter:blur(4px)}
+  button{font-family:inherit;font-weight:800;border:none;border-radius:10px;padding:10px 14px;cursor:pointer;
+    background:#fff;color:var(--maroon-d);font-size:14px;transition:transform .1s}
+  button:hover{transform:translateY(-1px)}
+  button.primary{background:var(--saffron);color:#3a2200}
+  button:disabled{opacity:.4;cursor:not-allowed;transform:none}
+  .pbar{flex:1 1 160px;height:9px;background:rgba(255,255,255,.25);border-radius:99px;overflow:hidden;min-width:120px}
+  .pbar i{display:block;height:100%;background:var(--saffron);width:0%;transition:width .25s}
+  .lbl{color:#ffe4d6;font-size:12px;font-weight:700;white-space:nowrap}
+  .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+  .cchip{background:rgba(255,255,255,.14);color:#ffe4d6;border:1px solid rgba(255,255,255,.25);border-radius:999px;
+    padding:5px 11px;font-size:11.5px;font-weight:700;cursor:pointer}
+  .cchip.act{background:var(--saffron);color:#3a2200;border-color:var(--saffron)}
+  details{margin-top:12px;background:rgba(255,255,255,.12);border-radius:12px;padding:10px 14px;color:#fdeee6}
+  details summary{cursor:pointer;font-weight:800;font-size:13px}
+  details table{width:100%;border-collapse:collapse;font-size:12px;margin-top:8px}
+  details td,details th{border-bottom:1px solid rgba(255,255,255,.2);padding:5px 6px;text-align:left;vertical-align:top}
+  footer{color:#f3cfd9;font-size:11.5px;margin:14px 0 6px;line-height:1.6}
+  .kbd{background:rgba(255,255,255,.2);border-radius:5px;padding:1px 6px;font-size:11px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span class="badge">GFR 2017 · Chapter 6 · Part B</span>
+    <h1>Procurement of Services — Hinglish Interactive Explainer</h1>
+    <a href="index.html">◀ Episode 1 (Goods)</a>
+    <span class="src">Current position: GFR 2017 updated up to 31.01.2026 · Rules 173–206</span>
+  </header>
+
+  <div class="stage" id="stage"></div>
+
+  <div class="bar">
+    <button class="primary" id="play">▶ Play</button>
+    <button id="prev">◀ Prev</button>
+    <button id="next">Next ▶</button>
+    <button id="mute">🔊</button>
+    <button id="rate">1x</button>
+    <div class="pbar"><i id="sceneBar"></i></div>
+    <span class="lbl" id="sceneLbl">Scene 1</span>
+  </div>
+  <div class="chips" id="chips"></div>
+
+  <details>
+    <summary>📌 Exam traps + granular coverage map (Chapter 6, Part B — Services) — click to expand</summary>
+    <table>
+      <tr><th>Provision</th><th>Exam trap / granular point</th></tr>
+      <tr><td>Rule 173</td><td>Transparency, competition, fairness; self-contained bidding document; <b>NIL charges/consideration ⇒ bid unresponsive</b>; negotiation after bid opening severely discouraged; single bid can still be valid if adequately advertised, criteria not restrictive, prices reasonable (Rule 173(xx)–(xxi)).</td></tr>
+      <tr><td>Rule 174</td><td>Efficiency, economy, accountability; delegate purchasing powers to lower functionaries; place contract within original bid validity.</td></tr>
+      <tr><td>Rule 175</td><td><b>Code of Integrity</b> — no bribe/reward/gift, no omission or misrepresentation, no collusion/bid rigging, no improper use of information, no financial transactions between bidder and official, no coercion, no obstruction of investigation, no false declaration; <b>conflict of interest must be disclosed</b>; disclosure of transgressions in the last three years. Rule 175(2): reasonable opportunity of being heard before action.</td></tr>
+      <tr><td>Rule 176</td><td>Buy-Back — trade the old item while buying the new one; clause in the bidding document.</td></tr>
+      <tr><td>Rule 177</td><td><b>Consulting Service</b> = project-specific, intellectual, procedural services where deliverables vary from consultant to consultant. <b>Does NOT include direct engagement of a retired Government servant.</b></td></tr>
+      <tr><td>Rule 178</td><td>Hire consultants for a job well defined in terms of <b>content and time frame</b>.</td></tr>
+      <tr><td>Rule 180</td><td>Engage consultants only where high-quality services are needed and the Ministry lacks expertise; <b>approval of competent authority BEFORE engaging</b>.</td></tr>
+      <tr><td>Rule 181 / 182</td><td>Scope in simple, concise language with eligibility/prequalification criteria; estimate reasonable expenditure from market conditions.</td></tr>
+      <tr><td>Rule 183</td><td>Up to <b>₹50 lakh</b>: long list from formal/informal enquiries. Above <b>₹50 lakh</b>: <b>EOI to be published on GeM and GeM-CPP</b> (+ own website).</td></tr>
+      <tr><td>Rule 184</td><td>Short listed consultants <b>not less than three</b>.</td></tr>
+      <tr><td>Rule 185</td><td>TOR: precise objectives · outline of tasks · schedule · Ministry's inputs · final outputs.</td></tr>
+      <tr><td>Rule 186</td><td>RFP to shortlisted consultants: LOI, information to consultants, TOR, eligibility criteria, key positions/CVs, evaluation criteria, standard formats, contract terms, mid-term review procedure.</td></tr>
+      <tr><td>Rule 187 / 188</td><td>Two-bid system — technical and financial bids sealed separately, technical opened first; <b>late bids not considered</b>.</td></tr>
+      <tr><td>Rule 189 / 190</td><td>Technical bids evaluated by <b>Consultancy Evaluation Committee (CEC)</b>, reasons recorded; financial bids opened only for technically qualified bidders.</td></tr>
+      <tr><td>Rule 192</td><td><b>QCBS</b> — quality is prime concern; minimum qualifying technical score in RFP; predefined weightages e.g. <b>70:30, 60:40, 50:50</b>; highest weighted combined score selected; <b>technical weight never exceeds 80%</b>.</td></tr>
+      <tr><td>Rule 193</td><td><b>LCS (Least Cost System)</b> — standard/routine assignments (audits, engineering design of non-complex works); no technical weightage; lowest evaluated cost selected.</td></tr>
+      <tr><td>Rule 194</td><td><b>Single Source Selection</b> only: natural continuation of previous work, emergency, proprietary technique/sole expertise, or special justification recorded with prior competent authority approval; ensure price reasonableness and <b>no splitting</b>.</td></tr>
+      <tr><td>Rule 195 / 205</td><td>Monitor the contract throughout (task-force approach).</td></tr>
+      <tr><td>Rule 196</td><td>Public competition for design of symbols/logos — transparent, wide publicity, jury composition notified.</td></tr>
+      <tr><td>Rule 197</td><td><b>Non-Consulting Service</b> — physical, measurable deliverables with clear performance standards: maintenance, vehicle hiring, facilities management, security, janitor, photocopier, drilling, aerial photography, mapping.</td></tr>
+      <tr><td>Rule 201</td><td>Up to <b>₹50 lakh</b>: limited tender enquiry to <b>more than three</b> contractors. Above <b>₹50 lakh</b>: advertisement on <b>GeM and GeM-CPP</b> (+ own website).</td></tr>
+      <tr><td>Rule 204</td><td>Non-consulting service by nomination only in exceptional situations, <b>in consultation with the Financial Adviser</b>, with detailed justification.</td></tr>
+      <tr><td>Rule 206</td><td>Anything not covered by Rules 198–205 → refer to <b>Rules 142–176 (goods procedure)</b>, NOT the consulting-services rules.</td></tr>
+    </table>
+  </details>
+
+  <footer>
+    <b>Controls:</b> <span class="kbd">Space</span> play/pause · <span class="kbd">←</span>/<span class="kbd">→</span> scene · <span class="kbd">M</span> mute.
+    Narration auto-advances; rule cards, method chooser &amp; quiz wait for your click.<br>
+    <b>Series:</b> <a href="index.html" style="color:#ffd9a8">Episode 1 — Procurement of Goods (Rules 142–173)</a> · this is Episode 2 — Procurement of Services (Rules 173–206).
+  </footer>
+</div>
+
+<script>
+const SCENES = [
+  { id:'cover', type:'cover', img:'assets/ep2-cover.png', audio:'audio/e2-01-intro.mp3',
+    title:'Chapter 6 · Part B', sub:'Procurement of Services',
+    tag:'Episode 2 · Consulting &amp; Non-Consulting Services · Code of Integrity' },
+
+  { id:'p1', type:'panel', img:'assets/ep2-panel1.png', audio:'audio/e2-02-panel1.mp3',
+    bubbles:[
+      {x:'3%',y:'5%',w:'40%',who:'Dr. Kavita Rao · Consultant',text:'“Baseline survey? Main pehle bhi aisa kaam kar chuki hoon.”'},
+      {x:'46%',y:'5%',w:'51%',who:'Meera · Deputy Secretary',text:'“Estimated cost <b>₹65,00,000</b> — pachaas lakh se zyada hai.”',right:true}
+    ],
+    caps:[
+      'Ek ministry ko ek baseline survey karwana hai.',
+      'Estimated cost — <b>₹65,00,000</b>, yaani pachaas lakh se zyada.',
+      'Arjun ke paas ek known consultant hai — Dr. Kavita Rao.',
+      'Deputy Secretary Meera ek meeting bulati hai.'
+    ]},
+
+  { id:'p2', type:'panel', img:'assets/ep2-panel2.png', audio:'audio/e2-03-panel2.mp3',
+    bubbles:[
+      {x:'3%',y:'4%',w:'44%',who:'Arjun · Under Secretary',text:'“Nomination kar dete hain — time bhi bach jaayega!”'},
+      {x:'52%',y:'4%',w:'45%',who:'Meera',text:'“Rule 194 — single source sirf <b>exceptional</b> circumstances mein.”',right:true}
+    ],
+    caps:[
+      'Arjun: “Nomination kar dete hain — time bhi bachega!”',
+      'Meera: “Single source selection sirf <b>exceptional circumstances</b> mein — Rule 194.”',
+      'Poori justification file mein record karni padegi.',
+      'Aur competent authority ka approval <b>pehle</b> lena zaroori hai.'
+    ]},
+
+  { id:'rc1', type:'card', audio:'audio/e2-04-rc1.mp3', kicker:'Rule Card 1 · Kaun consulting service hai?',
+    title:'Rules 177, 178, 180, 181, 182 — engage karne se pehle',
+    body:`
+      <div class="rulebox"><span class="rn">Rule 177 · Definition</span>
+        <p>“Consulting Service means any subject matter of procurement … which involves primarily <b>non-physical, project-specific, intellectual and procedural processes</b> where outcomes/deliverables would <b>vary from one consultant to another</b> … but <b>does not include direct engagement of a retired Government servant</b>.”</p>
+        <p style="margin-top:5px"><span class="chip">Management consultants</span><span class="chip">Feasibility studies</span><span class="chip">Project management</span><span class="chip">Engineering services</span><span class="chip">Finance &amp; taxation</span><span class="chip">Training &amp; development</span></p>
+        <span class="cite">GFR 2017, Chapter 6 — Procurement of Services, A. Consulting Services</span></div>
+      <div class="grid2">
+        <div class="rulebox"><span class="rn">Rule 178</span>
+          <p>Hire consultants for a job <b>well defined in terms of content and time frame</b>.</p></div>
+        <div class="rulebox"><span class="rn">Rule 180</span>
+          <p>Engage consultants only for high-quality services where the Ministry <b>lacks requisite expertise</b>. <b>Approval of the competent authority must be obtained BEFORE engaging.</b></p></div>
+        <div class="rulebox"><span class="rn">Rule 181</span>
+          <p>Scope prepared in <b>simple, concise language</b> — requirement, objectives, scope, eligibility &amp; prequalification criteria.</p></div>
+        <div class="rulebox"><span class="rn">Rule 182</span>
+          <p>Estimate <b>reasonable expenditure</b> by ascertaining prevalent market conditions and consulting other organisations.</p></div>
+      </div>
+      <div class="hook">MEMORY HOOK — “Approval PEHLE, engagement BAAD MEIN” (Rule 180)</div>`},
+
+  { id:'p3', type:'panel', img:'assets/ep2-panel3.png', audio:'audio/e2-05-panel3.mp3',
+    bubbles:[
+      {x:'3%',y:'7%',w:'38%',who:'Arjun',text:'“Accha? Toh seedha kaam shuru?”'},
+      {x:'47%',y:'4%',w:'50%',who:'Fatima · Section Officer',text:'“<b>₹50 lakh se upar</b> → EOI publish karna mandatory — GeM + GeM-CPP.”',right:true}
+    ],
+    caps:[
+      'Fatima rule pakadti hai.',
+      'Estimated cost <b>₹50 lakh se zyada</b> → <b>Rule 183(ii)</b>: EOI publish mandatory.',
+      'GeM par aur GeM-CPP par — apni website par bhi.',
+      'Rule 184 — shortlist <b>teen se kam nahi</b>.'
+    ]},
+
+  { id:'rc2', type:'card', audio:'audio/e2-06-rc2.mp3', kicker:'Rule Card 2 · EOI → shortlist → RFP → two-bid',
+    title:'Rules 183, 184, 185, 186, 187, 188',
+    body:`
+      <div class="rulebox"><span class="rn">Rule 183 · Identification of likely sources</span>
+        <p>(i) Estimated cost <b>up to ₹50 lakh</b> → long list of potential consultants on the basis of formal or informal enquiries.<br>
+        (ii) Estimated cost <b>above ₹50 lakh</b> → in addition, an <b>Expression of Interest must be published on GeM as well as on GeM-CPP</b> (and on the organisation’s own website), briefly stating scope, inputs, eligibility &amp; prequalification criteria.</p>
+        <span class="cite">Thresholds as amended vide DoE OM No. F.1/3/2024-PPD dated 10.07.2024</span></div>
+      <div class="grid2">
+        <div class="rulebox"><span class="rn">Rule 184 · Short listing</span>
+          <p>Number of short listed consultants <b>should not be less than three</b>.</p></div>
+        <div class="rulebox"><span class="rn">Rule 185 · TOR — 5 elements</span>
+          <p>(i) precise objectives (ii) outline of tasks (iii) schedule for completion (iv) inputs the Ministry will provide (v) final outputs required.</p></div>
+        <div class="rulebox"><span class="rn">Rule 186 · RFP contents</span>
+          <p>Letter of invitation · information to consultants · TOR · eligibility &amp; prequalification criteria · key positions whose CVs are evaluated · bid evaluation criteria &amp; selection procedure · standard technical &amp; financial formats · proposed contract terms · mid-term review procedure.</p></div>
+        <div class="rulebox"><span class="rn">Rule 187 / 188</span>
+          <p><b>Two-bid system</b>: technical and financial proposals sealed separately, both inside a bigger sealed cover; <b>technical opened first</b>. <b>Late bids are not considered.</b></p></div>
+      </div>
+      <div class="hook">MEMORY HOOK — “₹50 lakh ka EOI · teen ka shortlist · do sealed envelopes”</div>`},
+
+  { id:'chooser', type:'chooser', title:'🧭 Selection Method Chooser — card par click karo',
+    note:'Consultancy ki selection method Rules 191–194 deti hain. Har card khol kar dekho kab kaunsa use hota hai.'},
+
+  { id:'p4', type:'panel', img:'assets/ep2-panel4.png', audio:'audio/e2-07-panel4.mp3',
+    bubbles:[
+      {x:'3%',y:'4%',w:'46%',who:'Meera',text:'“Technical envelope pehle khulta hai — CEC evaluate karti hai.”'},
+      {x:'52%',y:'4%',w:'45%',who:'Fatima',text:'“Financial sirf unhi ka, jo <b>technically qualified</b> hain.”',right:true}
+    ],
+    caps:[
+      'Technical bids pehle khulti hain — <b>CEC</b> evaluate karti hai (Rule 189).',
+      'Financial bids sirf <b>technically qualified</b> bidders ki (Rule 190).',
+      'QCBS: predefined weightage — <b>70:30 / 60:40 / 50:50</b>.',
+      'Technical weight kabhi <b>80% se zyada nahi</b>. Highest combined score select.'
+    ]},
+
+  { id:'rc3', type:'card', audio:'audio/e2-08-rc3.mp3', kicker:'Rule Card 3 · Evaluation &amp; selection',
+    title:'Rules 189, 190, 192, 193, 194, 195',
+    body:`
+      <div class="grid2">
+        <div class="rulebox"><span class="rn">Rule 189 · CEC</span>
+          <p>Technical bids analysed &amp; evaluated by a <b>Consultancy Evaluation Committee (CEC)</b> constituted by the Ministry/Department; reasons for acceptance/rejection recorded in detail.</p></div>
+        <div class="rulebox"><span class="rn">Rule 190 · Financial bids</span>
+          <p>Opened <b>only for bidders declared technically qualified</b> by the CEC, for ranking and selection.</p></div>
+        <div class="rulebox"><span class="rn">Rule 192 · QCBS</span>
+          <p>Used where <b>quality is of prime concern</b>. Minimum qualifying technical score specified in the RFP; combined score using predefined weightages (<b>70:30, 60:40, 50:50</b> etc.); highest weighted combined score selected. <b>Technical (non-financial) weightage must never exceed 80%.</b></p></div>
+        <div class="rulebox"><span class="rn">Rule 193 · LCS</span>
+          <p><b>Least Cost System</b> for standard/routine assignments (audits, engineering design of non-complex works) where established methodologies exist. <b>No weightage for technical score</b> — lowest evaluated cost selected.</p></div>
+        <div class="rulebox"><span class="rn">Rule 194 · Single Source</span>
+          <p>Only in exceptional circumstances: (i) natural continuation of previous work (ii) emergency (iii) proprietary technique / only one consultant has the expertise (iv) special justification recorded with <b>prior approval of competent authority</b>. Must ensure price reasonableness and <b>no splitting</b> of services.</p></div>
+        <div class="rulebox"><span class="rn">Rule 195 · Monitoring</span>
+          <p>Ministry must remain involved throughout, preferably a <b>task force approach</b>, continuously monitoring the consultant’s performance.</p></div>
+      </div>
+      <div class="hook">MEMORY HOOK — “QCBS = quality+cost, LCS = sirf cost, Single Source = exception only”</div>`},
+
+  { id:'rc4', type:'card', audio:'audio/e2-09-rc4.mp3', kicker:'Rule Card 4 · Integrity &amp; non-consulting services',
+    title:'Rules 175, 176, 197–206',
+    body:`
+      <div class="rulebox"><span class="rn">Rule 175 · Code of Integrity</span>
+        <p>No official or bidder shall: offer/solicit/accept bribe, reward or gift; make omission or misrepresentation; collude, rig bids or act anticompetitively; misuse information; enter financial/business transactions with an official; coerce or threaten; obstruct investigation or audit; or make a false declaration. <b>Conflict of interest must be disclosed</b>, along with any transgression in the <b>last three years</b>. Rule 175(2): action only after a <b>reasonable opportunity of being heard</b>.</p></div>
+      <div class="rulebox"><span class="rn">Rule 176 · Buy-Back Offer</span>
+        <p>With the competent authority’s approval, the old item may be traded while buying the new one; a suitable clause must be in the bidding document.</p></div>
+      <div class="rulebox"><span class="rn">Rules 197–206 · Non-Consulting Services</span>
+        <p><b>Rule 197:</b> physical, measurable deliverables with clearly identifiable performance standards — maintenance, hiring of vehicles, facilities management, security, janitor, office errands, photocopier service, drilling, aerial photography, satellite imagery, mapping.<br>
+        <b>Rule 201:</b> up to <b>₹50 lakh</b> → limited tender enquiry to <b>more than three</b> contractors; above <b>₹50 lakh</b> → advertisement on <b>GeM and GeM-CPP</b>.<br>
+        <b>Rule 204:</b> nomination only in exceptional situations, <b>in consultation with the Financial Adviser</b>, with detailed justification.<br>
+        <b>Rule 205:</b> monitor the contract throughout. <b>Rule 206:</b> anything not covered by Rules 198–205 → apply <b>Rules 142–176 (goods)</b>, not the consulting-services rules.</p></div>
+      <div class="hook">MEMORY HOOK — “Consulting = intellectual &amp; variable · Non-consulting = physical &amp; measurable”</div>`},
+
+  { id:'quiz', type:'quiz', title:'🎯 Quiz — 5 sawaal, turant jawab'},
+
+  { id:'end', type:'end', title:'✅ Episode 2 complete! Ab poora Chapter 6 clear hai',
+    body:`<div class="rulebox"><span class="rn">Chapter 6 — dono episode ka core</span>
+      <p><b>Goods:</b> GeM mandatory (Rule 147) · ladder ₹50,000 / ₹10,00,000 (Rule 149) · no splitting (Rule 157) · five tender methods (Rule 158) · EMD 2–5% (Rule 170) · PS 3–5% (Rule 171) · advance 30/40% (Rule 172).<br>
+      <b>Services:</b> approval before engagement (Rule 180) · EOI above ₹50 lakh on GeM+GeM-CPP (Rule 183) · shortlist ≥ 3 (Rule 184) · two-bid (Rule 187) · CEC (Rule 189) · QCBS / LCS / single source (Rules 192–194) · non-consulting services Rules 197–206 with Rule 206 pointing back to the goods rules.</p></div>
+      <div class="rulebox"><span class="rn">Authoritative sources used</span>
+      <p>• GFR 2017, Chapter 6 (Procurement of Goods &amp; Services), DoE compilation updated up to <b>31.01.2026</b>.<br>
+      • DoE OM No. <b>F.1/3/2024-PPD dated 10.07.2024</b> — thresholds in Rules 149, 155, 161, 162, 183, 201.<br>
+      • DoE OM No. <b>F.20/42/2021-PPD dated 05.06.2025</b> — special provisions for Scientific Ministries.<br>
+      • DoE OM No. <b>F.1/26/2018-PPD dated 02.04.2019</b> — GeM mandate; Rule 148 deleted.<br>
+      • DoPT OMs do <b>not</b> amend GFR — they govern CCS service &amp; conduct matters.</p></div>
+      <div class="hook">VALIDATION STATUS: PASS · Rules 173–206 citation exact · Current as on 25.09.2026</div>
+      <p style="text-align:center;margin-top:10px"><a href="index.html" style="font-weight:800;color:#6b1230">◀ Episode 1 — Procurement of Goods (Rules 142–173)</a></p>`}
+];
+
+const METHODS = [
+  { n:'QCBS — Quality &amp; Cost Based Selection', r:'Rule 192',
+    d:'Jab <b>quality of consultancy prime concern</b> ho. Minimum qualifying technical score RFP mein declared hota hai. Combined score = predefined weightage of technical + financial (e.g. <b>70:30, 60:40, 50:50</b>). Highest weighted combined score select hota hai. <b>Technical weight kabhi 80% se zyada nahi.</b>' },
+  { n:'LCS — Least Cost System', r:'Rule 193',
+    d:'<b>Standard ya routine</b> assignments (audit, non-complex engineering design) jahan established methodologies hain. Technical score ka <b>koi weight nahi</b> — responsive technically qualified proposal with the <b>lowest evaluated cost</b> select hota hai.' },
+  { n:'Single Source Selection / Nomination', r:'Rule 194',
+    d:'Sirf <b>exceptional</b> circumstances: previous work ka natural continuation, emergency, proprietary technique ya sole expertise, ya recorded special justification. <b>Prior approval of competent authority</b> + price reasonableness + <b>no splitting</b>.' },
+  { n:'Non-consulting service by nomination', r:'Rule 204',
+    d:'Exceptional situation mein specifically chosen contractor — <b>Financial Adviser ke consultation</b> mein. Detailed justification, circumstances aur public interest ka purpose proposal ka integral part hona chahiye.' }
+];
+
+const QUIZ = [
+  { q:'Consulting service ki sabse acchi definition kaun si hai?',
+    o:['Jismein physical, measurable deliverables hon','Project-specific, intellectual aur procedural services jahan outcomes har consultant se alag hote hain','Sirf goods ke saath incidental services','Retired government servant ka direct engagement'],
+    a:1, why:'Rule 177 — non-physical, project-specific, intellectual and procedural processes where deliverables vary from consultant to consultant; it expressly excludes direct engagement of a retired Government servant.' },
+  { q:'Estimated cost ₹65,00,000 ki consultancy ke liye kya mandatory hai?',
+    o:['Kuch bhi publish nahi karna, seedha RFP','Expression of Interest publish karna — GeM aur GeM-CPP par','Sirf ek consultant ko nomination dena','Sirf own website par notice'],
+    a:1, why:'Rule 183(ii) — where the estimated cost is above ₹50 lakh, an EOI must be published on GeM as well as GeM-CPP, and on the organisation’s own website.' },
+  { q:'Short listed consultants minimum kitne hone chahiye?',
+    o:['1','2','3 se kam nahi','5'],
+    a:2, why:'Rule 184 — the number of short listed consultants should not be less than three.' },
+  { q:'QCBS mein technical parameters ka weight kabhi kitna se zyada nahi ho sakta?',
+    o:['50%','60%','80%','100%'],
+    a:2, why:'Rule 192(iv) — the weightage of technical (non-financial) parameters in no case should exceed 80 percent.' },
+  { q:'LCS kab appropriate hai?',
+    o:['Jab quality of consultancy prime concern ho','Standard ya routine assignments jahan established methodologies hain — lowest evaluated cost select hota hai','Jab proprietary technique ho','Jab emergency ho'],
+    a:1, why:'Rule 193 — LCS is appropriate for assignments of a standard or routine nature; there is no weightage for technical score and the lowest evaluated cost is selected.' }
+];
+
+/* ================= ENGINE ================= */
+const stage=document.getElementById('stage'), chips=document.getElementById('chips');
+const playBtn=document.getElementById('play'), prevBtn=document.getElementById('prev'), nextBtn=document.getElementById('next');
+const muteBtn=document.getElementById('mute'), rateBtn=document.getElementById('rate');
+const sceneBar=document.getElementById('sceneBar'), sceneLbl=document.getElementById('sceneLbl');
+const audio=new Audio(); audio.preload='auto';
+let cur=0, playing=false, rate=1, muted=false;
+
+SCENES.forEach((s,i)=>{
+  const c=document.createElement('span'); c.className='cchip'; c.textContent=(i+1)+'. '+(s.kicker||s.title||'').replace(/<[^>]+>/g,'');
+  c.onclick=()=>go(i); chips.appendChild(c);
+});
+
+function render(i){
+  const s=SCENES[i]; stage.innerHTML='';
+  const d=document.createElement('div'); d.className='scene on'; stage.appendChild(d);
+
+  if(s.type==='cover'){
+    d.classList.add('ken');
+    d.innerHTML=`<img src="${s.img}" alt="">`;
+    const c=document.createElement('div'); c.className='cover';
+    c.innerHTML=`<h2>${s.title}</h2><div class="sub">${s.sub}</div><div class="tag">${s.tag}</div>`;
+    d.appendChild(c);
+  }
+  else if(s.type==='panel'){
+    d.classList.add('ken');
+    d.innerHTML=`<img src="${s.img}" alt="">`;
+    (s.bubbles||[]).forEach(b=>{
+      const el=document.createElement('div'); el.className='bubble'+(b.right?' rt':'');
+      el.style.left=b.x; el.style.top=b.y; el.style.width=b.w;
+      el.innerHTML=`<span class="who">${b.who}</span>${b.text}`;
+      d.appendChild(el);
+    });
+    const cap=document.createElement('div'); cap.className='caption';
+    (s.caps||[]).forEach(t=>{ const p=document.createElement('div'); p.className='cap-line'; p.innerHTML=t; cap.appendChild(p); });
+    d.appendChild(cap);
+  }
+  else if(s.type==='card'||s.type==='end'){
+    d.innerHTML=`<div class="card"><div class="kicker">${s.kicker||''}</div><h2>${s.title}</h2>${s.body}</div>`;
+  }
+  else if(s.type==='chooser'){
+    d.innerHTML=`<div class="choose"><div class="kicker">Interactive</div><h2>${s.title}</h2>
+      <div class="methods">${METHODS.map((m,mi)=>`<div class="m" data-i="${mi}"><b>${m.n}</b> <span class="chip">${m.r}</span><div class="det">${m.d}</div></div>`).join('')}</div>
+      <div style="margin-top:10px;font-size:clamp(9px,1.15vw,13px);color:#555">${s.note}</div></div>`;
+    d.querySelectorAll('.m').forEach(el=>el.onclick=()=>el.classList.toggle('open'));
+  }
+  else if(s.type==='quiz'){
+    d.innerHTML=`<div class="quiz"><div class="kicker">Interactive</div><h2>${s.title}</h2><div id="qbox"></div></div>`;
+    const qb=d.querySelector('#qbox'); let score=0;
+    QUIZ.forEach((q,qi)=>{
+      const el=document.createElement('div'); el.className='q';
+      el.innerHTML=`<div class="qt">${qi+1}. ${q.q}</div>`;
+      q.o.forEach((o,oi)=>{
+        const b=document.createElement('button'); b.className='opt'; b.innerHTML=o;
+        b.onclick=()=>{
+          if(el.dataset.done) return; el.dataset.done='1';
+          el.querySelectorAll('.opt').forEach((x,xi)=>{
+            if(xi===q.a) x.classList.add('ok');
+            if(xi===oi && oi!==q.a) x.classList.add('no');
+            x.disabled=true;
+          });
+          if(oi===q.a) score++;
+          el.querySelector('.why').classList.add('show');
+          el.querySelector('.why').innerHTML=(oi===q.a?'✅ <b>Sahi!</b> ':'❌ <b>Galat.</b> ')+q.why;
+          const sc=document.getElementById('qscore'); if(sc) sc.textContent=`Score: ${score}/${QUIZ.length}`;
+        };
+        el.appendChild(b);
+      });
+      const w=document.createElement('div'); w.className='why'; el.appendChild(w);
+      qb.appendChild(el);
+    });
+    const sc=document.createElement('div'); sc.className='score'; sc.id='qscore'; sc.textContent=`Score: 0/${QUIZ.length}`;
+    qb.appendChild(sc);
+  }
+
+  sceneLbl.textContent=`Scene ${i+1} / ${SCENES.length}`;
+  sceneBar.style.width=((i)/(SCENES.length-1)*100)+'%';
+  [...chips.children].forEach((c,ci)=>c.classList.toggle('act',ci===i));
+  prevBtn.disabled=(i===0); nextBtn.disabled=(i===SCENES.length-1);
+}
+
+function loadAudio(i){
+  const s=SCENES[i];
+  if(s.audio){ audio.src=s.audio; } else { audio.removeAttribute('src'); audio.load(); }
+  document.querySelectorAll('.cap-line').forEach(p=>p.classList.remove('on'));
+}
+
+function startCues(){
+  const s=SCENES[cur];
+  if(!s.caps||!audio.duration||!isFinite(audio.duration)) return;
+  const total=s.caps.reduce((a,c)=>a+c.length,0);
+  let acc=0;
+  s.caps.forEach((c,ci)=>{
+    const start=(acc/total)*audio.duration; acc+=c.length;
+    const lines=document.querySelectorAll('.cap-line');
+    setTimeout(()=>{ lines.forEach(l=>l.classList.remove('on')); if(lines[ci]) lines[ci].classList.add('on'); }, start*1000);
+  });
+}
+
+function play(){
+  const s=SCENES[cur];
+  if(!s.audio){ playing=false; playBtn.textContent='▶ Play'; return; }
+  audio.playbackRate=rate; audio.muted=muted;
+  audio.play().then(()=>{ playing=true; playBtn.textContent='⏸ Pause'; }).catch(()=>{ playing=false; playBtn.textContent='▶ Play'; });
+}
+function pause(){ audio.pause(); playing=false; playBtn.textContent='▶ Play'; }
+
+function go(i){
+  if(i<0||i>=SCENES.length) return;
+  pause(); cur=i; render(i); loadAudio(i);
+  if(SCENES[i].audio) play(); else { playing=false; playBtn.textContent='▶ Play'; }
+}
+function next(){ go(cur+1); }
+function prev(){ go(cur-1); }
+
+playBtn.onclick=()=>playing?pause():(SCENES[cur].audio?play():go(cur+1));
+nextBtn.onclick=next; prevBtn.onclick=prev;
+muteBtn.onclick=()=>{ muted=!muted; audio.muted=muted; muteBtn.textContent=muted?'🔇':'🔊'; };
+rateBtn.onclick=()=>{ rate=rate===1?1.25:(rate===1.25?0.75:1); rateBtn.textContent=rate+'x'; audio.playbackRate=rate; };
+
+audio.addEventListener('loadedmetadata',startCues);
+audio.addEventListener('ended',()=>{
+  playing=false; playBtn.textContent='▶ Play';
+  if(cur<SCENES.length-1) setTimeout(next,450);
+});
+audio.addEventListener('timeupdate',()=>{
+  if(audio.duration) sceneBar.style.width=(((cur)+(audio.currentTime/audio.duration))/(SCENES.length-1)*100)+'%';
+});
+document.addEventListener('keydown',e=>{
+  if(e.code==='Space'){ e.preventDefault(); playing?pause():play(); }
+  if(e.code==='ArrowRight') next();
+  if(e.code==='ArrowLeft') prev();
+  if(e.key==='m'||e.key==='M') muteBtn.click();
+});
+
+render(0); loadAudio(0);
+</script>
+</body>
+</html>

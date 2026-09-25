@@ -211,3 +211,103 @@ GFR Chapter 6 covers both goods (Rules 142–173) and services (Rules 175–206)
 consultancy-procurement rules (Rules 180–195: REOI, short-listing of not less than three consultants,
 QCBS selection, CEC) and non-consulting services rules (Rules 197–205) are the next atomic units and are
 deliberately not half-covered here.
+
+---
+
+# EPISODE 2 — Procurement of Services (Rules 173–206)
+**File:** `services.html` · **Assets:** `assets/ep2-*.png` · **Narration:** `audio/e2-*.mp3`
+
+## Validation (same protocol, same sources)
+```
+RULE:               GFR 2017, Chapter 6, Part B — Procurement of Services
+                    (A. Consulting Services, Rules 177–196;
+                     B. Outsourcing of Services, Rules 197–206)
+                    + Rule 173 (transparency), Rule 174 (efficiency),
+                    Rule 175 (Code of Integrity), Rule 176 (Buy-Back)
+CURRENT STATUS:     [CURRENT] — DoE compilation updated up to 31.01.2026
+LAST VERIFIED:      2026-09-25
+AUTHORITATIVE SOURCE: Department of Expenditure, Ministry of Finance
+AMENDMENT CHECK:    Passed — ₹50 lakh thresholds in Rules 183(i)(ii) & 201(i)(ii)
+                    amended vide DoE OM No. F.1/3/2024-PPD dated 10.07.2024
+```
+
+## Granular coverage map (Part B)
+```
+PROCUREMENT OF SERVICES
+├── A. CONSULTING SERVICES
+│   ├── Rule 177  Definition (project-specific, intellectual, procedural;
+│   │              deliverables vary consultant to consultant; EXCLUDES direct
+│   │              engagement of a retired Government servant)               ✓
+│   ├── Rule 178  Job well defined in content and time frame               ✓
+│   ├── Rule 179  Fundamental principles; departmental instructions must
+│   │              not contravene the chapter                               ✓
+│   ├── Rule 180  Only where Ministry lacks expertise; approval of
+│   │              competent authority BEFORE engaging                       ✓
+│   ├── Rule 181  Scope in simple, concise language + eligibility criteria  ✓
+│   ├── Rule 182  Estimate reasonable expenditure from market conditions   ✓
+│   ├── Rule 183  (i) up to ₹50 lakh — long list from enquiries;
+│   │              (ii) above ₹50 lakh — EOI on GeM + GeM-CPP + own website ✓
+│   ├── Rule 184  Short list not less than three                            ✓
+│   ├── Rule 185  TOR: objectives · tasks · schedule · inputs · outputs     ✓
+│   ├── Rule 186  RFP: LOI · information to consultants · TOR · eligibility ·
+│   │              key positions · evaluation criteria · formats · contract
+│   │              terms · mid-term review procedure                        ✓
+│   ├── Rule 187  Two-bid system; technical opened first                    ✓
+│   ├── Rule 188  Late bids not considered                                  ✓
+│   ├── Rule 189  CEC evaluates technical bids; reasons recorded            ✓
+│   ├── Rule 190  Financial bids only of technically qualified bidders     ✓
+│   ├── Rule 191  Selection per Rules 192–194                              ✓
+│   ├── Rule 192  QCBS — quality prime; minimum qualifying technical score;
+│   │              weights 70:30 / 60:40 / 50:50; highest combined score;
+│   │              technical weight NEVER exceeds 80%                       ✓
+│   ├── Rule 193  LCS — standard/routine assignments; no technical weight;
+│   │              lowest evaluated cost selected                           ✓
+│   ├── Rule 194  Single source — 4 exceptional grounds + prior approval +
+│   │              price reasonableness + no splitting                      ✓
+│   ├── Rule 195  Monitor the contract throughout (task force approach)    ✓
+│   └── Rule 196  Public competition for design of symbols/logos           ✓
+├── B. OUTSOURCING OF SERVICES (Non-Consulting)
+│   ├── Rule 197  Definition — physical, measurable deliverables, clear
+│   │              performance standards (maintenance, vehicle hiring,
+│   │              facilities mgmt, security, janitor, photocopier, drilling,
+│   │              aerial photography, satellite imagery, mapping)          ✓
+│   ├── Rule 198–200  Economy/efficiency; identification of likely
+│   │              contractors; tender enquiry contents                     ✓
+│   ├── Rule 201  (i) up to ₹50 lakh — LTE to more than three contractors;
+│   │              (ii) above ₹50 lakh — advertise on GeM + GeM-CPP         ✓
+│   ├── Rule 202  Late bids not considered                                  ✓
+│   ├── Rule 203  Evaluate, segregate, rank responsive bids                ✓
+│   ├── Rule 204  Nomination in exceptional situations, in consultation
+│   │              with the Financial Adviser; detailed justification      ✓
+│   └── Rule 205  Monitor the contract throughout                          ✓
+└── Rule 206      Not covered by 198–205 → refer to Rules 142–176 (GOODS),
+                  not the consulting-services rules                          ✓
+```
+
+## Non-repetition ledger (Episode 1 vs Episode 2)
+| Element | Episode 1 | Episode 2 |
+|---|---|---|
+| Scenario | Purchase of goods | Engagement of consultancy services |
+| Characters | Anjali (SO) · Vikram (Assistant) · Iyer (US) · Vendor Sharma | Meera (Dy. Secretary) · Arjun (US) · Fatima (SO) · Dr. Kavita Rao (consultant) |
+| Setting | Purchase section, office desk | Conference / committee room |
+| Props | quotation sheet, whiteboard with 3 boxes, monitor with auction graph, contract folder | EOI notice sheet, TOR stack, two sealed envelopes, blank weightage score-sheet |
+| Conflict | junior wants to split the demand | junior wants to nominate a known consultant |
+| Teaching mechanism | value-threshold ladder | two-envelope + weighted-score mechanism |
+| Palette | teal / mustard / cream | maroon / saffron / cream |
+
+## Interactive elements (Episode 2)
+- **Selection Method Chooser** — QCBS / LCS / Single Source / Nomination cards, click to reveal (Rules 192, 193, 194, 204).
+- **Quiz** — 5 questions on Rules 177, 183, 184, 192(iv), 193 with instant rule-cited feedback.
+
+## Micro revision check (Episode 2)
+| Check | Status |
+|---|---|
+| Rule numbers 173–206 exact | ☑ |
+| ₹50 lakh thresholds (Rules 183, 201) | ☑ |
+| “not less than three” (Rules 184, 201) | ☑ |
+| Technical weight ≤ 80% (Rule 192(iv)) | ☑ |
+| Approval BEFORE engagement (Rule 180) / before single-source (Rule 194) | ☑ |
+| Retired Government servant exclusion (Rule 177) | ☑ |
+| Rule 206 cross-reference to goods rules | ☑ |
+| Currentness (31.01.2026 compilation) | ☑ |
+| Story/props/characters different from Episode 1 | ☑ |
