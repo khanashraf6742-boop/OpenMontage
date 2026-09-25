@@ -145,6 +145,7 @@
     <h3 style="margin-top:10px">🔎 Jump to a rule</h3>
     <input id="q" type="search" placeholder="Rule number ya keyword… e.g. 149, QCBS, debar">
     <div class="rlist" id="rlist"></div>
+    <div class="warn" id="prog" style="background:#eef5f6;border-color:#bcd6d9;color:#0a4f57"></div>
     <div class="warn" id="vwarn" style="display:none"></div>
   </div>
 </div>
@@ -159,6 +160,7 @@
 
 <script src="data/ch6-goods.js"></script>
 <script src="data/ch6-services.js"></script>
+<script src="data/studio.js"></script>
 <script>
 const GOODS = window.GFR_CH6_GOODS || [];
 const SVCS  = window.GFR_CH6_SERVICES || [];
@@ -299,9 +301,40 @@ function renderCtx(b){
   const el=$('#ctx').querySelector(`[data-bi="${b.bi}"]`); if(el){el.classList.add('active'); el.scrollIntoView({block:'nearest'});}
 }
 
+/* ---------- studio narration map (filled batch by batch) ---------- */
+window.GFR_STUDIO = window.GFR_STUDIO || {};
+const STUDIO_LIMIT = 1450;   /* must match the clip generator */
+
+/* ---------- segments: studio clip groups (greedy, same algorithm as generator) ---------- */
+function buildSegments(){
+  const segs=[]; let k=0;
+  while(k<beats.length){
+    const b=beats[k], rid=b.ri;
+    if(!rid || b.kind==='module' || b.kind==='callout'){
+      segs.push({s:k,e:k,audio:b.audio||null,chars:(b.speech||'').length,studio:!!b.audio}); k++; continue;
+    }
+    let e=k; while(e+1<beats.length && beats[e+1].ri===rid && beats[e+1].kind!=='callout') e++;
+    const groups=[]; let cur=[], len=0;
+    for(let j=k;j<=e;j++){
+      const L=(beats[j].speech||'').length+1;
+      if(len+L>STUDIO_LIMIT && cur.length){ groups.push(cur); cur=[]; len=0; }
+      cur.push(j); len+=L;
+    }
+    if(cur.length) groups.push(cur);
+    const list=(window.GFR_STUDIO[rid])||[];
+    groups.forEach((g,gi)=>segs.push({s:g[0], e:g[g.length-1], audio:list[gi]||null,
+      chars:g.reduce((a,j)=>a+(beats[j].speech||'').length,0), studio:!!list[gi]}));
+    k=e+1;
+  }
+  return segs;
+}
+const segments=buildSegments();
+const STUDIO_COUNT = segments.filter(x=>x.studio).length;
+function segOf(i){ for(let x=0;x<segments.length;x++) if(i>=segments[x].s && i<=segments[x].e) return segments[x]; return segments[segments.length-1]; }
+
 /* ---------- engine ---------- */
 const audio=new Audio();
-let i=0, playing=false, rate=1, muted=false, timer=null, voice=null, voicesReady=false;
+let i=0, playing=false, rate=1, muted=false, timer=null, curU=null;
 const synth = window.speechSynthesis || null;
 
 function loadVoices(){
@@ -309,21 +342,17 @@ function loadVoices(){
   const vs=synth.getVoices()||[];
   const sel=$('#voice'); const prev=sel.value;
   sel.innerHTML='<option value="">Voice: auto (hi-IN)</option>';
-  vs.forEach((v,ix)=>{
-    const o=document.createElement('option'); o.value=ix;
-    o.textContent=`${v.name} (${v.lang})`; sel.appendChild(o);
-  });
+  vs.forEach((v,ix)=>{ const o=document.createElement('option'); o.value=ix; o.textContent=`${v.name} (${v.lang})`; sel.appendChild(o); });
   sel.value=prev;
-  voicesReady = vs.length>0;
-  if(!voicesReady) $('#vwarn').style.display='block', $('#vwarn').innerHTML='⚠ Is browser mein koi TTS voice nahi mili. Video <b>silent auto-advance mode</b> mein chalega — text screen par dikhega, aur aap Episode 1/2 ke studio-recorded Hinglish clips use kar sakte hain.';
+  if(!vs.length){ $('#vwarn').style.display='block';
+    $('#vwarn').innerHTML='\u26a0 Is browser mein koi TTS voice nahi mili. Jin provisions ka studio recording hai woh chalenge; baaki beats text ke saath auto-advance honge.'; }
 }
 if(synth){ loadVoices(); synth.onvoiceschanged=loadVoices; }
-else { $('#vwarn').style.display='block'; $('#vwarn').innerHTML='⚠ Speech synthesis is browser mein support nahi karta — silent auto-advance mode.'; }
+else { $('#vwarn').style.display='block'; $('#vwarn').innerHTML='\u26a0 Speech synthesis support nahi karta \u2014 studio-recorded beats chalenge, baaki silent auto-advance.'; }
 
 function pickVoice(){
   if(!synth) return null;
-  const vs=synth.getVoices()||[];
-  const sel=$('#voice').value;
+  const vs=synth.getVoices()||[]; const sel=$('#voice').value;
   if(sel!=='' && vs[+sel]) return vs[+sel];
   return vs.find(v=>/hi[-_]IN/i.test(v.lang)) || vs.find(v=>/^hi/i.test(v.lang)) ||
          vs.find(v=>/en[-_]IN/i.test(v.lang)) || vs.find(v=>/^en/i.test(v.lang)) || vs[0] || null;
@@ -331,81 +360,102 @@ function pickVoice(){
 
 function render(){
   const b=beats[i];
-  $('#crumb').textContent = (b.ri?('Rule '+b.ri+' · '):'')+ (MODULES[b.mi]?MODULES[b.mi].n:'') ;
-  $('#counter').textContent = `Beat ${i+1} / ${beats.length}`;
+  const seg=segOf(i);
+  $('#crumb').innerHTML = (b.ri?('Rule '+b.ri+' \u00b7 '):'') + (MODULES[b.mi]?MODULES[b.mi].n:'') +
+    ' <span style="background:'+(seg.studio?'#2e9e6b':'#8a6fae')+';color:#fff;border-radius:99px;padding:1px 8px;font-size:10px;margin-left:6px">'+
+    (seg.studio?'\U0001f399 Studio':'\U0001f5e3 Device TTS')+'</span>';
+  $('#counter').textContent = `Beat ${i+1} / ${beats.length}  \u00b7  studio ${STUDIO_COUNT}/${segments.length}`;
   $('#kind').className='kind '+(KINDCLS[b.kind]||'k-title');
   $('#kind').textContent = KINDLBL[b.kind]||b.kind;
   $('#beat').innerHTML = b.html;
   $('#beat').classList.remove('beat'); void $('#beat').offsetWidth; $('#beat').classList.add('beat');
   $('#pbar').style.width = (i/(beats.length-1)*100)+'%';
-  // beat strip
   const strip=$('#beats'); strip.innerHTML='';
   const ruleBeats = b.ri ? beats.slice(ruleIndex[b.ri].start, ruleIndex[b.ri].end+1) : beats.filter(x=>x.mi===b.mi&&!x.ri);
-  const base = b.ri ? ruleIndex[b.ri].start : beats.findIndex(x=>x===b);
+  const base = b.ri ? ruleIndex[b.ri].start : i;
   ruleBeats.forEach((bb,k)=>{
     const s=document.createElement('span'); s.textContent=(k+1)+'. '+stripHTML(bb.label).slice(0,26);
     if(base+k===i) s.classList.add('act'); else if(base+k<i) s.classList.add('done');
     s.onclick=()=>go(base+k); strip.appendChild(s);
   });
   const act=strip.querySelector('.act'); if(act) act.scrollIntoView({inline:'center',block:'nearest'});
-  // module + rule highlight
   [...navmod.children].forEach((btn,mi)=>btn.classList.toggle('on',mi===b.mi));
   [...rlist.children].forEach(a=>a.classList.toggle('act', a.dataset.r===b.ri));
   renderCtx(b);
 }
 
-let curU=null;
-function speak(){
-  const b=beats[i];
-  if(muted || !b.speech){ timerAdvance(); return; }
-  if(b.audio){
-    audio.src=b.audio; audio.playbackRate=1;
-    audio.play().then(()=>{playing=true; $('#play').textContent='⏸ Pause';}).catch(()=>timerAdvance());
-    return;
-  }
-  if(synth){
-    try{ synth.cancel(); }catch(e){}
-    const u=new SpeechSynthesisUtterance(b.speech);
-    const v=pickVoice(); if(v){u.voice=v; u.lang=v.lang;}
-    u.rate=rate; u.pitch=1;
-    curU=u;
-    u.onend=()=>{ if(curU!==u) return; playing=false; if(i<beats.length-1) setTimeout(()=>go(i+1),200); };
-    u.onerror=()=>{ if(curU!==u) return; playing=false; timerAdvance(); };
-    synth.speak(u); playing=true; $('#play').textContent='⏸ Pause';
-  } else timerAdvance();
+function ttsBeat(n){
+  const b=beats[n];
+  if(muted || !b.speech || !synth){ timerAdvance(); return; }
+  try{ synth.cancel(); }catch(e){}
+  const u=new SpeechSynthesisUtterance(b.speech);
+  const v=pickVoice(); if(v){u.voice=v; u.lang=v.lang;}
+  u.rate=rate; u.pitch=1; curU=u;
+  u.onend=()=>{ if(curU!==u) return; playing=false; if(n<beats.length-1) go(n+1); };
+  u.onerror=()=>{ if(curU!==u) return; playing=false; timerAdvance(); };
+  synth.speak(u); playing=true; $('#play').textContent='\u23f8 Pause';
 }
 function timerAdvance(){
   const b=beats[i];
-  const secs = Math.max(1.2, (b.speech||'').length/13);
+  const secs=Math.max(1.2,(b.speech||'').length/13);
   clearTimeout(timer);
-  timer=setTimeout(()=>{ if(i<beats.length-1) go(i+1); else {playing=false; $('#play').textContent='▶ Play';} }, secs*1000);
-  playing=true; $('#play').textContent='⏸ Pause';
+  timer=setTimeout(()=>{ if(i<beats.length-1) go(i+1); else {playing=false; $('#play').textContent='\u25b6 Play';} }, secs*1000);
+  playing=true; $('#play').textContent='\u23f8 Pause';
+}
+function playFrom(n){
+  const seg=segOf(n);
+  if(muted || !seg.audio){ ttsBeat(n); return; }
+  clearTimeout(timer);
+  let before=0; for(let j=seg.s;j<n;j++) before += (beats[j].speech||'').length+1;
+  const frac = seg.chars>0 ? before/seg.chars : 0;
+  audio.src=seg.audio; audio.playbackRate=1;
+  audio.ontimeupdate=()=>{
+    if(!audio.duration || !isFinite(audio.duration) || !seg.chars) return;
+    const f=audio.currentTime/audio.duration;
+    let acc=0, target=seg.s;
+    for(let j=seg.s;j<=seg.e;j++){
+      const L=(beats[j].speech||'').length+1;
+      if(f < (acc+L)/seg.chars){ target=j; break; }
+      acc+=L; target=j;
+    }
+    if(target!==i && target>=seg.s && target<=seg.e){ i=target; render(); }
+  };
+  audio.onended=()=>{
+    playing=false;
+    let nx=null; for(let x=0;x<segments.length;x++) if(segments[x]===seg && x+1<segments.length) nx=segments[x+1].s;
+    if(nx!=null) go(nx); else { $('#play').textContent='\u25b6 Play'; }
+  };
+  audio.play().then(()=>{
+    playing=true; $('#play').textContent='\u23f8 Pause';
+    if(audio.duration && isFinite(audio.duration) && frac>0.01){
+      try{ audio.currentTime=Math.min(audio.duration-0.25, frac*audio.duration); }catch(e){}
+    }
+  }).catch(()=>{ audio.onended=null; ttsBeat(n); });
 }
 function pauseAll(){
   clearTimeout(timer);
   try{ audio.pause(); }catch(e){}
+  audio.ontimeupdate=null; audio.onended=null;
   if(curU){ curU.onend=null; curU.onerror=null; curU=null; }
   try{ if(synth) synth.cancel(); }catch(e){}
-  playing=false; $('#play').textContent='▶ Play';
+  playing=false; $('#play').textContent='\u25b6 Play';
 }
 function go(n){
   if(n<0||n>=beats.length) return;
-  const resume = playing;
+  const resume=playing;
   pauseAll(); i=n; render();
-  if(resume) speak(); else $('#play').textContent='▶ Play';
+  if(resume) playFrom(i); else $('#play').textContent='\u25b6 Play';
 }
-function play(){ speak(); }
-function toggle(){ if(playing) pauseAll(); else play(); }
+function toggle(){ if(playing) pauseAll(); else playFrom(i); }
 
 $('#play').onclick=toggle;
 $('#nextB').onclick=()=>go(i+1);
 $('#prevB').onclick=()=>go(i-1);
 $('#nextR').onclick=()=>{ const b=beats[i]; const nx=beats.findIndex((x,k)=>k>i && x.ri && x.ri!==b.ri); go(nx<0?beats.length-1:nx); };
 $('#prevR').onclick=()=>{ const b=beats[i]; let p=-1; for(let k=i-1;k>=0;k--){ if(beats[k].ri && beats[k].ri!==b.ri){p=k;break;} } go(p<0?0:p); };
-$('#mute').onclick=()=>{ muted=!muted; audio.muted=muted; $('#mute').textContent=muted?'🔇':'🔊'; if(playing&&muted) pauseAll(); };
-$('#rate').onchange=e=>{ rate=parseFloat(e.target.value); audio.playbackRate=1; };
-$('#voice').onchange=()=>{ if(playing){ pauseAll(); speak(); } };
-audio.addEventListener('ended',()=>{ playing=false; if(i<beats.length-1) setTimeout(()=>go(i+1),200); else $('#play').textContent='▶ Play'; });
+$('#mute').onclick=()=>{ muted=!muted; audio.muted=muted; $('#mute').textContent=muted?'\U0001f507':'\U0001f50a'; if(playing&&muted) pauseAll(); };
+$('#rate').onchange=e=>{ rate=parseFloat(e.target.value); };
+$('#voice').onchange=()=>{ if(playing){ pauseAll(); playFrom(i); } };
 document.addEventListener('keydown',e=>{
   if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT') return;
   if(e.code==='Space'){e.preventDefault(); toggle();}
@@ -414,7 +464,9 @@ document.addEventListener('keydown',e=>{
   if(e.key==='m'||e.key==='M') $('#mute').click();
 });
 
-$('#eta').textContent = `~${Math.round(totalChars/13/60)} min · ${beats.length} beats`;
+$('#eta').textContent = `~${Math.round(totalChars/13/60)} min \u00b7 ${beats.length} beats \u00b7 ${STUDIO_COUNT} studio`;
+const doneRules=Object.keys(window.GFR_STUDIO||{}).filter(r=>(window.GFR_STUDIO[r]||[]).length);
+$('#prog').innerHTML=`\U0001f399 <b>Studio narration: ${doneRules.length}/${all.length} rules</b> recorded (${STUDIO_COUNT} clips live). Batch-wise recording jaari hai — baaki rules abhi device TTS se narrate hote hain. Recorded so far: ${doneRules.join(', ')}`;
 render();
 </script>
 </body>

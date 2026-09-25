@@ -396,3 +396,45 @@ per-rule stepping, speed control, voice selection and a live "current provision"
 - 471 beats computed from the same data files as the reference document — no drift between the two.
 - All 67 rules present in the module lists (checked programmatically — zero missing).
 - JS syntax validated; all assets serve over the preview server.
+
+---
+
+# STUDIO NARRATION — BATCH PLAN & PROGRESS
+
+The granular video's provision-level narration is being replaced by **studio-recorded Hinglish** clips,
+delivered in batches (the speech tool allows 10 clips per turn).
+
+**Clip design:** every clip is the exact concatenation of a run of the rule's beats
+(verbatim → Hinglish → each sub-rule/clause → each proviso/note/exception/footnote), split greedily at
+**1450 characters** so it stays under the 1500-character per-clip limit. The player runs the *same*
+greedy algorithm on the same data, so on-screen captions stay in sync with the audio automatically —
+no manual timestamps.
+
+**Total requirement: 126 clips / 114,699 characters of narration.**
+
+## Batch schedule (10 clips per batch)
+| Batch | Rules covered | Clips | Status |
+|---|---|---|---|
+| 1 | 142, 143(×2), 144(×4), 145, 146, 147 | 10 | ✅ **DONE** |
+| 2 | 148, 149(×4) | 5 | ⏳ next |
+| 3 | 150(×4), 151(×3), 152 | 8 | ⏳ |
+| 4 | 153(×2), 154(×2), 155(×3), 156, 157, 158 | 10 | ⏳ |
+| 5 | 159(×4), 160(×2), 161(×4) | 10 | ⏳ |
+| 6 | 162(×5), 163(×2), 164(×4) | 11 | ⏳ |
+| 7 | 165, 166(×2), 167(×3), 168, 169, 170(×5) | 12 | ⏳ |
+| 8 | 171(×3), 172(1)(×2), 172(2), 173(×7), 174(×2) | 15 | ⏳ |
+| 9 | 175(1)(×4), 175(2), 176(×2), 177(×2) | 9 |   |
+| 10 | 178, 179, 180, 181, 182, 183(×2), 184, 185, 186(×2) | 11 | ⏳ |
+| 11 | 187, 188, 189, 190, 191, 192(×2), 193, 194(×3), 195, 196 | 13 | ⏳ |
+| 12 | 197, 198, 199, 200, 201(×2), 202, 203, 204, 205, 206 | 11 | ⏳ |
+
+## How to verify a batch
+```bash
+node /tmp/gen.js <batch-no> 10     # prints the exact clip texts + rule/clip counts
+ls audio/v-*.mp3 | wc -l           # clip count so far
+```
+Then append the rule → clip-file mapping to `data/studio.js`. The player re-derives the beat
+segments itself, so no other change is needed.
+
+## Already recorded (studio)
+Module intros ×7 + critical callouts ×3 (`audio/g-*.mp3`) and Batch 1 (`audio/v-142 … v-147`).
