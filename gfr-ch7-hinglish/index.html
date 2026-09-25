@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GFR 2017 Chapter 7 — Inventory Management | Interactive Hinglish Comic Explainer</title>
+<link rel="stylesheet" href="app.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-mark">GFR<br><span>7</span></div>
+    <div class="brand-text">
+      <h1>Inventory Management — Chapter 7</h1>
+      <p>Rules 207–223 · General Financial Rules, 2017 · <span class="pill pill-live">verified 25 Sep 2026</span></p>
+    </div>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button class="tab is-active" data-view="watch">▶ Watch</button>
+    <button class="tab" data-view="rules">📋 Rule Map</button>
+    <button class="tab" data-view="quiz">🎯 Exam Drill</button>
+    <button class="tab" data-view="sources">🔎 Sources</button>
+  </nav>
+</header>
+
+<!-- ══════════════════════ WATCH ══════════════════════ -->
+<main id="view-watch" class="view is-active">
+  <div class="stage">
+
+    <div class="scene-head">
+      <div class="scene-count" id="sceneCount">Scene 1 / 10</div>
+      <div class="scene-title" id="sceneTitle">—</div>
+      <div class="scene-rules" id="sceneRules"></div>
+    </div>
+
+    <div class="panel" id="panel">
+      <img id="panelImg" alt="" />
+      <div class="bubbles" id="bubbles"></div>
+      <div class="panel-badge" id="panelBadge">Rule 207</div>
+      <div class="caption" id="caption"><span id="captionText"></span></div>
+      <div class="scanline" id="scanline"></div>
+    </div>
+
+    <div class="controls">
+      <button class="btn btn-nav" id="btnPrev" title="Previous (←)">◀</button>
+      <button class="btn btn-play" id="btnPlay"><span id="playIcon">▶</span> <span id="playLabel">Play scene</span></button>
+      <button class="btn btn-nav" id="btnNext" title="Next (→)">▶</button>
+      <label class="toggle"><input type="checkbox" id="autoNext" checked /> Auto-advance</label>
+      <div class="langswitch">
+        <button class="lang is-active" data-lang="hinglish">Hinglish</button>
+        <button class="lang" data-lang="hindi">हिंदी</button>
+      </div>
+    </div>
+
+    <div class="progress"><div class="progress-fill" id="progressFill"></div></div>
+
+    <div class="lower">
+      <section class="rulecard" id="ruleCard"></section>
+      <section class="decision" id="decision"></section>
+    </div>
+
+    <div class="rail-wrap">
+      <div class="rail-label">Chapter map — click any rule to jump</div>
+      <div class="rail" id="rail"></div>
+    </div>
+  </div>
+</main>
+
+<!-- ══════════════════════ RULES ══════════════════════ -->
+<main id="view-rules" class="view">
+  <div class="stage">
+    <h2 class="sec-title">Granular rule map — Chapter 7 (Rules 207–223)</h2>
+    <p class="sec-note">Every rule of the chapter, with the operative requirement, the numbers, the exceptions and the exam hook. Click “Scene” to watch it.</p>
+    <div class="rulegrid" id="ruleGrid"></div>
+  </div>
+</main>
+
+<!-- ══════════════════════ QUIZ ══════════════════════ -->
+<main id="view-quiz" class="view">
+  <div class="stage narrow">
+    <h2 class="sec-title">Exam drill — 14 questions</h2>
+    <div class="quiz" id="quiz"></div>
+  </div>
+</main>
+
+<!-- ══════════════════════ SOURCES ══════════════════════ -->
+<main id="view-sources" class="view">
+  <div class="stage">
+    <h2 class="sec-title">Validation & sources</h2>
+    <div id="sourcesBody"></div>
+  </div>
+</main>
+
+<footer class="foot">
+  Built with the CCS/GFR Comic Mastery Engine pipeline · Educational explainer, not legal advice ·
+  Always read the rule with the latest DoE compilation.
+</footer>
+
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
