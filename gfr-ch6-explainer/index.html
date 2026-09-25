@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GFR 2017 — Chapter 6 (Procurement of Goods &amp; Services) | Hinglish Interactive Explainer</title>
+<style>
+  :root{
+    --ink:#1b2a32; --teal:#0f6f7a; --teal-d:#0a4f57; --mustard:#e0a41c; --cream:#fbf7ee;
+    --paper:#ffffff; --line:#d8cfbe; --good:#1c7c46; --bad:#b3261e; --shadow:0 10px 30px rgba(15,60,66,.18);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:"Segoe UI",Roboto,"Noto Sans Devanagari",system-ui,sans-serif;
+    background:linear-gradient(160deg,#0d3b46 0%,#12545e 45%,#0f3f49 100%); color:var(--ink);
+    min-height:100vh; padding:18px;
+  }
+  .wrap{max-width:1080px;margin:0 auto}
+  header.top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:12px;color:#eaf6f6}
+  .badge{background:var(--mustard);color:#3a2a00;font-weight:800;font-size:12px;letter-spacing:.08em;
+    padding:6px 10px;border-radius:999px;text-transform:uppercase}
+  header.top h1{font-size:18px;margin:0;font-weight:700}
+  header.top .src{font-size:12px;opacity:.8;margin-left:auto}
+
+  /* ---------- stage ---------- */
+  .stage{position:relative;width:100%;aspect-ratio:16/9;background:#0a2f36;border-radius:16px;
+    overflow:hidden;box-shadow:var(--shadow);border:3px solid rgba(255,255,255,.14)}
+  .scene{position:absolute;inset:0;display:none;animation:fade .5s ease}
+  .scene.on{display:block}
+  @keyframes fade{from{opacity:0;transform:scale(1.02)}to{opacity:1;transform:none}}
+  .scene img{width:100%;height:100%;object-fit:cover;display:block}
+  .scene.ken img{animation:ken 14s ease-in-out infinite alternate}
+  @keyframes ken{from{transform:scale(1)}to{transform:scale(1.07)}}
+
+  /* speech bubbles */
+  .bubble{position:absolute;background:#fff;border:3px solid var(--ink);border-radius:16px;
+    padding:9px 12px;font-size:clamp(11px,1.35vw,16px);line-height:1.32;box-shadow:4px 5px 0 rgba(27,42,50,.22);
+    animation:pop .45s cubic-bezier(.2,1.4,.4,1) both}
+  @keyframes pop{from{opacity:0;transform:translateY(10px) scale(.9)}to{opacity:1;transform:none}}
+  .bubble .who{display:block;font-size:.72em;font-weight:800;color:var(--teal-d);text-transform:uppercase;
+    letter-spacing:.04em;margin-bottom:3px}
+  .bubble::after{content:"";position:absolute;bottom:-13px;left:26px;border:9px solid transparent;
+    border-top-color:var(--ink)}
+  .bubble.rt::after{left:auto;right:26px}
+
+  /* captions */
+  .caption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(6,32,38,.92) 42%);
+    color:#fff;padding:38px 20px 14px;font-size:clamp(12px,1.6vw,19px);line-height:1.4;text-align:center}
+  .caption b{color:var(--mustard)}
+  .cap-line{opacity:.25;transition:opacity .3s;margin:2px 0}
+  .cap-line.on{opacity:1}
+
+  /* rule cards */
+  .card{position:absolute;inset:0;background:var(--cream);padding:clamp(12px,2.4vw,26px);overflow:auto}
+  .card h2{margin:0 0 2px;font-size:clamp(15px,2.2vw,25px);color:var(--teal-d)}
+  .card .kicker{font-size:clamp(10px,1.2vw,13px);font-weight:800;letter-spacing:.12em;color:#8a6d10;
+    text-transform:uppercase;margin-bottom:8px}
+  .rulebox{border-left:6px solid var(--teal);background:#fff;border-radius:10px;padding:10px 12px;
+    margin:8px 0;box-shadow:0 3px 10px rgba(0,0,0,.06)}
+  .rulebox .rn{font-weight:900;color:var(--teal-d);font-size:clamp(12px,1.5vw,17px)}
+  .rulebox p{margin:5px 0 0;font-size:clamp(11px,1.35vw,15px);line-height:1.45}
+  .rulebox .cite{display:block;margin-top:6px;font-size:clamp(9px,1.1vw,12px);color:#6b6b6b;font-style:italic}
+  table.lad{width:100%;border-collapse:collapse;font-size:clamp(10px,1.3vw,15px);margin-top:6px}
+  table.lad th{background:var(--teal);color:#fff;text-align:left;padding:7px 9px}
+  table.lad td{border-bottom:1px solid var(--line);padding:7px 9px;vertical-align:top;background:#fff}
+  table.lad tr:nth-child(even) td{background:#f4efe3}
+  .hook{margin-top:10px;background:var(--mustard);color:#3a2a00;font-weight:900;border-radius:10px;
+    padding:9px 12px;font-size:clamp(11px,1.5vw,17px);text-align:center}
+  .warn{border-left-color:var(--bad);background:#fff5f4}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  @media(max-width:640px){.grid2{grid-template-columns:1fr}}
+  .chip{display:inline-block;background:#e7f1f2;border:1px solid #bcd6d9;border-radius:999px;
+    padding:3px 9px;margin:2px 3px 2px 0;font-size:clamp(9px,1.15vw,13px);font-weight:700;color:var(--teal-d)}
+
+  /* cover */
+  .cover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
+    padding-top:6%;text-align:center;background:rgba(8,42,49,.55)}
+  .cover h2{font-size:clamp(20px,4.6vw,52px);margin:0;color:#fff;text-shadow:0 4px 14px rgba(0,0,0,.5);line-height:1.05}
+  .cover .sub{color:var(--mustard);font-weight:800;font-size:clamp(12px,2.2vw,24px);margin-top:8px}
+  .cover .tag{color:#dff;margin-top:10px;font-size:clamp(10px,1.5vw,16px);background:rgba(0,0,0,.35);
+    padding:6px 14px;border-radius:999px}
+
+  /* explorer */
+  .exp{position:absolute;inset:0;background:var(--cream);padding:clamp(12px,2.4vw,26px);overflow:auto}
+  .exp input[type=range]{width:100%;accent-color:var(--teal);height:26px}
+  .val{font-size:clamp(18px,3.4vw,34px);font-weight:900;color:var(--teal-d)}
+  .tiers{display:grid;gap:8px;margin-top:10px}
+  .tier{border:3px solid transparent;border-radius:12px;padding:9px 11px;background:#fff;font-size:clamp(10px,1.3vw,15px)}
+  .tier.act{border-color:var(--mustard);background:#fffaf0;box-shadow:0 4px 14px rgba(224,164,28,.28)}
+  .tier .t1{font-weight:900;color:var(--teal-d)}
+  .note{font-size:clamp(9px,1.15vw,13px);color:#555;margin-top:8px}
+
+  /* quiz */
+  .quiz{position:absolute;inset:0;background:var(--cream);padding:clamp(12px,2.4vw,24px);overflow:auto}
+  .q{margin:10px 0;background:#fff;border-radius:12px;padding:11px 13px;box-shadow:0 3px 10px rgba(0,0,0,.06)}
+  .q .qt{font-weight:800;font-size:clamp(11px,1.4vw,16px)}
+  .opt{display:block;width:100%;text-align:left;margin:6px 0 0;padding:8px 10px;border-radius:9px;
+    border:2px solid var(--line);background:#fbf7ee;font-size:clamp(10px,1.3vw,14px);cursor:pointer;font-family:inherit}
+  .opt:hover{border-color:var(--teal)}
+  .opt.ok{background:#e7f6ec;border-color:var(--good)}
+  .opt.no{background:#fdecea;border-color:var(--bad)}
+  .why{display:none;margin-top:7px;font-size:clamp(9px,1.2vw,13px);background:#f2f7f8;border-left:4px solid var(--teal);
+    padding:7px 9px;border-radius:0 8px 8px 0}
+  .why.show{display:block}
+  .score{font-weight:900;color:var(--teal-d);font-size:clamp(12px,1.6vw,18px)}
+
+  /* controls */
+  .bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:12px;background:rgba(255,255,255,.1);
+    padding:10px 12px;border-radius:14px;backdrop-filter:blur(4px)}
+  button{font-family:inherit;font-weight:800;border:none;border-radius:10px;padding:10px 14px;cursor:pointer;
+    background:#fff;color:var(--teal-d);font-size:14px;transition:transform .1s}
+  button:hover{transform:translateY(-1px)}
+  button.primary{background:var(--mustard);color:#3a2a00}
+  button:disabled{opacity:.4;cursor:not-allowed;transform:none}
+  .pbar{flex:1 1 160px;height:9px;background:rgba(255,255,255,.25);border-radius:99px;overflow:hidden;min-width:120px}
+  .pbar i{display:block;height:100%;background:var(--mustard);width:0%;transition:width .25s}
+  .lbl{color:#dff;font-size:12px;font-weight:700;white-space:nowrap}
+  .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+  .cchip{background:rgba(255,255,255,.14);color:#dff;border:1px solid rgba(255,255,255,.25);border-radius:999px;
+    padding:5px 11px;font-size:11.5px;font-weight:700;cursor:pointer}
+  .cchip.act{background:var(--mustard);color:#3a2a00;border-color:var(--mustard)}
+  details{margin-top:12px;background:rgba(255,255,255,.1);border-radius:12px;padding:10px 14px;color:#eaf6f6}
+  details summary{cursor:pointer;font-weight:800;font-size:13px}
+  details table{width:100%;border-collapse:collapse;font-size:12px;margin-top:8px}
+  details td,details th{border-bottom:1px solid rgba(255,255,255,.2);padding:5px 6px;text-align:left}
+  footer{color:#bfe0e2;font-size:11.5px;margin:14px 0 6px;line-height:1.6}
+  .kbd{background:rgba(255,255,255,.2);border-radius:5px;padding:1px 6px;font-size:11px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span class="badge">GFR 2017 · Chapter 6</span>
+    <h1>Procurement of Goods &amp; Services — Hinglish Interactive Explainer</h1>
+    <span class="src">Current position: GFR 2017 updated up to 31.01.2026 · DoE OM F.1/3/2024-PPD dt. 10.07.2024</span>
+  </header>
+
+  <div class="stage" id="stage"></div>
+
+  <div class="bar">
+    <button class="primary" id="play">▶ Play</button>
+    <button id="prev">◀ Prev</button>
+    <button id="next">Next ▶</button>
+    <button id="mute">🔊</button>
+    <button id="rate">1x</button>
+    <div class="pbar"><i id="sceneBar"></i></div>
+    <span class="lbl" id="sceneLbl">Scene 1</span>
+  </div>
+  <div class="chips" id="chips"></div>
+
+  <details>
+    <summary>📌 Exam traps + granular coverage map (Chapter 6) — click to expand</summary>
+    <table>
+      <tr><th>Provision</th><th>Exam trap / granular point</th></tr>
+      <tr><td>Rule 142–143</td><td>“Goods” includes software, technology transfer, licences, patents &amp; incidental works (transport, insurance, installation, commissioning, training, maintenance); <b>excludes</b> books, publications, periodicals for a library.</td></tr>
+      <tr><td>Rule 144</td><td>Fundamental principles: efficiency, economy, transparency, fair &amp; equitable treatment, competition; Annual Procurement Plan on website; DoE may restrict bidders from countries sharing a land border (OM dt. 23.02.2023).</td></tr>
+      <tr><td>Rule 145 / 147</td><td>Competent to incur expenditure = competent to sanction purchase (per Delegation of Financial Powers Rules). Items available on GeM <b>must</b> be bought on GeM. Rule 148 (Rate Contract) <b>deleted</b> vide OM dt. 02.04.2019.</td></tr>
+      <tr><td>Rule 149</td><td>GeM ladder: ≤ ₹50,000 direct · > ₹50,000–₹10,00,000 L-1 among ≥ 3 manufacturers · > ₹10,00,000 mandatory online bidding / reverse auction. Automobiles: no ceiling. Demand must not be split (sub-rule viii).</td></tr>
+      <tr><td>Rule 150 / 151</td><td>Registered suppliers: 1–3 years, list on website. Debarment: ≤ 3 years on conviction; ≤ 2 years for breach of code of integrity; reasonable opportunity to represent is must.</td></tr>
+      <tr><td>Rule 154</td><td>Up to ₹50,000 without quotation + personal satisfaction certificate. [Scientific orgs: ₹2,00,000 — OM dt. 05.06.2025]</td></tr>
+      <tr><td>Rule 155</td><td>Above ₹50,000 up to ₹5,00,000 via 3-member Local Purchase Committee + joint certificate. [Scientific orgs: ₹2,00,000–₹25,00,000]</td></tr>
+      <tr><td>Rule 157 / 149(viii)</td><td>No splitting of demand to avoid higher sanction or GeM bidding.</td></tr>
+      <tr><td>Rule 158</td><td>Five standard methods: Advertised Tender Enquiry, Limited Tender Enquiry, Two-Stage Bidding, Single Tender Enquiry, Electronic Reverse Auctions.</td></tr>
+      <tr><td>Rule 159 / 160</td><td>E-publishing on CPPP mandatory (national-security exemption needs Secretary + FA concurrence, quarterly intimation to DoE; does not apply to Rules 154/155). All bids to be received through e-procurement portals.</td></tr>
+      <tr><td>Rule 161</td><td>Advertised tender for estimated value ≥ ₹50 lakh; minimum 3 weeks (4 weeks if foreign bids); no GTE up to ₹200 crore without prior DoE-specified approval. [Scientific orgs: above ₹1 crore]</td></tr>
+      <tr><td>Rule 162</td><td>Limited Tender Enquiry up to ₹50 lakh, more than three supplier firms; publish on GeM + GeM-CPPP; unsolicited bids not accepted; may exceed ₹50 lakh only in 3 certified situations. [Scientific orgs: up to ₹1 crore]</td></tr>
+      <tr><td>Rule 163 / 164 / 165</td><td>Two-bid system (technical first, financial of technically acceptable only) · Two-stage bidding conditions (a)–(d) · Late bids never considered.</td></tr>
+      <tr><td>Rule 166</td><td>Single Tender Enquiry only: sole manufacturer / emergency (record + competent authority approval) / standardisation (technical expert + competent authority). Proprietary Article Certificate needed for (i) &amp; (iii).</td></tr>
+      <tr><td>Rule 167</td><td>Electronic Reverse Auction allowed if detailed description feasible, competitive market, and monetary evaluation criteria.</td></tr>
+      <tr><td>Rule 170</td><td>Bid Security 2–5% of estimated value; MSEs &amp; DPIIT-recognised Startups exempt; valid 45 days beyond final bid validity; returned to unsuccessful bidders latest by 30th day after award.</td></tr>
+      <tr><td>Rule 171</td><td>Performance Security 3–5% of contract value (goods/consultancy/non-consultancy services); valid 60 days beyond completion of all contractual obligations incl. warranty; bid security refunded on receipt of performance security.</td></tr>
+      <tr><td>Rule 172</td><td>Advance payment ≤ 30% (private firm), ≤ 40% (Govt agency/PSU), maintenance contract ≤ 6 months’ value; bank guarantee safeguards.</td></tr>
+      <tr><td>Rule 173</td><td>Transparency, competition, fairness; code of integrity; negotiation with bidders after bid opening severely restricted.</td></tr>
+      <tr><td>Rule 206</td><td>Non-consulting services not covered by Rules 198–205 → refer to Rules 135–176 (goods procedure).</td></tr>
+    </table>
+  </details>
+
+  <footer>
+    <b>Controls:</b> <span class="kbd">Space</span> play/pause · <span class="kbd">←</span>/<span class="kbd">→</span> scene · <span class="kbd">M</span> mute.
+    Narration auto-advances; rule cards &amp; quiz wait for your click.<br>
+    <b>Note on DoPT vs DoE:</b> GFR and Chapter 6 are issued/amended by the <b>Department of Expenditure, Ministry of Finance</b>. DoPT OMs govern service &amp; conduct matters (CCS Rules) and do not alter GFR procurement thresholds — so every threshold here is sourced to DoE.
+  </footer>
+</div>
+
+<script>
+/* ================= SCENE DATA (all figures verified against GFR 2017, updated to 31.01.2026) ================= */
+const SCENES = [
+  { id:'cover', type:'cover', img:'assets/cover.png', audio:'audio/01-intro.mp3',
+    title:'GFR 2017 · Chapter 6', sub:'Procurement of Goods &amp; Services',
+    tag:'Hinglish Interactive Explainer · ek hi baar mein poora chapter' },
+
+  { id:'p1', type:'panel', img:'assets/panel1.png', audio:'audio/02-panel1.mp3',
+    bubbles:[
+      {x:'4%',y:'5%',w:'44%',who:'Anjali · Section Officer',text:'Aath high-speed printers chahiye. Estimated value = <b>₹12,00,000</b>.'},
+      {x:'53%',y:'5%',w:'43%',who:'Vendor · Sharma',text:'“Sir, direct order de dijiye — bidding mein time kyon kharch karein?”',right:true}
+    ],
+    caps:[
+      'Ek ministry office mein aath high-speed multifunction printers chahiye.',
+      'Total estimated value — <b>₹12,00,000</b>.',
+      'Ek vendor seedha quotation le kar aata hai…',
+      'Vikram ko deal achi lagti hai. Par Anjali sanyam dikhati hai.'
+    ]},
+
+  { id:'p2', type:'panel', img:'assets/panel2.png', audio:'audio/03-panel2.mp3',
+    bubbles:[
+      {x:'4%',y:'6%',w:'46%',who:'Vikram · Assistant',text:'“Demand ko tod do! Teen demands, har ek <b>₹4,00,000</b> ki — bidding se bach jaayenge.”'},
+      {x:'54%',y:'6%',w:'42%',who:'Anjali',text:'“Ruko! Rule 157 + Rule 149(viii) — todna <b>mana hai</b>.”',right:true}
+    ],
+    caps:[
+      'Vikram ek chaalak idea deta hai — demand ko tod do.',
+      'Teen alag demands, har ek <b>₹4,00,000</b> ki.',
+      'Aise <b>₹10,00,000</b> ki bidding limit se bach jaayenge.',
+      'Anjali turant rok deti hai — <b>Rule 157</b> aur <b>Rule 149(viii)</b>.'
+    ]},
+
+  { id:'rc1', type:'card', audio:'audio/04-rulecard1.mp3', kicker:'Rule Card 1 · Anti-splitting',
+    title:'Rule 157 &amp; Rule 149(viii) — Demand ko mat todo',
+    body:`
+      <div class="rulebox"><span class="rn">Rule 157</span>
+        <p>“A demand for goods <b>should not be divided into small quantities</b> to make piecemeal purchases to avoid the necessity of obtaining the sanction of higher authority required with reference to the <b>estimated value of the total demand</b>.”</p>
+        <span class="cite">GFR 2017, Chapter 6 — Procurement of Goods</span></div>
+      <div class="rulebox"><span class="rn">Rule 149(viii)</span>
+        <p>“A demand for goods <b>shall not be divided into small quantities</b> to make piecemeal purchases to avoid procurement through <b>L-1 Buying / bidding / reverse auction on GeM</b> or the necessity of obtaining the sanction of higher authorities.”</p>
+        <span class="cite">As amended vide DoE OM No. F.1/3/2024-PPD dated 10.07.2024</span></div>
+      <div class="rulebox"><span class="rn">Numerical check</span>
+        <p>3 × ₹4,00,000 = <b>₹12,00,000</b> → total demand = ₹12,00,000 → GeM par <b>bidding / reverse auction mandatory</b> (Rule 149(iii)). Splitting does not change the threshold.</p></div>
+      <div class="hook">MEMORY HOOK — “TOTAL DEMAND DEKHO, TUKDE NAHI”</div>`},
+
+  { id:'p3', type:'panel', img:'assets/panel3.png', audio:'audio/05-panel3.mp3',
+    bubbles:[
+      {x:'4%',y:'5%',w:'46%',who:'Vikram',text:'“Par madam, pehle to <b>₹5 lakh</b> tak direct purchase allowed tha!”'},
+      {x:'53%',y:'5%',w:'43%',who:'Iyer · Under Secretary',text:'“Woh <b>purana position</b> tha — ab limit <b>₹10,00,000</b> hai.”',right:true}
+    ],
+    caps:[
+      'Vikram: “Pehle to paanch lakh tak direct purchase allowed tha!”',
+      'Iyer sahab muskurate hain.',
+      '“Woh purana position tha.”',
+      'DoE OM <b>F.1/3/2024-PPD dt. 10.07.2024</b> se ab limit <b>₹10,00,000</b>.'
+    ]},
+
+  { id:'rc2', type:'card', audio:'audio/06-rulecard2.mp3', kicker:'Rule Card 2 · GeM ladder',
+    title:'Rule 149 — Government e-Marketplace (as amended 10.07.2024)',
+    body:`
+      <table class="lad">
+        <tr><th style="width:26%">Estimated value</th><th>Procedure on GeM</th></tr>
+        <tr><td><b>Up to ₹50,000</b></td><td>Direct purchase through <b>any available supplier</b> on GeM meeting requisite quality, specification &amp; delivery period. <b>Rule 149(i)</b> · <i>Automobiles: no ceiling limit.</i></td></tr>
+        <tr><td><b>Above ₹50,000 up to ₹10,00,000</b></td><td>GeM seller having <b>lowest price amongst sellers of at least three different manufacturers</b>. <b>Rule 149(ii)</b> · Online bidding / reverse auction tools may be used even below ₹10 lakh.</td></tr>
+        <tr><td><b>Above ₹10,00,000</b></td><td>Supplier with lowest price <b>after mandatorily obtaining bids</b> using online bidding or reverse auction tool on GeM. <b>Rule 149(iii)</b></td></tr>
+      </table>
+      <div class="rulebox" style="margin-top:10px"><span class="rn">Rule 147 · Rule 148</span>
+        <p>Procurement of Goods and Services <b>available on GeM is mandatory through GeM</b> (Rule 147). <b>Rule 148 (Rate Contract) stands deleted</b> vide DoE OM dt. 02.04.2019.</p></div>
+      <div class="rulebox warn"><span class="rn">Change-detection engine</span>
+        <p>Earlier position: up to ₹25,000 direct · ₹25,000–₹5,00,000 · above ₹5,00,000 bidding. <b>Current position (from 10.07.2024): ₹50,000 · ₹50,000–₹10,00,000 · above ₹10,00,000.</b></p>
+        <span class="cite">DoE, Ministry of Finance OM No. F.1/3/2024-PPD dated 10.07.2024</span></div>
+      <div class="hook">MEMORY HOOK — “₹5 lakh se ₹10 lakh: 10.07.2024 ka naya GeM limit”</div>`},
+
+  { id:'exp', type:'explorer', title:'🎚 Threshold Explorer — value badlo, rule dekho',
+    note:'Slider ghumaao aur dekho kaunsa GFR provision apply hota hai. Item GeM par available hai to GeM hi mandatory hai (Rule 147).'},
+
+  { id:'p4', type:'panel', img:'assets/panel4.png', audio:'audio/07-panel4.mp3',
+    bubbles:[
+      {x:'3%',y:'4%',w:'62%',who:'Anjali',text:'“Reverse auction chal gaya — L-1 supplier <b>₹10,95,000</b> par select hua.”'}
+    ],
+    caps:[
+      'Ab sahi procedure. Tender enquiry, corrigenda aur award details <b>CPPP</b> par — <b>Rule 159</b>.',
+      'Saare bids <b>e-procurement portal</b> par — <b>Rule 160</b>.',
+      'Reverse auction — <b>Rule 167</b>. L-1 supplier <b>₹10,95,000</b> par.',
+      'Bid security <b>2–5%</b> · Performance security <b>3–5%</b>.'
+    ]},
+
+  { id:'rc3', type:'card', audio:'audio/10-methods.mp3', kicker:'Rule Card 3 · Methods &amp; e-publishing',
+    title:'Rules 158, 159, 160, 161, 162, 165, 166',
+    body:`
+      <div class="rulebox"><span class="rn">Rule 158 — Five standard methods of obtaining bids</span>
+        <p><span class="chip">Advertised Tender Enquiry</span><span class="chip">Limited Tender Enquiry</span><span class="chip">Two-Stage Bidding</span><span class="chip">Single Tender Enquiry</span><span class="chip">Electronic Reverse Auctions</span></p></div>
+      <div class="grid2">
+        <div class="rulebox"><span class="rn">Rule 159 · E-Publishing</span>
+          <p>Publish tender enquiries, corrigenda and <b>bid award details on CPPP</b> — mandatory. National-security exemption needs Secretary + Financial Adviser concurrence, with quarterly intimation to DoE. <b>Does not apply to Rules 154/155.</b></p></div>
+        <div class="rulebox"><span class="rn">Rule 160 · E-Procurement</span>
+          <p>Mandatory to <b>receive all bids through e-procurement portals</b> (NIC solution may be used).</p></div>
+        <div class="rulebox"><span class="rn">Rule 161 · Advertised Tender Enquiry</span>
+          <p>For estimated value <b>₹50 lakh and above</b>. Minimum <b>3 weeks</b> for bid submission (<b>4 weeks</b> if foreign bids). <b>No GTE up to ₹200 crore</b> without prior approval of the DoE-specified competent authority.</p></div>
+        <div class="rulebox"><span class="rn">Rule 162 · Limited Tender Enquiry</span>
+          <p>Up to <b>₹50 lakh</b>; bidding document sent to registered suppliers (Rule 150); <b>more than three</b> supplier firms; publish on GeM + GeM-CPPP; unsolicited bids not accepted.</p></div>
+        <div class="rulebox"><span class="rn">Rule 165 · Late Bids</span>
+          <p>Bids received after the specified date and time <b>should not be considered</b>.</p></div>
+        <div class="rulebox"><span class="rn">Rule 166 · Single Tender Enquiry</span>
+          <p>Only: (i) sole manufacturer, (ii) emergency — reason recorded + competent authority approval, (iii) standardisation — technical expert + competent authority. <b>Proprietary Article Certificate</b> required for (i) &amp; (iii).</p></div>
+      </div>`},
+
+  { id:'rc4', type:'card', audio:'audio/08-rulecard3.mp3', kicker:'Rule Card 4 · Securities &amp; payments',
+    title:'Rules 170, 171, 172 — numbers jo exam mein aate hain',
+    body:`
+      <div class="grid2">
+        <div class="rulebox"><span class="rn">Rule 170 · Bid Security (EMD)</span>
+          <p><b>2% to 5%</b> of estimated value. <b>Exempt:</b> MSEs (MSME policy) and DPIIT-recognised Startups. Valid <b>45 days beyond final bid validity</b>. Returned to unsuccessful bidders latest by the <b>30th day after award</b>; in two-packet / two-stage bidding, within 30 days of first-stage result.</p></div>
+        <div class="rulebox"><span class="rn">Rule 171 · Performance Security</span>
+          <p><b>3% to 5%</b> of contract value (goods / consultancy / non-consultancy services). Valid <b>60 days beyond completion of all contractual obligations including warranty</b>. Bid security refunded to successful bidder on receipt of performance security.</p></div>
+        <div class="rulebox"><span class="rn">Rule 172(1) · Advance Payment</span>
+          <p>Ordinarily payment only after supplies/services. Ceilings: <b>30%</b> to private firms · <b>40%</b> to State/Central Govt agency or PSU · maintenance contract ≤ <b>6 months</b>’ value. Bank guarantee safeguards.</p></div>
+        <div class="rulebox"><span class="rn">Rule 169 · Maintenance Contract</span>
+          <p>Supplier maintains equipment <b>free of cost during warranty</b>; paid maintenance starts only thereafter.</p></div>
+      </div>
+      <div class="hook">MEMORY HOOK — “2–5 EMD · 3–5 PS · 30/40 advance”</div>`},
+
+  { id:'p5', type:'panel', img:'assets/panel5.png', audio:'audio/09-panel5.mp3',
+    bubbles:[
+      {x:'3%',y:'4%',w:'40%',who:'Anjali',text:'“Rule padh liya? Ab exception box dekho.”'},
+      {x:'55%',y:'4%',w:'42%',who:'Vikram',text:'“Sirf ₹50,000 yaad hai — baaki sab GeM ladder!”',right:true}
+    ],
+    overlayCard:{x:'33%',y:'26%',w:'34%',
+      html:'<b style="font-size:1.15em">⚠ IMPORTANT EXCEPTION</b><br>Scientific Ministries (DoE OM <b>F.20/42/2021-PPD dt. 05.06.2025</b>):<br>R.154 <b>₹2,00,000</b> · R.155 <b>₹2L–₹25L</b><br>R.161 <b>&gt; ₹1 crore</b> · R.162 <b>≤ ₹1 crore</b><br><i>only for scientific equipment &amp; consumables for research</i>'},
+    caps:[
+      '<b>Exception box</b> — Scientific Ministries: DST, DBT, CSIR, DRDO, ISRO, ICAR, Earth Sciences, DHR…',
+      'DoE OM <b>F.20/42/2021-PPD dt. 05.06.2025</b> se limits badh gayi.',
+      'R.154 <b>₹2,00,000</b> · R.155 <b>₹2L–₹25L</b> · R.161 <b>&gt; ₹1 crore</b> · R.162 <b>≤ ₹1 crore</b>.',
+      'Automobiles: GeM par <b>koi ceiling nahi</b>. MSE &amp; DPIIT Startups: <b>EMD exempt</b>.'
+    ]},
+
+  { id:'quiz', type:'quiz', title:'🎯 Quiz — 5 sawaal, turant jawab'},
+
+  { id:'end', type:'end', title:'✅ Shabash! Chapter 6 ka core clear',
+    body:`<div class="rulebox"><span class="rn">Ek line mein</span>
+      <p>GeM available hai → <b>GeM mandatory</b> (Rule 147). Value ka ladder: <b>₹50,000 / ₹10,00,000</b> (Rule 149, as amended 10.07.2024). Demand <b>kabhi mat todo</b> (Rule 157). Tender methods, EMD 2–5%, PS 3–5%, advance 30/40% — yeh numbers hamesha kaam aayenge.</p></div>
+      <div class="rulebox"><span class="rn">Authoritative sources used</span>
+      <p>• General Financial Rules 2017, Chapter 6 — Procurement of Goods and Services (DoE compilation updated up to 31.01.2026).<br>
+      • DoE OM No. <b>F.1/3/2024-PPD dated 10.07.2024</b> — amendment of Rules 149, 155, 161, 162 etc.<br>
+      • DoE OM No. <b>F.20/42/2021-PPD dated 05.06.2025</b> — special provisions for Scientific Ministries/Departments.<br>
+      • DoE OM No. <b>F.7/10/2021-PPD dated 23.02.2023</b> — restrictions on bidders from countries sharing a land border (Rule 144(x)).<br>
+      • DoE OM No. <b>F.1/26/2018-PPD dated 02.04.2019</b> — GeM mandate; deletion of Rule 148; Rule 155 “not available on GeM” condition.<br>
+      • DoPT OMs do <b>not</b> amend GFR — they govern service/conduct matters (CCS Rules).</p></div>
+      <div class="hook">VALIDATION STATUS: PASS · Rule citation exact · All figures cross-checked · Current as on 25.09.2026</div>`}
+];
+
+const QUIZ = [
+  { q:'GeM par ₹9,50,000 ki purchase kaise hogii?',
+    o:['Kisi bhi supplier se direct order','Kam se kam 3 different manufacturers mein sabse kam price wala GeM seller se','Advertised tender dena zaroori','Koi bhi quotation lena optional hai'],
+    a:1, why:'Rule 149(ii): above ₹50,000 and up to ₹10,00,000 → lowest price amongst sellers of at least three different manufacturers (as amended 10.07.2024).' },
+  { q:'Vikram ne ₹12,00,000 ki demand ko 3 × ₹4,00,000 mein tod diya. Kya yeh sahi hai?',
+    o:['Haan, har demand ₹10 lakh se kam hai','Nahi — Rule 157 aur Rule 149(viii) splitting ko prohibit karte hain','Haan, agar FA ki informal consent ho','Nahi, lekin sirf CPPP publishing ki wajah se'],
+    a:1, why:'Rule 157: demand shall not be divided into small quantities to avoid sanction of higher authority; Rule 149(viii): same for GeM L-1 buying/bidding/reverse auction.' },
+  { q:'Bid Security (EMD) ka range aur exemption kaun sahi hai?',
+    o:['5–10% of contract value; koi exemption nahi','2–5% of estimated value; MSEs aur DPIIT-recognised Startups exempt','3–5% of estimated value; sirf PSU exempt','Fixed ₹50,000 har tender mein'],
+    a:1, why:'Rule 170(i): 2% to 5% of estimated value; MSEs and DPIIT-recognised Startups are exempt.' },
+  { q:'Performance Security kab tak valid rehni chahiye?',
+    o:['30 din after award','45 din beyond bid validity','60 din beyond completion of all contractual obligations incl. warranty','1 saal'],
+    a:2, why:'Rule 171(ii): valid for 60 days beyond the date of completion of all contractual obligations of the supplier including warranty obligations.' },
+  { q:'Latest GeM threshold change kaun se order se aaya?',
+    o:['DoPT OM dt. 02.04.2019','DoE OM No. F.1/3/2024-PPD dated 10.07.2024','GFR 1963 Rule 139','DoE OM F.7/10/2021-PPD dt. 23.02.2023'],
+    a:1, why:'DoE, MoF OM No. F.1/3/2024-PPD dated 10.07.2024 raised the GeM tiers to ₹50,000 / ₹10,00,000 / above ₹10,00,000.' }
+];
+
+/* ================= ENGINE ================= */
+const stage=document.getElementById('stage'), chips=document.getElementById('chips');
+const playBtn=document.getElementById('play'), prevBtn=document.getElementById('prev'), nextBtn=document.getElementById('next');
+const muteBtn=document.getElementById('mute'), rateBtn=document.getElementById('rate');
+const sceneBar=document.getElementById('sceneBar'), sceneLbl=document.getElementById('sceneLbl');
+const audio=new Audio(); audio.preload='auto';
+let cur=0, playing=false, rate=1, muted=false, cueTimer=null;
+
+SCENES.forEach((s,i)=>{
+  const c=document.createElement('span'); c.className='cchip'; c.textContent=(i+1)+'. '+(s.kicker||s.title||'').replace(/<[^>]+>/g,'');
+  c.onclick=()=>go(i); chips.appendChild(c);
+});
+
+function fmt(n){ return '₹'+n.toLocaleString('en-IN'); }
+
+function render(i){
+  const s=SCENES[i]; stage.innerHTML='';
+  const d=document.createElement('div'); d.className='scene on'; stage.appendChild(d);
+
+  if(s.type==='cover'){
+    d.classList.add('ken');
+    d.innerHTML=`<img src="${s.img}" alt="">`;
+    const c=document.createElement('div'); c.className='cover';
+    c.innerHTML=`<h2>${s.title}</h2><div class="sub">${s.sub}</div><div class="tag">${s.tag}</div>`;
+    d.appendChild(c);
+  }
+  else if(s.type==='panel'){
+    d.classList.add('ken');
+    d.innerHTML=`<img src="${s.img}" alt="">`;
+    (s.bubbles||[]).forEach(b=>{
+      const el=document.createElement('div'); el.className='bubble'+(b.right?' rt':'');
+      el.style.left=b.x; el.style.top=b.y; el.style.width=b.w;
+      el.innerHTML=`<span class="who">${b.who}</span>${b.text}`;
+      d.appendChild(el);
+    });
+    if(s.overlayCard){
+      const oc=document.createElement('div');
+      oc.style.cssText=`position:absolute;left:${s.overlayCard.x};top:${s.overlayCard.y};width:${s.overlayCard.w};
+        background:#fff;border:3px solid #1b2a32;border-radius:10px;padding:8px 10px;
+        font-size:clamp(8px,.95vw,11.5px);line-height:1.35;box-shadow:4px 5px 0 rgba(27,42,50,.25);text-align:center`;
+      oc.innerHTML=s.overlayCard.html; d.appendChild(oc);
+    }
+    const cap=document.createElement('div'); cap.className='caption';
+    (s.caps||[]).forEach(t=>{ const p=document.createElement('div'); p.className='cap-line'; p.innerHTML=t; cap.appendChild(p); });
+    d.appendChild(cap);
+  }
+  else if(s.type==='card'||s.type==='end'){
+    d.innerHTML=`<div class="card"><div class="kicker">${s.kicker||''}</div><h2>${s.title}</h2>${s.body}</div>`;
+  }
+  else if(s.type==='explorer'){
+    d.innerHTML=`<div class="exp">
+      <div class="kicker">Interactive</div><h2>${s.title}</h2>
+      <div class="val" id="expVal">₹12,00,000</div>
+      <input type="range" id="expRange" min="0" max="25000000" step="50000" value="1200000">
+      <div class="tiers">
+        <div class="tier" data-lo="0" data-hi="50000"><span class="t1">Tier 1 · Up to ₹50,000</span><br>Rule 149(i) — GeM par kisi bhi available supplier se direct purchase (quality, specification, delivery period meet ho). <i>Automobiles: no ceiling.</i></div>
+        <div class="tier" data-lo="50000" data-hi="1000000"><span class="t1">Tier 2 · Above ₹50,000 – ₹10,00,000</span><br>Rule 149(ii) — kam se kam 3 different manufacturers mein lowest-price GeM seller. Online bidding / reverse auction tool use kar sakte hain.</div>
+        <div class="tier" data-lo="1000000" data-hi="999999999"><span class="t1">Tier 3 · Above ₹10,00,000</span><br>Rule 149(iii) — lowest price supplier <b>after mandatorily obtaining bids</b> using online bidding or reverse auction on GeM.</div>
+      </div>
+      <div class="note">${s.note}<br>GeM par item available nahi? → Rule 154 (≤ ₹50,000, certificate) · Rule 155 (₹50,001–₹5,00,000, 3-member Local Purchase Committee) · Rule 158 (five tender methods).<br>Advertised tender ≥ ₹50 lakh (Rule 161) · Limited Tender Enquiry ≤ ₹50 lakh, more than three firms (Rule 162).</div>
+    </div>`;
+    const r=d.querySelector('#expRange'), v=d.querySelector('#expVal');
+    const upd=()=>{
+      const n=+r.value; v.textContent=fmt(n);
+      d.querySelectorAll('.tier').forEach(t=>{
+        t.classList.toggle('act', n>+t.dataset.lo && n<=+t.dataset.hi);
+      });
+    };
+    r.oninput=upd; upd();
+  }
+  else if(s.type==='quiz'){
+    d.innerHTML=`<div class="quiz"><div class="kicker">Interactive</div><h2>${s.title}</h2><div id="qbox"></div></div>`;
+    const qb=d.querySelector('#qbox'); let score=0, done=0;
+    QUIZ.forEach((q,qi)=>{
+      const el=document.createElement('div'); el.className='q';
+      el.innerHTML=`<div class="qt">${qi+1}. ${q.q}</div>`;
+      q.o.forEach((o,oi)=>{
+        const b=document.createElement('button'); b.className='opt'; b.innerHTML=o;
+        b.onclick=()=>{
+          if(el.dataset.done) return; el.dataset.done='1'; done++;
+          el.querySelectorAll('.opt').forEach((x,xi)=>{
+            if(xi===q.a) x.classList.add('ok'); else x.classList.remove('no');
+            if(xi===oi && oi!==q.a) x.classList.add('no');
+            x.disabled=true;
+          });
+          if(oi===q.a) score++;
+          el.querySelector('.why').classList.add('show');
+          el.querySelector('.why').innerHTML=(oi===q.a?'✅ <b>Sahi!</b> ':'❌ <b>Galat.</b> ')+q.why;
+          const sc=document.getElementById('qscore'); if(sc) sc.textContent=`Score: ${score}/${QUIZ.length}`;
+        };
+        el.appendChild(b);
+      });
+      const w=document.createElement('div'); w.className='why'; el.appendChild(w);
+      qb.appendChild(el);
+    });
+    const sc=document.createElement('div'); sc.className='score'; sc.id='qscore'; sc.textContent=`Score: 0/${QUIZ.length}`;
+    qb.appendChild(sc);
+  }
+
+  sceneLbl.textContent=`Scene ${i+1} / ${SCENES.length}`;
+  sceneBar.style.width=((i)/(SCENES.length-1)*100)+'%';
+  [...chips.children].forEach((c,ci)=>c.classList.toggle('act',ci===i));
+  prevBtn.disabled=(i===0); nextBtn.disabled=(i===SCENES.length-1);
+}
+
+function loadAudio(i){
+  clearTimeout(cueTimer);
+  const s=SCENES[i];
+  if(s.audio){ audio.src=s.audio; } else { audio.removeAttribute('src'); audio.load(); }
+  document.querySelectorAll('.cap-line').forEach(p=>p.classList.remove('on'));
+}
+
+function startCues(){
+  clearTimeout(cueTimer);
+  const s=SCENES[cur];
+  if(!s.caps||!audio.duration||!isFinite(audio.duration)) return;
+  const total=s.caps.reduce((a,c)=>a+c.length,0);
+  let acc=0;
+  s.caps.forEach((c,ci)=>{
+    const start=(acc/total)*audio.duration; acc+=c.length;
+    const lines=document.querySelectorAll('.cap-line');
+    setTimeout(()=>{ lines.forEach(l=>l.classList.remove('on')); if(lines[ci]) lines[ci].classList.add('on'); }, start*1000);
+  });
+}
+
+function play(){
+  const s=SCENES[cur];
+  if(!s.audio){ playing=false; playBtn.textContent='▶ Play'; return; }
+  audio.playbackRate=rate; audio.muted=muted;
+  audio.play().then(()=>{ playing=true; playBtn.textContent='⏸ Pause'; }).catch(()=>{ playing=false; playBtn.textContent='▶ Play'; });
+}
+function pause(){ audio.pause(); playing=false; playBtn.textContent='▶ Play'; }
+
+function go(i){
+  if(i<0||i>=SCENES.length) return;
+  pause(); cur=i; render(i); loadAudio(i);
+  if(SCENES[i].audio) play(); else { playing=false; playBtn.textContent='▶ Play'; }
+}
+function next(){ go(cur+1); }
+function prev(){ go(cur-1); }
+
+playBtn.onclick=()=>playing?pause():(SCENES[cur].audio?play():go(cur+1));
+nextBtn.onclick=next; prevBtn.onclick=prev;
+muteBtn.onclick=()=>{ muted=!muted; audio.muted=muted; muteBtn.textContent=muted?'🔇':'🔊'; };
+rateBtn.onclick=()=>{ rate=rate===1?1.25:(rate===1.25?0.75:1); rateBtn.textContent=rate+'x'; audio.playbackRate=rate; };
+
+audio.addEventListener('loadedmetadata',startCues);
+audio.addEventListener('ended',()=>{
+  playing=false; playBtn.textContent='▶ Play';
+  if(cur<SCENES.length-1) setTimeout(next,450);
+});
+audio.addEventListener('timeupdate',()=>{
+  if(audio.duration) sceneBar.style.width=(((cur)+(audio.currentTime/audio.duration))/(SCENES.length-1)*100)+'%';
+});
+document.addEventListener('keydown',e=>{
+  if(e.code==='Space'){ e.preventDefault(); playing?pause():play(); }
+  if(e.code==='ArrowRight') next();
+  if(e.code==='ArrowLeft') prev();
+  if(e.key==='m'||e.key==='M') muteBtn.click();
+});
+
+render(0); loadAudio(0);
+</script>
+</body>
+</html>
