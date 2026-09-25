@@ -256,6 +256,8 @@ every rule, sub-rule, clause, proviso, explanation, exception and amendment foot
 <div class="card"><a href="/chapter6-complete.html">📖 Written reference</a><span>All 67 rules, every provision, searchable</span></div>
 <div class="card"><a href="/index.html">▶ Episode 1 — Goods</a><span>Comic explainer, Rules 142–176</span></div>
 <div class="card"><a href="/services.html">▶ Episode 2 — Services</a><span>Comic explainer, Rules 177–206</span></div>
+<div class="card"><a href="/docs/narration-transcript.md">📝 Full narration transcript</a><span>All 134 clips in playback order, 65:04, with timestamps</span></div>
+<div class="card"><a href="/docs/gfr-chapter-6-complete.md">📄 Complete reference (one file)</a><span>All 67 rules verbatim + Hinglish, 161 KB Markdown</span></div>
 </div>
 
 <div class="api"><b>JSON API for agents</b> — open CORS, no key needed.
@@ -414,5 +416,5 @@ server.listen(PORT, HOST, () => {
   console.log('  rules      ' + RULES.length + ' (goods ' + GOODS.length + ', services ' + SVCS.length + ')');
   console.log('  pages      granular-video.html · chapter6-complete.html · index.html · services.html');
   console.log('  api        /api/stats /api/rules /api/rules/<id> /api/search /api/openapi.json /api/copilotkit');
-  console.log('  docs       /docs/index.md  (+ ' + RULES.length + ' rule files)');
+  console.log('  docs       /docs/index.md  (+ ' + RULES.length + ' rule files, transcript, amendments)');
 });

@@ -103,6 +103,11 @@ const n = parseInt(process.argv[3] || '10', 10);
 const start = (batch - 1) * n;
 const sel = clips.slice(start, start + n);
 
+/* when required as a module, hand the computed clips to the caller instead of printing */
+if (require.main !== module) {
+  module.exports = { clips: clips, perRule: perRule, RULES: RULES };
+} else {
+
 console.log('TOTAL CLIPS NEEDED: ' + clips.length + ' | total chars: ' +
   clips.reduce(function (a, c) { return a + c.text.length; }, 0));
 console.log('CLIPS PER RULE:');
@@ -125,3 +130,4 @@ sel.forEach(function (c, i) {
     ' chars | ' + c.beats.length + ' beats | ' + files[k] + ' ---');
   console.log(c.text);
 });
+}

@@ -452,7 +452,12 @@ no manual timestamps.
   bugs: `findRule` never resolved the hyphenated rule ids (`172-1` returned 404, because replacing
   both brackets with a dash leaves a trailing dash), and the router pointed `/index.html` at a
   `landing.html` file that does not exist, so the Episode 1 comic 404'd on its own server.
-- `bash data/_check.sh` runs all eight tests and exits non-zero if any fails.
+- `node data/_transcript.js` writes `docs/narration-transcript.md` — the entire narration in
+  playback order, 7 modules and 134 clips, with per-clip durations computed from each MP3's size
+  and a running timestamp. It also cross-checks the clip texts produced by `data/_gen.js` against
+  the paths registered in `data/studio.js` and fails on any drift between the two. Running time
+  **65:04**. This is the document to read if you want to follow the video as text.
+- `bash data/_check.sh` runs all nine tests and exits non-zero if any fails.
 
 ### Post-completion corrections
 The first "100% complete" claim was wrong. Auditing the data against the official GFR 2017
@@ -516,6 +521,7 @@ node data/_content.js            # checks each clip's size against its caption l
 node data/_ref.js               # renders the written reference and checks every provision
 node data/_figures.js           # checks every figure in the commentary is backed by the rules
 node data/_docs.js               # regenerates docs/*.md from the data files
+node data/_transcript.js         # writes docs/narration-transcript.md with real clip timings
 node data/_deploy.js             # boots server.js and exercises the whole API
 bash data/_check.sh             # runs all eight tests, exits non-zero on any failure
 ls audio/v-*.mp3 | wc -l           # clip count so far
