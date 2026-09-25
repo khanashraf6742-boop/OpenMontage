@@ -418,6 +418,9 @@ no manual timestamps.
   Rules **142–206** is now narrated in studio Hinglish.
 - `node data/_verify.js` reports: 67/67 rules mapped, 123 studio segments live, **0 TTS fallback**,
   0 mapping mismatches, 0 missing or undersized clips. An HTTP sweep of all 123 files returns 200.
+- `node data/_e2e.js` runs the player's **own** inline script against the real data and reports
+  **133 of 133 segments studio-recorded, 0 TTS fallback** — the 123 rule clips plus the 7 module
+  intros and 3 callouts, so the whole video is narrated with no device TTS anywhere.
 - Rule 173 (transparency, competition, fairness) is recorded in full across seven clips.
 - Clip filenames are URL-safe: Rule 172(1) is `v-172-1`, Rule 175(1) is `v-175-1`.
 - Verified after each batch: studio segments live, 0 mapping mismatches, all clips serving HTTP 200.
@@ -452,7 +455,8 @@ greedy-split point simply continues into the next batch (Rules 151, 161, 164, 19
 ## How to verify a batch
 ```bash
 node data/_gen.js <batch-no> 10   # prints the exact clip texts + rule/clip counts
-node data/_verify.js             # checks mapping + that every referenced clip file exists
+node data/_verify.js             # mapping + every referenced clip file exists
+node data/_e2e.js                # runs the player's OWN script and checks every segment
 ls audio/v-*.mp3 | wc -l           # clip count so far
 ```
 Then append the rule → clip-file mapping to `data/studio.js`. The player re-derives the beat
