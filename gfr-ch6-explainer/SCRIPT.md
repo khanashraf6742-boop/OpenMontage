@@ -413,14 +413,38 @@ no manual timestamps.
 **Total requirement: 123 clips / 114,576 characters of narration.**
 
 ### Progress
-- **123 of 123 clips recorded (100%) — Chapter 6 narration is COMPLETE.**
+- **124 of 124 clips recorded (100%) — Chapter 6 narration is COMPLETE** (after adding Rule 144(x)).
 - Every rule, sub-rule, clause, sub-clause, proviso, explanation, exception and amendment footnote of
   Rules **142–206** is now narrated in studio Hinglish.
 - `node data/_verify.js` reports: 67/67 rules mapped, 123 studio segments live, **0 TTS fallback**,
   0 mapping mismatches, 0 missing or undersized clips. An HTTP sweep of all 123 files returns 200.
 - `node data/_e2e.js` runs the player's **own** inline script against the real data and reports
-  **133 of 133 segments studio-recorded, 0 TTS fallback** — the 123 rule clips plus the 7 module
+  **134 of 134 segments studio-recorded, 0 TTS fallback** — the 124 rule clips plus the 7 module
   intros and 3 callouts, so the whole video is narrated with no device TTS anywhere.
+- `node data/_content.js` derives the caption the player will show for every segment and checks each
+  clip's size against it. It found a real defect: `v-186.mp3` had been reported as generated
+  successfully but was only ~40% of the length its caption required. **It cannot detect stale audio
+  of similar length** — that is why the Rule 144/173 gaps were found by auditing the source PDF,
+  not by a test.
+
+### Post-completion corrections
+The first "100% complete" claim was wrong. Auditing the data against the official GFR 2017
+compilation (amended to 31.07.2024) found **three sub-rules that were absent** even though the
+player reported full coverage — the tests only verified that a clip *file existed* per segment,
+never that every provision in the rule was present:
+
+- **Rule 144(x)** was missing entirely — the DoE power, by order in writing, to impose restrictions
+  including prior registration and/or screening on procurement from bidders from, or having
+  commercial arrangements with an entity from, a country or class of countries, on grounds of
+  defence of India or matters directly or indirectly related thereto including national security.
+  Inserted vide OM No. F.7/10/2021-PPD dated 23.02.2023. Rule 144 grew from 4 to 5 clips.
+- **Rule 173(ii)** was missing — the catch-all for any other information the procuring entity
+  considers necessary for bidders to submit their bids.
+- **Rule 173(ix)** was missing — specifications clearly stated without ambiguity so bidders can
+  send meaningful bids, and broad-based to attract sufficient bidders.
+
+Rules 144 and 173 were re-recorded. Every other rule's clip files were verified unchanged by
+regenerating all thirteen batches.
 - Rule 173 (transparency, competition, fairness) is recorded in full across seven clips.
 - Clip filenames are URL-safe: Rule 172(1) is `v-172-1`, Rule 175(1) is `v-175-1`.
 - Verified after each batch: studio segments live, 0 mapping mismatches, all clips serving HTTP 200.
@@ -457,6 +481,7 @@ greedy-split point simply continues into the next batch (Rules 151, 161, 164, 19
 node data/_gen.js <batch-no> 10   # prints the exact clip texts + rule/clip counts
 node data/_verify.js             # mapping + every referenced clip file exists
 node data/_e2e.js                # runs the player's OWN script and checks every segment
+node data/_content.js            # checks each clip's size against its caption length
 ls audio/v-*.mp3 | wc -l           # clip count so far
 ```
 Then append the rule → clip-file mapping to `data/studio.js`. The player re-derives the beat
