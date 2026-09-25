@@ -52,5 +52,12 @@ window.GFR_STUDIO = {
   '184': ['audio/v-184.mp3'],
   '185': ['audio/v-185.mp3'],
   '186': ['audio/v-186.mp3', 'audio/v-186b.mp3'],
-  '187': ['audio/v-187.mp3']
+  '187': ['audio/v-187.mp3'],
+  '188': ['audio/v-188.mp3'],
+  '189': ['audio/v-189.mp3'],
+  '190': ['audio/v-190.mp3'],
+  '191': ['audio/v-191.mp3'],
+  '192': ['audio/v-192.mp3', 'audio/v-192b.mp3'],
+  '193': ['audio/v-193.mp3'],
+  '194': ['audio/v-194.mp3', 'audio/v-194b.mp3', 'audio/v-194c.mp3']
 };
