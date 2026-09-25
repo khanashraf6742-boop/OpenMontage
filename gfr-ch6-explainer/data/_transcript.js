@@ -79,7 +79,7 @@ const clipInfo = CLIPS.map(c => {
    and the generator have drifted apart */
 const drift = clipInfo.filter(c => c.mapped && c.mapped !== c.file);
 
-const BYTES_PER_SEC = 8000;      /* 64 kbps / 8 */
+const BYTES_PER_SEC = 4000;      /* 32 kbps / 8, verified with ffprobe */
 const ID3 = 45;                  /* ID3v2 tag on every clip */
 const durOf = f => {
   try { return Math.max(0, (fs.statSync(path.join(ROOT, f)).size - ID3) / BYTES_PER_SEC); }
@@ -95,7 +95,7 @@ L.push('# GFR 2017 Chapter 6 — full narration transcript');
 L.push('');
 L.push('Everything the granular video says, in playback order, with real per-clip durations');
 L.push('computed from each MP3\'s size (every clip is MPEG-2 Layer III, 64 kbps, 24 kHz mono,');
-L.push('so duration is exactly (bytes − 45) / 8000).');
+L.push('so duration is exactly (bytes − 45) / 4000).');
 L.push('');
 L.push('Source: Department of Expenditure, Ministry of Finance — GFR 2017 compilation updated');
 L.push('to 31.01.2026. The 10.07.2024 amendments (OM No. F.1/3/2024-PPD) are in force.');

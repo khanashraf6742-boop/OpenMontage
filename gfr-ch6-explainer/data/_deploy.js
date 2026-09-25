@@ -26,6 +26,20 @@ function get(p, opts) {
     req.end();
   });
 }
+/* binary fetch: Range checks must compare real bytes, not UTF-16 string length */
+function getRaw(p, range) {
+  return new Promise((resolve, reject) => {
+    const headers = range ? { Range: range } : {};
+    const req = http.request(BASE + p, { method: 'GET', headers }, res => {
+      const chunks = [];
+      res.on('data', c => chunks.push(c));
+      res.on('end', () => resolve({ status: res.statusCode, headers: res.headers,
+                                    body: Buffer.concat(chunks) }));
+    });
+    req.on('error', reject);
+    req.end();
+  });
+}
 const ok = (cond, msg) => { if (!cond) problems.push(msg); };
 
 (async () => {
@@ -120,6 +134,30 @@ const ok = (cond, msg) => { if (!cond) problems.push(msg); };
     if (r.status !== 200) badDoc.push(d);
   }
   ok(badDoc.length === 0, 'docs failing to serve: ' + badDoc.join(', '));
+
+  /* ---- the MP4 video ---- */
+  const MP4 = path.join(ROOT, 'gfr-chapter-6.mp4');
+  if (fs.existsSync(MP4)) {
+    const size = fs.statSync(MP4).size;
+    const head = await getRaw('/gfr-chapter-6.mp4', 'bytes=0-1023');
+    ok(head.status === 206, 'MP4 range request must return 206, got ' + head.status);
+    ok(/video\/mp4/.test(head.headers['content-type'] || ''),
+      'MP4 must be served as video/mp4, got ' + head.headers['content-type']);
+    ok(/^bytes 0-1023\//.test(head.headers['content-range'] || ''),
+      'MP4 content-range must start "bytes 0-1023/", got ' + head.headers['content-range']);
+    ok(head.body.length === 1024, 'MP4 first range must be 1024 bytes, got ' + head.body.length);
+    const tail = await getRaw('/gfr-chapter-6.mp4', 'bytes=' + (size - 1) + '-');
+    ok(tail.status === 206 && tail.body.length === 1,
+      'MP4 final byte must be requestable, got ' + tail.status + ' / ' + tail.body.length);
+    const over = await getRaw('/gfr-chapter-6.mp4', 'bytes=0-999999999');
+    ok(over.status === 206 && over.body.length === size,
+      'MP4 must clamp an over-long range to the file size, got ' + over.status +
+      ' / ' + over.body.length + ' of ' + size);
+    ok(size > 10 * 1024 * 1024, 'MP4 looks too small to be the full video (' + size + ' bytes)');
+    console.log('mp4 served            : ' + Math.round(size / 1048576) + ' MB, range requests ok');
+  } else {
+    console.log('mp4 served            : (not rendered yet - run data/_video.py)');
+  }
 
   /* path traversal must not escape the deliverable */
   ok((await get('/../package.json')).status !== 200, 'path traversal should be blocked');

@@ -456,7 +456,7 @@ no manual timestamps.
   playback order, 7 modules and 134 clips, with per-clip durations computed from each MP3's size
   and a running timestamp. It also cross-checks the clip texts produced by `data/_gen.js` against
   the paths registered in `data/studio.js` and fails on any drift between the two. Running time
-  **65:04**. This is the document to read if you want to follow the video as text.
+  **130:07**. This is the document to read if you want to follow the video as text.
 - `node data/_json.js` exports the corpus to `data/ch6.json` for consumers that cannot read
   JavaScript — the awesome-llm-apps skill script and the notebooklm-py builder both depend on
   it. `data/_integrations.js` fails if it has drifted from the data files.
@@ -534,7 +534,7 @@ node data/_transcript.js         # writes docs/narration-transcript.md with real
 node data/_json.js               # exports data/ch6.json for non-JS consumers
 node data/_integrations.js       # validates the agent-platform adapters
 node data/_deploy.js             # boots server.js and exercises the whole API
-bash data/_check.sh             # runs all eight tests, exits non-zero on any failure
+bash data/_check.sh             # runs all twelve tests, exits non-zero on any failure
 ls audio/v-*.mp3 | wc -l           # clip count so far
 ```
 Then append the rule → clip-file mapping to `data/studio.js`. The player re-derives the beat
@@ -542,3 +542,87 @@ segments itself, so no other change is needed.
 
 ## Already recorded (studio)
 Module intros ×7 + critical callouts ×3 (`audio/g-*.mp3`) and Batch 1 (`audio/v-142 … v-147`).
+
+---
+
+# RENDERED MP4 VIDEO
+
+`gfr-chapter-6.mp4` — the full narrated video as a single downloadable file, so it can be watched
+outside the browser, opened in any player, or handed to someone with no server.
+
+| | |
+|---|---|
+| Running time | **2 h 10 min** (7,808.6 s) |
+| Resolution | 1280 × 720, H.264 (Constrained Baseline), yuv420p |
+| Frame rate | 5 fps |
+| Audio | AAC-LC, 24 kHz mono, 40 kbps |
+| Size | **95 MB** |
+| Container | MP4 with `moov` before `mdat` (`+faststart`) — streams while downloading |
+| Slides | 134 (7 module intros + 124 rule clips + 3 callouts), 39,043 frames |
+
+## How it is built
+
+```bash
+node data/_segments.js            # writes data/_segments.json — the player's own playback order
+python3 data/_video.py            # renders the slides and muxes the video
+node data/_mp4.js                 # verifies the result against the playback plan
+```
+
+`data/_segments.js` derives the order from the **same sources the player uses** (`_gen.js` clip
+texts, `studio.js` paths, and the player's inline `MODULES`/`CALLOUTS`), so the MP4 and the
+in-browser player can never drift apart.
+
+`data/_video.py` renders one PNG per segment with ImageMagick, then:
+
+1. builds the video track with the concat demuxer, giving each slide its real duration;
+2. concatenates the 134 MP3 clips into a single AAC track;
+3. muxes the two with `+faststart`.
+
+Options: `--out --width --height --fps --crf --audio-bitrate --limit --keep`.
+
+ffmpeg is located through `imageio_ffmpeg.get_ffmpeg_exe()` with a `shutil.which("ffmpeg")`
+fallback; install it with `pip install imageio-ffmpeg` if it is not on `PATH`.
+
+## Two things worth knowing about the render
+
+**Slide text is wrapped in Python, not by ImageMagick.** `caption:` wraps for you but grows the
+canvas to fit, and past roughly 500 characters it fails outright with `width or height exceeds
+limit`. The text is wrapped here at a measured 0.61 px per character per point, split into blocks
+of at most 420 characters (ImageMagick refuses a `label:` much beyond ~700 characters), and each
+block is stacked with `-append` after being padded to a common width — otherwise `-append` fills
+the gap with black and shows a bar down the slide.
+
+**The narration is 2 h 10 min, not 65 min.** The clips are 32 kbps mono, not 64 kbps, so the
+duration formula is `(bytes − 45) / 4000`. The 8000 figure that was in use understated every
+running time by half — it has been corrected in `data/_segments.js`, `data/_transcript.js`,
+`docs/narration-transcript.md`, `server.js` and `integrations/README.md`. The in-browser player
+was never affected: it reads `audio.duration` from the browser, not from the byte count.
+
+## Verifying the MP4
+
+`node data/_mp4.js` parses the MP4 box structure directly — no ffprobe needed — and checks the
+`ftyp`/`moov`/`mdat` layout, that `moov` precedes `mdat`, both tracks' durations against
+`data/_segments.json`, and that the video frame count matches the slide plan at the render fps.
+It exits 1 on any mismatch, and has been mutation-tested against a truncated file and against
+random bytes.
+
+```bash
+node data/_mp4.js
+#   file    : gfr-chapter-6.mp4
+#   bytes   : 99811274 (95 MB)
+#   boxes   : ftyp moov free mdat
+#   faststart: moov@32 before mdat@1495831
+#   movie   : 7808.600 s  (130:09)
+#   video   : vide, 39043 frames, 7808.600 s
+#   audio   : soun, 7801.008 s
+#   plan    : 134 segments, 7807.500 s
+#   MP4 FILE CHECK: PASS
+```
+
+## Serving it
+
+`server.js` serves `/gfr-chapter-6.mp4` as `video/mp4` with HTTP **Range** support, so the browser
+can seek a 95 MB video instead of buffering all of it. Over-long ranges (`bytes=0-999999999`)
+are clamped rather than rejected, because players send them on the first request. `data/_deploy.js`
+checks the content type, the `206` response, the `content-range` header, the exact byte count and
+the final byte.

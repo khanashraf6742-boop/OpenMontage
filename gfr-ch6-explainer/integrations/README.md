@@ -19,10 +19,11 @@ node server.js 8080          # binds 0.0.0.0, no dependencies, no API keys
 | What | URL |
 |---|---|
 | Granular narrated video (481 beats, 134 clips, Hinglish) | `/granular-video.html` |
+| **Rendered MP4 video**, 2 h 10 min, 95 MB, H.264 + AAC | `/gfr-chapter-6.mp4` |
 | Exhaustive written reference | `/chapter6-complete.html` |
 | Episode 1 — Goods comic (Rules 142–176) | `/index.html` |
 | Episode 2 — Services comic (Rules 177–206) | `/services.html` |
-| Full narration transcript, 65:04, with timestamps | `/docs/narration-transcript.md` |
+| Full narration transcript, 130:07, with timestamps | `/docs/narration-transcript.md` |
 | Markdown knowledge base | `/docs/index.md` |
 | JSON corpus (for non-JS consumers) | `/data/ch6.json` |
 | JSON API | `/api/stats`, `/api/rules`, `/api/rules/{id}`, `/api/search?q=` |

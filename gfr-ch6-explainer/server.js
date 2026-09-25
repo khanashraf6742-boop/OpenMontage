@@ -151,22 +151,49 @@ function answer(question) {
 const MIME = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8',
   '.json': 'application/json; charset=utf-8', '.md': 'text/markdown; charset=utf-8',
-  '.mp3': 'audio/mpeg', '.css': 'text/css; charset=utf-8',
+  '.mp3': 'audio/mpeg', '.mp4': 'video/mp4',
+  '.css': 'text/css; charset=utf-8',
   '.svg': 'image/svg+xml', '.png': 'image/png', '.txt': 'text/plain; charset=utf-8',
   '.ico': 'image/x-icon'
 };
+/* Media needs byte ranges or the browser cannot seek a 120 MB video. */
+const RANGEABLE = new Set(['.mp4', '.mp3', '.wav', '.ogg', '.webm', '.m4a']);
 const PAGES = ['index.html', 'services.html', 'chapter6-complete.html', 'granular-video.html'];
-function serveStatic(res, urlPath) {
+function serveStatic(req, res, urlPath) {
   const rel = decodeURIComponent(urlPath.replace(/^\/+/, ''));
   const abs = path.normalize(path.join(ROOT, rel));
   if (!abs.startsWith(ROOT)) { res.writeHead(403).end('forbidden'); return; }
-  fs.readFile(abs, (err, buf) => {
-    if (err) { res.writeHead(404, { 'content-type': 'text/plain' }).end('not found: ' + rel); return; }
-    res.writeHead(200, {
-      'content-type': MIME[path.extname(abs).toLowerCase()] || 'application/octet-stream',
-      'cache-control': 'no-cache'
-    });
-    res.end(buf);
+  fs.stat(abs, (err, st) => {
+    if (err || !st.isFile()) {
+      res.writeHead(404, { 'content-type': 'text/plain' }).end('not found: ' + rel);
+      return;
+    }
+    const type = MIME[path.extname(abs).toLowerCase()] || 'application/octet-stream';
+    const base = { 'content-type': type, 'cache-control': 'no-cache',
+                   'accept-ranges': 'bytes' };
+    const range = req.headers.range;
+    const m = range && /^bytes=(\d*)-(\d*)$/.exec(range.trim());
+    if (m && RANGEABLE.has(path.extname(abs).toLowerCase())) {
+      const size = st.size;
+      let start = m[1] === '' ? size - parseInt(m[2], 10) : parseInt(m[1], 10);
+      let end = m[2] === '' ? size - 1 : parseInt(m[2], 10);
+      // A last-byte-pos past the end is clamped, not rejected: players routinely
+      // ask for "bytes=0-999999999" on the first request.
+      if (isNaN(start) || isNaN(end) || start >= size || end < 0) {
+        res.writeHead(416, Object.assign({ 'content-range': 'bytes */' + size }, base)).end();
+        return;
+      }
+      if (start < 0) start = 0;
+      if (end >= size) end = size - 1;
+      res.writeHead(206, Object.assign(base, {
+        'content-range': 'bytes ' + start + '-' + end + '/' + size,
+        'content-length': end - start + 1
+      }));
+      fs.createReadStream(abs, { start, end }).pipe(res);
+      return;
+    }
+    res.writeHead(200, Object.assign(base, { 'content-length': st.size }));
+    fs.createReadStream(abs).pipe(res);
   });
 }
 
@@ -252,11 +279,12 @@ every rule, sub-rule, clause, proviso, explanation, exception and amendment foot
 <p>Source: Department of Expenditure, Ministry of Finance — GFR 2017 updated to 31.01.2026.</p></header>
 
 <div class="cards">
+<div class="card"><a href="/gfr-chapter-6.mp4">🎞 Download the MP4 video</a><span>2 h 10 min · 1280×720 · 120 MB · all 134 narrated slides</span></div>
 <div class="card"><a href="/granular-video.html">🎬 Granular narrated video</a><span>481 beats · 7 modules · 134 studio clips · Hinglish</span></div>
 <div class="card"><a href="/chapter6-complete.html">📖 Written reference</a><span>All 67 rules, every provision, searchable</span></div>
 <div class="card"><a href="/index.html">▶ Episode 1 — Goods</a><span>Comic explainer, Rules 142–176</span></div>
 <div class="card"><a href="/services.html">▶ Episode 2 — Services</a><span>Comic explainer, Rules 177–206</span></div>
-<div class="card"><a href="/docs/narration-transcript.md">📝 Full narration transcript</a><span>All 134 clips in playback order, 65:04, with timestamps</span></div>
+<div class="card"><a href="/docs/narration-transcript.md">📝 Full narration transcript</a><span>All 134 clips in playback order, 130:01, with timestamps</span></div>
 <div class="card"><a href="/docs/gfr-chapter-6-complete.md">📄 Complete reference (one file)</a><span>All 67 rules verbatim + Hinglish, 161 KB Markdown</span></div>
 </div>
 
@@ -405,9 +433,9 @@ const server = http.createServer((req, res) => {
         '/api/search?q=', '/api/openapi.json', '/api/copilotkit', '/docs/{file}.md']
     });
   }
-  if (p === '/docs' || p === '/docs/') return serveStatic(res, '/docs/index.md');
+  if (p === '/docs' || p === '/docs/') return serveStatic(req, res, '/docs/index.md');
   if (p.startsWith('/api/')) return json(res, 404, { error: 'unknown endpoint: ' + p });
-  return serveStatic(res, p);
+  return serveStatic(req, res, p);
 });
 
 server.listen(PORT, HOST, () => {
