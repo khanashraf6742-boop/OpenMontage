@@ -413,9 +413,11 @@ no manual timestamps.
 **Total requirement: 124 clips / 114,699 characters of narration.**
 
 ### Progress
-- **30 of 124 clips recorded (24%)** — Rules **142–156 fully recorded** (15 of 67 rules).
-- Verified after each batch: 30 studio segments live, 0 mapping mismatches, no partially recorded
-  rule, all 30 clips serving HTTP 200.
+- **40 of 124 clips recorded (32%)** — Rules **142–160 fully recorded** (19 of 67 rules);
+  Rule 161 is at 2 of its 4 clips because its narration spans the batch-4/5 boundary.
+- Verified after each batch: studio segments live, 0 mapping mismatches, all clips serving HTTP 200.
+- `data/_reconcile.sh` recovers a rewound local branch without force-pushing (this sandbox
+  rewinds local history on restart while the working tree survives).
 - The clip generator now lives in the repo at `data/_gen.js` (see the verification command below);
   it reproduces the player's beat construction and 1450-character greedy split byte-identically.
 - Note: six verbatim beats exceed 1380 characters (Rules 150, 159, 162, 164, 170, 175(1)); these are split
@@ -428,8 +430,8 @@ no manual timestamps.
 | 1 | 142, 143(×2), 144(×4), 145, 146, 147 | 10 | ✅ **DONE** |
 | 2 | 148, 149(×4), 150(×3), 151(×2) | 10 | ✅ **DONE** |
 | 3 | 151, 152, 153(×2), 154(×2), 155(×3), 156 | 10 | ✅ **DONE** |
-| 4 | 157, 158, 159(×4), 160(×2), 161(×2) | 10 | ⏳ next |
-| 5 | 161(×2), 162(×4), 163(×2), 164(×2) | 10 | ⏳ |
+| 4 | 157, 158, 159(×4), 160(×2), 161(×2) | 10 | ✅ **DONE** |
+| 5 | 161(×2), 162(×4), 163(×2), 164(×2) | 10 | ⏳ next |
 | 6 | 164(×2), 165, 166(×2), 167(×3), 168, 169 | 10 | ⏳ |
 | 7 | 170(×5), 171(×3), 172(1)(×2) | 10 | ⏳ |
 | 8 | 172(2), 173(×7), 174(×2) | 10 | ⏳ |
