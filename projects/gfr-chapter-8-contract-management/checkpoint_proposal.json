@@ -1,0 +1,180 @@
+{
+  "version": "1.0",
+  "project_id": "gfr-chapter-8-contract-management",
+  "pipeline_type": "animated-explainer",
+  "stage": "proposal",
+  "status": "completed",
+  "timestamp": "2026-09-25T18:26:23.406284+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "proposal_packet": {
+      "version": "1.0",
+      "concept_options": [
+        {
+          "id": "c1",
+          "title": "Ten office scenes, clause by clause",
+          "hook": "Neha ka pehla signature",
+          "narrative_structure": "story",
+          "visual_approach": "illustrated office panels + progressive rule cards",
+          "target_duration_seconds": 840,
+          "why_this_works": "decision points make rules memorable; exact citations on screen"
+        },
+        {
+          "id": "c2",
+          "title": "Exam-trap countdown",
+          "hook": "9 galtiyan jo exam mein hoti hain",
+          "narrative_structure": "myth_busting",
+          "visual_approach": "trap cards",
+          "target_duration_seconds": 600,
+          "why_this_works": "high recall, but weaker full coverage"
+        },
+        {
+          "id": "c3",
+          "title": "Timeline of amendments",
+          "hook": "2017 se 2026 tak kya badla",
+          "narrative_structure": "timeline",
+          "visual_approach": "timeline graphics",
+          "target_duration_seconds": 540,
+          "why_this_works": "currency focus, but light on base rules"
+        }
+      ],
+      "selected_concept": {
+        "concept_id": "c1",
+        "rationale": "Only option giving full granular coverage with scenarios + currency overlays"
+      },
+      "production_plan": {
+        "pipeline": "animated-explainer",
+        "render_runtime": "ffmpeg",
+        "stages": [
+          {
+            "stage": "assets",
+            "tools": [
+              {
+                "tool_name": "generate_speech",
+                "role": "narration",
+                "available": true
+              },
+              {
+                "tool_name": "generate_image",
+                "role": "scene art",
+                "available": true
+              }
+            ],
+            "approach": "assistant-native generation; user-selected voice"
+          },
+          {
+            "stage": "compose",
+            "tools": [
+              {
+                "tool_name": "ffmpeg",
+                "role": "render",
+                "available": true
+              },
+              {
+                "tool_name": "pillow",
+                "role": "frame states",
+                "available": true
+              }
+            ],
+            "approach": "timed states + xfade; libass caption burn-in"
+          }
+        ],
+        "decision_log_ref": "/home/user/OpenMontage/projects/gfr-chapter-8-contract-management/decision_log.json"
+      },
+      "cost_estimate": {
+        "total_estimated_usd": 0.0,
+        "line_items": [
+          {
+            "tool": "generate_speech",
+            "operation": "10 clips",
+            "estimated_usd": 0.0
+          },
+          {
+            "tool": "generate_image",
+            "operation": "10 images",
+            "estimated_usd": 0.0
+          }
+        ],
+        "budget_verdict": "no_budget_set"
+      },
+      "approval": {
+        "status": "approved"
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "gfr-chapter-8-contract-management",
+      "decisions": [
+        {
+          "decision_id": "d1",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "runtime",
+          "options_considered": [
+            {
+              "option_id": "ffmpeg",
+              "label": "ffmpeg + Pillow",
+              "score": 0.9,
+              "reason": "only runtime available"
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.1,
+              "reason": "no headless browser in sandbox"
+            }
+          ],
+          "selected": "ffmpeg",
+          "reason": "browser-based runtimes unusable"
+        },
+        {
+          "decision_id": "d2",
+          "stage": "assets",
+          "category": "voice_selection",
+          "subject": "narrator",
+          "options_considered": [
+            {
+              "option_id": "voice-00",
+              "label": "Hindi educational voice A",
+              "score": 1.0,
+              "reason": "user pick"
+            },
+            {
+              "option_id": "voice-01",
+              "label": "Hindi educational voice B",
+              "score": 0.5,
+              "reason": "not selected"
+            }
+          ],
+          "selected": "voice-00",
+          "reason": "user audition"
+        },
+        {
+          "decision_id": "d3",
+          "stage": "assets",
+          "category": "music_source",
+          "subject": "music bed",
+          "options_considered": [
+            {
+              "option_id": "none",
+              "label": "no music",
+              "score": 0.6,
+              "reason": "stock providers unreachable"
+            },
+            {
+              "option_id": "pixabay",
+              "label": "Pixabay",
+              "score": 0.0,
+              "reason": "blocked"
+            }
+          ],
+          "selected": "none",
+          "reason": "network constraint"
+        }
+      ]
+    }
+  },
+  "style_playbook": "flat-motion-graphics"
+}

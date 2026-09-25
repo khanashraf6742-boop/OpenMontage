@@ -1,0 +1,72 @@
+{
+  "version": "1.0",
+  "project_id": "gfr-chapter-8-contract-management",
+  "decisions": [
+    {
+      "decision_id": "d1",
+      "stage": "proposal",
+      "category": "render_runtime_selection",
+      "subject": "runtime",
+      "options_considered": [
+        {
+          "option_id": "ffmpeg",
+          "label": "ffmpeg + Pillow",
+          "score": 0.9,
+          "reason": "only runtime available"
+        },
+        {
+          "option_id": "remotion",
+          "label": "Remotion",
+          "score": 0.1,
+          "reason": "no headless browser in sandbox"
+        }
+      ],
+      "selected": "ffmpeg",
+      "reason": "browser-based runtimes unusable"
+    },
+    {
+      "decision_id": "d2",
+      "stage": "assets",
+      "category": "voice_selection",
+      "subject": "narrator",
+      "options_considered": [
+        {
+          "option_id": "voice-00",
+          "label": "Hindi educational voice A",
+          "score": 1.0,
+          "reason": "user pick"
+        },
+        {
+          "option_id": "voice-01",
+          "label": "Hindi educational voice B",
+          "score": 0.5,
+          "reason": "not selected"
+        }
+      ],
+      "selected": "voice-00",
+      "reason": "user audition"
+    },
+    {
+      "decision_id": "d3",
+      "stage": "assets",
+      "category": "music_source",
+      "subject": "music bed",
+      "options_considered": [
+        {
+          "option_id": "none",
+          "label": "no music",
+          "score": 0.6,
+          "reason": "stock providers unreachable"
+        },
+        {
+          "option_id": "pixabay",
+          "label": "Pixabay",
+          "score": 0.0,
+          "reason": "blocked"
+        }
+      ],
+      "selected": "none",
+      "reason": "network constraint"
+    }
+  ]
+}

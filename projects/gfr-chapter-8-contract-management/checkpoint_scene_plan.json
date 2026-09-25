@@ -1,0 +1,100 @@
+{
+  "version": "1.0",
+  "project_id": "gfr-chapter-8-contract-management",
+  "pipeline_type": "animated-explainer",
+  "stage": "scene_plan",
+  "status": "completed",
+  "timestamp": "2026-09-25T18:26:23.716031+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "scene_plan": {
+      "version": "1.0",
+      "style_playbook": "flat-motion-graphics",
+      "scenes": [
+        {
+          "id": "s01_intro_rule224",
+          "type": "character_scene",
+          "description": "Intro + Rule 224 \u2014 Authority to contract \u2014 illustration + story panel + progressive rule card (6 states)",
+          "start_seconds": 0.0,
+          "end_seconds": 81.86,
+          "script_section_id": "s01_intro_rule224"
+        },
+        {
+          "id": "s02_rule225_i_iii",
+          "type": "character_scene",
+          "description": "Rule 225(i)\u2013(iii) \u2014 Precise terms, standard forms, advice \u2014 illustration + story panel + progressive rule card (6 states)",
+          "start_seconds": 81.86,
+          "end_seconds": 140.44,
+          "script_section_id": "s02_rule225_i_iii"
+        },
+        {
+          "id": "s03_rule225_iv_vi",
+          "type": "character_scene",
+          "description": "Rule 225(iv)\u2013(vi) \u2014 Which document, 21 days \u2014 illustration + story panel + progressive rule card (9 states)",
+          "start_seconds": 140.44,
+          "end_seconds": 219.42,
+          "script_section_id": "s03_rule225_iv_vi"
+        },
+        {
+          "id": "s04_rule225_vii_viii",
+          "type": "character_scene",
+          "description": "Rule 225(vii)\u2013(viii) \u2014 Cost plus & Price Variation \u2014 illustration + story panel + progressive rule card (9 states)",
+          "start_seconds": 219.42,
+          "end_seconds": 313.12,
+          "script_section_id": "s04_rule225_vii_viii"
+        },
+        {
+          "id": "s05_rule225_ix_xiii",
+          "type": "character_scene",
+          "description": "Rule 225(ix)\u2013(xiii) \u2014 Taxes, lump sum, materials, Govt property, audit copies \u2014 illustration + story panel + progressive rule card (7 states)",
+          "start_seconds": 313.12,
+          "end_seconds": 383.06,
+          "script_section_id": "s05_rule225_ix_xiii"
+        },
+        {
+          "id": "s06_rule225_xiv_xv_fmc2026",
+          "type": "character_scene",
+          "description": "Rule 225(xiv)\u2013(xv) + DoE OM 29.04.2026 (Force Majeure) \u2014 illustration + story panel + progressive rule card (8 states)",
+          "start_seconds": 383.06,
+          "end_seconds": 483.72,
+          "script_section_id": "s06_rule225_xiv_xv_fmc2026"
+        },
+        {
+          "id": "s07_rule225_xvi_xix",
+          "type": "character_scene",
+          "description": "Rule 225(xvi)\u2013(xix) \u2014 LD, warranty, rejection, 3-year bar \u2014 illustration + story panel + progressive rule card (8 states)",
+          "start_seconds": 483.72,
+          "end_seconds": 543.55,
+          "script_section_id": "s07_rule225_xvi_xix"
+        },
+        {
+          "id": "s08_rule226",
+          "type": "character_scene",
+          "description": "Rule 226 \u2014 Management of contracts, BG monitoring \u2014 illustration + story panel + progressive rule card (6 states)",
+          "start_seconds": 543.55,
+          "end_seconds": 601.29,
+          "script_section_id": "s08_rule226"
+        },
+        {
+          "id": "s09_rule227_arbitration_guidelines",
+          "type": "character_scene",
+          "description": "Rule 227 + DoE OM 03.06.2024 (Arbitration & Mediation guidelines) \u2014 illustration + story panel + progressive rule card (10 states)",
+          "start_seconds": 601.29,
+          "end_seconds": 690.98,
+          "script_section_id": "s09_rule227_arbitration_guidelines"
+        },
+        {
+          "id": "s10_rule227a_recap",
+          "type": "character_scene",
+          "description": "Rule 227A + Rapid recap \u2014 illustration + story panel + progressive rule card (16 states)",
+          "start_seconds": 690.98,
+          "end_seconds": 793.41,
+          "script_section_id": "s10_rule227a_recap"
+        }
+      ]
+    }
+  },
+  "style_playbook": "flat-motion-graphics"
+}

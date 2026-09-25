@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "outputs": [
+    {
+      "path": "renders/gfr_ch8_contract_management_captioned.mp4",
+      "format": "mp4",
+      "codec": "h264",
+      "audio_codec": "aac",
+      "resolution": "1920x1080",
+      "fps": 30.0,
+      "duration_seconds": 793.46,
+      "file_size_bytes": 44897194
+    },
+    {
+      "path": "renders/gfr_ch8_contract_management.mp4",
+      "format": "mp4",
+      "codec": "h264",
+      "audio_codec": "aac",
+      "resolution": "1920x1080",
+      "fps": 30.0,
+      "duration_seconds": 793.46,
+      "file_size_bytes": 43573594
+    }
+  ],
+  "render_grammar": "explainer-teacher",
+  "decision_log_ref": "artifacts/decision_log.json",
+  "final_review_ref": "artifacts/final_review.json",
+  "warnings": [
+    "No music bed (stock providers unreachable).",
+    "Caption timing proportional-estimated (±1–2 s)."
+  ],
+  "verification_notes": [
+    "Rebuilt after sandbox reset; all 10 scene images + 10 narration clips regenerated.",
+    "Rule citations cross-checked against DoE compilation up to 31.01.2026 and DoE OMs 29.10.2021 / 03.06.2024 / 29.04.2026."
+  ]
+}

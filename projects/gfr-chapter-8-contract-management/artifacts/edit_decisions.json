@@ -1,0 +1,834 @@
+{
+  "version": "1.0",
+  "cuts": [
+    {
+      "id": "s01_00",
+      "source": "renders/frames/s01_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 18.44,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "title: GFR 2017 · Chapter 8"
+    },
+    {
+      "id": "s01_01",
+      "source": "renders/frames/s01_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 19.76,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "story: Scene 1 · Signature block"
+    },
+    {
+      "id": "s01_02",
+      "source": "renders/frames/s01_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 11.02,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 224(1)"
+    },
+    {
+      "id": "s01_03",
+      "source": "renders/frames/s01_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 9.22,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: Rule 224(2)"
+    },
+    {
+      "id": "s01_04",
+      "source": "renders/frames/s01_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 13.73,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: Notes to Rule 224"
+    },
+    {
+      "id": "s01_05",
+      "source": "renders/frames/s01_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 11.78,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "trap: EXAM TRAP"
+    },
+    {
+      "id": "s02_00",
+      "source": "renders/frames/s02_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 12.0,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Scene 2 · Housekeeping tender"
+    },
+    {
+      "id": "s02_01",
+      "source": "renders/frames/s02_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 16.71,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(i)"
+    },
+    {
+      "id": "s02_02",
+      "source": "renders/frames/s02_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 9.19,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: Rule 225(ii)"
+    },
+    {
+      "id": "s02_03",
+      "source": "renders/frames/s02_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 7.86,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: Rule 225(iii)"
+    },
+    {
+      "id": "s02_04",
+      "source": "renders/frames/s02_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 4.41,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "hook: MEMORY HOOK"
+    },
+    {
+      "id": "s02_05",
+      "source": "renders/frames/s02_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 10.51,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "trap: EXAM TRAP"
+    },
+    {
+      "id": "s03_00",
+      "source": "renders/frames/s03_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 16.41,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Scene 3 · Teen files, teen documents"
+    },
+    {
+      "id": "s03_01",
+      "source": "renders/frames/s03_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 8.9,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(iv) · Kaunsa document?"
+    },
+    {
+      "id": "s03_02",
+      "source": "renders/frames/s03_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 13.61,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s03_03",
+      "source": "renders/frames/s03_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 12.22,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s03_04",
+      "source": "renders/frames/s03_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 8.37,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s03_05",
+      "source": "renders/frames/s03_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 5.26,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(v) & (vi)"
+    },
+    {
+      "id": "s03_06",
+      "source": "renders/frames/s03_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 9.1,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s03_07",
+      "source": "renders/frames/s03_07.png",
+      "in_seconds": 0.0,
+      "out_seconds": 3.53,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "quiz: QUICK QUIZ"
+    },
+    {
+      "id": "s03_08",
+      "source": "renders/frames/s03_08.png",
+      "in_seconds": 0.0,
+      "out_seconds": 4.72,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "answer: ANSWER"
+    },
+    {
+      "id": "s04_00",
+      "source": "renders/frames/s04_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 12.81,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Scene 4 · Delivery period 24 mahine"
+    },
+    {
+      "id": "s04_01",
+      "source": "renders/frames/s04_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 13.98,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(vii) · Cost plus contracts"
+    },
+    {
+      "id": "s04_02",
+      "source": "renders/frames/s04_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 9.61,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s04_03",
+      "source": "renders/frames/s04_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 12.39,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(viii) · Price Variation Clause (PVC)"
+    },
+    {
+      "id": "s04_04",
+      "source": "renders/frames/s04_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 9.22,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s04_05",
+      "source": "renders/frames/s04_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 11.66,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s04_06",
+      "source": "renders/frames/s04_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 15.5,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s04_07",
+      "source": "renders/frames/s04_07.png",
+      "in_seconds": 0.0,
+      "out_seconds": 6.64,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s04_08",
+      "source": "renders/frames/s04_08.png",
+      "in_seconds": 0.0,
+      "out_seconds": 5.04,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "hook: MEMORY HOOK"
+    },
+    {
+      "id": "s05_00",
+      "source": "renders/frames/s05_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 10.78,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Scene 5 · ₹30 lakh civil work close-out"
+    },
+    {
+      "id": "s05_01",
+      "source": "renders/frames/s05_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 7.36,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(ix) & (x)"
+    },
+    {
+      "id": "s05_02",
+      "source": "renders/frames/s05_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 7.82,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s05_03",
+      "source": "renders/frames/s05_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 11.5,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(xi) & (xii)"
+    },
+    {
+      "id": "s05_04",
+      "source": "renders/frames/s05_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 10.03,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s05_05",
+      "source": "renders/frames/s05_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 19.04,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "update: Rule 225(xiii) · [AMENDED 02.04.2019]"
+    },
+    {
+      "id": "s05_06",
+      "source": "renders/frames/s05_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 5.87,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "trap: EXAM TRAP"
+    },
+    {
+      "id": "s06_00",
+      "source": "renders/frames/s06_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 11.45,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Scene 6 · Chairs ka supply contract"
+    },
+    {
+      "id": "s06_01",
+      "source": "renders/frames/s06_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 14.03,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(xiv) · Material variation"
+    },
+    {
+      "id": "s06_02",
+      "source": "renders/frames/s06_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 10.5,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: Rule 225(xv) · Extension"
+    },
+    {
+      "id": "s06_03",
+      "source": "renders/frames/s06_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 20.11,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "update: LATEST · DoE OM dated 29.04.2026 — Force Majeure Clause"
+    },
+    {
+      "id": "s06_04",
+      "source": "renders/frames/s06_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 7.96,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s06_05",
+      "source": "renders/frames/s06_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 18.37,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: West Asia situation"
+    },
+    {
+      "id": "s06_06",
+      "source": "renders/frames/s06_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 9.43,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s06_07",
+      "source": "renders/frames/s06_07.png",
+      "in_seconds": 0.0,
+      "out_seconds": 11.61,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "answer: GURPREET KA JAWAB"
+    },
+    {
+      "id": "s07_00",
+      "source": "renders/frames/s07_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 10.68,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Scene 7 · Laptops 20 din late, 2 kharab"
+    },
+    {
+      "id": "s07_01",
+      "source": "renders/frames/s07_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 13.97,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(xvi) · Liquidated Damages"
+    },
+    {
+      "id": "s07_02",
+      "source": "renders/frames/s07_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 6.63,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: Rule 225(xvii) · Warranty"
+    },
+    {
+      "id": "s07_03",
+      "source": "renders/frames/s07_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 8.15,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: Rule 225(xviii) · Right to reject"
+    },
+    {
+      "id": "s07_04",
+      "source": "renders/frames/s07_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 8.81,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: Rule 225(xix) · Time bar"
+    },
+    {
+      "id": "s07_05",
+      "source": "renders/frames/s07_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 4.05,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "quiz: QUICK QUIZ"
+    },
+    {
+      "id": "s07_06",
+      "source": "renders/frames/s07_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 4.05,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "answer: ANSWER"
+    },
+    {
+      "id": "s07_07",
+      "source": "renders/frames/s07_07.png",
+      "in_seconds": 0.0,
+      "out_seconds": 6.29,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "hook: MEMORY HOOK"
+    },
+    {
+      "id": "s08_00",
+      "source": "renders/frames/s08_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 12.41,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Scene 8 · BG register"
+    },
+    {
+      "id": "s08_01",
+      "source": "renders/frames/s08_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 8.98,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 226 · Management of contracts"
+    },
+    {
+      "id": "s08_02",
+      "source": "renders/frames/s08_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 13.87,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s08_03",
+      "source": "renders/frames/s08_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 4.9,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "story: Scene 8 · BG register"
+    },
+    {
+      "id": "s08_04",
+      "source": "renders/frames/s08_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 12.13,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "update: LATEST · e-Bank Guarantee (DoE OM 05.08.2022)"
+    },
+    {
+      "id": "s08_05",
+      "source": "renders/frames/s08_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 7.55,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "trap: EXAM TRAP"
+    },
+    {
+      "id": "s09_00",
+      "source": "renders/frames/s09_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 9.53,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Scene 9 · ₹12 crore ka claim"
+    },
+    {
+      "id": "s09_01",
+      "source": "renders/frames/s09_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 19.93,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 227 · Legal advice on disputes"
+    },
+    {
+      "id": "s09_02",
+      "source": "renders/frames/s09_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 15.75,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "update: DoE OM F.1/2/2024-PPD dt 03.06.2024 — Arbitration & Mediation (Domestic Public Procurement)"
+    },
+    {
+      "id": "s09_03",
+      "source": "renders/frames/s09_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 7.65,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s09_04",
+      "source": "renders/frames/s09_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 11.17,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s09_05",
+      "source": "renders/frames/s09_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 3.27,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s09_06",
+      "source": "renders/frames/s09_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 6.86,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s09_07",
+      "source": "renders/frames/s09_07.png",
+      "in_seconds": 0.0,
+      "out_seconds": 8.85,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s09_08",
+      "source": "renders/frames/s09_08.png",
+      "in_seconds": 0.0,
+      "out_seconds": 2.54,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s09_09",
+      "source": "renders/frames/s09_09.png",
+      "in_seconds": 0.0,
+      "out_seconds": 7.64,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "hook: TAKEAWAY"
+    },
+    {
+      "id": "s10_00",
+      "source": "renders/frames/s10_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 11.99,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Scene 10 · Award challenge kiya — payment?"
+    },
+    {
+      "id": "s10_01",
+      "source": "renders/frames/s10_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 18.61,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "update: Rule 227A(i) · Arbitration Awards [inserted 29.10.2021]"
+    },
+    {
+      "id": "s10_02",
+      "source": "renders/frames/s10_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 7.79,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s10_03",
+      "source": "renders/frames/s10_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 9.48,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s10_04",
+      "source": "renders/frames/s10_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 7.32,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s10_05",
+      "source": "renders/frames/s10_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 3.19,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "recap: RAPID RECAP — pause karke khud jawab do"
+    },
+    {
+      "id": "s10_06",
+      "source": "renders/frames/s10_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 4.54,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s10_07",
+      "source": "renders/frames/s10_07.png",
+      "in_seconds": 0.0,
+      "out_seconds": 2.78,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s10_08",
+      "source": "renders/frames/s10_08.png",
+      "in_seconds": 0.0,
+      "out_seconds": 2.92,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s10_09",
+      "source": "renders/frames/s10_09.png",
+      "in_seconds": 0.0,
+      "out_seconds": 4.34,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s10_10",
+      "source": "renders/frames/s10_10.png",
+      "in_seconds": 0.0,
+      "out_seconds": 3.06,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s10_11",
+      "source": "renders/frames/s10_11.png",
+      "in_seconds": 0.0,
+      "out_seconds": 2.38,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s10_12",
+      "source": "renders/frames/s10_12.png",
+      "in_seconds": 0.0,
+      "out_seconds": 3.6,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s10_13",
+      "source": "renders/frames/s10_13.png",
+      "in_seconds": 0.0,
+      "out_seconds": 4.0,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s10_14",
+      "source": "renders/frames/s10_14.png",
+      "in_seconds": 0.0,
+      "out_seconds": 3.93,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "s10_15",
+      "source": "renders/frames/s10_15.png",
+      "in_seconds": 0.0,
+      "out_seconds": 18.1,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "outro: Chapter 8 complete ✔"
+    }
+  ],
+  "audio": {
+    "narration": {
+      "segments": [
+        {
+          "asset_id": "vo_s01",
+          "start_seconds": 0.6,
+          "end_seconds": 80.66
+        },
+        {
+          "asset_id": "vo_s02",
+          "start_seconds": 82.46,
+          "end_seconds": 139.24
+        },
+        {
+          "asset_id": "vo_s03",
+          "start_seconds": 141.04,
+          "end_seconds": 218.22
+        },
+        {
+          "asset_id": "vo_s04",
+          "start_seconds": 220.02,
+          "end_seconds": 311.92
+        },
+        {
+          "asset_id": "vo_s05",
+          "start_seconds": 313.72,
+          "end_seconds": 381.86
+        },
+        {
+          "asset_id": "vo_s06",
+          "start_seconds": 383.66,
+          "end_seconds": 482.52
+        },
+        {
+          "asset_id": "vo_s07",
+          "start_seconds": 484.32,
+          "end_seconds": 542.35
+        },
+        {
+          "asset_id": "vo_s08",
+          "start_seconds": 544.15,
+          "end_seconds": 600.09
+        },
+        {
+          "asset_id": "vo_s09",
+          "start_seconds": 601.89,
+          "end_seconds": 689.78
+        },
+        {
+          "asset_id": "vo_s10",
+          "start_seconds": 691.58,
+          "end_seconds": 787.41
+        }
+      ]
+    }
+  },
+  "renderer_family": "explainer-teacher",
+  "render_runtime": "ffmpeg",
+  "composition_mode": "atelier",
+  "bespoke": {
+    "entry": "projects/gfr-chapter-8-contract-management/build/compose.py",
+    "composition_id": "gfr-ch8-atelier-ffmpeg",
+    "art_direction": "Ivory paper + navy/saffron ledger look: illustration + story panel left, progressive rule card with exact citations right; xfade between timed states."
+  }
+}

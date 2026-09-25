@@ -1,0 +1,136 @@
+{
+  "version": "1.0",
+  "topic": "GFR 2017 Chapter 8 — Contract Management (Rules 224–227A) with latest DoE orders",
+  "research_date": "2026-09-25",
+  "landscape": {
+    "existing_content": [
+      {
+        "title": "Coaching-site GFR notes",
+        "source": "promotionexams / gfr.co.in",
+        "angle": "bullet summaries",
+        "what_it_covers": "rule text without scenarios or currency labels"
+      },
+      {
+        "title": "YouTube GFR lectures",
+        "source": "various",
+        "angle": "long lectures",
+        "what_it_covers": "chapter walkthroughs, often pre-2024 amendments"
+      },
+      {
+        "title": "Procurement manuals",
+        "source": "DoE Manuals 2024/2025",
+        "angle": "official reference",
+        "what_it_covers": "procedural detail, no teaching layer"
+      }
+    ],
+    "saturated_angles": [
+      "plain rule reading"
+    ],
+    "underserved_gaps": [
+      "scenario-based Hinglish teaching with currency labels and 2024–2026 OM overlays"
+    ]
+  },
+  "data_points": [
+    {
+      "claim": "Rule 225(iv)(a): purchase order suffices up to ₹2.5 lakh",
+      "source_url": "https://doe.gov.in/files/acts_rules_documents/GFRupdatedupto31012026.pdf",
+      "credibility": "primary_source"
+    },
+    {
+      "claim": "Rule 225(vi): contract to be executed within 21 days of LoA",
+      "source_url": "https://doe.gov.in/files/acts_rules_documents/GFRupdatedupto31012026.pdf",
+      "credibility": "primary_source"
+    },
+    {
+      "claim": "Rule 227A: 75% of award against BG when award challenged (DoE OM 29.10.2021)",
+      "source_url": "https://doe.gov.in/files/acts_rules_documents/GFRupdatedupto31012026.pdf",
+      "credibility": "primary_source"
+    },
+    {
+      "claim": "DoE OM 03.06.2024: arbitration generally only for disputes < ₹10 crore",
+      "source_url": "https://www.scconline.com/",
+      "credibility": "secondary_source"
+    },
+    {
+      "claim": "DoE OM 29.04.2026: West Asia situation treated as war; 2–4 month extensions for obligations due on/after 28.02.2026",
+      "source_url": "https://dtf.in/download/20822/",
+      "credibility": "primary_source"
+    }
+  ],
+  "audience_insights": {
+    "common_questions": [
+      "Kaunsa document kab banega?",
+      "PVC kab allowed?",
+      "LD maaf ho sakta hai?",
+      "Award challenge par payment?"
+    ],
+    "misconceptions": [
+      {
+        "myth": "Audit copies ₹10 lakh se upar",
+        "reality": "₹25 lakh & above (2019 amendment)"
+      },
+      {
+        "myth": "BG review quarterly",
+        "reality": "monthly, 3-month window"
+      }
+    ],
+    "knowledge_level": "Central Govt ministerial staff / departmental exam aspirants"
+  },
+  "angles_discovered": [
+    {
+      "name": "Ten office scenes",
+      "hook": "Har rule ek real decision point",
+      "type": "narrative",
+      "why_now": "2024–2026 OMs changed practice"
+    },
+    {
+      "name": "Exam-trap first",
+      "hook": "Jahan log galti karte hain",
+      "type": "contrarian",
+      "why_now": "coaching notes carry stale thresholds"
+    },
+    {
+      "name": "Currency-labelled walkthrough",
+      "hook": "CURRENT / AMENDED / UNCERTAIN",
+      "type": "evergreen",
+      "why_now": "compilation updated 31.01.2026"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://doe.gov.in/orders-circulars/31",
+      "title": "DoE — General Financial Rules page (compilation updated up to 31.01.2026)",
+      "used_for": "primary rule text"
+    },
+    {
+      "url": "https://doe.gov.in/files/acts_rules_documents/GFRupdatedupto31012026.pdf",
+      "title": "GFR 2017 updated up to 31.01.2026 (DoE PDF)",
+      "used_for": "Rules 224–227A text"
+    },
+    {
+      "url": "https://dtf.in/download/20822/",
+      "title": "DoE OM dated 29.04.2026 — Force Majeure Clause (West Asia)",
+      "used_for": "Rule 225(xv) overlay"
+    },
+    {
+      "url": "https://dtf.in/general-financial-rules-gfrs/",
+      "title": "Index of DoE GFR OMs 2021–2026",
+      "used_for": "currency check"
+    },
+    {
+      "url": "https://www.scconline.com/",
+      "title": "DoE OM F.1/2/2024-PPD dated 03.06.2024 — Arbitration & Mediation guidelines (text)",
+      "used_for": "Rule 227 overlay"
+    },
+    {
+      "url": "https://economictimes.indiatimes.com/",
+      "title": "Rule 227A background (DoE OM 29.10.2021, 75% payment against BG)",
+      "used_for": "Rule 227A"
+    },
+    {
+      "url": "https://www.gfr.co.in/",
+      "title": "GFR compilation site — Chapter 8 full text cross-check",
+      "used_for": "clause-level cross-check"
+    }
+  ]
+}

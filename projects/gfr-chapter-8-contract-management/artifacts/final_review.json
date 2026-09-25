@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "output_path": "renders/gfr_ch8_contract_management_captioned.mp4",
+  "status": "pass",
+  "checks": {
+    "technical_probe": {
+      "valid_container": true,
+      "duration_seconds": 793.46,
+      "resolution": "1920x1080",
+      "fps": 30.0,
+      "has_audio": true,
+      "codec": "h264",
+      "file_size_bytes": 44897194,
+      "issues": []
+    },
+    "visual_spotcheck": {
+      "frames_sampled": 6,
+      "frame_paths": [
+        "renders/review/f_100.jpg",
+        "renders/review/f_300.jpg",
+        "renders/review/f_470.jpg",
+        "renders/review/f_5.jpg",
+        "renders/review/f_650.jpg",
+        "renders/review/f_785.jpg"
+      ],
+      "black_frames_detected": false,
+      "broken_overlays": false,
+      "missing_assets": false,
+      "unreadable_text": false,
+      "issues": []
+    },
+    "audio_spotcheck": {
+      "narration_present": true,
+      "music_present": false,
+      "unexpected_silence": false,
+      "clipping_detected": false,
+      "mix_intelligible": true,
+      "issues": [
+        "No music bed by constraint."
+      ]
+    },
+    "promise_preservation": {
+      "delivery_promise_honored": true,
+      "renderer_family_used": "explainer-teacher",
+      "render_runtime_used": "ffmpeg",
+      "runtime_swap_detected": false,
+      "runtime_swap_check": "ok — ffmpeg locked at proposal, ffmpeg ran",
+      "silent_downgrade_detected": false,
+      "issues": []
+    },
+    "subtitle_check": {
+      "subtitles_expected": true,
+      "subtitles_present": true,
+      "coverage_ratio": 1.0,
+      "timing_drift_detected": false,
+      "issues": [
+        "Proportional timing, not word-aligned."
+      ]
+    }
+  },
+  "issues_found": [
+    "Minor: no music; caption timing estimated."
+  ],
+  "recommended_action": "present_to_user"
+}

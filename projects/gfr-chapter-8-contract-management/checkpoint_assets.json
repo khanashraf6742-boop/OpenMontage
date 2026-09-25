@@ -1,0 +1,216 @@
+{
+  "version": "1.0",
+  "project_id": "gfr-chapter-8-contract-management",
+  "pipeline_type": "animated-explainer",
+  "stage": "assets",
+  "status": "completed",
+  "timestamp": "2026-09-25T18:26:23.878666+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "asset_manifest": {
+      "version": "1.0",
+      "assets": [
+        {
+          "id": "img_s01",
+          "type": "image",
+          "path": "assets/images/scene01.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "s01_intro_rule224",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_s01",
+          "type": "narration",
+          "path": "assets/audio/s01.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "s01_intro_rule224",
+          "duration_seconds": 80.06,
+          "format": "mp3"
+        },
+        {
+          "id": "img_s02",
+          "type": "image",
+          "path": "assets/images/scene02.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "s02_rule225_i_iii",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_s02",
+          "type": "narration",
+          "path": "assets/audio/s02.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "s02_rule225_i_iii",
+          "duration_seconds": 56.78,
+          "format": "mp3"
+        },
+        {
+          "id": "img_s03",
+          "type": "image",
+          "path": "assets/images/scene03.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "s03_rule225_iv_vi",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_s03",
+          "type": "narration",
+          "path": "assets/audio/s03.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "s03_rule225_iv_vi",
+          "duration_seconds": 77.18,
+          "format": "mp3"
+        },
+        {
+          "id": "img_s04",
+          "type": "image",
+          "path": "assets/images/scene04.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "s04_rule225_vii_viii",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_s04",
+          "type": "narration",
+          "path": "assets/audio/s04.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "s04_rule225_vii_viii",
+          "duration_seconds": 91.9,
+          "format": "mp3"
+        },
+        {
+          "id": "img_s05",
+          "type": "image",
+          "path": "assets/images/scene05.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "s05_rule225_ix_xiii",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_s05",
+          "type": "narration",
+          "path": "assets/audio/s05.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "s05_rule225_ix_xiii",
+          "duration_seconds": 68.14,
+          "format": "mp3"
+        },
+        {
+          "id": "img_s06",
+          "type": "image",
+          "path": "assets/images/scene06.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "s06_rule225_xiv_xv_fmc2026",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_s06",
+          "type": "narration",
+          "path": "assets/audio/s06.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "s06_rule225_xiv_xv_fmc2026",
+          "duration_seconds": 98.86,
+          "format": "mp3"
+        },
+        {
+          "id": "img_s07",
+          "type": "image",
+          "path": "assets/images/scene07.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "s07_rule225_xvi_xix",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_s07",
+          "type": "narration",
+          "path": "assets/audio/s07.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "s07_rule225_xvi_xix",
+          "duration_seconds": 58.03,
+          "format": "mp3"
+        },
+        {
+          "id": "img_s08",
+          "type": "image",
+          "path": "assets/images/scene08.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "s08_rule226",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_s08",
+          "type": "narration",
+          "path": "assets/audio/s08.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "s08_rule226",
+          "duration_seconds": 55.94,
+          "format": "mp3"
+        },
+        {
+          "id": "img_s09",
+          "type": "image",
+          "path": "assets/images/scene09.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "s09_rule227_arbitration_guidelines",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_s09",
+          "type": "narration",
+          "path": "assets/audio/s09.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "s09_rule227_arbitration_guidelines",
+          "duration_seconds": 87.89,
+          "format": "mp3"
+        },
+        {
+          "id": "img_s10",
+          "type": "image",
+          "path": "assets/images/scene10.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "s10_rule227a_recap",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_s10",
+          "type": "narration",
+          "path": "assets/audio/s10.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "s10_rule227a_recap",
+          "duration_seconds": 95.83,
+          "format": "mp3"
+        },
+        {
+          "id": "srt",
+          "type": "subtitle",
+          "path": "renders/captions_hinglish.srt",
+          "source_tool": "compose.py",
+          "scene_id": "all",
+          "format": "srt"
+        },
+        {
+          "id": "ass",
+          "type": "subtitle",
+          "path": "renders/captions_hinglish.ass",
+          "source_tool": "burn_captions.py",
+          "scene_id": "all",
+          "format": "ass"
+        }
+      ],
+      "total_cost_usd": 0.0
+    }
+  },
+  "style_playbook": "flat-motion-graphics"
+}
