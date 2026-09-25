@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GFR 2017 — Chapter 6 · Granular Video (every rule, sub-rule, clause, proviso, exception, footnote)</title>
+<style>
+  :root{
+    --ink:#131a1f; --teal:#0f6f7a; --teal-d:#0a4f57; --maroon:#8c1d3f; --saffron:#e08a1e;
+    --paper:#fffdf9; --line:#ded5c6; --muted:#6a7076; --good:#1c7c46; --bad:#a3241c; --amber:#b06f00;
+    --stage:#0c2b31;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#eef1f2;color:var(--ink);
+    font-family:"Segoe UI",Roboto,"Noto Sans Devanagari",system-ui,sans-serif;line-height:1.5}
+  .wrap{max-width:1240px;margin:0 auto;padding:14px}
+  a{color:var(--teal-d)}
+  header.hero{background:linear-gradient(135deg,#0a4f57,#0f6f7a 60%,#14808d);color:#fff;border-radius:16px;
+    padding:18px 22px;box-shadow:0 10px 28px rgba(10,60,66,.25)}
+  header.hero h1{margin:0 0 5px;font-size:clamp(18px,2.8vw,28px)}
+  header.hero p{margin:0;font-size:clamp(11.5px,1.4vw,14.5px);opacity:.93}
+  .epi{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+  .epi a{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);color:#fff;padding:5px 11px;
+    border-radius:999px;font-size:11.5px;font-weight:700;text-decoration:none}
+  .epi a:hover{background:var(--saffron);color:#3a2200;border-color:var(--saffron)}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:8px;margin:12px 0}
+  .stat{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:8px 10px;text-align:center}
+  .stat b{display:block;font-size:clamp(16px,2.3vw,24px);color:var(--teal-d)}
+  .stat span{font-size:10px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+
+  .player{background:var(--stage);border-radius:16px;overflow:hidden;box-shadow:0 14px 36px rgba(6,30,35,.35);
+    border:3px solid rgba(255,255,255,.12)}
+  .pTop{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 14px;
+    background:rgba(255,255,255,.07);color:#cfe9ec;font-size:11.5px;font-weight:700;flex-wrap:wrap}
+  .pTop .crumb{color:var(--saffron)}
+  .stage{min-height:230px;padding:26px 26px 30px;display:flex;flex-direction:column;justify-content:center;
+    background:radial-gradient(120% 120% at 20% 0%,#12454e 0%,#0a272d 70%)}
+  .kind{display:inline-block;font-size:10.5px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;
+    padding:4px 10px;border-radius:999px;margin-bottom:12px;align-self:flex-start}
+  .k-title{background:#1d6f7a;color:#eafbfb}
+  .k-verbatim{background:#e0a41c;color:#3a2a00}
+  .k-hi{background:#2e9e6b;color:#eafff3}
+  .k-sub{background:#8c1d3f;color:#ffe9ef}
+  .k-prov{background:#b06f00;color:#fff6e2}
+  .k-note{background:#3f7fbf;color:#eaf3ff}
+  .k-exc{background:#a3241c;color:#ffeceb}
+  .k-fn{background:#6b4fa0;color:#f1eaff}
+  .k-module{background:#fff;color:#0a4f57}
+  .k-callout{background:#ff7a18;color:#2b1400}
+  .beat{color:#fff;font-size:clamp(14px,2.05vw,23px);line-height:1.5;animation:fadeUp .45s ease}
+  .beat .subname{color:var(--saffron);font-weight:800}
+  .beat .sh{display:block;margin-top:10px;font-size:.72em;color:#bfe3e7;border-left:3px solid var(--saffron);
+    padding-left:10px}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+  .pBar{height:8px;background:rgba(255,255,255,.14)}
+  .pBar i{display:block;height:100%;background:linear-gradient(90deg,var(--saffron),#ffd07a);width:0;transition:width .3s}
+  .beats{display:flex;gap:5px;overflow-x:auto;padding:9px 12px;background:rgba(0,0,0,.22)}
+  .beats span{flex:0 0 auto;font-size:10px;font-weight:800;color:#9fc3c8;background:rgba(255,255,255,.08);
+    border-radius:5px;padding:3px 7px;white-space:nowrap;cursor:pointer}
+  .beats span.act{background:var(--saffron);color:#3a2200}
+  .beats span.done{color:#6f9ea4}
+
+  .ctrl{display:flex;gap:7px;flex-wrap:wrap;align-items:center;padding:11px 13px;background:rgba(255,255,255,.08)}
+  button{font-family:inherit;font-weight:800;border:none;border-radius:9px;padding:9px 13px;cursor:pointer;
+    background:#fff;color:var(--teal-d);font-size:13px}
+  button:hover{transform:translateY(-1px)}
+  button.primary{background:var(--saffron);color:#3a2200}
+  button:disabled{opacity:.35;cursor:not-allowed;transform:none}
+  select{padding:8px 10px;border-radius:9px;border:2px solid rgba(255,255,255,.3);background:#fff;
+    color:var(--teal-d);font-weight:700;font-size:12px;font-family:inherit;max-width:230px}
+  .ctrl .lbl{color:#cfe9ec;font-size:11.5px;font-weight:700}
+
+  .cols{display:grid;grid-template-columns:1.35fr 1fr;gap:12px;margin-top:12px}
+  @media(max-width:900px){.cols{grid-template-columns:1fr}}
+  .panel{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+  .panel h3{margin:0 0 8px;font-size:13.5px;color:var(--teal-d)}
+  #ctx{max-height:520px;overflow:auto;font-size:12.6px}
+  .cb{border-left:3px solid var(--line);padding:5px 0 5px 10px;margin:5px 0;opacity:.55;transition:.2s}
+  .cb.active{opacity:1;border-left-color:var(--saffron);background:#fffaf0}
+  .cb .cl{font-size:9.5px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .cb.active .cl{color:var(--amber)}
+  .navmod{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px}
+  .navmod button{background:#fff;border:2px solid var(--line);color:var(--ink);font-size:11px;padding:5px 9px}
+  .navmod button.on{background:var(--teal);border-color:var(--teal);color:#fff}
+  .navmod button.done{background:#e8f3ea;border-color:#b9dcc2;color:var(--good)}
+  #q{width:100%;padding:8px 11px;border:2px solid var(--line);border-radius:9px;font-size:12.5px;
+    font-family:inherit;margin-bottom:8px;background:#fff}
+  .rlist{max-height:430px;overflow:auto}
+  .rlist a{display:block;font-size:11.5px;font-weight:700;text-decoration:none;color:var(--teal-d);
+    border:1px solid var(--line);border-radius:7px;padding:4px 8px;margin:3px 0;background:#fff}
+  .rlist a:hover{background:var(--teal);color:#fff}
+  .rlist a.act{background:var(--saffron);color:#3a2200;border-color:var(--saffron)}
+  .warn{background:#fdf6e6;border:1px solid #ecd9a8;border-radius:9px;padding:8px 11px;font-size:11.5px;
+    color:#6b4c00;margin-top:8px}
+  footer.ft{color:var(--muted);font-size:11px;margin:14px 0 6px;line-height:1.7}
+  .kbd{background:#e3e9ea;border-radius:4px;padding:1px 5px;font-size:10.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>GFR 2017 — Chapter 6 · Granular Video (Hinglish)</h1>
+  <p>Har rule, sub-rule, clause, sub-clause, proviso, note, explanation, exception aur amendment footnote — ek-ek karke, narrated.
+  Module intros aur teen critical callouts studio-recorded Hinglish voice mein; har provision ka narration aapke device ke Hindi voice se.
+  Verbatim text: DoE compilation, GFR 2017 updated up to 31.01.2026.</p>
+  <div class="epi">
+    <a href="index.html">▶ Episode 1 — Goods (comic)</a>
+    <a href="services.html">▶ Episode 2 — Services (comic)</a>
+    <a href="chapter6-complete.html">📘 Complete granular reference</a>
+  </div>
+</header>
+
+<div class="stats" id="stats"></div>
+
+<div class="player">
+  <div class="pTop">
+    <span id="crumb" class="crumb">—</span>
+    <span id="counter">Beat 0 / 0</span>
+  </div>
+  <div class="stage"><span id="kind" class="kind k-title">—</span><div id="beat" class="beat">Play dabao aur shuru karo.</div></div>
+  <div class="pBar"><i id="pbar"></i></div>
+  <div class="beats" id="beats"></div>
+  <div class="ctrl">
+    <button class="primary" id="play">▶ Play</button>
+    <button id="prevB">◀ Beat</button>
+    <button id="nextB">Beat ▶</button>
+    <button id="prevR">◀◀ Rule</button>
+    <button id="nextR">Rule ▶▶</button>
+    <button id="mute">🔊</button>
+    <select id="rate"><option value="0.8">0.8×</option><option value="0.9">0.9×</option><option value="1" selected>1×</option><option value="1.15">1.15×</option><option value="1.3">1.3×</option></select>
+    <select id="voice"><option value="">Voice: auto (hi-IN)</option></select>
+    <span class="lbl" id="eta">—</span>
+  </div>
+</div>
+
+<div class="cols">
+  <div class="panel">
+    <h3>📄 Current provision — full text (jo abhi narrate ho raha hai, highlight mein)</h3>
+    <div id="ctx"></div>
+  </div>
+  <div class="panel">
+    <h3>🧭 Modules</h3>
+    <div class="navmod" id="navmod"></div>
+    <h3 style="margin-top:10px">🔎 Jump to a rule</h3>
+    <input id="q" type="search" placeholder="Rule number ya keyword… e.g. 149, QCBS, debar">
+    <div class="rlist" id="rlist"></div>
+    <div class="warn" id="vwarn" style="display:none"></div>
+  </div>
+</div>
+
+<footer class="ft">
+  <b>Controls:</b> <span class="kbd">Space</span> play/pause · <span class="kbd">←</span>/<span class="kbd">→</span> beat ·
+  <span class="kbd">Shift+←</span>/<span class="kbd">Shift+→</span> rule · <span class="kbd">M</span> mute.<br>
+  <b>Granularity:</b> har provision apna beat hai — verbatim text, Hinglish explanation, phir har sub-rule/clause, phir har proviso,
+  note/explanation, exception aur amendment footnote. Deleted rules bhi apni jagah "DELETED" ke saath hain.
+</footer>
+</div>
+
+<script src="data/ch6-goods.js"></script>
+<script src="data/ch6-services.js"></script>
+<script>
+const GOODS = window.GFR_CH6_GOODS || [];
+const SVCS  = window.GFR_CH6_SERVICES || [];
+const BY = {}; GOODS.concat(SVCS).forEach(r=>BY[r.r]=r);
+
+const MODULES = [
+  {id:'m1', n:'1 · Foundation & Definitions', rules:['142','143','144','145','146','147','148'],
+   blurb:'Scope, definition of goods, 10 yardsticks of public buying, competent authority, military exception, GeM mandate.',
+   audio:'audio/g-01-m1.mp3'},
+  {id:'m2', n:'2 · GeM ladder & suppliers', rules:['149','150','151','152','153'],
+   blurb:'Rule 149 ke aath sub-rules, registration, debarment, Indian agents, reserved items.',
+   audio:'audio/g-02-m2.mp3'},
+  {id:'m3', n:'3 · Below tender level', rules:['154','155','156','157','158'],
+   blurb:'Certificate purchase, Local Purchase Committee, anti-splitting, five standard methods.',
+   audio:'audio/g-03-m3.mp3'},
+  {id:'m4', n:'4 · Tender methods & e-publishing', rules:['159','160','161','162','163','164','165','166','167','168'],
+   blurb:'CPPP, e-procurement, advertised/limited tender, two-bid, two-stage, late bids, single tender, reverse auction.',
+   audio:'audio/g-04-m4.mp3'},
+  {id:'m5', n:'5 · Securities, payments & integrity', rules:['169','170','171','172(1)','172(2)','173','174','175(1)','175(2)','176'],
+   blurb:'Maintenance, bid security, performance security, advance payment, transparency, Code of Integrity, buy-back.',
+   audio:'audio/g-05-m5.mp3'},
+  {id:'m6', n:'6 · Consulting services', rules:['177','178','179','180','181','182','183','184','185','186','187','188','189','190','191','192','193','194','195','196'],
+   blurb:'Definition, prior approval, EOI, short-list of three, TOR, RFP, two-bid, CEC, QCBS, LCS, single source, monitoring.',
+   audio:'audio/g-06-m6.mp3'},
+  {id:'m7', n:'7 · Non-consulting services & fallback', rules:['197','198','199','200','201','202','203','204','205','206'],
+   blurb:'Physical measurable deliverables, ₹50 lakh threshold, nomination with FA consultation, Rule 206 fallback to goods rules.',
+   audio:'audio/g-07-m7.mp3'}
+];
+
+const CALLOUTS = {
+  '149':{t:'Callout — GeM thresholds changed on 10.07.2024', h:'DoE OM No. <b>F.1/3/2024-PPD dated 10.07.2024</b> ne Rule 149 ke tiers badal diye: <b>₹50,000</b> · <b>₹50,000–₹10,00,000</b> · <b>above ₹10,00,000</b>. Pehle ye ₹25,000 · ₹25,000–₹5,00,000 · above ₹5,00,000 the. <b>Rule kabhi memory se nahi — latest official source se padho.</b>', audio:'audio/g-08-callout-gem.mp3'},
+  '192':{t:'Callout — QCBS ka exam trap', h:'Technical parameters ka weight <b>kabhi 80% se zyada nahi</b> (Rule 192(iv)). Combined score predefined weightage se — <b>70:30, 60:40, 50:50</b>. Select hota hai <b>highest weighted combined score</b> wala proposal, lowest cost wala nahi.', audio:'audio/g-09-callout-qcbs.mp3'},
+  '206':{t:'Callout — Rule 206 ka cross-reference', h:'Rules 198–205 mein na aane wali koi bhi circumstance → <b>Rules 142–176 (GOODS)</b> apply, consulting-services rules nahi. Non-consulting services ka fallback goods procedure hai.', audio:'audio/g-10-callout-206.mp3'}
+};
+
+/* ---------- helpers ---------- */
+function stripHTML(s){return (s||'').replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&#8211;/g,'-').replace(/&#9654;/g,'').replace(/&nbsp;/g,' ').replace(/\s+/g,' ').trim();}
+function toSpeech(s){
+  return stripHTML(s)
+    .replace(/₹/g,' rupees ')
+    .replace(/(\d),(\d{2}),(\d{3})/g,'$1$2$3')
+    .replace(/(\d),(\d{3})/g,'$1$2')
+    .replace(/\s+/g,' ').trim();
+}
+const KINDCLS = {title:'k-title',verbatim:'k-verbatim',hi:'k-hi',sub:'k-sub',prov:'k-prov',note:'k-note',exc:'k-exc',fn:'k-fn',module:'k-module',callout:'k-callout'};
+const KINDLBL = {title:'Rule',verbatim:'Verbatim rule text',hi:'Hinglish explanation',sub:'Sub-rule / clause',
+  prov:'Proviso',note:'Note / explanation',exc:'Exception',fn:'Amendment footnote',module:'Module intro',callout:'Critical callout'};
+
+function beatsFor(rule){
+  const b=[];
+  b.push({kind:'title', label:'Rule '+rule.r, html:`<b>Rule ${rule.r}</b> — ${rule.t}`, speech:`Rule ${rule.r}. ${rule.t}.`});
+  b.push({kind:'verbatim', label:'Verbatim text', html:rule.text, speech:toSpeech(rule.text)});
+  if(rule.hi) b.push({kind:'hi', label:'Hinglish', html:rule.hi, speech:toSpeech(rule.hi)});
+  (rule.subs||[]).forEach(s=>b.push({kind:'sub', label:s.n,
+    html:`<span class="subname">${s.n}</span> — ${s.text}${s.hi?`<span class="sh">👉 ${s.hi}</span>`:''}`,
+    speech:toSpeech(`${s.n}. ${s.text} ${s.hi||''}`)}));
+  (rule.prov||[]).forEach(p=>b.push({kind:'prov', label:'Proviso', html:p, speech:'Proviso. '+toSpeech(p)}));
+  (rule.note||[]).forEach(n=>b.push({kind:'note', label:'Note / explanation', html:n, speech:'Note. '+toSpeech(n)}));
+  (rule.ex||[]).forEach(e=>b.push({kind:'exc', label:'Exception', html:e, speech:'Exception. '+toSpeech(e)}));
+  (rule.fn||[]).forEach(f=>b.push({kind:'fn', label:'Amendment footnote', html:f, speech:'Amendment footnote. '+toSpeech(f)}));
+  return b;
+}
+
+/* ---------- flatten ---------- */
+const beats=[]; const ruleIndex={};
+MODULES.forEach((m,mi)=>{
+  beats.push({mi, ri:null, kind:'module', label:'Module intro',
+    html:`<b>${m.n}</b><br><span style="font-size:.8em;color:#bfe3e7">${m.blurb}</span>`,
+    speech:toSpeech(`${m.n}. ${m.blurb}`), audio:m.audio});
+  m.rules.forEach(rid=>{
+    const rule=BY[rid]; if(!rule) return;
+    const start=beats.length;
+    beatsFor(rule).forEach(b=>beats.push(Object.assign({mi, ri:rid, rule}, b)));
+    if(CALLOUTS[rid]){
+      const c=CALLOUTS[rid];
+      beats.push({mi, ri:rid, kind:'callout', label:'Callout', html:`<b>${c.t}</b><br>${c.h}`,
+        speech:toSpeech(`${c.t}. ${c.h}`), audio:c.audio});
+    }
+    ruleIndex[rid]={start, end:beats.length-1};
+  });
+});
+
+/* ---------- stats ---------- */
+const all=GOODS.concat(SVCS), cnt=k=>all.reduce((a,r)=>a+(r[k]||[]).length,0);
+const totalChars=beats.reduce((a,b)=>a+(b.speech||'').length,0);
+$('#stats').innerHTML=
+  `<div class="stat"><b>${all.length}</b><span>Rules</span></div>
+   <div class="stat"><b>${cnt('subs')}</b><span>Sub-rules / clauses</span></div>
+   <div class="stat"><b>${cnt('prov')}</b><span>Provisos</span></div>
+   <div class="stat"><b>${cnt('note')}</b><span>Notes</span></div>
+   <div class="stat"><b>${cnt('ex')}</b><span>Exceptions</span></div>
+   <div class="stat"><b>${cnt('fn')}</b><span>Footnotes</span></div>
+   <div class="stat"><b>${beats.length}</b><span>Narrated beats</span></div>
+   <div class="stat"><b>~${Math.round(totalChars/13/60)} min</b><span>Runtime</span></div>`;
+
+/* ---------- nav ---------- */
+const navmod=$('#navmod');
+MODULES.forEach((m,mi)=>{
+  const b=document.createElement('button'); b.textContent=m.n;
+  b.onclick=()=>go(beats.findIndex(x=>x.mi===mi&&x.kind==='module'));
+  navmod.appendChild(b);
+});
+const rlist=$('#rlist');
+all.forEach(r=>{
+  const a=document.createElement('a'); a.href='javascript:void(0)';
+  a.textContent='R '+r.r+' — '+stripHTML(r.t).slice(0,54); a.dataset.r=r.r;
+  a.onclick=()=>{const ix=ruleIndex[r.r]; if(ix) go(ix.start);};
+  rlist.appendChild(a);
+});
+$('#q').addEventListener('input',e=>{
+  const v=e.target.value.trim().toLowerCase();
+  [...rlist.children].forEach(a=>{
+    const r=BY[a.dataset.r];
+    const hay=(r.r+' '+r.t+' '+r.text+' '+(r.hi||'')+' '+(r.subs||[]).map(s=>s.n+' '+s.text).join(' ')).toLowerCase();
+    a.style.display=(!v||hay.includes(v))?'':'none';
+  });
+});
+
+/* ---------- context panel ---------- */
+function ctxHTML(rule, bi){
+  let h=`<div style="font-weight:800;color:var(--teal-d);margin-bottom:4px">Rule ${rule.r} — ${rule.t}</div>`;
+  let k=0;
+  const mark=()=>`data-bi="${k++}"`;
+  h+=`<div class="cb" ${mark()}><div class="cl">Verbatim rule text</div>${rule.text}</div>`;
+  if(rule.hi) h+=`<div class="cb" ${mark()}><div class="cl">Hinglish</div>${rule.hi}</div>`;
+  (rule.subs||[]).forEach(s=>{h+=`<div class="cb" ${mark()}><div class="cl">${s.n}</div>${s.text}${s.hi?`<div style="color:#31505a">👉 ${s.hi}</div>`:''}</div>`;});
+  (rule.prov||[]).forEach(p=>{h+=`<div class="cb" ${mark()}><div class="cl">Proviso</div>${p}</div>`;});
+  (rule.note||[]).forEach(n=>{h+=`<div class="cb" ${mark()}><div class="cl">Note / explanation</div>${n}</div>`;});
+  (rule.ex||[]).forEach(e=>{h+=`<div class="cb" ${mark()}><div class="cl">Exception</div>${e}</div>`;});
+  (rule.fn||[]).forEach(f=>{h+=`<div class="cb" ${mark()}><div class="cl">Amendment footnote</div>${f}</div>`;});
+  return h;
+}
+let ctxRule=null;
+function renderCtx(b){
+  if(!b.rule){ $('#ctx').innerHTML=`<div style="color:var(--muted)">${b.html}</div>`; ctxRule=null; return; }
+  if(ctxRule!==b.ri){ $('#ctx').innerHTML=ctxHTML(b.rule); ctxRule=b.ri; }
+  $('#ctx').querySelectorAll('.cb').forEach(el=>el.classList.remove('active'));
+  const el=$('#ctx').querySelector(`[data-bi="${b.bi}"]`); if(el){el.classList.add('active'); el.scrollIntoView({block:'nearest'});}
+}
+
+/* ---------- engine ---------- */
+const audio=new Audio();
+let i=0, playing=false, rate=1, muted=false, timer=null, voice=null, voicesReady=false;
+const synth = window.speechSynthesis || null;
+
+function loadVoices(){
+  if(!synth) return;
+  const vs=synth.getVoices()||[];
+  const sel=$('#voice'); const prev=sel.value;
+  sel.innerHTML='<option value="">Voice: auto (hi-IN)</option>';
+  vs.forEach((v,ix)=>{
+    const o=document.createElement('option'); o.value=ix;
+    o.textContent=`${v.name} (${v.lang})`; sel.appendChild(o);
+  });
+  sel.value=prev;
+  voicesReady = vs.length>0;
+  if(!voicesReady) $('#vwarn').style.display='block', $('#vwarn').innerHTML='⚠ Is browser mein koi TTS voice nahi mili. Video <b>silent auto-advance mode</b> mein chalega — text screen par dikhega, aur aap Episode 1/2 ke studio-recorded Hinglish clips use kar sakte hain.';
+}
+if(synth){ loadVoices(); synth.onvoiceschanged=loadVoices; }
+else { $('#vwarn').style.display='block'; $('#vwarn').innerHTML='⚠ Speech synthesis is browser mein support nahi karta — silent auto-advance mode.'; }
+
+function pickVoice(){
+  if(!synth) return null;
+  const vs=synth.getVoices()||[];
+  const sel=$('#voice').value;
+  if(sel!=='' && vs[+sel]) return vs[+sel];
+  return vs.find(v=>/hi[-_]IN/i.test(v.lang)) || vs.find(v=>/^hi/i.test(v.lang)) ||
+         vs.find(v=>/en[-_]IN/i.test(v.lang)) || vs.find(v=>/^en/i.test(v.lang)) || vs[0] || null;
+}
+
+function render(){
+  const b=beats[i];
+  $('#crumb').textContent = (b.ri?('Rule '+b.ri+' · '):'')+ (MODULES[b.mi]?MODULES[b.mi].n:'') ;
+  $('#counter').textContent = `Beat ${i+1} / ${beats.length}`;
+  $('#kind').className='kind '+(KINDCLS[b.kind]||'k-title');
+  $('#kind').textContent = KINDLBL[b.kind]||b.kind;
+  $('#beat').innerHTML = b.html;
+  $('#beat').classList.remove('beat'); void $('#beat').offsetWidth; $('#beat').classList.add('beat');
+  $('#pbar').style.width = (i/(beats.length-1)*100)+'%';
+  // beat strip
+  const strip=$('#beats'); strip.innerHTML='';
+  const ruleBeats = b.ri ? beats.slice(ruleIndex[b.ri].start, ruleIndex[b.ri].end+1) : beats.filter(x=>x.mi===b.mi&&!x.ri);
+  const base = b.ri ? ruleIndex[b.ri].start : beats.findIndex(x=>x===b);
+  ruleBeats.forEach((bb,k)=>{
+    const s=document.createElement('span'); s.textContent=(k+1)+'. '+stripHTML(bb.label).slice(0,26);
+    if(base+k===i) s.classList.add('act'); else if(base+k<i) s.classList.add('done');
+    s.onclick=()=>go(base+k); strip.appendChild(s);
+  });
+  const act=strip.querySelector('.act'); if(act) act.scrollIntoView({inline:'center',block:'nearest'});
+  // module + rule highlight
+  [...navmod.children].forEach((btn,mi)=>btn.classList.toggle('on',mi===b.mi));
+  [...rlist.children].forEach(a=>a.classList.toggle('act', a.dataset.r===b.ri));
+  renderCtx(b);
+}
+
+let curU=null;
+function speak(){
+  const b=beats[i];
+  if(muted || !b.speech){ timerAdvance(); return; }
+  if(b.audio){
+    audio.src=b.audio; audio.playbackRate=1;
+    audio.play().then(()=>{playing=true; $('#play').textContent='⏸ Pause';}).catch(()=>timerAdvance());
+    return;
+  }
+  if(synth){
+    try{ synth.cancel(); }catch(e){}
+    const u=new SpeechSynthesisUtterance(b.speech);
+    const v=pickVoice(); if(v){u.voice=v; u.lang=v.lang;}
+    u.rate=rate; u.pitch=1;
+    curU=u;
+    u.onend=()=>{ if(curU!==u) return; playing=false; if(i<beats.length-1) setTimeout(()=>go(i+1),200); };
+    u.onerror=()=>{ if(curU!==u) return; playing=false; timerAdvance(); };
+    synth.speak(u); playing=true; $('#play').textContent='⏸ Pause';
+  } else timerAdvance();
+}
+function timerAdvance(){
+  const b=beats[i];
+  const secs = Math.max(1.2, (b.speech||'').length/13);
+  clearTimeout(timer);
+  timer=setTimeout(()=>{ if(i<beats.length-1) go(i+1); else {playing=false; $('#play').textContent='▶ Play';} }, secs*1000);
+  playing=true; $('#play').textContent='⏸ Pause';
+}
+function pauseAll(){
+  clearTimeout(timer);
+  try{ audio.pause(); }catch(e){}
+  if(curU){ curU.onend=null; curU.onerror=null; curU=null; }
+  try{ if(synth) synth.cancel(); }catch(e){}
+  playing=false; $('#play').textContent='▶ Play';
+}
+function go(n){
+  if(n<0||n>=beats.length) return;
+  const resume = playing;
+  pauseAll(); i=n; render();
+  if(resume) speak(); else $('#play').textContent='▶ Play';
+}
+function play(){ speak(); }
+function toggle(){ if(playing) pauseAll(); else play(); }
+
+$('#play').onclick=toggle;
+$('#nextB').onclick=()=>go(i+1);
+$('#prevB').onclick=()=>go(i-1);
+$('#nextR').onclick=()=>{ const b=beats[i]; const nx=beats.findIndex((x,k)=>k>i && x.ri && x.ri!==b.ri); go(nx<0?beats.length-1:nx); };
+$('#prevR').onclick=()=>{ const b=beats[i]; let p=-1; for(let k=i-1;k>=0;k--){ if(beats[k].ri && beats[k].ri!==b.ri){p=k;break;} } go(p<0?0:p); };
+$('#mute').onclick=()=>{ muted=!muted; audio.muted=muted; $('#mute').textContent=muted?'🔇':'🔊'; if(playing&&muted) pauseAll(); };
+$('#rate').onchange=e=>{ rate=parseFloat(e.target.value); audio.playbackRate=1; };
+$('#voice').onchange=()=>{ if(playing){ pauseAll(); speak(); } };
+audio.addEventListener('ended',()=>{ playing=false; if(i<beats.length-1) setTimeout(()=>go(i+1),200); else $('#play').textContent='▶ Play'; });
+document.addEventListener('keydown',e=>{
+  if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT') return;
+  if(e.code==='Space'){e.preventDefault(); toggle();}
+  if(e.code==='ArrowRight'){e.preventDefault(); e.shiftKey?$('#nextR').click():go(i+1);}
+  if(e.code==='ArrowLeft'){e.preventDefault(); e.shiftKey?$('#prevR').click():go(i-1);}
+  if(e.key==='m'||e.key==='M') $('#mute').click();
+});
+
+$('#eta').textContent = `~${Math.round(totalChars/13/60)} min · ${beats.length} beats`;
+render();
+</script>
+</body>
+</html>

@@ -352,3 +352,47 @@ each shown with "DELETED" styling and the deleting OM.
    the 05.06.2025 limits (₹2,00,000 / ₹2–25 lakh); both are cited with their dates.
 3. **Scope caveat** — Chapter 6 Part A also contains Rules 142–176 for goods and Part B Rules 177–206 for
    services; both are covered in full, and Rule 206's fallback to the goods rules is documented.
+
+---
+
+# GRANULAR VIDEO — every provision, narrated beat by beat
+**File:** `granular-video.html` · **Audio:** `audio/g-01…g-10.mp3`
+
+A long-form Hinglish video course in which **every provision of Chapter 6 is its own narrated beat**.
+471 beats total, grouped into 7 modules, auto-advancing like a video with play/pause, per-beat and
+per-rule stepping, speed control, voice selection and a live "current provision" panel.
+
+## Beat architecture (per rule)
+| # | Beat | Source |
+|---|---|---|
+| 1 | Rule number + title | data |
+| 2 | **Verbatim rule text** (spoken) | DoE compilation |
+| 3 | **Hinglish explanation** | data |
+| 4…n | **Each sub-rule / clause / sub-clause** (verbatim + Hinglish) | data |
+| n+1… | **Each proviso** | data |
+| | **Each note / explanation** (incl. PAC format, automobile note, works 3–10% note) | data |
+| | **Each exception** (Scientific Ministries, MSE/Startup EMD, national security, Rule 206 fallback…) | data |
+| | **Each amendment footnote** (OM number + date) | data |
+
+## Modules
+1. Foundation & Definitions — Rules 142–148 (7 rules)
+2. GeM ladder & suppliers — Rules 149–153 (5)
+3. Below tender level — Rules 154–158 (5)
+4. Tender methods & e-publishing — Rules 159–168 (10)
+5. Securities, payments & integrity — Rules 169–176 (10 entries)
+6. Consulting services — Rules 177–196 (20)
+7. Non-consulting services & fallback — Rules 197–206 (10)
+
+## Audio strategy
+- **Studio-recorded Hinglish** (this session's voice): 7 module intros + 3 critical callouts
+  (GeM threshold change of 10.07.2024 · QCBS 80% cap · Rule 206 cross-reference).
+- **Provision-level narration** uses the browser's Speech Synthesis engine with an Indian-Hindi voice
+  (`hi-IN`, falling back to `en-IN`), so that all 471 beats can be spoken without shipping hundreds of files.
+- **Silent auto-advance mode** automatically engages if no TTS voice is available — the text still advances
+  on a reading-rate timer, and the studio-recorded comic episodes remain available for listening.
+- Mute, speed (0.8×–1.3×) and voice picker are all exposed in the control bar.
+
+## Verified before delivery
+- 471 beats computed from the same data files as the reference document — no drift between the two.
+- All 67 rules present in the module lists (checked programmatically — zero missing).
+- JS syntax validated; all assets serve over the preview server.
