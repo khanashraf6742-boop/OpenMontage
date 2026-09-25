@@ -311,3 +311,44 @@ PROCUREMENT OF SERVICES
 | Rule 206 cross-reference to goods rules | ☑ |
 | Currentness (31.01.2026 compilation) | ☑ |
 | Story/props/characters different from Episode 1 | ☑ |
+
+---
+
+# COMPLETE GRANULAR REFERENCE — every rule, sub-rule, clause, proviso, note, exception, footnote
+**File:** `chapter6-complete.html` · **Data:** `data/ch6-goods.js`, `data/ch6-services.js`
+
+A searchable, printable, rulebook-grade reference covering Chapter 6 **end to end** — not a summary.
+Each provision is documented with (a) the **verbatim text** from the DoE compilation updated to 31.01.2026,
+(b) a simple **Hinglish** explanation, and (c) every proviso, note/explanation, exception and amendment footnote.
+
+## Documented inventory (auto-counted from the data files)
+| Layer | Count |
+|---|---|
+| Rules (incl. deleted rules retained and marked) | **67** (Goods 142–176: 37 entries · Services 177–206: 30 entries) |
+| Sub-rules / clauses / sub-clauses broken out | **179** |
+| Provisos | **2** |
+| Notes / Explanations (incl. PAC format, works 3–10% note, GeM automobile note) | **9** |
+| Exceptions (incl. Scientific Ministries, MSE/Startup EMD, national security, Rule 206 cross-reference) | **36** |
+| Amendment footnotes with OM number + date | **34** |
+
+Plus a **complete amendment trail table** listing all 14 DoE OMs that affect Chapter 6, and the explicit
+DoPT-vs-DoE clarification.
+
+## Deleted provisions retained (so the learner never mistakes them for current law)
+Rule 148 (Rate Contract) · Rule 156 · Rule 159(iv) · Rule 160(iii) · Rule 173(xv) · Rule 174(iv) —
+each shown with "DELETED" styling and the deleting OM.
+
+## Features
+- Live search across rule numbers, verbatim text, Hinglish text, ₹ amounts, OM numbers and keywords
+- Layer toggles: Verbatim / Hinglish / Clause-level / Proviso-Note-Exception-Footnote
+- Expand-all / collapse-all, rule-chip navigation, print stylesheet
+- Every rule card flags which layers it contains (e.g. "Exception ×2", "Footnote ×3")
+
+## Honest flags carried into the reference
+1. **Source conflict flagged** on Rule 149 — the official DoE compilation places the "automobiles: no ceiling"
+   Note after sub-rule (i); some secondary compilations show a ₹30 lakh continuation inside (ii)/(iii).
+   The official position is reproduced, with the discrepancy disclosed.
+2. **Scientific Ministries OM supersession** — the 20.05.2024 limits (₹1,00,000 / ₹1–10 lakh) were replaced by
+   the 05.06.2025 limits (₹2,00,000 / ₹2–25 lakh); both are cited with their dates.
+3. **Scope caveat** — Chapter 6 Part A also contains Rules 142–176 for goods and Part B Rules 177–206 for
+   services; both are covered in full, and Rule 206's fallback to the goods rules is documented.

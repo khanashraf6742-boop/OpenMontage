@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GFR 2017 — Chapter 6 · Complete Granular Reference (every rule, sub-rule, clause, proviso, note, exception, footnote)</title>
+<style>
+  :root{
+    --ink:#1a1f24; --teal:#0f6f7a; --teal-d:#0a4f57; --maroon:#8c1d3f; --saffron:#e08a1e;
+    --paper:#fffdf9; --line:#ded5c6; --muted:#6a7076; --good:#1c7c46; --bad:#a3241c; --amber:#b06f00;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#f3efe7;color:var(--ink);
+    font-family:"Segoe UI",Roboto,"Noto Sans Devanagari",system-ui,sans-serif;line-height:1.55}
+  .wrap{max-width:1180px;margin:0 auto;padding:16px}
+  a{color:var(--teal-d)}
+
+  header.hero{background:linear-gradient(135deg,#0a4f57,#0f6f7a 55%,#12707c);color:#fff;border-radius:16px;
+    padding:22px 24px;box-shadow:0 10px 30px rgba(10,60,66,.25)}
+  header.hero h1{margin:0 0 6px;font-size:clamp(19px,3vw,30px)}
+  header.hero p{margin:0;opacity:.92;font-size:clamp(12px,1.5vw,15px)}
+  .epi{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+  .epi a{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);color:#fff;
+    padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;text-decoration:none}
+  .epi a:hover{background:var(--saffron);color:#3a2200;border-color:var(--saffron)}
+
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:14px 0}
+  .stat{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px 12px;text-align:center}
+  .stat b{display:block;font-size:clamp(18px,2.6vw,26px);color:var(--teal-d)}
+  .stat span{font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+
+  .toolbar{position:sticky;top:0;z-index:20;background:rgba(243,239,231,.96);backdrop-filter:blur(6px);
+    padding:10px 0;border-bottom:1px solid var(--line);margin-bottom:14px}
+  .searchrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  #q{flex:1 1 260px;min-width:200px;padding:10px 14px;border:2px solid var(--line);border-radius:10px;
+    font-size:14px;font-family:inherit;background:#fff}
+  #q:focus{outline:none;border-color:var(--teal)}
+  .tg{display:flex;gap:6px;flex-wrap:wrap}
+  .tg button{border:2px solid var(--line);background:#fff;color:var(--ink);padding:7px 11px;border-radius:999px;
+    font-size:12px;font-weight:700;cursor:pointer}
+  .tg button.on{background:var(--teal);border-color:var(--teal);color:#fff}
+  .nav{display:flex;gap:5px;flex-wrap:wrap;margin-top:9px;max-height:78px;overflow:auto}
+  .nav a{font-size:11px;font-weight:700;text-decoration:none;color:var(--teal-d);background:#fff;
+    border:1px solid var(--line);border-radius:6px;padding:3px 7px}
+  .nav a:hover{background:var(--teal);color:#fff}
+
+  h2.part{margin:22px 0 10px;font-size:clamp(16px,2.4vw,22px);color:#fff;background:var(--teal-d);
+    padding:10px 14px;border-radius:10px}
+  h2.part.svc{background:var(--maroon)}
+
+  .rule{background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--teal);
+    border-radius:12px;margin:10px 0;overflow:hidden}
+  .rule.svc{border-left-color:var(--maroon)}
+  .rule.deleted{opacity:.75;border-left-color:var(--bad);background:#fdf3f2}
+  .rhead{display:flex;gap:10px;align-items:baseline;padding:11px 14px 8px;flex-wrap:wrap;cursor:pointer}
+  .rnum{font-weight:900;color:var(--teal-d);font-size:clamp(14px,1.9vw,19px);white-space:nowrap}
+  .svc .rnum{color:var(--maroon)}
+  .rtitle{font-weight:700;font-size:clamp(13px,1.7vw,17px);flex:1 1 200px}
+  .rflags{display:flex;gap:5px;flex-wrap:wrap}
+  .fl{font-size:10px;font-weight:800;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:.04em}
+  .fl.p{background:#fdf0d8;color:var(--amber);border:1px solid #e8cf9a}
+  .fl.n{background:#e6f1f2;color:var(--teal-d);border:1px solid #bcd6d9}
+  .fl.e{background:#fbe6e4;color:var(--bad);border:1px solid #e8b8b4}
+  .fl.f{background:#efe6f5;color:#5b3a86;border:1px solid #d3c2e6}
+  .fl.s{background:#e8f3ea;color:var(--good);border:1px solid #b9dcc2}
+  .rbody{padding:0 14px 12px;display:none}
+  .rule.open .rbody{display:block}
+  .txt{font-size:13.5px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:6px 0}
+  .txt .vlabel{font-size:10px;font-weight:800;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  .hi{font-size:13.5px;background:#f2f8f9;border:1px dashed #a8ccd1;border-radius:8px;padding:10px 12px;margin:6px 0}
+  .hi .vlabel{font-size:10px;font-weight:800;color:var(--teal-d);letter-spacing:.08em;text-transform:uppercase}
+  .sub{border-left:3px solid var(--saffron);padding:6px 0 6px 11px;margin:8px 0}
+  .sub .sn{font-weight:800;color:var(--amber);font-size:12.5px}
+  .sub .st{font-size:13px;margin:2px 0}
+  .sub .sh{font-size:12.5px;color:#31505a;background:#fbf6ea;border-radius:6px;padding:4px 8px;display:inline-block}
+  .box{border-radius:8px;padding:9px 11px;margin:7px 0;font-size:12.8px}
+  .box .bl{font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:3px}
+  .box.prov{background:#fdf6e6;border:1px solid #ecd9a8}.box.prov .bl{color:var(--amber)}
+  .box.note{background:#eef5f6;border:1px solid #bcd6d9}.box.note .bl{color:var(--teal-d)}
+  .box.exc{background:#fdeeec;border:1px solid #eabfb9}.box.exc .bl{color:var(--bad)}
+  .box.fn{background:#f4eefa;border:1px solid #d6c6e8}.box.fn .bl{color:#5b3a86}
+  .box ul{margin:0;padding-left:18px}
+  .box li{margin:2px 0}
+  .count{font-size:11px;color:var(--muted);padding:0 14px 10px}
+
+  .amend{margin:18px 0;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .amend h3{margin:0 0 8px;color:var(--teal-d)}
+  table.am{width:100%;border-collapse:collapse;font-size:12.5px}
+  table.am th{background:var(--teal);color:#fff;text-align:left;padding:7px 9px}
+  table.am td{border-bottom:1px solid var(--line);padding:7px 9px;vertical-align:top}
+  table.am tr:nth-child(even) td{background:#faf7f0}
+  .none{padding:14px;color:var(--muted);font-style:italic}
+  footer.ft{color:var(--muted);font-size:11.5px;margin:20px 0 8px;line-height:1.7}
+  @media print{.toolbar,.epi{display:none}.rule .rbody{display:block!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>GFR 2017 — Chapter 6 · Complete Granular Reference</h1>
+  <p><b>Procurement of Goods and Services</b> — har rule, sub-rule, clause, sub-clause, proviso, note, explanation,
+  exception aur amendment footnote. Verbatim text + simple Hinglish explanation.
+  Source: Department of Expenditure, Ministry of Finance — GFR 2017 compilation <b>updated up to 31.01.2026</b>,
+  verified 25 September 2026.</p>
+  <div class="epi">
+    <a href="index.html">▶ Episode 1 — Procurement of Goods (comic explainer)</a>
+    <a href="services.html">▶ Episode 2 — Procurement of Services (comic explainer)</a>
+  </div>
+</header>
+
+<div class="stats" id="stats"></div>
+
+<div class="toolbar">
+  <div class="searchrow">
+    <input id="q" type="search" placeholder="🔎 Search karo — rule number, keyword, ₹ amount, OM number…  e.g. 149, EMD, QCBS, debar, 50,000">
+    <div class="tg">
+      <button id="tEn" class="on">Verbatim</button>
+      <button id="tHi" class="on">Hinglish</button>
+      <button id="tSub" class="on">Clauses</button>
+      <button id="tBox" class="on">Proviso/Note/Exception/Footnote</button>
+      <button id="tAll">Expand all</button>
+    </div>
+  </div>
+  <div class="nav" id="nav"></div>
+</div>
+
+<h2 class="part" id="part-goods">PART A — PROCUREMENT OF GOODS (Rules 142–176)</h2>
+<div id="goods"></div>
+
+<h2 class="part svc" id="part-services">PART B — PROCUREMENT OF SERVICES (Rules 177–206)</h2>
+<div id="services"></div>
+
+<div class="amend">
+  <h3>📎 Complete amendment &amp; footnote trail affecting Chapter 6</h3>
+  <table class="am">
+    <tr><th style="width:24%">OM / Order</th><th style="width:14%">Date</th><th>Effect on Chapter 6</th></tr>
+    <tr><td>DoE OM No. <b>F.1/3/2024-PPD</b></td><td>10.07.2024</td><td>Thresholds raised: Rule 149 GeM tiers → ₹50,000 / ₹10,00,000 / above ₹10,00,000 (from ₹25,000 / ₹5,00,000 / ₹30,00,000); Rule 155 → above ₹50,000 up to ₹5,00,000; Rule 161 advertised tender → ₹50 lakh and above; Rule 162 LTE → up to ₹50 lakh; Rule 183 → ₹50 lakh; Rule 201 → ₹50 lakh; Rule 173(xxii) purchase-committee reporting limit → ₹50 lakh.</td></tr>
+    <tr><td>DoE OM No. <b>F.20/42/2021-PPD</b></td><td>05.06.2025</td><td>Special provisions for Scientific Ministries/Departments/Organisations (DST, DBT, DSIR, DAE, Space, MoES, DRDO, ICAR + affiliated institutions &amp; universities, DHR incl. ICMR, educational/research institutes conducting PG/doctoral courses or research): Rule 154 → ₹2,00,000; Rule 155 → ₹2,00,000–₹25,00,000; Rule 161 → above ₹1 crore; Rule 162 → up to ₹1 crore; VC/Director competent to approve GTEs up to ₹200 crore. <b>Only for scientific equipment and consumables for research purposes, and only when not available on GeM.</b></td></tr>
+    <tr><td>DoE OM No. <b>F.20/42/2021-PPD</b></td><td>20.05.2024</td><td>Earlier version of the Scientific Ministries relaxations (Rule 154 → ₹1,00,000; Rule 155 → ₹1,00,000–₹10,00,000; Rule 161 → ₹1 crore), now superseded by the OM dated 05.06.2025.</td></tr>
+    <tr><td>DoE OM No. <b>F.7/10/2021-PPD</b></td><td>23.02.2023</td><td>Rule 144(x) inserted — DoE may impose restrictions (prior registration / screening) on bidders from, or having commercial arrangements with entities from, countries sharing a land border, on defence of India / national security grounds.</td></tr>
+    <tr><td>DoE OM No. <b>F.1/26/2018-PPD</b></td><td>02.04.2019</td><td>GeM mandate in Rule 147; Rule 148 (Rate Contract) <b>deleted</b>; Rule 156 <b>deleted</b>; Rule 155 "not available on GeM" condition inserted; registration &amp; list-on-website provisions in Rule 150; publication on GeM + GeM-CPP in Rules 159, 162, 183, 201; Rule 159(iv) and 160(iii) deleted; Rule 173(xv) deleted.</td></tr>
+    <tr><td>DoE OM No. <b>F.1/20/2018-PPD</b></td><td>02.11.2021</td><td>Rule 151 debarment provisions amended (3-year / 2-year structure; DoE list on CPPP).</td></tr>
+    <tr><td>DoE OM No. <b>F.12/17/2019-PPD</b></td><td>15.05.2020</td><td>Rule 161(iv) — Global Tender Enquiry not to be invited for tenders up to ₹200 crore without prior approval.</td></tr>
+    <tr><td>DoE OM No. <b>F.10/2/2019-PPD(Pt.)</b></td><td>17.02.2020</td><td>Rule 153(i) — mandatory procurement of at least 20% textiles from handloom origin.</td></tr>
+    <tr><td>DoE OM No. <b>F.26/2/2016-PPD</b></td><td>25.07.2017</td><td>Rule 152 — enlistment of Indian agents.</td></tr>
+    <tr><td>DoE OM No. <b>F.20/2/2014-PPD(Pt.)</b></td><td>25.07.2017</td><td>Rule 170(i) — DPIIT-recognised Startups exempted from bid security.</td></tr>
+    <tr><td>DoE OM No. <b>F.1/1/2022-PPD</b></td><td>02.02.2022</td><td>Rules 170 &amp; 171 — Insurance Surety Bonds accepted as bid/performance security.</td></tr>
+    <tr><td>DoE OM No. <b>F.1/4/2022-PPD</b></td><td>05.08.2022</td><td>Rules 170 &amp; 171 — e-Bank Guarantee accepted.</td></tr>
+    <tr><td>DoE OM No. <b>F.1/2/2022-PPD</b></td><td>01.04.2022</td><td>Rule 170(ii) — bid securities of unsuccessful bidders in two-packet / two-stage bidding to be returned within 30 days of first-stage result.</td></tr>
+    <tr><td>DoE OM No. <b>F.1/2/2023-PPD</b></td><td>01.01.2024</td><td>Rule 171 — performance security for Goods / Consultancy / Non-Consultancy Services at 3–5%; works continue at 3–10% including security deposit/retention money.</td></tr>
+  </table>
+  <p style="font-size:12px;color:var(--muted);margin:10px 0 0">
+    <b>DoPT note:</b> GFR and Chapter 6 are issued and amended solely by the <b>Department of Expenditure, Ministry of Finance</b>.
+    DoPT OMs govern service &amp; conduct matters under the CCS Rules and do not alter any GFR procurement threshold.
+  </p>
+</div>
+
+<footer class="ft">
+  <b>How to use:</b> har rule card par click karke kholo. Search box se kisi bhi rule number, keyword, ₹ amount ya OM number se filter karo.
+  Toggle buttons se verbatim / Hinglish / clause-level / proviso-note-exception-footnote layers chhupao ya dikhao.<br>
+  <b>Coverage claim:</b> is reference mein Chapter 6 ke saare rules — 142 se 206 tak — unke har sub-rule, clause, proviso, note, explanation,
+  exception aur amendment footnote ke saath document kiye gaye hain. Verbatim text DoE ke official compilation se liya gaya hai
+  (GFR 2017 updated up to 31.01.2026); jahan koi provision delete ho chuka hai (Rules 148, 156, 159(iv), 160(iii), 173(xv), 174(iv)),
+  wahan "DELETED" saaf dikhaya gaya hai.
+</footer>
+</div>
+
+<script src="data/ch6-goods.js"></script>
+<script src="data/ch6-services.js"></script>
+<script>
+const GOODS = window.GFR_CH6_GOODS || [];
+const SVCS  = window.GFR_CH6_SERVICES || [];
+const $ = s => document.querySelector(s);
+
+/* ---------- render ---------- */
+function card(rule, svc){
+  const flags = [];
+  if((rule.prov||[]).length) flags.push('<span class="fl p">Proviso ×'+(rule.prov.length)+'</span>');
+  if((rule.note||[]).length) flags.push('<span class="fl n">Note/Expl ×'+(rule.note.length)+'</span>');
+  if((rule.ex||[]).length)   flags.push('<span class="fl e">Exception ×'+(rule.ex.length)+'</span>');
+  if((rule.fn||[]).length)   flags.push('<span class="fl f">Footnote ×'+(rule.fn.length)+'</span>');
+  if((rule.subs||[]).length) flags.push('<span class="fl s">Sub-rules ×'+(rule.subs.length)+'</span>');
+  const deleted = /DELETED|deleted/i.test(rule.t) || /stands deleted/i.test(rule.text);
+
+  let b = '';
+  b += `<div class="txt"><span class="vlabel">Verbatim rule text</span><br>${rule.text}</div>`;
+  if(rule.hi) b += `<div class="hi"><span class="vlabel">Samajhne mein aasan (Hinglish)</span><br>${rule.hi}</div>`;
+  if((rule.subs||[]).length){
+    b += `<div class="subs">`;
+    rule.subs.forEach(s=>{
+      b += `<div class="sub"><div class="sn">${s.n}</div><div class="st">${s.text}</div>${s.hi?`<div class="sh">👉 ${s.hi}</div>`:''}</div>`;
+    });
+    b += `</div>`;
+  }
+  (rule.prov||[]).forEach(p=> b += `<div class="box prov"><span class="bl">Proviso</span>${p}</div>`);
+  (rule.note||[]).forEach(n=> b += `<div class="box note"><span class="bl">Note / Explanation</span>${n}</div>`);
+  (rule.ex||[]).forEach(e=> b += `<div class="box exc"><span class="bl">Exception</span>${e}</div>`);
+  (rule.fn||[]).forEach(f=> b += `<div class="box fn"><span class="bl">Amendment footnote</span>${f}</div>`);
+
+  const el = document.createElement('div');
+  el.className = 'rule'+(svc?' svc':'')+(deleted?' deleted':'');
+  el.dataset.search = (rule.r+' '+rule.t+' '+rule.text+' '+(rule.hi||'')+' '+
+    (rule.subs||[]).map(s=>s.n+' '+s.text+' '+(s.hi||'')).join(' ')+' '+
+    (rule.prov||[]).join(' ')+' '+(rule.note||[]).join(' ')+' '+(rule.ex||[]).join(' ')+' '+(rule.fn||[]).join(' ')).toLowerCase();
+  el.innerHTML = `<div class="rhead"><span class="rnum">Rule ${rule.r}</span><span class="rtitle">${rule.t}</span>
+      <span class="rflags">${flags.join('')}</span></div><div class="rbody">${b}</div>`;
+  el.querySelector('.rhead').onclick = ()=> el.classList.toggle('open');
+  return el;
+}
+
+const gBox = $('#goods'), sBox = $('#services');
+GOODS.forEach(r=> gBox.appendChild(card(r,false)));
+SVCS.forEach(r=> sBox.appendChild(card(r,true)));
+
+/* ---------- nav ---------- */
+const nav = $('#nav');
+const mk = (label,href)=>{const a=document.createElement('a');a.href=href;a.textContent=label;nav.appendChild(a);};
+mk('↑ Top','#');
+GOODS.forEach(r=>mk('R '+r.r,'#r'+r.r.replace(/[()]/g,'')));
+mk('Part B ↓','#part-services');
+SVCS.forEach(r=>mk('R '+r.r,'#r'+r.r.replace(/[()]/g,'')));
+mk('Amendments','#amend');
+
+/* ---------- stats ---------- */
+const all = GOODS.concat(SVCS);
+const cnt = k => all.reduce((a,r)=>a+(r[k]||[]).length,0);
+$('#stats').innerHTML =
+  `<div class="stat"><b>${all.length}</b><span>Rules documented</span></div>
+   <div class="stat"><b>${cnt('subs')}</b><span>Sub-rules / clauses</span></div>
+   <div class="stat"><b>${cnt('prov')}</b><span>Provisos</span></div>
+   <div class="stat"><b>${cnt('note')}</b><span>Notes / explanations</span></div>
+   <div class="stat"><b>${cnt('ex')}</b><span>Exceptions</span></div>
+   <div class="stat"><b>${cnt('fn')}</b><span>Amendment footnotes</span></div>`;
+
+/* ---------- search & toggles ---------- */
+const cards = [...document.querySelectorAll('.rule')];
+$('#q').addEventListener('input', e=>{
+  const v = e.target.value.trim().toLowerCase();
+  let shown = 0;
+  cards.forEach(c=>{
+    const hit = !v || c.dataset.search.includes(v);
+    c.style.display = hit ? '' : 'none';
+    if(hit){ shown++; if(v) c.classList.add('open'); }
+  });
+  $('#part-goods').style.display = GOODS.some((r,i)=>cards[i].style.display!=='none') ? '' : 'none';
+  $('#part-services').style.display = SVCS.some((r,i)=>cards[GOODS.length+i].style.display!=='none') ? '' : 'none';
+  document.querySelectorAll('.none').forEach(n=>n.remove());
+  if(!shown){
+    const d=document.createElement('div'); d.className='none'; d.textContent='Koi provision match nahi hui — dusra keyword try karo.';
+    $('#services').appendChild(d);
+  }
+});
+function tog(id, sel, cls){
+  const b=$(id); b.onclick=()=>{ b.classList.toggle('on'); document.querySelectorAll(sel).forEach(e=>e.style.display=b.classList.contains('on')?'':'none'); };
+}
+tog('#tEn','.txt'); tog('#tHi','.hi'); tog('#tSub','.sub'); tog('#tBox','.box');
+$('#tAll').onclick = function(){
+  const open = this.textContent === 'Expand all';
+  cards.forEach(c=>c.classList.toggle('open', open));
+  this.textContent = open ? 'Collapse all' : 'Expand all';
+};
+</script>
+</body>
+</html>
