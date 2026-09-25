@@ -100,9 +100,8 @@ granular.js           clause tree: verbatim text + Hinglish vyakhya + notes/prov
 assets/panels/        scene-01 … scene-10 comic panels
 assets/audio/         scene-01 … scene-10 (story) + rule-207 … rule-216 (per-rule narration)
 
-> Narration status: dedicated per-rule clips exist for **Rules 207–216**. For **217–223** the Deep
-> Dive player automatically falls back to the covering scene narration, so every rule is audible
-> today; the 7 dedicated clips are queued for the next generation pass.
+> **Narration status:** all **17 rules** (207–223) have their own dedicated per-rule narration clip,
+> plus the 10 story-mode scene clips. Total ≈ 45 minutes of Hinglish audio.
 ```
 
 ## Validation status — PASS
@@ -116,8 +115,10 @@ assets/audio/         scene-01 … scene-10 (story) + rule-207 … rule-216 (per
 | Latest compilation checked | GFRs 2017 updated up to **31.01.2026** (uploaded 09.04.2026); also DoE OM No. 08(18)/2021-E.II(A) dated 19.09.2025 (up to 31.07.2025) |
 | Amendment applied | **Rule 218** — residual-value threshold ₹2,00,000 → **₹4,00,000**, vide **DoE OM No. F.1/3/2024-PPD dated 10.07.2024** |
 | Numbers verified | 1 year (213, 214) · 3 years (215) · 5 per 1,000 (215) · ₹1,000 (215) · ₹4,00,000 (218) · 10% (219) · 25% (220) |
+| Form numbers verified | GFR-22 Register of Fixed Assets · GFR-23 Stock Register of consumables · **GFR-18 Accession Register** (library books, DoE forms list p.179) · GFR-24 historical/artistic assets |
+| 2026 amendment sweep | MoF O.M. No. 15(04)/2021-E.II(A) dt. 05.05.2026 amends **Rules 309 & 310** (transfer/alienation of Central Government land, Chapter 12) + adds Appendix 7A/7B — **Chapter 7 unaffected** |
+| Amendment position (final) | Chapter 7 has exactly **one** amendment: Rule 218, ₹2,00,000 → ₹4,00,000 (DoE OM F.1/3/2024-PPD, 10.07.2024). Nothing after it, checked up to the 31.01.2026 compilation |
 | Distortion guard | disposal mode ≠ prohibition · verification ≠ condemnation · 1-year surplus note is rebuttable · write-off sanction needed even without account adjustment |
-| Flagged uncertainty | Form **GFR-18** (library books) is reported by secondary compilations of Rule 211; GFR-22/23/24 appear in the official DoE form list — verify against your departmental form list |
 
 ### Latest operational orders referenced
 

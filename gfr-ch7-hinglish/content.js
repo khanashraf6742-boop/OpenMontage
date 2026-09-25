@@ -689,7 +689,9 @@ const VALIDATION = [
   ['Amendment found', 'Rule 218 — residual-value threshold ₹2,00,000 → ₹4,00,000, vide DoE OM No. F.1/3/2024-PPD dated 10.07.2024'],
   ['Numbers verified', '1 year (Rules 213, 214) · 3 years (Rule 215) · 5 per 1,000 (Rule 215) · ₹1,000 (Rule 215) · ₹4,00,000 (Rule 218) · 10% (Rule 219) · 25% (Rule 220)'],
   ['Legal-distortion check', 'Disposal mode ≠ prohibition · verification ≠ condemnation · 1-year surplus note is rebuttable · write-off sanction required even without account adjustment'],
-  ['Known uncertainty flagged', 'Form GFR-18 (library books) is reported by secondary compilations of Rule 211; GFR-22/23/24 appear in the official DoE form list. Verify against your departmental form list.']
+  ['Form numbers verified', 'Rule 211(ii): GFR-22 Register of Fixed Assets · GFR-23 Stock Register of consumables · <b>GFR-18 Accession Register</b> (library books) · GFR-24 Register of assets of historical/artistic value — GFR-18 confirmed in the official DoE GFR forms list (p.179)'],
+  ['2026 amendment sweep', 'MoF O.M. No. 15(04)/2021-E.II(A) dated 05.05.2026 amends <b>Rules 309 & 310</b> (transfer/alienation of Central Government land, Chapter 12) + new Appendix 7A/7B — <b>Chapter 7 (Rules 207–223) is NOT affected</b>'],
+  ['Amendment position (final)', 'Chapter 7 ka ek hi amendment hai: Rule 218 — ₹2,00,000 → ₹4,00,000 (DoE OM F.1/3/2024-PPD, 10.07.2024). Uske baad koi amendment nahi (checked up to 31.01.2026 compilation + 05.05.2026 OM)']
 ];
 
 const SOURCES = [

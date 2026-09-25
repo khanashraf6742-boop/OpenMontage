@@ -144,7 +144,7 @@ const RULES_DETAIL = [
       ex:'Do duties: <b>item-wise lists + accounts</b> rakhna, aur <b>accurate returns</b> banana. Asal test yeh hai: <b>kisi bhi waqt</b> asal balance (physical) aur book balance (register) ki tulna ho sake. Register ka format fixed nahi — woh teen cheezon par depend karega: goods ki nature, transactions ki frequency, aur us Ministry/Department ki special requirements. Isliye ek hospital ka drug store register aur ek CPWD store ka register alag dikhte hain — dono valid hain.' },
     { l:2, lab:'(ii)', tag:'SHALL',
       text:'Separate accounts shall be kept for (a) Fixed Assets such as plant, machinery, equipment, furniture, fixtures etc. in the Form GFR-22. (b) Consumables such as office stationery, chemicals, maintenance spare parts etc. in the Form GFR-23. (c) Library books in the Form GFR 18 (d) Assets of historical/artistic value held by museum/government departments in the Form GFR-24.',
-      ex:'Chaar category ke liye <b>alag-alag accounts</b> — ek hi register sab kuch nahi. (a) Fixed assets — plant, machinery, equipment, furniture, fixtures — <b>Form GFR-22</b>; (b) Consumables — office stationery, chemicals, maintenance spare parts — <b>Form GFR-23</b>; (c) Library books — <b>Form GFR 18</b>; (d) Historical/artistic value wali assets (museum/government departments ke paas) — <b>Form GFR-24</b>. Har category ka behaviour alag hai — consumables ghat-te hain, fixed assets depreciate hote hain, library books ki loss norm alag hai — isliye register alag.' }
+      ex:'Chaar category ke liye <b>alag-alag accounts</b> — ek hi register sab kuch nahi. (a) Fixed assets — plant, machinery, equipment, furniture, fixtures — <b>Form GFR-22 (Register of Fixed Assets)</b>; (b) Consumables — office stationery, chemicals, maintenance spare parts — <b>Form GFR-23 (Stock Register of consumables)</b>; (c) Library books — <b>Form GFR 18 (Accession Register)</b>; (d) Historical/artistic value wali assets (museum/government departments ke paas) — <b>Form GFR-24</b>. Har category ka behaviour alag hai — consumables ghat-te hain, fixed assets depreciate hote hain, library books ki loss norm alag hai — isliye register alag. <b>Verified:</b> GFR-18 = Accession Register (official DoE GFR forms list, page 179) — yahi library books ka register hai.' }
   ],
   notes:[
     { lab:'Note (Rule 211)', text:'These forms can be supplemented with additional details by Ministries/Departments as required.' , ex:'Departments in forms mein <b>aur columns</b> jod sakte hain (jaise warranty expiry, AMC details, location code). Par jo GFR likhta hai wohatna to minimum hona hi chahiye — supplement karna hai, replace karna nahi.' }
@@ -153,7 +153,8 @@ const RULES_DETAIL = [
   exceptions:[],
   amendment:null,
   traps:[
-    { q:'Kaunsa form kis asset ke liye?', a:'GFR-22 fixed assets · GFR-23 consumables · GFR-18 library books · GFR-24 historical/artistic assets.' },
+    { q:'Kaunsa form kis asset ke liye?', a:'GFR-22 Register of Fixed Assets · GFR-23 Stock Register of consumables · GFR-18 Accession Register (library books) · GFR-24 Register of assets of historical/artistic value.' },
+    { q:'Form GFR-18 kya hai?', a:'Accession Register — library books ka register (official DoE GFR forms list, p.179).' },
     { q:'Stock register ka format kaun tay karta hai?', a:'Rule 211(i) ke teeno factors — goods ki nature, transaction frequency, department ki special requirements.' },
     { q:'Kya department GFR-22 mein se koi column hata sakta hai?', a:'Nahi. Note sirf <b>supplement</b> karne ki ijazat deta hai.' }
   ],
