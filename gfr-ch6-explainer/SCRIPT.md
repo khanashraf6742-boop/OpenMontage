@@ -426,6 +426,10 @@ no manual timestamps.
   successfully but was only ~40% of the length its caption required. **It cannot detect stale audio
   of similar length** — that is why the Rule 144/173 gaps were found by auditing the source PDF,
   not by a test.
+- `node data/_ref.js` renders `chapter6-complete.html`'s own inline script against the real data and
+  asserts the written reference shows all 67 rules, all 179 sub-rules and every proviso, note,
+  exception and footnote. It confirms the three missing provisions are now present there too, and
+  would catch any future provision added to the data but not rendered.
 
 ### Post-completion corrections
 The first "100% complete" claim was wrong. Auditing the data against the official GFR 2017
@@ -442,6 +446,10 @@ never that every provision in the rule was present:
   considers necessary for bidders to submit their bids.
 - **Rule 173(ix)** was missing — specifications clearly stated without ambiguity so bidders can
   send meaningful bids, and broad-based to attract sufficient bidders.
+
+`chapter6-complete.html` reads the same two data files, so the fix propagated to the written
+reference automatically — verified by `data/_ref.js`. The Episode 1 comic (`index.html`) already
+stated Rule 144(x) correctly, so the gap was confined to the video data layer.
 
 Rules 144 and 173 were re-recorded. Every other rule's clip files were verified unchanged by
 regenerating all thirteen batches.
@@ -482,6 +490,7 @@ node data/_gen.js <batch-no> 10   # prints the exact clip texts + rule/clip coun
 node data/_verify.js             # mapping + every referenced clip file exists
 node data/_e2e.js                # runs the player's OWN script and checks every segment
 node data/_content.js            # checks each clip's size against its caption length
+node data/_ref.js               # renders the written reference and checks every provision
 ls audio/v-*.mp3 | wc -l           # clip count so far
 ```
 Then append the rule → clip-file mapping to `data/studio.js`. The player re-derives the beat
