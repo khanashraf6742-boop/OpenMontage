@@ -19,6 +19,7 @@ function showView(v) {
   $$('.view').forEach(el => el.classList.toggle('is-active', el.id === 'view-' + v));
   $$('.tab').forEach(b => b.classList.toggle('is-active', b.dataset.view === v));
   if (v !== 'watch') pause(true);
+  if (v !== 'deep' && typeof stopDDAudio === 'function') stopDDAudio();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 $$('#tabs .tab').forEach(b => b.onclick = () => showView(b.dataset.view));
@@ -286,5 +287,157 @@ $('#sourcesBody').innerHTML = `
     </p>
   </div>`;
 
+/* ─────────────── deep dive ─────────────── */
+let ddAudio = null;
+function stopDDAudio() { if (ddAudio) { ddAudio.pause(); ddAudio = null; } }
+
+function renderDDList() {
+  $('#ddList').innerHTML = `<div class="dd-h">Rules 207 – 223</div>` +
+    RULES_DETAIL.map((r, i) => `
+      <button class="dd-item" data-i="${i}">
+        <b>Rule ${r.no}</b><span>${r.title}</span>
+        <em>${r.grp}${r.status === 'AMENDED' ? ' · ✎ AMENDED' : ''}</em>
+      </button>`).join('');
+  $$('#ddList .dd-item').forEach(b => b.onclick = () => renderDD(+b.dataset.i));
+}
+
+function tagClass(tag) {
+  const t = tag.toLowerCase();
+  if (t.includes('shall not')) return 't-no';
+  if (t.includes('shall')) return 't-shall';
+  if (t.includes('may')) return 't-may';
+  return 't-plain';
+}
+
+function renderDD(i) {
+  const r = RULES_DETAIL[i];
+  $$('#ddList .dd-item').forEach(b => b.classList.toggle('active', +b.dataset.i === i));
+  const scene = SCENES.find(s => s.id === r.scene);
+
+  const tree = r.tree.map(n => `
+    <div class="cl l${n.l}">
+      <div class="cl-head">
+        <span class="cl-lab">${n.lab}</span>
+        <span class="cl-tag ${tagClass(n.tag || '')}">${n.tag || 'PROVISION'}</span>
+      </div>
+      <p class="cl-text">${n.text}</p>
+      <div class="cl-ex"><b>मतलब / Matlab:</b> ${n.ex}</div>
+    </div>`).join('');
+
+  const notes = (r.notes || []).map(n => n.lab
+    ? `<div class="box b-note"><b>${n.lab}</b><p class="cl-text">${n.text}</p><div class="cl-ex"><b>Matlab:</b> ${n.ex}</div></div>`
+    : `<div class="box b-note"><b>Note</b><p>${n}</p></div>`).join('');
+
+  const prov = (r.provisos || []).map(p => `<div class="box b-prov"><b>Proviso / condition</b><p>${p}</p></div>`).join('');
+  const exc  = (r.exceptions || []).map(p => `<div class="box b-exc"><b>Exception</b><p>${p}</p></div>`).join('');
+
+  const amend = r.amendment ? `<div class="box b-amend">
+      <b>✎ Amendment / change detection</b>
+      <table class="amt">
+        <tr><td>Purana (old)</td><td>${r.amendment.old}</td></tr>
+        <tr><td>Naya (current)</td><td>${r.amendment.neu}</td></tr>
+        <tr><td>Vide</td><td>${r.amendment.om}</td></tr>
+        <tr><td>Dated</td><td>${r.amendment.date}</td></tr>
+        <tr><td>Asar</td><td>${r.amendment.effect}</td></tr>
+      </table></div>` : '';
+
+  const traps = (r.traps || []).map(t => `
+    <div class="trap"><div class="tq">${t.q}</div><div class="ta">${t.a}</div></div>`).join('');
+
+  $('#ddDetail').innerHTML = `
+    <div class="dd-head">
+      <div>
+        <span class="rno">Rule ${r.no}</span>
+        <span class="status-pill ${r.status === 'AMENDED' ? 'sp-amend' : 'sp-cur'}">${r.status}</span>
+      </div>
+      <h3>${r.title}</h3>
+      <p class="dd-intro">${r.intro}</p>
+      <div class="dd-ctrl">
+        <button class="btn btn-play" id="ddPlay"><span>▶</span> Suniye (narration)</button>
+        <button class="btn btn-nav" id="ddStop">⏹</button>
+        <button class="btn btn-nav" id="ddScene">▶ Scene ${SCENES.findIndex(s => s.id === r.scene) + 1} mein dekhein</button>
+        <span class="dd-note" id="ddNote"></span>
+      </div>
+    </div>
+
+    <h4 class="dd-sec">① Verbatim clause tree — exact provision text</h4>
+    ${tree}
+    ${notes ? `<h4 class="dd-sec">② Notes</h4>${notes}` : ''}
+    ${prov  ? `<h4 class="dd-sec">③ Provisos / conditions</h4>${prov}` : ''}
+    ${exc   ? `<h4 class="dd-sec">④ Exceptions</h4>${exc}` : ''}
+    ${amend ? `<h4 class="dd-sec">⑤ Amendment</h4>${amend}` : ''}
+    <h4 class="dd-sec">⑥ Exam traps</h4>
+    <div class="traps">${traps}</div>
+    <h4 class="dd-sec">⑦ Cross-references</h4>
+    <div class="xrefs">${r.xref.map(x => `<span class="chip-rule">${x}</span>`).join('')}</div>
+    <div class="hook"><span class="hk">Memory hook</span><span>${r.hook}</span></div>`;
+
+  $('#ddPlay').onclick = () => {
+    stopDDAudio();
+    ddAudio = new Audio(r.audio);
+    $('#ddNote').textContent = 'Rule-level narration chal rahi hai…';
+    ddAudio.onerror = () => {              // rule clip not generated yet → fall back to scene narration
+      ddAudio = new Audio(scene.audio);
+      $('#ddNote').textContent = 'Scene narration (rule clip abhi pending)…';
+      ddAudio.play().catch(() => {});
+    };
+    ddAudio.play().catch(() => { $('#ddNote').textContent = 'Audio play nahi hua — browser ko pehle click allow karein.'; });
+  };
+  $('#ddStop').onclick = () => { stopDDAudio(); $('#ddNote').textContent = ''; };
+  $('#ddScene').onclick = () => {
+    stopDDAudio();
+    showView('watch'); stopAudio();
+    renderScene(SCENES.findIndex(s => s.id === r.scene));
+  };
+}
+
+/* ─────────────── coverage map ─────────────── */
+function renderCoverage() {
+  const tick = v => v ? '<span class="cy">✓</span>' : '<span class="cn">—</span>';
+  const rows = COVERAGE.map(c => `
+    <tr>
+      <td><b>Rule ${c.r}</b></td>
+      <td>${c.sub === '—' ? '<span class="cn">—</span>' : c.sub}</td>
+      <td>${c.clause === '—' ? '<span class="cn">—</span>' : c.clause}</td>
+      <td>${tick(c.note)}</td>
+      <td>${tick(c.proviso)}</td>
+      <td>${tick(c.except)}</td>
+      <td>${c.amend ? '<span class="ca">✎</span>' : '<span class="cn">—</span>'}</td>
+      <td>${tick(c.instr)}</td>
+      <td class="units">${c.units}</td>
+    </tr>`).join('');
+
+  const counts = COVERAGE.reduce((a, c) => {
+    a.note += c.note ? 1 : 0; a.prov += c.proviso ? 1 : 0;
+    a.exc  += c.except ? 1 : 0; a.amend += c.amend ? 1 : 0; return a;
+  }, { note: 0, prov: 0, exc: 0, amend: 0 });
+
+  $('#covBody').innerHTML = `
+    <div class="srccard">
+      <h4>Coverage ledger — Chapter 7 (Rules 207–223)</h4>
+      <table class="cov">
+        <thead><tr><th>Rule</th><th>Sub-rules</th><th>Clauses / sub-clauses</th><th>Note</th><th>Proviso</th><th>Exception</th><th>Amendment</th><th>Related instr.</th><th>Atomic units</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+      <div class="cov-sum">
+        <span><b>${COVERAGE.length} / 17</b> rules</span>
+        <span><b>${counts.note}</b> notes</span>
+        <span><b>${counts.prov}</b> proviso/condition</span>
+        <span><b>${counts.exc}</b> rules with exceptions</span>
+        <span><b>${counts.amend}</b> amendment (Rule 218)</span>
+        <span><b>0</b> footnotes invented</span>
+      </div>
+      <p style="font-size:13.5px;color:#4b5563;margin:12px 0 0">
+        <b>Footnote note:</b> official GFR text mein Chapter 7 ke andar koi alag footnote nahi hai —
+        sirf Rule 211, Rule 214 aur Rule 218 ke saath <b>Note</b> hain, aur Rule 218 par amendment footnote
+        (DoE OM F.1/3/2024-PPD). Is explainer mein koi footnote invent nahi kiya gaya; jo nahi mila use
+        “—” se dikhaya gaya hai.
+      </p>
+    </div>`;
+}
+
 /* ─────────────── boot ─────────────── */
 renderScene(0);
+renderDDList();
+renderDD(0);
+renderCoverage();

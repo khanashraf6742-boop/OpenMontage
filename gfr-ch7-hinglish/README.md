@@ -33,15 +33,58 @@ No build step, no dependencies — plain HTML/CSS/JS plus generated panel art an
 
 Total narration: ~14 minutes. Total rules covered: **17 of 17**.
 
+## 🔬 Deep Dive — granular clause tree (the core deliverable)
+
+Every rule is broken down to the last atomic unit. For each of the 17 rules the app shows:
+
+1. **① Verbatim clause tree** — the exact GFR text at every level:
+   `Rule → sub-rule (i)(ii)… → clause (a)(b)… → sub-clause`, each tagged **SHALL / MAY / SHALL NOT**
+2. **② Notes** — Rule 211 (forms can be supplemented), Rule 214 (surplus presumption), Rule 217 (e-waste),
+   Rule 218 (threshold), Rule 220 (10% vs 25%)
+3. **③ Provisos / conditions** — e.g. Rule 215(i) "if such verification reveals unusual or unreasonable
+   shortages, complete verification shall be done"
+4. **④ Exceptions** — e.g. Rule 215(ii) reasonable-loss concession, Rule 218(iii)/(iv) carve-outs
+5. **⑤ Amendment / change detection** — Rule 218: old vs new text, OM number, date, effect
+6. **⑥ Exam traps** — clause-level Q&A per rule
+7. **⑦ Cross-references** — linked rules, forms and DFPR hooks
+
+### Atomic units actually present in Chapter 7
+
+| Rule | Sub-rules | Clauses / sub-clauses | Note | Proviso/condition | Exception | Amendment |
+|---|---|---|---|---|---|---|
+| 207 | — | — (unnumbered scope rule) | — | — | ✓ | — |
+| 208 | 208(1) | (i)(ii)(iii) | — | — | ✓ | — |
+| 209 | — | (i)(ii)(iii)(iv) | — | — | — | — |
+| 210 | — | — (single para) | — | — | — | — |
+| 211 | (i)(ii) | (ii)(a)(b)(c)(d) | ✓ | — | — | — |
+| 212 | — | — (single para) | — | — | — | — |
+| 213 | (1)(2)(3) | (3)(i)(ii)(iii) | — | — | ✓ | — |
+| 214 | — | — | ✓ | — | ✓ | — |
+| 215 | (i)(ii) | — | — | ✓ | ✓ | — |
+| 216 | — | — (single para) | — | — | — | — |
+| 217 | (i)–(v) | — | ✓ | — | ✓ | — |
+| 218 | (i)–(iv) | (i)(a)(b) | ✓ | — | ✓ | **✎** |
+| 219 | (i)(ii)(iii) | (i)(a)–(i) · (ii)(a)–(g) | — | — | ✓ | — |
+| 220 | (i)–(v) | — | ✓ | — | — | — |
+| 221 | — | — (2 stages) | — | — | — | — |
+| 222 | — | — (single para) | — | — | — | — |
+| 223 | (1)(2)(3) | (2)(i)–(iv) · (3)(i)–(v) | — | — | ✓ | — |
+
+**Footnote honesty:** the official GFR 2017 text contains **no separate footnotes inside Chapter 7** —
+only the three *Note* blocks (Rules 211, 214, 218) and the amendment marker on Rule 218. Nothing has
+been invented; anything not present in the source is shown as “—” in the Coverage tab.
+
 ## Interactive features
 
 - **▶ Watch** — plays like a video: narrated comic panels, timed speech bubbles, live captions,
   progress bar, auto-advance between scenes. Keyboard: `Space` play/pause, `←` `→` scene jump.
+- **🔬 Deep Dive** — 17 rule pages with the clause tree + per-rule narration (`▶ Suniye`).
 - **Hinglish ⇄ हिंदी** — every caption and speech bubble switches between Roman Hinglish and
   Devanagari (the audio is the Devanagari script).
 - **Chapter map** — click any rule from 207 to 223 to jump straight to the scene that teaches it.
 - **Rule map** — all 17 rules with the operative text, key points and exceptions.
-- **Exam drill** — 18 MCQs with explanations, tagged by rule.
+- **Exam drill** — 32 MCQs with explanations, tagged by rule (18 general + 14 clause-level).
+- **🧩 Coverage** — the atomic ledger above, rendered live with totals.
 - **Aap hote to kya karte?** — one interactive decision point per scene with rule-based feedback.
 - **Sources** — the validation gate and the source list behind every number in the explainer.
 
@@ -50,10 +93,16 @@ Total narration: ~14 minutes. Total rules covered: **17 of 17**.
 ```
 index.html            app shell
 app.css               visual design
-app.js                player, chapter map, rule grid, quiz, sources
+app.js                player, chapter map, rule grid, deep dive, coverage, quiz, sources
 content.js            scenes (narration, bubbles, rule cards, decisions), 17-rule index, quiz, sources
+granular.js           clause tree: verbatim text + Hinglish vyakhya + notes/provisos/exceptions/amendment
+                      + atomic coverage ledger + 14 clause-level MCQs
 assets/panels/        scene-01 … scene-10 comic panels
-assets/audio/         scene-01 … scene-10 Hinglish narration (MP3)
+assets/audio/         scene-01 … scene-10 (story) + rule-207 … rule-216 (per-rule narration)
+
+> Narration status: dedicated per-rule clips exist for **Rules 207–216**. For **217–223** the Deep
+> Dive player automatically falls back to the covering scene narration, so every rule is audible
+> today; the 7 dedicated clips are queued for the next generation pass.
 ```
 
 ## Validation status — PASS
