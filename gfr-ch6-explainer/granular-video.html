@@ -199,29 +199,47 @@ const CALLOUTS = {
 /* ---------- helpers ---------- */
 function stripHTML(s){return (s||'').replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&#8211;/g,'-').replace(/&#9654;/g,'').replace(/&nbsp;/g,' ').replace(/\s+/g,' ').trim();}
 function toSpeech(s){
-  return stripHTML(s)
-    .replace(/₹/g,' rupees ')
-    .replace(/(\d),(\d{2}),(\d{3})/g,'$1$2$3')
-    .replace(/(\d),(\d{3})/g,'$1$2')
+  return stripHTML(s).replace(/₹/g,' rupees ')
+    .replace(/(\d),(\d{2}),(\d{3})/g,'$1$2$3').replace(/(\d),(\d{3})/g,'$1$2')
     .replace(/\s+/g,' ').trim();
 }
+const BEAT_LIMIT = 1380;   /* a single beat is split at sentence boundaries above this */
+function splitSpeech(t){
+  if(t.length<=BEAT_LIMIT) return [t];
+  const sentences=t.split(/(?<=\.\s)/); const out=[]; let cur='';
+  sentences.forEach(s=>{
+    if(cur && (cur+s).length>BEAT_LIMIT){ out.push(cur.trim()); cur=s; } else cur+=s;
+  });
+  if(cur.trim()) out.push(cur.trim());
+  return out.length?out:[t];
+}
+function esc(t){ return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
 const KINDCLS = {title:'k-title',verbatim:'k-verbatim',hi:'k-hi',sub:'k-sub',prov:'k-prov',note:'k-note',exc:'k-exc',fn:'k-fn',module:'k-module',callout:'k-callout'};
 const KINDLBL = {title:'Rule',verbatim:'Verbatim rule text',hi:'Hinglish explanation',sub:'Sub-rule / clause',
   prov:'Proviso',note:'Note / explanation',exc:'Exception',fn:'Amendment footnote',module:'Module intro',callout:'Critical callout'};
 
 function beatsFor(rule){
-  const b=[];
-  b.push({kind:'title', label:'Rule '+rule.r, html:`<b>Rule ${rule.r}</b> — ${rule.t}`, speech:`Rule ${rule.r}. ${rule.t}.`});
-  b.push({kind:'verbatim', label:'Verbatim text', html:rule.text, speech:toSpeech(rule.text)});
-  if(rule.hi) b.push({kind:'hi', label:'Hinglish', html:rule.hi, speech:toSpeech(rule.hi)});
-  (rule.subs||[]).forEach(s=>b.push({kind:'sub', label:s.n,
-    html:`<span class="subname">${s.n}</span> — ${s.text}${s.hi?`<span class="sh">👉 ${s.hi}</span>`:''}`,
-    speech:toSpeech(`${s.n}. ${s.text} ${s.hi||''}`)}));
-  (rule.prov||[]).forEach(p=>b.push({kind:'prov', label:'Proviso', html:p, speech:'Proviso. '+toSpeech(p)}));
-  (rule.note||[]).forEach(n=>b.push({kind:'note', label:'Note / explanation', html:n, speech:'Note. '+toSpeech(n)}));
-  (rule.ex||[]).forEach(e=>b.push({kind:'exc', label:'Exception', html:e, speech:'Exception. '+toSpeech(e)}));
-  (rule.fn||[]).forEach(f=>b.push({kind:'fn', label:'Amendment footnote', html:f, speech:'Amendment footnote. '+toSpeech(f)}));
-  return b;
+  const out=[]; let blk=0;
+  const add=(kind,label,html,speech)=>{
+    splitSpeech(speech).forEach((p,ci)=>out.push({
+      kind, label: ci?label+' (cont.)':label,
+      html: ci?('<span style="opacity:.92">'+esc(p)+'</span>'):html,
+      speech:p, blk
+    }));
+    blk++;
+  };
+  add('title','Rule '+rule.r, `<b>Rule ${rule.r}</b> — ${rule.t}`, `Rule ${rule.r}. ${stripHTML(rule.t)}.`);
+  add('verbatim','Verbatim text', rule.text, toSpeech(rule.text));
+  if(rule.hi) add('hi','Hinglish', rule.hi, toSpeech(rule.hi));
+  (rule.subs||[]).forEach(s=>add('sub',s.n,
+    `<span class="subname">${s.n}</span> — ${s.text}${s.hi?`<span class="sh">👉 ${s.hi}</span>`:''}`,
+    toSpeech(`${s.n}. ${s.text} ${s.hi||''}`)));
+  (rule.prov||[]).forEach(p=>add('prov','Proviso',p,'Proviso. '+toSpeech(p)));
+  (rule.note||[]).forEach(n=>add('note','Note / explanation',n,'Note. '+toSpeech(n)));
+  (rule.ex||[]).forEach(e=>add('exc','Exception',e,'Exception. '+toSpeech(e)));
+  (rule.fn||[]).forEach(f=>add('fn','Amendment footnote',f,'Amendment footnote. '+toSpeech(f)));
+  return out;
 }
 
 /* ---------- flatten ---------- */
@@ -229,7 +247,7 @@ const beats=[]; const ruleIndex={};
 MODULES.forEach((m,mi)=>{
   beats.push({mi, ri:null, kind:'module', label:'Module intro',
     html:`<b>${m.n}</b><br><span style="font-size:.8em;color:#bfe3e7">${m.blurb}</span>`,
-    speech:toSpeech(`${m.n}. ${m.blurb}`), audio:m.audio});
+    speech:toSpeech(`${m.n}. ${m.blurb}`), audio:m.audio, blk:-1});
   m.rules.forEach(rid=>{
     const rule=BY[rid]; if(!rule) return;
     const start=beats.length;
@@ -237,7 +255,7 @@ MODULES.forEach((m,mi)=>{
     if(CALLOUTS[rid]){
       const c=CALLOUTS[rid];
       beats.push({mi, ri:rid, kind:'callout', label:'Callout', html:`<b>${c.t}</b><br>${c.h}`,
-        speech:toSpeech(`${c.t}. ${c.h}`), audio:c.audio});
+        speech:toSpeech(`${c.t}. ${c.h}`), audio:c.audio, blk:-1});
     }
     ruleIndex[rid]={start, end:beats.length-1};
   });
@@ -280,25 +298,29 @@ $('#q').addEventListener('input',e=>{
 });
 
 /* ---------- context panel ---------- */
-function ctxHTML(rule, bi){
+function ctxHTML(rule, ri){
+  const blocks={};
+  beats.forEach((b,k)=>{ if(b.ri===ri && b.blk>=0) (blocks[b.blk]=blocks[b.blk]||[]).push(k); });
   let h=`<div style="font-weight:800;color:var(--teal-d);margin-bottom:4px">Rule ${rule.r} — ${rule.t}</div>`;
-  let k=0;
-  const mark=()=>`data-bi="${k++}"`;
-  h+=`<div class="cb" ${mark()}><div class="cl">Verbatim rule text</div>${rule.text}</div>`;
-  if(rule.hi) h+=`<div class="cb" ${mark()}><div class="cl">Hinglish</div>${rule.hi}</div>`;
-  (rule.subs||[]).forEach(s=>{h+=`<div class="cb" ${mark()}><div class="cl">${s.n}</div>${s.text}${s.hi?`<div style="color:#31505a">👉 ${s.hi}</div>`:''}</div>`;});
-  (rule.prov||[]).forEach(p=>{h+=`<div class="cb" ${mark()}><div class="cl">Proviso</div>${p}</div>`;});
-  (rule.note||[]).forEach(n=>{h+=`<div class="cb" ${mark()}><div class="cl">Note / explanation</div>${n}</div>`;});
-  (rule.ex||[]).forEach(e=>{h+=`<div class="cb" ${mark()}><div class="cl">Exception</div>${e}</div>`;});
-  (rule.fn||[]).forEach(f=>{h+=`<div class="cb" ${mark()}><div class="cl">Amendment footnote</div>${f}</div>`;});
+  let blk=0;
+  const bi=()=>{ const l=blocks[blk]||[]; blk++; return l.join(','); };
+  h+=`<div class="cb" data-bi="${bi()}"><div class="cl">Verbatim rule text</div>${rule.text}</div>`;
+  if(rule.hi) h+=`<div class="cb" data-bi="${bi()}"><div class="cl">Hinglish</div>${rule.hi}</div>`;
+  (rule.subs||[]).forEach(s=>{h+=`<div class="cb" data-bi="${bi()}"><div class="cl">${s.n}</div>${s.text}${s.hi?`<div style="color:#31505a">👉 ${s.hi}</div>`:''}</div>`;});
+  (rule.prov||[]).forEach(p=>{h+=`<div class="cb" data-bi="${bi()}"><div class="cl">Proviso</div>${p}</div>`;});
+  (rule.note||[]).forEach(n=>{h+=`<div class="cb" data-bi="${bi()}"><div class="cl">Note / explanation</div>${n}</div>`;});
+  (rule.ex||[]).forEach(e=>{h+=`<div class="cb" data-bi="${bi()}"><div class="cl">Exception</div>${e}</div>`;});
+  (rule.fn||[]).forEach(f=>{h+=`<div class="cb" data-bi="${bi()}"><div class="cl">Amendment footnote</div>${f}</div>`;});
   return h;
 }
 let ctxRule=null;
 function renderCtx(b){
-  if(!b.rule){ $('#ctx').innerHTML=`<div style="color:var(--muted)">${b.html}</div>`; ctxRule=null; return; }
-  if(ctxRule!==b.ri){ $('#ctx').innerHTML=ctxHTML(b.rule); ctxRule=b.ri; }
-  $('#ctx').querySelectorAll('.cb').forEach(el=>el.classList.remove('active'));
-  const el=$('#ctx').querySelector(`[data-bi="${b.bi}"]`); if(el){el.classList.add('active'); el.scrollIntoView({block:'nearest'});}
+  if(!b.ri){ $('#ctx').innerHTML=`<div style="color:var(--muted)">${b.html}</div>`; ctxRule=null; return; }
+  if(ctxRule!==b.ri){ $('#ctx').innerHTML=ctxHTML(b.rule,b.ri); ctxRule=b.ri; }
+  $('#ctx').querySelectorAll('.cb').forEach(el=>{
+    el.classList.toggle('active', (el.dataset.bi||'').split(',').indexOf(String(i))>=0);
+  });
+  const act=$('#ctx').querySelector('.cb.active'); if(act) act.scrollIntoView({block:'nearest'});
 }
 
 /* ---------- studio narration map (filled batch by batch) ---------- */
@@ -345,10 +367,10 @@ function loadVoices(){
   vs.forEach((v,ix)=>{ const o=document.createElement('option'); o.value=ix; o.textContent=`${v.name} (${v.lang})`; sel.appendChild(o); });
   sel.value=prev;
   if(!vs.length){ $('#vwarn').style.display='block';
-    $('#vwarn').innerHTML='\u26a0 Is browser mein koi TTS voice nahi mili. Jin provisions ka studio recording hai woh chalenge; baaki beats text ke saath auto-advance honge.'; }
+    $('#vwarn').innerHTML='⚠ Is browser mein koi TTS voice nahi mili. Jin provisions ka studio recording hai woh chalenge; baaki beats text ke saath auto-advance honge.'; }
 }
 if(synth){ loadVoices(); synth.onvoiceschanged=loadVoices; }
-else { $('#vwarn').style.display='block'; $('#vwarn').innerHTML='\u26a0 Speech synthesis support nahi karta \u2014 studio-recorded beats chalenge, baaki silent auto-advance.'; }
+else { $('#vwarn').style.display='block'; $('#vwarn').innerHTML='⚠ Speech synthesis support nahi karta — studio-recorded beats chalenge, baaki silent auto-advance.'; }
 
 function pickVoice(){
   if(!synth) return null;
@@ -359,12 +381,11 @@ function pickVoice(){
 }
 
 function render(){
-  const b=beats[i];
-  const seg=segOf(i);
-  $('#crumb').innerHTML = (b.ri?('Rule '+b.ri+' \u00b7 '):'') + (MODULES[b.mi]?MODULES[b.mi].n:'') +
+  const b=beats[i]; const seg=segOf(i);
+  $('#crumb').innerHTML = (b.ri?('Rule '+b.ri+' · '):'') + (MODULES[b.mi]?MODULES[b.mi].n:'') +
     ' <span style="background:'+(seg.studio?'#2e9e6b':'#8a6fae')+';color:#fff;border-radius:99px;padding:1px 8px;font-size:10px;margin-left:6px">'+
-    (seg.studio?'\U0001f399 Studio':'\U0001f5e3 Device TTS')+'</span>';
-  $('#counter').textContent = `Beat ${i+1} / ${beats.length}  \u00b7  studio ${STUDIO_COUNT}/${segments.length}`;
+    (seg.studio?'🎙 Studio':'🗣 Device TTS')+'</span>';
+  $('#counter').textContent = `Beat ${i+1} / ${beats.length}  ·  studio ${STUDIO_COUNT}/${segments.length}`;
   $('#kind').className='kind '+(KINDCLS[b.kind]||'k-title');
   $('#kind').textContent = KINDLBL[b.kind]||b.kind;
   $('#beat').innerHTML = b.html;
@@ -393,14 +414,14 @@ function ttsBeat(n){
   u.rate=rate; u.pitch=1; curU=u;
   u.onend=()=>{ if(curU!==u) return; playing=false; if(n<beats.length-1) go(n+1); };
   u.onerror=()=>{ if(curU!==u) return; playing=false; timerAdvance(); };
-  synth.speak(u); playing=true; $('#play').textContent='\u23f8 Pause';
+  synth.speak(u); playing=true; $('#play').textContent='⏸ Pause';
 }
 function timerAdvance(){
   const b=beats[i];
   const secs=Math.max(1.2,(b.speech||'').length/13);
   clearTimeout(timer);
-  timer=setTimeout(()=>{ if(i<beats.length-1) go(i+1); else {playing=false; $('#play').textContent='\u25b6 Play';} }, secs*1000);
-  playing=true; $('#play').textContent='\u23f8 Pause';
+  timer=setTimeout(()=>{ if(i<beats.length-1) go(i+1); else {playing=false; $('#play').textContent='▶ Play';} }, secs*1000);
+  playing=true; $('#play').textContent='⏸ Pause';
 }
 function playFrom(n){
   const seg=segOf(n);
@@ -423,14 +444,14 @@ function playFrom(n){
   audio.onended=()=>{
     playing=false;
     let nx=null; for(let x=0;x<segments.length;x++) if(segments[x]===seg && x+1<segments.length) nx=segments[x+1].s;
-    if(nx!=null) go(nx); else { $('#play').textContent='\u25b6 Play'; }
+    if(nx!=null) go(nx); else { $('#play').textContent='▶ Play'; }
   };
   audio.play().then(()=>{
-    playing=true; $('#play').textContent='\u23f8 Pause';
+    playing=true; $('#play').textContent='⏸ Pause';
     if(audio.duration && isFinite(audio.duration) && frac>0.01){
       try{ audio.currentTime=Math.min(audio.duration-0.25, frac*audio.duration); }catch(e){}
     }
-  }).catch(()=>{ audio.onended=null; ttsBeat(n); });
+  }).catch(()=>{ audio.ontimeupdate=null; audio.onended=null; ttsBeat(n); });
 }
 function pauseAll(){
   clearTimeout(timer);
@@ -438,13 +459,13 @@ function pauseAll(){
   audio.ontimeupdate=null; audio.onended=null;
   if(curU){ curU.onend=null; curU.onerror=null; curU=null; }
   try{ if(synth) synth.cancel(); }catch(e){}
-  playing=false; $('#play').textContent='\u25b6 Play';
+  playing=false; $('#play').textContent='▶ Play';
 }
 function go(n){
   if(n<0||n>=beats.length) return;
   const resume=playing;
   pauseAll(); i=n; render();
-  if(resume) playFrom(i); else $('#play').textContent='\u25b6 Play';
+  if(resume) playFrom(i); else $('#play').textContent='▶ Play';
 }
 function toggle(){ if(playing) pauseAll(); else playFrom(i); }
 
@@ -453,7 +474,7 @@ $('#nextB').onclick=()=>go(i+1);
 $('#prevB').onclick=()=>go(i-1);
 $('#nextR').onclick=()=>{ const b=beats[i]; const nx=beats.findIndex((x,k)=>k>i && x.ri && x.ri!==b.ri); go(nx<0?beats.length-1:nx); };
 $('#prevR').onclick=()=>{ const b=beats[i]; let p=-1; for(let k=i-1;k>=0;k--){ if(beats[k].ri && beats[k].ri!==b.ri){p=k;break;} } go(p<0?0:p); };
-$('#mute').onclick=()=>{ muted=!muted; audio.muted=muted; $('#mute').textContent=muted?'\U0001f507':'\U0001f50a'; if(playing&&muted) pauseAll(); };
+$('#mute').onclick=()=>{ muted=!muted; audio.muted=muted; $('#mute').textContent=muted?'🔇':'🔊'; if(playing&&muted) pauseAll(); };
 $('#rate').onchange=e=>{ rate=parseFloat(e.target.value); };
 $('#voice').onchange=()=>{ if(playing){ pauseAll(); playFrom(i); } };
 document.addEventListener('keydown',e=>{
@@ -464,9 +485,9 @@ document.addEventListener('keydown',e=>{
   if(e.key==='m'||e.key==='M') $('#mute').click();
 });
 
-$('#eta').textContent = `~${Math.round(totalChars/13/60)} min \u00b7 ${beats.length} beats \u00b7 ${STUDIO_COUNT} studio`;
 const doneRules=Object.keys(window.GFR_STUDIO||{}).filter(r=>(window.GFR_STUDIO[r]||[]).length);
-$('#prog').innerHTML=`\U0001f399 <b>Studio narration: ${doneRules.length}/${all.length} rules</b> recorded (${STUDIO_COUNT} clips live). Batch-wise recording jaari hai — baaki rules abhi device TTS se narrate hote hain. Recorded so far: ${doneRules.join(', ')}`;
+$('#prog').innerHTML=`🎙 <b>Studio narration: ${doneRules.length}/${all.length} rules</b> recorded (${STUDIO_COUNT} clips live). Batch-wise recording jaari hai — baaki rules abhi device TTS se narrate hote hain. Recorded so far: ${doneRules.join(', ')}`;
+$('#eta').textContent = `~${Math.round(totalChars/13/60)} min · ${beats.length} beats · ${STUDIO_COUNT} studio`;
 render();
 </script>
 </body>

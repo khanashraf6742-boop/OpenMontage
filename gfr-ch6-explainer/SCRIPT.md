@@ -410,13 +410,20 @@ delivered in batches (the speech tool allows 10 clips per turn).
 greedy algorithm on the same data, so on-screen captions stay in sync with the audio automatically —
 no manual timestamps.
 
-**Total requirement: 126 clips / 114,699 characters of narration.**
+**Total requirement: 124 clips / 114,699 characters of narration.**
+
+### Progress
+- **20 of 124 clips recorded** (Rules 142–151, with Rule 151 at 2 of its 3 clips).
+- Verified: 20 studio segments live, 0 mapping mismatches, only Rule 151 partial.
+- Note: six verbatim beats exceed 1380 characters (Rules 150, 159, 162, 164, 170, 175(1)); these are split
+  at **sentence boundaries** in both the generator and the player, so no clip exceeds the 1500-character limit
+  and captions remain word-aligned.
 
 ## Batch schedule (10 clips per batch)
 | Batch | Rules covered | Clips | Status |
 |---|---|---|---|
 | 1 | 142, 143(×2), 144(×4), 145, 146, 147 | 10 | ✅ **DONE** |
-| 2 | 148, 149(×4) | 5 | ⏳ next |
+| 2 | 148, 149(×4), 150(×3), 151(×2 of 3) | 10 | ✅ **DONE** |
 | 3 | 150(×4), 151(×3), 152 | 8 | ⏳ |
 | 4 | 153(×2), 154(×2), 155(×3), 156, 157, 158 | 10 | ⏳ |
 | 5 | 159(×4), 160(×2), 161(×4) | 10 | ⏳ |
