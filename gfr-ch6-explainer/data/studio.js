@@ -68,5 +68,8 @@ window.GFR_STUDIO = {
   '200': ['audio/v-200.mp3'],
   '201': ['audio/v-201.mp3', 'audio/v-201b.mp3'],
   '202': ['audio/v-202.mp3'],
-  '203': ['audio/v-203.mp3']
+  '203': ['audio/v-203.mp3'],
+  '204': ['audio/v-204.mp3'],
+  '205': ['audio/v-205.mp3'],
+  '206': ['audio/v-206.mp3']
 };
