@@ -457,7 +457,16 @@ no manual timestamps.
   and a running timestamp. It also cross-checks the clip texts produced by `data/_gen.js` against
   the paths registered in `data/studio.js` and fails on any drift between the two. Running time
   **65:04**. This is the document to read if you want to follow the video as text.
-- `bash data/_check.sh` runs all nine tests and exits non-zero if any fails.
+- `node data/_json.js` exports the corpus to `data/ch6.json` for consumers that cannot read
+  JavaScript — the awesome-llm-apps skill script and the notebooklm-py builder both depend on
+  it. `data/_integrations.js` fails if it has drifted from the data files.
+- `node data/_integrations.js` validates the adapters under `integrations/`: the skill's
+  frontmatter and registry entry, that `gfr_lookup.py` runs and returns the right counts and
+  the current thresholds, that its own 39-check eval passes, that `build_notebook.py
+  --dry-run` works, that every command named in the Grok `AGENTS.md` exists, that the
+  agency-agents persona frontmatter parses, that no adapter re-introduces the "Rules 135–176"
+  error, and that no JSON config is malformed.
+- `bash data/_check.sh` runs all eleven tests and exits non-zero if any fails.
 
 ### Post-completion corrections
 The first "100% complete" claim was wrong. Auditing the data against the official GFR 2017
@@ -522,6 +531,8 @@ node data/_ref.js               # renders the written reference and checks every
 node data/_figures.js           # checks every figure in the commentary is backed by the rules
 node data/_docs.js               # regenerates docs/*.md from the data files
 node data/_transcript.js         # writes docs/narration-transcript.md with real clip timings
+node data/_json.js               # exports data/ch6.json for non-JS consumers
+node data/_integrations.js       # validates the agent-platform adapters
 node data/_deploy.js             # boots server.js and exercises the whole API
 bash data/_check.sh             # runs all eight tests, exits non-zero on any failure
 ls audio/v-*.mp3 | wc -l           # clip count so far

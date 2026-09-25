@@ -1,0 +1,14 @@
+{
+  "_comment": "Entry to merge into agent_skills/registry.json in awesome-llm-apps. Add the object to the 'skills' array and set evals_dir to the path where you placed the evals folder.",
+  "name": "gfr-chapter-6-lookup",
+  "path": "agent_skills/gfr-chapter-6-lookup",
+  "description": "Look up any provision of GFR 2017 Chapter 6 (Procurement of Goods and Services, Rules 142-206) verbatim, with a plain Hinglish explanation. Covers every rule, sub-rule, clause, sub-clause, proviso, explanation, exception and amendment footnote. Use when a question is about Indian government procurement rules - tender procedures, GeM, purchase committees, bid security, performance security, advance payments, e-publishing, consulting services, outsourcing, debarment, or the DoPT/DoE orders that changed the thresholds. Also use when the user asks to verify a rule number, threshold, time limit, authority or penalty rather than rely on memory. Runs locally and offline.",
+  "license": "Apache-2.0",
+  "metadata": {
+    "author": "Arena Agent",
+    "version": "1.0.0",
+    "source": "https://github.com/khanashraf6742-boop/OpenMontage"
+  },
+  "install": "npx skills add https://github.com/khanashraf6742-boop/OpenMontage/tree/main/gfr-ch6-explainer/integrations/awesome-llm-apps/gfr-chapter-6-lookup",
+  "evals_dir": "agent_skills/evals/gfr-chapter-6-lookup"
+}

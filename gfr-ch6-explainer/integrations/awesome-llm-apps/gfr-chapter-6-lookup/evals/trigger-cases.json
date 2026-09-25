@@ -1,0 +1,66 @@
+{
+  "skill": "gfr-chapter-6-lookup",
+  "purpose": "Trigger-behaviour spec: prompts that should route here, and near-miss negatives that should not.",
+  "cases": [
+    {
+      "id": "rule-lookup-by-number",
+      "prompt": "what does Rule 155 say",
+      "should_trigger": true,
+      "assert": "Runs `rule 155` and returns the verbatim text plus the Hinglish explanation."
+    },
+    {
+      "id": "threshold-question",
+      "prompt": "upto what amount can I buy without a tender under GFR",
+      "should_trigger": true,
+      "assert": "Searches for the band, identifies Rule 154 and Rule 155, and quotes both verbatim with the GeM condition."
+    },
+    {
+      "id": "security-question",
+      "prompt": "bid security kit percent hota hai",
+      "should_trigger": true,
+      "assert": "Returns Rule 170 with the 2% to 5% range and the forty-five-day validity."
+    },
+    {
+      "id": "amendment-question",
+      "prompt": "10 July 2024 ke baad GeM thresholds kya hain",
+      "should_trigger": true,
+      "assert": "Returns Rule 149 with the amendment footnote naming OM No. F.1/3/2024-PPD dated 10.07.2024."
+    },
+    {
+      "id": "services-question",
+      "prompt": "QCBS mein technical weight maximum kitna ho sakta hai",
+      "should_trigger": true,
+      "assert": "Returns Rule 192 with sub-rule (iv) and the 80% ceiling."
+    },
+    {
+      "id": "negative-ccs-conduct-rules",
+      "prompt": "what are the CCS Conduct Rules for government employees",
+      "should_trigger": false,
+      "assert": "Does not answer from Chapter 6. CCS Conduct Rules are a DoPT matter and outside Rules 142-206."
+    },
+    {
+      "id": "negative-delegation-of-financial-powers",
+      "prompt": "who has the delegated financial power to sanction Rs 10 crore",
+      "should_trigger": false,
+      "assert": "Does not answer from Chapter 6. Delegation of Financial Powers is a separate schedule, not GFR Chapter 6."
+    },
+    {
+      "id": "negative-works-procurement",
+      "prompt": "what is the procedure for a works contract tender",
+      "should_trigger": false,
+      "assert": "Chapter 6 covers procurement of goods and services. Works procurement sits elsewhere and should not be answered from this corpus."
+    },
+    {
+      "id": "negative-other-country",
+      "prompt": "what are the UK procurement thresholds",
+      "should_trigger": false,
+      "assert": "Chapter 6 is Indian GFR 2017 only."
+    },
+    {
+      "id": "negative-code-question",
+      "prompt": "why does this Python function raise a TypeError",
+      "should_trigger": false,
+      "assert": "Not a procurement question."
+    }
+  ]
+}

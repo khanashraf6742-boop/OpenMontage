@@ -1,0 +1,62 @@
+{
+  "skill_name": "gfr-chapter-6-lookup",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Rule 155 ke tehat Local Purchase Committee kitne members ka hota hai?",
+      "expected_output": "The verbatim text of Rule 155 and its three sub-rules, stating a three-member Local Purchase Committee of an appropriate level as decided by the Head of the Department, with the Hinglish explanation.",
+      "expectations": [
+        "The skill runs scripts/gfr_lookup.py rule 155 rather than answering from memory",
+        "The answer states three members and attributes the level decision to the Head of the Department",
+        "The Rs 50,000 to Rs 5,00,000 band is quoted with the condition that the item is not available on GeM",
+        "The Scientific Ministries exception (Rs 2,00,000 to Rs 25,00,000, OM dated 05.06.2025) is mentioned"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Bid security kitne din tak valid rehta hai, aur unsuccessful bidders ko kab tak wapas milta hai?",
+      "expected_output": "Rule 170 quoted verbatim: bid security ordinarily 2% to 5% of estimated value, valid forty-five days beyond the final bid validity period, returned to unsuccessful bidders latest by the 30th day after award, with MSE and DPIIT-recognised startups exempt.",
+      "expectations": [
+        "The skill searches first, then runs rule 170",
+        "The answer states forty-five days beyond final bid validity, not a generic period",
+        "The answer states the 30th day after award for return to unsuccessful bidders",
+        "The 2% to 5% range and the MSE/Startup exemption are included",
+        "No figure is stated that does not appear in the verbatim text"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Rule 206 ke according to non-consulting services ke liye kaunse rules apply hote hain agar Rules 198-205 mein cover na ho?",
+      "expected_output": "Rule 206 quoted verbatim, stating that such circumstances fall back to Rules 142 to 176 pertaining to procurement of goods, and not to the procurement of consulting services.",
+      "expectations": [
+        "The answer says Rules 142 to 176, the goods rules",
+        "The answer explicitly excludes the consulting-services rules",
+        "The answer does not cite Rules 135 to 176, which is a known error in one of the comic episodes that was fixed",
+        "The verbatim wording is quoted rather than paraphrased"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Mujhe Rs 3 lakh ka equipment kharidna hai, GeM par available nahi hai. Kaunsa rule aur kya procedure?",
+      "expected_output": "Rule 155 identified, with the verbatim band above Rs 50,000 and up to Rs 5,00,000, the three-member Local Purchase Committee, the market survey, and the joint certificate, plus the GeM condition.",
+      "expectations": [
+        "The skill searches for the band and identifies Rule 155",
+        "The answer explains the Local Purchase Committee route rather than an advertised tender",
+        "The answer notes the condition that the item is not available on GeM",
+        "The answer mentions the joint certificate the committee members must record",
+        "The answer does not invent a procedure not present in the rule"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Can you tell me the debarment period under Rule 151?",
+      "expected_output": "Rule 151 quoted verbatim: up to three years on conviction, up to two years for breach of the code of integrity, a reasonable opportunity to be heard, and publication on CPPP.",
+      "expectations": [
+        "The skill runs rule 151 rather than recalling the periods",
+        "The three-year and two-year structure is stated distinctly",
+        "The requirement to give a reasonable opportunity to represent is mentioned",
+        "The DoE list on CPPP is mentioned"
+      ]
+    }
+  ]
+}
