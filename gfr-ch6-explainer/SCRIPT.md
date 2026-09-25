@@ -430,6 +430,15 @@ no manual timestamps.
   asserts the written reference shows all 67 rules, all 179 sub-rules and every proviso, note,
   exception and footnote. It confirms the three missing provisions are now present there too, and
   would catch any future provision added to the data but not rendered.
+- `node data/_figures.js` checks the acceptance criterion "never invent thresholds" mechanically.
+  Every rupee amount, percentage, time limit and order number in the hand-written Hinglish
+  commentary is matched against the verbatim rule text, with Indian digit grouping (`10 lakh` ==
+  `10,00,000`) and spelled-out numbers (`forty-five days` == `45 days`) normalised first. Figures
+  found in a *different* rule's verbatim text are reported separately as cross-rule references,
+  because naming a connected provision is correct practice. Result: **0 invented figures**; the only
+  two cross-rule figures are Rule 156's explanation that the ₹50,000–₹5,00,000 band now runs through
+  Rule 155, which is accurate.
+- `bash data/_check.sh` runs all five tests and exits non-zero if any fails.
 
 ### Post-completion corrections
 The first "100% complete" claim was wrong. Auditing the data against the official GFR 2017
@@ -491,6 +500,8 @@ node data/_verify.js             # mapping + every referenced clip file exists
 node data/_e2e.js                # runs the player's OWN script and checks every segment
 node data/_content.js            # checks each clip's size against its caption length
 node data/_ref.js               # renders the written reference and checks every provision
+node data/_figures.js           # checks every figure in the commentary is backed by the rules
+bash data/_check.sh             # runs all five tests, exits non-zero on any failure
 ls audio/v-*.mp3 | wc -l           # clip count so far
 ```
 Then append the rule → clip-file mapping to `data/studio.js`. The player re-derives the beat
