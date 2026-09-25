@@ -4,7 +4,7 @@
 #   bash gfr-ch6-explainer/data/_check.sh
 cd "$(dirname "$0")/.." || exit 1
 fail=0
-for t in _verify _e2e _content _ref _figures; do
+for t in _verify _e2e _content _ref _figures _comics; do
   printf '\n===== %s =====\n' "$t"
   if node "data/$t.js"; then
     printf '  -> %s exit 0\n' "$t"

@@ -438,7 +438,12 @@ no manual timestamps.
   because naming a connected provision is correct practice. Result: **0 invented figures**; the only
   two cross-rule figures are Rule 156's explanation that the ₹50,000–₹5,00,000 band now runs through
   Rule 155, which is accurate.
-- `bash data/_check.sh` runs all five tests and exits non-zero if any fails.
+- `node data/_comics.js` extends the figures check to the two comic episodes, which carry their own
+  hand-written narration and rule cards separate from the data files. It also flags any rule
+  reference outside Chapter 6's range of 142–206. It found a real error: **`index.html` stated that
+  Rule 206 falls back to "Rules 135–176" when the verbatim rule says "Rule 142 to Rule 176"** —
+  `services.html` had it right, so the two episodes contradicted each other. Fixed.
+- `bash data/_check.sh` runs all six tests and exits non-zero if any fails.
 
 ### Post-completion corrections
 The first "100% complete" claim was wrong. Auditing the data against the official GFR 2017
@@ -501,7 +506,7 @@ node data/_e2e.js                # runs the player's OWN script and checks every
 node data/_content.js            # checks each clip's size against its caption length
 node data/_ref.js               # renders the written reference and checks every provision
 node data/_figures.js           # checks every figure in the commentary is backed by the rules
-bash data/_check.sh             # runs all five tests, exits non-zero on any failure
+bash data/_check.sh             # runs all six tests, exits non-zero on any failure
 ls audio/v-*.mp3 | wc -l           # clip count so far
 ```
 Then append the rule → clip-file mapping to `data/studio.js`. The player re-derives the beat
