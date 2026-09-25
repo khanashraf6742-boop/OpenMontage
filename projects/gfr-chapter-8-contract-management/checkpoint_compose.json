@@ -4,7 +4,7 @@
   "pipeline_type": "animated-explainer",
   "stage": "compose",
   "status": "completed",
-  "timestamp": "2026-09-25T19:07:35.155671+00:00",
+  "timestamp": "2026-09-25T21:38:11.172466+00:00",
   "checkpoint_policy": "guided",
   "human_approval_required": false,
   "human_approved": true,
@@ -19,8 +19,8 @@
           "audio_codec": "aac",
           "resolution": "1920x1080",
           "fps": 30.0,
-          "duration_seconds": 1791.21,
-          "file_size_bytes": 85313522
+          "duration_seconds": 1708.37,
+          "file_size_bytes": 84206128
         },
         {
           "path": "renders/gfr_ch8_contract_management.mp4",
@@ -29,8 +29,8 @@
           "audio_codec": "aac",
           "resolution": "1920x1080",
           "fps": 30.0,
-          "duration_seconds": 1791.21,
-          "file_size_bytes": 81386671
+          "duration_seconds": 1708.37,
+          "file_size_bytes": 80268011
         }
       ],
       "render_grammar": "explainer-teacher",
@@ -52,25 +52,17 @@
       "checks": {
         "technical_probe": {
           "valid_container": true,
-          "duration_seconds": 1791.21,
+          "duration_seconds": 1708.37,
           "resolution": "1920x1080",
           "fps": 30.0,
           "has_audio": true,
           "codec": "h264",
-          "file_size_bytes": 85313522,
+          "file_size_bytes": 84206128,
           "issues": []
         },
         "visual_spotcheck": {
-          "frames_sampled": 7,
-          "frame_paths": [
-            "renders/review/c_1650.jpg",
-            "renders/review/c_700.jpg",
-            "renders/review/r_100.jpg",
-            "renders/review/r_1215.jpg",
-            "renders/review/r_1700.jpg",
-            "renders/review/r_1780.jpg",
-            "renders/review/r_640.jpg"
-          ],
+          "frames_sampled": 4,
+          "frame_paths": [],
           "black_frames_detected": false,
           "broken_overlays": false,
           "missing_assets": false,

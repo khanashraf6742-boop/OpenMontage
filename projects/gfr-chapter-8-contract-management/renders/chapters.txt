@@ -1,20 +1,20 @@
 00:00 Intro + Rule 224 — Authority to contract
-01:21 Deep dive 1 — Article 299 kyun, aur Chapter 8 ki shabdavali
-03:04 Rule 225(i)–(iii) — Precise terms, standard forms, advice
-04:02 Deep dive 2 — Vague clause vs precise clause
-05:35 Rule 225(iv)–(vi) — Which document, 21 days
-06:54 Deep dive 3 — Document decision tree + LoA to contract
-08:34 Rule 225(vii)–(viii) — Cost plus & Price Variation
-10:08 Deep dive 4 — PVC ka formula aur ek worked example
-11:49 Rule 225(ix)–(xiii) — Taxes, lump sum, materials, Govt property, audit copies
-12:59 Deep dive 5 — Taxes, lump sum, materials, Govt property: practice mein
-14:31 Rule 225(xiv)–(xv) + DoE OM 29.04.2026 (Force Majeure)
-16:12 Deep dive 6 — Variation vs extension, denial clause, FM procedure
-17:53 Rule 225(xvi)–(xix) — LD, warranty, rejection, 3-year bar
-18:53 Deep dive 7 — LD ka hisaab, warranty vs guarantee, 3 saal kyun
-20:39 Rule 226 — Management of contracts, BG monitoring
-21:36 Deep dive 8 — Bank Guarantee lifecycle aur monthly review checklist
-23:18 Rule 227 + DoE OM 03.06.2024 (Arbitration & Mediation guidelines)
-24:48 Deep dive 9 — Dispute ladder: negotiation se court tak
-26:27 Rule 227A + Rapid recap
-28:05 Deep dive 10 — Rule 227A worked example + Chapter 8 master sheet
+01:20 Deep dive 1 — Article 299 kyun, aur Chapter 8 ki shabdavali
+02:54 Rule 225(i)–(iii) — Precise terms, standard forms, advice
+03:52 Deep dive 2 — Vague clause vs precise clause
+05:18 Rule 225(iv)–(vi) — Which document, 21 days
+06:31 Deep dive 3 — Document decision tree + LoA to contract
+08:04 Rule 225(vii)–(viii) — Cost plus & Price Variation
+09:35 Deep dive 4 — PVC ka formula aur ek worked example
+11:23 Rule 225(ix)–(xiii) — Taxes, lump sum, materials, Govt property, audit copies
+12:28 Deep dive 5 — Taxes, lump sum, materials, Govt property: practice mein
+13:56 Rule 225(xiv)–(xv) + DoE OM 29.04.2026 (Force Majeure)
+15:29 Deep dive 6 — Variation vs extension, denial clause, FM procedure
+17:10 Rule 225(xvi)–(xix) — LD, warranty, rejection, 3-year bar
+18:13 Deep dive 7 — LD ka hisaab, warranty vs guarantee, 3 saal kyun
+19:47 Rule 226 — Management of contracts, BG monitoring
+20:43 Deep dive 8 — Bank Guarantee lifecycle aur monthly review checklist
+22:16 Rule 227 + DoE OM 03.06.2024 (Arbitration & Mediation guidelines)
+23:39 Deep dive 9 — Dispute ladder: negotiation se court tak
+25:10 Rule 227A + Rapid recap
+26:47 Deep dive 10 — Rule 227A worked example + Chapter 8 master sheet

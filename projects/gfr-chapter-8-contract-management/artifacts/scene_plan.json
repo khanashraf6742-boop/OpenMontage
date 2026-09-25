@@ -7,159 +7,159 @@
       "type": "character_scene",
       "description": "Intro + Rule 224 — Authority to contract — illustration + story panel + progressive rule card (6 states)",
       "start_seconds": 0.0,
-      "end_seconds": 81.86,
+      "end_seconds": 80.78,
       "script_section_id": "s01_intro_rule224"
     },
     {
       "id": "d01_why_299",
       "type": "character_scene",
       "description": "Deep dive 1 — Article 299 kyun, aur Chapter 8 ki shabdavali — illustration + story panel + progressive rule card (7 states)",
-      "start_seconds": 81.86,
-      "end_seconds": 184.1,
+      "start_seconds": 80.78,
+      "end_seconds": 174.24,
       "script_section_id": "d01_why_299"
     },
     {
       "id": "s02_rule225_i_iii",
       "type": "character_scene",
       "description": "Rule 225(i)–(iii) — Precise terms, standard forms, advice — illustration + story panel + progressive rule card (6 states)",
-      "start_seconds": 184.1,
-      "end_seconds": 242.68,
+      "start_seconds": 174.24,
+      "end_seconds": 232.18,
       "script_section_id": "s02_rule225_i_iii"
     },
     {
       "id": "d02_precision",
       "type": "character_scene",
       "description": "Deep dive 2 — Vague clause vs precise clause — illustration + story panel + progressive rule card (6 states)",
-      "start_seconds": 242.68,
-      "end_seconds": 335.18,
+      "start_seconds": 232.18,
+      "end_seconds": 318.27,
       "script_section_id": "d02_precision"
     },
     {
       "id": "s03_rule225_iv_vi",
       "type": "character_scene",
       "description": "Rule 225(iv)–(vi) — Which document, 21 days — illustration + story panel + progressive rule card (9 states)",
-      "start_seconds": 335.18,
-      "end_seconds": 414.16,
+      "start_seconds": 318.27,
+      "end_seconds": 391.09,
       "script_section_id": "s03_rule225_iv_vi"
     },
     {
       "id": "d03_doc_tree",
       "type": "character_scene",
       "description": "Deep dive 3 — Document decision tree + LoA to contract — illustration + story panel + progressive rule card (7 states)",
-      "start_seconds": 414.16,
-      "end_seconds": 514.41,
+      "start_seconds": 391.09,
+      "end_seconds": 484.62,
       "script_section_id": "d03_doc_tree"
     },
     {
       "id": "s04_rule225_vii_viii",
       "type": "character_scene",
       "description": "Rule 225(vii)–(viii) — Cost plus & Price Variation — illustration + story panel + progressive rule card (9 states)",
-      "start_seconds": 514.41,
-      "end_seconds": 608.11,
+      "start_seconds": 484.62,
+      "end_seconds": 575.84,
       "script_section_id": "s04_rule225_vii_viii"
     },
     {
       "id": "d04_pvc_math",
       "type": "character_scene",
       "description": "Deep dive 4 — PVC ka formula aur ek worked example — illustration + story panel + progressive rule card (9 states)",
-      "start_seconds": 608.11,
-      "end_seconds": 709.34,
+      "start_seconds": 575.84,
+      "end_seconds": 683.65,
       "script_section_id": "d04_pvc_math"
     },
     {
       "id": "s05_rule225_ix_xiii",
       "type": "character_scene",
       "description": "Rule 225(ix)–(xiii) — Taxes, lump sum, materials, Govt property, audit copies — illustration + story panel + progressive rule card (7 states)",
-      "start_seconds": 709.34,
-      "end_seconds": 779.28,
+      "start_seconds": 683.65,
+      "end_seconds": 748.91,
       "script_section_id": "s05_rule225_ix_xiii"
     },
     {
       "id": "d05_field_clauses",
       "type": "character_scene",
       "description": "Deep dive 5 — Taxes, lump sum, materials, Govt property: practice mein — illustration + story panel + progressive rule card (7 states)",
-      "start_seconds": 779.28,
-      "end_seconds": 871.68,
+      "start_seconds": 748.91,
+      "end_seconds": 836.53,
       "script_section_id": "d05_field_clauses"
     },
     {
       "id": "s06_rule225_xiv_xv_fmc2026",
       "type": "character_scene",
       "description": "Rule 225(xiv)–(xv) + DoE OM 29.04.2026 (Force Majeure) — illustration + story panel + progressive rule card (8 states)",
-      "start_seconds": 871.68,
-      "end_seconds": 972.34,
+      "start_seconds": 836.53,
+      "end_seconds": 929.39,
       "script_section_id": "s06_rule225_xiv_xv_fmc2026"
     },
     {
       "id": "d06_variation_fm",
       "type": "character_scene",
       "description": "Deep dive 6 — Variation vs extension, denial clause, FM procedure — illustration + story panel + progressive rule card (7 states)",
-      "start_seconds": 972.34,
-      "end_seconds": 1073.81,
+      "start_seconds": 929.39,
+      "end_seconds": 1030.05,
       "script_section_id": "d06_variation_fm"
     },
     {
       "id": "s07_rule225_xvi_xix",
       "type": "character_scene",
       "description": "Rule 225(xvi)–(xix) — LD, warranty, rejection, 3-year bar — illustration + story panel + progressive rule card (8 states)",
-      "start_seconds": 1073.81,
-      "end_seconds": 1133.64,
+      "start_seconds": 1030.05,
+      "end_seconds": 1093.87,
       "script_section_id": "s07_rule225_xvi_xix"
     },
     {
       "id": "d07_ld_math",
       "type": "character_scene",
       "description": "Deep dive 7 — LD ka hisaab, warranty vs guarantee, 3 saal kyun — illustration + story panel + progressive rule card (7 states)",
-      "start_seconds": 1133.64,
-      "end_seconds": 1239.12,
+      "start_seconds": 1093.87,
+      "end_seconds": 1187.21,
       "script_section_id": "d07_ld_math"
     },
     {
       "id": "s08_rule226",
       "type": "character_scene",
       "description": "Rule 226 — Management of contracts, BG monitoring — illustration + story panel + progressive rule card (6 states)",
-      "start_seconds": 1239.12,
-      "end_seconds": 1296.86,
+      "start_seconds": 1187.21,
+      "end_seconds": 1243.39,
       "script_section_id": "s08_rule226"
     },
     {
       "id": "d08_bg_lifecycle",
       "type": "character_scene",
       "description": "Deep dive 8 — Bank Guarantee lifecycle aur monthly review checklist — illustration + story panel + progressive rule card (8 states)",
-      "start_seconds": 1296.86,
-      "end_seconds": 1398.76,
+      "start_seconds": 1243.39,
+      "end_seconds": 1336.32,
       "script_section_id": "d08_bg_lifecycle"
     },
     {
       "id": "s09_rule227_arbitration_guidelines",
       "type": "character_scene",
       "description": "Rule 227 + DoE OM 03.06.2024 (Arbitration & Mediation guidelines) — illustration + story panel + progressive rule card (10 states)",
-      "start_seconds": 1398.76,
-      "end_seconds": 1488.45,
+      "start_seconds": 1336.32,
+      "end_seconds": 1419.74,
       "script_section_id": "s09_rule227_arbitration_guidelines"
     },
     {
       "id": "d09_dispute_ladder",
       "type": "character_scene",
       "description": "Deep dive 9 — Dispute ladder: negotiation se court tak — illustration + story panel + progressive rule card (7 states)",
-      "start_seconds": 1488.45,
-      "end_seconds": 1587.5,
+      "start_seconds": 1419.74,
+      "end_seconds": 1510.84,
       "script_section_id": "d09_dispute_ladder"
     },
     {
       "id": "s10_rule227a_recap",
       "type": "character_scene",
       "description": "Rule 227A + Rapid recap — illustration + story panel + progressive rule card (16 states)",
-      "start_seconds": 1587.5,
-      "end_seconds": 1685.13,
+      "start_seconds": 1510.84,
+      "end_seconds": 1607.61,
       "script_section_id": "s10_rule227a_recap"
     },
     {
       "id": "d10_227a_master",
       "type": "character_scene",
       "description": "Deep dive 10 — Rule 227A worked example + Chapter 8 master sheet — illustration + story panel + progressive rule card (10 states)",
-      "start_seconds": 1685.13,
-      "end_seconds": 1791.14,
+      "start_seconds": 1607.61,
+      "end_seconds": 1708.27,
       "script_section_id": "d10_227a_master"
     }
   ]

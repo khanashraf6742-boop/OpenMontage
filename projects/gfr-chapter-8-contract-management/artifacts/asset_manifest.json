@@ -13,10 +13,10 @@
     {
       "id": "vo_s01",
       "type": "narration",
-      "path": "assets/audio/s01.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/s01.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "s01_intro_rule224",
-      "duration_seconds": 80.06,
+      "duration_seconds": 78.98,
       "format": "mp3"
     },
     {
@@ -31,10 +31,10 @@
     {
       "id": "vo_d01",
       "type": "narration",
-      "path": "assets/audio/d01.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/d01.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "d01_why_299",
-      "duration_seconds": 100.44,
+      "duration_seconds": 91.66,
       "format": "mp3"
     },
     {
@@ -49,10 +49,10 @@
     {
       "id": "vo_s02",
       "type": "narration",
-      "path": "assets/audio/s02.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/s02.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "s02_rule225_i_iii",
-      "duration_seconds": 56.78,
+      "duration_seconds": 56.14,
       "format": "mp3"
     },
     {
@@ -67,10 +67,10 @@
     {
       "id": "vo_d02",
       "type": "narration",
-      "path": "assets/audio/d02.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/d02.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "d02_precision",
-      "duration_seconds": 90.7,
+      "duration_seconds": 84.29,
       "format": "mp3"
     },
     {
@@ -85,10 +85,10 @@
     {
       "id": "vo_s03",
       "type": "narration",
-      "path": "assets/audio/s03.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/s03.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "s03_rule225_iv_vi",
-      "duration_seconds": 77.18,
+      "duration_seconds": 71.02,
       "format": "mp3"
     },
     {
@@ -103,10 +103,10 @@
     {
       "id": "vo_d03",
       "type": "narration",
-      "path": "assets/audio/d03.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/d03.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "d03_doc_tree",
-      "duration_seconds": 98.45,
+      "duration_seconds": 91.73,
       "format": "mp3"
     },
     {
@@ -121,10 +121,10 @@
     {
       "id": "vo_s04",
       "type": "narration",
-      "path": "assets/audio/s04.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/s04.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "s04_rule225_vii_viii",
-      "duration_seconds": 91.9,
+      "duration_seconds": 89.42,
       "format": "mp3"
     },
     {
@@ -139,10 +139,10 @@
     {
       "id": "vo_d04",
       "type": "narration",
-      "path": "assets/audio/d04.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/d04.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "d04_pvc_math",
-      "duration_seconds": 99.43,
+      "duration_seconds": 106.01,
       "format": "mp3"
     },
     {
@@ -157,10 +157,10 @@
     {
       "id": "vo_s05",
       "type": "narration",
-      "path": "assets/audio/s05.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/s05.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "s05_rule225_ix_xiii",
-      "duration_seconds": 68.14,
+      "duration_seconds": 63.46,
       "format": "mp3"
     },
     {
@@ -175,10 +175,10 @@
     {
       "id": "vo_d05",
       "type": "narration",
-      "path": "assets/audio/d05.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/d05.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "d05_field_clauses",
-      "duration_seconds": 90.6,
+      "duration_seconds": 85.82,
       "format": "mp3"
     },
     {
@@ -193,10 +193,10 @@
     {
       "id": "vo_s06",
       "type": "narration",
-      "path": "assets/audio/s06.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/s06.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "s06_rule225_xiv_xv_fmc2026",
-      "duration_seconds": 98.86,
+      "duration_seconds": 91.06,
       "format": "mp3"
     },
     {
@@ -211,10 +211,10 @@
     {
       "id": "vo_d06",
       "type": "narration",
-      "path": "assets/audio/d06.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/d06.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "d06_variation_fm",
-      "duration_seconds": 99.67,
+      "duration_seconds": 98.86,
       "format": "mp3"
     },
     {
@@ -229,10 +229,10 @@
     {
       "id": "vo_s07",
       "type": "narration",
-      "path": "assets/audio/s07.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/s07.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "s07_rule225_xvi_xix",
-      "duration_seconds": 58.03,
+      "duration_seconds": 62.02,
       "format": "mp3"
     },
     {
@@ -247,10 +247,10 @@
     {
       "id": "vo_d07",
       "type": "narration",
-      "path": "assets/audio/d07.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/d07.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "d07_ld_math",
-      "duration_seconds": 103.68,
+      "duration_seconds": 91.54,
       "format": "mp3"
     },
     {
@@ -265,10 +265,10 @@
     {
       "id": "vo_s08",
       "type": "narration",
-      "path": "assets/audio/s08.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/s08.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "s08_rule226",
-      "duration_seconds": 55.94,
+      "duration_seconds": 54.38,
       "format": "mp3"
     },
     {
@@ -283,10 +283,10 @@
     {
       "id": "vo_d08",
       "type": "narration",
-      "path": "assets/audio/d08.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/d08.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "d08_bg_lifecycle",
-      "duration_seconds": 100.1,
+      "duration_seconds": 91.13,
       "format": "mp3"
     },
     {
@@ -301,10 +301,10 @@
     {
       "id": "vo_s09",
       "type": "narration",
-      "path": "assets/audio/s09.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/s09.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "s09_rule227_arbitration_guidelines",
-      "duration_seconds": 87.89,
+      "duration_seconds": 81.62,
       "format": "mp3"
     },
     {
@@ -319,10 +319,10 @@
     {
       "id": "vo_d09",
       "type": "narration",
-      "path": "assets/audio/d09.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/d09.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "d09_dispute_ladder",
-      "duration_seconds": 97.25,
+      "duration_seconds": 89.3,
       "format": "mp3"
     },
     {
@@ -337,10 +337,10 @@
     {
       "id": "vo_s10",
       "type": "narration",
-      "path": "assets/audio/s10.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/s10.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "s10_rule227a_recap",
-      "duration_seconds": 95.83,
+      "duration_seconds": 94.97,
       "format": "mp3"
     },
     {
@@ -355,10 +355,10 @@
     {
       "id": "vo_d10",
       "type": "narration",
-      "path": "assets/audio/d10.mp3",
-      "source_tool": "generate_speech (assistant-native, voice-00)",
+      "path": "assets/audio_enin/d10.mp3",
+      "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)",
       "scene_id": "d10_227a_master",
-      "duration_seconds": 99.41,
+      "duration_seconds": 94.06,
       "format": "mp3"
     },
     {

@@ -1,127 +1,127 @@
 {
   "version": "1.0",
   "title": "GFR 2017 Chapter 8 — Contract Management | Simple Hinglish Explainer",
-  "total_duration_seconds": 1791.1,
+  "total_duration_seconds": 1708.3,
   "sections": [
     {
       "id": "s01_intro_rule224",
       "text": "नमस्ते! आज हम समझेंगे GFR 2017 का Chapter 8 — Contract Management — Rule 224 से 227A तक, latest Department of Expenditure orders के साथ। एक बात साफ़: GFR के amendments Department of Expenditure जारी करता है; DoPT का कोई order Chapter 8 को amend नहीं करता। चलिए, scene one। नेहा वर्मा नई Section Officer हैं। सामने A M C agreement की आख़िरी page है और उन्हें sign करना है। Senior Assistant राकेश जी कहते हैं — 'Madam, signature के नीचे designation के बाद ये शब्द ज़रूर लिखिए: for and on behalf of the President of India।' क्यों? क्योंकि Rule 224, sub-rule एक कहता है — हर contract वही authority करेगी जिसे President के orders के तहत, Constitution के Article 299 clause एक में power मिली है। और sub-rule दो — Union की executive power में किए गए सभी contracts और assurances of property, President की ओर से execute होंगे। Note एक: कौन-सी class का contract कौन execute कर सकता है — ये Ministry of Law के notifications बताते हैं। Note दो: powers, conditions और procedure Delegation of Financial Powers Rules में हैं। Exam trap: authority का source Article 299 clause एक है, और शब्द हैं 'for and on behalf of the President of India' — 'Government of India' नहीं।",
       "start_seconds": 0.0,
-      "end_seconds": 81.86
+      "end_seconds": 80.78
     },
     {
       "id": "d01_why_299",
       "text": "Deep dive one। पहले ये समझो कि Rule 224 Article 299 पर क्यों टिका है। Article 299 clause एक कहता है — Union की executive power में किया गया हर contract President के नाम से expressed होगा, और उन्हीं persons द्वारा, उसी तरीके से execute होगा जैसा President direct या authorise करें। मतलब तीन चीज़ें — expressed in the name of the President, executed by an authorised person, और executed in the authorised manner। इनमें कोई भी कमी हो तो contract Government पर binding नहीं माना जाता — इसीलिए signature block इतना important है। Article 299 clause दो एक राहत भी देता है — ऐसे contract के लिए President या signing officer personally liable नहीं होते। अब Chapter 8 की शब्दावली, जो आगे बार-बार आएगी। Letter of Award, या L o A — successful bidder को award की सूचना। Bid security या E M D — Rule 170 के तहत bidders से लिया जाने वाला security, जो ordinarily estimated value का दो से पाँच percent होता है; कुछ cases में Bid Security Declaration भी ली जा सकती है। Performance security — Rule 171 के तहत contract value का पाँच से दस percent, जो contractor के सभी obligations — warranty समेत — पूरे होने के साठ दिन बाद तक valid रहती है। Bank Guarantee — bank का वादा कि demand पर वो Government को रकम देगा। Liquidated damages — delay पर contract में पहले से तय recovery। Price variation clause — input prices बदलने पर contract price adjust करने का formula। Force majeure — ऐसी घटना जो किसी के control से बाहर हो। इन शब्दों को पकड़ लो — अब हर clause आसान लगेगा।",
-      "start_seconds": 81.86,
-      "end_seconds": 184.1
+      "start_seconds": 80.78,
+      "end_seconds": 174.24
     },
     {
       "id": "s02_rule225_i_iii",
       "text": "Scene two। Housekeeping tender की file। Assistant अर्जुन ने draft में लिखा — 'payment terms as may be decided later'। Under Secretary मीरा ने file रोक दी। क्यों? अर्जुन, Rule 225 clause एक पढ़ो — contract की terms precise, definite और बिना किसी ambiguity के होनी चाहिए। Government के लिए कोई uncertain या indefinite liability नहीं। सिर्फ़ दो exceptions — cost plus contract, या price variation clause वाला contract। Clause दो — जहाँ possible हो, standard forms of contract use करो। उनमें कोई भी modification सिर्फ़ financial और legal advice के बाद। और clause तीन — अगर standard form use नहीं हो रहा, तो clauses draft करते समय legal और financial advice ज़रूर लो। Memory hook: standard form पहले; बदलाव सिर्फ़ advice के बाद। Exam trap: indefinite liability की exceptions सिर्फ़ cost-plus और price-variation हैं — 'urgent requirement' कोई exception नहीं है।",
-      "start_seconds": 184.1,
-      "end_seconds": 242.68
+      "start_seconds": 174.24,
+      "end_seconds": 232.18
     },
     {
       "id": "d02_precision",
       "text": "Deep dive two। Rule 225 clause एक सिर्फ़ theory नहीं है — आइए तीन vague clauses को precise बनाते हैं। पहला — 'payment terms as may be decided later'। precise version: 'हर monthly bill का सौ percent payment, satisfactory service certificate के तीस दिन के अंदर'। दूसरा — 'delivery at the earliest'। precise version: 'contract की date से पैंतालीस दिन के अंदर, consignee के store पर, delivery, installation और commissioning समेत'। तीसरा — 'rates as per actuals'। ये खुली liability है — actual कितना होगा, किसी को नहीं पता। precise version: 'fixed rate per unit, taxes समेत, contract की पूरी अवधि के लिए firm'। Indefinite liability का मतलब यही है — ऐसी शर्त जिससे Government की देनदारी की कोई upper limit न हो। अब standard forms क्या हैं? Department of Expenditure के Procurement Manuals में दिए गए model bidding documents; GeM की General Terms and Conditions; works के लिए CPWD जैसे departments के standard contract forms। इन्हें वैसे ही use करो — clause बदलना हो तो पहले Integrated Finance Division और Legal Adviser या Ministry of Law से सलाह। क्यों? क्योंकि standard clauses पर पहले से legal vetting हो चुकी है, और हर बदलाव एक नया risk खोलता है। Practical tip — draft finalise करने से पहले पाँच सवाल पूछो: क्या, कितना, कब, कहाँ, और नहीं हुआ तो क्या। जिस clause का जवाब इनमें से किसी सवाल पर 'बाद में तय होगा' है, वो clause Rule 225 clause एक में fail है।",
-      "start_seconds": 242.68,
-      "end_seconds": 335.18
+      "start_seconds": 232.18,
+      "end_seconds": 318.27
     },
     {
       "id": "s03_rule225_iv_vi",
       "text": "Scene three। Accounts Officer प्रिया के सामने तीन files हैं। File one — printers, एक लाख अस्सी हज़ार रुपये। File two — office furniture, छह लाख रुपये। File three — building repair works, पंद्रह लाख रुपये। हर file में document अलग बनेगा। Rule 225 clause चार, sub-clause a — simple purchase, ढाई लाख रुपये तक — purchase order ही काफ़ी है, terms and conditions के साथ। Sub-clause b — एक लाख से दस लाख रुपये तक की purchase — अगर bid documents में General और Special Conditions of Contract और scope of work पहले से हैं, तो Letter of Award ही binding contract बन जाता है। Sub-clause c — works contract दस लाख या उससे ऊपर, और purchase दस लाख से ऊपर — self-contained contract document, या एक-page contract जिसमें bid documents को reference किया गया हो। Sub-clause d — turnkey works, maintenance contracts, और services के लिए contract document हमेशा बनेगा, amount कुछ भी हो। Clause पाँच — agreement या order execute हुए बिना कोई काम शुरू नहीं होगा। Clause छह — Letter of Award के बाद contract इक्कीस दिन के अंदर execute करो; नहीं तो award annul हो सकता है और bid security forfeit। Quick quiz — printers की file में क्या बनेगा? … Answer: purchase order, sub-clause a के तहत।",
-      "start_seconds": 335.18,
-      "end_seconds": 414.16
+      "start_seconds": 318.27,
+      "end_seconds": 391.09
     },
     {
       "id": "d03_doc_tree",
       "text": "Deep dive three। Screen पर decision tree देखो। पहला सवाल — क्या ये turnkey, maintenance या services का contract है? हाँ, तो amount कुछ भी हो — proper contract document बनेगा, sub-clause d। नहीं, तो दूसरा सवाल — amount कितना है? ढाई लाख रुपये तक की simple purchase — purchase order, sub-clause a। एक लाख से दस लाख रुपये तक — अगर bid documents में General Conditions, Special Conditions और scope पहले से थे, तो Letter of Award ही contract है, sub-clause b; अलग से agreement की ज़रूरत नहीं। दस लाख या उससे ऊपर के works, और दस लाख से ऊपर की purchase — sub-clause c — या तो पूरा self-contained contract, या एक page का contract जो bid documents को incorporate करे। ध्यान दो — a और b के बीच एक लाख से ढाई लाख की range में overlap है। वहाँ simple purchase में purchase order ही काफ़ी है; b तब काम आता है जब bid documents पूरे थे और आप LoA को ही contract बनाना चाहते हैं। अब LoA से contract तक का रास्ता। LoA जारी हुआ — bidder ने acceptance भेजी — performance security जमा हुई — agreement sign हुआ। Rule 225 clause छह कहता है ये सब इक्कीस दिन में। इक्कीस दिन क्यों? ताकि successful bidder LoA लेकर बैठा न रहे, और prices या market बदलने पर मुकर न सके। default हुआ तो award annul और bid security forfeit — यानी Rule 170 वाला E M D यहीं काम आता है। GeM पर purchase हो तो GeM system contract खुद generate करता है — वही आपका contract document है। और clause पाँच का practical मतलब — 'काम शुरू करा दो, order बाद में' — ये Rule 225 clause पाँच का सीधा उल्लंघन है।",
-      "start_seconds": 414.16,
-      "end_seconds": 514.41
+      "start_seconds": 391.09,
+      "end_seconds": 484.62
     },
     {
       "id": "s04_rule225_vii_viii",
       "text": "Scene four। Research lab में Scientist डॉक्टर अय्यर पूछते हैं — 'delivery period चौबीस महीने है, vendor price variation माँग रहा है, दे सकते हैं?' Accounts Officer प्रिया समझाती हैं। पहले Rule 225 clause सात — cost plus contracts ordinarily avoid करो। unavoidable हों तो contract से पहले full justification record करो, और लंबे duration में बाद में firm price पर convert करने की कोशिश करो। Explanation: cost plus contract वो है जिसमें price actual cost of production plus profit होता है — fixed rate per unit या fixed percentage। अब clause आठ — price variation clause। Sub-clause a — ordinarily सिर्फ़ long-term contracts में, जहाँ delivery period अठारह महीने से ज़्यादा हो; short-term में firm and fixed price। b — clause में base month and year साफ़ लिखो। c — formula, indices या Appendix ग्यारह के अनुसार। d — cut-off dates और ceiling तय हों। e — minimum threshold, जैसे दो percent, से कम पर कोई variation नहीं। f — advance payment वाले हिस्से पर कोई variation नहीं। g — liquidated damages varied price पर लगेंगे। h — supplier के default से delay हो तो original delivery date के बाद कोई increase नहीं, पर decrease का फ़ायदा Government लेगी। i — force majeure या Government default से extension हो तो amendment करके variation allow हो सकता है। j — duties, taxes और foreign exchange variation के rules साफ़ लिखो। k — payment mode भी तय हो। Memory hook: अठारह महीने — यही PVC का दरवाज़ा है।",
-      "start_seconds": 514.41,
-      "end_seconds": 608.11
+      "start_seconds": 484.62,
+      "end_seconds": 575.84
     },
     {
       "id": "d04_pvc_math",
       "text": "Deep dive four। PVC को एक illustrative example से समझते हैं — numbers सिर्फ़ समझाने के लिए; असली formula आपके contract और Appendix ग्यारह से आएगा। Typical formula — नया price बराबर पुराना price गुणा: fixed component, plus labour weight गुणा labour index ratio, plus material weight गुणा material index ratio। मान लो fixed component पंद्रह percent, labour पच्चीस percent, material साठ percent। Base month में labour index सौ और material index सौ था। Delivery के महीने में labour index एक सौ आठ और material index एक सौ दस हो गया। तो factor बना — शून्य दशमलव पंद्रह, plus शून्य दशमलव पच्चीस गुणा एक दशमलव शून्य आठ यानी शून्य दशमलव दो सात, plus शून्य दशमलव छह गुणा एक दशमलव एक यानी शून्य दशमलव छियासठ। कुल एक दशमलव शून्य आठ। मतलब price आठ percent बढ़ा। अब clauses लगाओ। sub-clause e — threshold दो percent था, आठ percent उससे ऊपर है, तो variation लागू। sub-clause d — ceiling अगर दस percent है, तो आठ percent पूरा मिलेगा; बारह होता तो दस पर cap। sub-clause f — अगर बीस percent advance दिया था, तो variation सिर्फ़ बाक़ी अस्सी percent पर। sub-clause h — supplier अपनी ग़लती से original delivery date के बाद supply करे, तो index बढ़ने का फ़ायदा नहीं; index गिरे तो कम price Government को। sub-clause g — liquidated damages इसी varied price पर लगेंगे। और याद रखो — ये सब तभी, जब delivery period अठारह महीने से ज़्यादा हो; छोटे contracts में firm and fixed price। Cost plus का फ़र्क़ — वहाँ formula नहीं, actual cost plus profit है; cost पर control नहीं रहता — इसीलिए ordinarily avoid।",
-      "start_seconds": 608.11,
-      "end_seconds": 709.34
+      "start_seconds": 575.84,
+      "end_seconds": 683.65
     },
     {
       "id": "s05_rule225_ix_xiii",
       "text": "Scene five। PWD division में Executive Engineer खान साहब और Divisional Accountant सुनीता जी एक तीस लाख रुपये के civil work का contract बंद कर रहे हैं। Rule 225 clause नौ — contractor को applicable taxes और duties खुद भरने होंगे; contract में ये साफ़ लिखो। Clause दस — lump sum contracts सिर्फ़ absolute necessity में, और तब भी payment के लिए proper safeguards के साथ। Clause ग्यारह — जहाँ तक हो सके, contractor को departmental materials देना avoid करो; अगर देना ही पड़े, तो materials की schedule, rates और conditions contract में हों। Clause बारह — contractor को दी गई Government property की safeguard करो — insurance, hire charges की recovery, और periodic physical verification। और clause तेरह — पच्चीस लाख रुपये और उससे ऊपर के contracts की copies, civil departments से Audit Officer और Accounts Officer को भेजी जाएँगी। ये limit Department of Expenditure के April दो हज़ार उन्नीस के amendment से आई। सुनीता जी कहती हैं — 'तीस लाख का है, copy Audit को जाएगी।' Exam trap: audit copies की limit पच्चीस लाख है — दस लाख नहीं।",
-      "start_seconds": 709.34,
-      "end_seconds": 779.28
+      "start_seconds": 683.65,
+      "end_seconds": 748.91
     },
     {
       "id": "d05_field_clauses",
       "text": "Deep dive five। अब इन clauses का practical रूप। Clause नौ — taxes। Bid में rates all-inclusive माँगो और साफ़ लिखो कि applicable GST और duties का भुगतान contractor की ज़िम्मेदारी है। इससे बाद में 'tax अलग से दो' वाला विवाद नहीं होता। Clause दस — lump sum। जहाँ काम को इकाइयों में नापना मुश्किल हो — जैसे कोई turnkey job — वहाँ lump sum हो सकता है, पर proper safeguards के साथ: payment milestones से जुड़ा हो, हर milestone का acceptance criteria लिखा हो, और final payment completion certificate के बाद। Clause ग्यारह — departmental materials। अगर department cement या steel जैसा material देता है, तो contract में schedule हो — कौन-सा material, कितनी quantity, किस rate पर issue होगा, और बचा हुआ material कैसे वापस होगा या recover होगा। Clause बारह — Government property। tools, plant, machinery या premises contractor को दिए हों, तो insurance किसके नाम, hire charges कितने, और periodic physical verification कौन करेगा — तीनों contract में। Clause तेरह — audit copies। Audit Officer यानी C and A G की office, और Accounts Officer यानी Pay and Accounts Office — दोनों को पच्चीस लाख या उससे ऊपर के contracts की copy। ये copies क्यों? ताकि audit को contract की शर्तें पहले से पता हों और bills की checking उन शर्तों के against हो सके। Exam के लिए एक pattern याद रखो — ढाई लाख purchase order, दस लाख formal contract, पच्चीस लाख audit copy। तीन numbers, तीन clauses।",
-      "start_seconds": 779.28,
-      "end_seconds": 871.68
+      "start_seconds": 748.91,
+      "end_seconds": 836.53
     },
     {
       "id": "s06_rule225_xiv_xv_fmc2026",
       "text": "Scene six। Chairs के supply contract में vendor पूछता है — 'model बदल दूँ? delivery दो महीने आगे?' Section Officer गुरप्रीत, Deputy Secretary कपूर से पूछते हैं। Rule 225 clause चौदह — contract में कोई material variation ऐसे ही नहीं होगी। ज़रूरी हो तो financial और अन्य effect record करो, competent authority की prior approval लो, और amendment सभी parties sign करें। Clause पंद्रह — delivery या completion period का extension सिर्फ़ तभी, जब contract में provision हो या force majeure हो — और वो भी formal amendment से। अब latest order। Department of Expenditure का Office Memorandum, उनतीस April दो हज़ार छब्बीस — Force Majeure Clause पर। Force majeure मतलब act of God, war, strike, riots — negligence या predictable बारिश नहीं। Notice reasonable समय में, Manuals के अनुसार लगभग चौदह दिन; ex-post-facto claim नहीं। Force majeure नब्बे दिन से ज़्यादा चले तो कोई भी party बिना financial repercussion contract terminate कर सकती है। इस O M में ongoing West Asia situation को 'war' माना गया है — goods, services और works contracts में force majeure invoke हो सकता है। अट्ठाईस February दो हज़ार छब्बीस को या बाद में due obligations दो से चार महीने extend हो सकती हैं — बिना cost या penalty, case-to-case। Condition — सत्ताईस February को parties default में न हों, और सिर्फ़ West Asia disruption से directly जुड़ी non-performance cover होगी। गुरप्रीत का जवाब: model change material variation है — approval और amendment के बिना नहीं; extension सिर्फ़ force majeure या contract provision पर।",
-      "start_seconds": 871.68,
-      "end_seconds": 972.34
+      "start_seconds": 836.53,
+      "end_seconds": 929.39
     },
     {
       "id": "d06_variation_fm",
       "text": "Deep dive six। तीन चीज़ें अलग-अलग हैं — variation, extension, और force majeure। Material variation मतलब core शर्तों में बदलाव — scope, specification, quantity, price, delivery schedule। Rule 225 clause चौदह का तरीका: पहले effects record, फिर competent authority की prior approval, फिर सभी parties के signature से amendment। बाद में approval — नहीं चलेगा। Extension दो तरह का होता है। पहला — supplier की अपनी देरी पर। formal amendment से, पर liquidated damages के साथ, और denial clause — यानी extension की अवधि में price, taxes या exchange rate बढ़े तो Government नहीं देगी, घटे तो फ़ायदा लेगी। दूसरा — force majeure extension। यहाँ न liquidated damages, न denial clause, क्योंकि देरी किसी की ग़लती नहीं। Force majeure procedure — Procurement Manuals के अनुसार। एक: लगभग चौदह दिन में written notice with evidence। दो: दोनों पक्ष तय करें कौन-सा obligation कितना प्रभावित हुआ। तीन: उतना extension formal amendment से। चार: नब्बे दिन से ज़्यादा चले तो कोई भी पक्ष बिना financial repercussion terminate कर सकता है। अब उनतीस April दो हज़ार छब्बीस का O M timeline पर देखो। मान लो delivery पंद्रह March दो हज़ार छब्बीस को due थी — अट्ठाईस February के बाद। supplier सत्ताईस February को default में नहीं था। West Asia disruption से shipment रुकी। तो examination के बाद delivery दो से चार महीने — पंद्रह May से पंद्रह July के बीच — बढ़ सकती है, बिना liquidated damages। लेकिन अगर supplier बीस February को ही late था, तो ये राहत नहीं — क्योंकि सत्ताईस February को वो पहले से default में था।",
-      "start_seconds": 972.34,
-      "end_seconds": 1073.81
+      "start_seconds": 929.39,
+      "end_seconds": 1030.05
     },
     {
       "id": "s07_rule225_xvi_xix",
       "text": "Scene seven। Stores में Storekeeper रमेश को laptops की delivery बीस दिन late मिली, और दो laptops खराब हैं। Deputy Director फ़ातिमा action तय करती हैं। Rule 225 clause सोलह — delay पर liquidated damages contract के अनुसार ज़रूर recover होंगे — शब्द है 'shall'। Exemption सिर्फ़ exceptional cases में, reasons record करके, competent authority की approval से। Clause सत्रह — contract में warranty clause हो — defective goods free replace या repair होंगे। Clause अठारह — Government के पास right to reject हो — जो goods specifications पर खरे न उतरें, उन्हें reject किया जाए। Clause उन्नीस — contract बंद होने की date से तीन साल के बाद कोई claim entertain नहीं होगा, जब तक contract में कुछ और न लिखा हो। Quick quiz — L D माफ़ करना routine है या exceptional? … Answer: exceptional — reasons record करके, approval से। Memory hook: L D shall, warranty must, reject right, three years बस।",
-      "start_seconds": 1073.81,
-      "end_seconds": 1133.64
+      "start_seconds": 1030.05,
+      "end_seconds": 1093.87
     },
     {
       "id": "d07_ld_math",
       "text": "Deep dive seven। Liquidated damages का हिसाब देखते हैं। Procurement Manuals में goods के लिए typical clause — हर हफ़्ते या उसके हिस्से की देरी पर delayed goods की value का आधा percent, अधिकतम दस percent। असली rate contract से आएगा। Example — laptops की value दस लाख रुपये, delivery बीस दिन late। बीस दिन यानी दो हफ़्ते और छह दिन का हिस्सा — तीन हफ़्ते गिने जाएँगे। तीन गुणा आधा percent — डेढ़ percent — यानी पंद्रह हज़ार रुपये L D। अगर देरी बीस हफ़्ते होती तो दस percent की cap — एक लाख रुपये पर रुक जाता। Rule 225 clause सोलह में शब्द 'shall' है — मतलब L D लगाना default है, माफ़ करना exception। और exception भी लिखित reasons और competent authority की approval से। file पर सिर्फ़ 'L D waived' लिखना काफ़ी नहीं। Warranty — clause सत्रह। warranty period में defect निकले तो supplier free of cost repair या replace करेगा। इसे performance security से जोड़ो — Rule 171 के अनुसार performance security warranty obligations पूरे होने के साठ दिन बाद तक valid रहती है, इसीलिए warranty में default हो तो recovery का रास्ता खुला रहता है। Right to reject — clause अठारह। inspection में specification पर खरे न उतरें तो reject, लिखित intimation, replacement — rejected goods की payment नहीं। तीन साल — clause उन्नीस। Limitation Act उन्नीस सौ तिरसठ में contract के दावों की general limitation भी तीन साल है; Rule 225 इसे contract की शर्त बना देता है — contract बंद होने के तीन साल बाद कोई claim entertain नहीं, जब तक contract में कुछ और न लिखा हो। याद रखो — 'shall' वाले clauses exam में सबसे ज़्यादा पूछे जाते हैं।",
-      "start_seconds": 1133.64,
-      "end_seconds": 1239.12
+      "start_seconds": 1093.87,
+      "end_seconds": 1187.21
     },
     {
       "id": "s08_rule226",
       "text": "Scene eight। Zonal office में Assistant Director विक्रम की table पर Bank Guarantees का register है। Director नायर पूछते हैं — 'कौन-सी BG अगले तीन महीने में expire हो रही है?' Rule 226 clause एक: contract का implementation strictly monitor हो, और जहाँ भी provisions का breach हो, notice promptly जारी हो। Clause दो: Bank Guarantees की custody के लिए written procedure हो। हर महीने review — कौन-सी BG अगले तीन महीने में expire होगी। समय रहते extension माँगो, वरना BG invoke करो; expiry के बाद कुछ नहीं बचता। विक्रम का जवाब — 'Sir, दो BG हैं; extension letters आज जा रहे हैं।' Latest context: Department of Expenditure ने पाँच August दो हज़ार बाईस के O M से electronic Bank Guarantee — e-BG — accept करने की व्यवस्था दी है; monitoring principle वही है। Exam trap: BG review monthly है, और window three months की है — quarterly review नहीं।",
-      "start_seconds": 1239.12,
-      "end_seconds": 1296.86
+      "start_seconds": 1187.21,
+      "end_seconds": 1243.39
     },
     {
       "id": "d08_bg_lifecycle",
       "text": "Deep dive eight। Bank Guarantee का पूरा जीवन-चक्र समझो। एक — receipt। BG आते ही उसकी genuineness issuing bank से confirm करो। Department of Expenditure के पाँच August दो हज़ार बाईस के O M के बाद electronic BG भी accept होती है, जिसे bank के secure messaging system से verify किया जाता है — कागज़ी BG के fraud का risk इसी से कम होता है। दो — custody। Rule 226 clause दो कहता है written procedure हो — कौन रखेगा, कहाँ रखेगा, register में क्या entry होगी: BG number, bank, amount, purpose, validity date, और claim period। तीन — monthly review। हर महीने register देखो और पूछो — अगले तीन महीने में कौन-सी BG expire हो रही है? जिन contracts के obligations बाक़ी हैं, उनके लिए अभी extension माँगो। extension न मिले तो expiry से पहले invoke करो — क्योंकि expire हुई BG कागज़ का टुकड़ा है। चार — release। performance security तभी release करो जब सभी obligations, warranty समेत, पूरे हो जाएँ — Rule 171 के अनुसार validity उसके साठ दिन बाद तक होनी चाहिए। Monthly review की checklist — एक: expiry list next three months। दो: extension letters की status। तीन: invoke करने के लिए pending cases। चार: release के लिए due cases। पाँच: register और physical या electronic BG का मिलान। Rule 226 clause एक का दूसरा हिस्सा भी मत भूलो — breach होते ही notice। देर से notice देने का मतलब है कि आप breach को accept कर रहे हैं — बाद में L D या termination defend करना मुश्किल हो जाता है। Practical tip — BG register को contract register से link रखो, ताकि हर contract के सामने उसकी security दिखे।",
-      "start_seconds": 1296.86,
-      "end_seconds": 1398.76
+      "start_seconds": 1243.39,
+      "end_seconds": 1336.32
     },
     {
       "id": "s09_rule227_arbitration_guidelines",
       "text": "Scene nine। Joint Secretary की meeting। एक contractor ने बारह करोड़ रुपये का claim दिया है। Director सलीम और Legal Adviser बैठे हैं। Rule 227 — dispute हो तो contract के अनुसार conciliation या arbitration से पहले legal advice लो। Arbitration clause न हो तो suit file करने से पहले legal advice। Draft plaint legal और financial advice से vetted हो, और documents carefully scrutinize हों ताकि Government का interest safeguard रहे। अब latest guidelines — Department of Expenditure का O M, तीन June दो हज़ार चौबीस — Arbitration and Mediation in Contracts of Domestic Public Procurement। एक — arbitration clause routine या automatic नहीं, ख़ासकर बड़े contracts में। दो — अगर रखी जाए तो generally दस करोड़ रुपये से कम value के disputes तक — dispute value, contract value नहीं। तीन — इससे ऊपर के disputes में arbitration सिर्फ़ reasons record करके, Secretary या delegated Joint Secretary level, और CPSE में Managing Director की approval से। चार — institutional arbitration prefer करो। पाँच — awards को routine में challenge मत करो; सिर्फ़ genuine merit और high chance of success पर। छह — amicable settlement और Mediation Act दो हज़ार तेईस के तहत mediation encourage; बड़े settlements High Level Committee देखे। सात — बाक़ी disputes courts में। सलीम का takeaway: बारह करोड़ का dispute — पहले legal advice; arbitration automatic नहीं।",
-      "start_seconds": 1398.76,
-      "end_seconds": 1488.45
+      "start_seconds": 1336.32,
+      "end_seconds": 1419.74
     },
     {
       "id": "d09_dispute_ladder",
       "text": "Deep dive nine। Dispute आने पर सीढ़ी ऐसे चढ़ो। पहली सीढ़ी — negotiation और amicable settlement। तीन June दो हज़ार चौबीस का O M यही कहता है — पहले बातचीत से हल निकालो। दूसरी — conciliation या mediation। Mediation Act दो हज़ार तेईस के तहत; contract में mediation clause न हो तब भी pre-litigation mediation खुला है। बड़े settlements के लिए O M में High Level Committee की व्यवस्था है। तीसरी — arbitration, अगर contract में clause है। O M के अनुसार clause routine में नहीं; रखो तो दस करोड़ रुपये से कम value के disputes के लिए; उससे ऊपर सिर्फ़ Secretary या delegated Joint Secretary level — और CPSE में Managing Director — की reasoned approval से। institutional arbitration prefer करो — जहाँ कोई arbitral institution पूरी process administer करती है। चौथी — court। जिन disputes पर arbitration clause नहीं, वो civil court में जाएँगे। हर सीढ़ी पर Rule 227 — पहले legal advice, plaint या claim की legal-financial vetting, documents की scrutiny। Award आने के बाद क्या? Arbitration and Conciliation Act उन्नीस सौ छियानवे की section चौंतीस के तहत challenge की समय-सीमा award मिलने से तीन महीने है, जिसे court अधिकतम तीस दिन और बढ़ा सकती है। लेकिन O M कहता है — challenge routine में नहीं, सिर्फ़ genuine merit और high chance of success पर, और ये decision reasons record करके। दस करोड़ का हिसाब dispute value से है — contract value से नहीं। पचास करोड़ के contract में छह करोड़ का dispute arbitration में जा सकता है — उदाहरण सिर्फ़ समझाने के लिए।",
-      "start_seconds": 1488.45,
-      "end_seconds": 1587.5
+      "start_seconds": 1419.74,
+      "end_seconds": 1510.84
     },
     {
       "id": "s10_rule227a_recap",
       "text": "Scene ten। Under Secretary कविता के सामने arbitral award है — Ministry ने award court में challenge किया है। Financial Adviser पूछते हैं — 'payment अभी करें या नहीं?' Rule 227A, clause एक — उनतीस October दो हज़ार इक्कीस के O M से जोड़ा गया। जहाँ Ministry ने award challenge किया है और payment रुका है, वहाँ award का पचहत्तर percent — award date तक के interest समेत — contractor या concessionaire को Bank Guarantee के against दिया जाएगा। Clause दो — Bank Guarantee सिर्फ़ इसी पचहत्तर percent के लिए; refund order पर बनने वाले interest के लिए नहीं। Clause तीन — पैसा escrow account में जाएगा — पहले lenders का बकाया, फिर उसी project का completion, फिर उसी Ministry के दूसरे projects। Clause चार — retention money या performance guarantee भी Bank Guarantee के against release हो सकती है। अब rapid recap — pause करके ख़ुद जवाब दो। एक — contract किसकी तरफ़ से? President of India, Article 299। दो — purchase order limit? ढाई लाख। तीन — contract execution? इक्कीस दिन। चार — price variation कब? delivery अठारह महीने से ज़्यादा। पाँच — audit copies? पच्चीस लाख और ऊपर। छह — claim time bar? तीन साल। सात — BG review? हर महीने, तीन महीने की window। आठ — challenged award? पचहत्तर percent BG के against। नौ — arbitration guideline? दस करोड़ से कम disputes। Chapter 8 complete। Sources — GFR 2017, Department of Expenditure compilation updated up to इकत्तीस January दो हज़ार छब्बीस, और DoE के O Ms। पढ़ते रहिए, verify करते रहिए।",
-      "start_seconds": 1587.5,
-      "end_seconds": 1685.13
+      "start_seconds": 1510.84,
+      "end_seconds": 1607.61
     },
     {
       "id": "d10_227a_master",
       "text": "Deep dive ten। Rule 227A numbers से। award दस करोड़ रुपये, award date तक interest एक करोड़ — कुल ग्यारह करोड़। Ministry ने award court में challenge किया। Clause एक के अनुसार ग्यारह करोड़ का पचहत्तर percent — आठ करोड़ पच्चीस लाख — contractor को दिया जाएगा, उतनी ही रकम की Bank Guarantee के against। Clause दो — BG सिर्फ़ इन आठ करोड़ पच्चीस लाख के लिए; refund order पर बनने वाले interest के लिए BG नहीं। Clause तीन — रकम escrow account में; priority — पहले lenders का बकाया, फिर उसी project का completion, फिर उसी Ministry के दूसरे projects। Clause चार — retention money या performance guarantee भी BG के against release हो सकती है। Challenge fail — बाक़ी पच्चीस percent और interest देना होगा। सफल — रकम BG से वापस। यही balance है — contractor की cash flow भी चले, Government का पैसा भी सुरक्षित। अब master sheet। Authorities — Article 299 clause एक; Ministry of Law notifications; Delegation of Financial Powers Rules। Numbers — ढाई लाख purchase order; दस लाख formal contract; इक्कीस दिन execution; अठारह महीने PVC; पच्चीस लाख audit copies; तीन साल claim bar; monthly BG review, तीन महीने window; पचहत्तर percent challenged award; दस करोड़ arbitration; नब्बे दिन force majeure termination; दो से चार महीने West Asia extension। 'Shall' वाले clauses — precise terms, no work without agreement, इक्कीस दिन, L D recovery, prior approval for variation, formal amendment for extension। 'Ordinarily avoid' वाले — cost plus, lump sum, departmental materials। बस — Chapter 8 अब पूरा है, explanation के साथ।",
-      "start_seconds": 1685.13,
-      "end_seconds": 1791.14
+      "start_seconds": 1607.61,
+      "end_seconds": 1708.27
     }
   ]
 }

@@ -5,25 +5,17 @@
   "checks": {
     "technical_probe": {
       "valid_container": true,
-      "duration_seconds": 1791.21,
+      "duration_seconds": 1708.37,
       "resolution": "1920x1080",
       "fps": 30.0,
       "has_audio": true,
       "codec": "h264",
-      "file_size_bytes": 85313522,
+      "file_size_bytes": 84206128,
       "issues": []
     },
     "visual_spotcheck": {
-      "frames_sampled": 7,
-      "frame_paths": [
-        "renders/review/c_1650.jpg",
-        "renders/review/c_700.jpg",
-        "renders/review/r_100.jpg",
-        "renders/review/r_1215.jpg",
-        "renders/review/r_1700.jpg",
-        "renders/review/r_1780.jpg",
-        "renders/review/r_640.jpg"
-      ],
+      "frames_sampled": 4,
+      "frame_paths": [],
       "black_frames_detected": false,
       "broken_overlays": false,
       "missing_assets": false,

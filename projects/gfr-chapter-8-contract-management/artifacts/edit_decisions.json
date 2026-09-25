@@ -5,7 +5,7 @@
       "id": "s01_00",
       "source": "renders/frames/s01_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 18.44,
+      "out_seconds": 18.21,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "title: GFR 2017 · Chapter 8"
@@ -14,7 +14,7 @@
       "id": "s01_01",
       "source": "renders/frames/s01_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 19.76,
+      "out_seconds": 19.5,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "story: Scene 1 · Signature block"
@@ -23,7 +23,7 @@
       "id": "s01_02",
       "source": "renders/frames/s01_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 11.02,
+      "out_seconds": 10.88,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 224(1)"
@@ -32,7 +32,7 @@
       "id": "s01_03",
       "source": "renders/frames/s01_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 9.22,
+      "out_seconds": 9.1,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: Rule 224(2)"
@@ -41,7 +41,7 @@
       "id": "s01_04",
       "source": "renders/frames/s01_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 13.73,
+      "out_seconds": 13.55,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: Notes to Rule 224"
@@ -50,7 +50,7 @@
       "id": "s01_05",
       "source": "renders/frames/s01_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 11.78,
+      "out_seconds": 11.65,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "trap: EXAM TRAP"
@@ -59,7 +59,7 @@
       "id": "d01_00",
       "source": "renders/frames/d01_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 5.57,
+      "out_seconds": 5.14,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Deep dive 1 · Article 299 kyun?"
@@ -68,7 +68,7 @@
       "id": "d01_01",
       "source": "renders/frames/d01_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 31.91,
+      "out_seconds": 29.15,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Article 299 — Constitution of India"
@@ -77,7 +77,7 @@
       "id": "d01_02",
       "source": "renders/frames/d01_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 8.76,
+      "out_seconds": 8.03,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -86,7 +86,7 @@
       "id": "d01_03",
       "source": "renders/frames/d01_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 8.13,
+      "out_seconds": 7.45,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Chapter 8 glossary"
@@ -95,7 +95,7 @@
       "id": "d01_04",
       "source": "renders/frames/d01_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 13.83,
+      "out_seconds": 12.66,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -104,7 +104,7 @@
       "id": "d01_05",
       "source": "renders/frames/d01_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 12.24,
+      "out_seconds": 11.2,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -113,7 +113,7 @@
       "id": "d01_06",
       "source": "renders/frames/d01_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 24.25,
+      "out_seconds": 22.29,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -122,7 +122,7 @@
       "id": "s02_00",
       "source": "renders/frames/s02_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 12.0,
+      "out_seconds": 11.88,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Scene 2 · Housekeeping tender"
@@ -131,7 +131,7 @@
       "id": "s02_01",
       "source": "renders/frames/s02_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 16.71,
+      "out_seconds": 16.52,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(i)"
@@ -140,7 +140,7 @@
       "id": "s02_02",
       "source": "renders/frames/s02_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 9.19,
+      "out_seconds": 9.09,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: Rule 225(ii)"
@@ -149,7 +149,7 @@
       "id": "s02_03",
       "source": "renders/frames/s02_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 7.86,
+      "out_seconds": 7.78,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: Rule 225(iii)"
@@ -158,7 +158,7 @@
       "id": "s02_04",
       "source": "renders/frames/s02_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 4.41,
+      "out_seconds": 4.36,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "hook: MEMORY HOOK"
@@ -167,7 +167,7 @@
       "id": "s02_05",
       "source": "renders/frames/s02_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 10.51,
+      "out_seconds": 10.41,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "trap: EXAM TRAP"
@@ -176,7 +176,7 @@
       "id": "d02_00",
       "source": "renders/frames/d02_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 7.54,
+      "out_seconds": 7.06,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Deep dive 2 · Vague → precise"
@@ -185,7 +185,7 @@
       "id": "d02_01",
       "source": "renders/frames/d02_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 11.02,
+      "out_seconds": 10.26,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(i) in practice"
@@ -194,7 +194,7 @@
       "id": "d02_02",
       "source": "renders/frames/d02_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 11.49,
+      "out_seconds": 10.7,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -203,7 +203,7 @@
       "id": "d02_03",
       "source": "renders/frames/d02_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 19.07,
+      "out_seconds": 17.74,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -212,7 +212,7 @@
       "id": "d02_04",
       "source": "renders/frames/d02_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 29.73,
+      "out_seconds": 27.66,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Standard forms + advice (Rule 225(ii)–(iii))"
@@ -221,7 +221,7 @@
       "id": "d02_05",
       "source": "renders/frames/d02_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 15.75,
+      "out_seconds": 14.77,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "hook: 5-SAWAAL TEST"
@@ -230,7 +230,7 @@
       "id": "s03_00",
       "source": "renders/frames/s03_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 16.41,
+      "out_seconds": 15.16,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Scene 3 · Teen files, teen documents"
@@ -239,7 +239,7 @@
       "id": "s03_01",
       "source": "renders/frames/s03_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 8.9,
+      "out_seconds": 8.22,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(iv) · Kaunsa document?"
@@ -248,7 +248,7 @@
       "id": "s03_02",
       "source": "renders/frames/s03_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 13.61,
+      "out_seconds": 12.55,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -257,7 +257,7 @@
       "id": "s03_03",
       "source": "renders/frames/s03_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 12.22,
+      "out_seconds": 11.27,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -266,7 +266,7 @@
       "id": "s03_04",
       "source": "renders/frames/s03_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 8.37,
+      "out_seconds": 7.73,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -275,7 +275,7 @@
       "id": "s03_05",
       "source": "renders/frames/s03_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 5.26,
+      "out_seconds": 4.87,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(v) & (vi)"
@@ -284,7 +284,7 @@
       "id": "s03_06",
       "source": "renders/frames/s03_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 9.1,
+      "out_seconds": 8.4,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -293,7 +293,7 @@
       "id": "s03_07",
       "source": "renders/frames/s03_07.png",
       "in_seconds": 0.0,
-      "out_seconds": 3.53,
+      "out_seconds": 3.28,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "quiz: QUICK QUIZ"
@@ -302,7 +302,7 @@
       "id": "s03_08",
       "source": "renders/frames/s03_08.png",
       "in_seconds": 0.0,
-      "out_seconds": 4.72,
+      "out_seconds": 4.48,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "answer: ANSWER"
@@ -311,7 +311,7 @@
       "id": "d03_00",
       "source": "renders/frames/d03_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 3.9,
+      "out_seconds": 3.68,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Deep dive 3 · Decision tree"
@@ -320,7 +320,7 @@
       "id": "d03_01",
       "source": "renders/frames/d03_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 10.02,
+      "out_seconds": 9.36,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Decision tree — Rule 225(iv)"
@@ -329,7 +329,7 @@
       "id": "d03_02",
       "source": "renders/frames/d03_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 32.35,
+      "out_seconds": 30.17,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -338,7 +338,7 @@
       "id": "d03_03",
       "source": "renders/frames/d03_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 14.24,
+      "out_seconds": 13.29,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -347,7 +347,7 @@
       "id": "d03_04",
       "source": "renders/frames/d03_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 25.81,
+      "out_seconds": 24.08,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: LoA → contract in 21 days (Rule 225(vi))"
@@ -356,7 +356,7 @@
       "id": "d03_05",
       "source": "renders/frames/d03_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 6.89,
+      "out_seconds": 6.44,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -365,7 +365,7 @@
       "id": "d03_06",
       "source": "renders/frames/d03_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 9.49,
+      "out_seconds": 8.97,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "trap: EXAM TRAP"
@@ -374,7 +374,7 @@
       "id": "s04_00",
       "source": "renders/frames/s04_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 12.81,
+      "out_seconds": 12.48,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Scene 4 · Delivery period 24 mahine"
@@ -383,7 +383,7 @@
       "id": "s04_01",
       "source": "renders/frames/s04_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 13.98,
+      "out_seconds": 13.61,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(vii) · Cost plus contracts"
@@ -392,7 +392,7 @@
       "id": "s04_02",
       "source": "renders/frames/s04_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 9.61,
+      "out_seconds": 9.36,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -401,7 +401,7 @@
       "id": "s04_03",
       "source": "renders/frames/s04_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 12.39,
+      "out_seconds": 12.07,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(viii) · Price Variation Clause (PVC)"
@@ -410,7 +410,7 @@
       "id": "s04_04",
       "source": "renders/frames/s04_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 9.22,
+      "out_seconds": 8.98,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -419,7 +419,7 @@
       "id": "s04_05",
       "source": "renders/frames/s04_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 11.66,
+      "out_seconds": 11.36,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -428,7 +428,7 @@
       "id": "s04_06",
       "source": "renders/frames/s04_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 15.5,
+      "out_seconds": 15.09,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -437,7 +437,7 @@
       "id": "s04_07",
       "source": "renders/frames/s04_07.png",
       "in_seconds": 0.0,
-      "out_seconds": 6.64,
+      "out_seconds": 6.47,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -446,7 +446,7 @@
       "id": "s04_08",
       "source": "renders/frames/s04_08.png",
       "in_seconds": 0.0,
-      "out_seconds": 5.04,
+      "out_seconds": 4.95,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "hook: MEMORY HOOK"
@@ -455,7 +455,7 @@
       "id": "d04_00",
       "source": "renders/frames/d04_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 10.6,
+      "out_seconds": 11.25,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Deep dive 4 · PVC worked example"
@@ -464,7 +464,7 @@
       "id": "d04_01",
       "source": "renders/frames/d04_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 11.26,
+      "out_seconds": 11.98,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: PVC formula (typical, Appendix 11 style)"
@@ -473,7 +473,7 @@
       "id": "d04_02",
       "source": "renders/frames/d04_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 15.09,
+      "out_seconds": 16.07,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -482,7 +482,7 @@
       "id": "d04_03",
       "source": "renders/frames/d04_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 15.23,
+      "out_seconds": 16.21,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -491,7 +491,7 @@
       "id": "d04_04",
       "source": "renders/frames/d04_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 7.08,
+      "out_seconds": 7.53,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Ab sub-clauses lagao"
@@ -500,7 +500,7 @@
       "id": "d04_05",
       "source": "renders/frames/d04_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 6.61,
+      "out_seconds": 7.02,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -509,7 +509,7 @@
       "id": "d04_06",
       "source": "renders/frames/d04_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 6.54,
+      "out_seconds": 6.95,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -518,7 +518,7 @@
       "id": "d04_07",
       "source": "renders/frames/d04_07.png",
       "in_seconds": 0.0,
-      "out_seconds": 14.55,
+      "out_seconds": 15.49,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -527,7 +527,7 @@
       "id": "d04_08",
       "source": "renders/frames/d04_08.png",
       "in_seconds": 0.0,
-      "out_seconds": 17.42,
+      "out_seconds": 18.45,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "trap: YAAD RAKHO"
@@ -536,7 +536,7 @@
       "id": "s05_00",
       "source": "renders/frames/s05_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 10.78,
+      "out_seconds": 10.09,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Scene 5 · ₹30 lakh civil work close-out"
@@ -545,7 +545,7 @@
       "id": "s05_01",
       "source": "renders/frames/s05_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 7.36,
+      "out_seconds": 6.88,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(ix) & (x)"
@@ -554,7 +554,7 @@
       "id": "s05_02",
       "source": "renders/frames/s05_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 7.82,
+      "out_seconds": 7.31,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -563,7 +563,7 @@
       "id": "s05_03",
       "source": "renders/frames/s05_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 11.5,
+      "out_seconds": 10.73,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(xi) & (xii)"
@@ -572,7 +572,7 @@
       "id": "s05_04",
       "source": "renders/frames/s05_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 10.03,
+      "out_seconds": 9.36,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -581,7 +581,7 @@
       "id": "s05_05",
       "source": "renders/frames/s05_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 19.04,
+      "out_seconds": 17.75,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "update: Rule 225(xiii) · [AMENDED 02.04.2019]"
@@ -590,7 +590,7 @@
       "id": "s05_06",
       "source": "renders/frames/s05_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 5.87,
+      "out_seconds": 5.59,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "trap: EXAM TRAP"
@@ -599,7 +599,7 @@
       "id": "d05_00",
       "source": "renders/frames/d05_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 3.91,
+      "out_seconds": 3.74,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Deep dive 5 · Practice mein"
@@ -608,7 +608,7 @@
       "id": "d05_01",
       "source": "renders/frames/d05_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 12.71,
+      "out_seconds": 12.06,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(ix) — Taxes"
@@ -617,7 +617,7 @@
       "id": "d05_02",
       "source": "renders/frames/d05_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 18.26,
+      "out_seconds": 17.31,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: Rule 225(x) — Lump sum safeguards"
@@ -626,7 +626,7 @@
       "id": "d05_03",
       "source": "renders/frames/d05_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 15.92,
+      "out_seconds": 15.1,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(xi) & (xii)"
@@ -635,7 +635,7 @@
       "id": "d05_04",
       "source": "renders/frames/d05_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 13.98,
+      "out_seconds": 13.26,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -644,7 +644,7 @@
       "id": "d05_05",
       "source": "renders/frames/d05_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 19.66,
+      "out_seconds": 18.64,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(xiii) — Audit copies"
@@ -653,7 +653,7 @@
       "id": "d05_06",
       "source": "renders/frames/d05_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 10.42,
+      "out_seconds": 9.96,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "hook: 3 NUMBERS · 3 CLAUSES"
@@ -662,7 +662,7 @@
       "id": "s06_00",
       "source": "renders/frames/s06_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 11.45,
+      "out_seconds": 10.6,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Scene 6 · Chairs ka supply contract"
@@ -671,7 +671,7 @@
       "id": "s06_01",
       "source": "renders/frames/s06_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 14.03,
+      "out_seconds": 12.95,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(xiv) · Material variation"
@@ -680,7 +680,7 @@
       "id": "s06_02",
       "source": "renders/frames/s06_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 10.5,
+      "out_seconds": 9.7,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: Rule 225(xv) · Extension"
@@ -689,7 +689,7 @@
       "id": "s06_03",
       "source": "renders/frames/s06_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 20.11,
+      "out_seconds": 18.55,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "update: LATEST · DoE OM dated 29.04.2026 — Force Majeure Clause"
@@ -698,7 +698,7 @@
       "id": "s06_04",
       "source": "renders/frames/s06_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 7.96,
+      "out_seconds": 7.36,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -707,7 +707,7 @@
       "id": "s06_05",
       "source": "renders/frames/s06_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 18.37,
+      "out_seconds": 16.95,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: West Asia situation"
@@ -716,7 +716,7 @@
       "id": "s06_06",
       "source": "renders/frames/s06_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 9.43,
+      "out_seconds": 8.71,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -725,7 +725,7 @@
       "id": "s06_07",
       "source": "renders/frames/s06_07.png",
       "in_seconds": 0.0,
-      "out_seconds": 11.61,
+      "out_seconds": 10.84,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "answer: GURPREET KA JAWAB"
@@ -734,7 +734,7 @@
       "id": "d06_00",
       "source": "renders/frames/d06_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 6.09,
+      "out_seconds": 6.05,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Deep dive 6 · Variation ≠ extension ≠ FM"
@@ -743,7 +743,7 @@
       "id": "d06_01",
       "source": "renders/frames/d06_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 18.89,
+      "out_seconds": 18.74,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(xiv) — Material variation"
@@ -752,7 +752,7 @@
       "id": "d06_02",
       "source": "renders/frames/d06_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 16.47,
+      "out_seconds": 16.34,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(xv) — Do tarah ke extension"
@@ -761,7 +761,7 @@
       "id": "d06_03",
       "source": "renders/frames/d06_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 7.77,
+      "out_seconds": 7.71,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -770,7 +770,7 @@
       "id": "d06_04",
       "source": "renders/frames/d06_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 20.99,
+      "out_seconds": 20.82,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: FM procedure (DoE Procurement Manuals)"
@@ -779,7 +779,7 @@
       "id": "d06_05",
       "source": "renders/frames/d06_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 23.89,
+      "out_seconds": 23.69,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "update: DoE OM 29.04.2026 — timeline par"
@@ -788,7 +788,7 @@
       "id": "d06_06",
       "source": "renders/frames/d06_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 9.82,
+      "out_seconds": 9.76,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "trap: EXAM TRAP"
@@ -797,7 +797,7 @@
       "id": "s07_00",
       "source": "renders/frames/s07_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 10.68,
+      "out_seconds": 11.37,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Scene 7 · Laptops 20 din late, 2 kharab"
@@ -806,7 +806,7 @@
       "id": "s07_01",
       "source": "renders/frames/s07_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 13.97,
+      "out_seconds": 14.9,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 225(xvi) · Liquidated Damages"
@@ -815,7 +815,7 @@
       "id": "s07_02",
       "source": "renders/frames/s07_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 6.63,
+      "out_seconds": 7.06,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: Rule 225(xvii) · Warranty"
@@ -824,7 +824,7 @@
       "id": "s07_03",
       "source": "renders/frames/s07_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 8.15,
+      "out_seconds": 8.69,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: Rule 225(xviii) · Right to reject"
@@ -833,7 +833,7 @@
       "id": "s07_04",
       "source": "renders/frames/s07_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 8.81,
+      "out_seconds": 9.39,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: Rule 225(xix) · Time bar"
@@ -842,7 +842,7 @@
       "id": "s07_05",
       "source": "renders/frames/s07_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 4.05,
+      "out_seconds": 4.31,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "quiz: QUICK QUIZ"
@@ -851,7 +851,7 @@
       "id": "s07_06",
       "source": "renders/frames/s07_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 4.05,
+      "out_seconds": 4.31,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "answer: ANSWER"
@@ -860,7 +860,7 @@
       "id": "s07_07",
       "source": "renders/frames/s07_07.png",
       "in_seconds": 0.0,
-      "out_seconds": 6.29,
+      "out_seconds": 6.6,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "hook: MEMORY HOOK"
@@ -869,7 +869,7 @@
       "id": "d07_00",
       "source": "renders/frames/d07_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 16.74,
+      "out_seconds": 14.86,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Deep dive 7 · LD ka hisaab"
@@ -878,7 +878,7 @@
       "id": "d07_01",
       "source": "renders/frames/d07_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 19.29,
+      "out_seconds": 17.07,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: LD calculation (illustrative)"
@@ -887,7 +887,7 @@
       "id": "d07_02",
       "source": "renders/frames/d07_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 14.59,
+      "out_seconds": 12.92,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: ‘Shall’ ka matlab"
@@ -896,7 +896,7 @@
       "id": "d07_03",
       "source": "renders/frames/d07_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 22.12,
+      "out_seconds": 19.57,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Warranty ↔ Performance security"
@@ -905,7 +905,7 @@
       "id": "d07_04",
       "source": "renders/frames/d07_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 10.79,
+      "out_seconds": 9.57,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: Rule 225(xviii)"
@@ -914,7 +914,7 @@
       "id": "d07_05",
       "source": "renders/frames/d07_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 17.98,
+      "out_seconds": 15.91,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: Rule 225(xix) · 3 saal kyun"
@@ -923,7 +923,7 @@
       "id": "d07_06",
       "source": "renders/frames/d07_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 6.43,
+      "out_seconds": 5.89,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "hook: EXAM HOOK"
@@ -932,7 +932,7 @@
       "id": "s08_00",
       "source": "renders/frames/s08_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 12.41,
+      "out_seconds": 12.08,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Scene 8 · BG register"
@@ -941,7 +941,7 @@
       "id": "s08_01",
       "source": "renders/frames/s08_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 8.98,
+      "out_seconds": 8.74,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 226 · Management of contracts"
@@ -950,7 +950,7 @@
       "id": "s08_02",
       "source": "renders/frames/s08_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 13.87,
+      "out_seconds": 13.49,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -959,7 +959,7 @@
       "id": "s08_03",
       "source": "renders/frames/s08_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 4.9,
+      "out_seconds": 4.77,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "story: Scene 8 · BG register"
@@ -968,7 +968,7 @@
       "id": "s08_04",
       "source": "renders/frames/s08_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 12.13,
+      "out_seconds": 11.8,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "update: LATEST · e-Bank Guarantee (DoE OM 05.08.2022)"
@@ -977,7 +977,7 @@
       "id": "s08_05",
       "source": "renders/frames/s08_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 7.55,
+      "out_seconds": 7.39,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "trap: EXAM TRAP"
@@ -986,7 +986,7 @@
       "id": "d08_00",
       "source": "renders/frames/d08_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 4.52,
+      "out_seconds": 4.18,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Deep dive 8 · BG lifecycle"
@@ -995,7 +995,7 @@
       "id": "d08_01",
       "source": "renders/frames/d08_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 19.44,
+      "out_seconds": 17.73,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: 1 · Receipt"
@@ -1004,7 +1004,7 @@
       "id": "d08_02",
       "source": "renders/frames/d08_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 12.83,
+      "out_seconds": 11.71,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: 2 · Custody (Rule 226(ii))"
@@ -1013,7 +1013,7 @@
       "id": "d08_03",
       "source": "renders/frames/d08_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 18.22,
+      "out_seconds": 16.61,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: 3 · Monthly review"
@@ -1022,7 +1022,7 @@
       "id": "d08_04",
       "source": "renders/frames/d08_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 11.4,
+      "out_seconds": 10.41,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: 4 · Release"
@@ -1031,7 +1031,7 @@
       "id": "d08_05",
       "source": "renders/frames/d08_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 15.49,
+      "out_seconds": 14.13,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Monthly review checklist"
@@ -1040,7 +1040,7 @@
       "id": "d08_06",
       "source": "renders/frames/d08_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 13.71,
+      "out_seconds": 12.52,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "trap: MAT BHOOLO"
@@ -1049,7 +1049,7 @@
       "id": "d08_07",
       "source": "renders/frames/d08_07.png",
       "in_seconds": 0.0,
-      "out_seconds": 9.1,
+      "out_seconds": 8.44,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "hook: PRACTICAL TIP"
@@ -1058,7 +1058,7 @@
       "id": "s09_00",
       "source": "renders/frames/s09_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 9.53,
+      "out_seconds": 8.9,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Scene 9 · ₹12 crore ka claim"
@@ -1067,7 +1067,7 @@
       "id": "s09_01",
       "source": "renders/frames/s09_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 19.93,
+      "out_seconds": 18.54,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 227 · Legal advice on disputes"
@@ -1076,7 +1076,7 @@
       "id": "s09_02",
       "source": "renders/frames/s09_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 15.75,
+      "out_seconds": 14.65,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "update: DoE OM F.1/2/2024-PPD dt 03.06.2024 — Arbitration & Mediation (Domestic Public Procurement)"
@@ -1085,7 +1085,7 @@
       "id": "s09_03",
       "source": "renders/frames/s09_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 7.65,
+      "out_seconds": 7.13,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1094,7 +1094,7 @@
       "id": "s09_04",
       "source": "renders/frames/s09_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 11.17,
+      "out_seconds": 10.4,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1103,7 +1103,7 @@
       "id": "s09_05",
       "source": "renders/frames/s09_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 3.27,
+      "out_seconds": 3.06,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1112,7 +1112,7 @@
       "id": "s09_06",
       "source": "renders/frames/s09_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 6.86,
+      "out_seconds": 6.39,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1121,7 +1121,7 @@
       "id": "s09_07",
       "source": "renders/frames/s09_07.png",
       "in_seconds": 0.0,
-      "out_seconds": 8.85,
+      "out_seconds": 8.24,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1130,7 +1130,7 @@
       "id": "s09_08",
       "source": "renders/frames/s09_08.png",
       "in_seconds": 0.0,
-      "out_seconds": 2.54,
+      "out_seconds": 2.38,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1139,7 +1139,7 @@
       "id": "s09_09",
       "source": "renders/frames/s09_09.png",
       "in_seconds": 0.0,
-      "out_seconds": 7.64,
+      "out_seconds": 7.22,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "hook: TAKEAWAY"
@@ -1148,7 +1148,7 @@
       "id": "d09_00",
       "source": "renders/frames/d09_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 3.89,
+      "out_seconds": 3.63,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Deep dive 9 · Dispute ladder"
@@ -1157,7 +1157,7 @@
       "id": "d09_01",
       "source": "renders/frames/d09_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 8.49,
+      "out_seconds": 7.83,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Dispute ladder (DoE OM 03.06.2024 + Rule 227)"
@@ -1166,7 +1166,7 @@
       "id": "d09_02",
       "source": "renders/frames/d09_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 14.94,
+      "out_seconds": 13.75,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1175,7 +1175,7 @@
       "id": "d09_03",
       "source": "renders/frames/d09_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 25.05,
+      "out_seconds": 23.03,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1184,7 +1184,7 @@
       "id": "d09_04",
       "source": "renders/frames/d09_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 13.31,
+      "out_seconds": 12.25,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1193,7 +1193,7 @@
       "id": "d09_05",
       "source": "renders/frames/d09_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 22.61,
+      "out_seconds": 20.79,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Award ke baad"
@@ -1202,7 +1202,7 @@
       "id": "d09_06",
       "source": "renders/frames/d09_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 13.2,
+      "out_seconds": 12.27,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "trap: EXAM TRAP"
@@ -1211,7 +1211,7 @@
       "id": "s10_00",
       "source": "renders/frames/s10_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 11.99,
+      "out_seconds": 11.89,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Scene 10 · Award challenge kiya — payment?"
@@ -1220,7 +1220,7 @@
       "id": "s10_01",
       "source": "renders/frames/s10_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 18.61,
+      "out_seconds": 18.45,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "update: Rule 227A(i) · Arbitration Awards [inserted 29.10.2021]"
@@ -1229,7 +1229,7 @@
       "id": "s10_02",
       "source": "renders/frames/s10_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 7.79,
+      "out_seconds": 7.72,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1238,7 +1238,7 @@
       "id": "s10_03",
       "source": "renders/frames/s10_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 9.48,
+      "out_seconds": 9.4,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1247,7 +1247,7 @@
       "id": "s10_04",
       "source": "renders/frames/s10_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 7.32,
+      "out_seconds": 7.25,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1256,7 +1256,7 @@
       "id": "s10_05",
       "source": "renders/frames/s10_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 3.19,
+      "out_seconds": 3.16,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "recap: RAPID RECAP — pause karke khud jawab do"
@@ -1265,7 +1265,7 @@
       "id": "s10_06",
       "source": "renders/frames/s10_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 4.54,
+      "out_seconds": 4.51,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1274,7 +1274,7 @@
       "id": "s10_07",
       "source": "renders/frames/s10_07.png",
       "in_seconds": 0.0,
-      "out_seconds": 2.78,
+      "out_seconds": 2.76,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1283,7 +1283,7 @@
       "id": "s10_08",
       "source": "renders/frames/s10_08.png",
       "in_seconds": 0.0,
-      "out_seconds": 2.92,
+      "out_seconds": 2.9,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1292,7 +1292,7 @@
       "id": "s10_09",
       "source": "renders/frames/s10_09.png",
       "in_seconds": 0.0,
-      "out_seconds": 4.34,
+      "out_seconds": 4.3,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1301,7 +1301,7 @@
       "id": "s10_10",
       "source": "renders/frames/s10_10.png",
       "in_seconds": 0.0,
-      "out_seconds": 3.06,
+      "out_seconds": 3.03,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1310,7 +1310,7 @@
       "id": "s10_11",
       "source": "renders/frames/s10_11.png",
       "in_seconds": 0.0,
-      "out_seconds": 2.38,
+      "out_seconds": 2.36,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1319,7 +1319,7 @@
       "id": "s10_12",
       "source": "renders/frames/s10_12.png",
       "in_seconds": 0.0,
-      "out_seconds": 3.6,
+      "out_seconds": 3.57,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1328,7 +1328,7 @@
       "id": "s10_13",
       "source": "renders/frames/s10_13.png",
       "in_seconds": 0.0,
-      "out_seconds": 4.0,
+      "out_seconds": 3.97,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1337,7 +1337,7 @@
       "id": "s10_14",
       "source": "renders/frames/s10_14.png",
       "in_seconds": 0.0,
-      "out_seconds": 3.93,
+      "out_seconds": 3.9,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1346,7 +1346,7 @@
       "id": "s10_15",
       "source": "renders/frames/s10_15.png",
       "in_seconds": 0.0,
-      "out_seconds": 13.3,
+      "out_seconds": 13.19,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "hook: BASE WALKTHROUGH COMPLETE ✔"
@@ -1355,7 +1355,7 @@
       "id": "d10_00",
       "source": "renders/frames/d10_00.png",
       "in_seconds": 0.0,
-      "out_seconds": 10.99,
+      "out_seconds": 10.44,
       "transition_in": "fade",
       "transition_duration": 0.35,
       "reason": "story: Deep dive 10 · Rule 227A numbers"
@@ -1364,7 +1364,7 @@
       "id": "d10_01",
       "source": "renders/frames/d10_01.png",
       "in_seconds": 0.0,
-      "out_seconds": 9.91,
+      "out_seconds": 9.4,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "rule: Rule 227A worked"
@@ -1373,7 +1373,7 @@
       "id": "d10_02",
       "source": "renders/frames/d10_02.png",
       "in_seconds": 0.0,
-      "out_seconds": 7.26,
+      "out_seconds": 6.88,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1382,7 +1382,7 @@
       "id": "d10_03",
       "source": "renders/frames/d10_03.png",
       "in_seconds": 0.0,
-      "out_seconds": 15.56,
+      "out_seconds": 14.74,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: "
@@ -1391,7 +1391,7 @@
       "id": "d10_04",
       "source": "renders/frames/d10_04.png",
       "in_seconds": 0.0,
-      "out_seconds": 11.24,
+      "out_seconds": 10.65,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: Outcome"
@@ -1400,7 +1400,7 @@
       "id": "d10_05",
       "source": "renders/frames/d10_05.png",
       "in_seconds": 0.0,
-      "out_seconds": 8.52,
+      "out_seconds": 8.08,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "recap: CHAPTER 8 MASTER SHEET"
@@ -1409,7 +1409,7 @@
       "id": "d10_06",
       "source": "renders/frames/d10_06.png",
       "in_seconds": 0.0,
-      "out_seconds": 20.8,
+      "out_seconds": 19.7,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: Numbers"
@@ -1418,7 +1418,7 @@
       "id": "d10_07",
       "source": "renders/frames/d10_07.png",
       "in_seconds": 0.0,
-      "out_seconds": 10.51,
+      "out_seconds": 9.96,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: ‘Shall’ (mandatory)"
@@ -1427,7 +1427,7 @@
       "id": "d10_08",
       "source": "renders/frames/d10_08.png",
       "in_seconds": 0.0,
-      "out_seconds": 5.06,
+      "out_seconds": 4.81,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "add: ‘Ordinarily avoid’"
@@ -1436,7 +1436,7 @@
       "id": "d10_09",
       "source": "renders/frames/d10_09.png",
       "in_seconds": 0.0,
-      "out_seconds": 9.65,
+      "out_seconds": 9.49,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "outro: Chapter 8 complete ✔"
@@ -1448,102 +1448,102 @@
         {
           "asset_id": "vo_s01",
           "start_seconds": 0.6,
-          "end_seconds": 80.66
+          "end_seconds": 79.58
         },
         {
           "asset_id": "vo_d01",
-          "start_seconds": 82.46,
-          "end_seconds": 182.9
+          "start_seconds": 81.38,
+          "end_seconds": 173.04
         },
         {
           "asset_id": "vo_s02",
-          "start_seconds": 184.7,
-          "end_seconds": 241.48
+          "start_seconds": 174.84,
+          "end_seconds": 230.98
         },
         {
           "asset_id": "vo_d02",
-          "start_seconds": 243.28,
-          "end_seconds": 333.98
+          "start_seconds": 232.78,
+          "end_seconds": 317.07
         },
         {
           "asset_id": "vo_s03",
-          "start_seconds": 335.78,
-          "end_seconds": 412.96
+          "start_seconds": 318.87,
+          "end_seconds": 389.89
         },
         {
           "asset_id": "vo_d03",
-          "start_seconds": 414.76,
-          "end_seconds": 513.21
+          "start_seconds": 391.69,
+          "end_seconds": 483.42
         },
         {
           "asset_id": "vo_s04",
-          "start_seconds": 515.01,
-          "end_seconds": 606.91
+          "start_seconds": 485.22,
+          "end_seconds": 574.64
         },
         {
           "asset_id": "vo_d04",
-          "start_seconds": 608.71,
-          "end_seconds": 708.14
+          "start_seconds": 576.44,
+          "end_seconds": 682.45
         },
         {
           "asset_id": "vo_s05",
-          "start_seconds": 709.94,
-          "end_seconds": 778.08
+          "start_seconds": 684.25,
+          "end_seconds": 747.71
         },
         {
           "asset_id": "vo_d05",
-          "start_seconds": 779.88,
-          "end_seconds": 870.48
+          "start_seconds": 749.51,
+          "end_seconds": 835.33
         },
         {
           "asset_id": "vo_s06",
-          "start_seconds": 872.28,
-          "end_seconds": 971.14
+          "start_seconds": 837.13,
+          "end_seconds": 928.19
         },
         {
           "asset_id": "vo_d06",
-          "start_seconds": 972.94,
-          "end_seconds": 1072.61
+          "start_seconds": 929.99,
+          "end_seconds": 1028.85
         },
         {
           "asset_id": "vo_s07",
-          "start_seconds": 1074.41,
-          "end_seconds": 1132.44
+          "start_seconds": 1030.65,
+          "end_seconds": 1092.67
         },
         {
           "asset_id": "vo_d07",
-          "start_seconds": 1134.24,
-          "end_seconds": 1237.92
+          "start_seconds": 1094.47,
+          "end_seconds": 1186.01
         },
         {
           "asset_id": "vo_s08",
-          "start_seconds": 1239.72,
-          "end_seconds": 1295.66
+          "start_seconds": 1187.81,
+          "end_seconds": 1242.19
         },
         {
           "asset_id": "vo_d08",
-          "start_seconds": 1297.46,
-          "end_seconds": 1397.56
+          "start_seconds": 1243.99,
+          "end_seconds": 1335.12
         },
         {
           "asset_id": "vo_s09",
-          "start_seconds": 1399.36,
-          "end_seconds": 1487.25
+          "start_seconds": 1336.92,
+          "end_seconds": 1418.54
         },
         {
           "asset_id": "vo_d09",
-          "start_seconds": 1489.05,
-          "end_seconds": 1586.3
+          "start_seconds": 1420.34,
+          "end_seconds": 1509.64
         },
         {
           "asset_id": "vo_s10",
-          "start_seconds": 1588.1,
-          "end_seconds": 1683.93
+          "start_seconds": 1511.44,
+          "end_seconds": 1606.41
         },
         {
           "asset_id": "vo_d10",
-          "start_seconds": 1685.73,
-          "end_seconds": 1785.14
+          "start_seconds": 1608.21,
+          "end_seconds": 1702.27
         }
       ]
     }
