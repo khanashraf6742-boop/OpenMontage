@@ -2,7 +2,7 @@
 """Atelier compositor (FFmpeg runtime): Pillow-rendered 1920x1080 states timed to narration,
 xfade between states, per-segment mp4s, concat, SRT/VTT, chapters, timeline.json.
 Usage: python3 compose.py [--render] [--segments=s01,s02]"""
-import json, re, subprocess, sys
+import os, json, re, subprocess, sys
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 from fontTools.ttLib import TTFont
@@ -303,6 +303,10 @@ def render_state(seg_i, state, out_path, deep=False):
     img.convert("RGB").save(out_path, "PNG")
 
 
+# Voice track: "audio" = original Hinglish voice (voice-00); "audio_enin" = Indian-English accent voice (voice-01)
+AUDIO_DIR = os.environ.get("GFR_AUDIO_DIR", "audio_enin")
+
+
 def audio_duration(path):
     err = subprocess.run(["ffmpeg", "-i", str(path)], capture_output=True, text=True).stderr
     h, m, s = re.search(r"Duration: (\d+):(\d+):(\d+\.\d+)", err).groups()
@@ -372,7 +376,7 @@ def main():
             only = a.split("=")[1].split(",")
     t0, srt, chapters, plan, order = 0.0, [], [], {}, []
     for seg_i, seg in enumerate(SEGMENTS):
-        short = seg["id"][:3]; audio = ASSETS / "audio" / f"{short}.mp3"; dur_a = audio_duration(audio)
+        short = seg["id"][:3]; audio = ASSETS / AUDIO_DIR / f"{short}.mp3"; dur_a = audio_duration(audio)
         states, seg_total = build_states(seg_i, seg, dur_a)
         active = do_render and (only is None or short in only)
         for i, s in enumerate(states):

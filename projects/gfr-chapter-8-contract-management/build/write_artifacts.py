@@ -91,7 +91,7 @@ assets = []
 for s in SEGMENTS:
     sh = s["id"][:3]
     assets.append({"id": f"img_{sh}", "type": "image", "path": f"assets/images/{BEATS[s['id']]['image']}", "source_tool": "generate_image (assistant-native)", "scene_id": s["id"], "resolution": "1672x941", "format": "png"})
-    assets.append({"id": f"vo_{sh}", "type": "narration", "path": f"assets/audio/{sh}.mp3", "source_tool": "generate_speech (assistant-native, voice-00)", "scene_id": s["id"], "duration_seconds": round(tl["segments"][s["id"]]["audio_seconds"], 2), "format": "mp3"})
+    assets.append({"id": f"vo_{sh}", "type": "narration", "path": f"assets/audio_enin/{sh}.mp3", "source_tool": "generate_speech (assistant-native, voice-01 Indian-English accent)", "scene_id": s["id"], "duration_seconds": round(tl["segments"][s["id"]]["audio_seconds"], 2), "format": "mp3"})
 assets.append({"id": "srt", "type": "subtitle", "path": "renders/captions_hinglish.srt", "source_tool": "compose.py", "scene_id": "all", "format": "srt"})
 assets.append({"id": "ass", "type": "subtitle", "path": "renders/captions_hinglish.ass", "source_tool": "burn_captions.py", "scene_id": "all", "format": "ass"})
 manifest = save("asset_manifest", {"version": "1.0", "assets": assets, "total_cost_usd": 0.0}); cp("assets", {"asset_manifest": manifest})
