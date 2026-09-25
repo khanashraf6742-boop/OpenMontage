@@ -413,8 +413,11 @@ no manual timestamps.
 **Total requirement: 124 clips / 114,699 characters of narration.**
 
 ### Progress
-- **20 of 124 clips recorded** (Rules 142–151, with Rule 151 at 2 of its 3 clips).
-- Verified: 20 studio segments live, 0 mapping mismatches, only Rule 151 partial.
+- **30 of 124 clips recorded (24%)** — Rules **142–156 fully recorded** (15 of 67 rules).
+- Verified after each batch: 30 studio segments live, 0 mapping mismatches, no partially recorded
+  rule, all 30 clips serving HTTP 200.
+- The clip generator now lives in the repo at `data/_gen.js` (see the verification command below);
+  it reproduces the player's beat construction and 1450-character greedy split byte-identically.
 - Note: six verbatim beats exceed 1380 characters (Rules 150, 159, 162, 164, 170, 175(1)); these are split
   at **sentence boundaries** in both the generator and the player, so no clip exceeds the 1500-character limit
   and captions remain word-aligned.
@@ -423,21 +426,25 @@ no manual timestamps.
 | Batch | Rules covered | Clips | Status |
 |---|---|---|---|
 | 1 | 142, 143(×2), 144(×4), 145, 146, 147 | 10 | ✅ **DONE** |
-| 2 | 148, 149(×4), 150(×3), 151(×2 of 3) | 10 | ✅ **DONE** |
-| 3 | 150(×4), 151(×3), 152 | 8 | ⏳ |
-| 4 | 153(×2), 154(×2), 155(×3), 156, 157, 158 | 10 | ⏳ |
-| 5 | 159(×4), 160(×2), 161(×4) | 10 | ⏳ |
-| 6 | 162(×5), 163(×2), 164(×4) | 11 | ⏳ |
-| 7 | 165, 166(×2), 167(×3), 168, 169, 170(×5) | 12 | ⏳ |
-| 8 | 171(×3), 172(1)(×2), 172(2), 173(×7), 174(×2) | 15 | ⏳ |
-| 9 | 175(1)(×4), 175(2), 176(×2), 177(×2) | 9 |   |
-| 10 | 178, 179, 180, 181, 182, 183(×2), 184, 185, 186(×2) | 11 | ⏳ |
-| 11 | 187, 188, 189, 190, 191, 192(×2), 193, 194(×3), 195, 196 | 13 | ⏳ |
-| 12 | 197, 198, 199, 200, 201(×2), 202, 203, 204, 205, 206 | 11 | ⏳ |
+| 2 | 148, 149(×4), 150(×3), 151(×2) | 10 | ✅ **DONE** |
+| 3 | 151, 152, 153(×2), 154(×2), 155(×3), 156 | 10 | ✅ **DONE** |
+| 4 | 157, 158, 159(×4), 160(×2), 161(×2) | 10 | ⏳ next |
+| 5 | 161(×2), 162(×4), 163(×2), 164(×2) | 10 | ⏳ |
+| 6 | 164(×2), 165, 166(×2), 167(×3), 168, 169 | 10 | ⏳ |
+| 7 | 170(×5), 171(×3), 172(1)(×2) | 10 | ⏳ |
+| 8 | 172(2), 173(×7), 174(×2) | 10 | ⏳ |
+| 9 | 175(1)(×4), 175(2), 176(×2), 177(×2), 178 | 10 | ⏳ |
+| 10 | 179, 180, 181, 182, 183(×2), 184, 185, 186(×2) | 10 | ⏳ |
+| 11 | 187, 188, 189, 190, 191, 192(×2), 193, 194(×2) | 10 | ⏳ |
+| 12 | 194, 195, 196, 197, 198, 199, 200, 201(×2), 202 | 10 | ⏳ |
+| 13 | 203, 204, 205, 206 | 4 | ⏳ |
+
+*Batch boundaries are clip boundaries, not rule boundaries — a rule whose narration spans a
+greedy-split point simply continues into the next batch (Rules 151, 161, 164, 194).*
 
 ## How to verify a batch
 ```bash
-node /tmp/gen.js <batch-no> 10     # prints the exact clip texts + rule/clip counts
+node data/_gen.js <batch-no> 10   # prints the exact clip texts + rule/clip counts
 ls audio/v-*.mp3 | wc -l           # clip count so far
 ```
 Then append the rule → clip-file mapping to `data/studio.js`. The player re-derives the beat
