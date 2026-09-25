@@ -413,9 +413,8 @@ no manual timestamps.
 **Total requirement: 123 clips / 114,576 characters of narration.**
 
 ### Progress
-- **110 of 123 clips recorded (89%)** — Rules **142–194 fully recorded** (55 of 67 rules). The whole
-  *Procurement of Goods* chapter is complete, and services is recorded through evaluation and
-  selection methods.
+- **120 of 123 clips recorded (98%)** — Rules **142–203 fully recorded** (64 of 67 rules). Only
+  Rules 204, 205 and 206 remain.
 - Rule 173 (transparency, competition, fairness) is recorded in full across seven clips.
 - Clip filenames are URL-safe: Rule 172(1) is `v-172-1`, Rule 175(1) is `v-175-1`.
 - Verified after each batch: studio segments live, 0 mapping mismatches, all clips serving HTTP 200.
@@ -441,8 +440,8 @@ no manual timestamps.
 | 9 | 175(1)(×3), 175(2), 176(×2), 177(×2), 178, 179 | 10 | ✅ **DONE** |
 | 10 | 180, 181, 182, 183(×2), 184, 185, 186(×2), 187 | 10 | ✅ **DONE** |
 | 11 | 188, 189, 190, 191, 192(×2), 193, 194(×3) | 10 | ✅ **DONE** |
-| 12 | 195, 196, 197, 198, 199, 200, 201(×2), 202, 203 | 10 | ⏳ next |
-| 13 | 204, 205, 206 | 3 | ⏳ |
+| 12 | 195, 196, 197, 198, 199, 200, 201(×2), 202, 203 | 10 | ✅ **DONE** |
+| 13 | 204, 205, 206 | 3 | ⏳ next |
 
 *Batch boundaries are clip boundaries, not rule boundaries — a rule whose narration spans a
 greedy-split point simply continues into the next batch (Rules 151, 161, 164, 194).*
