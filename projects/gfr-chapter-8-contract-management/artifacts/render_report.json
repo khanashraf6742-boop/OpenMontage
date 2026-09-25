@@ -8,8 +8,8 @@
       "audio_codec": "aac",
       "resolution": "1920x1080",
       "fps": 30.0,
-      "duration_seconds": 793.46,
-      "file_size_bytes": 44897194
+      "duration_seconds": 1791.21,
+      "file_size_bytes": 85313522
     },
     {
       "path": "renders/gfr_ch8_contract_management.mp4",
@@ -18,8 +18,8 @@
       "audio_codec": "aac",
       "resolution": "1920x1080",
       "fps": 30.0,
-      "duration_seconds": 793.46,
-      "file_size_bytes": 43573594
+      "duration_seconds": 1791.21,
+      "file_size_bytes": 81386671
     }
   ],
   "render_grammar": "explainer-teacher",

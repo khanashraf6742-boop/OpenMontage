@@ -56,6 +56,69 @@
       "reason": "trap: EXAM TRAP"
     },
     {
+      "id": "d01_00",
+      "source": "renders/frames/d01_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 5.57,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Deep dive 1 · Article 299 kyun?"
+    },
+    {
+      "id": "d01_01",
+      "source": "renders/frames/d01_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 31.91,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Article 299 — Constitution of India"
+    },
+    {
+      "id": "d01_02",
+      "source": "renders/frames/d01_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 8.76,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d01_03",
+      "source": "renders/frames/d01_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 8.13,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Chapter 8 glossary"
+    },
+    {
+      "id": "d01_04",
+      "source": "renders/frames/d01_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 13.83,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d01_05",
+      "source": "renders/frames/d01_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 12.24,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d01_06",
+      "source": "renders/frames/d01_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 24.25,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
       "id": "s02_00",
       "source": "renders/frames/s02_00.png",
       "in_seconds": 0.0,
@@ -108,6 +171,60 @@
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "trap: EXAM TRAP"
+    },
+    {
+      "id": "d02_00",
+      "source": "renders/frames/d02_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 7.54,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Deep dive 2 · Vague → precise"
+    },
+    {
+      "id": "d02_01",
+      "source": "renders/frames/d02_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 11.02,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(i) in practice"
+    },
+    {
+      "id": "d02_02",
+      "source": "renders/frames/d02_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 11.49,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d02_03",
+      "source": "renders/frames/d02_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 19.07,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d02_04",
+      "source": "renders/frames/d02_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 29.73,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Standard forms + advice (Rule 225(ii)–(iii))"
+    },
+    {
+      "id": "d02_05",
+      "source": "renders/frames/d02_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 15.75,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "hook: 5-SAWAAL TEST"
     },
     {
       "id": "s03_00",
@@ -191,6 +308,69 @@
       "reason": "answer: ANSWER"
     },
     {
+      "id": "d03_00",
+      "source": "renders/frames/d03_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 3.9,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Deep dive 3 · Decision tree"
+    },
+    {
+      "id": "d03_01",
+      "source": "renders/frames/d03_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 10.02,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Decision tree — Rule 225(iv)"
+    },
+    {
+      "id": "d03_02",
+      "source": "renders/frames/d03_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 32.35,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d03_03",
+      "source": "renders/frames/d03_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 14.24,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d03_04",
+      "source": "renders/frames/d03_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 25.81,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: LoA → contract in 21 days (Rule 225(vi))"
+    },
+    {
+      "id": "d03_05",
+      "source": "renders/frames/d03_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 6.89,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d03_06",
+      "source": "renders/frames/d03_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 9.49,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "trap: EXAM TRAP"
+    },
+    {
       "id": "s04_00",
       "source": "renders/frames/s04_00.png",
       "in_seconds": 0.0,
@@ -272,6 +452,87 @@
       "reason": "hook: MEMORY HOOK"
     },
     {
+      "id": "d04_00",
+      "source": "renders/frames/d04_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 10.6,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Deep dive 4 · PVC worked example"
+    },
+    {
+      "id": "d04_01",
+      "source": "renders/frames/d04_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 11.26,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: PVC formula (typical, Appendix 11 style)"
+    },
+    {
+      "id": "d04_02",
+      "source": "renders/frames/d04_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 15.09,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d04_03",
+      "source": "renders/frames/d04_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 15.23,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d04_04",
+      "source": "renders/frames/d04_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 7.08,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Ab sub-clauses lagao"
+    },
+    {
+      "id": "d04_05",
+      "source": "renders/frames/d04_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 6.61,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d04_06",
+      "source": "renders/frames/d04_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 6.54,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d04_07",
+      "source": "renders/frames/d04_07.png",
+      "in_seconds": 0.0,
+      "out_seconds": 14.55,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d04_08",
+      "source": "renders/frames/d04_08.png",
+      "in_seconds": 0.0,
+      "out_seconds": 17.42,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "trap: YAAD RAKHO"
+    },
+    {
       "id": "s05_00",
       "source": "renders/frames/s05_00.png",
       "in_seconds": 0.0,
@@ -333,6 +594,69 @@
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "trap: EXAM TRAP"
+    },
+    {
+      "id": "d05_00",
+      "source": "renders/frames/d05_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 3.91,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Deep dive 5 · Practice mein"
+    },
+    {
+      "id": "d05_01",
+      "source": "renders/frames/d05_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 12.71,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(ix) — Taxes"
+    },
+    {
+      "id": "d05_02",
+      "source": "renders/frames/d05_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 18.26,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: Rule 225(x) — Lump sum safeguards"
+    },
+    {
+      "id": "d05_03",
+      "source": "renders/frames/d05_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 15.92,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(xi) & (xii)"
+    },
+    {
+      "id": "d05_04",
+      "source": "renders/frames/d05_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 13.98,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d05_05",
+      "source": "renders/frames/d05_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 19.66,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(xiii) — Audit copies"
+    },
+    {
+      "id": "d05_06",
+      "source": "renders/frames/d05_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 10.42,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "hook: 3 NUMBERS · 3 CLAUSES"
     },
     {
       "id": "s06_00",
@@ -407,6 +731,69 @@
       "reason": "answer: GURPREET KA JAWAB"
     },
     {
+      "id": "d06_00",
+      "source": "renders/frames/d06_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 6.09,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Deep dive 6 · Variation ≠ extension ≠ FM"
+    },
+    {
+      "id": "d06_01",
+      "source": "renders/frames/d06_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 18.89,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(xiv) — Material variation"
+    },
+    {
+      "id": "d06_02",
+      "source": "renders/frames/d06_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 16.47,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 225(xv) — Do tarah ke extension"
+    },
+    {
+      "id": "d06_03",
+      "source": "renders/frames/d06_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 7.77,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d06_04",
+      "source": "renders/frames/d06_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 20.99,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: FM procedure (DoE Procurement Manuals)"
+    },
+    {
+      "id": "d06_05",
+      "source": "renders/frames/d06_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 23.89,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "update: DoE OM 29.04.2026 — timeline par"
+    },
+    {
+      "id": "d06_06",
+      "source": "renders/frames/d06_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 9.82,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "trap: EXAM TRAP"
+    },
+    {
       "id": "s07_00",
       "source": "renders/frames/s07_00.png",
       "in_seconds": 0.0,
@@ -479,6 +866,69 @@
       "reason": "hook: MEMORY HOOK"
     },
     {
+      "id": "d07_00",
+      "source": "renders/frames/d07_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 16.74,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Deep dive 7 · LD ka hisaab"
+    },
+    {
+      "id": "d07_01",
+      "source": "renders/frames/d07_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 19.29,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: LD calculation (illustrative)"
+    },
+    {
+      "id": "d07_02",
+      "source": "renders/frames/d07_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 14.59,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: ‘Shall’ ka matlab"
+    },
+    {
+      "id": "d07_03",
+      "source": "renders/frames/d07_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 22.12,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Warranty ↔ Performance security"
+    },
+    {
+      "id": "d07_04",
+      "source": "renders/frames/d07_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 10.79,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: Rule 225(xviii)"
+    },
+    {
+      "id": "d07_05",
+      "source": "renders/frames/d07_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 17.98,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: Rule 225(xix) · 3 saal kyun"
+    },
+    {
+      "id": "d07_06",
+      "source": "renders/frames/d07_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 6.43,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "hook: EXAM HOOK"
+    },
+    {
       "id": "s08_00",
       "source": "renders/frames/s08_00.png",
       "in_seconds": 0.0,
@@ -531,6 +981,78 @@
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "trap: EXAM TRAP"
+    },
+    {
+      "id": "d08_00",
+      "source": "renders/frames/d08_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 4.52,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Deep dive 8 · BG lifecycle"
+    },
+    {
+      "id": "d08_01",
+      "source": "renders/frames/d08_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 19.44,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: 1 · Receipt"
+    },
+    {
+      "id": "d08_02",
+      "source": "renders/frames/d08_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 12.83,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: 2 · Custody (Rule 226(ii))"
+    },
+    {
+      "id": "d08_03",
+      "source": "renders/frames/d08_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 18.22,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: 3 · Monthly review"
+    },
+    {
+      "id": "d08_04",
+      "source": "renders/frames/d08_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 11.4,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: 4 · Release"
+    },
+    {
+      "id": "d08_05",
+      "source": "renders/frames/d08_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 15.49,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Monthly review checklist"
+    },
+    {
+      "id": "d08_06",
+      "source": "renders/frames/d08_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 13.71,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "trap: MAT BHOOLO"
+    },
+    {
+      "id": "d08_07",
+      "source": "renders/frames/d08_07.png",
+      "in_seconds": 0.0,
+      "out_seconds": 9.1,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "hook: PRACTICAL TIP"
     },
     {
       "id": "s09_00",
@@ -621,6 +1143,69 @@
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "hook: TAKEAWAY"
+    },
+    {
+      "id": "d09_00",
+      "source": "renders/frames/d09_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 3.89,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Deep dive 9 · Dispute ladder"
+    },
+    {
+      "id": "d09_01",
+      "source": "renders/frames/d09_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 8.49,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Dispute ladder (DoE OM 03.06.2024 + Rule 227)"
+    },
+    {
+      "id": "d09_02",
+      "source": "renders/frames/d09_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 14.94,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d09_03",
+      "source": "renders/frames/d09_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 25.05,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d09_04",
+      "source": "renders/frames/d09_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 13.31,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d09_05",
+      "source": "renders/frames/d09_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 22.61,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Award ke baad"
+    },
+    {
+      "id": "d09_06",
+      "source": "renders/frames/d09_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 13.2,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "trap: EXAM TRAP"
     },
     {
       "id": "s10_00",
@@ -761,7 +1346,97 @@
       "id": "s10_15",
       "source": "renders/frames/s10_15.png",
       "in_seconds": 0.0,
-      "out_seconds": 18.1,
+      "out_seconds": 13.3,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "hook: BASE WALKTHROUGH COMPLETE ✔"
+    },
+    {
+      "id": "d10_00",
+      "source": "renders/frames/d10_00.png",
+      "in_seconds": 0.0,
+      "out_seconds": 10.99,
+      "transition_in": "fade",
+      "transition_duration": 0.35,
+      "reason": "story: Deep dive 10 · Rule 227A numbers"
+    },
+    {
+      "id": "d10_01",
+      "source": "renders/frames/d10_01.png",
+      "in_seconds": 0.0,
+      "out_seconds": 9.91,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "rule: Rule 227A worked"
+    },
+    {
+      "id": "d10_02",
+      "source": "renders/frames/d10_02.png",
+      "in_seconds": 0.0,
+      "out_seconds": 7.26,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d10_03",
+      "source": "renders/frames/d10_03.png",
+      "in_seconds": 0.0,
+      "out_seconds": 15.56,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: "
+    },
+    {
+      "id": "d10_04",
+      "source": "renders/frames/d10_04.png",
+      "in_seconds": 0.0,
+      "out_seconds": 11.24,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: Outcome"
+    },
+    {
+      "id": "d10_05",
+      "source": "renders/frames/d10_05.png",
+      "in_seconds": 0.0,
+      "out_seconds": 8.52,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "recap: CHAPTER 8 MASTER SHEET"
+    },
+    {
+      "id": "d10_06",
+      "source": "renders/frames/d10_06.png",
+      "in_seconds": 0.0,
+      "out_seconds": 20.8,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: Numbers"
+    },
+    {
+      "id": "d10_07",
+      "source": "renders/frames/d10_07.png",
+      "in_seconds": 0.0,
+      "out_seconds": 10.51,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: ‘Shall’ (mandatory)"
+    },
+    {
+      "id": "d10_08",
+      "source": "renders/frames/d10_08.png",
+      "in_seconds": 0.0,
+      "out_seconds": 5.06,
+      "transition_in": "xfade fade",
+      "transition_duration": 0.35,
+      "reason": "add: ‘Ordinarily avoid’"
+    },
+    {
+      "id": "d10_09",
+      "source": "renders/frames/d10_09.png",
+      "in_seconds": 0.0,
+      "out_seconds": 9.65,
       "transition_in": "xfade fade",
       "transition_duration": 0.35,
       "reason": "outro: Chapter 8 complete ✔"
@@ -776,49 +1451,99 @@
           "end_seconds": 80.66
         },
         {
-          "asset_id": "vo_s02",
+          "asset_id": "vo_d01",
           "start_seconds": 82.46,
-          "end_seconds": 139.24
+          "end_seconds": 182.9
+        },
+        {
+          "asset_id": "vo_s02",
+          "start_seconds": 184.7,
+          "end_seconds": 241.48
+        },
+        {
+          "asset_id": "vo_d02",
+          "start_seconds": 243.28,
+          "end_seconds": 333.98
         },
         {
           "asset_id": "vo_s03",
-          "start_seconds": 141.04,
-          "end_seconds": 218.22
+          "start_seconds": 335.78,
+          "end_seconds": 412.96
+        },
+        {
+          "asset_id": "vo_d03",
+          "start_seconds": 414.76,
+          "end_seconds": 513.21
         },
         {
           "asset_id": "vo_s04",
-          "start_seconds": 220.02,
-          "end_seconds": 311.92
+          "start_seconds": 515.01,
+          "end_seconds": 606.91
+        },
+        {
+          "asset_id": "vo_d04",
+          "start_seconds": 608.71,
+          "end_seconds": 708.14
         },
         {
           "asset_id": "vo_s05",
-          "start_seconds": 313.72,
-          "end_seconds": 381.86
+          "start_seconds": 709.94,
+          "end_seconds": 778.08
+        },
+        {
+          "asset_id": "vo_d05",
+          "start_seconds": 779.88,
+          "end_seconds": 870.48
         },
         {
           "asset_id": "vo_s06",
-          "start_seconds": 383.66,
-          "end_seconds": 482.52
+          "start_seconds": 872.28,
+          "end_seconds": 971.14
+        },
+        {
+          "asset_id": "vo_d06",
+          "start_seconds": 972.94,
+          "end_seconds": 1072.61
         },
         {
           "asset_id": "vo_s07",
-          "start_seconds": 484.32,
-          "end_seconds": 542.35
+          "start_seconds": 1074.41,
+          "end_seconds": 1132.44
+        },
+        {
+          "asset_id": "vo_d07",
+          "start_seconds": 1134.24,
+          "end_seconds": 1237.92
         },
         {
           "asset_id": "vo_s08",
-          "start_seconds": 544.15,
-          "end_seconds": 600.09
+          "start_seconds": 1239.72,
+          "end_seconds": 1295.66
+        },
+        {
+          "asset_id": "vo_d08",
+          "start_seconds": 1297.46,
+          "end_seconds": 1397.56
         },
         {
           "asset_id": "vo_s09",
-          "start_seconds": 601.89,
-          "end_seconds": 689.78
+          "start_seconds": 1399.36,
+          "end_seconds": 1487.25
+        },
+        {
+          "asset_id": "vo_d09",
+          "start_seconds": 1489.05,
+          "end_seconds": 1586.3
         },
         {
           "asset_id": "vo_s10",
-          "start_seconds": 691.58,
-          "end_seconds": 787.41
+          "start_seconds": 1588.1,
+          "end_seconds": 1683.93
+        },
+        {
+          "asset_id": "vo_d10",
+          "start_seconds": 1685.73,
+          "end_seconds": 1785.14
         }
       ]
     }

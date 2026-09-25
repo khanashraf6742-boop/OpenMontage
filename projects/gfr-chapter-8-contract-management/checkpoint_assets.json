@@ -4,7 +4,7 @@
   "pipeline_type": "animated-explainer",
   "stage": "assets",
   "status": "completed",
-  "timestamp": "2026-09-25T18:26:23.878666+00:00",
+  "timestamp": "2026-09-25T19:07:34.596271+00:00",
   "checkpoint_policy": "guided",
   "human_approval_required": true,
   "human_approved": true,
@@ -31,6 +31,24 @@
           "format": "mp3"
         },
         {
+          "id": "img_d01",
+          "type": "image",
+          "path": "assets/images/scene01.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "d01_why_299",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_d01",
+          "type": "narration",
+          "path": "assets/audio/d01.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "d01_why_299",
+          "duration_seconds": 100.44,
+          "format": "mp3"
+        },
+        {
           "id": "img_s02",
           "type": "image",
           "path": "assets/images/scene02.png",
@@ -46,6 +64,24 @@
           "source_tool": "generate_speech (assistant-native, voice-00)",
           "scene_id": "s02_rule225_i_iii",
           "duration_seconds": 56.78,
+          "format": "mp3"
+        },
+        {
+          "id": "img_d02",
+          "type": "image",
+          "path": "assets/images/scene02.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "d02_precision",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_d02",
+          "type": "narration",
+          "path": "assets/audio/d02.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "d02_precision",
+          "duration_seconds": 90.7,
           "format": "mp3"
         },
         {
@@ -67,6 +103,24 @@
           "format": "mp3"
         },
         {
+          "id": "img_d03",
+          "type": "image",
+          "path": "assets/images/scene03.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "d03_doc_tree",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_d03",
+          "type": "narration",
+          "path": "assets/audio/d03.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "d03_doc_tree",
+          "duration_seconds": 98.45,
+          "format": "mp3"
+        },
+        {
           "id": "img_s04",
           "type": "image",
           "path": "assets/images/scene04.png",
@@ -82,6 +136,24 @@
           "source_tool": "generate_speech (assistant-native, voice-00)",
           "scene_id": "s04_rule225_vii_viii",
           "duration_seconds": 91.9,
+          "format": "mp3"
+        },
+        {
+          "id": "img_d04",
+          "type": "image",
+          "path": "assets/images/scene04.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "d04_pvc_math",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_d04",
+          "type": "narration",
+          "path": "assets/audio/d04.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "d04_pvc_math",
+          "duration_seconds": 99.43,
           "format": "mp3"
         },
         {
@@ -103,6 +175,24 @@
           "format": "mp3"
         },
         {
+          "id": "img_d05",
+          "type": "image",
+          "path": "assets/images/scene05.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "d05_field_clauses",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_d05",
+          "type": "narration",
+          "path": "assets/audio/d05.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "d05_field_clauses",
+          "duration_seconds": 90.6,
+          "format": "mp3"
+        },
+        {
           "id": "img_s06",
           "type": "image",
           "path": "assets/images/scene06.png",
@@ -118,6 +208,24 @@
           "source_tool": "generate_speech (assistant-native, voice-00)",
           "scene_id": "s06_rule225_xiv_xv_fmc2026",
           "duration_seconds": 98.86,
+          "format": "mp3"
+        },
+        {
+          "id": "img_d06",
+          "type": "image",
+          "path": "assets/images/scene06.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "d06_variation_fm",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_d06",
+          "type": "narration",
+          "path": "assets/audio/d06.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "d06_variation_fm",
+          "duration_seconds": 99.67,
           "format": "mp3"
         },
         {
@@ -139,6 +247,24 @@
           "format": "mp3"
         },
         {
+          "id": "img_d07",
+          "type": "image",
+          "path": "assets/images/scene07.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "d07_ld_math",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_d07",
+          "type": "narration",
+          "path": "assets/audio/d07.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "d07_ld_math",
+          "duration_seconds": 103.68,
+          "format": "mp3"
+        },
+        {
           "id": "img_s08",
           "type": "image",
           "path": "assets/images/scene08.png",
@@ -154,6 +280,24 @@
           "source_tool": "generate_speech (assistant-native, voice-00)",
           "scene_id": "s08_rule226",
           "duration_seconds": 55.94,
+          "format": "mp3"
+        },
+        {
+          "id": "img_d08",
+          "type": "image",
+          "path": "assets/images/scene08.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "d08_bg_lifecycle",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_d08",
+          "type": "narration",
+          "path": "assets/audio/d08.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "d08_bg_lifecycle",
+          "duration_seconds": 100.1,
           "format": "mp3"
         },
         {
@@ -175,6 +319,24 @@
           "format": "mp3"
         },
         {
+          "id": "img_d09",
+          "type": "image",
+          "path": "assets/images/scene09.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "d09_dispute_ladder",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_d09",
+          "type": "narration",
+          "path": "assets/audio/d09.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "d09_dispute_ladder",
+          "duration_seconds": 97.25,
+          "format": "mp3"
+        },
+        {
           "id": "img_s10",
           "type": "image",
           "path": "assets/images/scene10.png",
@@ -190,6 +352,24 @@
           "source_tool": "generate_speech (assistant-native, voice-00)",
           "scene_id": "s10_rule227a_recap",
           "duration_seconds": 95.83,
+          "format": "mp3"
+        },
+        {
+          "id": "img_d10",
+          "type": "image",
+          "path": "assets/images/scene10.png",
+          "source_tool": "generate_image (assistant-native)",
+          "scene_id": "d10_227a_master",
+          "resolution": "1672x941",
+          "format": "png"
+        },
+        {
+          "id": "vo_d10",
+          "type": "narration",
+          "path": "assets/audio/d10.mp3",
+          "source_tool": "generate_speech (assistant-native, voice-00)",
+          "scene_id": "d10_227a_master",
+          "duration_seconds": 99.41,
           "format": "mp3"
         },
         {

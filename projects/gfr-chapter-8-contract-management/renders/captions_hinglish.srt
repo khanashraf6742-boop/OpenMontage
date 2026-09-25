@@ -47,534 +47,1254 @@ Note दो: powers, conditions और procedure Delegation of Financial Powers 
 Exam trap: authority का source Article 299 clause एक है, और शब्द हैं 'for and on behalf of the President of India' — 'Government of India' नहीं।
 
 13
-00:01:22,460 --> 00:01:23,141
-Scene two।
+00:01:22,460 --> 00:01:23,453
+Deep dive one।
 
 14
-00:01:23,191 --> 00:01:25,069
-Housekeeping tender की file।
+00:01:23,503 --> 00:01:27,276
+पहले ये समझो कि Rule 224 Article 299 पर क्यों टिका है।
 
 15
-00:01:25,119 --> 00:01:30,255
-Assistant अर्जुन ने draft में लिखा — 'payment terms as may be decided later'।
+00:01:27,326 --> 00:01:41,942
+Article 299 clause एक कहता है — Union की executive power में किया गया हर contract President के नाम से expressed होगा, और उन्हीं persons द्वारा, उसी तरीके से execute होगा जैसा President direct या authorise करें।
 
 16
-00:01:30,305 --> 00:01:32,716
-Under Secretary मीरा ने file रोक दी।
+00:01:41,992 --> 00:01:50,978
+मतलब तीन चीज़ें — expressed in the name of the President, executed by an authorised person, और executed in the authorised manner।
 
 17
-00:01:32,766 --> 00:01:33,181
-क्यों?
+00:01:51,028 --> 00:01:58,833
+इनमें कोई भी कमी हो तो contract Government पर binding नहीं माना जाता — इसीलिए signature block इतना important है।
 
 18
-00:01:33,231 --> 00:01:40,362
-अर्जुन, Rule 225 clause एक पढ़ो — contract की terms precise, definite और बिना किसी ambiguity के होनी चाहिए।
+00:01:58,883 --> 00:02:07,243
+Article 299 clause दो एक राहत भी देता है — ऐसे contract के लिए President या signing officer personally liable नहीं होते।
 
 19
-00:01:40,412 --> 00:01:44,484
-Government के लिए कोई uncertain या indefinite liability नहीं।
+00:02:07,293 --> 00:02:10,510
+अब Chapter 8 की शब्दावली, जो आगे बार-बार आएगी।
 
 20
-00:01:44,534 --> 00:01:50,069
-सिर्फ़ दो exceptions — cost plus contract, या price variation clause वाला contract।
+00:02:10,560 --> 00:02:15,028
+Letter of Award, या L o A — successful bidder को award की सूचना।
 
 21
-00:01:50,119 --> 00:01:54,457
-Clause दो — जहाँ possible हो, standard forms of contract use करो।
+00:02:15,078 --> 00:02:28,513
+Bid security या E M D — Rule 170 के तहत bidders से लिया जाने वाला security, जो ordinarily estimated value का दो से पाँच percent होता है; कुछ cases में Bid Security Declaration भी ली जा सकती है।
 
 22
-00:01:54,507 --> 00:01:58,911
-उनमें कोई भी modification सिर्फ़ financial और legal advice के बाद।
+00:02:28,563 --> 00:02:40,399
+Performance security — Rule 171 के तहत contract value का पाँच से दस percent, जो contractor के सभी obligations — warranty समेत — पूरे होने के साठ दिन बाद तक valid रहती है।
 
 23
-00:01:58,961 --> 00:02:06,424
-और clause तीन — अगर standard form use नहीं हो रहा, तो clauses draft करते समय legal और financial advice ज़रूर लो।
+00:02:40,449 --> 00:02:45,264
+Bank Guarantee — bank का वादा कि demand पर वो Government को रकम देगा।
 
 24
-00:02:06,474 --> 00:02:10,480
-Memory hook: standard form पहले; बदलाव सिर्फ़ advice के बाद।
+00:02:45,314 --> 00:02:49,713
+Liquidated damages — delay पर contract में पहले से तय recovery।
 
 25
-00:02:10,530 --> 00:02:19,190
-Exam trap: indefinite liability की exceptions सिर्फ़ cost-plus और price-variation हैं — 'urgent requirement' कोई exception नहीं है।
+00:02:49,763 --> 00:02:55,691
+Price variation clause — input prices बदलने पर contract price adjust करने का formula।
 
 26
-00:02:21,040 --> 00:02:21,852
-Scene three।
+00:02:55,741 --> 00:02:59,583
+Force majeure — ऐसी घटना जो किसी के control से बाहर हो।
 
 27
-00:02:21,902 --> 00:02:25,035
-Accounts Officer प्रिया के सामने तीन files हैं।
+00:02:59,633 --> 00:03:02,850
+इन शब्दों को पकड़ लो — अब हर clause आसान लगेगा।
 
 28
-00:02:25,085 --> 00:02:28,151
-File one — printers, एक लाख अस्सी हज़ार रुपये।
+00:03:04,700 --> 00:03:05,381
+Scene two।
 
 29
-00:02:28,201 --> 00:02:31,002
-File two — office furniture, छह लाख रुपये।
+00:03:05,431 --> 00:03:07,309
+Housekeeping tender की file।
 
 30
-00:02:31,052 --> 00:02:34,583
-File three — building repair works, पंद्रह लाख रुपये।
+00:03:07,359 --> 00:03:12,495
+Assistant अर्जुन ने draft में लिखा — 'payment terms as may be decided later'।
 
 31
-00:02:34,633 --> 00:02:36,704
-हर file में document अलग बनेगा।
+00:03:12,545 --> 00:03:14,956
+Under Secretary मीरा ने file रोक दी।
 
 32
-00:02:36,754 --> 00:02:45,258
-Rule 225 clause चार, sub-clause a — simple purchase, ढाई लाख रुपये तक — purchase order ही काफ़ी है, terms and conditions के साथ।
+00:03:15,006 --> 00:03:15,421
+क्यों?
 
 33
-00:02:45,308 --> 00:02:58,519
-Sub-clause b — एक लाख से दस लाख रुपये तक की purchase — अगर bid documents में General और Special Conditions of Contract और scope of work पहले से हैं, तो Letter of Award ही binding contract बन जाता है।
+00:03:15,471 --> 00:03:22,602
+अर्जुन, Rule 225 clause एक पढ़ो — contract की terms precise, definite और बिना किसी ambiguity के होनी चाहिए।
 
 34
-00:02:58,569 --> 00:03:10,388
-Sub-clause c — works contract दस लाख या उससे ऊपर, और purchase दस लाख से ऊपर — self-contained contract document, या एक-page contract जिसमें bid documents को reference किया गया हो।
+00:03:22,652 --> 00:03:26,724
+Government के लिए कोई uncertain या indefinite liability नहीं।
 
 35
-00:03:10,438 --> 00:03:18,411
-Sub-clause d — turnkey works, maintenance contracts, और services के लिए contract document हमेशा बनेगा, amount कुछ भी हो।
+00:03:26,774 --> 00:03:32,309
+सिर्फ़ दो exceptions — cost plus contract, या price variation clause वाला contract।
 
 36
-00:03:18,461 --> 00:03:23,317
-Clause पाँच — agreement या order execute हुए बिना कोई काम शुरू नहीं होगा।
+00:03:32,359 --> 00:03:36,697
+Clause दो — जहाँ possible हो, standard forms of contract use करो।
 
 37
-00:03:23,367 --> 00:03:32,070
-Clause छह — Letter of Award के बाद contract इक्कीस दिन के अंदर execute करो; नहीं तो award annul हो सकता है और bid security forfeit।
+00:03:36,747 --> 00:03:41,151
+उनमें कोई भी modification सिर्फ़ financial और legal advice के बाद।
 
 38
-00:03:32,120 --> 00:03:35,120
-Quick quiz — printers की file में क्या बनेगा?
+00:03:41,201 --> 00:03:48,664
+और clause तीन — अगर standard form use नहीं हो रहा, तो clauses draft करते समय legal और financial advice ज़रूर लो।
 
 39
-00:03:35,170 --> 00:03:38,170
-… Answer: purchase order, sub-clause a के तहत।
+00:03:48,714 --> 00:03:52,720
+Memory hook: standard form पहले; बदलाव सिर्फ़ advice के बाद।
 
 40
-00:03:40,020 --> 00:03:40,764
-Scene four।
+00:03:52,770 --> 00:04:01,430
+Exam trap: indefinite liability की exceptions सिर्फ़ cost-plus और price-variation हैं — 'urgent requirement' कोई exception नहीं है।
 
 41
-00:03:40,814 --> 00:03:52,078
-Research lab में Scientist डॉक्टर अय्यर पूछते हैं — 'delivery period चौबीस महीने है, vendor price variation माँग रहा है, दे सकते हैं?' Accounts Officer प्रिया समझाती हैं।
+00:04:03,280 --> 00:04:04,236
+Deep dive two।
 
 42
-00:03:52,128 --> 00:03:56,643
-पहले Rule 225 clause सात — cost plus contracts ordinarily avoid करो।
+00:04:04,286 --> 00:04:10,073
+Rule 225 clause एक सिर्फ़ theory नहीं है — आइए तीन vague clauses को precise बनाते हैं।
 
 43
-00:03:56,693 --> 00:04:05,707
-unavoidable हों तो contract से पहले full justification record करो, और लंबे duration में बाद में firm price पर convert करने की कोशिश करो।
+00:04:10,123 --> 00:04:13,293
+पहला — 'payment terms as may be decided later'।
 
 44
-00:04:05,757 --> 00:04:14,970
-Explanation: cost plus contract वो है जिसमें price actual cost of production plus profit होता है — fixed rate per unit या fixed percentage।
+00:04:13,343 --> 00:04:20,739
+precise version: 'हर monthly bill का सौ percent payment, satisfactory service certificate के तीस दिन के अंदर'।
 
 45
-00:04:15,020 --> 00:04:17,550
-अब clause आठ — price variation clause।
+00:04:20,789 --> 00:04:23,154
+दूसरा — 'delivery at the earliest'।
 
 46
-00:04:17,600 --> 00:04:27,012
-Sub-clause a — ordinarily सिर्फ़ long-term contracts में, जहाँ delivery period अठारह महीने से ज़्यादा हो; short-term में firm and fixed price।
+00:04:23,204 --> 00:04:31,876
+precise version: 'contract की date से पैंतालीस दिन के अंदर, consignee के store पर, delivery, installation और commissioning समेत'।
 
 47
-00:04:27,062 --> 00:04:30,055
-b — clause में base month and year साफ़ लिखो।
+00:04:31,926 --> 00:04:34,022
+तीसरा — 'rates as per actuals'।
 
 48
-00:04:30,105 --> 00:04:33,429
-c — formula, indices या Appendix ग्यारह के अनुसार।
+00:04:34,072 --> 00:04:38,048
+ये खुली liability है — actual कितना होगा, किसी को नहीं पता।
 
 49
-00:04:33,479 --> 00:04:35,877
-d — cut-off dates और ceiling तय हों।
+00:04:38,098 --> 00:04:43,884
+precise version: 'fixed rate per unit, taxes समेत, contract की पूरी अवधि के लिए firm'।
 
 50
-00:04:35,927 --> 00:04:40,443
-e — minimum threshold, जैसे दो percent, से कम पर कोई variation नहीं।
+00:04:43,934 --> 00:04:50,593
+Indefinite liability का मतलब यही है — ऐसी शर्त जिससे Government की देनदारी की कोई upper limit न हो।
 
 51
-00:04:40,493 --> 00:04:44,082
-f — advance payment वाले हिस्से पर कोई variation नहीं।
+00:04:50,643 --> 00:04:52,471
+अब standard forms क्या हैं?
 
 52
-00:04:44,132 --> 00:04:47,191
-g — liquidated damages varied price पर लगेंगे।
+00:04:52,521 --> 00:05:04,882
+Department of Expenditure के Procurement Manuals में दिए गए model bidding documents; GeM की General Terms and Conditions; works के लिए CPWD जैसे departments के standard contract forms।
 
 53
-00:04:47,241 --> 00:04:55,594
-h — supplier के default से delay हो तो original delivery date के बाद कोई increase नहीं, पर decrease का फ़ायदा Government लेगी।
+00:05:04,932 --> 00:05:13,066
+इन्हें वैसे ही use करो — clause बदलना हो तो पहले Integrated Finance Division और Legal Adviser या Ministry of Law से सलाह।
 
 54
-00:04:55,644 --> 00:05:02,343
-i — force majeure या Government default से extension हो तो amendment करके variation allow हो सकता है।
+00:05:13,116 --> 00:05:13,536
+क्यों?
 
 55
-00:05:02,393 --> 00:05:06,842
-j — duties, taxes और foreign exchange variation के rules साफ़ लिखो।
+00:05:13,586 --> 00:05:19,976
+क्योंकि standard clauses पर पहले से legal vetting हो चुकी है, और हर बदलाव एक नया risk खोलता है।
 
 56
-00:05:06,892 --> 00:05:08,628
-k — payment mode भी तय हो।
+00:05:20,026 --> 00:05:26,953
+Practical tip — draft finalise करने से पहले पाँच सवाल पूछो: क्या, कितना, कब, कहाँ, और नहीं हुआ तो क्या।
 
 57
-00:05:08,678 --> 00:05:11,870
-Memory hook: अठारह महीने — यही PVC का दरवाज़ा है।
+00:05:27,003 --> 00:05:33,930
+जिस clause का जवाब इनमें से किसी सवाल पर 'बाद में तय होगा' है, वो clause Rule 225 clause एक में fail है।
 
 58
-00:05:13,720 --> 00:05:14,471
-Scene five।
+00:05:35,780 --> 00:05:36,592
+Scene three।
 
 59
-00:05:14,521 --> 00:05:23,748
-PWD division में Executive Engineer खान साहब और Divisional Accountant सुनीता जी एक तीस लाख रुपये के civil work का contract बंद कर रहे हैं।
+00:05:36,642 --> 00:05:39,775
+Accounts Officer प्रिया के सामने तीन files हैं।
 
 60
-00:05:23,798 --> 00:05:30,755
-Rule 225 clause नौ — contractor को applicable taxes और duties खुद भरने होंगे; contract में ये साफ़ लिखो।
+00:05:39,825 --> 00:05:42,891
+File one — printers, एक लाख अस्सी हज़ार रुपये।
 
 61
-00:05:30,805 --> 00:05:38,230
-Clause दस — lump sum contracts सिर्फ़ absolute necessity में, और तब भी payment के लिए proper safeguards के साथ।
+00:05:42,941 --> 00:05:45,742
+File two — office furniture, छह लाख रुपये।
 
 62
-00:05:38,280 --> 00:05:49,375
-Clause ग्यारह — जहाँ तक हो सके, contractor को departmental materials देना avoid करो; अगर देना ही पड़े, तो materials की schedule, rates और conditions contract में हों।
+00:05:45,792 --> 00:05:49,323
+File three — building repair works, पंद्रह लाख रुपये।
 
 63
-00:05:49,425 --> 00:05:59,052
-Clause बारह — contractor को दी गई Government property की safeguard करो — insurance, hire charges की recovery, और periodic physical verification।
+00:05:49,373 --> 00:05:51,444
+हर file में document अलग बनेगा।
 
 64
-00:05:59,102 --> 00:06:08,462
-और clause तेरह — पच्चीस लाख रुपये और उससे ऊपर के contracts की copies, civil departments से Audit Officer और Accounts Officer को भेजी जाएँगी।
+00:05:51,494 --> 00:05:59,998
+Rule 225 clause चार, sub-clause a — simple purchase, ढाई लाख रुपये तक — purchase order ही काफ़ी है, terms and conditions के साथ।
 
 65
-00:06:08,512 --> 00:06:13,801
-ये limit Department of Expenditure के April दो हज़ार उन्नीस के amendment से आई।
+00:06:00,048 --> 00:06:13,259
+Sub-clause b — एक लाख से दस लाख रुपये तक की purchase — अगर bid documents में General और Special Conditions of Contract और scope of work पहले से हैं, तो Letter of Award ही binding contract बन जाता है।
 
 66
-00:06:13,851 --> 00:06:21,810
-सुनीता जी कहती हैं — 'तीस लाख का है, copy Audit को जाएगी।' Exam trap: audit copies की limit पच्चीस लाख है — दस लाख नहीं।
+00:06:13,309 --> 00:06:25,128
+Sub-clause c — works contract दस लाख या उससे ऊपर, और purchase दस लाख से ऊपर — self-contained contract document, या एक-page contract जिसमें bid documents को reference किया गया हो।
 
 67
-00:06:23,660 --> 00:06:24,344
-Scene six।
+00:06:25,178 --> 00:06:33,151
+Sub-clause d — turnkey works, maintenance contracts, और services के लिए contract document हमेशा बनेगा, amount कुछ भी हो।
 
 68
-00:06:24,394 --> 00:06:28,616
-Chairs के supply contract में vendor पूछता है — 'model बदल दूँ?
+00:06:33,201 --> 00:06:38,057
+Clause पाँच — agreement या order execute हुए बिना कोई काम शुरू नहीं होगा।
 
 69
-00:06:28,666 --> 00:06:34,357
-delivery दो महीने आगे?' Section Officer गुरप्रीत, Deputy Secretary कपूर से पूछते हैं।
+00:06:38,107 --> 00:06:46,810
+Clause छह — Letter of Award के बाद contract इक्कीस दिन के अंदर execute करो; नहीं तो award annul हो सकता है और bid security forfeit।
 
 70
-00:06:34,407 --> 00:06:39,497
-Rule 225 clause चौदह — contract में कोई material variation ऐसे ही नहीं होगी।
+00:06:46,860 --> 00:06:49,860
+Quick quiz — printers की file में क्या बनेगा?
 
 71
-00:06:39,547 --> 00:06:48,041
-ज़रूरी हो तो financial और अन्य effect record करो, competent authority की prior approval लो, और amendment सभी parties sign करें।
+00:06:49,910 --> 00:06:52,910
+… Answer: purchase order, sub-clause a के तहत।
 
 72
-00:06:48,091 --> 00:06:58,188
-Clause पंद्रह — delivery या completion period का extension सिर्फ़ तभी, जब contract में provision हो या force majeure हो — और वो भी formal amendment से।
+00:06:54,760 --> 00:06:55,867
+Deep dive three।
 
 73
-00:06:58,238 --> 00:06:59,322
-अब latest order।
+00:06:55,917 --> 00:06:57,910
+Screen पर decision tree देखो।
 
 74
-00:06:59,372 --> 00:07:06,198
-Department of Expenditure का Office Memorandum, उनतीस April दो हज़ार छब्बीस — Force Majeure Clause पर।
+00:06:57,960 --> 00:07:02,608
+पहला सवाल — क्या ये turnkey, maintenance या services का contract है?
 
 75
-00:07:06,248 --> 00:07:12,206
-Force majeure मतलब act of God, war, strike, riots — negligence या predictable बारिश नहीं।
+00:07:02,658 --> 00:07:07,578
+हाँ, तो amount कुछ भी हो — proper contract document बनेगा, sub-clause d।
 
 76
-00:07:12,256 --> 00:07:17,946
-Notice reasonable समय में, Manuals के अनुसार लगभग चौदह दिन; ex-post-facto claim नहीं।
+00:07:07,628 --> 00:07:10,233
+नहीं, तो दूसरा सवाल — amount कितना है?
 
 77
-00:07:17,996 --> 00:07:25,556
-Force majeure नब्बे दिन से ज़्यादा चले तो कोई भी party बिना financial repercussion contract terminate कर सकती है।
+00:07:10,283 --> 00:07:14,863
+ढाई लाख रुपये तक की simple purchase — purchase order, sub-clause a।
 
 78
-00:07:25,606 --> 00:07:34,501
-इस O M में ongoing West Asia situation को 'war' माना गया है — goods, services और works contracts में force majeure invoke हो सकता है।
+00:07:14,913 --> 00:07:27,935
+एक लाख से दस लाख रुपये तक — अगर bid documents में General Conditions, Special Conditions और scope पहले से थे, तो Letter of Award ही contract है, sub-clause b; अलग से agreement की ज़रूरत नहीं।
 
 79
-00:07:34,551 --> 00:07:43,579
-अट्ठाईस February दो हज़ार छब्बीस को या बाद में due obligations दो से चार महीने extend हो सकती हैं — बिना cost या penalty, case-to-case।
+00:07:27,985 --> 00:07:39,578
+दस लाख या उससे ऊपर के works, और दस लाख से ऊपर की purchase — sub-clause c — या तो पूरा self-contained contract, या एक page का contract जो bid documents को incorporate करे।
 
 80
-00:07:43,629 --> 00:07:52,657
-Condition — सत्ताईस February को parties default में न हों, और सिर्फ़ West Asia disruption से directly जुड़ी non-performance cover होगी।
+00:07:39,628 --> 00:07:44,207
+ध्यान दो — a और b के बीच एक लाख से ढाई लाख की range में overlap है।
 
 81
-00:07:52,707 --> 00:08:02,470
-गुरप्रीत का जवाब: model change material variation है — approval और amendment के बिना नहीं; extension सिर्फ़ force majeure या contract provision पर।
+00:07:44,257 --> 00:07:53,467
+वहाँ simple purchase में purchase order ही काफ़ी है; b तब काम आता है जब bid documents पूरे थे और आप LoA को ही contract बनाना चाहते हैं।
 
 82
-00:08:04,320 --> 00:08:05,129
-Scene seven।
+00:07:53,517 --> 00:07:55,714
+अब LoA से contract तक का रास्ता।
 
 83
-00:08:05,179 --> 00:08:11,342
-Stores में Storekeeper रमेश को laptops की delivery बीस दिन late मिली, और दो laptops खराब हैं।
+00:07:55,764 --> 00:08:02,114
+LoA जारी हुआ — bidder ने acceptance भेजी — performance security जमा हुई — agreement sign हुआ।
 
 84
-00:08:11,392 --> 00:08:14,250
-Deputy Director फ़ातिमा action तय करती हैं।
+00:08:02,164 --> 00:08:05,450
+Rule 225 clause छह कहता है ये सब इक्कीस दिन में।
 
 85
-00:08:14,300 --> 00:08:21,454
-Rule 225 clause सोलह — delay पर liquidated damages contract के अनुसार ज़रूर recover होंगे — शब्द है 'shall'।
+00:08:05,500 --> 00:08:06,675
+इक्कीस दिन क्यों?
 
 86
-00:08:21,504 --> 00:08:27,865
-Exemption सिर्फ़ exceptional cases में, reasons record करके, competent authority की approval से।
+00:08:06,725 --> 00:08:12,462
+ताकि successful bidder LoA लेकर बैठा न रहे, और prices या market बदलने पर मुकर न सके।
 
 87
-00:08:27,915 --> 00:08:34,144
-Clause सत्रह — contract में warranty clause हो — defective goods free replace या repair होंगे।
+00:08:12,512 --> 00:08:18,930
+default हुआ तो award annul और bid security forfeit — यानी Rule 170 वाला E M D यहीं काम आता है।
 
 88
-00:08:34,194 --> 00:08:41,943
-Clause अठारह — Government के पास right to reject हो — जो goods specifications पर खरे न उतरें, उन्हें reject किया जाए।
+00:08:18,980 --> 00:08:25,466
+GeM पर purchase हो तो GeM system contract खुद generate करता है — वही आपका contract document है।
 
 89
-00:08:41,993 --> 00:08:50,403
-Clause उन्नीस — contract बंद होने की date से तीन साल के बाद कोई claim entertain नहीं होगा, जब तक contract में कुछ और न लिखा हो।
+00:08:25,516 --> 00:08:33,160
+और clause पाँच का practical मतलब — 'काम शुरू करा दो, order बाद में' — ये Rule 225 clause पाँच का सीधा उल्लंघन है।
 
 90
-00:08:50,453 --> 00:08:53,972
-Quick quiz — L D माफ़ करना routine है या exceptional?
+00:08:35,010 --> 00:08:35,754
+Scene four।
 
 91
-00:08:54,022 --> 00:08:57,806
-… Answer: exceptional — reasons record करके, approval से।
+00:08:35,804 --> 00:08:47,068
+Research lab में Scientist डॉक्टर अय्यर पूछते हैं — 'delivery period चौबीस महीने है, vendor price variation माँग रहा है, दे सकते हैं?' Accounts Officer प्रिया समझाती हैं।
 
 92
-00:08:57,856 --> 00:09:02,300
-Memory hook: L D shall, warranty must, reject right, three years बस।
+00:08:47,118 --> 00:08:51,633
+पहले Rule 225 clause सात — cost plus contracts ordinarily avoid करो।
 
 93
-00:09:04,150 --> 00:09:04,970
-Scene eight।
+00:08:51,683 --> 00:09:00,697
+unavoidable हों तो contract से पहले full justification record करो, और लंबे duration में बाद में firm price पर convert करने की कोशिश करो।
 
 94
-00:09:05,020 --> 00:09:10,791
-Zonal office में Assistant Director विक्रम की table पर Bank Guarantees का register है।
+00:09:00,747 --> 00:09:09,960
+Explanation: cost plus contract वो है जिसमें price actual cost of production plus profit होता है — fixed rate per unit या fixed percentage।
 
 95
-00:09:10,841 --> 00:09:24,442
-Director नायर पूछते हैं — 'कौन-सी BG अगले तीन महीने में expire हो रही है?' Rule 226 clause एक: contract का implementation strictly monitor हो, और जहाँ भी provisions का breach हो, notice promptly जारी हो।
+00:09:10,010 --> 00:09:12,540
+अब clause आठ — price variation clause।
 
 96
-00:09:24,492 --> 00:09:28,925
-Clause दो: Bank Guarantees की custody के लिए written procedure हो।
+00:09:12,590 --> 00:09:22,002
+Sub-clause a — ordinarily सिर्फ़ long-term contracts में, जहाँ delivery period अठारह महीने से ज़्यादा हो; short-term में firm and fixed price।
 
 97
-00:09:28,975 --> 00:09:32,940
-हर महीने review — कौन-सी BG अगले तीन महीने में expire होगी।
+00:09:22,052 --> 00:09:25,045
+b — clause में base month and year साफ़ लिखो।
 
 98
-00:09:32,990 --> 00:09:37,958
-समय रहते extension माँगो, वरना BG invoke करो; expiry के बाद कुछ नहीं बचता।
+00:09:25,095 --> 00:09:28,419
+c — formula, indices या Appendix ग्यारह के अनुसार।
 
 99
-00:09:38,008 --> 00:09:54,285
-विक्रम का जवाब — 'Sir, दो BG हैं; extension letters आज जा रहे हैं।' Latest context: Department of Expenditure ने पाँच August दो हज़ार बाईस के O M से electronic Bank Guarantee — e-BG — accept करने की व्यवस्था दी है; monitoring principle वही है।
+00:09:28,469 --> 00:09:30,867
+d — cut-off dates और ceiling तय हों।
 
 100
-00:09:54,335 --> 00:10:00,040
-Exam trap: BG review monthly है, और window three months की है — quarterly review नहीं।
+00:09:30,917 --> 00:09:35,433
+e — minimum threshold, जैसे दो percent, से कम पर कोई variation नहीं।
 
 101
-00:10:01,890 --> 00:10:02,637
-Scene nine।
+00:09:35,483 --> 00:09:39,072
+f — advance payment वाले हिस्से पर कोई variation नहीं।
 
 102
-00:10:02,687 --> 00:10:04,495
-Joint Secretary की meeting।
+00:09:39,122 --> 00:09:42,181
+g — liquidated damages varied price पर लगेंगे।
 
 103
-00:10:04,545 --> 00:10:07,947
-एक contractor ने बारह करोड़ रुपये का claim दिया है।
+00:09:42,231 --> 00:09:50,584
+h — supplier के default से delay हो तो original delivery date के बाद कोई increase नहीं, पर decrease का फ़ायदा Government लेगी।
 
 104
-00:10:07,997 --> 00:10:10,669
-Director सलीम और Legal Adviser बैठे हैं।
+00:09:50,634 --> 00:09:57,333
+i — force majeure या Government default से extension हो तो amendment करके variation allow हो सकता है।
 
 105
-00:10:10,719 --> 00:10:17,108
-Rule 227 — dispute हो तो contract के अनुसार conciliation या arbitration से पहले legal advice लो।
+00:09:57,383 --> 00:10:01,832
+j — duties, taxes और foreign exchange variation के rules साफ़ लिखो।
 
 106
-00:10:17,158 --> 00:10:21,356
-Arbitration clause न हो तो suit file करने से पहले legal advice।
+00:10:01,882 --> 00:10:03,618
+k — payment mode भी तय हो।
 
 107
-00:10:21,406 --> 00:10:30,252
-Draft plaint legal और financial advice से vetted हो, और documents carefully scrutinize हों ताकि Government का interest safeguard रहे।
+00:10:03,668 --> 00:10:06,860
+Memory hook: अठारह महीने — यही PVC का दरवाज़ा है।
 
 108
-00:10:30,302 --> 00:10:40,474
-अब latest guidelines — Department of Expenditure का O M, तीन June दो हज़ार चौबीस — Arbitration and Mediation in Contracts of Domestic Public Procurement।
+00:10:08,710 --> 00:10:09,737
+Deep dive four।
 
 109
-00:10:40,524 --> 00:10:45,652
-एक — arbitration clause routine या automatic नहीं, ख़ासकर बड़े contracts में।
+00:10:09,787 --> 00:10:18,556
+PVC को एक illustrative example से समझते हैं — numbers सिर्फ़ समझाने के लिए; असली formula आपके contract और Appendix ग्यारह से आएगा।
 
 110
-00:10:45,702 --> 00:10:52,954
-दो — अगर रखी जाए तो generally दस करोड़ रुपये से कम value के disputes तक — dispute value, contract value नहीं।
+00:10:18,606 --> 00:10:29,462
+Typical formula — नया price बराबर पुराना price गुणा: fixed component, plus labour weight गुणा labour index ratio, plus material weight गुणा material index ratio।
 
 111
-00:10:53,004 --> 00:11:03,775
-तीन — इससे ऊपर के disputes में arbitration सिर्फ़ reasons record करके, Secretary या delegated Joint Secretary level, और CPSE में Managing Director की approval से।
+00:10:29,512 --> 00:10:35,116
+मान लो fixed component पंद्रह percent, labour पच्चीस percent, material साठ percent।
 
 112
-00:11:03,825 --> 00:11:06,695
-चार — institutional arbitration prefer करो।
+00:10:35,166 --> 00:10:38,886
+Base month में labour index सौ और material index सौ था।
 
 113
-00:11:06,745 --> 00:11:13,201
-पाँच — awards को routine में challenge मत करो; सिर्फ़ genuine merit और high chance of success पर।
+00:10:38,936 --> 00:10:44,204
+Delivery के महीने में labour index एक सौ आठ और material index एक सौ दस हो गया।
 
 114
-00:11:13,251 --> 00:11:21,698
-छह — amicable settlement और Mediation Act दो हज़ार तेईस के तहत mediation encourage; बड़े settlements High Level Committee देखे।
+00:10:44,254 --> 00:10:55,649
+तो factor बना — शून्य दशमलव पंद्रह, plus शून्य दशमलव पच्चीस गुणा एक दशमलव शून्य आठ यानी शून्य दशमलव दो सात, plus शून्य दशमलव छह गुणा एक दशमलव एक यानी शून्य दशमलव छियासठ।
 
 115
-00:11:21,748 --> 00:11:23,888
-सात — बाक़ी disputes courts में।
+00:10:55,699 --> 00:10:57,197
+कुल एक दशमलव शून्य आठ।
 
 116
-00:11:23,938 --> 00:11:29,730
-सलीम का takeaway: बारह करोड़ का dispute — पहले legal advice; arbitration automatic नहीं।
+00:10:57,247 --> 00:10:59,082
+मतलब price आठ percent बढ़ा।
 
 117
-00:11:31,580 --> 00:11:32,274
-Scene ten।
+00:10:59,132 --> 00:11:00,226
+अब clauses लगाओ।
 
 118
-00:11:32,324 --> 00:11:38,902
-Under Secretary कविता के सामने arbitral award है — Ministry ने award court में challenge किया है।
+00:11:00,276 --> 00:11:05,814
+sub-clause e — threshold दो percent था, आठ percent उससे ऊपर है, तो variation लागू।
 
 119
-00:11:38,952 --> 00:11:47,829
-Financial Adviser पूछते हैं — 'payment अभी करें या नहीं?' Rule 227A, clause एक — उनतीस October दो हज़ार इक्कीस के O M से जोड़ा गया।
+00:11:05,864 --> 00:11:12,074
+sub-clause d — ceiling अगर दस percent है, तो आठ percent पूरा मिलेगा; बारह होता तो दस पर cap।
 
 120
-00:11:47,879 --> 00:12:01,084
-जहाँ Ministry ने award challenge किया है और payment रुका है, वहाँ award का पचहत्तर percent — award date तक के interest समेत — contractor या concessionaire को Bank Guarantee के against दिया जाएगा।
+00:11:12,124 --> 00:11:18,268
+sub-clause f — अगर बीस percent advance दिया था, तो variation सिर्फ़ बाक़ी अस्सी percent पर।
 
 121
-00:12:01,134 --> 00:12:08,523
-Clause दो — Bank Guarantee सिर्फ़ इसी पचहत्तर percent के लिए; refund order पर बनने वाले interest के लिए नहीं।
+00:11:18,318 --> 00:11:28,298
+sub-clause h — supplier अपनी ग़लती से original delivery date के बाद supply करे, तो index बढ़ने का फ़ायदा नहीं; index गिरे तो कम price Government को।
 
 122
-00:12:08,573 --> 00:12:17,653
-Clause तीन — पैसा escrow account में जाएगा — पहले lenders का बकाया, फिर उसी project का completion, फिर उसी Ministry के दूसरे projects।
+00:11:28,348 --> 00:11:32,472
+sub-clause g — liquidated damages इसी varied price पर लगेंगे।
 
 123
-00:12:17,703 --> 00:12:24,619
-Clause चार — retention money या performance guarantee भी Bank Guarantee के against release हो सकती है।
+00:11:32,522 --> 00:11:39,944
+और याद रखो — ये सब तभी, जब delivery period अठारह महीने से ज़्यादा हो; छोटे contracts में firm and fixed price।
 
 124
-00:12:24,669 --> 00:12:27,459
-अब rapid recap — pause करके ख़ुद जवाब दो।
+00:11:39,994 --> 00:11:48,090
+Cost plus का फ़र्क़ — वहाँ formula नहीं, actual cost plus profit है; cost पर control नहीं रहता — इसीलिए ordinarily avoid।
 
 125
-00:12:27,509 --> 00:12:29,420
-एक — contract किसकी तरफ़ से?
+00:11:49,940 --> 00:11:50,691
+Scene five।
 
 126
-00:12:29,470 --> 00:12:31,652
-President of India, Article 299।
+00:11:50,741 --> 00:11:59,968
+PWD division में Executive Engineer खान साहब और Divisional Accountant सुनीता जी एक तीस लाख रुपये के civil work का contract बंद कर रहे हैं।
 
 127
-00:12:31,702 --> 00:12:33,478
-दो — purchase order limit?
+00:12:00,018 --> 00:12:06,975
+Rule 225 clause नौ — contractor को applicable taxes और duties खुद भरने होंगे; contract में ये साफ़ लिखो।
 
 128
-00:12:33,528 --> 00:12:34,087
-ढाई लाख।
+00:12:07,025 --> 00:12:14,450
+Clause दस — lump sum contracts सिर्फ़ absolute necessity में, और तब भी payment के लिए proper safeguards के साथ।
 
 129
-00:12:34,137 --> 00:12:35,845
-तीन — contract execution?
+00:12:14,500 --> 00:12:25,595
+Clause ग्यारह — जहाँ तक हो सके, contractor को departmental materials देना avoid करो; अगर देना ही पड़े, तो materials की schedule, rates और conditions contract में हों।
 
 130
-00:12:35,895 --> 00:12:36,657
-इक्कीस दिन।
+00:12:25,645 --> 00:12:35,272
+Clause बारह — contractor को दी गई Government property की safeguard करो — insurance, hire charges की recovery, और periodic physical verification।
 
 131
-00:12:36,707 --> 00:12:38,415
-चार — price variation कब?
+00:12:35,322 --> 00:12:44,682
+और clause तेरह — पच्चीस लाख रुपये और उससे ऊपर के contracts की copies, civil departments से Audit Officer और Accounts Officer को भेजी जाएँगी।
 
 132
-00:12:38,465 --> 00:12:40,647
-delivery अठारह महीने से ज़्यादा।
+00:12:44,732 --> 00:12:50,021
+ये limit Department of Expenditure के April दो हज़ार उन्नीस के amendment से आई।
 
 133
-00:12:40,697 --> 00:12:42,067
-पाँच — audit copies?
+00:12:50,071 --> 00:12:58,030
+सुनीता जी कहती हैं — 'तीस लाख का है, copy Audit को जाएगी।' Exam trap: audit copies की limit पच्चीस लाख है — दस लाख नहीं।
 
 134
-00:12:42,117 --> 00:12:43,352
-पच्चीस लाख और ऊपर।
+00:12:59,880 --> 00:13:00,899
+Deep dive five।
 
 135
-00:12:43,402 --> 00:12:44,772
-छह — claim time bar?
+00:13:00,949 --> 00:13:03,037
+अब इन clauses का practical रूप।
 
 136
-00:12:44,822 --> 00:12:45,381
-तीन साल।
+00:13:03,087 --> 00:13:04,307
+Clause नौ — taxes।
 
 137
-00:12:45,431 --> 00:12:46,530
-सात — BG review?
+00:13:04,357 --> 00:13:11,990
+Bid में rates all-inclusive माँगो और साफ़ लिखो कि applicable GST और duties का भुगतान contractor की ज़िम्मेदारी है।
 
 138
-00:12:46,580 --> 00:12:48,627
-हर महीने, तीन महीने की window।
+00:13:12,040 --> 00:13:15,398
+इससे बाद में 'tax अलग से दो' वाला विवाद नहीं होता।
 
 139
-00:12:48,677 --> 00:12:50,182
-आठ — challenged award?
+00:13:15,448 --> 00:13:16,868
+Clause दस — lump sum।
 
 140
-00:12:50,232 --> 00:12:52,279
-पचहत्तर percent BG के against।
+00:13:16,918 --> 00:13:33,304
+जहाँ काम को इकाइयों में नापना मुश्किल हो — जैसे कोई turnkey job — वहाँ lump sum हो सकता है, पर proper safeguards के साथ: payment milestones से जुड़ा हो, हर milestone का acceptance criteria लिखा हो, और final payment completion certificate के बाद।
 
 141
-00:12:52,329 --> 00:12:54,172
-नौ — arbitration guideline?
+00:13:33,354 --> 00:13:35,976
+Clause ग्यारह — departmental materials।
 
 142
-00:12:54,222 --> 00:12:55,863
-दस करोड़ से कम disputes।
+00:13:36,026 --> 00:13:48,872
+अगर department cement या steel जैसा material देता है, तो contract में schedule हो — कौन-सा material, कितनी quantity, किस rate पर issue होगा, और बचा हुआ material कैसे वापस होगा या recover होगा।
 
 143
-00:12:55,913 --> 00:12:57,216
-Chapter 8 complete।
+00:13:48,922 --> 00:13:51,210
+Clause बारह — Government property।
 
 144
-00:12:57,266 --> 00:13:05,399
-Sources — GFR 2017, Department of Expenditure compilation updated up to इकत्तीस January दो हज़ार छब्बीस, और DoE के O Ms।
+00:13:51,260 --> 00:14:02,502
+tools, plant, machinery या premises contractor को दिए हों, तो insurance किसके नाम, hire charges कितने, और periodic physical verification कौन करेगा — तीनों contract में।
 
 145
-00:13:05,449 --> 00:13:07,360
+00:14:02,552 --> 00:14:04,372
+Clause तेरह — audit copies।
+
+146
+00:14:04,422 --> 00:14:14,061
+Audit Officer यानी C and A G की office, और Accounts Officer यानी Pay and Accounts Office — दोनों को पच्चीस लाख या उससे ऊपर के contracts की copy।
+
+147
+00:14:14,111 --> 00:14:15,196
+ये copies क्यों?
+
+148
+00:14:15,246 --> 00:14:21,811
+ताकि audit को contract की शर्तें पहले से पता हों और bills की checking उन शर्तों के against हो सके।
+
+149
+00:14:21,861 --> 00:14:28,760
+Exam के लिए एक pattern याद रखो — ढाई लाख purchase order, दस लाख formal contract, पच्चीस लाख audit copy।
+
+150
+00:14:28,810 --> 00:14:30,430
+तीन numbers, तीन clauses।
+
+151
+00:14:32,280 --> 00:14:32,964
+Scene six।
+
+152
+00:14:33,014 --> 00:14:37,236
+Chairs के supply contract में vendor पूछता है — 'model बदल दूँ?
+
+153
+00:14:37,286 --> 00:14:42,977
+delivery दो महीने आगे?' Section Officer गुरप्रीत, Deputy Secretary कपूर से पूछते हैं।
+
+154
+00:14:43,027 --> 00:14:48,117
+Rule 225 clause चौदह — contract में कोई material variation ऐसे ही नहीं होगी।
+
+155
+00:14:48,167 --> 00:14:56,661
+ज़रूरी हो तो financial और अन्य effect record करो, competent authority की prior approval लो, और amendment सभी parties sign करें।
+
+156
+00:14:56,711 --> 00:15:06,808
+Clause पंद्रह — delivery या completion period का extension सिर्फ़ तभी, जब contract में provision हो या force majeure हो — और वो भी formal amendment से।
+
+157
+00:15:06,858 --> 00:15:07,942
+अब latest order।
+
+158
+00:15:07,992 --> 00:15:14,818
+Department of Expenditure का Office Memorandum, उनतीस April दो हज़ार छब्बीस — Force Majeure Clause पर।
+
+159
+00:15:14,868 --> 00:15:20,826
+Force majeure मतलब act of God, war, strike, riots — negligence या predictable बारिश नहीं।
+
+160
+00:15:20,876 --> 00:15:26,566
+Notice reasonable समय में, Manuals के अनुसार लगभग चौदह दिन; ex-post-facto claim नहीं।
+
+161
+00:15:26,616 --> 00:15:34,176
+Force majeure नब्बे दिन से ज़्यादा चले तो कोई भी party बिना financial repercussion contract terminate कर सकती है।
+
+162
+00:15:34,226 --> 00:15:43,121
+इस O M में ongoing West Asia situation को 'war' माना गया है — goods, services और works contracts में force majeure invoke हो सकता है।
+
+163
+00:15:43,171 --> 00:15:52,199
+अट्ठाईस February दो हज़ार छब्बीस को या बाद में due obligations दो से चार महीने extend हो सकती हैं — बिना cost या penalty, case-to-case।
+
+164
+00:15:52,249 --> 00:16:01,277
+Condition — सत्ताईस February को parties default में न हों, और सिर्फ़ West Asia disruption से directly जुड़ी non-performance cover होगी।
+
+165
+00:16:01,327 --> 00:16:11,090
+गुरप्रीत का जवाब: model change material variation है — approval और amendment के बिना नहीं; extension सिर्फ़ force majeure या contract provision पर।
+
+166
+00:16:12,940 --> 00:16:13,902
+Deep dive six।
+
+167
+00:16:13,952 --> 00:16:18,285
+तीन चीज़ें अलग-अलग हैं — variation, extension, और force majeure।
+
+168
+00:16:18,335 --> 00:16:25,433
+Material variation मतलब core शर्तों में बदलाव — scope, specification, quantity, price, delivery schedule।
+
+169
+00:16:25,483 --> 00:16:34,739
+Rule 225 clause चौदह का तरीका: पहले effects record, फिर competent authority की prior approval, फिर सभी parties के signature से amendment।
+
+170
+00:16:34,789 --> 00:16:36,830
+बाद में approval — नहीं चलेगा।
+
+171
+00:16:36,880 --> 00:16:38,785
+Extension दो तरह का होता है।
+
+172
+00:16:38,835 --> 00:16:41,011
+पहला — supplier की अपनी देरी पर।
+
+173
+00:16:41,061 --> 00:16:52,947
+formal amendment से, पर liquidated damages के साथ, और denial clause — यानी extension की अवधि में price, taxes या exchange rate बढ़े तो Government नहीं देगी, घटे तो फ़ायदा लेगी।
+
+174
+00:16:52,997 --> 00:16:55,172
+दूसरा — force majeure extension।
+
+175
+00:16:55,222 --> 00:17:00,365
+यहाँ न liquidated damages, न denial clause, क्योंकि देरी किसी की ग़लती नहीं।
+
+176
+00:17:00,415 --> 00:17:04,209
+Force majeure procedure — Procurement Manuals के अनुसार।
+
+177
+00:17:04,259 --> 00:17:07,715
+एक: लगभग चौदह दिन में written notice with evidence।
+
+178
+00:17:07,765 --> 00:17:11,829
+दो: दोनों पक्ष तय करें कौन-सा obligation कितना प्रभावित हुआ।
+
+179
+00:17:11,879 --> 00:17:14,594
+तीन: उतना extension formal amendment से।
+
+180
+00:17:14,644 --> 00:17:21,000
+चार: नब्बे दिन से ज़्यादा चले तो कोई भी पक्ष बिना financial repercussion terminate कर सकता है।
+
+181
+00:17:21,050 --> 00:17:24,776
+अब उनतीस April दो हज़ार छब्बीस का O M timeline पर देखो।
+
+182
+00:17:24,826 --> 00:17:30,306
+मान लो delivery पंद्रह March दो हज़ार छब्बीस को due थी — अट्ठाईस February के बाद।
+
+183
+00:17:30,356 --> 00:17:33,678
+supplier सत्ताईस February को default में नहीं था।
+
+184
+00:17:33,728 --> 00:17:36,308
+West Asia disruption से shipment रुकी।
+
+185
+00:17:36,358 --> 00:17:44,535
+तो examination के बाद delivery दो से चार महीने — पंद्रह May से पंद्रह July के बीच — बढ़ सकती है, बिना liquidated damages।
+
+186
+00:17:44,585 --> 00:17:52,560
+लेकिन अगर supplier बीस February को ही late था, तो ये राहत नहीं — क्योंकि सत्ताईस February को वो पहले से default में था।
+
+187
+00:17:54,410 --> 00:17:55,219
+Scene seven।
+
+188
+00:17:55,269 --> 00:18:01,432
+Stores में Storekeeper रमेश को laptops की delivery बीस दिन late मिली, और दो laptops खराब हैं।
+
+189
+00:18:01,482 --> 00:18:04,340
+Deputy Director फ़ातिमा action तय करती हैं।
+
+190
+00:18:04,390 --> 00:18:11,544
+Rule 225 clause सोलह — delay पर liquidated damages contract के अनुसार ज़रूर recover होंगे — शब्द है 'shall'।
+
+191
+00:18:11,594 --> 00:18:17,955
+Exemption सिर्फ़ exceptional cases में, reasons record करके, competent authority की approval से।
+
+192
+00:18:18,005 --> 00:18:24,234
+Clause सत्रह — contract में warranty clause हो — defective goods free replace या repair होंगे।
+
+193
+00:18:24,284 --> 00:18:32,033
+Clause अठारह — Government के पास right to reject हो — जो goods specifications पर खरे न उतरें, उन्हें reject किया जाए।
+
+194
+00:18:32,083 --> 00:18:40,493
+Clause उन्नीस — contract बंद होने की date से तीन साल के बाद कोई claim entertain नहीं होगा, जब तक contract में कुछ और न लिखा हो।
+
+195
+00:18:40,543 --> 00:18:44,062
+Quick quiz — L D माफ़ करना routine है या exceptional?
+
+196
+00:18:44,112 --> 00:18:47,896
+… Answer: exceptional — reasons record करके, approval से।
+
+197
+00:18:47,946 --> 00:18:52,390
+Memory hook: L D shall, warranty must, reject right, three years बस।
+
+198
+00:18:54,240 --> 00:18:55,365
+Deep dive seven।
+
+199
+00:18:55,415 --> 00:18:58,061
+Liquidated damages का हिसाब देखते हैं।
+
+200
+00:18:58,111 --> 00:19:08,290
+Procurement Manuals में goods के लिए typical clause — हर हफ़्ते या उसके हिस्से की देरी पर delayed goods की value का आधा percent, अधिकतम दस percent।
+
+201
+00:19:08,340 --> 00:19:10,226
+असली rate contract से आएगा।
+
+202
+00:19:10,276 --> 00:19:14,650
+Example — laptops की value दस लाख रुपये, delivery बीस दिन late।
+
+203
+00:19:14,700 --> 00:19:19,419
+बीस दिन यानी दो हफ़्ते और छह दिन का हिस्सा — तीन हफ़्ते गिने जाएँगे।
+
+204
+00:19:19,469 --> 00:19:24,050
+तीन गुणा आधा percent — डेढ़ percent — यानी पंद्रह हज़ार रुपये L D।
+
+205
+00:19:24,100 --> 00:19:29,165
+अगर देरी बीस हफ़्ते होती तो दस percent की cap — एक लाख रुपये पर रुक जाता।
+
+206
+00:19:29,215 --> 00:19:35,455
+Rule 225 clause सोलह में शब्द 'shall' है — मतलब L D लगाना default है, माफ़ करना exception।
+
+207
+00:19:35,505 --> 00:19:40,224
+और exception भी लिखित reasons और competent authority की approval से।
+
+208
+00:19:40,274 --> 00:19:43,403
+file पर सिर्फ़ 'L D waived' लिखना काफ़ी नहीं।
+
+209
+00:19:43,453 --> 00:19:45,131
+Warranty — clause सत्रह।
+
+210
+00:19:45,181 --> 00:19:50,868
+warranty period में defect निकले तो supplier free of cost repair या replace करेगा।
+
+211
+00:19:50,918 --> 00:20:05,176
+इसे performance security से जोड़ो — Rule 171 के अनुसार performance security warranty obligations पूरे होने के साठ दिन बाद तक valid रहती है, इसीलिए warranty में default हो तो recovery का रास्ता खुला रहता है।
+
+212
+00:20:05,226 --> 00:20:07,388
+Right to reject — clause अठारह।
+
+213
+00:20:07,438 --> 00:20:15,613
+inspection में specification पर खरे न उतरें तो reject, लिखित intimation, replacement — rejected goods की payment नहीं।
+
+214
+00:20:15,663 --> 00:20:17,341
+तीन साल — clause उन्नीस।
+
+215
+00:20:17,391 --> 00:20:33,239
+Limitation Act उन्नीस सौ तिरसठ में contract के दावों की general limitation भी तीन साल है; Rule 225 इसे contract की शर्त बना देता है — contract बंद होने के तीन साल बाद कोई claim entertain नहीं, जब तक contract में कुछ और न लिखा हो।
+
+216
+00:20:33,289 --> 00:20:37,870
+याद रखो — 'shall' वाले clauses exam में सबसे ज़्यादा पूछे जाते हैं।
+
+217
+00:20:39,720 --> 00:20:40,540
+Scene eight।
+
+218
+00:20:40,590 --> 00:20:46,361
+Zonal office में Assistant Director विक्रम की table पर Bank Guarantees का register है।
+
+219
+00:20:46,411 --> 00:21:00,012
+Director नायर पूछते हैं — 'कौन-सी BG अगले तीन महीने में expire हो रही है?' Rule 226 clause एक: contract का implementation strictly monitor हो, और जहाँ भी provisions का breach हो, notice promptly जारी हो।
+
+220
+00:21:00,062 --> 00:21:04,495
+Clause दो: Bank Guarantees की custody के लिए written procedure हो।
+
+221
+00:21:04,545 --> 00:21:08,510
+हर महीने review — कौन-सी BG अगले तीन महीने में expire होगी।
+
+222
+00:21:08,560 --> 00:21:13,528
+समय रहते extension माँगो, वरना BG invoke करो; expiry के बाद कुछ नहीं बचता।
+
+223
+00:21:13,578 --> 00:21:29,855
+विक्रम का जवाब — 'Sir, दो BG हैं; extension letters आज जा रहे हैं।' Latest context: Department of Expenditure ने पाँच August दो हज़ार बाईस के O M से electronic Bank Guarantee — e-BG — accept करने की व्यवस्था दी है; monitoring principle वही है।
+
+224
+00:21:29,905 --> 00:21:35,610
+Exam trap: BG review monthly है, और window three months की है — quarterly review नहीं।
+
+225
+00:21:37,460 --> 00:21:38,569
+Deep dive eight।
+
+226
+00:21:38,619 --> 00:21:41,229
+Bank Guarantee का पूरा जीवन-चक्र समझो।
+
+227
+00:21:41,279 --> 00:21:42,183
+एक — receipt।
+
+228
+00:21:42,233 --> 00:21:46,002
+BG आते ही उसकी genuineness issuing bank से confirm करो।
+
+229
+00:21:46,052 --> 00:22:00,321
+Department of Expenditure के पाँच August दो हज़ार बाईस के O M के बाद electronic BG भी accept होती है, जिसे bank के secure messaging system से verify किया जाता है — कागज़ी BG के fraud का risk इसी से कम होता है।
+
+230
+00:22:00,371 --> 00:22:01,276
+दो — custody।
+
+231
+00:22:01,326 --> 00:22:12,800
+Rule 226 clause दो कहता है written procedure हो — कौन रखेगा, कहाँ रखेगा, register में क्या entry होगी: BG number, bank, amount, purpose, validity date, और claim period।
+
+232
+00:22:12,850 --> 00:22:14,300
+तीन — monthly review।
+
+233
+00:22:14,350 --> 00:22:19,755
+हर महीने register देखो और पूछो — अगले तीन महीने में कौन-सी BG expire हो रही है?
+
+234
+00:22:19,805 --> 00:22:24,528
+जिन contracts के obligations बाक़ी हैं, उनके लिए अभी extension माँगो।
+
+235
+00:22:24,578 --> 00:22:30,665
+extension न मिले तो expiry से पहले invoke करो — क्योंकि expire हुई BG कागज़ का टुकड़ा है।
+
+236
+00:22:30,715 --> 00:22:31,688
+चार — release।
+
+237
+00:22:31,738 --> 00:22:41,711
+performance security तभी release करो जब सभी obligations, warranty समेत, पूरे हो जाएँ — Rule 171 के अनुसार validity उसके साठ दिन बाद तक होनी चाहिए।
+
+238
+00:22:41,761 --> 00:22:46,144
+Monthly review की checklist — एक: expiry list next three months।
+
+239
+00:22:46,194 --> 00:22:48,394
+दो: extension letters की status।
+
+240
+00:22:48,444 --> 00:22:51,053
+तीन: invoke करने के लिए pending cases।
+
+241
+00:22:51,103 --> 00:22:53,167
+चार: release के लिए due cases।
+
+242
+00:22:53,217 --> 00:22:56,849
+पाँच: register और physical या electronic BG का मिलान।
+
+243
+00:22:56,899 --> 00:23:01,690
+Rule 226 clause एक का दूसरा हिस्सा भी मत भूलो — breach होते ही notice।
+
+244
+00:23:01,740 --> 00:23:10,214
+देर से notice देने का मतलब है कि आप breach को accept कर रहे हैं — बाद में L D या termination defend करना मुश्किल हो जाता है।
+
+245
+00:23:10,264 --> 00:23:17,510
+Practical tip — BG register को contract register से link रखो, ताकि हर contract के सामने उसकी security दिखे।
+
+246
+00:23:19,360 --> 00:23:20,107
+Scene nine।
+
+247
+00:23:20,157 --> 00:23:21,965
+Joint Secretary की meeting।
+
+248
+00:23:22,015 --> 00:23:25,417
+एक contractor ने बारह करोड़ रुपये का claim दिया है।
+
+249
+00:23:25,467 --> 00:23:28,139
+Director सलीम और Legal Adviser बैठे हैं।
+
+250
+00:23:28,189 --> 00:23:34,578
+Rule 227 — dispute हो तो contract के अनुसार conciliation या arbitration से पहले legal advice लो।
+
+251
+00:23:34,628 --> 00:23:38,826
+Arbitration clause न हो तो suit file करने से पहले legal advice।
+
+252
+00:23:38,876 --> 00:23:47,722
+Draft plaint legal और financial advice से vetted हो, और documents carefully scrutinize हों ताकि Government का interest safeguard रहे।
+
+253
+00:23:47,772 --> 00:23:57,944
+अब latest guidelines — Department of Expenditure का O M, तीन June दो हज़ार चौबीस — Arbitration and Mediation in Contracts of Domestic Public Procurement।
+
+254
+00:23:57,994 --> 00:24:03,122
+एक — arbitration clause routine या automatic नहीं, ख़ासकर बड़े contracts में।
+
+255
+00:24:03,172 --> 00:24:10,424
+दो — अगर रखी जाए तो generally दस करोड़ रुपये से कम value के disputes तक — dispute value, contract value नहीं।
+
+256
+00:24:10,474 --> 00:24:21,245
+तीन — इससे ऊपर के disputes में arbitration सिर्फ़ reasons record करके, Secretary या delegated Joint Secretary level, और CPSE में Managing Director की approval से।
+
+257
+00:24:21,295 --> 00:24:24,165
+चार — institutional arbitration prefer करो।
+
+258
+00:24:24,215 --> 00:24:30,671
+पाँच — awards को routine में challenge मत करो; सिर्फ़ genuine merit और high chance of success पर।
+
+259
+00:24:30,721 --> 00:24:39,168
+छह — amicable settlement और Mediation Act दो हज़ार तेईस के तहत mediation encourage; बड़े settlements High Level Committee देखे।
+
+260
+00:24:39,218 --> 00:24:41,358
+सात — बाक़ी disputes courts में।
+
+261
+00:24:41,408 --> 00:24:47,200
+सलीम का takeaway: बारह करोड़ का dispute — पहले legal advice; arbitration automatic नहीं।
+
+262
+00:24:49,050 --> 00:24:50,086
+Deep dive nine।
+
+263
+00:24:50,136 --> 00:24:52,190
+Dispute आने पर सीढ़ी ऐसे चढ़ो।
+
+264
+00:24:52,240 --> 00:24:55,515
+पहली सीढ़ी — negotiation और amicable settlement।
+
+265
+00:24:55,565 --> 00:25:00,333
+तीन June दो हज़ार चौबीस का O M यही कहता है — पहले बातचीत से हल निकालो।
+
+266
+00:25:00,383 --> 00:25:02,709
+दूसरी — conciliation या mediation।
+
+267
+00:25:02,759 --> 00:25:10,242
+Mediation Act दो हज़ार तेईस के तहत; contract में mediation clause न हो तब भी pre-litigation mediation खुला है।
+
+268
+00:25:10,292 --> 00:25:14,924
+बड़े settlements के लिए O M में High Level Committee की व्यवस्था है।
+
+269
+00:25:14,974 --> 00:25:18,250
+तीसरी — arbitration, अगर contract में clause है।
+
+270
+00:25:18,300 --> 00:25:32,705
+O M के अनुसार clause routine में नहीं; रखो तो दस करोड़ रुपये से कम value के disputes के लिए; उससे ऊपर सिर्फ़ Secretary या delegated Joint Secretary level — और CPSE में Managing Director — की reasoned approval से।
+
+271
+00:25:32,755 --> 00:25:39,627
+institutional arbitration prefer करो — जहाँ कोई arbitral institution पूरी process administer करती है।
+
+272
+00:25:39,677 --> 00:25:40,577
+चौथी — court।
+
+273
+00:25:40,627 --> 00:25:45,192
+जिन disputes पर arbitration clause नहीं, वो civil court में जाएँगे।
+
+274
+00:25:45,242 --> 00:25:52,589
+हर सीढ़ी पर Rule 227 — पहले legal advice, plaint या claim की legal-financial vetting, documents की scrutiny।
+
+275
+00:25:52,639 --> 00:25:54,150
+Award आने के बाद क्या?
+
+276
+00:25:54,200 --> 00:26:05,687
+Arbitration and Conciliation Act उन्नीस सौ छियानवे की section चौंतीस के तहत challenge की समय-सीमा award मिलने से तीन महीने है, जिसे court अधिकतम तीस दिन और बढ़ा सकती है।
+
+277
+00:26:05,737 --> 00:26:14,849
+लेकिन O M कहता है — challenge routine में नहीं, सिर्फ़ genuine merit और high chance of success पर, और ये decision reasons record करके।
+
+278
+00:26:14,899 --> 00:26:19,192
+दस करोड़ का हिसाब dispute value से है — contract value से नहीं।
+
+279
+00:26:19,242 --> 00:26:26,250
+पचास करोड़ के contract में छह करोड़ का dispute arbitration में जा सकता है — उदाहरण सिर्फ़ समझाने के लिए।
+
+280
+00:26:28,100 --> 00:26:28,794
+Scene ten।
+
+281
+00:26:28,844 --> 00:26:35,422
+Under Secretary कविता के सामने arbitral award है — Ministry ने award court में challenge किया है।
+
+282
+00:26:35,472 --> 00:26:44,349
+Financial Adviser पूछते हैं — 'payment अभी करें या नहीं?' Rule 227A, clause एक — उनतीस October दो हज़ार इक्कीस के O M से जोड़ा गया।
+
+283
+00:26:44,399 --> 00:26:57,604
+जहाँ Ministry ने award challenge किया है और payment रुका है, वहाँ award का पचहत्तर percent — award date तक के interest समेत — contractor या concessionaire को Bank Guarantee के against दिया जाएगा।
+
+284
+00:26:57,654 --> 00:27:05,043
+Clause दो — Bank Guarantee सिर्फ़ इसी पचहत्तर percent के लिए; refund order पर बनने वाले interest के लिए नहीं।
+
+285
+00:27:05,093 --> 00:27:14,173
+Clause तीन — पैसा escrow account में जाएगा — पहले lenders का बकाया, फिर उसी project का completion, फिर उसी Ministry के दूसरे projects।
+
+286
+00:27:14,223 --> 00:27:21,139
+Clause चार — retention money या performance guarantee भी Bank Guarantee के against release हो सकती है।
+
+287
+00:27:21,189 --> 00:27:23,979
+अब rapid recap — pause करके ख़ुद जवाब दो।
+
+288
+00:27:24,029 --> 00:27:25,940
+एक — contract किसकी तरफ़ से?
+
+289
+00:27:25,990 --> 00:27:28,172
+President of India, Article 299।
+
+290
+00:27:28,222 --> 00:27:29,998
+दो — purchase order limit?
+
+291
+00:27:30,048 --> 00:27:30,607
+ढाई लाख।
+
+292
+00:27:30,657 --> 00:27:32,365
+तीन — contract execution?
+
+293
+00:27:32,415 --> 00:27:33,177
+इक्कीस दिन।
+
+294
+00:27:33,227 --> 00:27:34,935
+चार — price variation कब?
+
+295
+00:27:34,985 --> 00:27:37,167
+delivery अठारह महीने से ज़्यादा।
+
+296
+00:27:37,217 --> 00:27:38,587
+पाँच — audit copies?
+
+297
+00:27:38,637 --> 00:27:39,872
+पच्चीस लाख और ऊपर।
+
+298
+00:27:39,922 --> 00:27:41,292
+छह — claim time bar?
+
+299
+00:27:41,342 --> 00:27:41,901
+तीन साल।
+
+300
+00:27:41,951 --> 00:27:43,050
+सात — BG review?
+
+301
+00:27:43,100 --> 00:27:45,147
+हर महीने, तीन महीने की window।
+
+302
+00:27:45,197 --> 00:27:46,702
+आठ — challenged award?
+
+303
+00:27:46,752 --> 00:27:48,799
+पचहत्तर percent BG के against।
+
+304
+00:27:48,849 --> 00:27:50,692
+नौ — arbitration guideline?
+
+305
+00:27:50,742 --> 00:27:52,383
+दस करोड़ से कम disputes।
+
+306
+00:27:52,433 --> 00:27:53,736
+Chapter 8 complete।
+
+307
+00:27:53,786 --> 00:28:01,919
+Sources — GFR 2017, Department of Expenditure compilation updated up to इकत्तीस January दो हज़ार छब्बीस, और DoE के O Ms।
+
+308
+00:28:01,969 --> 00:28:03,880
 पढ़ते रहिए, verify करते रहिए।
+
+309
+00:28:05,730 --> 00:28:06,676
+Deep dive ten।
+
+310
+00:28:06,726 --> 00:28:08,137
+Rule 227A numbers से।
+
+311
+00:28:08,187 --> 00:28:13,051
+award दस करोड़ रुपये, award date तक interest एक करोड़ — कुल ग्यारह करोड़।
+
+312
+00:28:13,101 --> 00:28:15,973
+Ministry ने award court में challenge किया।
+
+313
+00:28:16,023 --> 00:28:25,535
+Clause एक के अनुसार ग्यारह करोड़ का पचहत्तर percent — आठ करोड़ पच्चीस लाख — contractor को दिया जाएगा, उतनी ही रकम की Bank Guarantee के against।
+
+314
+00:28:25,585 --> 00:28:32,442
+Clause दो — BG सिर्फ़ इन आठ करोड़ पच्चीस लाख के लिए; refund order पर बनने वाले interest के लिए BG नहीं।
+
+315
+00:28:32,492 --> 00:28:41,606
+Clause तीन — रकम escrow account में; priority — पहले lenders का बकाया, फिर उसी project का completion, फिर उसी Ministry के दूसरे projects।
+
+316
+00:28:41,656 --> 00:28:47,649
+Clause चार — retention money या performance guarantee भी BG के against release हो सकती है।
+
+317
+00:28:47,699 --> 00:28:51,699
+Challenge fail — बाक़ी पच्चीस percent और interest देना होगा।
+
+318
+00:28:51,749 --> 00:28:53,160
+सफल — रकम BG से वापस।
+
+319
+00:28:53,210 --> 00:28:58,539
+यही balance है — contractor की cash flow भी चले, Government का पैसा भी सुरक्षित।
+
+320
+00:28:58,589 --> 00:28:59,668
+अब master sheet।
+
+321
+00:28:59,718 --> 00:29:06,707
+Authorities — Article 299 clause एक; Ministry of Law notifications; Delegation of Financial Powers Rules।
+
+322
+00:29:06,757 --> 00:29:27,160
+Numbers — ढाई लाख purchase order; दस लाख formal contract; इक्कीस दिन execution; अठारह महीने PVC; पच्चीस लाख audit copies; तीन साल claim bar; monthly BG review, तीन महीने window; पचहत्तर percent challenged award; दस करोड़ arbitration; नब्बे दिन force majeure termination; दो से चार महीने West Asia extension।
+
+323
+00:29:27,210 --> 00:29:37,320
+'Shall' वाले clauses — precise terms, no work without agreement, इक्कीस दिन, L D recovery, prior approval for variation, formal amendment for extension।
+
+324
+00:29:37,370 --> 00:29:42,035
+'Ordinarily avoid' वाले — cost plus, lump sum, departmental materials।
+
+325
+00:29:42,085 --> 00:29:45,090
+बस — Chapter 8 अब पूरा है, explanation के साथ।
 

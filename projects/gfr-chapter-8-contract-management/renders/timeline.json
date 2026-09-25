@@ -1,5 +1,5 @@
 {
- "total_seconds": 793.41,
+ "total_seconds": 1791.14,
  "segments": {
   "s01_intro_rule224": {
    "start": 0.0,
@@ -50,48 +50,104 @@
     }
    ]
   },
-  "s02_rule225_i_iii": {
+  "d01_why_299": {
    "start": 81.86,
+   "audio_seconds": 100.44,
+   "segment_seconds": 102.24,
+   "states": [
+    {
+     "t": 81.86,
+     "dur": 5.22,
+     "kind": "story",
+     "png": "d01_00.png",
+     "title": "Deep dive 1 · Article 299 kyun?"
+    },
+    {
+     "t": 87.08,
+     "dur": 31.56,
+     "kind": "rule",
+     "png": "d01_01.png",
+     "title": "Article 299 — Constitution of India"
+    },
+    {
+     "t": 118.63,
+     "dur": 8.41,
+     "kind": "add",
+     "png": "d01_02.png",
+     "title": ""
+    },
+    {
+     "t": 127.04,
+     "dur": 7.78,
+     "kind": "rule",
+     "png": "d01_03.png",
+     "title": "Chapter 8 glossary"
+    },
+    {
+     "t": 134.83,
+     "dur": 13.48,
+     "kind": "add",
+     "png": "d01_04.png",
+     "title": ""
+    },
+    {
+     "t": 148.31,
+     "dur": 11.89,
+     "kind": "add",
+     "png": "d01_05.png",
+     "title": ""
+    },
+    {
+     "t": 160.2,
+     "dur": 23.9,
+     "kind": "add",
+     "png": "d01_06.png",
+     "title": ""
+    }
+   ]
+  },
+  "s02_rule225_i_iii": {
+   "start": 184.1,
    "audio_seconds": 56.78,
    "segment_seconds": 58.580000000000005,
    "states": [
     {
-     "t": 81.86,
+     "t": 184.1,
      "dur": 11.65,
      "kind": "story",
      "png": "s02_00.png",
      "title": "Scene 2 · Housekeeping tender"
     },
     {
-     "t": 93.51,
+     "t": 195.75,
      "dur": 16.36,
      "kind": "rule",
      "png": "s02_01.png",
      "title": "Rule 225(i)"
     },
     {
-     "t": 109.87,
+     "t": 212.11,
      "dur": 8.84,
      "kind": "add",
      "png": "s02_02.png",
      "title": "Rule 225(ii)"
     },
     {
-     "t": 118.71,
+     "t": 220.95,
      "dur": 7.51,
      "kind": "add",
      "png": "s02_03.png",
      "title": "Rule 225(iii)"
     },
     {
-     "t": 126.22,
+     "t": 228.46,
      "dur": 4.06,
      "kind": "hook",
      "png": "s02_04.png",
      "title": "MEMORY HOOK"
     },
     {
-     "t": 130.28,
+     "t": 232.52,
      "dur": 10.16,
      "kind": "trap",
      "png": "s02_05.png",
@@ -99,69 +155,118 @@
     }
    ]
   },
+  "d02_precision": {
+   "start": 242.68,
+   "audio_seconds": 90.7,
+   "segment_seconds": 92.5,
+   "states": [
+    {
+     "t": 242.68,
+     "dur": 7.19,
+     "kind": "story",
+     "png": "d02_00.png",
+     "title": "Deep dive 2 · Vague → precise"
+    },
+    {
+     "t": 249.87,
+     "dur": 10.67,
+     "kind": "rule",
+     "png": "d02_01.png",
+     "title": "Rule 225(i) in practice"
+    },
+    {
+     "t": 260.54,
+     "dur": 11.14,
+     "kind": "add",
+     "png": "d02_02.png",
+     "title": ""
+    },
+    {
+     "t": 271.68,
+     "dur": 18.72,
+     "kind": "add",
+     "png": "d02_03.png",
+     "title": ""
+    },
+    {
+     "t": 290.39,
+     "dur": 29.38,
+     "kind": "rule",
+     "png": "d02_04.png",
+     "title": "Standard forms + advice (Rule 225(ii)–(iii))"
+    },
+    {
+     "t": 319.78,
+     "dur": 15.4,
+     "kind": "hook",
+     "png": "d02_05.png",
+     "title": "5-SAWAAL TEST"
+    }
+   ]
+  },
   "s03_rule225_iv_vi": {
-   "start": 140.44,
+   "start": 335.18,
    "audio_seconds": 77.18,
    "segment_seconds": 78.98,
    "states": [
     {
-     "t": 140.44,
+     "t": 335.18,
      "dur": 16.06,
      "kind": "story",
      "png": "s03_00.png",
      "title": "Scene 3 · Teen files, teen documents"
     },
     {
-     "t": 156.5,
+     "t": 351.24,
      "dur": 8.55,
      "kind": "rule",
      "png": "s03_01.png",
      "title": "Rule 225(iv) · Kaunsa document?"
     },
     {
-     "t": 165.06,
+     "t": 359.8,
      "dur": 13.26,
      "kind": "add",
      "png": "s03_02.png",
      "title": ""
     },
     {
-     "t": 178.32,
+     "t": 373.06,
      "dur": 11.87,
      "kind": "add",
      "png": "s03_03.png",
      "title": ""
     },
     {
-     "t": 190.19,
+     "t": 384.93,
      "dur": 8.02,
      "kind": "add",
      "png": "s03_04.png",
      "title": ""
     },
     {
-     "t": 198.21,
+     "t": 392.95,
      "dur": 4.91,
      "kind": "rule",
      "png": "s03_05.png",
      "title": "Rule 225(v) & (vi)"
     },
     {
-     "t": 203.12,
+     "t": 397.86,
      "dur": 8.75,
      "kind": "add",
      "png": "s03_06.png",
      "title": ""
     },
     {
-     "t": 211.87,
+     "t": 406.61,
      "dur": 3.18,
      "kind": "quiz",
      "png": "s03_07.png",
      "title": "QUICK QUIZ"
     },
     {
-     "t": 215.05,
+     "t": 409.79,
      "dur": 4.37,
      "kind": "answer",
      "png": "s03_08.png",
@@ -169,69 +274,125 @@
     }
    ]
   },
+  "d03_doc_tree": {
+   "start": 414.16,
+   "audio_seconds": 98.45,
+   "segment_seconds": 100.25,
+   "states": [
+    {
+     "t": 414.16,
+     "dur": 3.55,
+     "kind": "story",
+     "png": "d03_00.png",
+     "title": "Deep dive 3 · Decision tree"
+    },
+    {
+     "t": 417.71,
+     "dur": 9.67,
+     "kind": "rule",
+     "png": "d03_01.png",
+     "title": "Decision tree — Rule 225(iv)"
+    },
+    {
+     "t": 427.38,
+     "dur": 32.0,
+     "kind": "add",
+     "png": "d03_02.png",
+     "title": ""
+    },
+    {
+     "t": 459.38,
+     "dur": 13.89,
+     "kind": "add",
+     "png": "d03_03.png",
+     "title": ""
+    },
+    {
+     "t": 473.27,
+     "dur": 25.46,
+     "kind": "rule",
+     "png": "d03_04.png",
+     "title": "LoA → contract in 21 days (Rule 225(vi))"
+    },
+    {
+     "t": 498.73,
+     "dur": 6.54,
+     "kind": "add",
+     "png": "d03_05.png",
+     "title": ""
+    },
+    {
+     "t": 505.27,
+     "dur": 9.14,
+     "kind": "trap",
+     "png": "d03_06.png",
+     "title": "EXAM TRAP"
+    }
+   ]
+  },
   "s04_rule225_vii_viii": {
-   "start": 219.42000000000002,
+   "start": 514.4100000000001,
    "audio_seconds": 91.9,
    "segment_seconds": 93.7,
    "states": [
     {
-     "t": 219.42,
+     "t": 514.41,
      "dur": 12.46,
      "kind": "story",
      "png": "s04_00.png",
      "title": "Scene 4 · Delivery period 24 mahine"
     },
     {
-     "t": 231.88,
+     "t": 526.87,
      "dur": 13.63,
      "kind": "rule",
      "png": "s04_01.png",
      "title": "Rule 225(vii) · Cost plus contracts"
     },
     {
-     "t": 245.51,
+     "t": 540.5,
      "dur": 9.26,
      "kind": "add",
      "png": "s04_02.png",
      "title": ""
     },
     {
-     "t": 254.77,
+     "t": 549.76,
      "dur": 12.04,
      "kind": "rule",
      "png": "s04_03.png",
      "title": "Rule 225(viii) · Price Variation Clause (PVC)"
     },
     {
-     "t": 266.81,
+     "t": 561.8,
      "dur": 8.87,
      "kind": "add",
      "png": "s04_04.png",
      "title": ""
     },
     {
-     "t": 275.68,
+     "t": 570.67,
      "dur": 11.31,
      "kind": "add",
      "png": "s04_05.png",
      "title": ""
     },
     {
-     "t": 286.99,
+     "t": 581.98,
      "dur": 15.15,
      "kind": "add",
      "png": "s04_06.png",
      "title": ""
     },
     {
-     "t": 302.14,
+     "t": 597.13,
      "dur": 6.29,
      "kind": "add",
      "png": "s04_07.png",
      "title": ""
     },
     {
-     "t": 308.43,
+     "t": 603.42,
      "dur": 4.69,
      "kind": "hook",
      "png": "s04_08.png",
@@ -239,55 +400,125 @@
     }
    ]
   },
+  "d04_pvc_math": {
+   "start": 608.1100000000001,
+   "audio_seconds": 99.43,
+   "segment_seconds": 101.23,
+   "states": [
+    {
+     "t": 608.11,
+     "dur": 10.25,
+     "kind": "story",
+     "png": "d04_00.png",
+     "title": "Deep dive 4 · PVC worked example"
+    },
+    {
+     "t": 618.36,
+     "dur": 10.91,
+     "kind": "rule",
+     "png": "d04_01.png",
+     "title": "PVC formula (typical, Appendix 11 style)"
+    },
+    {
+     "t": 629.26,
+     "dur": 14.74,
+     "kind": "add",
+     "png": "d04_02.png",
+     "title": ""
+    },
+    {
+     "t": 644.0,
+     "dur": 14.88,
+     "kind": "add",
+     "png": "d04_03.png",
+     "title": ""
+    },
+    {
+     "t": 658.88,
+     "dur": 6.73,
+     "kind": "rule",
+     "png": "d04_04.png",
+     "title": "Ab sub-clauses lagao"
+    },
+    {
+     "t": 665.61,
+     "dur": 6.26,
+     "kind": "add",
+     "png": "d04_05.png",
+     "title": ""
+    },
+    {
+     "t": 671.87,
+     "dur": 6.19,
+     "kind": "add",
+     "png": "d04_06.png",
+     "title": ""
+    },
+    {
+     "t": 678.07,
+     "dur": 14.2,
+     "kind": "add",
+     "png": "d04_07.png",
+     "title": ""
+    },
+    {
+     "t": 692.27,
+     "dur": 17.07,
+     "kind": "trap",
+     "png": "d04_08.png",
+     "title": "YAAD RAKHO"
+    }
+   ]
+  },
   "s05_rule225_ix_xiii": {
-   "start": 313.12,
+   "start": 709.3400000000001,
    "audio_seconds": 68.14,
    "segment_seconds": 69.94,
    "states": [
     {
-     "t": 313.12,
+     "t": 709.34,
      "dur": 10.43,
      "kind": "story",
      "png": "s05_00.png",
      "title": "Scene 5 · ₹30 lakh civil work close-out"
     },
     {
-     "t": 323.55,
+     "t": 719.77,
      "dur": 7.01,
      "kind": "rule",
      "png": "s05_01.png",
      "title": "Rule 225(ix) & (x)"
     },
     {
-     "t": 330.56,
+     "t": 726.78,
      "dur": 7.47,
      "kind": "add",
      "png": "s05_02.png",
      "title": ""
     },
     {
-     "t": 338.03,
+     "t": 734.25,
      "dur": 11.15,
      "kind": "rule",
      "png": "s05_03.png",
      "title": "Rule 225(xi) & (xii)"
     },
     {
-     "t": 349.18,
+     "t": 745.4,
      "dur": 9.68,
      "kind": "add",
      "png": "s05_04.png",
      "title": ""
     },
     {
-     "t": 358.85,
+     "t": 755.07,
      "dur": 18.69,
      "kind": "update",
      "png": "s05_05.png",
      "title": "Rule 225(xiii) · [AMENDED 02.04.2019]"
     },
     {
-     "t": 377.54,
+     "t": 773.76,
      "dur": 5.52,
      "kind": "trap",
      "png": "s05_06.png",
@@ -295,62 +526,118 @@
     }
    ]
   },
+  "d05_field_clauses": {
+   "start": 779.2800000000002,
+   "audio_seconds": 90.6,
+   "segment_seconds": 92.39999999999999,
+   "states": [
+    {
+     "t": 779.28,
+     "dur": 3.56,
+     "kind": "story",
+     "png": "d05_00.png",
+     "title": "Deep dive 5 · Practice mein"
+    },
+    {
+     "t": 782.84,
+     "dur": 12.36,
+     "kind": "rule",
+     "png": "d05_01.png",
+     "title": "Rule 225(ix) — Taxes"
+    },
+    {
+     "t": 795.2,
+     "dur": 17.91,
+     "kind": "add",
+     "png": "d05_02.png",
+     "title": "Rule 225(x) — Lump sum safeguards"
+    },
+    {
+     "t": 813.1,
+     "dur": 15.57,
+     "kind": "rule",
+     "png": "d05_03.png",
+     "title": "Rule 225(xi) & (xii)"
+    },
+    {
+     "t": 828.67,
+     "dur": 13.63,
+     "kind": "add",
+     "png": "d05_04.png",
+     "title": ""
+    },
+    {
+     "t": 842.3,
+     "dur": 19.31,
+     "kind": "rule",
+     "png": "d05_05.png",
+     "title": "Rule 225(xiii) — Audit copies"
+    },
+    {
+     "t": 861.61,
+     "dur": 10.07,
+     "kind": "hook",
+     "png": "d05_06.png",
+     "title": "3 NUMBERS · 3 CLAUSES"
+    }
+   ]
+  },
   "s06_rule225_xiv_xv_fmc2026": {
-   "start": 383.06,
+   "start": 871.6800000000002,
    "audio_seconds": 98.86,
    "segment_seconds": 100.66,
    "states": [
     {
-     "t": 383.06,
+     "t": 871.68,
      "dur": 11.1,
      "kind": "story",
      "png": "s06_00.png",
      "title": "Scene 6 · Chairs ka supply contract"
     },
     {
-     "t": 394.16,
+     "t": 882.78,
      "dur": 13.68,
      "kind": "rule",
      "png": "s06_01.png",
      "title": "Rule 225(xiv) · Material variation"
     },
     {
-     "t": 407.84,
+     "t": 896.46,
      "dur": 10.15,
      "kind": "add",
      "png": "s06_02.png",
      "title": "Rule 225(xv) · Extension"
     },
     {
-     "t": 417.99,
+     "t": 906.61,
      "dur": 19.76,
      "kind": "update",
      "png": "s06_03.png",
      "title": "LATEST · DoE OM dated 29.04.2026 — Force Majeure Clause"
     },
     {
-     "t": 437.75,
+     "t": 926.37,
      "dur": 7.61,
      "kind": "add",
      "png": "s06_04.png",
      "title": ""
     },
     {
-     "t": 445.36,
+     "t": 933.98,
      "dur": 18.02,
      "kind": "add",
      "png": "s06_05.png",
      "title": "West Asia situation"
     },
     {
-     "t": 463.38,
+     "t": 952.0,
      "dur": 9.08,
      "kind": "add",
      "png": "s06_06.png",
      "title": ""
     },
     {
-     "t": 472.46,
+     "t": 961.08,
      "dur": 11.26,
      "kind": "answer",
      "png": "s06_07.png",
@@ -358,62 +645,118 @@
     }
    ]
   },
+  "d06_variation_fm": {
+   "start": 972.3400000000001,
+   "audio_seconds": 99.67,
+   "segment_seconds": 101.47,
+   "states": [
+    {
+     "t": 972.34,
+     "dur": 5.74,
+     "kind": "story",
+     "png": "d06_00.png",
+     "title": "Deep dive 6 · Variation ≠ extension ≠ FM"
+    },
+    {
+     "t": 978.08,
+     "dur": 18.54,
+     "kind": "rule",
+     "png": "d06_01.png",
+     "title": "Rule 225(xiv) — Material variation"
+    },
+    {
+     "t": 996.63,
+     "dur": 16.12,
+     "kind": "rule",
+     "png": "d06_02.png",
+     "title": "Rule 225(xv) — Do tarah ke extension"
+    },
+    {
+     "t": 1012.75,
+     "dur": 7.42,
+     "kind": "add",
+     "png": "d06_03.png",
+     "title": ""
+    },
+    {
+     "t": 1020.16,
+     "dur": 20.64,
+     "kind": "rule",
+     "png": "d06_04.png",
+     "title": "FM procedure (DoE Procurement Manuals)"
+    },
+    {
+     "t": 1040.8,
+     "dur": 23.54,
+     "kind": "update",
+     "png": "d06_05.png",
+     "title": "DoE OM 29.04.2026 — timeline par"
+    },
+    {
+     "t": 1064.34,
+     "dur": 9.47,
+     "kind": "trap",
+     "png": "d06_06.png",
+     "title": "EXAM TRAP"
+    }
+   ]
+  },
   "s07_rule225_xvi_xix": {
-   "start": 483.72,
+   "start": 1073.8100000000002,
    "audio_seconds": 58.03,
    "segment_seconds": 59.830000000000005,
    "states": [
     {
-     "t": 483.72,
+     "t": 1073.81,
      "dur": 10.33,
      "kind": "story",
      "png": "s07_00.png",
      "title": "Scene 7 · Laptops 20 din late, 2 kharab"
     },
     {
-     "t": 494.05,
+     "t": 1084.14,
      "dur": 13.62,
      "kind": "rule",
      "png": "s07_01.png",
      "title": "Rule 225(xvi) · Liquidated Damages"
     },
     {
-     "t": 507.67,
+     "t": 1097.76,
      "dur": 6.28,
      "kind": "add",
      "png": "s07_02.png",
      "title": "Rule 225(xvii) · Warranty"
     },
     {
-     "t": 513.94,
+     "t": 1104.03,
      "dur": 7.8,
      "kind": "add",
      "png": "s07_03.png",
      "title": "Rule 225(xviii) · Right to reject"
     },
     {
-     "t": 521.74,
+     "t": 1111.83,
      "dur": 8.46,
      "kind": "add",
      "png": "s07_04.png",
      "title": "Rule 225(xix) · Time bar"
     },
     {
-     "t": 530.2,
+     "t": 1120.29,
      "dur": 3.7,
      "kind": "quiz",
      "png": "s07_05.png",
      "title": "QUICK QUIZ"
     },
     {
-     "t": 533.9,
+     "t": 1123.99,
      "dur": 3.7,
      "kind": "answer",
      "png": "s07_06.png",
      "title": "ANSWER"
     },
     {
-     "t": 537.61,
+     "t": 1127.7,
      "dur": 5.94,
      "kind": "hook",
      "png": "s07_07.png",
@@ -421,48 +764,104 @@
     }
    ]
   },
+  "d07_ld_math": {
+   "start": 1133.64,
+   "audio_seconds": 103.68,
+   "segment_seconds": 105.48,
+   "states": [
+    {
+     "t": 1133.64,
+     "dur": 16.39,
+     "kind": "story",
+     "png": "d07_00.png",
+     "title": "Deep dive 7 · LD ka hisaab"
+    },
+    {
+     "t": 1150.03,
+     "dur": 18.94,
+     "kind": "rule",
+     "png": "d07_01.png",
+     "title": "LD calculation (illustrative)"
+    },
+    {
+     "t": 1168.96,
+     "dur": 14.24,
+     "kind": "add",
+     "png": "d07_02.png",
+     "title": "‘Shall’ ka matlab"
+    },
+    {
+     "t": 1183.2,
+     "dur": 21.77,
+     "kind": "rule",
+     "png": "d07_03.png",
+     "title": "Warranty ↔ Performance security"
+    },
+    {
+     "t": 1204.98,
+     "dur": 10.44,
+     "kind": "add",
+     "png": "d07_04.png",
+     "title": "Rule 225(xviii)"
+    },
+    {
+     "t": 1215.41,
+     "dur": 17.63,
+     "kind": "add",
+     "png": "d07_05.png",
+     "title": "Rule 225(xix) · 3 saal kyun"
+    },
+    {
+     "t": 1233.04,
+     "dur": 6.08,
+     "kind": "hook",
+     "png": "d07_06.png",
+     "title": "EXAM HOOK"
+    }
+   ]
+  },
   "s08_rule226": {
-   "start": 543.5500000000001,
+   "start": 1239.1200000000001,
    "audio_seconds": 55.94,
    "segment_seconds": 57.74,
    "states": [
     {
-     "t": 543.55,
+     "t": 1239.12,
      "dur": 12.06,
      "kind": "story",
      "png": "s08_00.png",
      "title": "Scene 8 · BG register"
     },
     {
-     "t": 555.61,
+     "t": 1251.18,
      "dur": 8.63,
      "kind": "rule",
      "png": "s08_01.png",
      "title": "Rule 226 · Management of contracts"
     },
     {
-     "t": 564.24,
+     "t": 1259.81,
      "dur": 13.52,
      "kind": "add",
      "png": "s08_02.png",
      "title": ""
     },
     {
-     "t": 577.76,
+     "t": 1273.33,
      "dur": 4.55,
      "kind": "story",
      "png": "s08_03.png",
      "title": "Scene 8 · BG register"
     },
     {
-     "t": 582.31,
+     "t": 1277.88,
      "dur": 11.78,
      "kind": "update",
      "png": "s08_04.png",
      "title": "LATEST · e-Bank Guarantee (DoE OM 05.08.2022)"
     },
     {
-     "t": 594.09,
+     "t": 1289.66,
      "dur": 7.2,
      "kind": "trap",
      "png": "s08_05.png",
@@ -470,76 +869,139 @@
     }
    ]
   },
+  "d08_bg_lifecycle": {
+   "start": 1296.8600000000001,
+   "audio_seconds": 100.1,
+   "segment_seconds": 101.89999999999999,
+   "states": [
+    {
+     "t": 1296.86,
+     "dur": 4.17,
+     "kind": "story",
+     "png": "d08_00.png",
+     "title": "Deep dive 8 · BG lifecycle"
+    },
+    {
+     "t": 1301.03,
+     "dur": 19.09,
+     "kind": "rule",
+     "png": "d08_01.png",
+     "title": "1 · Receipt"
+    },
+    {
+     "t": 1320.12,
+     "dur": 12.48,
+     "kind": "add",
+     "png": "d08_02.png",
+     "title": "2 · Custody (Rule 226(ii))"
+    },
+    {
+     "t": 1332.6,
+     "dur": 17.87,
+     "kind": "add",
+     "png": "d08_03.png",
+     "title": "3 · Monthly review"
+    },
+    {
+     "t": 1350.46,
+     "dur": 11.05,
+     "kind": "add",
+     "png": "d08_04.png",
+     "title": "4 · Release"
+    },
+    {
+     "t": 1361.51,
+     "dur": 15.14,
+     "kind": "rule",
+     "png": "d08_05.png",
+     "title": "Monthly review checklist"
+    },
+    {
+     "t": 1376.65,
+     "dur": 13.36,
+     "kind": "trap",
+     "png": "d08_06.png",
+     "title": "MAT BHOOLO"
+    },
+    {
+     "t": 1390.01,
+     "dur": 8.75,
+     "kind": "hook",
+     "png": "d08_07.png",
+     "title": "PRACTICAL TIP"
+    }
+   ]
+  },
   "s09_rule227_arbitration_guidelines": {
-   "start": 601.2900000000001,
+   "start": 1398.7600000000002,
    "audio_seconds": 87.89,
    "segment_seconds": 89.69,
    "states": [
     {
-     "t": 601.29,
+     "t": 1398.76,
      "dur": 9.18,
      "kind": "story",
      "png": "s09_00.png",
      "title": "Scene 9 · ₹12 crore ka claim"
     },
     {
-     "t": 610.47,
+     "t": 1407.94,
      "dur": 19.58,
      "kind": "rule",
      "png": "s09_01.png",
      "title": "Rule 227 · Legal advice on disputes"
     },
     {
-     "t": 630.05,
+     "t": 1427.52,
      "dur": 15.4,
      "kind": "update",
      "png": "s09_02.png",
      "title": "DoE OM F.1/2/2024-PPD dt 03.06.2024 — Arbitration & Mediation (Domestic Public Procurement)"
     },
     {
-     "t": 645.45,
+     "t": 1442.92,
      "dur": 7.3,
      "kind": "add",
      "png": "s09_03.png",
      "title": ""
     },
     {
-     "t": 652.75,
+     "t": 1450.22,
      "dur": 10.82,
      "kind": "add",
      "png": "s09_04.png",
      "title": ""
     },
     {
-     "t": 663.57,
+     "t": 1461.04,
      "dur": 2.92,
      "kind": "add",
      "png": "s09_05.png",
      "title": ""
     },
     {
-     "t": 666.5,
+     "t": 1463.97,
      "dur": 6.51,
      "kind": "add",
      "png": "s09_06.png",
      "title": ""
     },
     {
-     "t": 673.0,
+     "t": 1470.47,
      "dur": 8.5,
      "kind": "add",
      "png": "s09_07.png",
      "title": ""
     },
     {
-     "t": 681.5,
+     "t": 1478.97,
      "dur": 2.19,
      "kind": "add",
      "png": "s09_08.png",
      "title": ""
     },
     {
-     "t": 683.69,
+     "t": 1481.16,
      "dur": 7.29,
      "kind": "hook",
      "png": "s09_09.png",
@@ -547,121 +1009,254 @@
     }
    ]
   },
-  "s10_rule227a_recap": {
-   "start": 690.98,
-   "audio_seconds": 95.83,
-   "segment_seconds": 102.42999999999999,
+  "d09_dispute_ladder": {
+   "start": 1488.4500000000003,
+   "audio_seconds": 97.25,
+   "segment_seconds": 99.05,
    "states": [
     {
-     "t": 690.98,
+     "t": 1488.45,
+     "dur": 3.54,
+     "kind": "story",
+     "png": "d09_00.png",
+     "title": "Deep dive 9 · Dispute ladder"
+    },
+    {
+     "t": 1491.99,
+     "dur": 8.14,
+     "kind": "rule",
+     "png": "d09_01.png",
+     "title": "Dispute ladder (DoE OM 03.06.2024 + Rule 227)"
+    },
+    {
+     "t": 1500.13,
+     "dur": 14.59,
+     "kind": "add",
+     "png": "d09_02.png",
+     "title": ""
+    },
+    {
+     "t": 1514.72,
+     "dur": 24.7,
+     "kind": "add",
+     "png": "d09_03.png",
+     "title": ""
+    },
+    {
+     "t": 1539.43,
+     "dur": 12.96,
+     "kind": "add",
+     "png": "d09_04.png",
+     "title": ""
+    },
+    {
+     "t": 1552.39,
+     "dur": 22.26,
+     "kind": "rule",
+     "png": "d09_05.png",
+     "title": "Award ke baad"
+    },
+    {
+     "t": 1574.65,
+     "dur": 12.85,
+     "kind": "trap",
+     "png": "d09_06.png",
+     "title": "EXAM TRAP"
+    }
+   ]
+  },
+  "s10_rule227a_recap": {
+   "start": 1587.5000000000002,
+   "audio_seconds": 95.83,
+   "segment_seconds": 97.63,
+   "states": [
+    {
+     "t": 1587.5,
      "dur": 11.64,
      "kind": "story",
      "png": "s10_00.png",
      "title": "Scene 10 · Award challenge kiya — payment?"
     },
     {
-     "t": 702.62,
+     "t": 1599.14,
      "dur": 18.26,
      "kind": "update",
      "png": "s10_01.png",
      "title": "Rule 227A(i) · Arbitration Awards [inserted 29.10.2021]"
     },
     {
-     "t": 720.88,
+     "t": 1617.4,
      "dur": 7.44,
      "kind": "add",
      "png": "s10_02.png",
      "title": ""
     },
     {
-     "t": 728.32,
+     "t": 1624.84,
      "dur": 9.13,
      "kind": "add",
      "png": "s10_03.png",
      "title": ""
     },
     {
-     "t": 737.45,
+     "t": 1633.97,
      "dur": 6.97,
      "kind": "add",
      "png": "s10_04.png",
      "title": ""
     },
     {
-     "t": 744.42,
+     "t": 1640.94,
      "dur": 2.84,
      "kind": "recap",
      "png": "s10_05.png",
      "title": "RAPID RECAP — pause karke khud jawab do"
     },
     {
-     "t": 747.26,
+     "t": 1643.78,
      "dur": 4.19,
      "kind": "add",
      "png": "s10_06.png",
      "title": ""
     },
     {
-     "t": 751.45,
+     "t": 1647.97,
      "dur": 2.43,
      "kind": "add",
      "png": "s10_07.png",
      "title": ""
     },
     {
-     "t": 753.89,
+     "t": 1650.41,
      "dur": 2.57,
      "kind": "add",
      "png": "s10_08.png",
      "title": ""
     },
     {
-     "t": 756.46,
+     "t": 1652.98,
      "dur": 3.99,
      "kind": "add",
      "png": "s10_09.png",
      "title": ""
     },
     {
-     "t": 760.45,
+     "t": 1656.97,
      "dur": 2.71,
      "kind": "add",
      "png": "s10_10.png",
      "title": ""
     },
     {
-     "t": 763.15,
+     "t": 1659.67,
      "dur": 2.03,
      "kind": "add",
      "png": "s10_11.png",
      "title": ""
     },
     {
-     "t": 765.18,
+     "t": 1661.7,
      "dur": 3.25,
      "kind": "add",
      "png": "s10_12.png",
      "title": ""
     },
     {
-     "t": 768.43,
+     "t": 1664.95,
      "dur": 3.65,
      "kind": "add",
      "png": "s10_13.png",
      "title": ""
     },
     {
-     "t": 772.08,
+     "t": 1668.6,
      "dur": 3.58,
      "kind": "add",
      "png": "s10_14.png",
      "title": ""
     },
     {
-     "t": 775.66,
-     "dur": 17.75,
-     "kind": "outro",
+     "t": 1672.18,
+     "dur": 12.95,
+     "kind": "hook",
      "png": "s10_15.png",
+     "title": "BASE WALKTHROUGH COMPLETE ✔"
+    }
+   ]
+  },
+  "d10_227a_master": {
+   "start": 1685.13,
+   "audio_seconds": 99.41,
+   "segment_seconds": 106.00999999999999,
+   "states": [
+    {
+     "t": 1685.13,
+     "dur": 10.64,
+     "kind": "story",
+     "png": "d10_00.png",
+     "title": "Deep dive 10 · Rule 227A numbers"
+    },
+    {
+     "t": 1695.77,
+     "dur": 9.56,
+     "kind": "rule",
+     "png": "d10_01.png",
+     "title": "Rule 227A worked"
+    },
+    {
+     "t": 1705.34,
+     "dur": 6.91,
+     "kind": "add",
+     "png": "d10_02.png",
+     "title": ""
+    },
+    {
+     "t": 1712.24,
+     "dur": 15.21,
+     "kind": "add",
+     "png": "d10_03.png",
+     "title": ""
+    },
+    {
+     "t": 1727.45,
+     "dur": 10.89,
+     "kind": "add",
+     "png": "d10_04.png",
+     "title": "Outcome"
+    },
+    {
+     "t": 1738.34,
+     "dur": 8.17,
+     "kind": "recap",
+     "png": "d10_05.png",
+     "title": "CHAPTER 8 MASTER SHEET"
+    },
+    {
+     "t": 1746.51,
+     "dur": 20.45,
+     "kind": "add",
+     "png": "d10_06.png",
+     "title": "Numbers"
+    },
+    {
+     "t": 1766.96,
+     "dur": 10.16,
+     "kind": "add",
+     "png": "d10_07.png",
+     "title": "‘Shall’ (mandatory)"
+    },
+    {
+     "t": 1777.12,
+     "dur": 4.71,
+     "kind": "add",
+     "png": "d10_08.png",
+     "title": "‘Ordinarily avoid’"
+    },
+    {
+     "t": 1781.84,
+     "dur": 9.3,
+     "kind": "outro",
+     "png": "d10_09.png",
      "title": "Chapter 8 complete ✔"
     }
    ]
