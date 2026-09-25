@@ -32,16 +32,35 @@ function toSpeech(s) {
 
 /* ---- over-long single beats are split at sentence boundaries ---- */
 const BEAT_LIMIT = 1380;
-function splitSpeech(t) {
-  if (t.length <= BEAT_LIMIT) return [t];
-  const sentences = t.split(/(?<=\.\s)/);
+/* Pack units of text until adding the next would exceed BEAT_LIMIT. */
+function pack(parts) {
   const out = [];
   let cur = '';
-  sentences.forEach(function (s) {
+  parts.forEach(function (s) {
     if (cur && (cur + s).length > BEAT_LIMIT) { out.push(cur.trim()); cur = s; }
     else cur += s;
   });
   if (cur.trim()) out.push(cur.trim());
+  return out;
+}
+/* A single beat longer than BEAT_LIMIT is split at sentence boundaries; if a
+   resulting piece is still too long (a verbatim rule that is one long
+   semicolon-separated sentence, e.g. Rule 175(1)), fall back to semicolons,
+   then commas, then a hard character cut. Without this the greedy packer can
+   emit a clip above the 1500-character speech limit. */
+function splitSpeech(t) {
+  if (t.length <= BEAT_LIMIT) return [t];
+  const out = [];
+  pack(t.split(/(?<=\.\s)/)).forEach(function (piece) {
+    if (piece.length <= BEAT_LIMIT) { out.push(piece); return; }
+    pack(piece.split(/(?<=; )/)).forEach(function (p2) {
+      if (p2.length <= BEAT_LIMIT) { out.push(p2); return; }
+      pack(p2.split(/(?<=, )/)).forEach(function (p3) {
+        if (p3.length <= BEAT_LIMIT) { out.push(p3); return; }
+        for (let i = 0; i < p3.length; i += BEAT_LIMIT) out.push(p3.slice(i, i + BEAT_LIMIT));
+      });
+    });
+  });
   return out.length ? out : [t];
 }
 

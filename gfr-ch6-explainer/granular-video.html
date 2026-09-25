@@ -204,13 +204,27 @@ function toSpeech(s){
     .replace(/\s+/g,' ').trim();
 }
 const BEAT_LIMIT = 1380;   /* a single beat is split at sentence boundaries above this */
-function splitSpeech(t){
-  if(t.length<=BEAT_LIMIT) return [t];
-  const sentences=t.split(/(?<=\.\s)/); const out=[]; let cur='';
-  sentences.forEach(s=>{
+function packParts(parts){
+  const out=[]; let cur='';
+  parts.forEach(s=>{
     if(cur && (cur+s).length>BEAT_LIMIT){ out.push(cur.trim()); cur=s; } else cur+=s;
   });
   if(cur.trim()) out.push(cur.trim());
+  return out;
+}
+function splitSpeech(t){
+  if(t.length<=BEAT_LIMIT) return [t];
+  const out=[];
+  packParts(t.split(/(?<=\.\s)/)).forEach(piece=>{
+    if(piece.length<=BEAT_LIMIT){ out.push(piece); return; }
+    packParts(piece.split(/(?<=; )/)).forEach(p2=>{
+      if(p2.length<=BEAT_LIMIT){ out.push(p2); return; }
+      packParts(p2.split(/(?<=, )/)).forEach(p3=>{
+        if(p3.length<=BEAT_LIMIT){ out.push(p3); return; }
+        for(let i=0;i<p3.length;i+=BEAT_LIMIT) out.push(p3.slice(i,i+BEAT_LIMIT));
+      });
+    });
+  });
   return out.length?out:[t];
 }
 function esc(t){ return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
