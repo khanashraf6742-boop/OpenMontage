@@ -413,8 +413,8 @@ no manual timestamps.
 **Total requirement: 124 clips / 114,699 characters of narration.**
 
 ### Progress
-- **60 of 124 clips recorded (48%)** — Rules **142–169 fully recorded** (28 of 67 rules), i.e. the
-  whole of *Procurement of Goods* up to and including maintenance contracts.
+- **70 of 124 clips recorded (56%)** — Rules **142–172(1) fully recorded** (31 of 67 rules), i.e. the
+  whole of *Procurement of Goods* up to and including advance payment to supplier.
 - Clip filenames are URL-safe: Rule 172(1) is `v-172-1`, Rule 175(1) is `v-175-1`.
 - Verified after each batch: studio segments live, 0 mapping mismatches, all clips serving HTTP 200.
 - `data/_reconcile.sh` recovers a rewound local branch without force-pushing (this sandbox
@@ -434,8 +434,8 @@ no manual timestamps.
 | 4 | 157, 158, 159(×4), 160(×2), 161(×2) | 10 | ✅ **DONE** |
 | 5 | 161(×2), 162(×4), 163(×2), 164(×2) | 10 | ✅ **DONE** |
 | 6 | 164(×2), 165, 166(×2), 167(×3), 168, 169 | 10 | ✅ **DONE** |
-| 7 | 170(×5), 171(×3), 172(1)(×2) | 10 | ⏳ next |
-| 8 | 172(2), 173(×7), 174(×2) | 10 | ⏳ |
+| 7 | 170(×5), 171(×3), 172(1)(×2) | 10 | ✅ **DONE** |
+| 8 | 172(2), 173(×7), 174(×2) | 10 | ⏳ next |
 | 9 | 175(1)(×4), 175(2), 176(×2), 177(×2), 178 | 10 | ⏳ |
 | 10 | 179, 180, 181, 182, 183(×2), 184, 185, 186(×2) | 10 | ⏳ |
 | 11 | 187, 188, 189, 190, 191, 192(×2), 193, 194(×2) | 10 | ⏳ |
