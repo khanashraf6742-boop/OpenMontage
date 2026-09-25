@@ -7,8 +7,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent; PROJ = HERE.parent; REPO = PROJ.parents[1]
 sys.path.insert(0, str(REPO)); sys.path.insert(0, str(HERE))
 from lib.checkpoint import write_checkpoint, init_project  # noqa
-from narration import SEGMENTS  # noqa
-from beats import BEATS  # noqa
+from compose import SEGMENTS, BEATS  # noqa (interleaved base + deep-dive segments)
 
 PID = "gfr-chapter-8-contract-management"; PIPE = "animated-explainer"; PB = "flat-motion-graphics"
 if not (PROJ / "project.json").exists():

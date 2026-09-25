@@ -5,8 +5,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent; PROJ = HERE.parent
 sys.path.insert(0, str(HERE))
-from narration import SEGMENTS  # noqa
-from beats import BEATS  # noqa
+from compose import SEGMENTS, BEATS  # noqa (interleaved base + deep-dive segments)
 
 tl = json.loads((PROJ / "renders" / "timeline.json").read_text(encoding="utf-8")); E = html.escape
 QUIZ = [
@@ -17,6 +16,10 @@ QUIZ = [
  {"q": "DoE OM 03.06.2024 ke anusaar arbitration clause (agar rakha jaye) kis dispute value tak restrict hogi?", "opts": ["₹1 crore", "₹5 crore", "₹10 crore", "₹25 crore"], "a": 2, "why": "Disputes valued less than ₹10 crore; above that only after reasoned decision approved by Secretary / officer not below JS (MD for CPSE/PSB)."},
  {"q": "Contract close hone ke kitne saal baad koi claim entertain nahi hoga? (Rule 225(xix))", "opts": ["1 saal", "2 saal", "3 saal", "5 saal"], "a": 2, "why": "No claim after 3 years from the date of contract closure (unless contract specifies otherwise)."},
  {"q": "Arbitral award challenge karne par kitna % amount contractor ko (BG ke against) dena hai? (Rule 227A)", "opts": ["50%", "60%", "75%", "100%"], "a": 2, "why": "75% of award amount (including interest up to award date) against bank guarantee — DoE OM 29.10.2021."},
+ {"q": "Performance security kab tak valid rehni chahiye? (Rule 171)", "opts": ["Delivery tak", "Warranty khatam hone tak", "Sab obligations (warranty samet) ke 60 din baad tak", "1 saal"], "a": 2, "why": "Rule 171: performance security valid for 60 days beyond completion of all contractual obligations including warranty."},
+ {"q": "Supplier ki apni deri par extension diya — LD aur denial clause ka kya hoga?", "opts": ["Dono nahi", "LD lagega, denial clause bhi", "Sirf denial clause", "Sirf LD"], "a": 1, "why": "Supplier-default extension: formal amendment with LD and denial clause; force-majeure extension: neither."},
+ {"q": "Arbitral award ko court mein challenge karne ki statutory samay-seema? (A&C Act 1996 s.34)", "opts": ["30 din", "3 mahine (+ max 30 din condonable)", "1 saal", "Koi seema nahi"], "a": 1, "why": "Section 34(3): three months from receipt of award; court may condone a further 30 days, not thereafter."},
+ {"q": "Typical Manual clause par ₹10 lakh ke goods 20 din late — LD kitna? (0.5%/week or part, max 10%)", "opts": ["₹10,000", "₹15,000", "₹20,000", "₹1,00,000"], "a": 1, "why": "20 days = 3 weeks (part counts) × 0.5% = 1.5% = ₹15,000. Illustrative; actual rate per contract."},
  {"q": "DoE OM 29.04.2026 (Force Majeure) ke tahat obligations kitne mahine extend ho sakti hain?", "opts": ["1–2 months", "2–4 months", "6 months", "Unlimited"], "a": 1, "why": "≥2 and ≤4 months, case-to-case, no cost/penalty, for obligations falling due on/after 28.02.2026; party must not be in default as on 27.02.2026."},
 ]
 cards = []
@@ -66,8 +69,8 @@ footer{{padding:20px 28px;font-size:13px;color:#555}}@media(max-width:1000px){{m
 <video id="v" controls preload="metadata" src="gfr_ch8_contract_management_captioned.mp4"><track kind="subtitles" srclang="hi" label="Hinglish (Devanagari)" src="captions_hinglish.vtt"></video>
 <a class="dl" href="gfr_ch8_contract_management_captioned.mp4" download>⬇ Download video (captioned)</a><a class="dl" href="gfr_ch8_contract_management.mp4" download style="background:var(--navy)">⬇ Download clean video</a><a class="dl" href="captions_hinglish.srt" download style="background:var(--teal)">⬇ SRT</a>
 <div class="chaps">{chap_html}</div></div>
-<aside><h2>Rule cards (synced)</h2><label style="font-size:13px"><input type="checkbox" id="all"> Saare cards dikhao</label><div id="cards">{cards_html}</div></aside>
-<section><h2>Self-check quiz (8 questions)</h2>{quiz_html}<p id="score"></p></section>
+<aside><h2>Rule cards (synced)</h2><p style="font-size:12px;color:#666;margin:0 0 6px">Base chapters + <span style="background:#118A8A;color:#fff;border-radius:4px;padding:1px 5px">DEEP DIVE</span> explainers interleaved</p><label style="font-size:13px"><input type="checkbox" id="all"> Saare cards dikhao</label><div id="cards">{cards_html}</div></aside>
+<section><h2>Self-check quiz (12 questions)</h2>{quiz_html}<p id="score"></p></section>
 <section><h2>Validation status legend</h2>
 <p><span class="tag cur">CURRENT</span>Rule text as in DoE compilation up to 31.01.2026 — Rules 224–227A, all 19 clauses of Rule 225.</p>
 <p><span class="tag amd">AMENDED / LATEST</span>Rule 225(xiii) (audit copies ≥₹25 lakh, DoE OM 02.04.2019) · Rule 227A (inserted 29.10.2021) · e-BG (DoE OM 05.08.2022) · DoE OM 03.06.2024 (arbitration/mediation) · DoE OM 29.04.2026 (Force Majeure — West Asia).</p>

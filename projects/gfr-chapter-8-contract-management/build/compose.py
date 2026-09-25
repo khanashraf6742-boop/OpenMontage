@@ -9,8 +9,18 @@ from fontTools.ttLib import TTFont
 
 HERE = Path(__file__).resolve().parent; PROJ = HERE.parent
 sys.path.insert(0, str(HERE))
-from narration import SEGMENTS  # noqa
-from beats import BEATS  # noqa
+from narration import SEGMENTS as BASE  # noqa
+from beats import BEATS as BASE_BEATS  # noqa
+from narration_deep import DEEP  # noqa
+from beats_deep import DEEP_BEATS  # noqa
+
+# Interleave: base segment i, then its deep dive. chip = 0-based chapter index shown in the top bar.
+SEGMENTS, BEATS = [], {}
+for i, b in enumerate(BASE):
+    SEGMENTS.append(dict(b, chip=i, deep=False)); BEATS[b["id"]] = BASE_BEATS[b["id"]]
+    for d in DEEP:
+        if d["after"] == b["id"]:
+            SEGMENTS.append(dict(d, chip=i, deep=True)); BEATS[d["id"]] = dict(DEEP_BEATS[d["id"]], image=BASE_BEATS[b["id"]]["image"])
 
 ASSETS, RENDERS = PROJ / "assets", PROJ / "renders"
 FRAMES, SEGDIR = RENDERS / "frames", RENDERS / "segments"
@@ -99,9 +109,19 @@ ROADMAP = [(None, ["Rule 224 — Contract karne ka authority (Art. 299(1))", "Ru
            ("Latest overlays covered", ["DoE OM 03.06.2024 — Arbitration & Mediation guidelines", "DoE OM 29.04.2026 — Force Majeure (West Asia)"])]
 
 
-def draw_topbar(d, seg_i):
+DEEP_AGENDA = [(None, ["1 Article 299 kyun + glossary (LoA, EMD, PS, BG, LD, PVC, FM)", "2 Vague → precise clauses; standard forms & advice",
+                       "3 Document decision tree; LoA → contract in 21 days", "4 PVC formula — worked example", "5 Taxes, lump sum, materials, Govt property, audit copies — in practice",
+                       "6 Variation vs extension vs FM; denial clause; OM 29.04.2026 timeline", "7 LD maths; warranty ↔ performance security; 3-year bar",
+                       "8 Bank Guarantee lifecycle + monthly checklist", "9 Dispute ladder; s.34 timeline; ₹10 crore rule", "10 Rule 227A worked example + master sheet"])]
+
+
+def draw_topbar(d, seg_i, deep=False):
     d.rectangle((0, 0, W, 64), fill=NAVY)
-    face("semi", 24).draw(d, (48, 17), "GFR 2017  ·  CHAPTER 8  ·  CONTRACT MANAGEMENT", WHITE)
+    f = face("semi", 24); label = "GFR 2017  ·  CHAPTER 8  ·  CONTRACT MANAGEMENT"; f.draw(d, (48, 17), label, WHITE)
+    if deep:
+        x = 48 + f.length(label) + 24
+        d.rounded_rectangle((x, 14, x + 160, 50), radius=10, fill=TEAL); fb = face("semi", 20)
+        fb.draw(d, (x + 80 - fb.length("DEEP DIVE") / 2, 20), "DEEP DIVE", WHITE)
     x = W - 48 - 10 * 46
     for i in range(10):
         on = i == seg_i
@@ -190,10 +210,73 @@ def draw_title(img, image_path, title, sub, lines, caption, zoom):
             fc.draw(d, (144, 840), wl, (255, 226, 190))
 
 
+COLORS = {"navy": NAVY, "teal": TEAL, "saffron": SAFFRON, "red": RED, "green": GREEN, "ink": INK}
+
+
+def draw_diagram(img, box, spec):
+    """Pillow-drawn explainer diagram in the left panel."""
+    shadow_card(img, box, fill=WHITE); d = ImageDraw.Draw(img); x0, y0, x1, y1 = box
+    d.rounded_rectangle((x0, y0, x1, y0 + 56), radius=22, fill=NAVY); d.rectangle((x0, y0 + 30, x1, y0 + 56), fill=NAVY)
+    face("semi", 24).draw(d, (x0 + 24, y0 + 14), spec.get("title", ""), WHITE)
+    ix0, iy0, ix1, iy1 = x0 + 24, y0 + 74, x1 - 24, y1 - 20; iw, ih = ix1 - ix0, iy1 - iy0
+    t = spec["type"]
+    if t in ("flow", "ladder", "cycle"):
+        items = spec.get("nodes") or spec.get("steps"); n = len(items)
+        gap = 14; bh = min(74, (ih - gap * (n - 1)) // n); fs = 22 if bh >= 60 else 19; fb = face("bodyb", fs)
+        for i, it in enumerate(items):
+            text, col = (it if isinstance(it, tuple) else (it, "navy")); col = COLORS.get(col, NAVY)
+            indent = (i * iw // (n * 3)) if t == "ladder" else 0
+            bx0, by0 = ix0 + indent, iy0 + i * (bh + gap); bx1, by1 = ix1, by0 + bh
+            d.rounded_rectangle((bx0, by0, bx1, by1), radius=12, fill=(250, 248, 243), outline=col, width=3)
+            d.rectangle((bx0, by0 + 8, bx0 + 8, by1 - 8), fill=col)
+            lines = wrap(fb, text, bx1 - bx0 - 40)[:2]; ty = by0 + (bh - len(lines) * (fs + 6)) / 2
+            for ln in lines:
+                fb.draw(d, (bx0 + 24, ty), ln, INK); ty += fs + 6
+            if i < n - 1 and t != "cycle":
+                cx = bx0 + 40; d.line((cx, by1, cx, by1 + gap), fill=MUTED, width=3); d.polygon([(cx - 6, by1 + gap - 6), (cx + 6, by1 + gap - 6), (cx, by1 + gap)], fill=MUTED)
+        if t == "cycle":
+            fa = face("body", 18); fa.draw(d, (ix1 - fa.length("↻ repeats every month") - 6, iy1 - 4), "↻ repeats every month", TEAL)
+    elif t == "table":
+        rows = spec["rows"]; n = len(rows); rh = min(56, ih // n); fs = 20 if rh >= 44 else 17
+        fk, fv = face("bodyb", fs), face("body", fs); kw = int(iw * spec.get("key_ratio", 0.34))
+        for i, (k, v) in enumerate(rows):
+            ry = iy0 + i * rh
+            if i % 2 == 0:
+                d.rectangle((ix0, ry, ix1, ry + rh), fill=(247, 244, 238))
+            kl = wrap(fk, k, kw - 16)[:2]; vl = wrap(fv, v, iw - kw - 16)[:2]
+            ky = ry + (rh - len(kl) * (fs + 4)) / 2; vy = ry + (rh - len(vl) * (fs + 4)) / 2
+            for ln in kl:
+                fk.draw(d, (ix0 + 8, ky), ln, NAVY); ky += fs + 4
+            for ln in vl:
+                fv.draw(d, (ix0 + kw + 8, vy), ln, INK); vy += fs + 4
+        d.line((ix0 + kw, iy0, ix0 + kw, iy0 + n * rh), fill=(220, 214, 200), width=2)
+    elif t == "timeline":
+        pts = spec["points"]; n = len(pts); ly = iy0 + ih // 2 - 10; xs = [ix0 + 40 + i * (iw - 80) // max(1, n - 1) for i in range(n)]
+        a, b = spec.get("span", (0, 0)); d.rounded_rectangle((xs[a] - 6, ly - 14, xs[b] + 6, ly + 14), radius=14, fill=(255, 231, 205))
+        d.line((ix0 + 10, ly, ix1 - 10, ly), fill=NAVY, width=4)
+        fl, fs2 = face("bodyb", 19), face("body", 18)
+        for i, (top, bottom) in enumerate(pts):
+            d.ellipse((xs[i] - 10, ly - 10, xs[i] + 10, ly + 10), fill=SAFFRON if a <= i <= b else NAVY, outline=WHITE, width=3)
+            for j, ln in enumerate(wrap(fl, top, 180)[:2]):
+                fl.draw(d, (xs[i] - fl.length(ln) / 2, ly - 58 + j * 22), ln, NAVY)
+            for j, ln in enumerate(wrap(fs2, bottom, 180)[:3]):
+                fs2.draw(d, (xs[i] - fs2.length(ln) / 2, ly + 24 + j * 22), ln, INK)
+        if spec.get("note"):
+            fn = face("bodyb", 20); fn.draw(d, (ix0 + (iw - fn.length(spec["note"])) / 2, iy1 - 34), spec["note"], SAFFRON)
+    elif t == "calc":
+        lines = spec["lines"]; n = len(lines); lh = min(64, ih // n); fs = 24 if lh >= 56 else 20; fb = face("bodyb", fs)
+        for i, (text, col) in enumerate(lines):
+            col = COLORS.get(col, INK); ly = iy0 + i * lh
+            if col in (GREEN, SAFFRON):
+                d.rounded_rectangle((ix0, ly - 4, ix1, ly + lh - 10), radius=10, fill=(232, 247, 238) if col == GREEN else (255, 240, 224))
+            for j, ln in enumerate(wrap(fb, text, iw - 32)[:2]):
+                fb.draw(d, (ix0 + 16, ly + 4 + j * (fs + 4)), ln, col)
+
+
 FOOT = "Text: GFR 2017 as updated up to 31.01.2026 (DoE) · Educational summary — verify with the original"
 
 
-def render_state(seg_i, state, out_path):
+def render_state(seg_i, state, out_path, deep=False):
     img = Image.new("RGBA", (W, H), IVORY + (255,)); k = state["kind"]; imgpath = ASSETS / "images" / state["image"]
     if k in ("title", "outro"):
         o = state["overlay"]; draw_title(img, imgpath, o["title"], o.get("sub") or "Rules 224 – 227A", o["lines"], o.get("caption"), state["zoom"])
@@ -201,12 +284,17 @@ def render_state(seg_i, state, out_path):
     d = ImageDraw.Draw(img)
     for gx in range(0, W, 120):
         d.line((gx, 68, gx, H), fill=(238, 232, 220), width=1)
-    draw_topbar(d, seg_i)
-    paste_illustration(img, imgpath, (56, 104, 896, 576), state["zoom"])
+    draw_topbar(d, seg_i, deep)
+    if state.get("diagram"):
+        draw_diagram(img, (56, 104, 896, 576), state["diagram"])
+    else:
+        paste_illustration(img, imgpath, (56, 104, 896, 576), state["zoom"])
     st = state["story"]; draw_story_panel(img, (56, 604, 896, 1024), st["scene"], st["lines"])
     c = state["card"]
     if c:
         draw_rule_card(img, (944, 104, W - 56, 1024), c["title"], c["blocks"], c.get("accent", NAVY))
+    elif deep:
+        draw_rule_card(img, (944, 104, W - 56, 1024), "Deep dives · Roadmap", DEEP_AGENDA, TEAL)
     else:
         draw_rule_card(img, (944, 104, W - 56, 1024), "Chapter 8 · Roadmap", ROADMAP, TEAL)
     if state.get("overlay"):
@@ -224,8 +312,10 @@ def audio_duration(path):
 def build_states(seg_i, seg, dur_audio):
     sheet = BEATS[seg["id"]]; text = seg["text"]; n = len(sheet["beats"]); last = seg_i == len(SEGMENTS) - 1
     seg_total = LEAD_IN + dur_audio + (6.0 if last else TAIL)
-    states, story, card, blocks = [], {"scene": "", "lines": []}, None, []
+    states, story, card, blocks, diagram = [], {"scene": "", "lines": []}, None, [], None
     for bi, b in enumerate(sheet["beats"]):
+        if b.get("diagram"):
+            diagram = b["diagram"]
         t = 0.0 if b["anchor"] is None else LEAD_IN + dur_audio * text.find(b["anchor"]) / len(text) - ANCHOR_LEAD
         if states and t <= states[-1]["t"] + 0.8:
             t = states[-1]["t"] + 0.8
@@ -246,7 +336,7 @@ def build_states(seg_i, seg, dur_audio):
         states.append({"t": t, "kind": k if k in ("title", "outro") else "scene", "image": b.get("image", sheet["image"]),
                        "zoom": 1.0 + 0.07 * bi / max(1, n - 1), "story": dict(story),
                        "card": None if card is None else {"title": card["title"], "blocks": [(s, list(l)) for s, l in card["blocks"]], "accent": card["accent"]},
-                       "overlay": overlay, "beat": b})
+                       "overlay": overlay, "beat": b, "diagram": diagram})
     for i, s in enumerate(states):
         s["dur"] = max(1.0, (states[i + 1]["t"] if i + 1 < len(states) else seg_total) - s["t"])
     return states, seg_total
@@ -288,7 +378,7 @@ def main():
         for i, s in enumerate(states):
             s["png"] = FRAMES / f"{short}_{i:02}.png"
             if active:
-                render_state(seg_i, s, s["png"])
+                render_state(seg["chip"], s, s["png"], seg.get("deep", False))
         if active:
             ffmpeg_segment(seg, states, seg_total, audio, SEGDIR / f"{short}.mp4"); print("rendered", short, flush=True)
         sents = [x.strip() for x in re.split(r"(?<=[।?!])\s+", seg["text"]) if x.strip()]; tl, cur = len(seg["text"]), 0

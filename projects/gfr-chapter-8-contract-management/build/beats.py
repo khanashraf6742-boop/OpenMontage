@@ -147,9 +147,8 @@ BEATS = {
   {"anchor": "सात — BG review", "kind": "add", "lines": ["7. BG review? → monthly; 3-month window · R.226(ii)"]},
   {"anchor": "आठ — challenged award", "kind": "add", "lines": ["8. Challenged award? → 75% against BG · R.227A"]},
   {"anchor": "नौ — arbitration guideline", "kind": "add", "lines": ["9. Arbitration guideline? → disputes < ₹10 crore · DoE OM 03.06.2024"]},
-  {"anchor": "Chapter 8 complete", "kind": "outro", "title": "Chapter 8 complete ✔", "sub": "RULES 224 – 227A  ·  SAB CLAUSES COVERED",
-   "lines": ["Sources: GFR 2017 — DoE compilation updated up to 31.01.2026", "DoE OMs: 02.04.2019 · 29.10.2021 · 05.08.2022 · 03.06.2024 · 29.04.2026", "Always verify with the latest compilation at doe.gov.in"],
-   "caption": "Padhte rahiye, verify karte rahiye."},
+  {"anchor": "Chapter 8 complete", "kind": "hook", "title": "BASE WALKTHROUGH COMPLETE ✔",
+   "lines": ["Rules 224 – 227A — sab clauses cover", "Aage: Deep dive 10 — Rule 227A numbers + Chapter 8 master sheet"], "caption": "Sources: GFR 2017 (DoE compilation up to 31.01.2026) + DoE OMs"},
  ]},
 }
 
