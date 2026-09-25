@@ -410,11 +410,13 @@ delivered in batches (the speech tool allows 10 clips per turn).
 greedy algorithm on the same data, so on-screen captions stay in sync with the audio automatically —
 no manual timestamps.
 
-**Total requirement: 124 clips / 114,699 characters of narration.**
+**Total requirement: 123 clips / 114,576 characters of narration.**
 
 ### Progress
-- **80 of 124 clips recorded (65%)** — Rules **142–174 fully recorded** (34 of 67 rules). Rule 173
-  (transparency, competition, fairness) is recorded in full across seven clips.
+- **81 of 123 clips recorded (66%)** — Rules **142–174 fully recorded** (34 of 67 rules); Batch 9
+  (Rules 175–179) is part-recorded: `v-175-1`, `v-175-2`, `v-176`, `v-176b`, `v-177`, `v-177b`,
+  `v-178` are done, with `v-175-1b`, `v-175-1c` (holds pre-fix content) and `v-179` outstanding.
+- Rule 173 (transparency, competition, fairness) is recorded in full across seven clips.
 - Clip filenames are URL-safe: Rule 172(1) is `v-172-1`, Rule 175(1) is `v-175-1`.
 - Verified after each batch: studio segments live, 0 mapping mismatches, all clips serving HTTP 200.
 - `data/_reconcile.sh` recovers a rewound local branch without force-pushing (this sandbox
@@ -436,11 +438,11 @@ no manual timestamps.
 | 6 | 164(×2), 165, 166(×2), 167(×3), 168, 169 | 10 | ✅ **DONE** |
 | 7 | 170(×5), 171(×3), 172(1)(×2) | 10 | ✅ **DONE** |
 | 8 | 172(2), 173(×7), 174(×2) | 10 | ✅ **DONE** |
-| 9 | 175(1)(×4), 175(2), 176(×2), 177(×2), 178 | 10 | ⏳ next |
-| 10 | 179, 180, 181, 182, 183(×2), 184, 185, 186(×2) | 10 | ⏳ |
-| 11 | 187, 188, 189, 190, 191, 192(×2), 193, 194(×2) | 10 | ⏳ |
-| 12 | 194, 195, 196, 197, 198, 199, 200, 201(×2), 202 | 10 | ⏳ |
-| 13 | 203, 204, 205, 206 | 4 | ⏳ |
+| 9 | 175(1)(×3), 175(2), 176(×2), 177(×2), 178, 179 | 10 | ⏳ next |
+| 10 | 180, 181, 182, 183(×2), 184, 185, 186(×2), 187 | 10 | ⏳ |
+| 11 | 188, 189, 190, 191, 192(×2), 193, 194(×3) | 10 | ⏳ |
+| 12 | 195, 196, 197, 198, 199, 200, 201(×2), 202, 203 | 10 | ⏳ |
+| 13 | 204, 205, 206 | 3 | ⏳ |
 
 *Batch boundaries are clip boundaries, not rule boundaries — a rule whose narration spans a
 greedy-split point simply continues into the next batch (Rules 151, 161, 164, 194).*
@@ -448,6 +450,7 @@ greedy-split point simply continues into the next batch (Rules 151, 161, 164, 19
 ## How to verify a batch
 ```bash
 node data/_gen.js <batch-no> 10   # prints the exact clip texts + rule/clip counts
+node data/_verify.js             # checks mapping + that every referenced clip file exists
 ls audio/v-*.mp3 | wc -l           # clip count so far
 ```
 Then append the rule → clip-file mapping to `data/studio.js`. The player re-derives the beat
