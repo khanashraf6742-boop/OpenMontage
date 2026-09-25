@@ -94,7 +94,8 @@ console.log('\n===== BATCH ' + batch + ' (clips ' + (start + 1) + '-' + (start +
    rule split across two batches keeps one stable sequence. */
 const used = {};
 const files = clips.map(function (c) {
-  const base = 'v-' + c.rule;
+  /* filenames must stay URL-safe: Rule 172(1) becomes v-172-1, not v-172(1) */
+  const base = 'v-' + String(c.rule).replace(/[()]/g, '-').replace(/-+/g, '-').replace(/-+$/, '');
   used[base] = (used[base] || 0) + 1;
   const suffix = used[base] === 1 ? '' : 'bcdefghijklmnopqrstuvwxyz'[used[base] - 2];
   return 'audio/' + base + suffix + '.mp3';
