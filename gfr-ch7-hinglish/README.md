@@ -146,6 +146,21 @@ Scope note: the video carries the story mode — every rule 207–223 is narrate
 numbers and the Rule 218 amendment on screen. The clause-by-clause breakdown (verbatim text,
 notes, provisos, exceptions of all 17 rules) lives in the Deep Dive tab of the interactive app.
 
+## 📄 Printable handout (PDF)
+
+`assets/handout/gfr-ch7-handout.pdf` — **28 pages, A4, Roman Hinglish** (`tools/make-handout.py`):
+
+| Page | Content |
+|---|---|
+| 1 | scope, the numbers table (thresholds, frequencies, 10% / 25%), forms & registers, how to use it |
+| 2 | chapter map (17 rules, 6 groups) + the **coverage ledger** — 48 clauses, 24 notes, 1 proviso, 13 exceptions, 1 amendment |
+| 3-19 | one page per rule: hook, clause tree with SHALL/MAY tags, Notes, Proviso, Exceptions, amendment detail, exam traps, revision one-liners |
+| 20-24 | self test — all **46** MCQs from the app's Exam Drill |
+| 25-28 | answers with the rule citation for each, plus sources and the validation gate |
+
+The trap list, key points and questions are exported from the app (`QUIZ`, `QUIZ_EXTRA`,
+`RULE_INDEX`) at build time, so the handout can never drift from the interactive version.
+
 ## Interactive features
 
 - **▶ Watch** — plays like a video: narrated comic panels, timed speech bubbles, live captions,
@@ -176,7 +191,9 @@ assets/video/         gfr-ch7-complete.mp4 (32:54) · gfr-ch7-final.mp4 (12:03) 
                       gfr-ch7-deepdive.mp4 (20:50) · 480p compact versions ·
                       Roman + हिंदी .srt sidecars · gfr-ch7-final-hi.mp4 (soft subs)
 video.html            video player page with clickable chapters
+assets/handout/       gfr-ch7-handout.pdf (28 pages, A4, printable revision sheet)
 tools/                city-style.py, export-narration.js, mp3tool.py, set-timing.py,
+                      make-handout.py (PDF via fpdf2),
                       make-video.py (--lang hi for the Devanagari render),
                       make-video-deep.py, make-complete-video.py, make-compact.py,
                       make-srt-hindi.py

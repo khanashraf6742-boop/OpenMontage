@@ -1,0 +1,554 @@
+[
+  {
+    "tag": "Scope",
+    "q": "Chapter 7 of GFR 2017 (Inventory Management) spans which rules?",
+    "a": [
+      "Rules 142–206",
+      "Rules 207–223",
+      "Rules 224–227A",
+      "Rules 228–245"
+    ],
+    "c": 1,
+    "e": "Chapter 7 = Inventory Management, Rules <b>207 to 223</b> (17 rules). Chapter 6 is procurement (142–206) and Chapter 8 is contract management (224–227A)."
+  },
+  {
+    "tag": "Rule 213",
+    "q": "Fixed assets should be physically verified —",
+    "a": [
+      "at least once a year",
+      "once in two years",
+      "once in three years",
+      "only at the time of audit"
+    ],
+    "c": 0,
+    "e": "Rule 213(1): fixed assets should be verified <b>at least once in a year</b>, the inventory is ordinarily maintained at site, and the outcome is recorded in the corresponding register."
+  },
+  {
+    "tag": "Rule 213",
+    "q": "Physical verification of consumable goods and materials must be done —",
+    "a": [
+      "every month",
+      "at least once a year",
+      "once in three years",
+      "only when a new officer takes charge"
+    ],
+    "c": 1,
+    "e": "Rule 213(2): a physical verification of <b>all</b> consumable goods and materials should be undertaken <b>at least once in a year</b>."
+  },
+  {
+    "tag": "Rule 215",
+    "q": "A library holds 30,000 volumes. Complete physical verification should be done —",
+    "a": [
+      "every year",
+      "at least once in three years",
+      "once in five years",
+      "only by sample"
+    ],
+    "c": 1,
+    "e": "Rule 215(i): ≤20,000 volumes → every year; <b>more than 20,000 and up to 50,000 → at least once in three years</b>; more than 50,000 → sample verification at intervals of not more than three years."
+  },
+  {
+    "tag": "Rule 215",
+    "q": "Library with more than 50,000 volumes — the rule requires —",
+    "a": [
+      "no verification needed",
+      "complete verification every year",
+      "sample physical verification at intervals of not more than 3 years",
+      "verification once in 10 years"
+    ],
+    "c": 2,
+    "e": "Rule 215(i): for libraries having more than 50,000 volumes, <b>sample physical verification at intervals of not more than three years</b>. If it reveals unusual/unreasonable shortages, complete verification is done."
+  },
+  {
+    "tag": "Rule 215",
+    "q": "Loss of how many volumes per 1,000 volumes issued/consulted in a year may be taken as reasonable?",
+    "a": [
+      "2",
+      "5",
+      "10",
+      "25"
+    ],
+    "c": 1,
+    "e": "Rule 215(ii): loss of <b>five volumes per one thousand volumes</b> issued/consulted in a year is reasonable — provided it is not attributable to dishonesty or negligence. A book valued above <b>₹1,000</b>, and rare books, must always be investigated."
+  },
+  {
+    "tag": "Rule 214",
+    "q": "A material remaining in stock for over ___ shall generally be considered surplus.",
+    "a": [
+      "6 months",
+      "1 year",
+      "3 years",
+      "5 years"
+    ],
+    "c": 1,
+    "e": "Rule 214 note: a material remaining in stock for <b>over a year</b> shall generally be considered surplus <b>unless adequate reasons to treat it otherwise exist</b> — it is rebuttable, not automatic."
+  },
+  {
+    "tag": "Rule 218",
+    "q": "Current threshold: surplus/obsolete goods of assessed residual value above ____ must go by advertised tender or public auction.",
+    "a": [
+      "₹1 lakh",
+      "₹2 lakh",
+      "₹4 lakh",
+      "₹10 lakh"
+    ],
+    "c": 2,
+    "e": "Rule 218(i): above <b>₹4,00,000</b>. This was enhanced from ₹2,00,000 by <b>DoE OM No. F.1/3/2024-PPD dated 10.07.2024</b>."
+  },
+  {
+    "tag": "Rule 219",
+    "q": "Bid security in disposal through advertised tender is ordinarily —",
+    "a": [
+      "2% of assessed/reserved price",
+      "5% of assessed/reserved price",
+      "10% of assessed/reserved price",
+      "25% of assessed/reserved price"
+    ],
+    "c": 2,
+    "e": "Rule 219: bid security shall <b>ordinarily be 10%</b> of the assessed or reserved price, and the amount must be stated in the bidding document."
+  },
+  {
+    "tag": "Rule 220",
+    "q": "On acceptance of a bid at auction, earnest money to be taken on the spot is —",
+    "a": [
+      "not less than 10% of bid value",
+      "not less than 25% of bid value",
+      "not less than 50% of bid value",
+      "the full bid value"
+    ],
+    "c": 1,
+    "e": "Rule 220: earnest money of <b>not less than 25% of the bid value</b>, immediately on the spot, in cash or by Deposit-at-Call-Receipt (DACR)."
+  },
+  {
+    "tag": "Rule 220",
+    "q": "The auction team must compulsorily include —",
+    "a": [
+      "an officer of the Internal Finance Wing",
+      "the head of the Ministry",
+      "a CAG officer",
+      "the supplier of the goods"
+    ],
+    "c": 0,
+    "e": "Rule 220: the composition of the auction team is decided by the competent authority, but it <b>must include an officer of the Internal Finance Wing</b> of the department."
+  },
+  {
+    "tag": "Rule 218",
+    "q": "Expired medicines, food grain and ammunition should be —",
+    "a": [
+      "sold by advertised tender",
+      "sold at scrap value",
+      "disposed of or destroyed immediately by a suitable mode",
+      "stored for three years, then sold"
+    ],
+    "c": 2,
+    "e": "Rule 218(iii): such hazardous or unfit-for-human-consumption goods shall be disposed of or destroyed <b>immediately</b>, to avoid health hazard, environmental pollution and misuse."
+  },
+  {
+    "tag": "Rule 212",
+    "q": "Hire charges for a fixed asset hired out to a contractor are calculated on the basis of —",
+    "a": [
+      "current market rate",
+      "replacement cost",
+      "historical cost",
+      "insurance value"
+    ],
+    "c": 2,
+    "e": "Rule 212: calculation of charges recoverable from local bodies, contractors and others shall be based on the <b>historical cost</b>."
+  },
+  {
+    "tag": "Rule 221",
+    "q": "Sale at scrap value is permitted —",
+    "a": [
+      "whenever the item is old",
+      "after tender and auction attempts fail, with competent authority approval in consultation with the Finance division",
+      "only with Ministry of Finance approval in every case",
+      "never — scrap sale is prohibited"
+    ],
+    "c": 1,
+    "e": "Rule 221: only <b>after</b> attempts through advertised tender or auction fail, and with <b>competent authority approval in consultation with the Finance division</b>."
+  },
+  {
+    "tag": "Rule 223",
+    "q": "Under Rule 223, formal sanction of the competent authority for a loss is required —",
+    "a": [
+      "only if the loss exceeds ₹1 lakh",
+      "only when the accounts are actually adjusted",
+      "even though no formal correction or adjustment in Government accounts is involved",
+      "only when fraud is suspected"
+    ],
+    "c": 2,
+    "e": "Rule 223(1) uses the exact phrase <b>“even though no formal correction or adjustment in Government accounts is involved”</b>. This is a classic exam trap."
+  },
+  {
+    "tag": "Rule 223",
+    "q": "How many heads are prescribed for losses NOT due to depreciation?",
+    "a": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "c": 2,
+    "e": "Rule 223(3): <b>five</b> heads — theft or fraud; neglect; anticipated losses on obsolescence/excess purchases; damage; and Force Majeure (fire, flood, enemy action). Losses <b>due to</b> depreciation have <b>four</b> heads."
+  },
+  {
+    "tag": "Rule 216",
+    "q": "On transfer of the Officer-in-charge of stores, the handing-over statement is signed by —",
+    "a": [
+      "the relieving officer only",
+      "the relieved officer only",
+      "both the relieving and the relieved officer, with date, each retaining a copy",
+      "the Head of Department only"
+    ],
+    "c": 2,
+    "e": "Rule 216: the statement with all relevant details is prepared and signed <b>with date by both</b> the relieving and relieved officer, and <b>each retains a copy</b>."
+  },
+  {
+    "tag": "Rule 217",
+    "q": "The report of stores for disposal is prepared in —",
+    "a": [
+      "Form GFR-10",
+      "Form GFR-11",
+      "Form GFR-22",
+      "Form GFR-13"
+    ],
+    "c": 0,
+    "e": "Rule 217(iii): report of stores for disposal → <b>Form GFR-10</b>. The sale account after disposal → <b>Form GFR-11</b> (Rule 222)."
+  },
+  {
+    "tag": "Rule 208",
+    "q": "Under Rule 208(1)(ii), which inspection is mandatory on every receipt from a private supplier?",
+    "a": [
+      "Technical inspection",
+      "Visual inspection",
+      "Third-party audit",
+      "CAG inspection"
+    ],
+    "c": 1,
+    "e": "Rule 208(1)(ii): sab materials ko counted/measured/weighed karne ke saath <b>visual inspection</b> zaroori hai. Technical inspection \"where required\" hai."
+  },
+  {
+    "tag": "Rule 209",
+    "q": "Rule 209(iv) deals with —",
+    "a": [
+      "Auction of scrap",
+      "Partial compliance of an indent and alternative materials",
+      "Write-off of losses",
+      "Hiring out of fixed assets"
+    ],
+    "c": 1,
+    "e": "Rule 209(iv): agar poora indent pura na ho sake to jitna uplabdh hai utna supply karein aur <b>indentor ki copy mein entry</b> karein; alternative material ho to document mein zikr kiya ja sakta hai."
+  },
+  {
+    "tag": "Rule 211",
+    "q": "The Note under Rule 211 permits Ministries/Departments to —",
+    "a": [
+      "Delete columns from GFR-22",
+      "Supplement the prescribed forms with additional details",
+      "Replace GFR-23 with any private format",
+      "Skip library book registers"
+    ],
+    "c": 1,
+    "e": "Note: \"These forms can be supplemented with additional details by Ministries/Departments as required.\" Supplement karna hai, replace karna nahi."
+  },
+  {
+    "tag": "Rule 213",
+    "q": "Rule 213(3)(iii) routes discrepancies identified during verification to —",
+    "a": [
+      "Rules 33 to 38",
+      "Rules 217 to 221",
+      "Rules 142 to 206",
+      "The Central Vigilance Commission"
+    ],
+    "c": 0,
+    "e": "Rule 213(3)(iii) specifically says action \"in accordance with provision given in <b>Rule 33 to 38</b>\" — Chapter 2 ka loss-reporting framework."
+  },
+  {
+    "tag": "Rule 215",
+    "q": "A rare book goes missing from a government library. Under Rule 215(ii) —",
+    "a": [
+      "It is covered by the 5 per 1,000 concession",
+      "It must invariably be investigated, irrespective of value",
+      "No action is needed if the library has over 50,000 volumes",
+      "It can be written off by the librarian"
+    ],
+    "c": 1,
+    "e": "Rule 215(ii): <b>rare books irrespective of value</b> aur ₹1,000 se upar ki kitaab — dono ki loss ki investigation <b>invariably</b> hogi."
+  },
+  {
+    "tag": "Rule 217",
+    "q": "Under Rule 217(iii), when the book value cannot be worked out, —",
+    "a": [
+      "The item cannot be disposed of",
+      "The original purchase price may be utilised",
+      "The reserved price is deemed nil",
+      "Ministry of Finance approval is mandatory in every case"
+    ],
+    "c": 1,
+    "e": "Rule 217(iii) khud fallback deta hai: \"the original purchase price of the goods in question <b>may be utilised</b>\"."
+  },
+  {
+    "tag": "Rule 219",
+    "q": "How many \"broad steps\" are listed in Rule 219(i)?",
+    "a": [
+      "6",
+      "7",
+      "9",
+      "11"
+    ],
+    "c": 2,
+    "e": "Rule 219(i) mein <b>nau</b> steps hain (a) se (i) — aakhri step unsuccessful bidders ki bid security return karna hai."
+  },
+  {
+    "tag": "Rule 219",
+    "q": "If the highest acceptable responsive bidder cannot lift the entire quantity, the balance may be offered to the next bidder(s) —",
+    "a": [
+      "At any price they quote",
+      "At the price offered by the highest acceptable bidder",
+      "Only after Ministry of Finance approval",
+      "Only through a fresh tender"
+    ],
+    "c": 1,
+    "e": "Rule 219(ii)(e): remaining quantity next higher bidder(s) ko <b>usi price par</b> offer ki ja sakti hai jo highest acceptable bidder ne offer kiya tha."
+  },
+  {
+    "tag": "Rule 220",
+    "q": "Earnest money at the fall of the hammer must be —",
+    "a": [
+      "Not less than 10% of bid value, within 7 days",
+      "Not less than 25% of bid value, immediately on the spot",
+      "The full bid value within 24 hours",
+      "At the discretion of the auctioneer"
+    ],
+    "c": 1,
+    "e": "Rule 220(iv): <b>not less than 25%</b> of bid value, <b>immediately on the spot</b>, cash ya DACR (Ministry/Department ke favour mein)."
+  },
+  {
+    "tag": "Rule 221",
+    "q": "Which two conditions must be satisfied before selling at scrap value?",
+    "a": [
+      "Cabinet approval and CAG concurrence",
+      "Prior failure of advertised tender/auction attempts; then competent authority approval in consultation with Finance division",
+      "Ministry of Finance approval and re-tender",
+      "Public notice and police verification"
+    ],
+    "c": 1,
+    "e": "Rule 221: pehle tender+auction dono try karne honge, phir <b>competent authority approval in consultation with Finance division</b>."
+  },
+  {
+    "tag": "Rule 222",
+    "q": "The sale account under Rule 222 must be signed by —",
+    "a": [
+      "The Head of the Department",
+      "The officer who supervised the sale or auction",
+      "The successful bidder",
+      "The Pay and Accounts Officer"
+    ],
+    "c": 1,
+    "e": "Rule 222: Form GFR-11, \"duly signed by the <b>officer who supervised the sale or auction</b>\"."
+  },
+  {
+    "tag": "Rule 223",
+    "q": "Which of these is NOT one of the four heads for losses due to depreciation?",
+    "a": [
+      "Normal fluctuation of market prices",
+      "Normal wear and tear",
+      "Losses due to theft or fraud",
+      "Negligence after purchase"
+    ],
+    "c": 2,
+    "e": "Theft/fraud <b>Rule 223(3)(i)</b> mein aata hai — non-depreciation wala head. Depreciation ke 4 heads hain: market fluctuation, wear & tear, lack of foresight in purchases, negligence after purchase."
+  },
+  {
+    "tag": "Rule 218",
+    "q": "Rule 218(iii) covers expired medicines, food grain and ammunition. The rule requires —",
+    "a": [
+      "Sale by advertised tender above ₹4 lakh",
+      "Immediate disposal or destruction by a suitable mode",
+      "Storage for three years before disposal",
+      "Transfer to another department"
+    ],
+    "c": 1,
+    "e": "Rule 218(iii): hazardous ya human consumption ke layak na hone wale items ko <b>turant</b> dispose/destroy karein — health hazard, pollution aur misuse se bachne ke liye. Threshold in par lagta nahi."
+  },
+  {
+    "tag": "Rule 218",
+    "q": "Security-sensitive items such as currency, stamps, receipt books and security press must be disposed of/destroyed keeping in view —",
+    "a": [
+      "Only the highest price realised",
+      "Rules relating to official secrets as well as financial prudence",
+      "The E-Waste (Management) Rules, 2022",
+      "The Public Records Act, 1993"
+    ],
+    "c": 1,
+    "e": "Rule 218(iv): \"to ensure compliance with rules relating to <b>official secrets</b> as well as <b>financial prudence</b>\"."
+  },
+  {
+    "tag": "Rule 208",
+    "q": "Under Rule 208(1)(ii), which inspection is mandatory on every receipt from a private supplier?",
+    "a": [
+      "Technical inspection",
+      "Visual inspection",
+      "Third-party audit",
+      "CAG inspection"
+    ],
+    "c": 1,
+    "e": "Rule 208(1)(ii): sab materials ko counted/measured/weighed karne ke saath <b>visual inspection</b> zaroori hai. Technical inspection \"where required\" hai."
+  },
+  {
+    "tag": "Rule 209",
+    "q": "Rule 209(iv) deals with —",
+    "a": [
+      "Auction of scrap",
+      "Partial compliance of an indent and alternative materials",
+      "Write-off of losses",
+      "Hiring out of fixed assets"
+    ],
+    "c": 1,
+    "e": "Rule 209(iv): agar poora indent pura na ho sake to jitna uplabdh hai utna supply karein aur <b>indentor ki copy mein entry</b> karein; alternative material ho to document mein zikr kiya ja sakta hai."
+  },
+  {
+    "tag": "Rule 211",
+    "q": "The Note under Rule 211 permits Ministries/Departments to —",
+    "a": [
+      "Delete columns from GFR-22",
+      "Supplement the prescribed forms with additional details",
+      "Replace GFR-23 with any private format",
+      "Skip library book registers"
+    ],
+    "c": 1,
+    "e": "Note: \"These forms can be supplemented with additional details by Ministries/Departments as required.\" Supplement karna hai, replace karna nahi."
+  },
+  {
+    "tag": "Rule 213",
+    "q": "Rule 213(3)(iii) routes discrepancies identified during verification to —",
+    "a": [
+      "Rules 33 to 38",
+      "Rules 217 to 221",
+      "Rules 142 to 206",
+      "The Central Vigilance Commission"
+    ],
+    "c": 0,
+    "e": "Rule 213(3)(iii) specifically says action \"in accordance with provision given in <b>Rule 33 to 38</b>\" — Chapter 2 ka loss-reporting framework."
+  },
+  {
+    "tag": "Rule 215",
+    "q": "A rare book goes missing from a government library. Under Rule 215(ii) —",
+    "a": [
+      "It is covered by the 5 per 1,000 concession",
+      "It must invariably be investigated, irrespective of value",
+      "No action is needed if the library has over 50,000 volumes",
+      "It can be written off by the librarian"
+    ],
+    "c": 1,
+    "e": "Rule 215(ii): <b>rare books irrespective of value</b> aur ₹1,000 se upar ki kitaab — dono ki loss ki investigation <b>invariably</b> hogi."
+  },
+  {
+    "tag": "Rule 217",
+    "q": "Under Rule 217(iii), when the book value cannot be worked out, —",
+    "a": [
+      "The item cannot be disposed of",
+      "The original purchase price may be utilised",
+      "The reserved price is deemed nil",
+      "Ministry of Finance approval is mandatory in every case"
+    ],
+    "c": 1,
+    "e": "Rule 217(iii) khud fallback deta hai: \"the original purchase price of the goods in question <b>may be utilised</b>\"."
+  },
+  {
+    "tag": "Rule 219",
+    "q": "How many \"broad steps\" are listed in Rule 219(i)?",
+    "a": [
+      "6",
+      "7",
+      "9",
+      "11"
+    ],
+    "c": 2,
+    "e": "Rule 219(i) mein <b>nau</b> steps hain (a) se (i) — aakhri step unsuccessful bidders ki bid security return karna hai."
+  },
+  {
+    "tag": "Rule 219",
+    "q": "If the highest acceptable responsive bidder cannot lift the entire quantity, the balance may be offered to the next bidder(s) —",
+    "a": [
+      "At any price they quote",
+      "At the price offered by the highest acceptable bidder",
+      "Only after Ministry of Finance approval",
+      "Only through a fresh tender"
+    ],
+    "c": 1,
+    "e": "Rule 219(ii)(e): remaining quantity next higher bidder(s) ko <b>usi price par</b> offer ki ja sakti hai jo highest acceptable bidder ne offer kiya tha."
+  },
+  {
+    "tag": "Rule 220",
+    "q": "Earnest money at the fall of the hammer must be —",
+    "a": [
+      "Not less than 10% of bid value, within 7 days",
+      "Not less than 25% of bid value, immediately on the spot",
+      "The full bid value within 24 hours",
+      "At the discretion of the auctioneer"
+    ],
+    "c": 1,
+    "e": "Rule 220(iv): <b>not less than 25%</b> of bid value, <b>immediately on the spot</b>, cash ya DACR (Ministry/Department ke favour mein)."
+  },
+  {
+    "tag": "Rule 221",
+    "q": "Which two conditions must be satisfied before selling at scrap value?",
+    "a": [
+      "Cabinet approval and CAG concurrence",
+      "Prior failure of advertised tender/auction attempts; then competent authority approval in consultation with Finance division",
+      "Ministry of Finance approval and re-tender",
+      "Public notice and police verification"
+    ],
+    "c": 1,
+    "e": "Rule 221: pehle tender+auction dono try karne honge, phir <b>competent authority approval in consultation with Finance division</b>."
+  },
+  {
+    "tag": "Rule 222",
+    "q": "The sale account under Rule 222 must be signed by —",
+    "a": [
+      "The Head of the Department",
+      "The officer who supervised the sale or auction",
+      "The successful bidder",
+      "The Pay and Accounts Officer"
+    ],
+    "c": 1,
+    "e": "Rule 222: Form GFR-11, \"duly signed by the <b>officer who supervised the sale or auction</b>\"."
+  },
+  {
+    "tag": "Rule 223",
+    "q": "Which of these is NOT one of the four heads for losses due to depreciation?",
+    "a": [
+      "Normal fluctuation of market prices",
+      "Normal wear and tear",
+      "Losses due to theft or fraud",
+      "Negligence after purchase"
+    ],
+    "c": 2,
+    "e": "Theft/fraud <b>Rule 223(3)(i)</b> mein aata hai — non-depreciation wala head. Depreciation ke 4 heads hain: market fluctuation, wear & tear, lack of foresight in purchases, negligence after purchase."
+  },
+  {
+    "tag": "Rule 218",
+    "q": "Rule 218(iii) covers expired medicines, food grain and ammunition. The rule requires —",
+    "a": [
+      "Sale by advertised tender above ₹4 lakh",
+      "Immediate disposal or destruction by a suitable mode",
+      "Storage for three years before disposal",
+      "Transfer to another department"
+    ],
+    "c": 1,
+    "e": "Rule 218(iii): hazardous ya human consumption ke layak na hone wale items ko <b>turant</b> dispose/destroy karein — health hazard, pollution aur misuse se bachne ke liye. Threshold in par lagta nahi."
+  },
+  {
+    "tag": "Rule 218",
+    "q": "Security-sensitive items such as currency, stamps, receipt books and security press must be disposed of/destroyed keeping in view —",
+    "a": [
+      "Only the highest price realised",
+      "Rules relating to official secrets as well as financial prudence",
+      "The E-Waste (Management) Rules, 2022",
+      "The Public Records Act, 1993"
+    ],
+    "c": 1,
+    "e": "Rule 218(iv): \"to ensure compliance with rules relating to <b>official secrets</b> as well as <b>financial prudence</b>\"."
+  }
+]
