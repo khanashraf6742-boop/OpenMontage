@@ -1,13 +1,1 @@
-Rule 212 — Hiring out of Fixed Assets.
-
-Yaad rakhne ka formula: Record + Regular recovery + Historical cost = Rule 212.
-
-Rule 212 bhi ek single paragraph hai — teen requirements: record, regular recovery, historical cost basis.
-
-Rule 212: Jab koi fixed asset (jaise departmental genset, machinery, vehicle, tentage) kisi local body, contractor ya kisi aur ko kiraye par diya jaaye, to teen cheezein: (1) asset ka proper record — kaunse asset, kisko, kab se kab tak; (2) hire aur dusre charges regularly recover karne honge — charges wahi jo competent authority ke prescribed rules ke under hain; (3) charges ki ganana historical cost par hogi — matlab asset jis price par kharida gaya tha (uski original cost), aaj ke market rate ya replacement cost par nahi. Isliye "market rate kam kar do" wali demand Rule 212 ke khilaf hai.
-
-Note. Rule 212 khud koi rate prescribe nahi karta — rates "rules prescribed by the competent authority" se aate hain. Rule sirf basis (historical cost) fix karta hai.
-
-Exam trap: Hire charges kis par based honge? Historical cost par — market rate, replacement cost ya insurance value par nahi.
-
-Exam trap: Kya Rule 212 hiring-out maana karta hai? Nahi. Ye allow karta hai, bas record + regular recovery + historical-cost basis ki sharton ke saath.
+Rule 212 — Hiring out of Fixed Assets. Yaad rakhne ka formula: Record + Regular recovery + Historical cost = Rule 212. Rule 212 bhi ek single paragraph hai — teen requirements: record, regular recovery, historical cost basis. Rule 212: Jab koi fixed asset (jaise departmental genset, machinery, vehicle, tentage) kisi local body, contractor ya kisi aur ko kiraye par diya jaaye, to teen cheezein: (1) asset ka proper record — kaunse asset, kisko, kab se kab tak; (2) hire aur dusre charges regularly recover karne honge — charges wahi jo competent authority ke prescribed rules ke under hain; (3) charges ki ganana historical cost par hogi — matlab asset jis price par kharida gaya tha (uski original cost), aaj ke market rate ya replacement cost par nahi. Isliye "market rate kam kar do" wali demand Rule 212 ke khilaf hai. Note. Rule 212 khud koi rate prescribe nahi karta — rates "rules prescribed by the competent authority" se aate hain. Rule sirf basis (historical cost) fix karta hai. Exam trap: Hire charges kis par based honge? Historical cost par — market rate, replacement cost ya insurance value par nahi. Exam trap: Kya Rule 212 hiring-out maana karta hai? Nahi. Ye allow karta hai, bas record + regular recovery + historical-cost basis ki sharton ke saath.

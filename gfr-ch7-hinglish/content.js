@@ -261,7 +261,7 @@ const SCENES = [
  rule: {
  no: 'Rules 214 – 215',
  title: 'Buffer stock · Physical verification of library books',
- exact: 'Rule 214: depending on the frequency of requirement and quantity thereof as well as the pattern of supply of a consumable material, optimum buffer stock should be determined by the competent authority. Note — as inventory carrying cost is an kharch that does not add value, a material remaining in stock for over a year shall generally be considered surplus, unless adequate reasons to treat it otherwise exist; items so declared surplus may be dealt with as per the procedure laid down under Rule 217. Rule 215(i): complete physical verification of books every year for libraries having not more than 20,000 volumes; for more than 20,000 and up to 50,000 volumes, at least once in three years; for more than 50,000 volumes, sample physical verification at intervals of not more than three years — and where such verification reveals unusual or unreasonable shortages, complete verification shall be done. Rule 215(ii): loss of five volumes per one thousand volumes issued/consulted in a year may be taken as reasonable provided such losses are not attributable to dishonesty or negligence; however, loss of a book of value exceeding ₹1,000 and rare books irrespective of value shall invariably be investigated.',
+ exact: 'Rule 214: depending on the frequency of requirement and quantity thereof as well as the pattern of supply of a consumable material, optimum buffer stock should be determined by the competent authority. Note — as inventory carrying cost is an expenditure that does not add value, a material remaining in stock for over a year shall generally be considered surplus, unless adequate reasons to treat it otherwise exist; items so declared surplus may be dealt with as per the procedure laid down under Rule 217. Rule 215(i): complete physical verification of books every year for libraries having not more than 20,000 volumes; for more than 20,000 and up to 50,000 volumes, at least once in three years; for more than 50,000 volumes, sample physical verification at intervals of not more than three years — and where such verification reveals unusual or unreasonable shortages, complete verification shall be done. Rule 215(ii): loss of five volumes per one thousand volumes issued/consulted in a year may be taken as reasonable provided such losses are not attributable to dishonesty or negligence; however, loss of a book of value exceeding ₹1,000 and rare books irrespective of value shall invariably be investigated.',
  points: [
  '<b>Rule 214:</b> optimum buffer stock is decided by the competent authority — it is a planning decision, not a fixed number.',
  '<b>The 1-year note is a general rule, not an absolute:</b> "generally be considered surplus … unless adequate reasons to treat it otherwise exist".',
@@ -511,15 +511,15 @@ const SCENES = [
  panel: 'assets/panels/scene-10.png',
  audio: 'assets/audio/scene-10.mp3',
  alt: 'An accounts office scene: a sale account form on the desk, an officer signing a write-off file, and a notice board showing a cleanliness campaign poster with e-waste bins.',
- est: 153,
+ est: 123,
  bubbles: [
- { who:'ravi', side:'left', t:2,
+ { who:'ravi', side:'left', t:0.3,
  hg:'Tender bhi laga, auction bhi — koi kharidar nahi mila. Ab?',
  hi:'टेंडर भी लगी, नीलामी भी — कोई खरीदार नहीं मिला। अब?' },
- { who:'anita', side:'right', t:14,
+ { who:'anita', side:'right', t:4.7,
  hg:'Rule 221 — scrap value par bech sakte hain, competent authority ki approval se aur Finance division se consultation ke baad. Phir bhi na bike to eco-friendly destruction.',
  hi:'रूल 221 — स्क्रैप कीमत पर बेच सकते हैं, कॉम्पिटेंट अथॉरिटी की approval और फाइनेंस डिवीजन से कंसल्टेशन के बाद। फिर भी न बिके तो पर्यावरण-फेवरेबल विनाश।' },
- { who:'farah', side:'third', t:100,
+ { who:'farah', side:'third', t:16.3,
  hg:'Aur write-off alag hai — Rule 223. Sanction tab bhi chahiye jab accounts mein koi adjustment ho ya na ho.',
  hi:'और राइट-ऑफ़ अलग है — रूल 223. approval तब भी चाहिए जब अकाउंट्स में कोई एडजस्टमेंट हो या न हो।' }
  ],
@@ -586,7 +586,7 @@ const RULE_INDEX = [
  exact:'(1) The inventory for fixed assets shall ordinarily be maintained at site. Fixed assets should be verified at least once in a year and the outcome of the verification recorded in the corresponding register; discrepancies shall be promptly investigated and brought to account. (2) A physical verification of all consumable goods and materials should be undertaken at least once in a year and discrepancies recorded in the stock register for appropriate action by the competent authority. Verification shall always be made in the presence of the officer responsible for the custody of the inventory; a certificate of verification along with findings shall be recorded in the stock register. Discrepancies including shortages, damages and unserviceable goods shall immediately be brought to the notice of the competent authority for action under Rules 33 to 38.',
  key:['Fixed assets: at least once a year, at site','Consumables: at least once a year','Verification in the presence of the custodian officer','Certificate + findings in the stock register','Discrepancies → competent authority → Rules 33–38'] },
  { no:'214', scene:'s5', grp:'Planning', title:'Buffer stock',
- exact:'Depending on the frequency of requirement and quantity thereof as well as the pattern of supply of a consumable material, optimum buffer stock should be determined by the competent authority. Note: as inventory carrying cost is an kharch that does not add value to the material being stocked, a material remaining in stock for over a year shall generally be considered surplus, unless adequate reasons to treat it otherwise exist; the items so declared surplus may be dealt with as per the procedure laid down under Rule 217.',
+ exact:'Depending on the frequency of requirement and quantity thereof as well as the pattern of supply of a consumable material, optimum buffer stock should be determined by the competent authority. Note: as inventory carrying cost is an expenditure that does not add value to the material being stocked, a material remaining in stock for over a year shall generally be considered surplus, unless adequate reasons to treat it otherwise exist; the items so declared surplus may be dealt with as per the procedure laid down under Rule 217.',
  key:['Optimum buffer stock decided by competent authority','Over 1 year in stock → GENERALLY surplus (rebuttable)','Surplus items → Rule 217 procedure'] },
  { no:'215', scene:'s5', grp:'Verification', title:'Physical verification of library books',
  exact:'(i) Complete physical verification of books every year in libraries having not more than 20,000 volumes; for more than 20,000 and up to 50,000 volumes, at least once in three years; for more than 50,000 volumes, sample physical verification at intervals of not more than three years — where such verification reveals unusual or unreasonable shortages, complete verification shall be done. (ii) Loss of five volumes per one thousand volumes issued/consulted in a year may be taken as reasonable provided such losses are not attributable to dishonesty or negligence; however, loss of a book of value exceeding ₹1,000 and rare books irrespective of value shall invariably be investigated and appropriate action taken.',

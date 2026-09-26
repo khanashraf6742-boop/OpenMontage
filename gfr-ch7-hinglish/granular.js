@@ -12,7 +12,7 @@ const RULES_DETAIL = [
  no:'207', grp:'Scope', scene:'s1', status:'CURRENT',
  title:'Inventory Management — scope of the chapter',
  audio:'assets/audio/rule-207.mp3',
- hook:'Basic rules sabke liye · detail department ki, parChapter 7 ke hisaab se',
+ hook:'Basic rules sabke liye · detail department ki, par Chapter 7 ke hisaab se',
  intro:'Ye rule poore chapter ka "scope clause" hai — isme koi sub-rule, clause ya proviso nahi hai. Ye batata hai ki Chapter 7 ke basic rules kis par lagte hain aur departmental instructions ki kya hadd hai.',
  tree:[
  { l:1, lab:'Rule 207', tag:'FRAMEWORK',
@@ -147,7 +147,7 @@ const RULES_DETAIL = [
  ex:'Chaar category ke liye <b>alag-alag accounts</b> — ek hi register sab kuch nahi. (a) Fixed assets — plant, machinery, equipment, furniture, fixtures — <b>Form GFR-22 (Register of Fixed Assets)</b>; (b) Consumables — office stationery, chemicals, maintenance spare parts — <b>Form GFR-23 (Stock Register of consumables)</b>; (c) Library books — <b>Form GFR 18 (Accession Register)</b>; (d) Historical/artistic value wali assets (museum/government departments ke paas) — <b>Form GFR-24</b>. Har category ka behaviour alag hai — consumables ghat-te hain, fixed assets depreciate hote hain, library books ki loss norm alag hai — isliye register alag. <b>Verified:</b> GFR-18 = Accession Register (official DoE GFR forms list, page 179) — yahi library books ka register hai.' }
  ],
  notes:[
- { lab:'Note (Rule 211)', text:'These forms can be supplemented with additional details by Ministries/Departments as required.' , ex:'Departments in forms mein <b>aur columns</b> jod sakte hain (jaise warranty expiry, AMC details, location code). Par jo GFR likhta hai wohatna to minimum hona hi chahiye — supplement karna hai, replace karna nahi.' }
+ { lab:'Note (Rule 211)', text:'These forms can be supplemented with additional details by Ministries/Departments as required.' , ex:'Departments in forms mein <b>aur columns</b> jod sakte hain (jaise warranty expiry, AMC details, location code). Par jo GFR likhta hai, wahan se hatna nahi — minimum to hona hi chahiye — supplement karna hai, replace karna nahi.' }
  ],
  provisos:[],
  exceptions:[],
@@ -235,7 +235,7 @@ const RULES_DETAIL = [
  ex:'<b>Optimum buffer stock</b> competent authority tay karega — ye koi fixed number nahi jo GFR mein likha ho. Tay karte waqt teen factors dekhne honge: requirement ki <b>frequency</b>, <b>quantity</b>, aur supply ka <b>pattern</b> (lead time, reliability). Matlab buffer stock ek analysis ka nateeja hai, guess nahi.' }
  ],
  notes:[
- { lab:'Note (Rule 214)', text:'As the inventory carrying cost is an kharch that does not add value to the material being stocked, a material remaining in stock for over a year shall generally be considered surplus, unless adequate reasons to treat it otherwise exist. The items so declared surplus may be dealt as per the procedure laid down under Rule 217.',
+ { lab:'Note (Rule 214)', text:'As the inventory carrying cost is an expenditure that does not add value to the material being stocked, a material remaining in stock for over a year shall generally be considered surplus, unless adequate reasons to treat it otherwise exist. The items so declared surplus may be dealt as per the procedure laid down under Rule 217.',
  ex:'Ye note do kaam karta hai. Pehla: <b>reasoning</b> — inventory carrying cost aisa kharch hai jo material ki value nahi badhata, isliye bina wajah stock rakhna financial propriety ke khilaf hai. Doosra: <b>rebuttable presumption</b> — ek saal se zyada stock mein pada material <b>generally</b> (generally) surplus maana jayega, <b>jab tak</b> use alag treat karne ke <b>adequate reasons</b> maujood na hon. "Generally" aur "unless adequate reasons" dono zaroori hain — ye automatic condemnation nahi hai. Aise declared surplus items aage <b>Rule 217</b> ke procedure se dispose honge.' }
  ],
  provisos:[],

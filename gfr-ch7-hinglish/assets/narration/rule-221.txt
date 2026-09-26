@@ -1,13 +1,1 @@
-Rule 221 — Disposal at scrap value or by other modes.
-
-Yaad rakhne ka formula: Tender fail → Auction fail → Scrap (CA + Finance) → Eco-friendly destruction.
-
-Rule 221 ek paragraph ka hai, par iski pre-condition sabse important hai — ye tabhi lagta hai jab advertised tender aur auction dono try karke dekh liye hon.
-
-Rule 221: Do stages. Stage 1: agar advertised tender ya auction ke bawajood item nahi bikta, to scrap value par becha ja sakta hai — par competent authority ki approval ke saath Finance division se consultation karke. Yani do alag cheezein: approval (competent authority) + consultation (Finance division). Stage 2: agar scrap value par bhi nahi bikta, to koi bhi dusre mode apnaya ja sakta hai — jismein eco-friendly destruction bhi shaamil hai. Yahi woh jagah hai jahan e-waste ka authorized recycler ke through environment-friendly disposal aata hai.
-
-Note. Rule 221 "MAY" hai — lekin condition ke saath: pehle dono sale modes try karne honge. Finance division se consultation hai, concurrence nahi — par record mein consultation dikhna chahiye.
-
-Exam trap: Kya bina tender/auction try kiye seedha scrap value par bech sakte hain? Nahi. "In spite of its attempts through advertised tender or auction" — pehle dono try zaroori.
-
-Exam trap: Scrap value par bechne ke liye kya chahiye? Competent authority ki approval + Finance division se consultation.
+Rule 221 — Disposal at scrap value or by other modes. Yaad rakhne ka formula: Tender fail → Auction fail → Scrap (CA + Finance) → Eco-friendly destruction. Rule 221 ek paragraph ka hai, par iski pre-condition sabse important hai — ye tabhi lagta hai jab advertised tender aur auction dono try karke dekh liye hon. Rule 221: Do stages. Stage 1: agar advertised tender ya auction ke bawajood item nahi bikta, to scrap value par becha ja sakta hai — par competent authority ki approval ke saath Finance division se consultation karke. Yani do alag cheezein: approval (competent authority) + consultation (Finance division). Stage 2: agar scrap value par bhi nahi bikta, to koi bhi dusre mode apnaya ja sakta hai — jismein eco-friendly destruction bhi shaamil hai. Yahi woh jagah hai jahan e-waste ka authorized recycler ke through environment-friendly disposal aata hai. Note. Rule 221 "MAY" hai — lekin condition ke saath: pehle dono sale modes try karne honge. Finance division se consultation hai, concurrence nahi — par record mein consultation dikhna chahiye. Exam trap: Kya bina tender/auction try kiye seedha scrap value par bech sakte hain? Nahi. "In spite of its attempts through advertised tender or auction" — pehle dono try zaroori. Exam trap: Scrap value par bechne ke liye kya chahiye? Competent authority ki approval + Finance division se consultation.

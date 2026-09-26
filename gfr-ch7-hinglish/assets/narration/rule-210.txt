@@ -1,13 +1,1 @@
-Rule 210 — Custody of goods and materials.
-
-Yaad rakhne ka formula: Safe custody + Storage + Temperature + Dust-free = Rule 210.
-
-Rule 210 ek single-paragraph rule hai — koi sub-rule ya clause nahi. Chhota par bhaari: yahi rule storage ki physical responsibility tay karta hai, aur isi ke na-manne se aksar Rules 33–38 ke loss cases bante hain.
-
-Rule 210: Jis officer ke paas samaan ki custody hai, woh chaar cheezein ensure karega: (1) safe custody — security, lock, access control; (2) proper storage accommodation — jagah, racks, handling; (3) required temperature; (4) dust-free environment. "Especially valuable and/or combustible articles" ka matlab hai ki valuable (chori/nuksan ka risk) aur combustible (aag ka risk) items par ye duty aur sakht ho jaati hai. Aakhir ka "etc." batata hai ki ye list exhaustive nahi — item ki nature ke hisaab se aur ehtiyaat (humidity, ventilation, fire safety) lena hi hoga.
-
-Note. Rule 210 mein "etc." hai — matlab temperature aur dust-free minimum examples hain, poori list nahi.
-
-Exam trap: Rule 210 kis par zyada sakht hai? "Especially valuable and/or combustible articles" par — dono category high-risk hain.
-
-Exam trap: Kya sirf taala lagana kaafi hai? Nahi. Safe custody + proper storage accommodation + required temperature + dust-free environment — chaaron alag requirements hain.
+Rule 210 — Custody of goods and materials. Yaad rakhne ka formula: Safe custody + Storage + Temperature + Dust-free = Rule 210. Rule 210 ek single-paragraph rule hai — koi sub-rule ya clause nahi. Chhota par bhaari: yahi rule storage ki physical responsibility tay karta hai, aur isi ke na-manne se aksar Rules 33–38 ke loss cases bante hain. Rule 210: Jis officer ke paas samaan ki custody hai, woh chaar cheezein ensure karega: (1) safe custody — security, lock, access control; (2) proper storage accommodation — jagah, racks, handling; (3) required temperature; (4) dust-free environment. "Especially valuable and/or combustible articles" ka matlab hai ki valuable (chori/nuksan ka risk) aur combustible (aag ka risk) items par ye duty aur sakht ho jaati hai. Aakhir ka "etc." batata hai ki ye list exhaustive nahi — item ki nature ke hisaab se aur ehtiyaat (humidity, ventilation, fire safety) lena hi hoga. Note. Rule 210 mein "etc." hai — matlab temperature aur dust-free minimum examples hain, poori list nahi. Exam trap: Rule 210 kis par zyada sakht hai? "Especially valuable and/or combustible articles" par — dono category high-risk hain. Exam trap: Kya sirf taala lagana kaafi hai? Nahi. Safe custody + proper storage accommodation + required temperature + dust-free environment — chaaron alag requirements hain.

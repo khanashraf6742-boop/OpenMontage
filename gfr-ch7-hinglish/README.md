@@ -31,7 +31,7 @@ No build step, no dependencies — plain HTML/CSS/JS plus generated panel art an
 | 9 | Tender ya auction | **219, 220** | 9-step tender (a)–(i), 10% bid security vs 25% earnest money, IFW officer, payment-before-release |
 | 10 | Scrap, sale account aur write-off | **221, 222, 223** | Scrap value + Finance consultation, Form GFR-11, write-off sanction, 4 + 5 loss heads, current orders |
 
-Total narration: **~12 minutes** of story scenes + **~24 minutes** of per-rule deep dives.
+Total narration: **~13 minutes** of story scenes + **~25 minutes** of per-rule deep dives.
 Total rules covered: **17 of 17**.
 
 ## 🔬 Deep Dive — granular clause tree (the core deliverable)
@@ -104,10 +104,9 @@ assets/narration/     the exact TTS scripts (.txt) + speech.json (clip manifest)
 tools/                city-style.py, export-narration.js, mp3tool.py, set-timing.py
 ```
 
-> **Narration status:** scenes 1–9 are re-recorded in the Indian-accent voice. Scene 10 (two parts)
-> and the 17 per-rule clips are queued — the voice service allows 10 clips per pass, so they follow
-> in the next passes. Every clip is synthesised from `assets/narration/*.txt`, which is the same
-> text that appears on screen.
+> **Narration status:** scenes 1–10 and rules **207–214** are recorded in the Indian-accent voice.
+> Rules **215–223** (9 clips) are the last remaining batch. Every clip is synthesised from
+> `assets/narration/*.txt`, which is the same text that appears on screen.
 
 ## Language & voice
 
