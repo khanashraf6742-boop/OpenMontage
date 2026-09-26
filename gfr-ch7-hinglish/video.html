@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GFR Chapter 7 — Final video (12 min, Hinglish)</title>
+<link rel="stylesheet" href="app.css" />
+<style>
+  body { background:#0B1020; color:#E8EEF7; }
+  .wrap { max-width:1080px; margin:0 auto; padding:26px 20px 60px; }
+  h1 { font-size:26px; margin:6px 0 4px; }
+  .sub { color:#93A4BD; font-size:14px; margin-bottom:18px; }
+  video { width:100%; border-radius:14px; background:#000; box-shadow:0 18px 50px rgba(0,0,0,.5); }
+  .meta { display:flex; gap:10px; flex-wrap:wrap; margin:16px 0 22px; }
+  .pill { background:#152238; border:1px solid #24354F; color:#CBD5E1; font-size:12.5px; padding:6px 11px; border-radius:999px; }
+  .pill a { color:inherit; }
+  h2 { font-size:16px; letter-spacing:.04em; text-transform:uppercase; color:#8FA6C4; margin:26px 0 10px; }
+  .chaps { display:grid; gap:7px; }
+  .chap { text-align:left; background:#111C2F; border:1px solid #22314A; color:#DCE6F5;
+           padding:10px 13px; border-radius:10px; cursor:pointer; font-size:14px; }
+  .chap:hover { background:#17253C; border-color:#3A4E70; }
+  .ct { display:inline-block; min-width:44px; color:#FFD166; font-variant-numeric:tabular-nums; font-weight:700; }
+  a.back { color:#7FD1E8; text-decoration:none; font-size:13.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← Interactive explainer (Watch · Deep Dive · Exam Drill)</a>
+  <h1>GFR 2017 — Chapter 7: Inventory Management · Final video</h1>
+  <div class="sub">Rules 207–223 · Hinglish narration in an Indian-accent voice · city-Hinglish subtitles burned in</div>
+
+  <video id="v" controls preload="metadata" poster="assets/panels/scene-01.png"
+         src="assets/video/gfr-ch7-final.mp4"></video>
+
+  <div class="meta">
+    <span class="pill">⏱ 12:03</span>
+    <span class="pill">🎬 720p · 25 fps · H.264 + AAC</span>
+    <span class="pill">🔖 12 chapters (jump below, or use your player's chapter list)</span>
+    <span class="pill">⬇ <a href="assets/video/gfr-ch7-final.mp4" download>Download MP4 (41 MB)</a></span>
+    <span class="pill">📝 <a href="assets/video/gfr-ch7-final.srt" download>Subtitles (.srt)</a></span>
+  </div>
+
+  <h2>Chapters</h2>
+  <div class="chaps">
+      <button class="chap" data-t="0.0"><span class="ct">0:00</span> Title card</button>
+      <button class="chap" data-t="7.0"><span class="ct">0:07</span> S1 · Rule 207 — Chapter 7 ka naqsha — Rule 207</button>
+      <button class="chap" data-t="48.3"><span class="ct">0:48</span> S2 · Rule 208, 209, 210 — Maal aaya, maal gaya, maal sambhala — Rules 208–210</button>
+      <button class="chap" data-t="101.0"><span class="ct">1:41</span> S3 · Rule 211, 212 — Register alag-alag kyun? — Rules 211–212</button>
+      <button class="chap" data-t="167.6"><span class="ct">2:47</span> S4 · Rule 213 — Saal mein ek baar — Rule 213</button>
+      <button class="chap" data-t="220.9"><span class="ct">3:40</span> S5 · Rule 214, 215 — Kitna purana to surplus? Aur library? — Rules 214–215</button>
+      <button class="chap" data-t="301.4"><span class="ct">5:01</span> S6 · Rule 216 — Charge ka transfer — Rule 216</button>
+      <button class="chap" data-t="343.9"><span class="ct">5:43</span> S7 · Rule 217 — Surplus/obsolete/unserviceable ghoshit karna — Rule 217</button>
+      <button class="chap" data-t="413.9"><span class="ct">6:53</span> S8 · Rule 218 — ₹4 lakh wali line — Rule 218 (amended)</button>
+      <button class="chap" data-t="487.0"><span class="ct">8:06</span> S9 · Rule 219, 220 — Tender ya auction — Rules 219–220</button>
+      <button class="chap" data-t="590.9"><span class="ct">9:50</span> S10 · Rule 221, 222, 223 — Scrap, sale account aur write-off — Rules 221–223</button>
+      <button class="chap" data-t="714.4"><span class="ct">11:54</span> Recap & sources</button>
+  </div>
+
+  <h2>Note on scope</h2>
+  <p class="sub">This video is the 10-scene story mode: every rule 207–223 is narrated, with the
+  operative numbers (1 year, 3 years, 5 per 1,000, ₹1,000, ₹4,00,000, 10%, 25%) and the Rule 218
+  amendment on screen. The clause-by-clause breakdown of all 17 rules — verbatim text, notes,
+  provisos, exceptions — is in the <a href="index.html">Deep Dive tab</a> of the interactive app.</p>
+</div>
+<script>
+  const v = document.getElementById('v');
+  document.querySelectorAll('.chap').forEach(b => b.onclick = () => {
+    v.currentTime = parseFloat(b.dataset.t) + 0.05;
+    v.play();
+    v.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+</script>
+</body>
+</html>

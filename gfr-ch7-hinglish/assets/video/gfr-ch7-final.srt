@@ -1,0 +1,303 @@
+1
+00:00:07,300 --> 00:00:12,978
+Anita Deshmukh: Ravi, ye store ka charge ab mere paas hai. Inventory kahan se shuru karein?
+
+2
+00:00:12,978 --> 00:00:18,853
+Ravi Kumar: Madam, GFR 2017 ka Chapter 7. Rule 207 se 223 tak — poori kahani isi mein hai.
+
+3
+00:00:18,853 --> 00:00:24,531
+Anita Deshmukh: Toh pehle rule, phir register. Receipt → Custody → Verification → Disposal.
+
+4
+00:00:24,531 --> 00:00:32,413
+GFR 2017 ka Chapter 7 = Inventory Management, Rule 207 se Rule 223 tak — kul 17 rules.
+
+5
+00:00:32,413 --> 00:00:40,296
+Ye basic rules sab Central Ministries/Departments par lagte hain; aur isi chapter ke hisaab se hi koi bhi Ministry/Department apne detailed instructions bana sakti hai.
+
+6
+00:00:40,296 --> 00:00:48,178
+Inventory sirf "ginti" nahi — 4 kadam: Receipt → Custody → Physical Verification → Disposal..
+
+7
+00:00:48,628 --> 00:00:54,034
+Ravi Kumar: Madam, supplier ka maal aa gaya. Challan match ho gaya — bas entry kar deta hoon.
+
+8
+00:00:54,034 --> 00:01:01,241
+Anita Deshmukh: Challan kaafi nahi, Ravi. Rule 208 — count, measure ya weigh, visual inspection, phir stock register mein entry.
+
+9
+00:01:01,241 --> 00:01:05,310
+Ravi Kumar: Aur jab ye samaan doosre division ya contractor ko jayega?
+
+10
+00:01:05,310 --> 00:01:17,159
+Rule 208 — Private supplier se maal aate hi: contract terms ke hisaab se receipt, phir counting/measuring/weighing + visual inspection (zaroorat par technical inspection), IT-based stock register mein entry, aur officer ka receipt certificate.
+
+11
+00:01:17,159 --> 00:01:29,009
+Rule 209 — internal issue: prescribed form mein indent zaroori + likhit ya online acknowledgement; contractor ko diya gaya maal ho to recovery rate aur total value usse date ke saath sign karwana hoga.
+
+12
+00:01:29,009 --> 00:01:40,858
+Rule 210 — Custody: valuable items aur aag pakadne wale articles ki safe custody, storage ka proper intezaam, temperature control aur dust-free rakhna..
+
+13
+00:01:41,308 --> 00:01:46,385
+Anita Deshmukh: Farah, ye registers alag-alag kyun rakhe hain — ek hi kyun nahi?
+
+14
+00:01:46,385 --> 00:01:55,604
+Farah Qureshi: Kyunki Rule 211 kehta hai — har category ka alag account. Fixed assets GFR-22, consumables GFR-23, historical/artistic GFR-24.
+
+15
+00:01:55,604 --> 00:02:01,749
+Suresh Pillai: Aur jo purana genset contractor ko hire par gaya — uska record aur hire charges?
+
+16
+00:02:01,749 --> 00:02:13,176
+Rule 211 — Officer-in-charge ko item-wise lists aur accurate returns rakhne honge, taaki kisi bhi time actual balance aur book balance check ho sake.
+
+17
+00:02:13,176 --> 00:02:24,604
+Register ka format 3 cheezon par depend karta hai — goods ki nature, transactions ki frequency aur department ki requirements.
+
+18
+00:02:24,604 --> 00:02:36,031
+Alag-alag category ke liye alag account: Fixed assets Form GFR-22, consumables GFR-23, library books GFR-18, historical/artistic value assets GFR-24.
+
+19
+00:02:36,031 --> 00:02:47,458
+Rule 212 — Agar fixed asset kisi local body, contractor ya aur kisi ko hire par diya jaaye, to proper record rakhna hoga, hire aur dusre charges regularly recover karne honge, aur charges ka calculation asset ki historical cost par based hoga..
+
+20
+00:02:47,908 --> 00:02:54,251
+Anita Deshmukh: Aaj physical verification hai. Rule 213 — fixed assets aur consumables, dono saal mein kam se kam ek baar.
+
+21
+00:02:54,251 --> 00:02:59,842
+Manjeet Kaur: Verification hamesha custodian officer ke saamne hoga — aur certificate stock register mein.
+
+22
+00:02:59,842 --> 00:03:02,207
+Ravi Kumar: Aur shortfall ya damage mile to?
+
+23
+00:03:02,207 --> 00:03:11,840
+Rule 213(1) — Fixed assets ka inventory generally site par rakha jaaye; verification kam se kam saal mein ek baar, outcome corresponding register mein darj, aur discrepancies तुरंत investigate karke account mein layi jayen.
+
+24
+00:03:11,840 --> 00:03:21,472
+Rule 213(2) — Sab consumable goods ka physical verification bhi kam se kam saal mein ek baar; discrepancies stock register mein darj kar action ke liye competent authority ko deni hongi.
+
+25
+00:03:21,472 --> 00:03:31,105
+Verification hamesha custodian officer ke saamne ho, aur verification certificate findings ke saath stock register mein record ho.
+
+26
+00:03:31,105 --> 00:03:40,738
+Verification mein mili shortage, damage ya unserviceable goods तुरंत competent authority ke notice mein layi jayen — Rules 33 se 38 ke hisaab se action ke liye..
+
+27
+00:03:41,188 --> 00:03:45,671
+Ravi Kumar: Madam, ye A4 paper aur toner pichhle 14 mahine se shelf par pada hai.
+
+28
+00:03:45,671 --> 00:03:53,753
+Anita Deshmukh: Rule 214 ka note yaad rakho — ek saal se zyada stock mein pada material generally surplus maana jaata hai. Buffer stock alag baat hai.
+
+29
+00:03:53,753 --> 00:04:01,447
+Manjeet Kaur: Library alag hai — 20,000 tak volumes ho to har saal poori verification, 50,000 tak 3 saal mein, usse upar sample verification.
+
+30
+00:04:01,447 --> 00:04:11,407
+Rule 214 — Buffer stock: requirement ki frequency, quantity aur supply pattern ke hisaab se optimum buffer stock competent authority tay karega.
+
+31
+00:04:11,407 --> 00:04:21,368
+Note: inventory carrying cost ek aisa kharch hai jo material ki value nahi badhata — isliye ek saal se zyada time tak stock mein pada material generally surplus maana jayega, jab tak usko alag treat karne ki solid wajah na ho.
+
+32
+00:04:21,368 --> 00:04:31,328
+Aise declared surplus items ko Rule 217 ke procedure se deal kiya jaata hai.
+
+33
+00:04:31,328 --> 00:04:41,289
+Rule 215 — Library books: 20,000 ya usse kam volumes wale library mein har saal complete verification; 20,000 se zyada aur 50,000 tak — kam se kam 3 saal mein ek baar complete verification; 50,000 se zyada — 3 saal se zyada interval par sample verification.
+
+34
+00:04:41,289 --> 00:04:51,249
+Sample verification mein unusual ya unreasonable shortage dikhe to complete verification hogi.
+
+35
+00:04:51,249 --> 00:05:01,210
+Ek saal mein issue/consult ki gayi har 1,000 volumes par 5 volumes ki loss reasonable maani ja sakti hai, agar dishonesty ya negligence ki wajah na ho; lekin ₹1,000 se zyada value ki kitab aur rare books — value chahe jo ho — ki loss ki investigation zaroori hai..
+
+36
+00:05:01,660 --> 00:05:05,683
+Anita Deshmukh: Main transfer ho rahi hoon. Store ka charge aage kaun sambhalega?
+
+37
+00:05:05,683 --> 00:05:11,795
+Farah Qureshi: Rule 216 — relieving aur relieved officer milkar ek statement banayenge, dono date ke saath sign karenge.
+
+38
+00:05:11,795 --> 00:05:15,975
+Anita Deshmukh: Aur dono ke paas ek-ek copy rahegi — tabhi accountability clear hai.
+
+39
+00:05:15,975 --> 00:05:25,237
+Rule 216 — Transfer of charge of goods and materials: agar officer-in-charge transfer ho, to transfer hone wale officer ko dekhna hoga ki goods/materials sahi tareeke se uske successor ko hand over diye jayen.
+
+40
+00:05:25,237 --> 00:05:34,500
+Goods aur materials ki sab relevant details ka ek statement banega, jise relieving officer aur relieved officer dono date ke saath sign karenge. Dono officers apne paas signed statement ki ek-ek copy rakhenge.
+
+41
+00:05:34,500 --> 00:05:43,762
+Ye chhota sa rule hai, lekin isi se yah tay hota hai ki agla shortfall kiske account mein jayega..
+
+42
+00:05:44,212 --> 00:05:48,059
+Suresh Pillai: In purane computers ko "bekaar" likh dena kaafi hai kya?
+
+43
+00:05:48,059 --> 00:05:55,583
+Anita Deshmukh: Nahi Sir. Rule 217 — item kharidne wale competent authority ko reasons record karne honge, aur committee bana sakte hain.
+
+44
+00:05:55,583 --> 00:06:01,693
+Farah Qureshi: Book value, guiding price, reserved price — teeno nikalenge, aur report Form GFR-10 mein banegi.
+
+45
+00:06:01,693 --> 00:06:12,099
+Rule 217 — Disposal of goods: kisi item ko surplus, obsolete ya unserviceable tab declare kiya ja sakta hai jab woh Ministry/Department ke kaam ka na rahe.
+
+46
+00:06:12,099 --> 00:06:22,505
+Declare karne ke reasons us authority ko record karne honge jo item kharidne ke liye competent hai. Competent authority apne discretion se committee bana sakti hai.
+
+47
+00:06:22,505 --> 00:06:32,911
+Disposal se pehle book value, guiding price aur reserved price nikalne honge — agar book value nikalna sambhav na ho to original purchase price use kiya ja sakta hai — aur stores ki report Form GFR-10 mein banegi.
+
+48
+00:06:32,911 --> 00:06:43,316
+Agar item kisi government servant ki negligence, fraud ya mischief se unserviceable hua ho, to responsibility fix karni hogi.
+
+49
+00:06:43,316 --> 00:06:53,722
+Hazardous waste, scrap batteries aur e-waste ke liye Ministry of Environment, Forest & Climate Change ke guidelines ke hisaab se sale hogi, aur bidder ke paas e-auction aur delivery ke din valid recycler/pre-processor registration hona chahiye..
+
+50
+00:06:54,172 --> 00:07:00,246
+Ravi Kumar: Sir, purane furniture ki residual value ₹5.6 lakh aayi hai. Seedhe scrap dealer ko bech den?
+
+51
+00:07:00,246 --> 00:07:07,897
+Anita Deshmukh: Nahi. Rule 218 — ₹4 lakh se upar ho to advertised tender ya public auction hi chalega. Committee decide nahi kar sakti.
+
+52
+00:07:07,897 --> 00:07:11,401
+Ravi Kumar: Par hamare purane note mein ₹2 lakh likha tha...
+
+53
+00:07:11,401 --> 00:07:22,481
+Rule 218 — Modes of disposal: assessed residual value ₹4 lakh se upar ho to disposal advertised tender ya public auction se hoga.
+
+54
+00:07:22,481 --> 00:07:33,562
+₹4 lakh se kam residual value wale goods ke liye mode competent authority tay karega — ismein dhyan rakha jayega ki samaan jama na ho, jagah block na ho, aur value kharab na ho; Ministries/Departments ko aise goods ki list banana chahiye.
+
+55
+00:07:33,562 --> 00:07:44,642
+Expired medicines, food grain, ammunition jaise hazardous ya human consumption ke layak na hone wale goods ko तुरंत suitable mode se dispose ya destroy karein — health hazard, environmental pollution aur misuse se bachne ke liye.
+
+56
+00:07:44,642 --> 00:07:55,722
+Currency, negotiable instruments, receipt books, stamps, security press jaise security concern wale goods/documents ko official secrets rules aur financial prudence ke hisaab se dispose/destroy karein.
+
+57
+00:07:55,722 --> 00:08:06,802
+Dhyan dein: ye threshold ₹2 lakh se badhakar ₹4 lakh kiya gaya — Department of Expenditure ke OM F.1/3/2024-PPD, dated 10.07.2024 se..
+
+58
+00:08:07,252 --> 00:08:15,614
+Farah Qureshi: Advertised tender ho ya auction — transparency, competition, fairness, discretion ka khatma. Ye chaar principle dono mein common hain.
+
+59
+00:08:15,614 --> 00:08:23,918
+Anita Deshmukh: Farq number ka hai — tender mein bid security 10% of assessed/reserved price; auction mein earnest money 25% of bid value, mauke par.
+
+60
+00:08:23,918 --> 00:08:28,672
+Suresh Pillai: Aur auction team mein Internal Finance Wing ka officer hona hi chahiye.
+
+61
+00:08:28,672 --> 00:08:45,082
+Rule 219 — Disposal through advertised tender: bidding documents banana, tender invite karna, bids kholna, evaluate karna, highest responsive bidder chunna, sale value collect karna, sale release order dena, goods release karna, aur aakhir mein unsuccessful bidders ki bid security wapas karna — ye nau kadam (a) se (i) hain; aakhri step aksar bhool jaate hain.
+
+62
+00:08:45,082 --> 00:09:01,492
+Bid document mein goods ki location aur present condition likhni hogi taaki bidder inspect kar sake. Bid security generally assessed ya reserved price ka 10% hogi.
+
+63
+00:09:01,492 --> 00:09:17,902
+Highest acceptable responsive bidder ko hi accept kiya jayega; negotiation sirf usi bidder se ho sakti hai, aur fail hone par agli highest responsive bidder ko reasonable price counter-offer ho sakti hai.
+
+64
+00:09:17,902 --> 00:09:34,312
+Bid security adjust karke baaki poori rakam goods release karne se pehle leni hogi; default par bid security forfeit hogi aur goods defaulter ke risk and cost par dobara beche jayenge. Late bids consider nahi honge.
+
+65
+00:09:34,312 --> 00:09:50,722
+Rule 220 — Auction: Ministry/Department direct ya approved auctioneer ke through auction kara sakti hai; auction plan ka wide publicity; auction shuru hone par goods ki condition, location aur terms dobara announce karna; bid accept hote hi bid value ka kam se kam 25% earnest money तुरंत mauke par — cash ya Deposit-at-Call-Receipt (DACR) mein — lena; balance payment ke baad hi goods hand over karna; aur auction team mein Internal Finance Wing ka officer hona chahiye..
+
+66
+00:09:51,172 --> 00:09:55,615
+Ravi Kumar: Tender bhi laga, auction bhi — koi kharidar nahi mila. Ab?
+
+67
+00:09:55,615 --> 00:10:07,167
+Anita Deshmukh: Rule 221 — scrap value par bech sakte hain, competent authority ki approval se aur Finance division se consultation ke baad. Phir bhi na bike to eco-friendly destruction.
+
+68
+00:10:07,167 --> 00:10:14,593
+Farah Qureshi: Aur write-off alag hai — Rule 223. Sanction tab bhi chahiye jab accounts mein koi adjustment ho ya na ho.
+
+69
+00:10:14,593 --> 00:10:27,044
+Rule 221 — Agar advertised tender aur auction dono ke bawajood item nahi bikta, to competent authority ki approval se aur Finance division ke saath consultation karke scrap value par becha ja sakta hai.
+
+70
+00:10:27,044 --> 00:10:39,495
+Agar scrap value par bhi na bike, to kisi aur mode se dispose kiya ja sakta hai — jismein eco-friendly destruction bhi shaamil hai.
+
+71
+00:10:39,495 --> 00:10:51,946
+Rule 222 — Dispose kiye gaye goods ka sale account Form GFR-11 mein banega, jis par sale ya auction ki supervision karne wale officer ke sign honge.
+
+72
+00:10:51,946 --> 00:11:04,397
+Rule 223 — Revaluation, stock-taking ya dusri wajah se hone wale profit/loss record kiya jayega aur zaroorat padne par adjust kiye jayenge.
+
+73
+00:11:04,397 --> 00:11:16,849
+Accounts mein koi correction/adjustment shamil na ho, tab bhi loss ke liye competent authority ki formal sanction leni hogi. Write-off ki powers DFPR ke under hain.
+
+74
+00:11:16,849 --> 00:11:29,300
+Depreciation ki wajah se hone wale loss ke chaar heads hain: market price ka normal fluctuation, normal wear and tear, purchases regulate karne mein foresight ki kami, aur kharid ke baad negligence.
+
+75
+00:11:29,300 --> 00:11:41,751
+Depreciation ke alawa loss ke paanch heads hain: theft ya fraud, neglect, obsolescence ya zaroorat se zyada kharid ki anticipated loss, damage, aur Force Majeure — jaise aag, baadh, ya enemy action.
+
+76
+00:11:41,751 --> 00:11:54,202
+Aakhir mein: abhi ke orders bhi yaad rakhein — DoE ne 10.07.2024 ke OM se disposal threshold ₹2 lakh se ₹4 lakh kiya, aur DARPG ka Special Campaign 6.0 15-30 September 2026 preparation phase, 2-31 October 2026 implementation phase mein chal raha hai, jismein scrap disposal GFR ke hisaab se aur e-waste disposal E-Waste (Management) Rules, 2022 ke hisaab se karna hai..

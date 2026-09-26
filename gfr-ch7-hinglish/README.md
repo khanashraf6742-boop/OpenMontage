@@ -75,6 +75,25 @@ Every rule is broken down to the last atomic unit. For each of the 17 rules the 
 only the three *Note* blocks (Rules 211, 214, 218) and the amendment marker on Rule 218. Nothing has
 been invented; anything not present in the source is shown as “—” in the Coverage tab.
 
+## 🎬 Final video (MP4)
+
+`assets/video/gfr-ch7-final.mp4` — **12:03, 720p, 41 MB**, H.264 + AAC:
+
+| What | Detail |
+|---|---|
+| Content | the 10-scene story mode, narrated end-to-end in Indian-accent Hinglish |
+| Subtitles | burned in (dialogue + explanatory caption) **and** as a sidecar `gfr-ch7-final.srt` (76 cues) |
+| Look | title card, slow pan across each panel, readability gradient, chapter banner per scene, recap & sources card |
+| Navigation | **12 MP4 chapter markers** (scene ↔ rule), so a player can jump scene to scene |
+| Player page | `video.html` — stream it, jump chapters, or download the MP4 / SRT |
+
+Render it yourself: `pip install imageio-ffmpeg && python3 tools/make-video.py`
+(`--scenes 3 9` for a partial render, `--crf 26 --height 480` for a smaller file).
+
+Scope note: the video carries the story mode — every rule 207–223 is narrated, with the operative
+numbers and the Rule 218 amendment on screen. The clause-by-clause breakdown (verbatim text,
+notes, provisos, exceptions of all 17 rules) lives in the Deep Dive tab of the interactive app.
+
 ## Interactive features
 
 - **▶ Watch** — plays like a video: narrated comic panels, timed speech bubbles, live captions,
@@ -100,8 +119,10 @@ granular.js           clause tree: verbatim text + Hinglish vyakhya + notes/prov
                       + atomic coverage ledger + 14 clause-level MCQs
 assets/panels/        scene-01 … scene-10 comic panels
 assets/audio/         scene-01 … scene-10 (story) + rule-207 … rule-223 (per-rule narration)
-assets/narration/     the exact TTS scripts (.txt) + speech.json (clip manifest) + timing.json
-tools/                city-style.py, export-narration.js, mp3tool.py, set-timing.py
+assets/narration/     the exact TTS scripts (.txt) + speech.json + scenes.json + timing.json
+assets/video/         gfr-ch7-final.mp4 (12:03, chapters + subtitles) + gfr-ch7-final.srt
+video.html            video player page with clickable chapters
+tools/                city-style.py, export-narration.js, mp3tool.py, set-timing.py, make-video.py
 ```
 
 > **Narration status:** scenes 1–10 and rules **207–214** are recorded in the Indian-accent voice.

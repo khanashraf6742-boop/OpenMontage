@@ -23,7 +23,7 @@ const load = f => fs.readFileSync(path.join(root, f), 'utf8');
 const ctx = { console };
 vm.createContext(ctx);
 vm.runInContext(load('content.js') + '\n' + load('granular.js') + `
-  this.SCENES = SCENES; this.RULES_DETAIL = RULES_DETAIL;
+  this.SCENES = SCENES; this.RULES_DETAIL = RULES_DETAIL; this.CAST = CAST; this.META = META;
 `, ctx);
 
 const outDir = path.join(root, 'assets', 'narration');
@@ -164,6 +164,18 @@ ctx.RULES_DETAIL.forEach(r => {
 });
 
 /* ── write everything out ────────────────────────────────────────────── */
+/* ── scene data for the video renderer (tools/make-video.py) ─────────── */
+const sceneData = {
+  meta: { title: ctx.META.title, span: ctx.META.span, lastVerified: ctx.META.lastVerified },
+  cast: Object.fromEntries(Object.entries(ctx.CAST).map(([k, v]) => [k, v.name])),
+  scenes: ctx.SCENES.map((s, i) => ({
+    n: i + 1, id: s.id, title: s.title, rules: s.rules, panel: s.panel, audio: s.audio,
+    est: s.est, bubbles: s.bubbles.map(b => ({ who: b.who, side: b.side, t: b.t, text: clean(strip(b.hg)) })),
+    caption: clean(strip(s.caption.hg))
+  }))
+};
+fs.writeFileSync(path.join(outDir, 'scenes.json'), JSON.stringify(sceneData, null, 2), 'utf8');
+
 fs.writeFileSync(path.join(outDir, 'speech.json'), JSON.stringify(speech, null, 2), 'utf8');
 fs.writeFileSync(path.join(outDir, 'timing.json'), JSON.stringify(timing, null, 2), 'utf8');
 

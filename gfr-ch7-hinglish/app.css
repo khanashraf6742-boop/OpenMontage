@@ -318,3 +318,7 @@ table.cov .units{color:#4b5563;font-size:12.5px}
 .cn{color:#b6bcc6;font-weight:800}
 .cov-sum{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;padding:10px 12px;
   background:#f3f6fa;border-radius:10px;font-size:13px;color:var(--navy)}
+
+/* link styled as a tab (Final video) */
+a.tab-link { text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+a.tab-link:hover { color: inherit; }
