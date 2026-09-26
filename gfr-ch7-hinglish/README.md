@@ -77,7 +77,14 @@ been invented; anything not present in the source is shown as “—” in the C
 
 ## 🎬 Final video (MP4)
 
-`assets/video/gfr-ch7-final.mp4` — **12:03, 720p, 41 MB**, H.264 + AAC:
+Two files, both 1280×720, H.264 + AAC, with chapter markers:
+
+| Part | File | Length | Chapters | Size |
+|---|---|---|---|---|
+| 1 · story mode | `assets/video/gfr-ch7-final.mp4` | 12:03 | 12 | 41 MB |
+| 2 · Deep Dive | `assets/video/gfr-ch7-deepdive.mp4` | **20:48** | 19 (intro + 17 rules + recap) | 25 MB |
+
+Part 1 in detail:
 
 | What | Detail |
 |---|---|
@@ -85,10 +92,25 @@ been invented; anything not present in the source is shown as “—” in the C
 | Subtitles | burned in (dialogue + explanatory caption) **and** as a sidecar `gfr-ch7-final.srt` (76 cues) |
 | Look | title card, slow pan across each panel, readability gradient, chapter banner per scene, recap & sources card |
 | Navigation | **12 MP4 chapter markers** (scene ↔ rule), so a player can jump scene to scene |
-| Player page | `video.html` — stream it, jump chapters, or download the MP4 / SRT |
+| Player page | `video.html` — both parts: stream, jump chapters, download MP4 / SRT |
 
-Render it yourself: `pip install imageio-ffmpeg && python3 tools/make-video.py`
-(`--scenes 3 9` for a partial render, `--crf 26 --height 480` for a smaller file).
+Part 2 (Deep Dive) in detail:
+
+| What | Detail |
+|---|---|
+| Content | every rule 207–223 broken into its spoken segments — hook, each sub-rule/clause, note, proviso, amendment, exam trap |
+| Slides | **116 narrated slides**, each showing the rule, the segment type (SHALL / MAY / NOTE / AMENDMENT / EXAM TRAP) and the clause number |
+| Audio | the per-rule clips for 207–223, all in the Indian-accent voice |
+| Chapters | one per rule, so a player jumps straight to Rule 215 or Rule 223 |
+
+Render it yourself:
+
+```bash
+pip install imageio-ffmpeg
+python3 tools/make-video.py                 # part 1 (--scenes 3 9 for a partial render)
+python3 tools/make-video-deep.py            # part 2 (--rules 215 216 for a partial render)
+```
+Both accept `--crf` and `--height`.
 
 Scope note: the video carries the story mode — every rule 207–223 is narrated, with the operative
 numbers and the Rule 218 amendment on screen. The clause-by-clause breakdown (verbatim text,
@@ -120,14 +142,15 @@ granular.js           clause tree: verbatim text + Hinglish vyakhya + notes/prov
 assets/panels/        scene-01 … scene-10 comic panels
 assets/audio/         scene-01 … scene-10 (story) + rule-207 … rule-223 (per-rule narration)
 assets/narration/     the exact TTS scripts (.txt) + speech.json + scenes.json + timing.json
-assets/video/         gfr-ch7-final.mp4 (12:03, chapters + subtitles) + gfr-ch7-final.srt
+assets/video/         gfr-ch7-final.mp4 (12:03) + gfr-ch7-deepdive.mp4 (20:48) + their .srt files
 video.html            video player page with clickable chapters
-tools/                city-style.py, export-narration.js, mp3tool.py, set-timing.py, make-video.py
+tools/                city-style.py, export-narration.js, mp3tool.py, set-timing.py,
+                      make-video.py, make-video-deep.py
 ```
 
-> **Narration status:** scenes 1–10 and rules **207–214** are recorded in the Indian-accent voice.
-> Rules **215–223** (9 clips) are the last remaining batch. Every clip is synthesised from
-> `assets/narration/*.txt`, which is the same text that appears on screen.
+> **Narration status:** complete — scenes 1–10 **and all 17 rules (207–223)** are recorded in the
+> Indian-accent voice. Every clip is synthesised from `assets/narration/*.txt`, which is the same
+> text that appears on screen.
 
 ## Language & voice
 

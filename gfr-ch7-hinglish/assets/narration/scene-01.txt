@@ -2,6 +2,6 @@ Ravi, ye store ka charge ab mere paas hai. Inventory kahan se shuru karein?
 
 Madam, GFR 2017 ka Chapter 7. Rule 207 se 223 tak — poori kahani isi mein hai.
 
-Toh pehle rule, phir register. Receipt → Custody → Verification → Disposal.
+Toh pehle rule, phir register. Receipt, Custody, Verification, Disposal.
 
-GFR 2017 ka Chapter 7 = Inventory Management, Rule 207 se Rule 223 tak — kul 17 rules. Ye basic rules sab Central Ministries/Departments par lagte hain; aur isi chapter ke hisaab se hi koi bhi Ministry/Department apne detailed instructions bana sakti hai. Inventory sirf "ginti" nahi — 4 kadam: Receipt → Custody → Physical Verification → Disposal.
+GFR 2017 ka Chapter 7 = Inventory Management, Rule 207 se Rule 223 tak — kul 17 rules. Ye basic rules sab Central Ministries/Departments par lagte hain; aur isi chapter ke hisaab se hi koi bhi Ministry/Department apne detailed instructions bana sakti hai. Inventory sirf "ginti" nahi — 4 kadam: Receipt, Custody, Physical Verification, Disposal.

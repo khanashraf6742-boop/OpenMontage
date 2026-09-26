@@ -1,0 +1,464 @@
+1
+00:00:08,450 --> 00:00:12,281
+Rule 207: Inventory Management — scope of the chapter
+
+2
+00:00:12,281 --> 00:00:17,966
+Yaad rakho: Basic rules sabke liye, detail department ki, par Chapter 7 ke hisaab se
+
+3
+00:00:17,966 --> 00:00:30,757
+Scope: Ye rule poore chapter ka "scope clause" hai — isme koi sub-rule, clause ya proviso nahi hai. Ye batata hai ki Chapter 7 ke basic rules kis par lagte hain aur departmental instructions ki kya hadd hai.
+
+4
+00:00:30,757 --> 00:00:49,047
+Rule 207: Do baatein: (1) is chapter ke basic rules sab Ministries/Departments par lagte hain; (2) koi bhi Ministry/Department apne detailed instructions aur procedures bana sakta hai — lekin woh "broadly in conformity" hone chahiye, yaani Chapter 7 ke basic rules ke khilaf nahi ja sakte.
+
+5
+00:00:49,047 --> 00:01:02,600
+Exam trap: Kya koi department Chapter 7 se hat kar apne inventory rules bana sakta hai? Nahi. Detailed instructions "broadly in conformity" with Chapter 7 hone chahiye — conformity test Rule 207 ka core hai.
+
+6
+00:01:03,170 --> 00:01:07,190
+Rule 208: Receipt of goods and materials from private suppliers
+
+7
+00:01:07,190 --> 00:01:12,270
+Yaad rakho: C.I.R.T.S. — Contract, Inspect, Record, Technical check, Stock register
+
+8
+00:01:12,270 --> 00:01:24,442
+Receipt: Rule 208 mein sirf ek sub-rule hai — Rule 208(1) — jiske andar teen clauses (i), (ii), (iii) hain. Ye tab lagta hai jab maal bahar ke private supplier se aata hai (internal division se aane par Rule 209 lagega).
+
+9
+00:01:24,442 --> 00:01:31,756
+Rule 208(1): Heading clause. Iske niche (i) se (iii) teen mandatory steps hain — contract dekho, verify karo, register karo.
+
+10
+00:01:31,756 --> 00:01:48,226
+Clause (i): Sabse pehla kadam contract terms padhna hai. Delivery schedule, specification, inspection clause, packaging, insurance — jo kuch contract mein likha hai, receipt usi ke hisaab se honi chahiye. Contract ke bina receipt matlab aage chalkar dispute mein department kamzor padega.
+
+11
+00:01:48,226 --> 00:02:04,417
+Clause (ii): Teen physical cheezein har baar honi chahiye: counting, measuring ya weighing, aur visual inspection — aur ye sab receipt ke time par hi. Visual inspection ke teen objective hain: quantity sahi hai, quality specification ke hisaab se hai, aur koi damage/deficiency nahi.
+
+12
+00:02:04,417 --> 00:02:09,609
+Note: Rule 208 mein koi footnote ya proviso nahi hai — poora rule teen clauses ka hai.
+
+13
+00:02:09,609 --> 00:02:18,872
+Exam trap: Technical inspection kab karwani hogi? "Where required" — jahan zaroori ho, approved Technical Inspector ya approved Agency se. Har baar nahi.
+
+14
+00:02:19,442 --> 00:02:25,527
+Rule 209: Receipt / issue of goods and materials from internal divisions of the same organisation
+
+15
+00:02:25,527 --> 00:02:30,407
+Yaad rakho: Indent, Examine, Acknowledge, (na mile to) entry in indentor copy
+
+16
+00:02:30,407 --> 00:02:46,079
+Issue: Rule 209 mein chaar clauses hain: (i) internal division se maal mangwana, (ii) stock se maal dena, (iii) contractor ko diye gaye maal ki recovery acknowledgement, aur (iv) poora indent pura na kar sakein to kya karna hai — ye last clause sabse zyada ignore hota hai.
+
+17
+00:02:46,079 --> 00:02:59,111
+Clause (i): Maal mangwane wala officer (indenting officer) prescribed form mein indent dega. Maal milne par woh khud examine/count/measure/weigh karega — quantity, quality, damage — teen check Rule 208(ii) jaisi hi hain.
+
+18
+00:02:59,111 --> 00:03:16,161
+Clause (ii): Stock se maal nikalne ka rule: Officer-in-charge ensure karega ki prescribed form ka indent pehle hi maujood hai. Uske baad maal issue karte waqt likhit ya online acknowledgement lena hoga — indenting officer ya uske authorised representative se, aur woh bhi issue ke time par.
+
+19
+00:03:16,161 --> 00:03:24,026
+Note: Rule 209 ke (i) mein receipt SHALL hai jabki Rule 208(iii) mein supplier ko receipt dena MAY hai — ye contrast yaad rakhiye.
+
+20
+00:03:24,026 --> 00:03:35,264
+Exam trap: Contractor ko diya gaya maal — acknowledgement mein kya likhwana zaroori hai? Sirf receipt nahi — recovery rates aur total value chargeable, contractor se signed aur dated.
+
+21
+00:03:35,834 --> 00:03:39,046
+Rule 210: Custody of goods and materials
+
+22
+00:03:39,046 --> 00:03:44,224
+Yaad rakho: Safe custody + Storage + Temperature + Dust-free = Rule 210
+
+23
+00:03:44,224 --> 00:03:58,711
+Custody: Rule 210 ek single-paragraph rule hai — koi sub-rule ya clause nahi. Chhota par bhaari: yahi rule storage ki physical responsibility tay karta hai, aur isi ke na-manne se aksar Rules 33–38 ke loss cases bante hain.
+
+24
+00:03:58,711 --> 00:04:15,492
+Rule 210: Jis officer ke paas samaan ki custody hai, woh chaar cheezein ensure karega: (1) safe custody — security, lock, access control; (2) proper storage accommodation — jagah, racks, handling; (3) required temperature; (4) dust-free environment.
+
+25
+00:04:15,492 --> 00:04:22,834
+Note: Rule 210 mein "etc." hai — matlab temperature aur dust-free minimum examples hain, poori list nahi.
+
+26
+00:04:22,834 --> 00:04:32,144
+Exam trap: Rule 210 kis par zyada sakht hai? "Especially valuable and/or combustible articles" par — dono category high-risk hain.
+
+27
+00:04:32,714 --> 00:04:35,184
+Rule 211: Lists and Accounts
+
+28
+00:04:35,184 --> 00:04:40,390
+Yaad rakho: Actual balance = Book balance, kisi bhi waqt check ho sake
+
+29
+00:04:40,390 --> 00:04:52,539
+Accounts: Rule 211 do sub-rules aur ek Note mein hai. (i) general requirement — item-wise lists/accounts; (ii) chaar alag-alag registers; Note — forms mein aur detail jodi ja sakti hai.
+
+30
+00:04:52,539 --> 00:05:05,555
+Clause (i): Do duties: item-wise lists + accounts rakhna, aur accurate returns banana. Asal test ye hai: kisi bhi waqt asal balance (physical) aur book balance (register) ki tulna ho sake.
+
+31
+00:05:05,555 --> 00:05:11,763
+Clause (ii): Chaar category ke liye alag-alag accounts — ek hi register sab kuch nahi.
+
+32
+00:05:11,763 --> 00:05:27,382
+Note: Departments in forms mein aur columns jod sakte hain (jaise warranty expiry, AMC details, location code). Par jo GFR likhta hai, wahan se hatna nahi — minimum to hona hi chahiye — supplement karna hai, replace karna nahi.
+
+33
+00:05:27,382 --> 00:05:42,464
+Exam trap: Kaunsa form kis asset ke liye? GFR-22 Register of Fixed Assets · GFR-23 Stock Register of consumables · GFR-18 Accession Register (library books) · GFR-24 Register of assets of historical/artistic value.
+
+34
+00:05:43,034 --> 00:05:46,048
+Rule 212: Hiring out of Fixed Assets
+
+35
+00:05:46,048 --> 00:05:51,005
+Yaad rakho: Record + Regular recovery + Historical cost = Rule 212
+
+36
+00:05:51,005 --> 00:05:58,574
+Accounts: Rule 212 bhi ek single paragraph hai — teen requirements: record, regular recovery, historical cost basis.
+
+37
+00:05:58,574 --> 00:06:34,544
+Rule 212: Jab koi fixed asset (jaise departmental genset, machinery, vehicle, tentage) kisi local body, contractor ya kisi aur ko kiraye par diya jaaye, to teen cheezein: (1) asset ka proper record — kaunse asset, kisko, kab se kab tak; (2) hire aur dusre charges regularly recover karne honge — charges wahi jo competent authority ke prescribed rules ke under hain; (3) charges ki ganana historical cost par hogi — matlab asset jis price par kharida gaya tha (uski original cost), aaj ke market rate ya replacement cost par nahi.
+
+38
+00:06:34,544 --> 00:06:46,132
+Note: Rule 212 khud koi rate prescribe nahi karta — rates "rules prescribed by the competent authority" se aate hain. Rule sirf basis (historical cost) fix karta hai.
+
+39
+00:06:46,132 --> 00:06:55,304
+Exam trap: Hire charges kis par based honge? Historical cost par — market rate, replacement cost ya insurance value par nahi.
+
+40
+00:06:55,874 --> 00:07:01,031
+Rule 213: Physical verification of Fixed Assets and Consumables
+
+41
+00:07:01,031 --> 00:07:07,836
+Yaad rakho: Ek saal, Dono category, Custodian saamne, Certificate, Discrepancy, R.33–38
+
+42
+00:07:07,836 --> 00:07:20,800
+Verification: Rule 213 teen sub-rules ka hai: 213(1) fixed assets, 213(2) consumables, 213(3) verification ka procedure (teen clauses). Isi rule se verification ki poori kahani chalti hai.
+
+43
+00:07:20,800 --> 00:07:40,282
+Rule 213(1): Teen baatein: (a) fixed assets ka inventory ordinarily site par rahega — matlab jahan asset hai wahin record bhi, alag jagah file mein nahi; (b) verification kam se kam saal mein ek baar; (c) verification ka nateeja corresponding register mein darj ho.
+
+44
+00:07:40,282 --> 00:07:53,318
+Rule 213(2): Consumables ka bhi wahi frequency — saal mein kam se kam ek baar — lekin nateeja stock register mein darj hoga, aur wahan se aage competent authority action legi.
+
+45
+00:07:53,318 --> 00:08:06,927
+Note: Rule 213(3)(iii) Chapter 7 ko Chapter 2 ke "Defalcation and losses" (Rules 33–38) se jodta hai — shortage ka matlab automatic penalty nahi, balki reporting chain shuru hona hai.
+
+46
+00:08:06,927 --> 00:08:16,712
+Exam trap: Fixed assets aur consumables — dono ki verification frequency? Dono "at least once in a year" (213(1) aur 213(2)).
+
+47
+00:08:17,282 --> 00:08:19,213
+Rule 214: Buffer Stock
+
+48
+00:08:19,213 --> 00:08:24,383
+Yaad rakho: Buffer = authority tay kare, 1 saal se upar = generally surplus
+
+49
+00:08:24,383 --> 00:08:33,788
+Planning: Rule 214 ek chhota rule hai par iska Note poore chapter ka sabse cited line hai — "ek saal se zyada stock mein pada material generally surplus".
+
+50
+00:08:33,788 --> 00:08:52,660
+Rule 214: Optimum buffer stock competent authority tay karega — ye koi fixed number nahi jo GFR mein likha ho. Tay karte waqt teen factors dekhne honge: requirement ki frequency, quantity, aur supply ka pattern (lead time, reliability). Matlab buffer stock ek analysis ka nateeja hai, guess nahi.
+
+51
+00:08:52,660 --> 00:09:05,055
+Note: Ye note do kaam karta hai. Pehla: reasoning — inventory carrying cost aisa kharch hai jo material ki value nahi badhata, isliye bina wajah stock rakhna financial propriety ke khilaf hai.
+
+52
+00:09:05,055 --> 00:09:16,160
+Exam trap: Buffer stock ka optimum level kaun tay karta hai? Competent authority — frequency, quantity aur supply pattern ke base par. GFR koi fixed figure nahi deta.
+
+53
+00:09:16,730 --> 00:09:20,541
+Rule 215: Physical verification of Library books
+
+54
+00:09:20,541 --> 00:09:26,358
+Yaad rakho: 20,000 = har saal, 50,000 = 3 saal, usse upar = sample, 5 per 1,000
+
+55
+00:09:26,358 --> 00:09:37,590
+Verification: Rule 215 library books ke liye Rule 213 ka special exception hai — yahan do clauses hain: (i) verification ka scale-based schedule, (ii) reasonable loss ka norm.
+
+56
+00:09:37,590 --> 00:09:54,573
+Clause (i): Teen slabs: ≤ 20,000 volumes → har saal complete verification; 20,000 se zyada aur 50,000 tak → kam se kam 3 saal mein ek baar complete verification; 50,000 se zyada → sample verification, jinke beech ka interval 3 saal se zyada na ho.
+
+57
+00:09:54,573 --> 00:10:09,884
+Clause (ii): Pehla hissa ek concession hai: ek saal mein jitni books issue/consult hui unmein har 1,000 par 5 volumes ki loss reasonable maani ja sakti hai — par sirf tab jab woh dishonesty ya negligence ki wajah se na ho.
+
+58
+00:10:09,884 --> 00:10:22,052
+Note: Rule 215 Rule 213 ke "at least once in a year" se exception hai — library books par scale-based schedule lagta hai, annual nahi (siwaye ≤20,000 volumes wale library ke).
+
+59
+00:10:22,052 --> 00:10:30,272
+Exam trap: 30,000 volumes wale library mein verification? Complete verification kam se kam 3 saal mein ek baar.
+
+60
+00:10:30,842 --> 00:10:34,797
+Rule 216: Transfer of charge of goods, materials etc.
+
+61
+00:10:34,797 --> 00:10:39,198
+Yaad rakho: Statement, Dono sign with date, Dono ke paas copy
+
+62
+00:10:39,198 --> 00:10:47,617
+Accountability: Rule 216 ek paragraph ka rule hai — lekin yahi tay karta hai ki charge badalne ke baad kisi bhi kami ki zimmedari kiski hogi.
+
+63
+00:10:47,617 --> 00:11:13,513
+Rule 216: Teen requirements: (1) jaane wala (transferred) officer ensure karega ki goods/materials sahi tareeke se successor ko hand over ho jayen — sirf chabi dena kaafi nahi; (2) ek statement banega jismein goods/materials ki saari relevant details hon, aur use relieving (charge lene wale) aur relieved (charge chhodne wale) dono officers date ke saath sign karenge; (3) dono ek-ek copy rakhenge.
+
+64
+00:11:13,513 --> 00:11:21,104
+Note: Rule 216 mein koi proviso ya exception nahi — ye har transfer par lagta hai, chahe charge kitne din ka ho.
+
+65
+00:11:21,104 --> 00:11:29,024
+Exam trap: Statement kaun sign karega? Relieving aur relieved — dono, date ke saath. Sirf ek ka sign kaafi nahi.
+
+66
+00:11:29,594 --> 00:11:31,869
+Rule 217: Disposal of Goods
+
+67
+00:11:31,869 --> 00:11:37,495
+Yaad rakho: Declare, Record reasons, Value, GFR-10, Responsibility, E-waste rules
+
+68
+00:11:37,495 --> 00:11:46,597
+Disposal: Rule 217 paanch clauses ka hai aur poore disposal process ka pehla darwaza hai. Iske bina Rule 218 ka koi mode choose nahi kiya ja sakta.
+
+69
+00:11:46,597 --> 00:12:03,346
+Clause (i): Declaration tab ho sakti hai jab item Ministry/Department ke kaam ka na rahe. Par declaration kaun karega — woh authority jo item kharidne ke liye competent hai (authority competent to purchase). Aur us authority ko reasons record karne hi honge.
+
+70
+00:12:03,346 --> 00:12:21,044
+Clause (ii): Committee banana vivek-adhikar hai — "may, at his discretion". Matlab committee zaroori nahi, par bade ya sensitive lots ke liye banana behtar practice (aur aksar departmental instructions mein likha hota hai). Exam mein ye MAY vs SHALL ka favourite sawal hai.
+
+71
+00:12:21,044 --> 00:12:35,645
+Clause (iii): Teen prices nikalne honge: book value, guiding price, reserved price. Agar book value nikalna sambhav na ho, to original purchase price use kiya ja sakta hai (yahan "may be utilised" ek permitted fallback hai).
+
+72
+00:12:35,645 --> 00:12:44,810
+Clause (iv): Agar item kisi Government servant ki negligence, fraud ya mischief se unserviceable hua ho, to responsibility fix karni hogi.
+
+73
+00:12:44,810 --> 00:12:56,264
+Note: Rule 217(v) GFR ko E-Waste (Management) Rules, 2022 aur MoEF&CC guidelines se jodta hai — isliye Special Campaign mein e-waste disposal ka alag se target hota hai.
+
+74
+00:12:56,834 --> 00:12:59,282
+Rule 218: Modes of Disposal
+
+75
+00:12:59,282 --> 00:13:04,722
+Yaad rakho: ₹4 lakh = Tender ya Auction, ₹2 lakh = 10 July 2024 se pehle
+
+76
+00:13:04,722 --> 00:13:15,127
+Disposal: Rule 218 chaar clauses ka hai aur amended hai: clause (i) ki threshold DoE OM F.1/3/2024-PPD (10 July 2024) se ₹2 lakh se badhkar ₹4 lakh ho gayi.
+
+77
+00:13:15,127 --> 00:13:34,712
+Clause (i): Assessed residual value (na ki original purchase value) ₹4,00,000 se upar ho to disposal sirf do tareeqon se: (a) advertised tender se bids, ya (b) public auction. DONO mein se koi ek chunna hai — teesra raasta (direct sale, quotation, committee decision) allowed nahi.
+
+78
+00:13:34,712 --> 00:13:53,073
+Clause (ii): ₹4 lakh se kam residual value par mode competent authority tay karegi, lekin bina reason ke nahi — teen objectives dhyan mein rakhne honge: (1) samaan ka jama hona rokna, (2) jagah block na hona, (3) disposal hone wale samaan ki value kharab na hona.
+
+79
+00:13:53,073 --> 00:14:13,338
+Clause (iii): Kuch cheezein bechi nahi ja sakti — expired medicines, food grain, ammunition jaise hazardous ya human consumption ke layak na hone wale items ko turant dispose ya destroy karna hai, suitable mode se. Teen wajah: health hazard, environmental pollution, aur misuse ki sambhavna.
+
+80
+00:14:13,338 --> 00:14:23,936
+Note: Clause (i) aur (ii) dono mein threshold ek hi hai aur dono amendment ke saath badalte hain — 10 July 2024 se pehle dono jagah ₹2 lakh tha.
+
+81
+00:14:24,506 --> 00:14:27,932
+Rule 219: Disposal through Advertised Tender
+
+82
+00:14:27,932 --> 00:14:33,556
+Yaad rakho: 9 steps (a)–(i), 7 aspects (a)–(g), 10% bid security, late bid = no
+
+83
+00:14:33,556 --> 00:14:42,476
+Sale: Rule 219 teen hisson mein hai: (i) nau broad steps (a) se (i), (ii) saat important aspects (a) se (g), aur (iii) late bids ka rule.
+
+84
+00:14:42,476 --> 00:15:00,123
+Clause (i): Nau kadam: bidding document banana → tender invite karna → bids kholna → analysis/evaluation → highest responsive bidder chunna → sale value collect karna → sale release order dena → goods release karna → unsuccessful bidders ki bid security wapas karna.
+
+85
+00:15:00,123 --> 00:15:20,808
+Clause (ii)(a): Chaar value: transparency, competition, fairness, discretion ka khatma. Sale plan aur goods ka wide publicity zaroori. Saari terms bidding document mein comprehensive, plain and simple language mein honi chahiye — chhupe hue conditions nahi. Aur taxes ka applicability document mein saaf likha ho.
+
+86
+00:15:20,808 --> 00:15:36,709
+Clause (ii)(b): Bidding document mein goods ka location aur present condition dono likhne honge, taaki bidder bidding se pehle inspect kar sake. Isse "jo dekha wo mila" wala dispute nahi hota — isliye condition chhupana rule ke khilaf hai.
+
+87
+00:15:36,709 --> 00:15:45,177
+Note: (i) mein nau steps hain (a)–(i), jabki (ii) mein saat aspects (a)–(g) — dono ki numbering alag hai, confuse na karein.
+
+88
+00:15:45,177 --> 00:15:53,264
+Exam trap: Bid security kitni? Ordinarily assessed ya reserved price ka 10% — exact amount bidding document mein.
+
+89
+00:15:53,834 --> 00:15:56,458
+Rule 220: Disposal through Auction
+
+90
+00:15:56,458 --> 00:16:01,158
+Yaad rakho: 25% spot earnest money, Cash ya DACR, IFW officer zaroori
+
+91
+00:16:01,158 --> 00:16:12,754
+Sale: Rule 220 paanch clauses ka hai: (i) kaun karayega, (ii) principles + publicity, (iii) auction shuru mein dobara ghoshna, (iv) hammer stroke + earnest money, (v) team mein IFW officer.
+
+92
+00:16:12,754 --> 00:16:26,547
+Clause (i): Auction do tareeqe se ho sakti hai: khud (directly) ya approved auctioneers ke through. Dono valid hain — "approved auctioneers" ka matlab hai ki kisi bhi private auctioneer ko nahi, approved ko hi lena hai.
+
+93
+00:16:26,547 --> 00:16:44,247
+Clause (ii): Principles wahi — transparency, competition, fairness, discretion ka khatma. Auction plan mein goods ki details, unka location aur sale ki terms hon, aur use utni hi wide publicity mile jitni advertised tender ko milti hai. Matlab chupke se auction karwana allowed nahi.
+
+94
+00:16:44,247 --> 00:16:59,993
+Clause (iii): Auction shuru karte waqt ek baar phir ghoshit karein: goods ki condition, location, aur terms & conditions — ikathhe hue bidders ke faayde ke liye. Publicity mein likha hua phir se bolna zaroori hai, taaki koi bole "mujhe pata nahi tha".
+
+95
+00:16:59,993 --> 00:17:07,439
+Note: 25% earnest money aur 10% bid security (Rule 219) mein farq yaad rakhiye — auction mein 25%, tender mein 10%.
+
+96
+00:17:07,439 --> 00:17:15,032
+Exam trap: Auction mein earnest money kitni? Bid value ka kam se kam 25% — turant, mauke par, cash ya DACR mein.
+
+97
+00:17:15,602 --> 00:17:19,560
+Rule 221: Disposal at scrap value or by other modes
+
+98
+00:17:19,560 --> 00:17:25,696
+Yaad rakho: Tender fail, Auction fail, Scrap (CA + Finance), Eco-friendly destruction
+
+99
+00:17:25,696 --> 00:17:36,516
+Sale: Rule 221 ek paragraph ka hai, par iski pre-condition sabse important hai — ye tabhi lagta hai jab advertised tender aur auction dono try karke dekh liye hon.
+
+100
+00:17:36,516 --> 00:17:57,165
+Rule 221: Do stages. Stage 1: agar advertised tender ya auction ke bawajood item nahi bikta, to scrap value par becha ja sakta hai — par competent authority ki approval ke saath Finance division se consultation karke. Yani do alag cheezein: approval (competent authority) + consultation (Finance division).
+
+101
+00:17:57,165 --> 00:18:03,631
+Note: Rule 221 "MAY" hai — lekin condition ke saath: pehle dono sale modes try karne honge.
+
+102
+00:18:03,631 --> 00:18:16,232
+Exam trap: Kya bina tender/auction try kiye seedha scrap value par bech sakte hain? Nahi. "In spite of its attempts through advertised tender or auction" — pehle dono try zaroori.
+
+103
+00:18:16,802 --> 00:18:18,858
+Rule 222: Sale Account
+
+104
+00:18:18,858 --> 00:18:23,765
+Yaad rakho: Form GFR-11, Sale supervise karne wale officer ke sign
+
+105
+00:18:23,765 --> 00:18:32,252
+Records: Rule 222 ek line ka rule hai — disposal ke baad ka antim record. Chhota par audit mein sabse pehle yahi maanga jaata hai.
+
+106
+00:18:32,252 --> 00:18:51,615
+Rule 222: Dispose kiye gaye goods ka sale account Form GFR-11 mein banega, aur us par us officer ke sign honge jisne sale ya auction ki supervision ki. Dhyan dein: sign karne wala wohi officer hai jisne supervise kiya — koi aur officer "on behalf" sign nahi kar sakta is rule ke under.
+
+107
+00:18:51,615 --> 00:18:57,716
+Note: Rule 222 kisi bhi mode ke baad lagta hai — tender ho, auction ho ya scrap sale.
+
+108
+00:18:57,716 --> 00:19:04,544
+Exam trap: Sale account kaun sign karta hai? Woh officer jisne sale/auction supervise kiya.
+
+109
+00:19:05,114 --> 00:19:07,533
+Rule 223: Write-off of losses
+
+110
+00:19:07,533 --> 00:19:13,263
+Yaad rakho: Sanction har haal mein, 4 depreciation heads, 5 non-depreciation heads
+
+111
+00:19:13,263 --> 00:19:23,195
+Write-off: Rule 223 teen sub-rules mein hai: (1) powers to write off, (2) depreciation wale losses ke 4 heads, (3) depreciation ke alawa wale losses ke 5 heads.
+
+112
+00:19:23,195 --> 00:19:42,549
+Rule 223(1): Teen baatein: (1) revaluation, stock-taking ya kisi aur wajah se hone wale profit aur loss dono record kiye jayenge aur zaroorat padne par adjust kiye jayenge; (2) formal sanction competent authority ki leni hogi — chahe government accounts mein koi correction/adjustment ho ya na ho.
+
+113
+00:19:42,549 --> 00:19:59,102
+Rule 223(2): Depreciation se hone wale loss ko chaar heads mein baant kar record karna hai: (i) market price ka normal utaar-chadhav; (ii) normal ghisavat (wear & tear); (iii) kharid regulate karne mein foresight ki kami; (iv) kharid ke baad negligence.
+
+114
+00:19:59,102 --> 00:20:17,374
+Rule 223(3): Depreciation ke alawa wale losses ke paanch heads: (i) chori ya fraud; (ii) upeksha (neglect); (iii) obsolescence ya zarurat se zyada kharid ki anticipated losses; (iv) damage (nuksan); (v) Force Majeure — aag, baadh, dushman ki action jaise extraordinary situations.
+
+115
+00:20:17,374 --> 00:20:26,860
+Note: Rule 223(1) ka "even though no formal correction or adjustment in government accounts is involved" — sabse zyada poocha jaane wala line.
+
+116
+00:20:26,860 --> 00:20:40,496
+Exam trap: Accounts mein koi adjustment nahi hoga to bhi sanction chahiye? Haan — Rule 223(1) clear roop se kehta hai "even though no formal correction or adjustment in government accounts is involved".
+

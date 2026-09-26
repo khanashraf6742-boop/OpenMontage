@@ -414,7 +414,6 @@ DEVA5 = [
     ("किसी किसी और", "किसी और"),
     ("correction/ एडजस्टमेंट", "correction/adjustment"),
     ("dispose kiye gaye", "डिस्पोज़ किए गए"),
-    ("turant", "तुरंत"),
 ]
 
 
@@ -431,6 +430,18 @@ def preserve_case(src, rep):
     if src[:1].isupper() and rep[:1].islower():
         return rep[0].upper() + rep[1:]
     return rep
+
+
+ROMAN_FIELD = re.compile(r"(?:ex|hg|hook|intro|q|a|lab|label|text|exact|title):'((?:[^'\\]|\\.)*)'")
+
+
+def guard_roman_fields(text):
+    """A Devanagari pass must never leave Devanagari inside a Roman-script field."""
+    def fix(m):
+        body = m.group(1)
+        cleaned = re.sub(r"[\u0900-\u097F]+", "", body)
+        return m.group(0).replace(body, cleaned)
+    return ROMAN_FIELD.sub(fix, text)
 
 
 def apply_rules(text, rules, deva=False):
@@ -457,6 +468,7 @@ def main():
         out, n5 = apply_rules(out, DEVA4, deva=True)
         out, n6 = apply_rules(out, DEVA5, deva=True)
         out, n7 = apply_rules(out, DEVA6, deva=True)
+        out = guard_roman_fields(out)
         out = re.sub(r"  +", " ", out)
         p.write_text(out, encoding="utf-8")
         grand += n1 + n2 + n3 + n4 + n5 + n6 + n7

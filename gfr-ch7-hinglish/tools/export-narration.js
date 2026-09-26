@@ -46,8 +46,28 @@ const strip = s => String(s)
 /* notes / provisos / exceptions are plain strings or {lab, text, ex} objects */
 const noteText = n => typeof n === 'string' ? n : (n.ex || n.text || '');
 
+/* the amendment field is a string or {old, neu, om, date, effect} */
+const amendmentText = a => {
+  if (!a) return '';
+  if (typeof a === 'string') return a;
+  const head = [a.om, a.date && `dated ${a.date}`].filter(Boolean).join(' ');
+  return [head, a.old && a.neu ? `pehle: ${a.old} — ab: ${a.neu}` : '', a.effect || '']
+    .filter(Boolean).join('. ');
+};
+
 /* narration hygiene: "·" becomes a comma, no space before punctuation */
-const clean = t => String(t).replace(/·/g, ',').replace(/\s+([,.;])/g, '$1').replace(/\s{2,}/g, ' ').trim();
+const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const speakableDate = t => t.replace(/\b(\d{2})\.(\d{2})\.(\d{4})\b/g,
+  (_, d, m, y) => `${parseInt(d, 10)} ${MONTHS[parseInt(m, 10) - 1]} ${y}`);
+
+const clean = t => speakableDate(String(t))
+  .replace(/[·•]/g, ',')
+  .replace(/[→➔]/g, ',')
+  .replace(/[≤≥]/g, '')
+  .replace(/\s+([,.;])/g, '$1')
+  .replace(/\(\s+/g, '(').replace(/\s+\)/g, ')')
+  .replace(/\s{2,}/g, ' ')
+  .trim();
 
 /* never end a clip on an open bracket or a dangling connector */
 const trimDangling = t => t
@@ -57,6 +77,7 @@ const trimDangling = t => t
 
 /* whole sentences only, up to roughly `cap` characters */
 const firstSentence = (t, cap) => {
+  t = speakableDate(t);                     // dates first, so "10.07.2024" can't split a sentence
   const parts = t.match(/[^.!?]+[.!?]+/g) || [t];
   let out = '';
   for (const q of parts) {
@@ -95,32 +116,51 @@ ctx.RULES_DETAIL.forEach(r => {
   if (r.notes && r.notes.length) parts.push('Note. ' + r.notes.map(x => strip(noteText(x))).join(' '));
   if (r.provisos && r.provisos.length) parts.push('Proviso. ' + r.provisos.map(x => strip(noteText(x))).join(' '));
   if (r.exceptions && r.exceptions.length) parts.push('Exception. ' + r.exceptions.map(x => strip(noteText(x))).join(' '));
-  if (r.amendment) parts.push('Amendment. ' + strip(r.amendment));
+  if (r.amendment) parts.push('Amendment. ' + strip(amendmentText(r.amendment)));
   r.traps.slice(0, 2).forEach(t => parts.push(`Exam trap: ${strip(t.q)} ${strip(t.a)}`));
   const chars = write(`rule-${r.no}.txt`, clean(parts.join(' ')));
   timing.rules.push({ no: r.no, file: `rule-${r.no}.mp3`, chars });
 });
 
-/* ── condensed rule narration that fits one clip ─────────────────────── */
-function condenseRule(r) {
-  const head = [`Rule ${r.no} — ${r.title}.`];
-  if (r.hook) head.push(`Yaad rakho: ${clean(strip(r.hook))}.`);
-  if (r.intro) head.push(firstSentence(strip(r.intro), 420));
-  const clauses = r.tree.map(t =>
-    `${(t.l !== 1 && /^[(\d]/.test(t.lab)) ? 'Clause ' + t.lab : t.lab}: ${firstSentence(strip(t.ex), 320)}`);
-  const tail = [];
-  if (r.notes && r.notes.length) tail.push('Note: ' + firstSentence(strip(noteText(r.notes[0])), 320));
-  if (r.amendment) tail.push('Amendment: ' + firstSentence(strip(r.amendment), 300));
-  if (r.traps && r.traps.length) tail.push('Exam trap: ' + firstSentence(strip(r.traps[0].q) + ' ' + strip(r.traps[0].a), 280));
-
-  let out = head.join(' ');
-  for (const c of clauses) {
-    if ((out + ' ' + c).length > LIMIT - 340) break;
-    out += ' ' + c;
+/* ── condensed rule narration, as segments ───────────────────────────────
+   One array drives BOTH the TTS script and the Deep Dive video slides, so the
+   spoken words and the on-screen text can never drift apart.
+   seg = { kind, label, nar (spoken), disp (shown) }                        */
+function ruleSegments(r) {
+  const segs = [];
+  segs.push({ kind: 'head', label: `Rule ${r.no}`, nar: `Rule ${r.no} — ${r.title}.`, disp: r.title });
+  if (r.hook) segs.push({ kind: 'hook', label: 'Yaad rakho', nar: `Yaad rakho: ${clean(strip(r.hook))}.`, disp: clean(strip(r.hook)) });
+  if (r.intro) {
+    const t = firstSentence(strip(r.intro), 420);
+    segs.push({ kind: 'intro', label: r.grp, nar: t, disp: t });
   }
-  for (const t of tail) if ((out + ' ' + t).length <= LIMIT) out += ' ' + t;
-  return clean(out);
+  let used = segs.reduce((n, x) => n + x.nar.length, 0);
+  for (const t of r.tree) {
+    const lab = (t.l !== 1 && /^[(\d]/.test(t.lab)) ? `Clause ${t.lab}` : t.lab;
+    const txt = firstSentence(strip(t.ex), 320);
+    if (used + txt.length > 1120) break;                 // keep the clip under the cap
+    segs.push({ kind: 'clause', label: lab, tag: t.tag || '', text: '', nar: `${lab}: ${txt}`, disp: txt });
+    used += txt.length;
+  }
+  // tail segments, most important first: amendment → note → exam trap
+  const tails = [];
+  if (r.amendment) tails.push({ kind: 'amend', label: 'Amendment', nar: `Amendment: ${firstSentence(strip(amendmentText(r.amendment)), 340)}` });
+  if (r.notes && r.notes.length) tails.push({ kind: 'note', label: 'Note', nar: `Note: ${firstSentence(strip(noteText(r.notes[0])), 320)}` });
+  if (r.traps && r.traps.length) tails.push({ kind: 'trap', label: 'Exam trap', nar: `Exam trap: ${firstSentence(strip(r.traps[0].q) + ' ' + strip(r.traps[0].a), 280)}` });
+  for (const t of tails) {
+    if (used + t.nar.length < 1420) { t.disp = t.nar.replace(/^(Amendment|Note|Exam trap):\s*/, ''); segs.push(t); used += t.nar.length; }
+  }
+  // hard cap: the TTS accepts 1500 chars — drop the least critical tails if needed
+  const size = () => segs.map(s => s.nar).join(' ').length;
+  for (const kind of ['trap', 'amend', 'note']) {
+    while (size() > 1450 && segs.some(x => x.kind === kind)) {
+      segs.splice(segs.map(x => x.kind).lastIndexOf(kind), 1);
+    }
+  }
+  return segs;
 }
+
+const condenseRule = r => clean(ruleSegments(r).map(s => s.nar).join(' '));
 
 /* ── speech manifest: which clips to synthesise, and their exact text ─── */
 const chunk = (text, limit) => {
@@ -162,6 +202,31 @@ ctx.SCENES.forEach((s, i) => {
 ctx.RULES_DETAIL.forEach(r => {
   speech.push({ id: `rule-${r.no}`, parts: [{ file: `assets/audio/rule-${r.no}.mp3`, text: condenseRule(r) }] });
 });
+
+/* ── slide data for the Deep Dive video (tools/make-video-deep.py) ────── */
+const deep = {
+  meta: { title: ctx.META.title, lastVerified: ctx.META.lastVerified },
+  rules: ctx.RULES_DETAIL.map((r, i) => {
+    const segs = ruleSegments(r);
+    return {
+      n: i + 1, no: r.no, title: r.title, grp: r.grp, hook: clean(strip(r.hook || '')),
+      audio: r.audio, clauses: r.tree.length,
+      notes: (r.notes || []).length, provisos: (r.provisos || []).length,
+      exceptions: (r.exceptions || []).length, amended: !!r.amendment,
+      segments: segs.map(s => ({ kind: s.kind, label: s.label, tag: s.tag || '', text: s.disp, nar: s.nar }))
+    };
+  })
+};
+fs.writeFileSync(path.join(outDir, 'rules-slides.json'), JSON.stringify(deep, null, 2), 'utf8');
+
+/* the slide text must equal the synthesised narration — fail loudly if not */
+let mismatch = [];
+ctx.RULES_DETAIL.forEach((r, i) => {
+  const a = deep.rules[i].segments.map(s => s.nar).join(' ');
+  const b = speech.find(x => x.id === `rule-${r.no}`).parts[0].text;
+  if (clean(a) !== clean(b)) mismatch.push(r.no);
+});
+if (mismatch.length) { console.error('SLIDE/NARRATION MISMATCH for rules:', mismatch.join(', ')); process.exit(1); }
 
 /* ── write everything out ────────────────────────────────────────────── */
 /* ── scene data for the video renderer (tools/make-video.py) ─────────── */

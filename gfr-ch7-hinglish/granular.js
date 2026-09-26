@@ -196,13 +196,13 @@ const RULES_DETAIL = [
  tree:[
  { l:2, lab:'Rule 213(1)', tag:'SHALL',
  text:'Physical verification of Fixed Assets. The inventory for fixed assets shall ordinarily be maintained at site. Fixed assets should be verified at least once in a year and the outcome of the verification recorded in the corresponding register. Discrepancies, if any, shall be promptly investigated and brought to account.',
- ex:'Teen baatein: (a) fixed assets ka inventory <b>ordinarily site par</b> rahega — matlab jahan asset hai wahin record bhi, alag jagah file mein nahi; (b) verification <b>kam se kam saal mein ek baar</b>; (c) verification ka <b>nateeja corresponding register mein</b> darj ho. Discrepancy mile to <b>तुरंत</b> investigate karke account mein laya jaaye. "Ordinarily" aur "at least" dono yaad rakhiye — pehla exception ka chance rakhta hai, doosra minimum frequency hai (zyada baar kar sakte hain).' },
+ ex:'Teen baatein: (a) fixed assets ka inventory <b>ordinarily site par</b> rahega — matlab jahan asset hai wahin record bhi, alag jagah file mein nahi; (b) verification <b>kam se kam saal mein ek baar</b>; (c) verification ka <b>nateeja corresponding register mein</b> darj ho. Discrepancy mile to <b>turant</b> investigate karke account mein laya jaaye. "Ordinarily" aur "at least" dono yaad rakhiye — pehla exception ka chance rakhta hai, doosra minimum frequency hai (zyada baar kar sakte hain).' },
  { l:2, lab:'Rule 213(2)', tag:'SHALL',
  text:'Verification of Consumables: A physical verification of all the consumable goods and materials should be undertaken at least once in a year and discrepancies, if any, should be recorded in the stock register for appropriate action by the competent authority.',
  ex:'Consumables ka bhi wahi frequency — <b>saal mein kam se kam ek baar</b> — lekin nateeja <b>stock register mein</b> darj hoga, aur wahan se aage <b>competent authority</b> action legi. Farq samjhiye: 213(1) mein discrepancy "brought to account" hoti hai; 213(2) mein discrepancy "recorded in stock register for appropriate action by the competent authority". Consumables mein competent authority ka role explicit hai.' },
  { l:2, lab:'Rule 213(3)', tag:'SHALL — procedure',
  text:'Procedure for verification: (i) Verification shall always be made in the presence of the officer, responsible for the custody of the inventory being verified. (ii) A certificate of verification along with the findings shall be recorded in the stock register. (iii) Discrepancies, including shortages, damages and unserviceable goods, if any, identified during verification, shall immediately be brought to the notice of the competent authority for taking appropriate action in accordance with provision given in Rule 33 to 38.',
- ex:'Verification kaise hogi — teen rules: (i) verification <b>hamesha</b> us officer ke saamne jo us inventory ka <b>custodian</b> hai (self-verification nahi, doosra officer verify kare par custodian saamne ho); (ii) <b>verification certificate</b> findings ke saath stock register mein darj ho; (iii) verification mein jo <b>shortage, damage ya unserviceable</b> mile, use तुरंत competent authority ke notice mein laaya jaaye — aur action <b>Rules 33 se 38</b> ke under hoga.' }
+ ex:'Verification kaise hogi — teen rules: (i) verification <b>hamesha</b> us officer ke saamne jo us inventory ka <b>custodian</b> hai (self-verification nahi, doosra officer verify kare par custodian saamne ho); (ii) <b>verification certificate</b> findings ke saath stock register mein darj ho; (iii) verification mein jo <b>shortage, damage ya unserviceable</b> mile, use turant competent authority ke notice mein laaya jaaye — aur action <b>Rules 33 se 38</b> ke under hoga.' }
  ],
  notes:[
  'Rule 213(3)(iii) Chapter 7 ko Chapter 2 ke "Defalcation and losses" (Rules 33–38) se jodta hai — shortage ka matlab automatic penalty nahi, balki <b>reporting chain</b> shuru hona hai.',
@@ -216,7 +216,7 @@ const RULES_DETAIL = [
  traps:[
  { q:'Fixed assets aur consumables — dono ki verification frequency?', a:'Dono "at least once in a year" (213(1) aur 213(2)).' },
  { q:'Verification kiski saamne hogi?', a:'Us officer ki jo inventory ka custodian hai — Rule 213(3)(i), "shall always".' },
- { q:'Shortage mile to pehla kadam?', a:'Record karke तुरंत competent authority ke notice mein laana, phir Rules 33–38 ke hisaab se action.' },
+ { q:'Shortage mile to pehla kadam?', a:'Record karke turant competent authority ke notice mein laana, phir Rules 33–38 ke hisaab se action.' },
  { q:'Kya verification ka matlab item condemn ho gaya?', a:'Nahi. Verification sirf asliyat check karta hai; condemnation/disposal alag process hai (Rules 217–221).' }
  ],
  xref:['Rules 33–38 — losses','Rule 214 — surplus ka time trigger','Rule 215 — library books ka alag norm','Rule 217 — aage disposal']
@@ -370,7 +370,7 @@ const RULES_DETAIL = [
  ex:'₹4 lakh se <b>kam</b> residual value par mode <b>competent authority</b> tay karegi, lekin bina reason ke nahi — teen objectives dhyan mein rakhne honge: (1) samaan ka <b>jama hona</b> rokna, (2) <b>jagah block</b> na hona, (3) disposal hone wale samaan ki <b>value kharab</b> na hona. Saath hi Ministries/Departments ko jahan tak ho sake aise goods ki <b>list</b> banani chahiye — isi list se Special Campaign ke scrap targets bante hain.' },
  { l:2, lab:'(iii)', tag:'SHALL — immediate',
  text:'Certain surplus or obsolete or unserviceable goods such as expired medicines, food grain, ammunition etc., which are hazardous or unfit for human consumption, should be disposed of or destroyed immediately by adopting suitable mode so as to avoid any health hazard and/or environmental pollution and also the possibility of misuse of such goods.',
- ex:'Kuch cheezein <b>bechi nahi ja sakti</b> — expired medicines, food grain, ammunition jaise hazardous ya human consumption ke layak na hone wale items ko <b>तुरंत</b> dispose ya destroy karna hai, suitable mode se. Teen wajah: health hazard, environmental pollution, aur misuse ki sambhavna. Yahan koi threshold lagta nahi — ₹4 lakh se kam ho ya zyada, ye clause alag hai.' },
+ ex:'Kuch cheezein <b>bechi nahi ja sakti</b> — expired medicines, food grain, ammunition jaise hazardous ya human consumption ke layak na hone wale items ko <b>turant</b> dispose ya destroy karna hai, suitable mode se. Teen wajah: health hazard, environmental pollution, aur misuse ki sambhavna. Yahan koi threshold lagta nahi — ₹4 lakh se kam ho ya zyada, ye clause alag hai.' },
  { l:2, lab:'(iv)', tag:'SHALL',
  text:'Surplus or obsolete or unserviceable goods, equipment and documents, which involve security concerns (e.g. currency, negotiable instruments, receipt books, stamps, security press etc.) should be disposed of/destroyed in an appropriate manner to ensure compliance with rules relating to official secrets as well as financial prudence.',
  ex:'Jin cheezon mein <b>security concern</b> ho — currency, negotiable instruments, receipt books, stamps, security press waghaira — unka disposal/destruction aise tareeqe se hoga jo <b>official secrets</b> ke rules aur <b>financial prudence</b> dono ka palan kare. Matlab inhein bhi aam auction mein nahi daala jaata; controlled destruction hi raasta hai.' }
@@ -474,7 +474,7 @@ const RULES_DETAIL = [
  ex:'Auction <b>shuru karte waqt</b> ek baar phir ghoshit karein: goods ki <b>condition</b>, <b>location</b>, aur terms & conditions — <b>ikathhe hue bidders</b> ke faayde ke liye. Publicity mein likha hua phir se bolna zaroori hai, taaki koi bole "mujhe pata nahi tha".' },
  { l:2, lab:'(iv)', tag:'SHALL',
  text:'During the auction process, acceptance or rejection of a bid should be announced immediately on the stroke of the hammer. If a bid is accepted, earnest money (not less than twenty-five per cent. of the bid value) should immediately be taken on the spot from the successful bidder either in cash or in the form of Deposit-at-Call-Receipt (DACR), drawn in favour of the Ministry or Department selling the goods. The goods should be handed over to the successful bidder only after receiving the balance payment.',
- ex:'Teen hard rules: (1) bid ki <b>acceptance ya rejection तुरंत</b> — <b>hammer stroke</b> par — ghoshit ho; (2) accept hote hi <b>earnest money = bid value ka kam se kam 25%</b>, <b>mauke par तुरंत</b> lena hoga — <b>cash</b> ya <b>DACR</b> (Deposit-at-Call-Receipt) jo <b>bechne wale Ministry/Department ke favour</b> mein ho; (3) goods tabhi hand over honge jab <b>baaki payment</b> mil jaaye. Yahan 25% aur "on the spot" dono zaroori hain.' },
+ ex:'Teen hard rules: (1) bid ki <b>acceptance ya rejection turant</b> — <b>hammer stroke</b> par — ghoshit ho; (2) accept hote hi <b>earnest money = bid value ka kam se kam 25%</b>, <b>mauke par turant</b> lena hoga — <b>cash</b> ya <b>DACR</b> (Deposit-at-Call-Receipt) jo <b>bechne wale Ministry/Department ke favour</b> mein ho; (3) goods tabhi hand over honge jab <b>baaki payment</b> mil jaaye. Yahan 25% aur "on the spot" dono zaroori hain.' },
  { l:2, lab:'(v)', tag:'SHALL',
  text:'The composition of the auction team will be decided by the competent authority. The team should however include an officer of the Internal Finance Wing of the department.',
  ex:'Auction team ka gathan competent authority tay karegi — par ek cheez fixed hai: team mein department ke <b>Internal Finance Wing (IFW)</b> ka officer <b>hona hi chahiye</b>. Yani team composition mein discretion hai, IFW representation mein nahi.' }
@@ -487,7 +487,7 @@ const RULES_DETAIL = [
  exceptions:[],
  amendment:null,
  traps:[
- { q:'Auction mein earnest money kitni?', a:'Bid value ka kam se kam 25% — तुरंत, mauke par, cash ya DACR mein.' },
+ { q:'Auction mein earnest money kitni?', a:'Bid value ka kam se kam 25% — turant, mauke par, cash ya DACR mein.' },
  { q:'Auction team mein kaun hona hi chahiye?', a:'Internal Finance Wing ka officer (Rule 220(v)).' },
  { q:'Auction khud karwa sakte hain?', a:'Haan — directly ya approved auctioneers ke through.' },
  { q:'Goods kab hand over honge?', a:'Balance payment milne ke baad hi.' }
@@ -647,7 +647,7 @@ const QUIZ_EXTRA = [
  e:'Theft/fraud <b>Rule 223(3)(i)</b> mein aata hai — non-depreciation wala head. Depreciation ke 4 heads hain: market fluctuation, wear & tear, lack of foresight in purchases, negligence after purchase.' },
  { tag:'Rule 218', q:'Rule 218(iii) covers expired medicines, food grain and ammunition. The rule requires —',
  a:['Sale by advertised tender above ₹4 lakh','Immediate disposal or destruction by a suitable mode','Storage for three years before disposal','Transfer to another department'], c:1,
- e:'Rule 218(iii): hazardous ya human consumption ke layak na hone wale items ko <b>तुरंत</b> dispose/destroy karein — health hazard, pollution aur misuse se bachne ke liye. Threshold in par lagta nahi.' },
+ e:'Rule 218(iii): hazardous ya human consumption ke layak na hone wale items ko <b>turant</b> dispose/destroy karein — health hazard, pollution aur misuse se bachne ke liye. Threshold in par lagta nahi.' },
  { tag:'Rule 218', q:'Security-sensitive items such as currency, stamps, receipt books and security press must be disposed of/destroyed keeping in view —',
  a:['Only the highest price realised','Rules relating to official secrets as well as financial prudence','The E-Waste (Management) Rules, 2022','The Public Records Act, 1993'], c:1,
  e:'Rule 218(iv): "to ensure compliance with rules relating to <b>official secrets</b> as well as <b>financial prudence</b>".' }

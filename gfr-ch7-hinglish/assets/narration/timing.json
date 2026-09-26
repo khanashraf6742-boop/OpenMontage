@@ -3,12 +3,12 @@
     {
       "id": "s1",
       "file": "scene-01.mp3",
-      "chars": 582,
+      "chars": 576,
       "segChars": [
         75,
         78,
-        75,
-        348
+        72,
+        345
       ]
     },
     {
@@ -36,12 +36,12 @@
     {
       "id": "s4",
       "file": "scene-04.mp3",
-      "chars": 938,
+      "chars": 940,
       "segChars": [
         106,
         92,
         32,
-        702
+        704
       ]
     },
     {
@@ -80,34 +80,34 @@
     {
       "id": "s8",
       "file": "scene-08.mp3",
-      "chars": 1199,
+      "chars": 1202,
       "segChars": [
         92,
         119,
         48,
-        934
+        937
       ]
     },
     {
       "id": "s9",
       "file": "scene-09.mp3",
-      "chars": 1762,
+      "chars": 1763,
       "segChars": [
         134,
         133,
         71,
-        1418
+        1419
       ]
     },
     {
       "id": "s10",
       "file": "scene-10.mp3",
-      "chars": 1894,
+      "chars": 1896,
       "segChars": [
         58,
         170,
         105,
-        1555
+        1557
       ]
     }
   ],
@@ -125,7 +125,7 @@
     {
       "no": "209",
       "file": "rule-209.mp3",
-      "chars": 2564
+      "chars": 2561
     },
     {
       "no": "210",
@@ -145,7 +145,7 @@
     {
       "no": "213",
       "file": "rule-213.mp3",
-      "chars": 2409
+      "chars": 2410
     },
     {
       "no": "214",
@@ -155,7 +155,7 @@
     {
       "no": "215",
       "file": "rule-215.mp3",
-      "chars": 2078
+      "chars": 2072
     },
     {
       "no": "216",
@@ -165,27 +165,27 @@
     {
       "no": "217",
       "file": "rule-217.mp3",
-      "chars": 2701
+      "chars": 2696
     },
     {
       "no": "218",
       "file": "rule-218.mp3",
-      "chars": 2546
+      "chars": 2913
     },
     {
       "no": "219",
       "file": "rule-219.mp3",
-      "chars": 3468
+      "chars": 3460
     },
     {
       "no": "220",
       "file": "rule-220.mp3",
-      "chars": 2109
+      "chars": 2112
     },
     {
       "no": "221",
       "file": "rule-221.mp3",
-      "chars": 1364
+      "chars": 1361
     },
     {
       "no": "222",
