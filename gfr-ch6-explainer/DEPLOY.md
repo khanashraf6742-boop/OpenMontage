@@ -75,6 +75,25 @@ POST /repos/khanashraf6742-boop/OpenMontage/pages
 The same token also cannot touch Actions permissions (`GET .../actions/permissions` → 403), so the
 workflow is committed but dormant until that setting is flipped. Once it is, the next push deploys.
 
+### What the workflow has already proved
+
+It has run three times against this branch. Everything up to the Pages switch passes:
+
+```
+✓ Checkout repository
+✓ Set up Node
+✓ Regenerate the Markdown knowledge base
+✓ Fail if the regenerated docs differ from the committed ones
+✓ Assemble site/
+✓ Report what is being published       297 files · 145 MB · 153 clips · 71 docs
+✗ Check that GitHub Pages is enabled   → the one switch, above
+```
+
+The last step exists to say so out loud, because `actions/configure-pages` fails with a bare
+`HttpError: Not Found` that tells the reader nothing.
+
+The second run also caught a real bug — see the `_docs.js` note in `SCRIPT.md`.
+
 Once enabled, the workflow:
 
 1. regenerates `docs/` from the data files, so the Markdown knowledge base can never go stale;

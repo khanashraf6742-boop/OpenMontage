@@ -545,6 +545,28 @@ Module intros ×7 + critical callouts ×3 (`audio/g-*.mp3`) and Batch 1 (`audio/
 
 ---
 
+# A BUG THE DEPLOY WORKFLOW CAUGHT
+
+`data/_docs.js` starts with `fs.rmSync(OUT, { recursive: true, force: true })` — it wipes `docs/`
+before regenerating. But the narration transcript is written by `data/_transcript.js`, a different
+generator. So **running `node data/_docs.js` on its own silently deleted
+`docs/narration-transcript.md`** — 610 lines, 129 KB.
+
+The local check suite never noticed, because `data/_check.sh` happens to run `_transcript` *after*
+`_docs`, which put the file back every time. The GitHub Pages workflow ran only `_docs.js`, so its
+"docs/ is stale" guard saw the deletion and failed the build. That guard is the only reason this was
+found.
+
+`data/_docs.js` now ends with `require('./_transcript.js')`, so a single command always leaves
+`docs/` complete — 71 files. Verified by running `node data/_docs.js` bare and confirming the
+transcript reappears.
+
+**Lesson worth keeping:** a staleness guard that compares generated output to what is committed is
+worth more than a test that just regenerates and looks at the exit code. `_check.sh` passed while
+the output was being destroyed.
+
+---
+
 # RENDERED MP4 VIDEO
 
 `gfr-chapter-6.mp4` — the full narrated video as a single downloadable file, so it can be watched
