@@ -165,6 +165,25 @@ The server has no dependencies, so there is nothing to install and no `npm insta
 
 ---
 
+## Recovering after a sandbox restart
+
+This sandbox restarts rewind the local branch to the base commit and wipe `/tmp`, which deletes the
+MP4, the previews and the running server. Everything is in the remote, so recovery is one command:
+
+```bash
+bash gfr-ch6-explainer/data/_restore.sh 8080        # add SKIP_SERVE=1 to leave the port alone
+```
+
+It fetches the remote tip, resets onto it, checks the MP4 against its known md5
+(`1884061af95beaee1642ef33182bf374`), runs `data/_mp4.js`, runs the whole twelve-test suite, and
+serves. Nothing is re-rendered — the video comes straight out of git, so recovery takes about
+fifteen seconds rather than the four and a half minutes a re-render costs.
+
+`SKIP_SERVE=1` is for when the platform's own process manager owns the server; starting a second
+one would just fail to bind.
+
+---
+
 ## Verifying a deployment
 
 ```bash
