@@ -35,6 +35,8 @@ def main():
     ap.add_argument("--slides", type=int, default=6, help="how many opening slides to include")
     ap.add_argument("--width", type=int, default=640, help="GIF width in pixels")
     ap.add_argument("--out", default=os.path.join(DELIVERABLE, "gfr-chapter-6-preview.gif"))
+    ap.add_argument("--webp", default=os.path.join(DELIVERABLE, "gfr-chapter-6-preview.webp"),
+                    help="also write an animated WebP; pass an empty string to skip")
     ap.add_argument("--keep", action="store_true", help="keep the intermediate slide PNGs")
     args = ap.parse_args()
 
@@ -62,6 +64,16 @@ def main():
         cmd += ["-delay", str(int(round(s["duration"] * 100))), f]
     cmd += [args.out]
     subprocess.run(cmd, check=True)
+
+    if args.webp:
+        # WebP animation is smaller and sharper than GIF for the same slides.
+        wcmd = [convert, "-loop", "0"]
+        for f, s in zip(frames, segs):
+            wcmd += ["-delay", str(int(round(s["duration"] * 100))), f]
+        wcmd += ["-define", "webp:lossless=false", "-quality", "82", args.webp]
+        subprocess.run(wcmd, check=True)
+        print("webp     : %s  (%d KB)" % (os.path.relpath(args.webp, DELIVERABLE),
+                                          os.path.getsize(args.webp) // 1024))
 
     total = sum(s["duration"] for s in segs)
     print("preview  : %s" % os.path.relpath(args.out, DELIVERABLE))

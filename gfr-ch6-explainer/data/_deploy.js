@@ -137,6 +137,17 @@ const ok = (cond, msg) => { if (!cond) problems.push(msg); };
   ok(badDoc.length === 0, 'docs failing to serve: ' + badDoc.join(', '));
 
   /* ---- the MP4 video ---- */
+  const WEBP = path.join(ROOT, 'gfr-chapter-6-preview.webp');
+  if (fs.existsSync(WEBP)) {
+    const w = await get('/gfr-chapter-6-preview.webp');
+    ok(w.status === 200 && /image\/webp/.test(w.headers['content-type'] || ''),
+      '/gfr-chapter-6-preview.webp must serve 200 as image/webp, got ' + w.status);
+    ok(w.body.length > 30000, 'WebP preview looks too small (' + w.body.length + ' bytes)');
+    console.log('webp preview served     : ' + Math.round(fs.statSync(WEBP).size / 1024) + ' KB');
+  } else {
+    console.log('webp preview served     : (not built - run data/_preview.py)');
+  }
+
   const GIF = path.join(ROOT, 'gfr-chapter-6-preview.gif');
   if (fs.existsSync(GIF)) {
     const g = await get('/gfr-chapter-6-preview.gif');
