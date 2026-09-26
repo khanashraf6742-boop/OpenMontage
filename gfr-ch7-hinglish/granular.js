@@ -267,7 +267,7 @@ const RULES_DETAIL = [
  ex:'Pehla hissa ek <b>concession</b> hai: ek saal mein jitni books issue/consult hui unmein har 1,000 par <b>5 volumes</b> ki loss reasonable maani ja sakti hai — par sirf tab jab woh <b>dishonesty ya negligence</b> ki wajah se na ho. Doosra hissa ek <b>exception</b>: <b>₹1,000 se zyada value</b> ki kitaab, aur <b>rare books</b> (value kuch bhi ho) — inki loss ki <b>hamesha</b> investigation hogi. Yani 5/1,000 ka norm sirf ordinary books ke liye hai; mehngi aur rare books ke liye zero tolerance.' }
  ],
  notes:[
- 'Rule 215 Rule 213 ke "at least once in a year" se <b>exception</b> hai — library books par scale-based schedule lagta hai, annual nahi (siwaye ≤20,000 volumes wale library ke).'
+ 'Rule 215, Rule 213 ke "at least once in a year" se <b>exception</b> hai — library books par scale-based schedule lagta hai, annual nahi (siwaye ≤20,000 volumes wale library ke).'
  ],
  provisos:[
  'Proviso jaise shabd (i) ke ant mein: "In case such verification reveals unusual or unreasonable shortages, complete verification shall be done." — sample verification ka result hi complete verification ka trigger hai.'

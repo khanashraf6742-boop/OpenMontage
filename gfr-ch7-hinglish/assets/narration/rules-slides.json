@@ -540,8 +540,8 @@
           "kind": "note",
           "label": "Note",
           "tag": "",
-          "text": "Rule 215 Rule 213 ke \"at least once in a year\" se exception hai — library books par scale-based schedule lagta hai, annual nahi (siwaye ≤20,000 volumes wale library ke).",
-          "nar": "Note: Rule 215 Rule 213 ke \"at least once in a year\" se exception hai — library books par scale-based schedule lagta hai, annual nahi (siwaye ≤20,000 volumes wale library ke)."
+          "text": "Rule 215, Rule 213 ke \"at least once in a year\" se exception hai — library books par scale-based schedule lagta hai, annual nahi (siwaye ≤20,000 volumes wale library ke).",
+          "nar": "Note: Rule 215, Rule 213 ke \"at least once in a year\" se exception hai — library books par scale-based schedule lagta hai, annual nahi (siwaye ≤20,000 volumes wale library ke)."
         },
         {
           "kind": "trap",

@@ -75,14 +75,18 @@ Every rule is broken down to the last atomic unit. For each of the 17 rules the 
 only the three *Note* blocks (Rules 211, 214, 218) and the amendment marker on Rule 218. Nothing has
 been invented; anything not present in the source is shown as “—” in the Coverage tab.
 
-## 🎬 Final video (MP4)
+## 🎬 Final videos (MP4)
 
-Two files, both 1280×720, H.264 + AAC, with chapter markers:
+**One file with everything:** `assets/video/gfr-ch7-complete.mp4` — **32:54**, 67 MB, **27 chapters**
+(10 story scenes, then all 17 rules). It is a stream copy of the two parts, so no quality is lost:
 
 | Part | File | Length | Chapters | Size |
 |---|---|---|---|---|
+| ⭐ complete | `assets/video/gfr-ch7-complete.mp4` | **32:54** | 27 (scenes + rules) | 67 MB |
 | 1 · story mode | `assets/video/gfr-ch7-final.mp4` | 12:03 | 12 | 41 MB |
-| 2 · Deep Dive | `assets/video/gfr-ch7-deepdive.mp4` | **20:48** | 19 (intro + 17 rules + recap) | 25 MB |
+| 2 · Deep Dive | `assets/video/gfr-ch7-deepdive.mp4` | **20:50** | 19 (intro + 17 rules + recap) | 26 MB |
+
+All are 1280×720, 25 fps, H.264 + AAC; the two parts also ship `.srt` sidecars.
 
 Part 1 in detail:
 
@@ -142,7 +146,8 @@ granular.js           clause tree: verbatim text + Hinglish vyakhya + notes/prov
 assets/panels/        scene-01 … scene-10 comic panels
 assets/audio/         scene-01 … scene-10 (story) + rule-207 … rule-223 (per-rule narration)
 assets/narration/     the exact TTS scripts (.txt) + speech.json + scenes.json + timing.json
-assets/video/         gfr-ch7-final.mp4 (12:03) + gfr-ch7-deepdive.mp4 (20:48) + their .srt files
+assets/video/         gfr-ch7-complete.mp4 (32:54) + gfr-ch7-final.mp4 (12:03)
+                      + gfr-ch7-deepdive.mp4 (20:50) + their .srt files
 video.html            video player page with clickable chapters
 tools/                city-style.py, export-narration.js, mp3tool.py, set-timing.py,
                       make-video.py, make-video-deep.py
