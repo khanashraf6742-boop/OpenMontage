@@ -153,7 +153,8 @@ const MIME = {
   '.json': 'application/json; charset=utf-8', '.md': 'text/markdown; charset=utf-8',
   '.mp3': 'audio/mpeg', '.mp4': 'video/mp4',
   '.css': 'text/css; charset=utf-8',
-  '.svg': 'image/svg+xml', '.png': 'image/png', '.txt': 'text/plain; charset=utf-8',
+  '.svg': 'image/svg+xml', '.png': 'image/png', '.gif': 'image/gif',
+  '.txt': 'text/plain; charset=utf-8',
   '.ico': 'image/x-icon'
 };
 /* Media needs byte ranges or the browser cannot seek a 120 MB video. */
@@ -280,6 +281,8 @@ every rule, sub-rule, clause, proviso, explanation, exception and amendment foot
 
 <div class="cards">
 <div class="card"><a href="/gfr-chapter-6.mp4">🎞 Download the MP4 video</a><span>2 h 10 min · 1280×720 · 120 MB · all 134 narrated slides</span></div>
+<div class="card"><a href="/watch.html">▶ Watch the full MP4 here</a><span>2 h 10 min · native player · seekable</span></div>
+<div class="card"><a href="/gfr-chapter-6-preview.gif">🖼 Animated preview</a><span>First 5:17 as a GIF · no player needed</span></div>
 <div class="card"><a href="/granular-video.html">🎬 Granular narrated video</a><span>481 beats · 7 modules · 134 studio clips · Hinglish</span></div>
 <div class="card"><a href="/chapter6-complete.html">📖 Written reference</a><span>All 67 rules, every provision, searchable</span></div>
 <div class="card"><a href="/index.html">▶ Episode 1 — Goods</a><span>Comic explainer, Rules 142–176</span></div>

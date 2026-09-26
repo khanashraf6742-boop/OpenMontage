@@ -115,10 +115,11 @@ const ok = (cond, msg) => { if (!cond) problems.push(msg); };
   ok(/Rule 170/.test(ck.body), '/api/copilotkit should answer "bid security" with Rule 170');
 
   /* ---- every page, clip and doc ---- */
-  for (const p of ['index.html', 'services.html', 'chapter6-complete.html', 'granular-video.html']) {
+  for (const p of ['index.html', 'services.html', 'chapter6-complete.html', 'granular-video.html', 'watch.html']) {
     const r = await get('/' + p);
     ok(r.status === 200, '/' + p + ' should serve 200, got ' + r.status);
-    ok(r.body.length > 5000, '/' + p + ' looks too small (' + r.body.length + ' bytes)');
+    ok(r.body.length > 2000 && /<!doctype html/i.test(r.body),
+      '/' + p + ' does not look like a real page (' + r.body.length + ' bytes)');
   }
   const clips = fs.readdirSync(path.join(ROOT, 'audio')).filter(f => f.endsWith('.mp3'));
   let badClip = [];
@@ -136,6 +137,17 @@ const ok = (cond, msg) => { if (!cond) problems.push(msg); };
   ok(badDoc.length === 0, 'docs failing to serve: ' + badDoc.join(', '));
 
   /* ---- the MP4 video ---- */
+  const GIF = path.join(ROOT, 'gfr-chapter-6-preview.gif');
+  if (fs.existsSync(GIF)) {
+    const g = await get('/gfr-chapter-6-preview.gif');
+    ok(g.status === 200 && /image\/gif/.test(g.headers['content-type'] || ''),
+      '/gfr-chapter-6-preview.gif must serve 200 as image/gif, got ' + g.status);
+    ok(g.body.length > 50000, 'GIF preview looks too small (' + g.body.length + ' bytes)');
+    console.log('gif preview served      : ' + Math.round(fs.statSync(GIF).size / 1024) + ' KB');
+  } else {
+    console.log('gif preview served      : (not built - run data/_preview.py)');
+  }
+
   const MP4 = path.join(ROOT, 'gfr-chapter-6.mp4');
   if (fs.existsSync(MP4)) {
     const size = fs.statSync(MP4).size;

@@ -641,6 +641,24 @@ node data/_mp4.js
 #   MP4 FILE CHECK: PASS
 ```
 
+## Showing it where video cannot be shown
+
+The workspace file viewer displays images but not video, so presenting a 95 MB MP4 through it shows
+nothing. `data/_preview.py` renders the opening slides into `gfr-chapter-6-preview.gif` instead,
+keeping the real per-slide durations so the pacing is faithful:
+
+```bash
+python3 data/_preview.py --slides 6 --width 640
+#   preview  : gfr-chapter-6-preview.gif
+#   slides   : 6 of 134
+#   covers   : 0:00 -> 5:17 of the 130:07 video
+#   size     : 297 KB
+```
+
+Because the slides are static, one frame per slide is all a GIF needs. `watch.html` is the page to
+use for the real thing — a native `<video controls>` element pointing at `/gfr-chapter-6.mp4`, with
+the Range support the server adds making it seekable.
+
 ## Serving it
 
 `server.js` serves `/gfr-chapter-6.mp4` as `video/mp4` with HTTP **Range** support, so the browser

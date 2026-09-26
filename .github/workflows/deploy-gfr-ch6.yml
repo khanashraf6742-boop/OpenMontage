@@ -61,10 +61,11 @@ jobs:
           rm -rf "$SITE"
           mkdir -p "$SITE"
           cd gfr-ch6-explainer
-          # The four HTML pages. index.html is the Episode 1 comic and doubles as
-          # the landing page, so it is copied to the site root.
-          cp index.html services.html chapter6-complete.html granular-video.html "../$SITE/"
-          cp first-clip.html "../$SITE/" 2>/dev/null || true
+          # The HTML pages. index.html is the Episode 1 comic and doubles as the
+          # landing page, so it is copied to the site root. watch.html is the one
+          # that plays the MP4 in a native <video> element.
+          cp index.html services.html chapter6-complete.html granular-video.html watch.html "../$SITE/"
+          cp first-clip.html gfr-chapter-6-preview.gif "../$SITE/" 2>/dev/null || true
           cp -r audio data docs integrations assets "../$SITE/"
           cp gfr-chapter-6.mp4 "../$SITE/" 2>/dev/null || echo "note: MP4 not in this checkout"
           cp DEPLOY.md SCRIPT.md "../$SITE/" 2>/dev/null || true

@@ -27,6 +27,8 @@ No dependencies, no build step, no API keys. Node 18+.
 |---|---|
 | `http://localhost:8080/` | landing page — links to everything, plus the full 67-rule table |
 | `/granular-video.html` | the granular narrated video — 481 beats, 7 modules, 134 clips, Hinglish |
+| `/watch.html` | **plays the MP4 in a native `<video>` element** — full length, with sound |
+| `/gfr-chapter-6-preview.gif` | the first 5:17 as an animated GIF, real per-slide timing |
 | `/gfr-chapter-6.mp4` | the whole narration as one file — 2 h 10 min, 95 MB, Range-enabled |
 | `/chapter6-complete.html` | exhaustive written reference, searchable |
 | `/index.html` | Episode 1 comic — Goods, Rules 142–176 |
@@ -118,6 +120,17 @@ https://raw.githubusercontent.com/khanashraf6742-boop/OpenMontage/arena/01a0d93c
 ```
 
 99,811,274 bytes, blob `9bf94dfcbefd49de2dc27aa570a87db934f2e50e`. This works from a browser today.
+
+### Why there is a GIF as well as an MP4
+
+The workspace file viewer displays images — png, gif, webp — but not video. A 95 MB MP4 presented
+through it shows nothing at all, which is exactly the "I can't see the video" problem. So
+`data/_preview.py` renders the opening slides into `gfr-chapter-6-preview.gif`, which keeps the real
+per-slide durations (GIF delays are in centiseconds, and the longest single slide is 1:31, well
+inside the 655 s cap). Six slides, 297 KB, covering 0:00–5:17.
+
+The slides are static, so one frame per slide is enough — the GIF is a few hundred kilobytes against
+the MP4's 95 MB. It has no sound; `watch.html` is the one to use for that.
 
 ### What the workspace cannot do
 
