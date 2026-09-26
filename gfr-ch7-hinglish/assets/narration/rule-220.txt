@@ -1,0 +1,21 @@
+Rule 220 — Disposal through Auction.
+
+Yaad rakhne ka formula: 25% spot earnest money · Cash ya DACR · IFW officer zaroori.
+
+Rule 220 paanch clauses ka hai: (i) kaun karayega, (ii) principles + publicity, (iii) auction shuru mein dobara ghoshna, (iv) hammer stroke + earnest money, (v) team mein IFW officer.
+
+Clause (i): Auction do tareeqe se ho sakti hai: khud (directly) ya approved auctioneers ke through. Dono valid hain — "approved auctioneers" ka matlab hai ki kisi bhi private auctioneer ko nahi, approved ko hi lena hai.
+
+Clause (ii): Principles wahi — transparency, competition, fairness, discretion ka khatma. Auction plan mein goods ki details, unka location aur sale ki terms hon, aur use utni hi wide publicity mile jitni advertised tender ko milti hai. Matlab chupke se auction karwana allowed nahi.
+
+Clause (iii): Auction shuru karte waqt ek baar phir ghoshit karein: goods ki condition, location, aur terms & conditions — ikathhe hue bidders ke faayde ke liye. Publicity mein likha hua phir se bolna zaroori hai, taaki koi bole "mujhe pata nahi tha".
+
+Clause (iv): Teen hard rules: (1) bid ki acceptance ya rejection तुरंत — hammer stroke par — ghoshit ho; (2) accept hote hi earnest money = bid value ka kam se kam 25%, mauke par तुरंत lena hoga — cash ya DACR (Deposit-at-Call-Receipt) jo bechne wale Ministry/Department ke favour mein ho; (3) goods tabhi hand over honge jab baaki payment mil jaaye. Yahan 25% aur "on the spot" dono zaroori hain.
+
+Clause (v): Auction team ka gathan competent authority tay karegi — par ek cheez fixed hai: team mein department ke Internal Finance Wing (IFW) ka officer hona hi chahiye. Yani team composition mein discretion hai, IFW representation mein nahi.
+
+Note. 25% earnest money aur 10% bid security (Rule 219) mein farq yaad rakhiye — auction mein 25%, tender mein 10%. DACR = Deposit-at-Call-Receipt, bechne wale Ministry/Department ke favour mein.
+
+Exam trap: Auction mein earnest money kitni? Bid value ka kam se kam 25% — तुरंत, mauke par, cash ya DACR mein.
+
+Exam trap: Auction team mein kaun hona hi chahiye? Internal Finance Wing ka officer (Rule 220(v)).

@@ -1,0 +1,21 @@
+Rule 208 — Receipt of goods and materials from private suppliers.
+
+Yaad rakhne ka formula: C.I.R.T.S. — Contract, Inspect, Record, Technical check, Stock register.
+
+Rule 208 mein sirf ek sub-rule hai — Rule 208(1) — jiske andar teen clauses (i), (ii), (iii) hain. Ye tab lagta hai jab maal bahar ke private supplier se aata hai (internal division se aane par Rule 209 lagega).
+
+Rule 208(1): Heading clause. Iske niche (i) se (iii) teen mandatory steps hain — contract dekho, verify karo, register karo.
+
+Clause (i): Sabse pehla kadam contract terms padhna hai. Delivery schedule, specification, inspection clause, packaging, insurance — jo kuch contract mein likha hai, receipt usi ke hisaab se honi chahiye. Contract ke bina receipt matlab aage chalkar dispute mein department kamzor padega.
+
+Clause (ii): Teen physical cheezein har baar honi chahiye: counting, measuring ya weighing, aur visual inspection — aur ye sab receipt ke time par hi. Visual inspection ke teen objective hain: quantity sahi hai, quality specification ke hisaab se hai, aur koi damage/deficiency nahi. Technical inspection "where required" hai — matlab har item par nahi, sirf jahan zaroori ho — aur woh approved Technical Inspector ya approved Agency se hi karwani hogi. Aakhir ka "appropriate receipt ... may also be given" ek MAY hai: supplier ko receipt dena contract provisions par depend karta hai.
+
+Clause (iii): Do kaam: (1) stock register mein entry — "preferably IT-based", yaani IT system ko tarjeeh hai par ye preference hai, hard mandate nahi; (2) officer-in-charge ka certificate ki usne maal asal mein liya hai aur register mein darj kiya hai. Ye certificate hi receipt ki legal backbone hai.
+
+Note. Rule 208 mein koi footnote ya proviso nahi hai — poora rule teen clauses ka hai. Yahan "shall" (counting/measuring/weighing/visual inspection/certificate) aur "may" (receipt to supplier) ka farq exam mein poocha jaata hai.
+
+Exception. Technical inspection sirf "where required" — har receipt par technical inspection zaroori nahi.
+
+Exam trap: Technical inspection kab karwani hogi? "Where required" — jahan zaroori ho, approved Technical Inspector ya approved Agency se. Har baar nahi.
+
+Exam trap: IT-based stock register mandatory hai? Nahi — "preferably in an IT-based system". Par stock register entry aur receipt certificate dono mandatory hain.

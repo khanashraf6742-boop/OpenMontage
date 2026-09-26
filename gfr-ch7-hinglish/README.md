@@ -28,10 +28,11 @@ No build step, no dependencies — plain HTML/CSS/JS plus generated panel art an
 | 6 | Charge ka transfer | **216** | Joint signed & dated handing-over statement, a copy each |
 | 7 | Surplus/obsolete/unserviceable ghoshit karna | **217** | Who declares, recorded reasons, valuation trio, Form GFR-10, responsibility, e-waste |
 | 8 | ₹4 lakh wali line | **218 [AMENDED]** | Mode of disposal by residual value; hazardous & security items; **₹2L → ₹4L change** |
-| 9 | Tender ya auction | **219, 220** | 8-step tender, 10% bid security vs 25% earnest money, IFW officer, payment-before-release |
+| 9 | Tender ya auction | **219, 220** | 9-step tender (a)–(i), 10% bid security vs 25% earnest money, IFW officer, payment-before-release |
 | 10 | Scrap, sale account aur write-off | **221, 222, 223** | Scrap value + Finance consultation, Form GFR-11, write-off sanction, 4 + 5 loss heads, current orders |
 
-Total narration: ~14 minutes. Total rules covered: **17 of 17**.
+Total narration: **~12 minutes** of story scenes + **~24 minutes** of per-rule deep dives.
+Total rules covered: **17 of 17**.
 
 ## 🔬 Deep Dive — granular clause tree (the core deliverable)
 
@@ -79,8 +80,8 @@ been invented; anything not present in the source is shown as “—” in the C
 - **▶ Watch** — plays like a video: narrated comic panels, timed speech bubbles, live captions,
   progress bar, auto-advance between scenes. Keyboard: `Space` play/pause, `←` `→` scene jump.
 - **🔬 Deep Dive** — 17 rule pages with the clause tree + per-rule narration (`▶ Suniye`).
-- **Hinglish ⇄ हिंदी** — every caption and speech bubble switches between Roman Hinglish and
-  Devanagari (the audio is the Devanagari script).
+- **🏙️ City Hinglish ⇄ हिंदी** — every caption and speech bubble switches scripts; both are written
+  in the *spoken* register (see “Language & voice” below). The Roman column is the narration script.
 - **Chapter map** — click any rule from 207 to 223 to jump straight to the scene that teaches it.
 - **Rule map** — all 17 rules with the operative text, key points and exceptions.
 - **Exam drill** — 32 MCQs with explanations, tagged by rule (18 general + 14 clause-level).
@@ -98,11 +99,37 @@ content.js            scenes (narration, bubbles, rule cards, decisions), 17-rul
 granular.js           clause tree: verbatim text + Hinglish vyakhya + notes/provisos/exceptions/amendment
                       + atomic coverage ledger + 14 clause-level MCQs
 assets/panels/        scene-01 … scene-10 comic panels
-assets/audio/         scene-01 … scene-10 (story) + rule-207 … rule-216 (per-rule narration)
-
-> **Narration status:** all **17 rules** (207–223) have their own dedicated per-rule narration clip,
-> plus the 10 story-mode scene clips. Total ≈ 45 minutes of Hinglish audio.
+assets/audio/         scene-01 … scene-10 (story) + rule-207 … rule-223 (per-rule narration)
+assets/narration/     the exact TTS scripts (.txt) + speech.json (clip manifest) + timing.json
+tools/                city-style.py, export-narration.js, mp3tool.py, set-timing.py
 ```
+
+> **Narration status:** scenes 1–9 are re-recorded in the Indian-accent voice. Scene 10 (two parts)
+> and the 17 per-rule clips are queued — the voice service allows 10 clips per pass, so they follow
+> in the next passes. Every clip is synthesised from `assets/narration/*.txt`, which is the same
+> text that appears on screen.
+
+## Language & voice
+
+**City Hinglish** is the register used throughout: the way people actually talk in a government
+office, not bookish Hindi written in Roman letters.
+
+| Bookish (first draft) | City Hinglish (now) |
+|---|---|
+| ke anuroop / ke tahat | ke hisaab se / ke under |
+| gunjaish, maujoodgi, lagu | chance, saamne, lagte hain |
+| sampatti, hastakshar, nigraani | asset, sign, supervision |
+| vivaran, prastut, apekshit | details, present, expected |
+
+Rules of the register: legal nouns stay English (rule, register, verification, tender, auction,
+sanction, disposal); the grammar frame stays Hindi but in its everyday spoken form
+(*hai / hoga / padega / chahiye*). The Devanagari column gets the same treatment, so it reads as
+spoken Hindi rather than administrative prose. Both columns were converted with
+`tools/city-style.py` (a documented, re-runnable glossary), then sentence-by-sentence reviewed.
+
+**Voice:** Indian-accent Hinglish narration (`voice-01`, en-IN). The audio scripts are generated
+from the same text that is on screen (`tools/export-narration.js`), so the voice and the captions
+can never drift apart.
 
 ## Validation status — PASS
 

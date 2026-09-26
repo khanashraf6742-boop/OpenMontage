@@ -1,0 +1,201 @@
+{
+  "scenes": [
+    {
+      "id": "s1",
+      "file": "scene-01.mp3",
+      "chars": 582,
+      "segChars": [
+        75,
+        78,
+        75,
+        348
+      ]
+    },
+    {
+      "id": "s2",
+      "file": "scene-02.mp3",
+      "chars": 854,
+      "segChars": [
+        81,
+        112,
+        58,
+        597
+      ]
+    },
+    {
+      "id": "s3",
+      "file": "scene-03.mp3",
+      "chars": 946,
+      "segChars": [
+        64,
+        126,
+        80,
+        670
+      ]
+    },
+    {
+      "id": "s4",
+      "file": "scene-04.mp3",
+      "chars": 938,
+      "segChars": [
+        106,
+        92,
+        32,
+        702
+      ]
+    },
+    {
+      "id": "s5",
+      "file": "scene-05.mp3",
+      "chars": 1401,
+      "segChars": [
+        69,
+        134,
+        127,
+        1065
+      ]
+    },
+    {
+      "id": "s6",
+      "file": "scene-06.mp3",
+      "chars": 761,
+      "segChars": [
+        65,
+        105,
+        68,
+        517
+      ]
+    },
+    {
+      "id": "s7",
+      "file": "scene-07.mp3",
+      "chars": 1184,
+      "segChars": [
+        56,
+        121,
+        96,
+        905
+      ]
+    },
+    {
+      "id": "s8",
+      "file": "scene-08.mp3",
+      "chars": 1199,
+      "segChars": [
+        92,
+        119,
+        48,
+        934
+      ]
+    },
+    {
+      "id": "s9",
+      "file": "scene-09.mp3",
+      "chars": 1762,
+      "segChars": [
+        134,
+        133,
+        71,
+        1418
+      ]
+    },
+    {
+      "id": "s10",
+      "file": "scene-10.mp3",
+      "chars": 1894,
+      "segChars": [
+        58,
+        170,
+        105,
+        1555
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "no": "207",
+      "file": "rule-207.mp3",
+      "chars": 1423
+    },
+    {
+      "no": "208",
+      "file": "rule-208.mp3",
+      "chars": 2340
+    },
+    {
+      "no": "209",
+      "file": "rule-209.mp3",
+      "chars": 2573
+    },
+    {
+      "no": "210",
+      "file": "rule-210.mp3",
+      "chars": 1330
+    },
+    {
+      "no": "211",
+      "file": "rule-211.mp3",
+      "chars": 1853
+    },
+    {
+      "no": "212",
+      "file": "rule-212.mp3",
+      "chars": 1276
+    },
+    {
+      "no": "213",
+      "file": "rule-213.mp3",
+      "chars": 2443
+    },
+    {
+      "no": "214",
+      "file": "rule-214.mp3",
+      "chars": 1110
+    },
+    {
+      "no": "215",
+      "file": "rule-215.mp3",
+      "chars": 2090
+    },
+    {
+      "no": "216",
+      "file": "rule-216.mp3",
+      "chars": 1043
+    },
+    {
+      "no": "217",
+      "file": "rule-217.mp3",
+      "chars": 2712
+    },
+    {
+      "no": "218",
+      "file": "rule-218.mp3",
+      "chars": 2558
+    },
+    {
+      "no": "219",
+      "file": "rule-219.mp3",
+      "chars": 3486
+    },
+    {
+      "no": "220",
+      "file": "rule-220.mp3",
+      "chars": 2121
+    },
+    {
+      "no": "221",
+      "file": "rule-221.mp3",
+      "chars": 1370
+    },
+    {
+      "no": "222",
+      "file": "rule-222.mp3",
+      "chars": 800
+    },
+    {
+      "no": "223",
+      "file": "rule-223.mp3",
+      "chars": 2107
+    }
+  ]
+}

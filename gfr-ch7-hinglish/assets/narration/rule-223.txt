@@ -1,0 +1,19 @@
+Rule 223 — Write-off of losses.
+
+Yaad rakhne ka formula: Sanction har haal mein · 4 depreciation heads · 5 non-depreciation heads.
+
+Rule 223 teen sub-rules mein hai: (1) powers to write off, (2) depreciation wale losses ke 4 heads, (3) depreciation ke alawa wale losses ke 5 heads.
+
+Clause Rule 223(1): Teen baatein: (1) revaluation, stock-taking ya kisi aur wajah se hone wale profit aur loss dono record kiye jayenge aur zaroorat padne par adjust kiye jayenge; (2) formal sanction competent authority ki leni hogi — chahe government accounts mein koi correction/adjustment ho ya na ho. Ye aakhri line sabse bada exam trap hai; (3) write-off ki powers DFPR ke under hain — GFR khud koi amount nahi batata.
+
+Clause Rule 223(2): Depreciation se hone wale loss ko chaar heads mein baant kar record karna hai: (i) market price ka normal utaar-chadhav; (ii) normal ghisavat (wear & tear); (iii) kharid regulate karne mein foresight ki kami; (iv) kharid ke baad negligence. Dhyan dein — (iii) aur (iv) "normal" nahi hain, ye management failures hain, isliye inhein alag head mein dikhana accountability ka hissa hai.
+
+Clause Rule 223(3): Depreciation ke alawa wale losses ke paanch heads: (i) chori ya fraud; (ii) upeksha (neglect); (iii) obsolescence ya zarurat se zyada kharid ki anticipated losses; (iv) damage (nuksan); (v) Force Majeure — aag, baadh, dushman ki action jaise extraordinary situations. Force Majeure ka head isliye alag hai kyunki wahan kisi ki personal responsibility nahi hoti.
+
+Note. Rule 223(1) ka "even though no formal correction or adjustment in government accounts is involved" — sabse zyada poocha jaane wala line. 4 heads = depreciation · 5 heads = non-depreciation (jismein Force Majeure aakhri hai).
+
+Exception. Force Majeure (aag, baadh, enemy action) — ye head batata hai ki har loss mein kisi ki negligence nahi hoti.
+
+Exam trap: Accounts mein koi adjustment nahi hoga to bhi sanction chahiye? Haan — Rule 223(1) clear roop se kehta hai "even though no formal correction or adjustment in government accounts is involved".
+
+Exam trap: Depreciation wale losses ke kitne heads? 4.

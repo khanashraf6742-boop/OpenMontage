@@ -1,0 +1,13 @@
+Rule 207 — Inventory Management — scope of the chapter.
+
+Yaad rakhne ka formula: Basic rules sabke liye · detail department ki, parChapter 7 ke hisaab se.
+
+Ye rule poore chapter ka "scope clause" hai — isme koi sub-rule, clause ya proviso nahi hai. Ye batata hai ki Chapter 7 ke basic rules kis par lagte hain aur departmental instructions ki kya hadd hai.
+
+Rule 207: Do baatein: (1) is chapter ke basic rules sab Ministries/Departments par lagte hain; (2) koi bhi Ministry/Department apne detailed instructions aur procedures bana sakta hai — lekin woh "broadly in conformity" hone chahiye, yaani Chapter 7 ke basic rules ke khilaf nahi ja sakte. Matlab ye ki: aapka department apna format, apna timeline aur apni delegation likh sakta hai, par annual verification, GFR-10 report, ₹4 lakh ki line aur write-off sanction jaise basic rules ko hata nahi sakta.
+
+Exception. Autonomous Bodies par GFR tab tak lagta hai jab tak unke bye-laws mein Government-approved alag Financial Rules na hon (Rule 1(3)). Rule 5 ke under interpretation ka doubt aane par Ministry of Finance ka decision final hota hai.
+
+Exam trap: Kya koi department Chapter 7 se hat kar apne inventory rules bana sakta hai? Nahi. Detailed instructions "broadly in conformity" with Chapter 7 hone chahiye — conformity test Rule 207 ka core hai.
+
+Exam trap: Chapter 7 mein kitne rules hain? Rules 207 se 223 — kul 17 rules (Chapter 6 procurement hai, 142–206).

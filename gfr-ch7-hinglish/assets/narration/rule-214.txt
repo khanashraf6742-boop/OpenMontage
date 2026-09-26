@@ -1,0 +1,15 @@
+Rule 214 — Buffer Stock.
+
+Yaad rakhne ka formula: Buffer = authority tay kare · 1 saal se upar = generally surplus.
+
+Rule 214 ek chhota rule hai par iska Note poore chapter ka sabse cited line hai — "ek saal se zyada stock mein pada material generally surplus".
+
+Rule 214: Optimum buffer stock competent authority tay karega — ye koi fixed number nahi jo GFR mein likha ho. Tay karte waqt teen factors dekhne honge: requirement ki frequency, quantity, aur supply ka pattern (lead time, reliability). Matlab buffer stock ek analysis ka nateeja hai, guess nahi.
+
+Note. [object Object]
+
+Exception. "Unless adequate reasons to treat it otherwise exist" — planned/strategic spares, warranty items, seasonal stock jaise reasons record kiye ja sakte hain.
+
+Exam trap: Buffer stock ka optimum level kaun tay karta hai? Competent authority — frequency, quantity aur supply pattern ke base par. GFR koi fixed figure nahi deta.
+
+Exam trap: 1 saal se zyada stock mein pada material automatic surplus hai? Nahi — "generally" surplus, aur "unless adequate reasons to treat it otherwise exist". Ye rebuttable presumption hai.
