@@ -1,0 +1,101 @@
+name: Deploy GFR Chapter 6
+
+# Publishes the GFR 2017 Chapter 6 explainer to GitHub Pages.
+#
+# MANUAL STEP, once, by the repository owner:
+#   Settings -> Pages -> Source -> GitHub Actions
+# The CI token used to push this branch cannot enable Pages (the Pages API
+# answers 403 "Resource not accessible by integration"), so the workflow is
+# committed but dormant until that setting is flipped.
+#
+# Once enabled, every push to main or to the arena branch redeploys.
+
+on:
+  push:
+    branches:
+      - main
+      - "arena/**"
+  workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-gfr-ch6
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build the site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # docs/ is generated. Rebuilding it here means the published Markdown can
+      # never drift from data/ch6-*.js.
+      - name: Regenerate the Markdown knowledge base
+        run: node gfr-ch6-explainer/data/_docs.js
+
+      - name: Fail if the regenerated docs differ from the committed ones
+        run: |
+          if ! git diff --quiet -- gfr-ch6-explainer/docs; then
+            echo "::error::docs/ is stale - run 'node gfr-ch6-explainer/data/_docs.js' and commit"
+            git --no-pager diff --stat -- gfr-ch6-explainer/docs
+            exit 1
+          fi
+
+      - name: Assemble site/
+        run: |
+          set -euo pipefail
+          SITE=site
+          rm -rf "$SITE"
+          mkdir -p "$SITE"
+          cd gfr-ch6-explainer
+          # The four HTML pages. index.html is the Episode 1 comic and doubles as
+          # the landing page, so it is copied to the site root.
+          cp index.html services.html chapter6-complete.html granular-video.html "../$SITE/"
+          cp first-clip.html "../$SITE/" 2>/dev/null || true
+          cp -r audio data docs integrations assets "../$SITE/"
+          cp gfr-chapter-6.mp4 "../$SITE/" 2>/dev/null || echo "note: MP4 not in this checkout"
+          cp DEPLOY.md SCRIPT.md "../$SITE/" 2>/dev/null || true
+          cd ..
+          # The JSON API and the search box need server.js; Pages is static only.
+          cp gfr-ch6-explainer/server.js "$SITE/server.js"
+          # Pages serves /index.html at /, which is already the case.
+
+      - name: Report what is being published
+        run: |
+          echo "site size: $(du -sh site | cut -f1)"
+          echo "files    : $(find site -type f | wc -l)"
+          echo "clips    : $(ls site/audio/*.mp3 2>/dev/null | wc -l)"
+          echo "docs     : $(ls site/docs/*.md 2>/dev/null | wc -l)"
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
