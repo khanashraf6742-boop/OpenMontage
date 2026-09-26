@@ -119,6 +119,12 @@ demo: ensure-venv
 demo-list: ensure-venv
 	$(RUN_PYTHON) render_demo.py --list
 
+pdf-cover: ensure-venv
+	@echo "==> PDF -> branded video cover (batched + resumable)"
+	@echo "    Usage: make pdf-cover PDF=path/or/url.pdf [OPTS]"
+	@test -n "$(PDF)" || { echo "Set PDF=/path/to/guide.pdf (or a URL)"; exit 1; }
+	$(RUN_PYTHON) tools/video/pdf_cover.py "$(PDF)" -o output/pdf-cover/cover.mp4 $(OPTS)
+
 lint: ensure-venv
 	$(RUN_PYTHON) -m py_compile tools/base_tool.py
 	$(RUN_PYTHON) -m py_compile tools/tool_registry.py

@@ -1,0 +1,6 @@
+# OpenMontage - PDF Cover Dependencies
+# Install these in addition to requirements.txt to use the `pdf_cover` tool
+# (tools/video/pdf_cover.py) — PDF -> branded video cover, batched + resumable.
+PyMuPDF>=1.24       # PDF rasterization + text extraction (bundles MuPDF, no poppler needed)
+imageio-ffmpeg>=0.4 # static FFmpeg binary, so no system FFmpeg is required
+requests>=2.31      # already in requirements.txt; listed for URL sources

@@ -470,6 +470,7 @@ Key capability families to look for in the output:
 - **image_generation** — Image generation providers (cloud, local GPU, stock). Route via `image_selector`.
 - **music_generation** — Music and sound effect generation.
 - **video_post** — Composition, stitching, trimming (FFmpeg-based, always local).
+- **video_cover** — Branded cover/hero clips generated from a source document. Route through `pdf_cover`, which turns a brand or style guide PDF into a short palette-matched cover video. Renders pages in bounded resumable batches, so large documents never overload the machine.
 - **audio_processing** — Mixing, enhancement (FFmpeg-based, always local).
 - **analysis** — Transcription, scene detection, frame sampling.
 - **avatar** — Talking head and lip sync generation.
