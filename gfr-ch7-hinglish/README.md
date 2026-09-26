@@ -88,6 +88,18 @@ been invented; anything not present in the source is shown as “—” in the C
 
 All are 1280×720, 25 fps, H.264 + AAC; the two parts also ship `.srt` sidecars.
 
+**Compact (mobile) versions** — same content, same chapter markers, main-profile H.264:
+
+| File | Length | Size |
+|---|---|---|
+| `assets/video/gfr-ch7-complete-480p.mp4` | 32:54 | **23 MB** (854×480, 27 chapters) |
+| `assets/video/gfr-ch7-final-480p.mp4` | 12:03 | **11 MB** (854×480, 12 chapters) |
+
+**Devanagari subtitles** for Part 1: `assets/video/gfr-ch7-final.hi.srt` (88 cues, same timings as the
+Roman track) and `assets/video/gfr-ch7-final-hi.mp4` — the story video with the हिंदी track muxed in as a
+selectable soft subtitle (the burned-in track stays Roman Hinglish, as designed).
+Part 2 shows clause text, which is English/Roman by definition, so it ships the Roman track only.
+
 Part 1 in detail:
 
 | What | Detail |
@@ -113,6 +125,8 @@ Render it yourself:
 pip install imageio-ffmpeg
 python3 tools/make-video.py                 # part 1 (--scenes 3 9 for a partial render)
 python3 tools/make-video-deep.py            # part 2 (--rules 215 216 for a partial render)
+python3 tools/make-compact.py               # 480p mobile renders (--only complete|part1)
+python3 tools/make-srt-hindi.py             # Devanagari subtitle track + soft-sub MP4
 ```
 Both accept `--crf` and `--height`.
 
@@ -146,11 +160,13 @@ granular.js           clause tree: verbatim text + Hinglish vyakhya + notes/prov
 assets/panels/        scene-01 … scene-10 comic panels
 assets/audio/         scene-01 … scene-10 (story) + rule-207 … rule-223 (per-rule narration)
 assets/narration/     the exact TTS scripts (.txt) + speech.json + scenes.json + timing.json
-assets/video/         gfr-ch7-complete.mp4 (32:54) + gfr-ch7-final.mp4 (12:03)
-                      + gfr-ch7-deepdive.mp4 (20:50) + their .srt files
+assets/video/         gfr-ch7-complete.mp4 (32:54) · gfr-ch7-final.mp4 (12:03) ·
+                      gfr-ch7-deepdive.mp4 (20:50) · 480p compact versions ·
+                      Roman + हिंदी .srt sidecars · gfr-ch7-final-hi.mp4 (soft subs)
 video.html            video player page with clickable chapters
 tools/                city-style.py, export-narration.js, mp3tool.py, set-timing.py,
-                      make-video.py, make-video-deep.py
+                      make-video.py, make-video-deep.py, make-complete-video.py,
+                      make-compact.py, make-srt-hindi.py
 ```
 
 > **Narration status:** complete — scenes 1–10 **and all 17 rules (207–223)** are recorded in the

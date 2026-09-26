@@ -235,8 +235,10 @@ const sceneData = {
   cast: Object.fromEntries(Object.entries(ctx.CAST).map(([k, v]) => [k, v.name])),
   scenes: ctx.SCENES.map((s, i) => ({
     n: i + 1, id: s.id, title: s.title, rules: s.rules, panel: s.panel, audio: s.audio,
-    est: s.est, bubbles: s.bubbles.map(b => ({ who: b.who, side: b.side, t: b.t, text: clean(strip(b.hg)) })),
-    caption: clean(strip(s.caption.hg))
+    est: s.est,
+    bubbles: s.bubbles.map(b => ({ who: b.who, side: b.side, t: b.t,
+                                   text: clean(strip(b.hg)), textHi: clean(strip(b.hi)) })),
+    caption: clean(strip(s.caption.hg)), captionHi: clean(strip(s.caption.hi))
   }))
 };
 fs.writeFileSync(path.join(outDir, 'scenes.json'), JSON.stringify(sceneData, null, 2), 'utf8');

@@ -27,22 +27,26 @@
           "who": "anita",
           "side": "left",
           "t": 0.3,
-          "text": "Ravi, ye store ka charge ab mere paas hai. Inventory kahan se shuru karein?"
+          "text": "Ravi, ye store ka charge ab mere paas hai. Inventory kahan se shuru karein?",
+          "textHi": "रवि, स्टोर का चार्ज अब मेरे पास है। इन्वेंटरी कहाँ से शुरू करें?"
         },
         {
           "who": "ravi",
           "side": "right",
           "t": 6,
-          "text": "Madam, GFR 2017 ka Chapter 7. Rule 207 se 223 tak — poori kahani isi mein hai."
+          "text": "Madam, GFR 2017 ka Chapter 7. Rule 207 se 223 tak — poori kahani isi mein hai.",
+          "textHi": "मैडम, जीएफआर 2017 का चैप्टर सात। रूल 207 से 223 तक — पूरी कहानी इसी में है।"
         },
         {
           "who": "anita",
           "side": "third",
           "t": 11.9,
-          "text": "Toh pehle rule, phir register. Receipt, Custody, Verification, Disposal."
+          "text": "Toh pehle rule, phir register. Receipt, Custody, Verification, Disposal.",
+          "textHi": "तो पहले नियम, फिर रजिस्टर। प्राप्ति, कस्टडी, वेरिफ़िकेशन, निपटान।"
         }
       ],
-      "caption": "GFR 2017 ka Chapter 7 = Inventory Management, Rule 207 se Rule 223 tak — kul 17 rules. Ye basic rules sab Central Ministries/Departments par lagte hain; aur isi chapter ke hisaab se hi koi bhi Ministry/Department apne detailed instructions bana sakti hai. Inventory sirf \"ginti\" nahi — 4 kadam: Receipt, Custody, Physical Verification, Disposal."
+      "caption": "GFR 2017 ka Chapter 7 = Inventory Management, Rule 207 se Rule 223 tak — kul 17 rules. Ye basic rules sab Central Ministries/Departments par lagte hain; aur isi chapter ke hisaab se hi koi bhi Ministry/Department apne detailed instructions bana sakti hai. Inventory sirf \"ginti\" nahi — 4 kadam: Receipt, Custody, Physical Verification, Disposal.",
+      "captionHi": "जनरल फाइनेंशियल रूल्स 2017 का चैप्टर सात — इन्वेंटरी मैनेजमेंट। इसमें रूल 207 से लेकर रूल 223 तक, कुल सत्रह नियम हैं। ये सब केंद्रीय मिनिस्ट्रीज़ और डिपार्टमेंट्स के लिए बुनियादी नियम हैं। इसी चैप्टर के हिसाब से, किसी भी मिनिस्ट्री या डिपार्टमेंट के लिए विस्तृत instruction बनाए जा सकते हैं। इन्वेंटरी मैनेजमेंट का मतलब सिर्फ सामान गिनना नहीं है। इसमें चार कदम आते हैं — सामान की प्राप्ति, सुरक्षित कस्टडी, समय पर फिज़िकल वेरिफ़िकेशन, और जो उपयोगी न रहे उसका नियमानुसार निपटान।"
     },
     {
       "n": 2,
@@ -61,22 +65,26 @@
           "who": "ravi",
           "side": "left",
           "t": 0.3,
-          "text": "Madam, supplier ka maal aa gaya. Challan match ho gaya — bas entry kar deta hoon."
+          "text": "Madam, supplier ka maal aa gaya. Challan match ho gaya — bas entry kar deta hoon.",
+          "textHi": "मैडम, सप्लायर का माल आ गया। चालान मैच हो गया — बस एंट्री कर देता हूँ।"
         },
         {
           "who": "anita",
           "side": "right",
           "t": 5.7,
-          "text": "Challan kaafi nahi, Ravi. Rule 208 — count, measure ya weigh, visual inspection, phir stock register mein entry."
+          "text": "Challan kaafi nahi, Ravi. Rule 208 — count, measure ya weigh, visual inspection, phir stock register mein entry.",
+          "textHi": "चालान काफी नहीं, रवि। रूल 208 — गिनती, माप या तौल, विजुअल जाँच, फिर स्टॉक रजिस्टर में एंट्री।"
         },
         {
           "who": "ravi",
           "side": "third",
           "t": 12.9,
-          "text": "Aur jab ye samaan doosre division ya contractor ko jayega?"
+          "text": "Aur jab ye samaan doosre division ya contractor ko jayega?",
+          "textHi": "और जब ये सामान दूसरे डिवीजन या ठेकेदार को जाएगा?"
         }
       ],
-      "caption": "Rule 208 — Private supplier se maal aate hi: contract terms ke hisaab se receipt, phir counting/measuring/weighing + visual inspection (zaroorat par technical inspection), IT-based stock register mein entry, aur officer ka receipt certificate. Rule 209 — internal issue: prescribed form mein indent zaroori + likhit ya online acknowledgement; contractor ko diya gaya maal ho to recovery rate aur total value usse date ke saath sign karwana hoga. Rule 210 — Custody: valuable items aur aag pakadne wale articles ki safe custody, storage ka proper intezaam, temperature control aur dust-free rakhna."
+      "caption": "Rule 208 — Private supplier se maal aate hi: contract terms ke hisaab se receipt, phir counting/measuring/weighing + visual inspection (zaroorat par technical inspection), IT-based stock register mein entry, aur officer ka receipt certificate. Rule 209 — internal issue: prescribed form mein indent zaroori + likhit ya online acknowledgement; contractor ko diya gaya maal ho to recovery rate aur total value usse date ke saath sign karwana hoga. Rule 210 — Custody: valuable items aur aag pakadne wale articles ki safe custody, storage ka proper intezaam, temperature control aur dust-free rakhna.",
+      "captionHi": "रूल 208 — निजी सप्लायर से माल मिलने पर, स्टोर के ऑफिसर को कॉन्ट्रैक्ट की शर्तों के हिसाब से माल लेना होगा। माल की गिनती, माप या तौल की जाएगी, और विजुअल इंस्पेक्शन होगा। जहाँ ज़रूरी हो, वहाँ तकनीकी जाँच भी। फिर आईटी आधारित स्टॉक रजिस्टर में एंट्री, और ऑफिसर से प्राप्ति का प्रमाण-पत्र। रूल 209 — इंटरनल डिवीजन को माल देते समय, तय प्रपत्र में इंडेंट ज़रूरी है, और माल लेने वाले ऑफिसर से लिखित या ऑनलाइन पावती लेनी होगी। अगर माल ठेकेदार को दिया गया है और उसकी cost वसूलनी है, तो वसूली दर और कुल रकम ठेकेदार से तारीख के साथ साइन किया हुआ करानी होगी। रूल 210 — अभिरक्षा। कीमती और ज्वलनशील आइटम्स की सुरक्षित कस्टडी, सही स्टोरेज, तापमान और धूल-मुक्त वातावरण का इंतज़ाम स्टोर ऑफिसर को करना होगा।"
     },
     {
       "n": 3,
@@ -94,22 +102,26 @@
           "who": "anita",
           "side": "left",
           "t": 0.3,
-          "text": "Farah, ye registers alag-alag kyun rakhe hain — ek hi kyun nahi?"
+          "text": "Farah, ye registers alag-alag kyun rakhe hain — ek hi kyun nahi?",
+          "textHi": "फराह, ये रजिस्टर अलग-अलग क्यों रखे हैं — एक ही क्यों नहीं?"
         },
         {
           "who": "farah",
           "side": "right",
           "t": 5.4,
-          "text": "Kyunki Rule 211 kehta hai — har category ka alag account. Fixed assets GFR-22, consumables GFR-23, historical/artistic GFR-24."
+          "text": "Kyunki Rule 211 kehta hai — har category ka alag account. Fixed assets GFR-22, consumables GFR-23, historical/artistic GFR-24.",
+          "textHi": "क्योंकि रूल 211 कहता है — हर श्रेणी का अलग लेखा। फिक्स्ड असेट्स जीएफआर 22, कन्ज़्यूमेबल्स जीएफआर 23, हिस्टोरिकल/आर्टिस्टिक जीएफआर 24।"
         },
         {
           "who": "suresh",
           "side": "third",
           "t": 14.6,
-          "text": "Aur jo purana genset contractor ko hire par gaya — uska record aur hire charges?"
+          "text": "Aur jo purana genset contractor ko hire par gaya — uska record aur hire charges?",
+          "textHi": "और जो पुराना जेनसेट ठेकेदार को किराए पर गया — उसका रिकॉर्ड और किराया?"
         }
       ],
-      "caption": "Rule 211 — Officer-in-charge ko item-wise lists aur accurate returns rakhne honge, taaki kisi bhi time actual balance aur book balance check ho sake. Register ka format 3 cheezon par depend karta hai — goods ki nature, transactions ki frequency aur department ki requirements. Alag-alag category ke liye alag account: Fixed assets Form GFR-22, consumables GFR-23, library books GFR-18, historical/artistic value assets GFR-24. Rule 212 — Agar fixed asset kisi local body, contractor ya aur kisi ko hire par diya jaaye, to proper record rakhna hoga, hire aur dusre charges regularly recover karne honge, aur charges ka calculation asset ki historical cost par based hoga."
+      "caption": "Rule 211 — Officer-in-charge ko item-wise lists aur accurate returns rakhne honge, taaki kisi bhi time actual balance aur book balance check ho sake. Register ka format 3 cheezon par depend karta hai — goods ki nature, transactions ki frequency aur department ki requirements. Alag-alag category ke liye alag account: Fixed assets Form GFR-22, consumables GFR-23, library books GFR-18, historical/artistic value assets GFR-24. Rule 212 — Agar fixed asset kisi local body, contractor ya aur kisi ko hire par diya jaaye, to proper record rakhna hoga, hire aur dusre charges regularly recover karne honge, aur charges ka calculation asset ki historical cost par based hoga.",
+      "captionHi": "रूल 211 — स्टोर ऑफिसर को मद-वार सूचियाँ और सटीक रिटर्न तैयार करने होंगे, ताकि किसी भी समय वास्तविक बाकी और बही के बाकी की जाँच हो सके। रजिस्टरों का प्रारूप सामान की प्रकृति, लेन-देन की फ्रीक्वेंसी और डिपार्टमेंट की ज़रूरतों के हिसाब से तय होगा। अलग-अलग श्रेणियों के लिए अलग लेखे — फिक्स्ड असेट्स फॉर्म जीएफआर 22 में, कन्ज़्यूमेबल सामान जीएफआर 23 में, लाइब्रेरी की पुस्तकें जीएफआर 18 में, और हिस्टोरिकल या आर्टिस्टिक कीमत की asset जीएफआर 24 में। रूल 212 — अगर कोई फिक्स्ड asset स्थानीय निकाय, ठेकेदार या दूसरे को किराए पर दी जाए, तो asset का सही रिकॉर्ड रखा जाए, किराया और दूसरे फीस नियमित रूप से वसूल किए जाएँ, और इन फीस की गिनती asset की हिस्टोरिकल cost पर आधारित हो।"
     },
     {
       "n": 4,
@@ -126,22 +138,26 @@
           "who": "anita",
           "side": "left",
           "t": 0.3,
-          "text": "Aaj physical verification hai. Rule 213 — fixed assets aur consumables, dono saal mein kam se kam ek baar."
+          "text": "Aaj physical verification hai. Rule 213 — fixed assets aur consumables, dono saal mein kam se kam ek baar.",
+          "textHi": "आज फिज़िकल वेरिफ़िकेशन है। रूल 213 — फिक्स्ड असेट्स और कन्ज़्यूमेबल्स, दोनों साल में कम से कम एक बार।"
         },
         {
           "who": "manjeet",
           "side": "right",
           "t": 6.6,
-          "text": "Verification hamesha custodian officer ke saamne hoga — aur certificate stock register mein."
+          "text": "Verification hamesha custodian officer ke saamne hoga — aur certificate stock register mein.",
+          "textHi": "वेरिफ़िकेशन हमेशा कस्टडी ऑफिसर के सामने होगा — और सर्टिफिकेट स्टॉक रजिस्टर में।"
         },
         {
           "who": "ravi",
           "side": "third",
           "t": 12.2,
-          "text": "Aur shortfall ya damage mile to?"
+          "text": "Aur shortfall ya damage mile to?",
+          "textHi": "और कमी या नुकसान मिले तो?"
         }
       ],
-      "caption": "Rule 213(1) — Fixed assets ka inventory generally site par rakha jaaye; verification kam se kam saal mein ek baar, outcome corresponding register mein darj, aur discrepancies turant investigate karke account mein layi jayen. Rule 213(2) — Sab consumable goods ka physical verification bhi kam se kam saal mein ek baar; discrepancies stock register mein darj kar action ke liye competent authority ko deni hongi. Verification hamesha custodian officer ke saamne ho, aur verification certificate findings ke saath stock register mein record ho. Verification mein mili shortage, damage ya unserviceable goods turant competent authority ke notice mein layi jayen — Rules 33 se 38 ke hisaab se action ke liye."
+      "caption": "Rule 213(1) — Fixed assets ka inventory generally site par rakha jaaye; verification kam se kam saal mein ek baar, outcome corresponding register mein darj, aur discrepancies turant investigate karke account mein layi jayen. Rule 213(2) — Sab consumable goods ka physical verification bhi kam se kam saal mein ek baar; discrepancies stock register mein darj kar action ke liye competent authority ko deni hongi. Verification hamesha custodian officer ke saamne ho, aur verification certificate findings ke saath stock register mein record ho. Verification mein mili shortage, damage ya unserviceable goods turant competent authority ke notice mein layi jayen — Rules 33 se 38 ke hisaab se action ke liye.",
+      "captionHi": "रूल 213 की सब-रूल (1) — फिक्स्ड assets का इन्वेंटरी आम तौर पर साइट पर रखा जाए। फिक्स्ड assets का वेरिफ़िकेशन कम से कम साल में एक बार हो, और वेरिफ़िकेशन का परिणाम संबंधित रजिस्टर में दर्ज हो। गड़बड़ियाँ हों तो turant जाँच कर उन्हें अकाउंट में लाया जाए। सब-रूल (2) — सब कन्ज़्यूमेबल सामान का फिज़िकल वेरिफ़िकेशन भी कम से कम साल में एक बार हो, और गड़बड़ियाँ स्टॉक रजिस्टर में दर्ज कर action के लिए कॉम्पिटेंट अथॉरिटी को दी जाएँ। वेरिफ़िकेशन हमेशा उस ऑफिसर के सामने हो जिसके पास सामान की कस्टडी है, और वेरिफ़िकेशन सर्टिफिकेट findings के साथ स्टॉक रजिस्टर में दर्ज हो। वेरिफ़िकेशन में पाई गई कमी, नुकसान या अनसर्विसेबल आइटम्स turant कॉम्पिटेंट अथॉरिटी के नोटिस में लाई जाएँ — रूल 33 से 38 के हिसाब से action के लिए।"
     },
     {
       "n": 5,
@@ -159,22 +175,26 @@
           "who": "ravi",
           "side": "left",
           "t": 0.3,
-          "text": "Madam, ye A4 paper aur toner pichhle 14 mahine se shelf par pada hai."
+          "text": "Madam, ye A4 paper aur toner pichhle 14 mahine se shelf par pada hai.",
+          "textHi": "मैडम, यह ए4 पेपर और टोनर पिछले चौदह महीनों से शेल्फ पर पड़ा है।"
         },
         {
           "who": "anita",
           "side": "right",
           "t": 4.8,
-          "text": "Rule 214 ka note yaad rakho — ek saal se zyada stock mein pada material generally surplus maana jaata hai. Buffer stock alag baat hai."
+          "text": "Rule 214 ka note yaad rakho — ek saal se zyada stock mein pada material generally surplus maana jaata hai. Buffer stock alag baat hai.",
+          "textHi": "रूल 214 का नोट याद रखो — एक साल से ज़्यादा स्टॉक में पड़ा सामान आम तौर पर समझा जाता है। बफर स्टॉक अलग बात है।"
         },
         {
           "who": "manjeet",
           "side": "third",
           "t": 12.9,
-          "text": "Library alag hai — 20,000 tak volumes ho to har saal poori verification, 50,000 tak 3 saal mein, usse upar sample verification."
+          "text": "Library alag hai — 20,000 tak volumes ho to har saal poori verification, 50,000 tak 3 saal mein, usse upar sample verification.",
+          "textHi": "लाइब्रेरी अलग है — बीस हज़ार तक क्लॉज़ पर हर साल पूरा वेरिफ़िकेशन, पचास हज़ार तक तीन साल में, उससे ऊपर नमूना सत्यापन।"
         }
       ],
-      "caption": "Rule 214 — Buffer stock: requirement ki frequency, quantity aur supply pattern ke hisaab se optimum buffer stock competent authority tay karega. Note: inventory carrying cost ek aisa kharch hai jo material ki value nahi badhata — isliye ek saal se zyada time tak stock mein pada material generally surplus maana jayega, jab tak usko alag treat karne ki solid wajah na ho. Aise declared surplus items ko Rule 217 ke procedure se deal kiya jaata hai. Rule 215 — Library books: 20,000 ya usse kam volumes wale library mein har saal complete verification; 20,000 se zyada aur 50,000 tak — kam se kam 3 saal mein ek baar complete verification; 50,000 se zyada — 3 saal se zyada interval par sample verification. Sample verification mein unusual ya unreasonable shortage dikhe to complete verification hogi. Ek saal mein issue/consult ki gayi har 1,000 volumes par 5 volumes ki loss reasonable maani ja sakti hai, agar dishonesty ya negligence ki wajah na ho; lekin ₹1,000 se zyada value ki kitab aur rare books — value chahe jo ho — ki loss ki investigation zaroori hai."
+      "caption": "Rule 214 — Buffer stock: requirement ki frequency, quantity aur supply pattern ke hisaab se optimum buffer stock competent authority tay karega. Note: inventory carrying cost ek aisa kharch hai jo material ki value nahi badhata — isliye ek saal se zyada time tak stock mein pada material generally surplus maana jayega, jab tak usko alag treat karne ki solid wajah na ho. Aise declared surplus items ko Rule 217 ke procedure se deal kiya jaata hai. Rule 215 — Library books: 20,000 ya usse kam volumes wale library mein har saal complete verification; 20,000 se zyada aur 50,000 tak — kam se kam 3 saal mein ek baar complete verification; 50,000 se zyada — 3 saal se zyada interval par sample verification. Sample verification mein unusual ya unreasonable shortage dikhe to complete verification hogi. Ek saal mein issue/consult ki gayi har 1,000 volumes par 5 volumes ki loss reasonable maani ja sakti hai, agar dishonesty ya negligence ki wajah na ho; lekin ₹1,000 se zyada value ki kitab aur rare books — value chahe jo ho — ki loss ki investigation zaroori hai.",
+      "captionHi": "रूल 214 — बफर स्टॉक: ज़रूरत की फ्रीक्वेंसी, मात्रा और आपूर्ति पैटर्न के हिसाब से इष्टतम बफर स्टॉक कॉम्पिटेंट अथॉरिटी तय करेगा। नोट: इन्वेंटरी धारण cost एक ऐसा खर्च है जो सामान के कीमत में वृद्धि नहीं करता — इसलिए एक साल से ज़्यादा समय तक स्टॉक में पड़ा सामान आम तौर पर सरप्लस माना जाएगा, जब तक कि उसे अन्यथा मानने के enough वजह न हों। ऐसी सरप्लस डिक्लेयर आइटम्स को रूल 217 की process से निपटाया जाता है। रूल 215 — लाइब्रेरी की पुस्तकें: बीस हज़ार या उससे कम क्लॉज़ वाले लाइब्रेरी में प्रतिवर्ष पूरा वेरिफ़िकेशन; बीस हज़ार से ज़्यादा और पचास हज़ार तक — कम से कम तीन साल में एक बार पूरा वेरिफ़िकेशन; पचास हज़ार से ज़्यादा — तीन साल से ज़्यादा अंतराल पर नमूना सत्यापन। अगर नमूना वेरिफ़िकेशन में असामान्य या अतर्कसंगत कमी दिखे, तो पूरा वेरिफ़िकेशन कराया जाए। एक साल में जारी या उपयोग की गई हज़ार पुस्तकों पर पाँच पुस्तकों की नुकसान सही मानी जा सकती है, अगर वह बेईमानी या लापरवाही के वजह न हो; परंतु एक हज़ार रुपये से ज़्यादा कीमत की पुस्तक और दुर्लभ पुस्तकें — कीमत चाहे जो हो — उनकी नुकसान की जाँच ज़रूरी है।"
     },
     {
       "n": 6,
@@ -191,22 +211,26 @@
           "who": "anita",
           "side": "left",
           "t": 0.3,
-          "text": "Main transfer ho rahi hoon. Store ka charge aage kaun sambhalega?"
+          "text": "Main transfer ho rahi hoon. Store ka charge aage kaun sambhalega?",
+          "textHi": "मैं ट्रांसफर हो रही हूँ। स्टोर का चार्ज आगे कौन संभालेगा?"
         },
         {
           "who": "farah",
           "side": "right",
           "t": 4.3,
-          "text": "Rule 216 — relieving aur relieved officer milkar ek statement banayenge, dono date ke saath sign karenge."
+          "text": "Rule 216 — relieving aur relieved officer milkar ek statement banayenge, dono date ke saath sign karenge.",
+          "textHi": "रूल 216 — रिलीविंग और रिलीव्ड ऑफिसर मिलकर एक विवरण बनाएँगे, दोनों तारीख के साथ साइन करेंगे।"
         },
         {
           "who": "anita",
           "side": "third",
           "t": 10.4,
-          "text": "Aur dono ke paas ek-ek copy rahegi — tabhi accountability clear hai."
+          "text": "Aur dono ke paas ek-ek copy rahegi — tabhi accountability clear hai.",
+          "textHi": "और दोनों के पास एक-एक प्रति रहेगी — तभी जवाबदेही स्पष्ट है।"
         }
       ],
-      "caption": "Rule 216 — Transfer of charge of goods and materials: agar officer-in-charge transfer ho, to transfer hone wale officer ko dekhna hoga ki goods/materials sahi tareeke se uske successor ko hand over diye jayen. Goods aur materials ki sab relevant details ka ek statement banega, jise relieving officer aur relieved officer dono date ke saath sign karenge. Dono officers apne paas signed statement ki ek-ek copy rakhenge. Ye chhota sa rule hai, lekin isi se yah tay hota hai ki agla shortfall kiske account mein jayega."
+      "caption": "Rule 216 — Transfer of charge of goods and materials: agar officer-in-charge transfer ho, to transfer hone wale officer ko dekhna hoga ki goods/materials sahi tareeke se uske successor ko hand over diye jayen. Goods aur materials ki sab relevant details ka ek statement banega, jise relieving officer aur relieved officer dono date ke saath sign karenge. Dono officers apne paas signed statement ki ek-ek copy rakhenge. Ye chhota sa rule hai, lekin isi se yah tay hota hai ki agla shortfall kiske account mein jayega.",
+      "captionHi": "रूल 216 — सामान और सामान के चार्ज का transfer: अगर स्टोर के ऑफिसर का स्थानांतरण हो, तो स्थानांतरित ऑफिसर को देखना होगा कि सामान और सामान सही तरीके से उसके उत्तराधिकारी को सौंप दी जाए। सामान और सामान की सब सुसंगत ब्यौरे वाला एक विवरण तैयार किया जाएगा, जिस पर रिलीविंग ऑफिसर और रिलीव्ड ऑफिसर दोनों तारीख के साथ साइन करेंगे। दोनों ऑफिसर साइन किया हुआ विवरण की एक-एक प्रति अपने पास रखेंगे। यह छोटा सा नियम है, लेकिन यही तय करता है कि अगली कमी किसके अकाउंट में जाएगी।"
     },
     {
       "n": 7,
@@ -223,22 +247,26 @@
           "who": "suresh",
           "side": "left",
           "t": 0.3,
-          "text": "In purane computers ko \"bekaar\" likh dena kaafi hai kya?"
+          "text": "In purane computers ko \"bekaar\" likh dena kaafi hai kya?",
+          "textHi": "इन पुराने कंप्यूटरों को \"बेकार\" लिख देना काफी है क्या?"
         },
         {
           "who": "anita",
           "side": "right",
           "t": 4.1,
-          "text": "Nahi Sir. Rule 217 — item kharidne wale competent authority ko reasons record karne honge, aur committee bana sakte hain."
+          "text": "Nahi Sir. Rule 217 — item kharidne wale competent authority ko reasons record karne honge, aur committee bana sakte hain.",
+          "textHi": "नहीं सर। रूल 217 — आइटम खरीदने वाले कॉम्पिटेंट अथॉरिटी को वजह दर्ज करने होंगे, और committee बनाई जा सकती है।"
         },
         {
           "who": "farah",
           "side": "third",
           "t": 11.7,
-          "text": "Book value, guiding price, reserved price — teeno nikalenge, aur report Form GFR-10 mein banegi."
+          "text": "Book value, guiding price, reserved price — teeno nikalenge, aur report Form GFR-10 mein banegi.",
+          "textHi": "बुक वैल्यू, गाइडिंग प्राइस, रिज़र्व्ड प्राइस — तीनों निकालेंगे, और रिपोर्ट फॉर्म जीएफआर 10 में बनेगी।"
         }
       ],
-      "caption": "Rule 217 — Disposal of goods: kisi item ko surplus, obsolete ya unserviceable tab declare kiya ja sakta hai jab woh Ministry/Department ke kaam ka na rahe. Declare karne ke reasons us authority ko record karne honge jo item kharidne ke liye competent hai. Competent authority apne discretion se committee bana sakti hai. Disposal se pehle book value, guiding price aur reserved price nikalne honge — agar book value nikalna sambhav na ho to original purchase price use kiya ja sakta hai — aur stores ki report Form GFR-10 mein banegi. Agar item kisi government servant ki negligence, fraud ya mischief se unserviceable hua ho, to responsibility fix karni hogi. Hazardous waste, scrap batteries aur e-waste ke liye Ministry of Environment, Forest & Climate Change ke guidelines ke hisaab se sale hogi, aur bidder ke paas e-auction aur delivery ke din valid recycler/pre-processor registration hona chahiye."
+      "caption": "Rule 217 — Disposal of goods: kisi item ko surplus, obsolete ya unserviceable tab declare kiya ja sakta hai jab woh Ministry/Department ke kaam ka na rahe. Declare karne ke reasons us authority ko record karne honge jo item kharidne ke liye competent hai. Competent authority apne discretion se committee bana sakti hai. Disposal se pehle book value, guiding price aur reserved price nikalne honge — agar book value nikalna sambhav na ho to original purchase price use kiya ja sakta hai — aur stores ki report Form GFR-10 mein banegi. Agar item kisi government servant ki negligence, fraud ya mischief se unserviceable hua ho, to responsibility fix karni hogi. Hazardous waste, scrap batteries aur e-waste ke liye Ministry of Environment, Forest & Climate Change ke guidelines ke hisaab se sale hogi, aur bidder ke paas e-auction aur delivery ke din valid recycler/pre-processor registration hona chahiye.",
+      "captionHi": "रूल 217 — माल का डिस्पोज़ल: किसी आइटम को सरप्लस, अप्रचलित या अनसर्विसेबल तब डिक्लेयर किया जा सकता है जब वह मिनिस्ट्री या डिपार्टमेंट के काम की न रहे। डिक्लेयर करने के वजह उस अथॉरिटी को दर्ज करने होंगे जो आइटम खरीदने के लिए कॉम्पिटेंट है। कॉम्पिटेंट अथॉरिटी अपने discretion से committee बना सकता है। डिस्पोज़ल से पहले बुक वैल्यू, गाइडिंग प्राइस और रिज़र्व्ड प्राइस निकालने होंगे — अगर बुक वैल्यू निकालना संभव न हो तो मूल क्रय कीमत का उपयोग किया जा सकता है — और स्टोर की रिपोर्ट फॉर्म जीएफआर 10 में तैयार होगी। अगर आइटम किसी सरकारी कर्मचारी की लापरवाही, धोखाधड़ी या दुर्भावना से अनसर्विसेबल हुई हो, तो जिम्मेदारी तय करनी होगी। खतरनाक कचरे, स्क्रैप बैटरियों और ई-कचरे के लिए पर्यावरण, वन और जलवायु परिवर्तन मिनिस्ट्री के दिशानिर्देशों के हिसाब से सेल होगी, और बिडर के पास ई-नीलामी और डिलीवरी के दिन वैध रीसायकलर या प्री-प्रोसेसर पंजीकरण होना चाहिए।"
     },
     {
       "n": 8,
@@ -255,22 +283,26 @@
           "who": "ravi",
           "side": "left",
           "t": 0.3,
-          "text": "Sir, purane furniture ki residual value ₹5.6 lakh aayi hai. Seedhe scrap dealer ko bech den?"
+          "text": "Sir, purane furniture ki residual value ₹5.6 lakh aayi hai. Seedhe scrap dealer ko bech den?",
+          "textHi": "सर, पुराने फर्नीचर की बची हुई कीमत पाँच लाख साठ हज़ार रुपये आई है। सीधे स्क्रैप डीलर को बेच दें?"
         },
         {
           "who": "anita",
           "side": "right",
           "t": 6.4,
-          "text": "Nahi. Rule 218 — ₹4 lakh se upar ho to advertised tender ya public auction hi chalega. Committee decide nahi kar sakti."
+          "text": "Nahi. Rule 218 — ₹4 lakh se upar ho to advertised tender ya public auction hi chalega. Committee decide nahi kar sakti.",
+          "textHi": "नहीं। रूल 218 — चार लाख रुपये से ऊपर हो तो खुले टेंडर या पब्लिक ऑक्शन ही चलेगी। committee तय नहीं कर सकती।"
         },
         {
           "who": "ravi",
           "side": "third",
           "t": 14,
-          "text": "Par hamare purane note mein ₹2 lakh likha tha..."
+          "text": "Par hamare purane note mein ₹2 lakh likha tha...",
+          "textHi": "पर हमारे पुराने नोट में दो लाख रुपये लिखा था…"
         }
       ],
-      "caption": "Rule 218 — Modes of disposal: assessed residual value ₹4 lakh se upar ho to disposal advertised tender ya public auction se hoga. ₹4 lakh se kam residual value wale goods ke liye mode competent authority tay karega — ismein dhyan rakha jayega ki samaan jama na ho, jagah block na ho, aur value kharab na ho; Ministries/Departments ko aise goods ki list banana chahiye. Expired medicines, food grain, ammunition jaise hazardous ya human consumption ke layak na hone wale goods ko turant suitable mode se dispose ya destroy karein — health hazard, environmental pollution aur misuse se bachne ke liye. Currency, negotiable instruments, receipt books, stamps, security press jaise security concern wale goods/documents ko official secrets rules aur financial prudence ke hisaab se dispose/destroy karein. Dhyan dein: ye threshold ₹2 lakh se badhakar ₹4 lakh kiya gaya — Department of Expenditure ke OM F.1/3/2024-PPD, dated 10 July 2024 se."
+      "caption": "Rule 218 — Modes of disposal: assessed residual value ₹4 lakh se upar ho to disposal advertised tender ya public auction se hoga. ₹4 lakh se kam residual value wale goods ke liye mode competent authority tay karega — ismein dhyan rakha jayega ki samaan jama na ho, jagah block na ho, aur value kharab na ho; Ministries/Departments ko aise goods ki list banana chahiye. Expired medicines, food grain, ammunition jaise hazardous ya human consumption ke layak na hone wale goods ko turant suitable mode se dispose ya destroy karein — health hazard, environmental pollution aur misuse se bachne ke liye. Currency, negotiable instruments, receipt books, stamps, security press jaise security concern wale goods/documents ko official secrets rules aur financial prudence ke hisaab se dispose/destroy karein. Dhyan dein: ye threshold ₹2 lakh se badhakar ₹4 lakh kiya gaya — Department of Expenditure ke OM F.1/3/2024-PPD, dated 10 July 2024 se.",
+      "captionHi": "रूल 218 — डिस्पोज़ल के तरीके: assessed बची हुई कीमत चार लाख रुपये से ज़्यादा हो तो डिस्पोज़ल खुले टेंडर या पब्लिक ऑक्शन से होगा। चार लाख रुपये से कम बची हुई कीमत वाली आइटम्स के लिए तरीका कॉम्पिटेंट अथॉरिटी तय करेगा — इसमें यह ध्यान रखा जाएगा कि सामान जमा न हो, जगह अवरुद्ध न हो, और कीमत खराब न हो; मिनिस्ट्रीज़ और डिपार्टमेंट्स को ऐसी आइटम्स की सूची बनानी चाहिए। खत्म दवाइयाँ, खाद्यान्न, गोला-बारूद जैसी खतरनाक या मानव उपयोग के अयोग्य आइटम्स का turant उपयुक्त तरीके से डिस्पोज़ल या नष्ट किया जाए — स्वास्थ्य खतरे, पर्यावरण प्रदूषण और दुरुपयोग की संभावना से बचने के लिए। मुद्रा, परक्राम्य लिखत, रसीद बुक्स, डाक टिकट, सिक्योरिटी प्रेस जैसी सुरक्षा संबंधी चिंताओं वाली आइटम्स और दस्तावेज़ों का डिस्पोज़ल या नष्ट अधिकृत गोपनीयता नियमों और वित्तीय discretion के हिसाब से किया जाए। ध्यान दें: यह लिमिट दो लाख रुपये से बढ़ाकर चार लाख रुपये की गई — डिपार्टमेंट ऑफ एक्सपेंडिचर के ऑफ़िस मेमोरेंडम एफ.1/3/2024-पीपीडी, तारीख 10 July 2024 से।"
     },
     {
       "n": 9,
@@ -288,22 +320,26 @@
           "who": "farah",
           "side": "left",
           "t": 0.3,
-          "text": "Advertised tender ho ya auction — transparency, competition, fairness, discretion ka khatma. Ye chaar principle dono mein common hain."
+          "text": "Advertised tender ho ya auction — transparency, competition, fairness, discretion ka khatma. Ye chaar principle dono mein common hain.",
+          "textHi": "खुले टेंडर हो या नीलामी — पारदर्शिता, प्रतिस्पर्धा, निष्पक्षता, discretion का अंत। ये चार सिद्धांत दोनों में समान हैं।"
         },
         {
           "who": "anita",
           "side": "right",
           "t": 8.7,
-          "text": "Farq number ka hai — tender mein bid security 10% of assessed/reserved price; auction mein earnest money 25% of bid value, mauke par."
+          "text": "Farq number ka hai — tender mein bid security 10% of assessed/reserved price; auction mein earnest money 25% of bid value, mauke par.",
+          "textHi": "अंतर संख्या का है — टेंडर में बोली सिक्योरिटी assessed या रिज़र्व्ड कीमत का दस %; नीलामी में अर्नेस्ट मनी रकम बोली कीमत का पच्चीस %, मौके पर।"
         },
         {
           "who": "suresh",
           "side": "third",
           "t": 17,
-          "text": "Aur auction team mein Internal Finance Wing ka officer hona hi chahiye."
+          "text": "Aur auction team mein Internal Finance Wing ka officer hona hi chahiye.",
+          "textHi": "और नीलामी टीम में इंटरनल फाइनेंस विंग का ऑफिसर होना ही चाहिए।"
         }
       ],
-      "caption": "Rule 219 — Disposal through advertised tender: bidding documents banana, tender invite karna, bids kholna, evaluate karna, highest responsive bidder chunna, sale value collect karna, sale release order dena, goods release karna, aur aakhir mein unsuccessful bidders ki bid security wapas karna — ye nau kadam (a) se (i) hain; aakhri step aksar bhool jaate hain. Bid document mein goods ki location aur present condition likhni hogi taaki bidder inspect kar sake. Bid security generally assessed ya reserved price ka 10% hogi. Highest acceptable responsive bidder ko hi accept kiya jayega; negotiation sirf usi bidder se ho sakti hai, aur fail hone par agli highest responsive bidder ko reasonable price counter-offer ho sakti hai. Bid security adjust karke baaki poori rakam goods release karne se pehle leni hogi; default par bid security forfeit hogi aur goods defaulter ke risk and cost par dobara beche jayenge. Late bids consider nahi honge. Rule 220 — Auction: Ministry/Department direct ya approved auctioneer ke through auction kara sakti hai; auction plan ka wide publicity; auction shuru hone par goods ki condition, location aur terms dobara announce karna; bid accept hote hi bid value ka kam se kam 25% earnest money turant mauke par — cash ya Deposit-at-Call-Receipt (DACR) mein — lena; balance payment ke baad hi goods hand over karna; aur auction team mein Internal Finance Wing ka officer hona chahiye."
+      "caption": "Rule 219 — Disposal through advertised tender: bidding documents banana, tender invite karna, bids kholna, evaluate karna, highest responsive bidder chunna, sale value collect karna, sale release order dena, goods release karna, aur aakhir mein unsuccessful bidders ki bid security wapas karna — ye nau kadam (a) se (i) hain; aakhri step aksar bhool jaate hain. Bid document mein goods ki location aur present condition likhni hogi taaki bidder inspect kar sake. Bid security generally assessed ya reserved price ka 10% hogi. Highest acceptable responsive bidder ko hi accept kiya jayega; negotiation sirf usi bidder se ho sakti hai, aur fail hone par agli highest responsive bidder ko reasonable price counter-offer ho sakti hai. Bid security adjust karke baaki poori rakam goods release karne se pehle leni hogi; default par bid security forfeit hogi aur goods defaulter ke risk and cost par dobara beche jayenge. Late bids consider nahi honge. Rule 220 — Auction: Ministry/Department direct ya approved auctioneer ke through auction kara sakti hai; auction plan ka wide publicity; auction shuru hone par goods ki condition, location aur terms dobara announce karna; bid accept hote hi bid value ka kam se kam 25% earnest money turant mauke par — cash ya Deposit-at-Call-Receipt (DACR) mein — lena; balance payment ke baad hi goods hand over karna; aur auction team mein Internal Finance Wing ka officer hona chahiye.",
+      "captionHi": "रूल 219 — खुले टेंडर से डिस्पोज़ल: बोली दस्तावेज़ बनाना, टेंडर invite करना, बिड्स खोलना, उनका मूल्यांकन करना, सबसे ऊँची वैध बोली वाला बिडर का चयन करना, सेल कीमत collect करना, सेल रिलीज़ ऑर्डर देना, माल हैंड ओवर करना और आखिर में अनसक्सेसफुल बिडर्स की बिड सिक्योरिटी वापस करना — ये नौ कदम (a) से (i) हैं। बोली दस्तावेज़ में माल का लोकेशन और मौजूदा कंडीशन लिखनी होगी ताकि बिडर इंस्पेक्शन कर सके। बोली सिक्योरिटी आम तौर पर assessed या रिज़र्व्ड कीमत का दस % होगी। सबसे ऊँची वैध बोली वाला बिडर को ही मंज़ूर किया जाएगा; बातचीत सिर्फ उसी बिडर से हो सकती है, और असफल होने पर अगली सबसे ऊँची वैध बिडर को सही कीमत काउंटर-ऑफ़र दिया जा सकता है। बोली सिक्योरिटी एडजस्ट करके बाकी पूरी रकम माल हैंड ओवर करने से पहले लेनी होगी; default पर बोली सिक्योरिटी forfeit होगी और माल defaulter के risk और cost पर पुनः बेचा जाएगा। late बिड्स मंज़ूर नहीं होंगी। रूल 220 — नीलामी: मिनिस्ट्री या डिपार्टमेंट directly या approved नीलामकर्ता के through नीलामी करा सकती है; नीलामी योजना का wide publicity; शुरू में माल की कंडीशन, लोकेशन और शर्तें दोबारा डिक्लेयर करना; बोली मंज़ूर होते ही बोली कीमत का कम से कम पच्चीस % अर्नेस्ट मनी रकम turant मौके पर — नकद या डिमांड-एट-कॉल रसीद के रूप में — लेना; बाकी भुगतान के बाद ही माल हैंड ओवर करना; और नीलामी टीम में इंटरनल फाइनेंस विंग का ऑफिसर होना चाहिए।"
     },
     {
       "n": 10,
@@ -322,22 +358,26 @@
           "who": "ravi",
           "side": "left",
           "t": 0.3,
-          "text": "Tender bhi laga, auction bhi — koi kharidar nahi mila. Ab?"
+          "text": "Tender bhi laga, auction bhi — koi kharidar nahi mila. Ab?",
+          "textHi": "टेंडर भी लगी, नीलामी भी — कोई खरीदार नहीं मिला। अब?"
         },
         {
           "who": "anita",
           "side": "right",
           "t": 4.7,
-          "text": "Rule 221 — scrap value par bech sakte hain, competent authority ki approval se aur Finance division se consultation ke baad. Phir bhi na bike to eco-friendly destruction."
+          "text": "Rule 221 — scrap value par bech sakte hain, competent authority ki approval se aur Finance division se consultation ke baad. Phir bhi na bike to eco-friendly destruction.",
+          "textHi": "रूल 221 — स्क्रैप कीमत पर बेच सकते हैं, कॉम्पिटेंट अथॉरिटी की approval और फाइनेंस डिवीजन से कंसल्टेशन के बाद। फिर भी न बिके तो पर्यावरण-फेवरेबल विनाश।"
         },
         {
           "who": "farah",
           "side": "third",
           "t": 16.3,
-          "text": "Aur write-off alag hai — Rule 223. Sanction tab bhi chahiye jab accounts mein koi adjustment ho ya na ho."
+          "text": "Aur write-off alag hai — Rule 223. Sanction tab bhi chahiye jab accounts mein koi adjustment ho ya na ho.",
+          "textHi": "और राइट-ऑफ़ अलग है — रूल 223. approval तब भी चाहिए जब अकाउंट्स में कोई एडजस्टमेंट हो या न हो।"
         }
       ],
-      "caption": "Rule 221 — Agar advertised tender aur auction dono ke bawajood item nahi bikta, to competent authority ki approval se aur Finance division ke saath consultation karke scrap value par becha ja sakta hai. Agar scrap value par bhi na bike, to kisi aur mode se dispose kiya ja sakta hai — jismein eco-friendly destruction bhi shaamil hai. Rule 222 — Dispose kiye gaye goods ka sale account Form GFR-11 mein banega, jis par sale ya auction ki supervision karne wale officer ke sign honge. Rule 223 — Revaluation, stock-taking ya dusri wajah se hone wale profit/loss record kiya jayega aur zaroorat padne par adjust kiye jayenge. Accounts mein koi correction/adjustment shamil na ho, tab bhi loss ke liye competent authority ki formal sanction leni hogi. Write-off ki powers DFPR ke under hain. Depreciation ki wajah se hone wale loss ke chaar heads hain: market price ka normal fluctuation, normal wear and tear, purchases regulate karne mein foresight ki kami, aur kharid ke baad negligence. Depreciation ke alawa loss ke paanch heads hain: theft ya fraud, neglect, obsolescence ya zaroorat se zyada kharid ki anticipated loss, damage, aur Force Majeure — jaise aag, baadh, ya enemy action. Aakhir mein: abhi ke orders bhi yaad rakhein — DoE ne 10 July 2024 ke OM se disposal threshold ₹2 lakh se ₹4 lakh kiya, aur DARPG ka Special Campaign 6.0 15-30 September 2026 preparation phase, 2-31 October 2026 implementation phase mein chal raha hai, jismein scrap disposal GFR ke hisaab se aur e-waste disposal E-Waste (Management) Rules, 2022 ke hisaab se karna hai."
+      "caption": "Rule 221 — Agar advertised tender aur auction dono ke bawajood item nahi bikta, to competent authority ki approval se aur Finance division ke saath consultation karke scrap value par becha ja sakta hai. Agar scrap value par bhi na bike, to kisi aur mode se dispose kiya ja sakta hai — jismein eco-friendly destruction bhi shaamil hai. Rule 222 — Dispose kiye gaye goods ka sale account Form GFR-11 mein banega, jis par sale ya auction ki supervision karne wale officer ke sign honge. Rule 223 — Revaluation, stock-taking ya dusri wajah se hone wale profit/loss record kiya jayega aur zaroorat padne par adjust kiye jayenge. Accounts mein koi correction/adjustment shamil na ho, tab bhi loss ke liye competent authority ki formal sanction leni hogi. Write-off ki powers DFPR ke under hain. Depreciation ki wajah se hone wale loss ke chaar heads hain: market price ka normal fluctuation, normal wear and tear, purchases regulate karne mein foresight ki kami, aur kharid ke baad negligence. Depreciation ke alawa loss ke paanch heads hain: theft ya fraud, neglect, obsolescence ya zaroorat se zyada kharid ki anticipated loss, damage, aur Force Majeure — jaise aag, baadh, ya enemy action. Aakhir mein: abhi ke orders bhi yaad rakhein — DoE ne 10 July 2024 ke OM se disposal threshold ₹2 lakh se ₹4 lakh kiya, aur DARPG ka Special Campaign 6.0 15-30 September 2026 preparation phase, 2-31 October 2026 implementation phase mein chal raha hai, jismein scrap disposal GFR ke hisaab se aur e-waste disposal E-Waste (Management) Rules, 2022 ke hisaab se karna hai.",
+      "captionHi": "रूल 221 — अगर खुले टेंडर और नीलामी के बावजूद आइटम नहीं बिकती, तो कॉम्पिटेंट अथॉरिटी की approval और फाइनेंस डिवीजन से कंसल्टेशन के बाद स्क्रैप कीमत पर बेची जा सकती है। अगर स्क्रैप कीमत पर भी नहीं बिके, तो किसी और तरीके से डिस्पोज़ल किया जा सकता है — जिसमें पर्यावरण के हिसाब से नष्ट करना भी शामिल है। रूल 222 — डिस्पोज़ किए गए सामान का सेल अकाउंट फॉर्म जीएफआर 11 में बनेगा, जिस पर सेल या नीलामी की सुपरविज़न करने वाले ऑफिसर के साइन होंगे। रूल 223 — revaluation, stock-taking या दूसरी वजहों से हुए profit/loss दर्ज किए जाएँगे और ज़रूरत के हिसाब से एडजस्ट किए जाएँगे। अकाउंट्स में कोई correction/adjustment शामिल न हो, तब भी नुकसान के लिए कॉम्पिटेंट अथॉरिटी की फॉर्मल approval लेनी होगी। नुकसान write-off करने की powers डीएफपीआर के अंडर हैं। डेप्रिसिएशन की वजह से होने वाले नुकसान के चार heads हैं: बाज़ार कीमत का नॉर्मल उतार-चढ़ाव, नॉर्मल wear and tear, खरीद regulate करने में foresight की कमी, और खरीद के बाद लापरवाही। डेप्रिसिएशन के अलावा नुकसान के पाँच heads हैं: चोरी या धोखाधड़ी, neglect, obsolescence या ज़रूरत से ज़्यादा खरीद की anticipated नुकसान, नुकसान, और Force Majeure — जैसे आग, बाढ़, शत्रु की कार्रवाई। अंत में: अभी के ऑर्डर भी याद रखें — डिपार्टमेंट ऑफ एक्सपेंडिचर ने 10 July 2024 के ऑफ़िस मेमोरेंडम से डिस्पोज़ल लिमिट दो लाख से बढ़ाकर चार लाख रुपये की, और डीएआरपीजी का विशेष अभियान 6.0 पंद्रह से तीस सितम्बर 2026 तैयारी फेज़ और दो से इकतीस अक्टूबर 2026 इम्प्लीमेंटेशन फेज़ में चल रहा है, जिसमें स्क्रैप डिस्पोज़ल जीएफआर के हिसाब से और ई-कचरा डिस्पोज़ल ई-कचरा मैनेजमेंट नियम, 2022 के हिसाब से करना है।"
     }
   ]
 }
