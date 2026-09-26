@@ -22,6 +22,7 @@ VID = ROOT / "assets" / "video"
 JOBS = {
     "complete": ("gfr-ch7-complete.mp4", "gfr-ch7-complete-480p.mp4"),
     "part1": ("gfr-ch7-final.mp4", "gfr-ch7-final-480p.mp4"),
+    "hindi": ("gfr-ch7-final-hindi.mp4", "gfr-ch7-final-hindi-480p.mp4"),
 }
 
 

@@ -133,6 +133,34 @@
         <button class="chap" data-p="2" data-t="1240.6"><span class="ct">20:40</span> Coverage recap</button>
   </div>
 
+  <h2>Part 1 in हिंदी — burned-in Devanagari (12:03)</h2>
+  <div class="sub">The same story video with the Devanagari script burned in, for viewers who read
+  Hindi first. The narration is identical (Indian-accent Hinglish voice); only the on-screen text
+  changes. Part 2 keeps the Roman track — it displays verbatim provision text.</div>
+  <video id="vh" controls preload="metadata" poster="assets/panels/scene-01.png"
+         src="assets/video/gfr-ch7-final-hindi.mp4"></video>
+  <div class="meta">
+    <span class="pill">⏱ 12:03</span>
+    <span class="pill">🔖 12 chapters</span>
+    <span class="pill">📝 <a href="assets/video/gfr-ch7-final-hindi.hi.srt" download>हिंदी subtitles (.srt)</a></span>
+    <span class="pill">⬇ <a href="assets/video/gfr-ch7-final-hindi.mp4" download>Download MP4 (40 MB)</a></span>
+    <span class="pill">📱 <a href="assets/video/gfr-ch7-final-hindi-480p.mp4" download>Compact 480p (10 MB)</a></span>
+    <span class="pill">🔁 soft-track version: <a href="assets/video/gfr-ch7-final-hi.mp4" download>gfr-ch7-final-hi.mp4</a></span>
+  </div>
+
+  <div class="chaps" data-player="hindi">
+      <button class="chap" data-p="h" data-t="7.0"><span class="ct">0:07</span> S1 · रूल 207</button>
+      <button class="chap" data-p="h" data-t="48.3"><span class="ct">0:48</span> S2 · रूल 208, 209, 210</button>
+      <button class="chap" data-p="h" data-t="101.0"><span class="ct">1:41</span> S3 · रूल 211, 212</button>
+      <button class="chap" data-p="h" data-t="167.6"><span class="ct">2:47</span> S4 · रूल 213</button>
+      <button class="chap" data-p="h" data-t="220.9"><span class="ct">3:40</span> S5 · रूल 214, 215</button>
+      <button class="chap" data-p="h" data-t="301.4"><span class="ct">5:01</span> S6 · रूल 216</button>
+      <button class="chap" data-p="h" data-t="343.9"><span class="ct">5:43</span> S7 · रूल 217</button>
+      <button class="chap" data-p="h" data-t="413.9"><span class="ct">6:53</span> S8 · रूल 218</button>
+      <button class="chap" data-p="h" data-t="487.0"><span class="ct">8:06</span> S9 · रूल 219, 220</button>
+      <button class="chap" data-p="h" data-t="590.9"><span class="ct">9:50</span> S10 · रूल 221, 222, 223</button>
+  </div>
+
   <h2>Note on scope</h2>
   <p class="sub">This video is the 10-scene story mode: every rule 207–223 is narrated, with the
   operative numbers (1 year, 3 years, 5 per 1,000, ₹1,000, ₹4,00,000, 10%, 25%) and the Rule 218
@@ -143,7 +171,8 @@
   const v = document.getElementById('v');
   const v2 = document.getElementById('v2');
   const vc = document.getElementById('vc');   // single-file version
-  const players = { c: vc, '1': v, '2': v2 };
+  const vh = document.getElementById('vh');
+  const players = { c: vc, '1': v, '2': v2, h: vh };
   document.querySelectorAll('.chap').forEach(b => {
     const target = players[b.dataset.p] || v;
     const other = vc;

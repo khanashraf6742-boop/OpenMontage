@@ -22,6 +22,7 @@ Usage:
 import argparse
 import json
 import pathlib
+import re
 import shutil
 import subprocess
 import sys
@@ -32,6 +33,25 @@ BUILD = ROOT / "build" / "video"
 OUT = ROOT / "assets" / "video"
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 FONT_R = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+DEVA_DIR = pathlib.Path("/tmp/fonts")          # Noto Sans Devanagari (see ensure_fonts)
+DEVA_URL = ("https://api.github.com/repos/notofonts/notofonts.github.io/contents/"
+            "fonts/NotoSansDevanagari/hinted/ttf/")
+LANG = "hg"                                    # 'hg' = Roman Hinglish, 'hi' = Devanagari
+DEVANAGARI = 'Noto Sans Devanagari'
+
+
+def ensure_fonts():
+    """Fetch Noto Sans Devanagari through the GitHub API if it is not cached."""
+    DEVA_DIR.mkdir(parents=True, exist_ok=True)
+    targets = ["NotoSansDevanagari-Bold.ttf", "NotoSansDevanagari-Regular.ttf"]
+    import base64, json as _json, subprocess as _sp
+    for t in targets:
+        if (DEVA_DIR / t).exists():
+            continue
+        r = _sp.run(["curl", "-sSL", "--max-time", "90", f"{DEVA_URL}{t}?ref=main"],
+                    capture_output=True, text=True)
+        (DEVA_DIR / t).write_bytes(base64.b64decode(_json.loads(r.stdout)["content"]))
+        print(f"  font: fetched {t}")
 LEAD, PAUSE = 0.3, 12          # bubble lead-in / per-segment pause (same as set-timing.py)
 FPS = 25
 INTRO, OUTRO = 7.0, 9.0
@@ -64,7 +84,7 @@ def run(args, quiet=True):
 
 
 # ── ASS subtitle helpers ─────────────────────────────────────────────────────
-ASS_HEAD = """[Script Info]
+ASS_HEAD_T = """[Script Info]
 ScriptType: v4.00+
 PlayResX: 1280
 PlayResY: 720
@@ -73,13 +93,28 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Bubble,DejaVu Sans,30,&H00FFFFFF,&H000000FF,&H00101010,&HB0000000,-1,0,0,0,100,100,0,0,1,2.5,1.2,2,60,60,124,1
-Style: Caption,DejaVu Sans,24,&H00E8F4FF,&H000000FF,&H00101010,&HB0000000,0,0,0,0,100,100,0,0,1,2,1,2,60,60,26,1
-Style: Chapter,DejaVu Sans,21,&H00FFF3C4,&H000000FF,&H00101010,&H8C000000,-1,0,0,0,100,100,0,0,3,1,0,7,24,24,20,1
+Style: Bubble,{font},30,&H00FFFFFF,&H000000FF,&H00101010,&HB0000000,-1,0,0,0,100,100,0,0,1,2.5,1.2,2,60,60,124,1
+Style: Caption,{font},24,&H00E8F4FF,&H000000FF,&H00101010,&HB0000000,0,0,0,0,100,100,0,0,1,2,1,2,60,60,26,1
+Style: Chapter,{font},21,&H00FFF3C4,&H000000FF,&H00101010,&H8C000000,-1,0,0,0,100,100,0,0,3,1,0,7,24,24,20,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
+
+
+def ass_head():
+    """Style block for the current language.
+
+    Devanagari glyphs sit smaller than Latin at the same point size, so the
+    Hindi styles run a few points larger and keep clear of the bottom edge.
+    """
+    head = ASS_HEAD_T.replace("{font}", DEVANAGARI if LANG == "hi" else "DejaVu Sans")
+    if LANG == "hi":
+        head = (head.replace("Style: Bubble,Noto Sans Devanagari,30", "Style: Bubble,Noto Sans Devanagari,35")
+                    .replace("Style: Caption,Noto Sans Devanagari,24,&H00E8F4FF,&H000000FF,&H00101010,&HB0000000,0,0,0,0,100,100,0,0,1,2,1,2,60,60,26,1",
+                             "Style: Caption,Noto Sans Devanagari,28,&H00E8F4FF,&H000000FF,&H00101010,&HB0000000,0,0,0,0,100,100,0,0,1,2,1,2,60,60,54,1")
+                    .replace("Style: Chapter,Noto Sans Devanagari,21", "Style: Chapter,Noto Sans Devanagari,24"))
+    return head
 
 
 def ts(sec):
@@ -93,17 +128,34 @@ def ass_text(t):
     return t.replace("\n", " ").replace("{", "(").replace("}", ")").strip()
 
 
-def split_caption(text, cap=230):
-    """Long captions are shown as consecutive subtitle cards."""
+def split_caption(text, cap=210):
+    """Card a caption for the burned-in subtitle.
+
+    Devanagari sentences end with '।' (danda), not '.', so both are honoured.
+    """
     if len(text) <= cap:
         return [text]
+    if "।" in text:
+        sentences = [m.group(0).strip() for m in re.finditer(r"[^।.!?]+[।.!?]*", text)]
+    else:
+        sentences = [x.strip() for x in re.split(r"(?<=[.!?])\s+", text)]
     out, cur = [], ""
-    for sent in text.replace(" — ", " — ").split(". "):
-        piece = sent + ". "
-        if cur and len(cur) + len(piece) > cap:
+    for sent in sentences:
+        if not sent:
+            continue
+        if cur and len(cur) + len(sent) + 1 > cap:
             out.append(cur.strip())
             cur = ""
-        cur += piece
+        if len(sent) > cap:
+            line = ""
+            for w in sent.split():
+                if line and len(line) + len(w) + 1 > cap:
+                    out.append(line.strip())
+                    line = ""
+                line = (line + " " + w).strip()
+            cur = line
+            continue
+        cur = (cur + " " + sent).strip()
     if cur.strip():
         out.append(cur.strip())
     return out
@@ -114,6 +166,13 @@ def scene_weights(sc):
     segs = [len(b["text"]) + PAUSE for b in sc["bubbles"]]
     segs.append(len(sc["caption"]) + PAUSE)
     return segs
+
+
+def ass_filter(path):
+    """'ass' filter with the Devanagari font directory when needed."""
+    if LANG == "hi":
+        return f"ass={path}:fontsdir={DEVA_DIR}"
+    return f"ass={path}"
 
 
 def build_ass(sc, dur):
@@ -127,22 +186,27 @@ def build_ass(sc, dur):
         who = CAST.get(b["who"], b["who"]).split()[0].upper()
         colour = SPEAKER_COLOUR.get(b["who"], "&H00FFFFFF")
         # speaker name in colour, then the line
+        body = (b.get("textHi") or b["text"]) if LANG == "hi" else b["text"]
         lines.append(f"Dialogue: 0,{ts(start)},{ts(end)},Bubble,,0,0,0,,"
-                     f"{{\\c{colour}}}{who}:{{\\c&H00FFFFFF&}} {ass_text(b['text'])}")
+                     f"{{\\c{colour}}}{who}:{{\\c&H00FFFFFF&}} {ass_text(body)}")
         cum += w[i]
     # caption window: from the end of the last bubble to the end of the clip
     cap_start = LEAD + cum / tot * usable
     cap_end = dur - 0.15
-    chunks = split_caption(sc["caption"])
+    cap_text = (sc.get("captionHi") or sc["caption"]) if LANG == "hi" else sc["caption"]
+    chunks = split_caption(cap_text, 120 if LANG == "hi" else 210)
     span = max(0.4, (cap_end - cap_start) / len(chunks))
     for i, ch in enumerate(chunks):
         a, b2 = cap_start + i * span, cap_start + (i + 1) * span
         lines.append(f"Dialogue: 0,{ts(a)},{ts(min(b2, cap_end))},Caption,,0,0,0,,{ass_text(ch)}")
     # chapter banner for the whole scene
     rules = ", ".join("Rule " + r for r in sc["rules"])
-    banner = f"SCENE {sc['n']}/10  ·  {rules}  ·  {sc['title']}"
+    if LANG == "hi":
+        banner = f"दृश्य {sc['n']}/10  ·  {rules.replace('Rule', 'रूल')}"
+    else:
+        banner = f"SCENE {sc['n']}/10  ·  {rules}  ·  {sc['title']}"
     lines.append(f"Dialogue: 0,{ts(0.1)},{ts(dur - 0.1)},Chapter,,0,0,0,,{ass_text(banner)}")
-    return ASS_HEAD + "\n".join(lines) + "\n"
+    return ass_head() + "\n".join(lines) + "\n"
 
 
 SPEAKER_COLOUR = {          # ASS is &HBBGGRR
@@ -159,9 +223,10 @@ def srt_events(sc, dur):
     for i, b in enumerate(sc["bubbles"]):
         a = LEAD + cum / tot * usable
         e = LEAD + (cum + w[i]) / tot * usable
-        out.append((a, e, f"{CAST.get(b['who'], b['who'])}: {b['text']}"))
+        out.append((a, e, f"{CAST.get(b['who'], b['who'])}: {(b.get('textHi') or b['text']) if LANG == 'hi' else b['text']}"))
         cum += w[i]
-    chunks = split_caption(sc["caption"])
+    cap_text = (sc.get("captionHi") or sc["caption"]) if LANG == "hi" else sc["caption"]
+    chunks = split_caption(cap_text, 120 if LANG == "hi" else 210)
     a0 = LEAD + cum / tot * usable
     span = max(0.4, (dur - 0.15 - a0) / len(chunks))
     for i, ch in enumerate(chunks):
@@ -199,7 +264,7 @@ def render_scene(sc, crf, height, even_pan):
     vf = (f"crop={cw}:{ch}:x='{pan}':y=38,"
           f"scale={int(height*16/9)}:{height}:flags=lanczos,setsar=1,"
           f"drawbox=x=0:y=ih-{grad_h}:w=iw:h={grad_h}:color=black@0.42:t=fill,"
-          f"ass={ass}")
+          + ass_filter(ass))
     run(["-loop", "1", "-framerate", str(FPS), "-i", str(ROOT / sc["panel"]),
          "-i", str(audio),
          "-vf", vf,
@@ -256,7 +321,7 @@ def render_card(name, dur, lines, crf, height):
     ass = card_ass(BUILD / f"{name}.ass", lines, w, h)
     run(["-f", "lavfi", "-i", f"color=c=0x0B1020:s={w}x{h}:d={dur}:r={FPS}",
          "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
-         "-vf", f"ass={ass}", "-t", f"{dur:.3f}",
+         "-vf", ass_filter(ass).replace("'", ""), "-t", f"{dur:.3f}",
          "-c:v", "libx264", "-preset", "medium", "-crf", str(crf), "-pix_fmt", "yuv420p",
          "-c:a", "aac", "-b:a", "96k", "-shortest", str(out)])
     print(f"  {name}: {dur:.1f}s")
@@ -268,9 +333,17 @@ def main():
     ap.add_argument("--crf", type=int, default=25)
     ap.add_argument("--height", type=int, default=720)
     ap.add_argument("--scenes", type=int, nargs="*", default=None)
+    ap.add_argument("--lang", choices=["hg", "hi"], default="hg",
+                    help="subtitle script: hg = Roman Hinglish, hi = Devanagari")
+    ap.add_argument("--out", default=None, help="output filename (default gfr-ch7-final.mp4)")
     args = ap.parse_args()
 
-    global CAST
+    global CAST, LANG
+    LANG = args.lang
+    if LANG == "hi":
+        ensure_fonts()
+        print("  mode: Devanagari subtitles (Noto Sans Devanagari)")
+
     data = json.loads((NARR / "scenes.json").read_text())
     CAST = data["cast"]
     scenes = data["scenes"]
@@ -286,7 +359,8 @@ def main():
             ("GFR 2017  ·  CHAPTER 7", 46, "white", 70),
             ("Inventory Management", 62, "0xFFD166", 86),
             ("Rules 207 – 223", 40, "0x9AE6B4", 60),
-            ("Hinglish narration  ·  Indian-accent voice  ·  city Hinglish text", 22, "0xCBD5E1", 40),
+            (("हिंदी सबटाइटल  ·  इंडियन-एक्सेंट हिंग्लिश नैरेशन" if LANG == "hi"
+              else "Hinglish narration  ·  Indian-accent voice  ·  city Hinglish text"), 22, "0xCBD5E1", 40),
             (f"Verified {meta['lastVerified']}  ·  DoE / DoPT instructions", 22, "0x94A3B8", 40),
         ], args.crf, args.height))
 
@@ -312,7 +386,7 @@ def main():
     # concat
     listf = BUILD / "list.txt"
     listf.write_text("".join(f"file '{c.name}'\n" for c, _ in clips))
-    final = OUT / "gfr-ch7-final.mp4"
+    final = OUT / (args.out or "gfr-ch7-final.mp4")
     chapters = BUILD / "chapters.txt"
     t0 = 0.0
     out_lines = [";FFMETADATA1", f"title={meta['title']}",
@@ -329,8 +403,10 @@ def main():
          "-map_metadata", "1", "-c", "copy", "-movflags", "+faststart", str(final)], quiet=True)
 
     if not args.scenes:
-        write_srt(srt_entries, OUT / "gfr-ch7-final.srt")
-        print(f"subtitle sidecar: {OUT / 'gfr-ch7-final.srt'}  ({len(srt_entries)} entries)")
+        sidecar = OUT / ((args.out or "gfr-ch7-final.mp4").rsplit(".", 1)[0] +
+                         (".hi.srt" if LANG == "hi" else ".srt"))
+        write_srt(srt_entries, sidecar)
+        print(f"subtitle sidecar: {sidecar}  ({len(srt_entries)} entries)")
 
     size = final.stat().st_size / 1024 / 1024
     print(f"\nFINAL: {final}  {t0/60:.1f} min  {size:.1f} MB")

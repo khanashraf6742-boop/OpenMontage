@@ -95,10 +95,22 @@ All are 1280×720, 25 fps, H.264 + AAC; the two parts also ship `.srt` sidecars.
 | `assets/video/gfr-ch7-complete-480p.mp4` | 32:54 | **23 MB** (854×480, 27 chapters) |
 | `assets/video/gfr-ch7-final-480p.mp4` | 12:03 | **11 MB** (854×480, 12 chapters) |
 
-**Devanagari subtitles** for Part 1: `assets/video/gfr-ch7-final.hi.srt` (88 cues, same timings as the
-Roman track) and `assets/video/gfr-ch7-final-hi.mp4` — the story video with the हिंदी track muxed in as a
-selectable soft subtitle (the burned-in track stays Roman Hinglish, as designed).
-Part 2 shows clause text, which is English/Roman by definition, so it ships the Roman track only.
+**Devanagari (हिंदी), for Part 1** — three ways, all from the app's own Devanagari column
+(`tools/export-narration.js` exports it, so subtitles and app text can never drift apart):
+
+| File | What it is |
+|---|---|
+| `gfr-ch7-final-hindi.mp4` | 12:03 · **Devanagari burned in** · 12 chapters · 40 MB |
+| `gfr-ch7-final-hindi-480p.mp4` | same, 854×480 · **10 MB** |
+| `gfr-ch7-final.hi.srt` | 88-cue soft subtitle, same timings as the Roman track |
+| `gfr-ch7-final-hi.mp4` | Part 1 + that soft track muxed in (Roman stays burned in) |
+
+Render it: `python3 tools/make-video.py --lang hi --out gfr-ch7-final-hindi.mp4`.
+The Hindi styles run larger (Devanagari sits smaller than Latin at the same point size) and captions
+are carded at 120 characters. The Devanagari font (Noto Sans Devanagari) is fetched automatically
+through the GitHub API and passed to libass with `fontsdir`.
+
+Part 2 shows verbatim provision text, which is English/Roman by definition, so it ships the Roman track.
 
 Part 1 in detail:
 
@@ -165,8 +177,9 @@ assets/video/         gfr-ch7-complete.mp4 (32:54) · gfr-ch7-final.mp4 (12:03) 
                       Roman + हिंदी .srt sidecars · gfr-ch7-final-hi.mp4 (soft subs)
 video.html            video player page with clickable chapters
 tools/                city-style.py, export-narration.js, mp3tool.py, set-timing.py,
-                      make-video.py, make-video-deep.py, make-complete-video.py,
-                      make-compact.py, make-srt-hindi.py
+                      make-video.py (--lang hi for the Devanagari render),
+                      make-video-deep.py, make-complete-video.py, make-compact.py,
+                      make-srt-hindi.py
 ```
 
 > **Narration status:** complete — scenes 1–10 **and all 17 rules (207–223)** are recorded in the
