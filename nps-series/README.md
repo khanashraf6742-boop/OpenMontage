@@ -19,10 +19,10 @@ All 30 rules + every form, explained in simple city-Hinglish, in 10 batches.
 | 6 | CCS-NPS-Rules-2021-Batch-06.mp4 | R14–15: resignation (90-day lock, (a)–(e), bar, condonation) + absorption | 8:06 |
 | 7 | CCS-NPS-Rules-2021-Batch-07.mp4 | R16–17: invalidation (s.20 RPwD, Medical Board/Form 3, 1972 vs NPS routes) + boarding out (1939 vs NPS routes) | 8:00 |
 | 8 | CCS-NPS-Rules-2021-Batch-08.mp4 | R18–20: penalty exit (pre-superannuation + non-Govt option) · pending proceedings (on-superannuation, corpus unaffected) · death (1972/1939 clawback + nominee/legal heir vs NPS route per PFRDA 2015) | 6:17 |
-| 9 | CCS-NPS-Rules-2021-Batch-09.mp4 | R21–26: quarterly retirement list · no-demand certificate · withdrawal form (6 months prior) · Forms 4-A–4-E + forwarding timelines · deputation · retirement-date notification | 7:35 |
+| 9 | CCS-NPS-Rules-2021-Batch-09.mp4 | R21–26: quarterly retirement list · no-demand certificate · withdrawal form (6 months prior) · Forms 4-A–4-E + forwarding timelines · deputation · retirement-date notification | 7:41 |
 | 10 | CCS-NPS-Rules-2021-Batch-10-FINAL.mp4 | R27–30: interpretation · power to relax · residual matters · repeal & saving + Forms 1, 2, 3, 4-A–4-E | 7:06 |
 
-**Total: 10 episodes · ~70 min · R1–R30 + all forms — series complete.**
+**Total: 10 episodes · ~71 min · R1–R30 + all forms — series complete.**
 
 ## Form cross-reference (covered in Batches 4, 9, 10)
 

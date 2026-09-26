@@ -17,18 +17,19 @@ city-Hinglish, zero legal invention (every frame grounded in the Gazette text on
 | 6 | CCS-NPS-Rules-2021-Batch-06.mp4 | R14–15 resignation + absorption | 8:06 | 2663f7f |
 | 7 | CCS-NPS-Rules-2021-Batch-07.mp4 | R16–17 invalidation + boarding out | 8:00 | b407c13 (external, accepted as-is) |
 | 8 | CCS-NPS-Rules-2021-Batch-08.mp4 | R18–20 penalty exit · pending proceedings · death | 6:17 | bcc33e1 |
-| 9 | CCS-NPS-Rules-2021-Batch-09.mp4 | R21–26 list · no-demand cert · withdrawal form · 4-A–4-E timelines · deputation · notification | 7:35 | ce4eb99 |
+| 9 | CCS-NPS-Rules-2021-Batch-09.mp4 | R21–26 list · no-demand cert · withdrawal form · 4-A–4-E timelines · deputation · notification | 7:41 | ce4eb99 (audio re-cut, see note below) |
 | 10 | CCS-NPS-Rules-2021-Batch-10-FINAL.mp4 | R27–30 + Forms 1, 2, 3, 4-A–4-E | 7:06 | 3fc54ae |
 
-- **Total: 70 min 50 s** across 10 episodes · R1–R30 + all forms · series complete 10/10
+- **Total: ~71 min 07 s** across 10 episodes · R1–R30 + all forms · series complete 10/10
 - **QC (final pass):** all 10 files full-decode verified — 0 errors
 - **Index:** `README.md` (episode table, form cross-reference, sources)
 - **Sole source:** G.S.R. 227(E), New Delhi, 30.03.2021 — Ministry of Personnel, Public Grievances and Pensions. Full Gazette PDF (incl. form formats pp. 32–47): https://cpao.nic.in/pdf/NPS_ENGLISH_BOOK.pdf
 - **Verification:** R1–R26 verbatim from the Gazette text; R27–R30 cross-verified against two independent reproductions on 26.09.2026.
 
-### Known minor note
-Batch 9, scene 2 (Rule 21) narration source text contained one stray CJK character. Audio was
-synthesized normally; if that clip ever sounds off, regenerate it and re-assemble Batch 9.
+### Known minor note — RESOLVED
+Batch 9, scene 2 (Rule 21) narration source text contained one stray CJK character. The clip
+was regenerated with a clean script and Batch 9 re-assembled + replaced (duration 7:35 → 7:41;
+series total now ~71:07). All other audio and every frame are the originally delivered material.
 
 ## 2. Open — Prompt package (blocked on user-supplied input only)
 
