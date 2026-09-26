@@ -140,6 +140,11 @@ const all = ['# GFR 2017 — Chapter 6 (Rules 142–206) · Complete Reference',
   .concat(bodies);
 fs.writeFileSync(path.join(OUT, 'gfr-chapter-6-complete.md'), all.join('\n'));
 
+/* _docs.js wipes docs/ above, and the narration transcript is written by a
+   different generator. Regenerate it here so a single command always leaves
+   docs/ complete - running _docs.js on its own used to delete the transcript. */
+require('./_transcript.js');
+
 console.log('docs written to ' + path.relative(ROOT, OUT) + '/');
 console.log('  rule files : ' + RULES.length);
 console.log('  index.md   : ' + idx.length + ' lines');

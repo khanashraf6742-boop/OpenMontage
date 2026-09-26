@@ -39,7 +39,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       # docs/ is generated. Rebuilding it here means the published Markdown can
       # never drift from data/ch6-*.js.
