@@ -67,18 +67,8 @@ jobs:
             for base in https://inv.nadeko.net https://invidious.nerdvpn.de https://yewtu.be https://invidious.f5.si https://iv.melmac.space; do
               echo "--- $base"
               curl -s -m 25 "$base/api/v1/videos/dWBgNHT4ipE" -o work/inv.json || continue
-              python3 - <<'PY' > work/url.txt || true
-import json,sys
-try:
-    d=json.load(open('work/inv.json'))
-except Exception:
-    sys.exit(1)
-af=d.get('adaptiveFormats') or []
-aud=[a for a in af if str(a.get('type','')).startswith('audio')]
-aud.sort(key=lambda a: a.get('bitrate',0), reverse=True)
-if aud:
-    print(aud[0].get('url',''))
-PY
+              jq -r '[.adaptiveFormats[]? | select(.type|startswith("audio"))]
+                     | sort_by(.bitrate) | last | .url // empty' work/inv.json > work/url.txt 2>/dev/null || true
               U=$(cat work/url.txt 2>/dev/null | head -1)
               if [ -n "${U:-}" ]; then
                 echo "stream url found"
