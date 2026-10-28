@@ -1,27 +1,35 @@
 # Sajjo Bano weds Mohd. Shakeel — Royal Nikah Invitation Videos
 
-Sequential vertical (`9:16`, `1080×1920`, `30 fps`, `64.0 s`) marriage invitation videos crafted from the five original Nikah invitation cards of **Sajjo Bano** (*D/o Mrs. Baby Sultana & Mr. Adalat Khan, Lucknow*) and **Mohd. Shakeel** (*S/o Mr. Mohd. Sageer, Padari Bazar, Gorakhpur, U.P.*), taking place **Insha’Allah on Saturday, 12th December 2026** (*After Namaz-e-Isha, 7:30 PM Onwards*) at **Royal Palace, Faridi Nagar, Chandanpur, Lucknow**.
+Sequential vertical (`9:16`, `1080×1920`, `30 fps`, `64.0 s`) marriage invitation videos crafted from the five original Nikah invitation cards of **Sajjo Bano** (*daughter of Mrs. Baby Sultana & Mr. Adalat Khan, Lucknow*) and **Mohd. Shakeel** (*S/o Mr. Mohd. Sageer, Padari Bazar, Gorakhpur, U.P.*), taking place **Insha’Allah on Saturday, 12th December 2026** (*After Namaz-e-Isha, 7:30 PM Onwards*) at **Royal Palace, Faridi Nagar, Chandanpur, Lucknow**.
 
 ---
 
-## Host line — revised in this build
+## Host line & lineage — revised in this build
 
-The host line now reads **“Mrs. Baby Sultana & Mr. Adalat Khan”** everywhere it appears in the film (previously “Mrs. & Mr. Adalat Khan”):
+The host line reads **“Mrs. Baby Sultana & Mr. Adalat Khan”** and every lineage line
+below it now credits **both** parents, as requested:
 
-| Where | Time | Element |
+| Where | Time | Now reads |
 | --- | --- | --- |
-| Act III header plaque — `CH XI · THE FORMAL INVITATION` | `20.0 – 31.2 s` | Cinzel-Bold, letterspaced, ivory on garnet |
-| Act III printed English card | `20.0 – 31.2 s` | Spectral-Bold, deep-espresso ink on the vellum card |
-| Act IV vellum folio | `32.0 – 43.2 s` | Cinzel-Bold, letterspaced, deep-espresso on cream |
+| Act III header plaque — `CH XI · THE FORMAL INVITATION` | `20.0 – 31.2 s` | `MRS. BABY SULTANA & MR. ADALAT KHAN` |
+| Act III printed English card — host line | `20.0 – 31.2 s` | `Mrs. Baby Sultana & Mr. Adalat Khan` |
+| Act III printed English card — under the bride's name | `20.0 – 31.2 s` | `( Mr. Adalat Khan & Mrs. Baby Sultana )` |
+| Act IV vellum folio — host line | `32.0 – 43.2 s` | `MRS. BABY SULTANA & MR. ADALAT KHAN` |
+| Act IV vellum folio — under the bride's name | `32.0 – 43.2 s` | `( Mr. Adalat Khan & Mrs. Baby Sultana · Lucknow )` |
+| Act V Urdu Dawatnama — under the bride's name | `43.0 – 54.0 s` | `بنت جناب عدالت خان و محترمہ بی بی سلطانہ` |
 
-Each line was re-typeset at the **original font, size, letter-spacing, baseline, centre and ink colour**
-(recovered by matching the old line's measured ink box), so no neighbouring line moved, nothing
-re-flowed and no layout shifted. The three entrance fades and both act crossfades follow the original
-`power3.out` / `power2.inOut` curves frame-for-frame; the audio stream is untouched.
+Each line was re-typeset at the **original font, size, letter-spacing, baseline, centre and
+ink colour** (recovered by matching the old line's measured ink box), so no neighbouring line
+moved, nothing re-flowed and no layout shifted. The entrance fades and both act crossfades
+follow the original `power3.out` / `power2.inOut` curves frame-for-frame. The **audio stream
+is bit-identical** to the approved vocal-only nasheed master (verified by stream MD5).
 
-Everything below the host line is unchanged: `D/o Mr. Adalat Khan` (Act III card) and
-`( Daughter of Mr. Adalat Khan · Lucknow )` (Act IV) refer to the bride's father and stay as printed
-on the original card.
+On the Urdu card the original Nastaliq words are kept **pixel-exact** — they are lifted from
+the frame and re-placed, never re-rendered — and only the added words are set in a matching
+Nastaliq at the card's own alif height and stroke weight, so the two halves read as one line.
+
+`Mrs.` is used only for the host line, as the original card does; `Mr. & Mrs.` is never split
+across two names anywhere in the film.
 
 ---
 
@@ -40,7 +48,7 @@ source, background music removed by source separation), balanced to `−14.4 LUF
 
 - **WhatsApp HD (`720×1280`, `14.7 MiB` — recommended for sharing)**
   `https://github.com/khanashraf6742-boop/OpenMontage/raw/refs/heads/arena/803b8a14-openmontage/invitations/sajjo-weds-shakeel/classic-edition/Sajjo-Weds-Shakeel-Classic-WhatsApp-HD.mp4?download=true`
-- **Master 1080p archival (`1080×1920`, `38.0 MiB` — keepsake quality)**
+- **Master 1080p archival (`1080×1920`, `38.6 MiB` — keepsake quality)**
   `https://github.com/khanashraf6742-boop/OpenMontage/raw/refs/heads/arena/803b8a14-openmontage/invitations/sajjo-weds-shakeel/classic-edition/Sajjo-Weds-Shakeel-Classic-Master-1080p.mp4?download=true`
 - **Nasheed background track, vocals only (`MP3 320 kbps`, `2.4 MiB`)**
   `https://github.com/khanashraf6742-boop/OpenMontage/raw/refs/heads/arena/803b8a14-openmontage/invitations/sajjo-weds-shakeel/classic-edition/Wedding-Nasheed-Vocals-Only.mp3?download=true`
