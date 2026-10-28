@@ -16,6 +16,7 @@ import subprocess
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 
 VIDEO_ID = "dWBgNHT4ipE"
@@ -85,6 +86,9 @@ def to_wav(src, dst=os.path.join(WORK, "source.wav")):
 
 
 # ---------------------------------------------------------------- 1. yt-dlp
+POT_ARGS = [
+    "--extractor-args", "youtubepot-bgutilhttp:base_url=http://127.0.0.1:4416",
+]
 CLIENTS = [
     "tv,web_safari,android",
     "ios,mweb,web",
@@ -99,6 +103,7 @@ for cl in CLIENTS:
     cmd = ["yt-dlp", "--no-playlist", "-f", "bestaudio/best", "-o", dest]
     if cl:
         cmd += ["--extractor-args", f"youtube:player_client={cl}"]
+    cmd += POT_ARGS
     cmd.append(URL)
     rc, out = run(cmd, timeout=300)
     cands = [f for f in os.listdir(WORK) if f.startswith(f"src_{tag}.")]
@@ -216,6 +221,48 @@ for base in COBALT:
     if dur and to_wav(p):
         log("SUCCESS via cobalt:", base)
         sys.exit(0)
+
+# ---------------------------------------------------------------- 5. Internet Archive
+# Accept only items that are clearly the same nasheed (wedding / zawaj wording).
+KEY_HINTS = ("wedding", "zawaj", "zifaf", "nikah", "urusi", "wedding nasheed")
+try:
+    q = urllib.parse.quote('creator:(Muqit) AND mediatype:(audio)')
+    js = json.loads(get(f"https://archive.org/advancedsearch.php?q={q}"
+                        f"&fl%5B%5D=identifier&fl%5B%5D=title&rows=40&page=1&output=json", 40))
+    docs = js.get("response", {}).get("docs", [])
+    log(f"--- archive.org: {len(docs)} candidate items")
+    for doc in docs:
+        ident = doc.get("identifier")
+        title = str(doc.get("title") or "")
+        log("   item:", ident, "|", title[:90])
+        try:
+            meta = json.loads(get(f"https://archive.org/metadata/{ident}", 40))
+        except Exception:
+            continue
+        files = meta.get("files") or []
+        blob = (title + " " + " ".join(str(f.get("name", "")) + " " + str(f.get("title", ""))
+                                       for f in files)).lower()
+        if not any(k in blob for k in KEY_HINTS):
+            continue
+        cands = [f for f in files
+                 if str(f.get("format", "")).lower().startswith(("vbr mp3", "mp3", "ogg", "flac"))
+                 or str(f.get("name", "")).lower().endswith((".mp3", ".ogg", ".flac", ".m4a"))]
+        for f in cands:
+            try:
+                p = os.path.join(WORK, "ia_stream.bin")
+                u = f"https://archive.org/download/{ident}/{urllib.parse.quote(str(f['name']))}"
+                with urllib.request.urlopen(urllib.request.Request(
+                        u, headers={"User-Agent": UA}), timeout=600) as r, open(p, "wb") as fh:
+                    shutil.copyfileobj(r, fh)
+            except Exception as e:
+                log("   ! ia err", str(e)[:120])
+                continue
+            dur = probe(p)
+            if dur and to_wav(p):
+                log("SUCCESS via archive.org:", ident, f.get("name"))
+                sys.exit(0)
+except Exception as e:
+    log("archive.org route failed:", type(e).__name__, str(e)[:160])
 
 log("DOWNLOAD_FAILED: every route exhausted")
 sys.exit(1)

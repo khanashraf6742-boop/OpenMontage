@@ -33,6 +33,16 @@ jobs:
           python3 -m pip install --quiet --upgrade yt-dlp
           echo "yt-dlp: $(yt-dlp --version)"
 
+      - name: PO token provider (bypass YouTube bot check from cloud IPs)
+        continue-on-error: true
+        run: |
+          docker run --name bgutil -d --init -p 127.0.0.1:4416:4416 \
+            brainicism/bgutil-ytdlp-pot-provider:2.0.2 || true
+          sleep 8
+          docker ps --format '{{.Image}} {{.Status}}' || true
+          curl -s -m 10 http://127.0.0.1:4416/ping || echo "no ping endpoint"
+          python3 -m pip install --quiet bgutil-ytdlp-pot-provider 2>&1 | tail -2
+
       - name: Download source audio
         id: dl
         continue-on-error: true
