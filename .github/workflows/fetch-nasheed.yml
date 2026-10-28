@@ -1,0 +1,141 @@
+name: Fetch nasheed audio (vetting run)
+
+# One-shot helper: runs on a GitHub runner (which has unrestricted egress),
+# pulls the referenced nasheed, isolates the vocal with Demucs, and commits
+# the result back onto the branch that triggered it.
+on:
+  push:
+    paths:
+      - ".github/workflows/fetch-nasheed.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-nasheed
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: System deps
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg >/dev/null
+          python3 -m pip install --quiet --upgrade pip
+          python3 -m pip install --quiet --upgrade yt-dlp
+          echo "ffmpeg: $(ffmpeg -version | head -1)"
+          echo "yt-dlp: $(yt-dlp --version)"
+
+      - name: Download source audio
+        id: dl
+        continue-on-error: true
+        run: |
+          set -uo pipefail
+          mkdir -p .nasheed-src work
+          URL="https://www.youtube.com/watch?v=dWBgNHT4ipE"
+          ok=0
+          try_yt() {
+            local args="$1"; local tag="$2"
+            echo "=== yt-dlp attempt [$tag] $args"
+            if yt-dlp $args -f "bestaudio/best" --no-playlist -o "work/src_$tag.%(ext)s" "$URL" 2>&1 | tail -25; then
+              local f
+              f=$(ls work/src_$tag.* 2>/dev/null | head -1 || true)
+              if [ -n "${f:-}" ]; then
+                echo "got $f"
+                ffmpeg -y -hide_banner -loglevel error -i "$f" -vn -ac 2 -ar 44100 -c:a pcm_s16le work/source.wav
+                ok=1
+                return 0
+              fi
+            fi
+            return 1
+          }
+          try_yt "--extractor-args youtube:player_client=tv,web_safari,android" tv || \
+          try_yt "--extractor-args youtube:player_client=ios,mweb,web" ios || \
+          try_yt "--extractor-args youtube:player_client=android_vr,web_embedded" vr || \
+          try_yt "" plain || true
+
+          if [ "$ok" -ne 1 ]; then
+            echo "=== falling back to Invidious/Piped mirrors"
+            for base in https://inv.nadeko.net https://invidious.nerdvpn.de https://yewtu.be https://invidious.f5.si https://iv.melmac.space; do
+              echo "--- $base"
+              curl -s -m 25 "$base/api/v1/videos/dWBgNHT4ipE" -o work/inv.json || continue
+              python3 - <<'PY' > work/url.txt || true
+import json,sys
+try:
+    d=json.load(open('work/inv.json'))
+except Exception:
+    sys.exit(1)
+af=d.get('adaptiveFormats') or []
+aud=[a for a in af if str(a.get('type','')).startswith('audio')]
+aud.sort(key=lambda a: a.get('bitrate',0), reverse=True)
+if aud:
+    print(aud[0].get('url',''))
+PY
+              U=$(cat work/url.txt 2>/dev/null | head -1)
+              if [ -n "${U:-}" ]; then
+                echo "stream url found"
+                if curl -sL -m 600 "$U" -o work/src_mirror.bin; then
+                  if ffmpeg -y -hide_banner -loglevel error -i work/src_mirror.bin -vn -ac 2 -ar 44100 -c:a pcm_s16le work/source.wav 2>/dev/null; then
+                    ok=1; break
+                  fi
+                fi
+              fi
+            done
+          fi
+
+          if [ "$ok" -ne 1 ]; then
+            echo "DOWNLOAD_FAILED" > .nasheed-src/STATUS.txt
+            exit 1
+          fi
+          ffprobe -v error -show_entries format=duration -of csv=p=0 work/source.wav || true
+          echo "download ok"
+
+      - name: Install Demucs (CPU)
+        if: steps.dl.outcome == 'success'
+        run: |
+          python3 -m pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
+          python3 -m pip install --quiet demucs soundfile
+          python3 -c "import torch,demucs;print('torch',torch.__version__)"
+
+      - name: Isolate vocal stem (music removed)
+        if: steps.dl.outcome == 'success'
+        run: |
+          set -uo pipefail
+          demucs -n htdemucs --two-stems=vocals -o work/sep work/source.wav 2>&1 | tail -30
+          find work/sep -name '*.wav' -o -name '*.flac' | sort
+          V=$(find work/sep -name 'vocals.wav' -o -name 'vocals.flac' | head -1)
+          I=$(find work/sep -name 'no_vocals.wav' -o -name 'no_vocals.flac' | head -1)
+          echo "vocal stem: ${V:-none}"
+          echo "inst stem : ${I:-none}"
+          ffmpeg -y -hide_banner -loglevel error -i "$V" -c:a flac -compression_level 8 .nasheed-src/nasheed_vocals.flac
+          ffmpeg -y -hide_banner -loglevel error -i "$I" -c:a libmp3lame -b:a 192k .nasheed-src/nasheed_musicbed.mp3
+          ffmpeg -y -hide_banner -loglevel error -i work/source.wav -c:a libmp3lame -b:a 320k .nasheed-src/nasheed_source.mp3
+          ffprobe -v error -show_entries format=duration,size -of default=nw=1 .nasheed-src/nasheed_vocals.flac > .nasheed-src/PROBE.txt
+          ffprobe -v error -show_entries format=duration,size -of default=nw=1 .nasheed-src/nasheed_source.mp3 >> .nasheed-src/PROBE.txt
+          echo "OK" > .nasheed-src/STATUS.txt
+
+      - name: Commit results
+        if: always()
+        run: |
+          set -uo pipefail
+          ls -lh .nasheed-src || true
+          if [ ! -f .nasheed-src/STATUS.txt ]; then
+            echo "FAILED (no step output)" > .nasheed-src/STATUS.txt
+          fi
+          git config user.name  "nasheed-fetch-bot"
+          git config user.email "nasheed-fetch@users.noreply.github.com"
+          git add -f .nasheed-src
+          git commit -m "chore: nasheed source + isolated vocal stem (automated fetch)" || echo "nothing to commit"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+            git push origin "HEAD:${GITHUB_REF_NAME}" && break
+            sleep 8
+          done
