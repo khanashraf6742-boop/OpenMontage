@@ -1,0 +1,1718 @@
+<!doctype html>
+<html
+  lang="en"
+  data-resolution="portrait"
+  data-composition-variables='[
+    {"id":"brideName","type":"string","label":"Bride Name","default":"Sajjo Bano"},
+    {"id":"groomName","type":"string","label":"Groom Name","default":"Mohd. Shakeel"},
+    {"id":"coupleShort","type":"string","label":"Couple Short Title","default":"Sajjo & Shakeel"},
+    {"id":"eventDateRoman","type":"string","label":"Roman Date","default":"XII · XII · MMXXVI"},
+    {"id":"eventDateLine","type":"string","label":"Event Date & Time","default":"SATURDAY · 12 DECEMBER 2026 · 7:30 P.M."},
+    {"id":"venueLine","type":"string","label":"Venue","default":"ROYAL PALACE · FARIDI NAGAR, CHANDANPUR, LUCKNOW"},
+    {"id":"goldAccent","type":"color","label":"Burnished Gold Accent","default":"#EBC97E"}
+  ]'
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Sajjo &amp; Shakeel — Royal Heirloom Nikah Invitation (Classic Edition)</title>
+    <script src="assets/js/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Pinyon Script";
+        src: url("assets/fonts/PinyonScript-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Forum";
+        src: url("assets/fonts/Forum-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Marcellus";
+        src: url("assets/fonts/Marcellus-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Spectral";
+        src: url("assets/fonts/Spectral-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Spectral";
+        src: url("assets/fonts/Spectral-Italic.ttf") format("truetype");
+        font-weight: 400;
+        font-style: italic;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Spectral";
+        src: url("assets/fonts/Spectral-SemiBold.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Scheherazade New";
+        src: url("assets/fonts/ScheherazadeNew-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Scheherazade New";
+        src: url("assets/fonts/ScheherazadeNew-Bold.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Noto Nastaliq Urdu";
+        src: url("assets/fonts/NotoNastaliqUrdu.ttf") format("truetype");
+        font-weight: 400 700;
+        font-style: normal;
+        font-display: block;
+      }
+
+      :root {
+        --bg-garnet: #180a08;
+        --bg-emerald: #0a1d19;
+        --bg-palace: #120906;
+        --ivory: #fbf4e7;
+        --ivory-soft: #efe2cb;
+        --gold-bright: #f4d898;
+        --gold-accent: #ebc97e;
+        --gold-rule: #b88c3e;
+        --vellum-bg: #faf3e5;
+        --vellum-band: #f1e4cc;
+        --ink-walnut: #26110c;
+        --ink-garnet: #691817;
+        --ink-umber: #4e2e18;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--bg-garnet);
+        color: var(--ivory);
+        font-family: "Spectral", Georgia, serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--bg-garnet);
+      }
+
+      #stage {
+        position: absolute;
+        inset: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+      }
+
+      /* Shared Garnet Velvet Base (eliminates duplicate media discovery!) */
+      #garnet-backdrop {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        overflow: hidden;
+      }
+
+      .bg-plate {
+        position: absolute;
+        inset: -24px;
+        width: 1128px;
+        height: 1968px;
+        object-fit: cover;
+        z-index: 0;
+        filter: brightness(0.84) contrast(1.05);
+      }
+
+      .bg-plate-palace {
+        position: absolute;
+        inset: -20px;
+        width: 1120px;
+        height: 1960px;
+        object-fit: cover;
+        z-index: 0;
+        filter: brightness(0.98) contrast(1.04);
+      }
+
+      .bg-scrim {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: radial-gradient(
+          ellipse 78% 68% at 50% 50%,
+          rgba(22, 9, 7, 0.4) 0%,
+          rgba(18, 7, 6, 0.7) 100%
+        );
+      }
+
+      .bg-scrim-emerald {
+        background: radial-gradient(
+          ellipse 78% 68% at 50% 50%,
+          rgba(8, 28, 24, 0.44) 0%,
+          rgba(6, 20, 17, 0.76) 100%
+        );
+      }
+
+      .bg-scrim-palace {
+        background: linear-gradient(
+          180deg,
+          rgba(16, 8, 5, 0.22) 0%,
+          rgba(16, 8, 5, 0.42) 32%,
+          rgba(16, 8, 5, 0.76) 62%,
+          rgba(14, 7, 4, 0.86) 100%
+        );
+      }
+
+      .candle-glow {
+        position: absolute;
+        width: 920px;
+        height: 920px;
+        left: 80px;
+        top: 500px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(235, 201, 126, 0.22) 0%,
+          rgba(184, 140, 62, 0.08) 45%,
+          rgba(24, 10, 8, 0) 72%
+        );
+        z-index: 1;
+        pointer-events: none;
+      }
+
+      .ghost-monogram {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Pinyon Script", cursive;
+        font-size: 380px;
+        color: rgba(235, 201, 126, 0.055);
+        white-space: nowrap;
+        z-index: 1;
+        pointer-events: none;
+        user-select: none;
+      }
+
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 136px 72px 132px;
+      }
+
+      #act1 {
+        z-index: 2;
+        opacity: 1;
+      }
+      #act2 {
+        z-index: 3;
+        opacity: 0;
+      }
+      #act3 {
+        z-index: 4;
+        opacity: 0;
+      }
+      #act4 {
+        z-index: 5;
+        opacity: 0;
+      }
+      #act5 {
+        z-index: 6;
+        opacity: 0;
+      }
+      #act6 {
+        z-index: 7;
+        opacity: 0;
+      }
+
+      /* Scene foreground zones */
+      .zone {
+        position: relative;
+        z-index: 4;
+        width: 100%;
+        max-width: 936px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .dark-plaque {
+        background: rgba(24, 10, 8, 0.85);
+        border: 1.5px solid rgba(235, 201, 126, 0.58);
+        box-shadow:
+          0 16px 44px rgba(0, 0, 0, 0.55),
+          inset 0 0 0 4px rgba(24, 10, 8, 0.92),
+          inset 0 0 0 5px rgba(235, 201, 126, 0.28);
+        padding: 22px 34px;
+        border-radius: 6px;
+        width: 100%;
+      }
+
+      .emerald-plaque {
+        background: rgba(9, 29, 25, 0.88);
+        border: 1.5px solid rgba(235, 201, 126, 0.6);
+        box-shadow:
+          0 16px 44px rgba(0, 0, 0, 0.55),
+          inset 0 0 0 4px rgba(9, 29, 25, 0.92),
+          inset 0 0 0 5px rgba(235, 201, 126, 0.28);
+        padding: 20px 32px;
+        border-radius: 6px;
+        width: 100%;
+      }
+
+      /* Typography classes */
+      .roman-overline {
+        font-family: "Forum", serif;
+        font-size: 22px;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+        color: var(--gold-bright);
+        line-height: 1.35;
+      }
+
+      .arabic-sacred {
+        font-family: "Scheherazade New", serif;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 1.5;
+        color: var(--gold-bright);
+        direction: rtl;
+      }
+
+      .urdu-nastaliq {
+        font-family: "Noto Nastaliq Urdu", serif;
+        font-size: 35px;
+        line-height: 2.15;
+        color: var(--gold-bright);
+        direction: rtl;
+        padding: 4px 0;
+      }
+
+      .italic-verse {
+        font-family: "Spectral", serif;
+        font-style: italic;
+        font-size: 26px;
+        line-height: 1.42;
+        color: var(--ivory);
+      }
+
+      .copperplate-hero {
+        font-family: "Pinyon Script", cursive;
+        font-size: 90px;
+        line-height: 1.12;
+        color: var(--ivory);
+        padding: 4px 12px;
+      }
+
+      .copperplate-gold {
+        font-family: "Pinyon Script", cursive;
+        font-size: 84px;
+        line-height: 1.14;
+        color: var(--gold-bright);
+        padding: 4px 12px;
+      }
+
+      .tabular-meta {
+        font-family: "Marcellus", serif;
+        font-size: 21px;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        color: var(--ivory-soft);
+        font-variant-numeric: tabular-nums;
+        line-height: 1.4;
+      }
+
+      /* 3D Physical Stationery Stage */
+      .card-stage-3d {
+        position: relative;
+        z-index: 4;
+        perspective: 1500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .stationery-frame {
+        position: relative;
+        border-radius: 10px;
+        padding: 10px;
+        background: linear-gradient(135deg, #d7b165 0%, #8b6423 50%, #efd291 100%);
+        box-shadow:
+          0 34px 72px rgba(0, 0, 0, 0.72),
+          0 8px 24px rgba(0, 0, 0, 0.48);
+        transform-style: preserve-3d;
+        overflow: hidden;
+      }
+
+      .stationery-img {
+        display: block;
+        width: 856px;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      .stationery-img-wide {
+        display: block;
+        width: 880px;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      .stationery-img-flap {
+        display: block;
+        width: 780px;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      /* Optical 24k Gold Foil Sheen Overlay */
+      .foil-sheen {
+        position: absolute;
+        top: -30%;
+        left: -45%;
+        width: 48%;
+        height: 160%;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 244, 210, 0) 0%,
+          rgba(255, 241, 194, 0.42) 50%,
+          rgba(255, 244, 210, 0) 100%
+        );
+        transform: rotate(22deg) translateX(-260px);
+        pointer-events: none;
+        opacity: 0;
+      }
+
+      /* Ornamental gold divider rule */
+      .gold-divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      .gold-divider-line {
+        display: block;
+        height: 1.5px;
+        width: 180px;
+        background: var(--gold-accent);
+        transform-origin: center;
+      }
+
+      .gold-diamond {
+        display: block;
+        width: 9px;
+        height: 9px;
+        background: var(--gold-bright);
+        transform: rotate(45deg);
+      }
+
+      /* Archival Cotton-Rag Letterpress Folios (z-index: 4 ensures bright ivory contrast!) */
+      .vellum-folio {
+        position: relative;
+        z-index: 4;
+        background: var(--vellum-bg);
+        color: var(--ink-walnut);
+        border: 2.5px solid var(--gold-rule);
+        box-shadow:
+          0 34px 80px rgba(0, 0, 0, 0.78),
+          inset 0 0 0 7px var(--vellum-bg),
+          inset 0 0 0 9px var(--ink-garnet);
+        border-radius: 8px;
+        padding: 36px 44px;
+        width: 908px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .vellum-overline {
+        font-family: "Forum", serif;
+        font-size: 22px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--ink-garnet);
+      }
+
+      .vellum-script-name {
+        font-family: "Pinyon Script", cursive;
+        font-size: 92px;
+        line-height: 1.08;
+        color: var(--ink-walnut);
+        padding: 2px 12px;
+      }
+
+      .vellum-lineage {
+        font-family: "Spectral", serif;
+        font-size: 24px;
+        line-height: 1.38;
+        color: var(--ink-umber);
+        max-width: 790px;
+      }
+
+      .vellum-programme-box {
+        margin-top: 18px;
+        width: 100%;
+        background: var(--vellum-band);
+        border: 1.8px solid var(--gold-rule);
+        border-radius: 6px;
+        padding: 18px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .vellum-date-strong {
+        font-family: "Forum", serif;
+        font-size: 27px;
+        letter-spacing: 0.12em;
+        color: var(--ink-walnut);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .vellum-venue-strong {
+        font-family: "Marcellus", serif;
+        font-size: 22px;
+        letter-spacing: 0.1em;
+        color: var(--ink-garnet);
+      }
+
+      /* Little Pari's Royal Garnet Velvet Cameo Ribbon */
+      .pari-cameo {
+        margin-top: 18px;
+        width: 100%;
+        background: #471213;
+        border: 1.8px solid var(--gold-accent);
+        border-radius: 6px;
+        padding: 16px 26px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .pari-quote {
+        font-family: "Spectral", serif;
+        font-style: italic;
+        font-size: 25px;
+        line-height: 1.35;
+        color: var(--ivory);
+      }
+
+      .pari-sig {
+        font-family: "Forum", serif;
+        font-size: 22px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--gold-bright);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      /* Act V 2-Column RSVP Honor Grid */
+      .rsvp-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 36px;
+        row-gap: 12px;
+        width: 100%;
+        margin: 14px 0 18px;
+        padding: 16px 20px;
+        background: var(--vellum-band);
+        border: 1.5px solid var(--gold-rule);
+        border-radius: 6px;
+      }
+
+      .rsvp-host {
+        font-family: "Spectral", serif;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 1.35;
+        color: var(--ink-walnut);
+      }
+
+      .contact-pill {
+        margin-top: 12px;
+        background: #471213;
+        color: var(--gold-bright);
+        border: 1.5px solid var(--gold-accent);
+        border-radius: 40px;
+        padding: 10px 36px;
+        font-family: "Forum", serif;
+        font-size: 25px;
+        letter-spacing: 0.12em;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* Act VI Finale Royal Seal (positioned so upper palace fanoos lanterns shine clearly!) */
+      .finale-crest-wrap {
+        position: relative;
+        z-index: 4;
+        width: 880px;
+        margin-top: 230px;
+        padding: 44px 42px;
+        background: rgba(20, 10, 7, 0.86);
+        border: 2px solid rgba(235, 201, 126, 0.7);
+        box-shadow:
+          0 36px 90px rgba(0, 0, 0, 0.82),
+          inset 0 0 0 6px rgba(20, 10, 7, 0.94),
+          inset 0 0 0 7.5px rgba(235, 201, 126, 0.36);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+      }
+
+      #classic-chrome {
+        position: absolute;
+        inset: 0;
+        z-index: 20;
+        pointer-events: none;
+      }
+
+      #chapter-badge {
+        position: absolute;
+        bottom: 42px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 22;
+        background: rgba(20, 9, 7, 0.88);
+        border: 1px solid rgba(235, 201, 126, 0.55);
+        padding: 8px 28px;
+        border-radius: 30px;
+        font-family: "Forum", serif;
+        font-size: 20px;
+        letter-spacing: 0.24em;
+        color: var(--gold-bright);
+        white-space: nowrap;
+        font-variant-numeric: tabular-nums;
+      }
+
+      #curtain-fade {
+        position: absolute;
+        inset: 0;
+        z-index: 30;
+        background: #100705;
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="64"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div id="stage" class="clip" data-start="0" data-duration="64" data-track-index="0">
+        <!-- Shared Garnet-Rosewood Velvet Base Stage -->
+        <div id="garnet-backdrop" data-layout-ignore>
+          <img
+            id="garnet-bg-img"
+            class="bg-plate"
+            src="assets/bg_classic_garnet.jpg"
+            alt=""
+            data-layout-ignore
+          />
+          <div class="bg-scrim" data-layout-ignore></div>
+          <div id="shared-glow" class="candle-glow" data-layout-ignore></div>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- ACT I (0.0s - 10.0s): BISMILLAH & ROYAL SEALED ENVELOPE         -->
+        <!-- =============================================================== -->
+        <section id="act1" class="scene">
+          <div id="act1-ghost" class="ghost-monogram" data-layout-ignore>S &amp; S</div>
+
+          <!-- Top Sacred Arch & Bismillah -->
+          <div id="act1-bismillah" class="zone dark-plaque">
+            <svg
+              width="520"
+              height="52"
+              viewBox="0 0 520 52"
+              style="margin-bottom: 6px"
+              data-layout-ignore
+            >
+              <path
+                class="draw-act1"
+                d="M 20 46 L 150 46 Q 195 46 215 24 Q 240 4 260 4 Q 280 4 305 24 Q 325 46 370 46 L 500 46"
+                fill="none"
+                stroke="#EBC97E"
+                stroke-width="2.2"
+                stroke-linecap="round"
+              />
+              <circle cx="260" cy="18" r="4" fill="#F4D898" />
+            </svg>
+            <div class="arabic-sacred">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+            <div class="italic-verse" style="margin-top: 12px">
+              In the Name of Allah, the Most Beneficent, the Most Merciful
+            </div>
+          </div>
+
+          <!-- Centerpiece 3D Envelope -->
+          <div class="card-stage-3d">
+            <div id="act1-card-wrap" class="stationery-frame" data-layout-allow-overflow>
+              <img
+                class="stationery-img"
+                src="assets/cards/01_envelope_front.png"
+                alt="Royal Nikah Envelope"
+              />
+              <div id="act1-sheen" class="foil-sheen" data-layout-ignore></div>
+            </div>
+          </div>
+
+          <!-- Bottom Classical Title Plaque -->
+          <div id="act1-footer" class="zone dark-plaque">
+            <div class="roman-overline">An Heirloom Invitation to the Sacred Nikah</div>
+            <div id="var-couple-short-1" class="copperplate-hero">Sajjo &amp; Shakeel</div>
+            <div class="gold-divider" data-layout-ignore>
+              <span class="gold-divider-line"></span>
+              <span class="gold-diamond"></span>
+              <span class="gold-divider-line"></span>
+            </div>
+            <div class="tabular-meta">Lucknow · Saturday, 12 December 2026</div>
+          </div>
+        </section>
+
+        <!-- =============================================================== -->
+        <!-- ACT II (10.0s - 20.0s): HEIRLOOM WREATH & 24K GOLD MEDALLION    -->
+        <!-- =============================================================== -->
+        <section id="act2" class="scene">
+          <!-- Rotating Celestial Filigree Halo behind Medallion Card -->
+          <svg
+            width="860"
+            height="860"
+            viewBox="0 0 860 860"
+            style="position: absolute; top: 530px; left: 110px; z-index: 2; opacity: 0.24"
+            data-layout-ignore
+          >
+            <g id="act2-halo-ring">
+              <circle
+                cx="430"
+                cy="430"
+                r="404"
+                fill="none"
+                stroke="#EBC97E"
+                stroke-width="1.6"
+                stroke-dasharray="10 14"
+              />
+              <circle
+                cx="430"
+                cy="430"
+                r="384"
+                fill="none"
+                stroke="#F4D898"
+                stroke-width="1"
+              />
+            </g>
+          </svg>
+
+          <!-- Top Host Preamble -->
+          <div id="act2-header" class="zone dark-plaque">
+            <div class="roman-overline">With the Blessings of the Almighty</div>
+            <div class="copperplate-gold">Mrs. &amp; Mr. Adalat Khan</div>
+            <div class="tabular-meta">Request the Honour of Your Gracious Presence &amp; Duas</div>
+          </div>
+
+          <!-- Centerpiece 3D Wreath & Medallion Card -->
+          <div class="card-stage-3d">
+            <div id="act2-card-wrap" class="stationery-frame" data-layout-allow-overflow>
+              <img
+                class="stationery-img"
+                src="assets/cards/02_inner_cover_wreath.png"
+                alt="Gold Medallion Wreath Cover"
+              />
+              <div id="act2-sheen" class="foil-sheen" data-layout-ignore></div>
+            </div>
+          </div>
+
+          <!-- Bottom Ceremony Announcement -->
+          <div id="act2-footer" class="zone dark-plaque">
+            <div class="italic-verse">
+              On the auspicious occasion of their beloved daughter’s
+            </div>
+            <div
+              style="
+                font-family: 'Forum', serif;
+                font-size: 40px;
+                letter-spacing: 0.14em;
+                color: var(--gold-bright);
+                margin-top: 6px;
+                text-transform: uppercase;
+              "
+            >
+              Nikah &amp; Royal Dinner
+            </div>
+          </div>
+        </section>
+
+        <!-- =============================================================== -->
+        <!-- ACT III (20.0s - 34.0s): ENGLISH CARD & COPPERPLATE FOLIO       -->
+        <!-- =============================================================== -->
+        <section id="act3" class="scene">
+          <!-- Phase III-A Layer: Full Restored English Card Gallery View -->
+          <div
+            id="act3a-layer"
+            style="
+              position: absolute;
+              inset: 0;
+              padding: 140px 72px 136px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+              z-index: 4;
+            "
+          >
+            <div id="act3a-top" class="zone dark-plaque">
+              <div class="roman-overline">The Formal English Invitation</div>
+              <div class="italic-verse" style="margin-top: 6px">
+                Insha’Allah · Saturday, the Twelfth of December, Two Thousand &amp; Twenty-Six
+              </div>
+            </div>
+
+            <div class="card-stage-3d">
+              <div id="act3a-card-wrap" class="stationery-frame" data-layout-allow-overflow>
+                <img
+                  class="stationery-img-wide"
+                  src="assets/cards/03_english_card.png"
+                  alt="Formal English Wedding Card"
+                />
+              </div>
+            </div>
+
+            <div id="act3a-bottom" class="zone dark-plaque">
+              <div class="italic-verse">
+                “Two noble families united in sacred faith, grace, and enduring affection”
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase III-B Layer: Archival Cotton-Rag Copperplate Folio (Rack-Focus Reveal at 26.5s) -->
+          <div
+            id="act3b-layer"
+            style="
+              position: absolute;
+              inset: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 120px 72px;
+              z-index: 6;
+              opacity: 0;
+            "
+          >
+            <div id="act3-folio" class="vellum-folio">
+              <div class="vellum-overline">In the Sacred Bond of Nikah</div>
+
+              <div id="var-bride-name" class="vellum-script-name" style="margin-top: 8px">
+                Sajjo Bano
+              </div>
+              <div class="vellum-lineage">
+                D/o Mrs. &amp; Mr. Adalat Khan · Shahpur Shamsher Khan, Ghazipur &amp; Lucknow
+              </div>
+
+              <div class="gold-divider" style="margin: 12px 0" data-layout-ignore>
+                <span class="gold-divider-line" style="background: #b88c3e; width: 150px"></span>
+                <span
+                  style="
+                    font-family: 'Spectral', serif;
+                    font-style: italic;
+                    font-size: 30px;
+                    color: #691817;
+                    padding: 0 8px;
+                  "
+                  >weds</span
+                >
+                <span class="gold-divider-line" style="background: #b88c3e; width: 150px"></span>
+              </div>
+
+              <div id="var-groom-name" class="vellum-script-name">Mohd. Shakeel</div>
+              <div class="vellum-lineage">
+                S/o Mr. Mohd. Sageer · Padari Bazar, Gorakhpur (U.P.)
+              </div>
+
+              <div class="vellum-programme-box">
+                <div id="var-date-line" class="vellum-date-strong">
+                  SATURDAY · 12 DECEMBER 2026 · 7:30 P.M.
+                </div>
+                <div
+                  style="
+                    font-family: 'Spectral', serif;
+                    font-style: italic;
+                    font-size: 24px;
+                    color: #4e2e18;
+                  "
+                >
+                  After Namaz-e-Isha · Sacred Nikah Ceremony &amp; Dinner
+                </div>
+                <div id="var-venue-line" class="vellum-venue-strong">
+                  ROYAL PALACE · FARIDI NAGAR, CHANDANPUR, LUCKNOW
+                </div>
+              </div>
+
+              <!-- Little Pari's Beloved Invitation Vignette -->
+              <div id="act3-pari" class="pari-cameo">
+                <div class="pari-quote">
+                  “Meri Phuphu Ki Shadi Me Jalul Jalul Aana...”
+                </div>
+                <div class="pari-sig">
+                  <span>With Sweetest Love, Little Pari</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" data-layout-ignore>
+                    <path
+                      d="M12 21s-7.5-4.6-9.6-9C.7 8.4 3.1 4.5 7 4.5c2.2 0 3.9 1.2 5 2.8 1.1-1.6 2.8-2.8 5-2.8 3.9 0 6.3 3.9 4.6 7.5-2.1 4.4-9.6 9-9.6 9z"
+                      fill="#F4D898"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =============================================================== -->
+        <!-- ACT IV (34.0s - 45.0s): IMPERIAL LUCKNOWI URDU MANUSCRIPT       -->
+        <!-- =============================================================== -->
+        <section id="act4" class="scene" style="background: var(--bg-emerald)">
+          <img
+            id="act4-bg"
+            class="bg-plate"
+            src="assets/bg_classic_emerald.jpg"
+            alt=""
+            data-layout-ignore
+          />
+          <div class="bg-scrim bg-scrim-emerald" data-layout-ignore></div>
+          <div
+            id="act4-glow"
+            class="candle-glow"
+            style="
+              background: radial-gradient(
+                circle,
+                rgba(235, 201, 126, 0.2) 0%,
+                rgba(26, 94, 78, 0.14) 48%,
+                rgba(10, 29, 25, 0) 72%
+              );
+            "
+            data-layout-ignore
+          ></div>
+
+          <!-- Top Quranic Blessing with SVG-drawn Mughal Arch -->
+          <div id="act4-header" class="zone emerald-plaque">
+            <svg
+              width="580"
+              height="54"
+              viewBox="0 0 580 54"
+              style="margin-bottom: 4px"
+              data-layout-ignore
+            >
+              <path
+                class="draw-act4"
+                d="M 20 48 L 175 48 Q 220 48 245 26 Q 272 5 290 5 Q 308 5 335 26 Q 360 48 405 48 L 560 48"
+                fill="none"
+                stroke="#F4D898"
+                stroke-width="2.2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <div class="arabic-sacred" style="font-size: 62px">وَخَلَقْنَاكُمْ أَزْوَاجًا</div>
+            <div class="italic-verse" style="margin-top: 8px">
+              “And We created you in pairs” — Al-Qur’an (78:8)
+            </div>
+          </div>
+
+          <!-- Centerpiece 3D Restored Urdu Celadon Card -->
+          <div class="card-stage-3d">
+            <div id="act4-card-wrap" class="stationery-frame" data-layout-allow-overflow>
+              <img
+                class="stationery-img-wide"
+                src="assets/cards/04_urdu_card.png"
+                alt="Traditional Urdu Nastaliq Invitation Card"
+              />
+              <div id="act4-sheen" class="foil-sheen" data-layout-ignore></div>
+            </div>
+          </div>
+
+          <!-- Bottom Urdu Nastaliq Title & Single-Line Classical Metadata -->
+          <div id="act4-footer" class="zone emerald-plaque">
+            <div class="urdu-nastaliq">تقریبِ نکاح و ضیافت — سجو بانو ہمراہ محمد شکیل</div>
+            <div class="tabular-meta" style="margin-top: 4px; letter-spacing: 0.08em">
+              12 December 2026 · After Namaz-e-Isha · Royal Palace, Lucknow
+            </div>
+          </div>
+        </section>
+
+        <!-- =============================================================== -->
+        <!-- ACT V (45.0s - 54.5s): FAMILY CREST & CHASHM-E-BARAH HOSTS      -->
+        <!-- =============================================================== -->
+        <section
+          id="act5"
+          class="scene"
+          style="justify-content: center; gap: 34px; padding-top: 124px; padding-bottom: 124px"
+        >
+          <!-- Upper Zone: Sender Envelope Flap Crest -->
+          <div id="act5-top" class="zone" style="gap: 18px">
+            <div class="dark-plaque" style="padding: 16px 28px">
+              <div class="roman-overline" style="letter-spacing: 0.14em">
+                With Warmest Compliments · House of Adalat Khan
+              </div>
+            </div>
+            <div id="act5-flap-wrap" class="stationery-frame" data-layout-allow-overflow>
+              <img
+                class="stationery-img-flap"
+                src="assets/cards/05_sender_seal_crop.png"
+                alt="Envelope Sender Crest"
+              />
+            </div>
+          </div>
+
+          <!-- Ornamental Royal Monogram Medallion Bridge -->
+          <div
+            id="act5-bridge"
+            class="zone"
+            style="flex-direction: row; justify-content: center; gap: 22px"
+            data-layout-ignore
+          >
+            <span class="gold-divider-line" style="width: 220px"></span>
+            <div
+              style="
+                width: 68px;
+                height: 68px;
+                border-radius: 50%;
+                border: 1.8px solid #f4d898;
+                background: rgba(34, 13, 11, 0.92);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Pinyon Script', cursive;
+                font-size: 34px;
+                color: #f4d898;
+                padding-right: 4px;
+              "
+            >
+              S&amp;S
+            </div>
+            <span class="gold-divider-line" style="width: 220px"></span>
+          </div>
+
+          <!-- Lower Zone: Bright Archival Cotton-Rag Chashm-e-Barah RSVP Honor Roll -->
+          <div id="act5-rsvp-folio" class="vellum-folio" style="padding: 32px 42px">
+            <div class="vellum-overline">R. S. V. P. · Awaiting Your Gracious Presence</div>
+            <div
+              style="
+                font-family: 'Noto Nastaliq Urdu', serif;
+                font-size: 33px;
+                line-height: 2.05;
+                color: #691817;
+                direction: rtl;
+              "
+            >
+              چشم براہ
+            </div>
+
+            <div class="rsvp-grid">
+              <div class="rsvp-host">Nasaruddin Khan</div>
+              <div class="rsvp-host">Azad Khan</div>
+              <div class="rsvp-host">Imtiyaz Khan</div>
+              <div class="rsvp-host">Ishtiyak Khan</div>
+              <div class="rsvp-host">Shameem Khan</div>
+              <div class="rsvp-host">Ashim Khan</div>
+              <div class="rsvp-host">Ashraf Khan</div>
+              <div class="rsvp-host">Aman Khan</div>
+              <div class="rsvp-host">Zeeshan Khan</div>
+              <div class="rsvp-host">Sujan Khan</div>
+            </div>
+
+            <div
+              style="
+                font-family: 'Forum', serif;
+                font-size: 26px;
+                color: #26110c;
+                letter-spacing: 0.05em;
+              "
+            >
+              Mr. Adalat Khan · D-55, Kanhaiya Nagar, Kalyanpur, Lucknow
+            </div>
+            <div class="contact-pill">MOB : 9098079143 · 8073237540</div>
+          </div>
+        </section>
+
+        <!-- =============================================================== -->
+        <!-- ACT VI (54.5s - 64.0s): TWILIGHT PALACE FINALE CREST            -->
+        <!-- =============================================================== -->
+        <section
+          id="act6"
+          class="scene"
+          style="
+            justify-content: center;
+            padding-top: 120px;
+            padding-bottom: 130px;
+            background: var(--bg-palace);
+          "
+        >
+          <img
+            id="act6-bg"
+            class="bg-plate-palace"
+            src="assets/bg_classic_palace.jpg"
+            alt=""
+            data-layout-ignore
+          />
+          <div class="bg-scrim bg-scrim-palace" data-layout-ignore></div>
+
+          <div id="act6-crest" class="finale-crest-wrap">
+            <!-- Live SVG-drawn Royal Seal Arch -->
+            <svg width="600" height="58" viewBox="0 0 600 58" data-layout-ignore>
+              <path
+                class="draw-act6"
+                d="M 30 52 L 185 52 Q 235 52 262 26 Q 285 6 300 6 Q 315 6 338 26 Q 365 52 415 52 L 570 52"
+                fill="none"
+                stroke="#F4D898"
+                stroke-width="2.4"
+                stroke-linecap="round"
+              />
+              <circle cx="300" cy="20" r="5" fill="#EBC97E" />
+            </svg>
+
+            <div class="arabic-sacred" style="font-size: 46px">ما شاء الله لا قوة إلا بالله</div>
+            <div class="roman-overline" style="margin-top: 2px">
+              Insha’Allah · Save The Date
+            </div>
+
+            <div
+              id="var-bride-finale"
+              class="copperplate-hero"
+              style="font-size: 104px; color: var(--gold-bright); margin-top: 4px"
+            >
+              Sajjo
+            </div>
+            <div
+              style="
+                font-family: 'Spectral', serif;
+                font-style: italic;
+                font-size: 34px;
+                color: var(--ivory-soft);
+              "
+            >
+              &amp;
+            </div>
+            <div
+              id="var-groom-finale"
+              class="copperplate-hero"
+              style="font-size: 104px; color: var(--gold-bright)"
+            >
+              Shakeel
+            </div>
+
+            <div class="gold-divider" style="margin: 8px 0" data-layout-ignore>
+              <span class="gold-divider-line" style="width: 190px"></span>
+              <span class="gold-diamond"></span>
+              <span class="gold-divider-line" style="width: 190px"></span>
+            </div>
+
+            <div
+              id="var-roman-date"
+              style="
+                font-family: 'Forum', serif;
+                font-size: 34px;
+                letter-spacing: 0.26em;
+                color: var(--ivory);
+                padding: 9px 36px;
+                border: 1.5px solid rgba(235, 201, 126, 0.65);
+                border-radius: 40px;
+                background: rgba(46, 20, 15, 0.72);
+              "
+            >
+              XII · XII · MMXXVI
+            </div>
+
+            <div
+              class="tabular-meta"
+              style="margin-top: 8px; color: var(--ivory); letter-spacing: 0.08em"
+            >
+              Saturday, 12 December 2026 · After Namaz-e-Isha · 7:30 P.M.
+            </div>
+            <div
+              style="
+                font-family: 'Forum', serif;
+                font-size: 30px;
+                letter-spacing: 0.16em;
+                color: var(--gold-bright);
+                margin-top: 2px;
+              "
+            >
+              ROYAL PALACE · LUCKNOW
+            </div>
+            <div class="italic-verse" style="font-size: 25px; color: var(--ivory-soft)">
+              Faridi Nagar, Chandanpur · Awaiting the Honour of Your Presence
+            </div>
+          </div>
+        </section>
+
+        <!-- =============================================================== -->
+        <!-- PERSISTENT HEIRLOOM FRAME CHROME & CHAPTER ROMAN BADGE          -->
+        <!-- =============================================================== -->
+        <svg
+          id="classic-chrome"
+          width="1080"
+          height="1920"
+          viewBox="0 0 1080 1920"
+          data-layout-ignore
+        >
+          <rect
+            x="28"
+            y="28"
+            width="1024"
+            height="1864"
+            rx="8"
+            fill="none"
+            stroke="rgba(235, 201, 126, 0.38)"
+            stroke-width="1.6"
+          />
+          <rect
+            x="38"
+            y="38"
+            width="1004"
+            height="1844"
+            rx="5"
+            fill="none"
+            stroke="rgba(235, 201, 126, 0.2)"
+            stroke-width="1"
+          />
+          <path d="M28 88 L28 28 L88 28" fill="none" stroke="#EBC97E" stroke-width="3" />
+          <path d="M992 28 L1052 28 L1052 88" fill="none" stroke="#EBC97E" stroke-width="3" />
+          <path d="M28 1832 L28 1892 L88 1892" fill="none" stroke="#EBC97E" stroke-width="3" />
+          <path d="M992 1892 L1052 1892 L1052 1832" fill="none" stroke="#EBC97E" stroke-width="3" />
+        </svg>
+
+        <div id="chapter-badge">ACT I · BISMILLAH</div>
+        <div id="curtain-fade" data-layout-ignore></div>
+      </div>
+
+      <!-- Direct Root Child Audio Track -->
+      <audio
+        id="bgm"
+        src="assets/audio/nocturne_imperiale.mp3"
+        data-start="0"
+        data-duration="64"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+
+      if (window.__hyperframes && typeof window.__hyperframes.getVariables === "function") {
+        const vars = window.__hyperframes.getVariables();
+        if (vars.brideName) {
+          document.getElementById("var-bride-name").textContent = vars.brideName;
+          document.getElementById("var-bride-finale").textContent = vars.brideName.split(" ")[0];
+        }
+        if (vars.groomName) {
+          document.getElementById("var-groom-name").textContent = vars.groomName;
+          const parts = vars.groomName.split(" ");
+          document.getElementById("var-groom-finale").textContent = parts[parts.length - 1];
+        }
+        if (vars.coupleShort) {
+          document.getElementById("var-couple-short-1").textContent = vars.coupleShort;
+        }
+        if (vars.eventDateRoman) {
+          document.getElementById("var-roman-date").textContent = vars.eventDateRoman;
+        }
+        if (vars.eventDateLine) {
+          document.getElementById("var-date-line").textContent = vars.eventDateLine;
+        }
+        if (vars.venueLine) {
+          document.getElementById("var-venue-line").textContent = vars.venueLine;
+        }
+        if (vars.goldAccent) {
+          document.documentElement.style.setProperty("--gold-accent", vars.goldAccent);
+        }
+      }
+
+      const prepareSvgDraw = (selector) => {
+        document.querySelectorAll(selector).forEach((p) => {
+          const len = Math.ceil(p.getTotalLength() * 1.04);
+          p.style.strokeDasharray = `${len}`;
+          p.style.strokeDashoffset = `${len}`;
+        });
+      };
+      prepareSvgDraw(".draw-act1");
+      prepareSvgDraw(".draw-act4");
+      prepareSvgDraw(".draw-act6");
+
+      const tl = gsap.timeline({ paused: true });
+
+      const chapters = [
+        { t: 0.0, label: "ACT I · BISMILLAH" },
+        { t: 10.0, label: "ACT II · THE ROYAL WREATH" },
+        { t: 20.0, label: "ACT III · THE FORMAL INVITATION" },
+        { t: 26.5, label: "ACT III · SAJJO & SHAKEEL" },
+        { t: 34.0, label: "ACT IV · SACRED NIKAH-NAMA" },
+        { t: 45.0, label: "ACT V · CHASHM-E-BARAH" },
+        { t: 54.5, label: "ACT VI · XII · XII · MMXXVI" },
+      ];
+      const badgeEl = document.getElementById("chapter-badge");
+      const haloEl = document.getElementById("act2-halo-ring");
+
+      tl.eventCallback("onUpdate", () => {
+        const now = tl.time();
+        for (let i = chapters.length - 1; i >= 0; i--) {
+          if (now >= chapters[i].t) {
+            if (badgeEl.textContent !== chapters[i].label) {
+              badgeEl.textContent = chapters[i].label;
+            }
+            break;
+          }
+        }
+        if (haloEl) {
+          const deg = ((now * 4.5) % 360).toFixed(2);
+          haloEl.setAttribute("transform", `rotate(${deg} 430 430)`);
+        }
+      });
+
+      // Ambient breathing candlelight & subtle slow drift on garnet velvet base
+      tl.fromTo(
+        ["#shared-glow", "#act4-glow"],
+        { scale: 0.92, opacity: 0.72 },
+        {
+          scale: 1.12,
+          opacity: 1.0,
+          duration: 3.2,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: Math.max(0, Math.floor(64 / 3.2) - 1),
+        },
+        0,
+      );
+      tl.fromTo(
+        "#garnet-bg-img",
+        { scale: 1.05 },
+        {
+          scale: 1.0,
+          duration: 16.0,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: Math.max(0, Math.floor(64 / 16.0) - 1),
+        },
+        0,
+      );
+
+      // Opening curtain lift
+      tl.fromTo(
+        "#curtain-fade",
+        { opacity: 0.92 },
+        { opacity: 0, duration: 1.1, ease: "power2.out" },
+        0,
+      );
+
+      // =====================================================================
+      // ACT I (0.0s - 10.0s): Bismillah & 3D Sealed Envelope
+      // =====================================================================
+      tl.fromTo(
+        "#act1-ghost",
+        { x: -24, opacity: 0.4 },
+        { x: 24, opacity: 1, duration: 10.0, ease: "none" },
+        0,
+      );
+      tl.to(".draw-act1", { strokeDashoffset: 0, duration: 1.35, ease: "power2.out" }, 0.2);
+      tl.fromTo(
+        "#act1-bismillah",
+        { y: -28, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.95, ease: "power3.out" },
+        0.15,
+      );
+      tl.fromTo(
+        "#act1-card-wrap",
+        {
+          opacity: 0,
+          y: 54,
+          scale: 0.88,
+          rotationX: 15,
+          rotationY: -12,
+          transformPerspective: 1500,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          rotationX: 0,
+          rotationY: 0,
+          duration: 1.45,
+          ease: "power3.out",
+        },
+        0.75,
+      );
+      tl.to(
+        "#act1-card-wrap",
+        {
+          rotationY: 2.5,
+          rotationX: -1.5,
+          scale: 1.025,
+          duration: 7.4,
+          ease: "sine.inOut",
+        },
+        2.2,
+      );
+      tl.fromTo(
+        "#act1-sheen",
+        { opacity: 0, x: -260 },
+        { opacity: 0.85, x: 1220, duration: 1.8, ease: "power2.inOut" },
+        3.6,
+      );
+      tl.fromTo(
+        "#act1-footer",
+        { y: 34, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1.0, ease: "power3.out" },
+        1.25,
+      );
+
+      // =====================================================================
+      // ACT II (10.0s - 20.0s): Paisley Wreath & 24k Gold Medallion
+      // =====================================================================
+      tl.to(
+        "#act1",
+        { opacity: 0, scale: 1.03, duration: 0.95, ease: "power2.inOut" },
+        9.45,
+      );
+      tl.fromTo(
+        "#act2",
+        { opacity: 0 },
+        { opacity: 1, duration: 0.95, ease: "power2.inOut" },
+        9.55,
+      );
+      tl.fromTo(
+        "#act2-header",
+        { y: -28, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.95, ease: "power3.out" },
+        10.0,
+      );
+      tl.fromTo(
+        "#act2-card-wrap",
+        {
+          opacity: 0,
+          scale: 0.89,
+          rotationY: 16,
+          rotationX: 10,
+          transformPerspective: 1500,
+        },
+        {
+          opacity: 1,
+          scale: 1.0,
+          rotationY: 0,
+          rotationX: 0,
+          duration: 1.35,
+          ease: "power3.out",
+        },
+        10.2,
+      );
+      tl.to(
+        "#act2-card-wrap",
+        {
+          scale: 1.03,
+          rotationY: -2.2,
+          duration: 7.8,
+          ease: "sine.inOut",
+        },
+        11.6,
+      );
+      tl.fromTo(
+        "#act2-sheen",
+        { opacity: 0, x: -260 },
+        { opacity: 1, x: 1240, duration: 1.65, ease: "power2.inOut" },
+        13.15,
+      );
+      tl.fromTo(
+        "#act2-footer",
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.95, ease: "power3.out" },
+        10.65,
+      );
+
+      // =====================================================================
+      // ACT III (20.0s - 34.0s): English Card -> Rack-Focus Copperplate Folio
+      // =====================================================================
+      tl.to(
+        "#act2",
+        { opacity: 0, duration: 0.95, ease: "power2.inOut" },
+        19.45,
+      );
+      tl.fromTo(
+        "#act3",
+        { opacity: 0 },
+        { opacity: 1, duration: 0.95, ease: "power2.inOut" },
+        19.55,
+      );
+      tl.fromTo(
+        "#act3a-top",
+        { y: -24, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.9, ease: "power3.out" },
+        20.0,
+      );
+      tl.fromTo(
+        "#act3a-card-wrap",
+        {
+          opacity: 0,
+          scale: 0.92,
+          rotationX: 10,
+          transformPerspective: 1500,
+        },
+        {
+          opacity: 1,
+          scale: 1.0,
+          rotationX: 0,
+          duration: 1.2,
+          ease: "power3.out",
+        },
+        20.15,
+      );
+      tl.to(
+        "#act3a-card-wrap",
+        { scale: 1.035, duration: 5.0, ease: "sine.inOut" },
+        21.4,
+      );
+      tl.fromTo(
+        "#act3a-bottom",
+        { y: 24, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.9, ease: "power3.out" },
+        20.5,
+      );
+
+      // 26.5s Depth-of-Field Rack Focus
+      tl.to(
+        "#act3a-layer",
+        {
+          filter: "blur(14px) brightness(0.32)",
+          scale: 0.97,
+          duration: 0.95,
+          ease: "power2.inOut",
+        },
+        26.25,
+      );
+      tl.fromTo(
+        "#act3b-layer",
+        { opacity: 0 },
+        { opacity: 1, duration: 0.75, ease: "power2.out" },
+        26.45,
+      );
+      tl.fromTo(
+        "#act3-folio",
+        { y: 42, scale: 0.93, opacity: 0 },
+        { y: 0, scale: 1.0, opacity: 1, duration: 1.05, ease: "power3.out" },
+        26.5,
+      );
+      tl.to(
+        "#act3-folio",
+        { scale: 1.015, duration: 5.8, ease: "sine.inOut" },
+        27.6,
+      );
+      tl.fromTo(
+        "#act3-pari",
+        { y: 18, opacity: 0, scale: 0.96 },
+        { y: 0, opacity: 1, scale: 1.0, duration: 0.85, ease: "back.out(1.4)" },
+        28.2,
+      );
+
+      // =====================================================================
+      // ACT IV (34.0s - 45.0s): Imperial Lucknowi Urdu Manuscript & Quran 78:8
+      // =====================================================================
+      tl.to(
+        "#act3",
+        { opacity: 0, duration: 1.0, ease: "power2.inOut" },
+        33.45,
+      );
+      tl.fromTo(
+        "#act4",
+        { opacity: 0 },
+        { opacity: 1, duration: 1.0, ease: "power2.inOut" },
+        33.55,
+      );
+      tl.fromTo(
+        "#act4-bg",
+        { scale: 1.06 },
+        { scale: 1.0, duration: 11.2, ease: "sine.inOut" },
+        33.6,
+      );
+      tl.to(".draw-act4", { strokeDashoffset: 0, duration: 1.4, ease: "power2.out" }, 34.05);
+      tl.fromTo(
+        "#act4-header",
+        { y: -28, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.95, ease: "power3.out" },
+        34.0,
+      );
+      tl.fromTo(
+        "#act4-card-wrap",
+        {
+          opacity: 0,
+          y: 44,
+          scale: 0.9,
+          rotationY: -14,
+          rotationX: 8,
+          transformPerspective: 1500,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1.0,
+          rotationY: 0,
+          rotationX: 0,
+          duration: 1.35,
+          ease: "power3.out",
+        },
+        34.35,
+      );
+      tl.to(
+        "#act4-card-wrap",
+        {
+          scale: 1.028,
+          rotationY: 2.0,
+          duration: 8.6,
+          ease: "sine.inOut",
+        },
+        35.8,
+      );
+      tl.fromTo(
+        "#act4-sheen",
+        { opacity: 0, x: -260 },
+        { opacity: 0.85, x: 1240, duration: 1.8, ease: "power2.inOut" },
+        38.0,
+      );
+      tl.fromTo(
+        "#act4-footer",
+        { y: 28, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.95, ease: "power3.out" },
+        34.8,
+      );
+
+      // =====================================================================
+      // ACT V (45.0s - 54.5s): Family Seal & Chashm-e-Barah Honor Roll
+      // =====================================================================
+      tl.to(
+        "#act4",
+        { opacity: 0, duration: 0.95, ease: "power2.inOut" },
+        44.45,
+      );
+      tl.fromTo(
+        "#act5",
+        { opacity: 0 },
+        { opacity: 1, duration: 0.95, ease: "power2.inOut" },
+        44.55,
+      );
+      tl.fromTo(
+        "#act5-top",
+        { y: -30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1.0, ease: "power3.out" },
+        45.0,
+      );
+      tl.fromTo(
+        "#act5-flap-wrap",
+        { rotationX: -16, scale: 0.92, transformPerspective: 1400 },
+        { rotationX: 0, scale: 1.0, duration: 1.15, ease: "power3.out" },
+        45.1,
+      );
+      tl.fromTo(
+        "#act5-bridge",
+        { scale: 0.85, opacity: 0 },
+        { scale: 1.0, opacity: 1, duration: 0.9, ease: "power2.out" },
+        45.3,
+      );
+      tl.fromTo(
+        "#act5-rsvp-folio",
+        { y: 40, opacity: 0, scale: 0.95 },
+        { y: 0, opacity: 1, scale: 1.0, duration: 1.1, ease: "power3.out" },
+        45.45,
+      );
+      tl.to(
+        "#act5-rsvp-folio",
+        { scale: 1.012, duration: 7.4, ease: "sine.inOut" },
+        46.6,
+      );
+
+      // =====================================================================
+      // ACT VI (54.5s - 64.0s): Nocturne Finale at Royal Palace, Lucknow
+      // =====================================================================
+      tl.to(
+        "#act5",
+        { opacity: 0, duration: 1.0, ease: "power2.inOut" },
+        53.95,
+      );
+      tl.fromTo(
+        "#act6",
+        { opacity: 0 },
+        { opacity: 1, duration: 1.05, ease: "power2.inOut" },
+        54.05,
+      );
+      tl.fromTo(
+        "#act6-bg",
+        { scale: 1.07 },
+        { scale: 1.0, duration: 9.8, ease: "sine.out" },
+        54.1,
+      );
+      tl.fromTo(
+        "#act6-crest",
+        { y: 36, scale: 0.93, opacity: 0 },
+        { y: 0, scale: 1.0, opacity: 1, duration: 1.25, ease: "power3.out" },
+        54.55,
+      );
+      tl.to(".draw-act6", { strokeDashoffset: 0, duration: 1.5, ease: "power2.out" }, 54.75);
+      tl.to(
+        "#act6-crest",
+        { scale: 1.018, duration: 6.8, ease: "sine.inOut" },
+        55.9,
+      );
+
+      // Stately classical curtain close to candlelit espresso + audio fadeout
+      tl.to(
+        "#curtain-fade",
+        { opacity: 1, duration: 2.1, ease: "power2.inOut" },
+        61.85,
+      );
+      tl.to("#bgm", { volume: 0, duration: 2.3, ease: "power1.inOut" }, 61.65);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

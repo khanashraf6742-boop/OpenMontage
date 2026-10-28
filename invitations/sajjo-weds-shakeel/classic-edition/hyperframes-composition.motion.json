@@ -1,0 +1,12 @@
+{
+  "duration": 64,
+  "assertions": [
+    { "kind": "appearsBy", "selector": "#act1-bismillah", "bySec": 1.2 },
+    { "kind": "before", "a": "#act1-bismillah", "b": "#act1-card-wrap" },
+    { "kind": "staysInFrame", "selector": "#act1-card-wrap" },
+    { "kind": "staysInFrame", "selector": "#act3-folio" },
+    { "kind": "staysInFrame", "selector": "#act5-rsvp-folio" },
+    { "kind": "staysInFrame", "selector": "#act6-crest" },
+    { "kind": "keepsMoving", "withinSelector": "#stage", "maxStaticSec": 2.5 }
+  ]
+}
