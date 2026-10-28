@@ -210,10 +210,10 @@
     .arabic-invocation {
       font-family: "Amiri", serif;
       font-weight: 700;
-      font-size: 60px;
-      line-height: 1.42;
+      font-size: 56px;
+      line-height: 1.56;
       color: var(--gold-bright);
-      margin: 14px 0 12px;
+      margin: 22px 0 20px;
     }
 
     .bismillah-trans {
@@ -462,10 +462,11 @@
     .urdu-dua {
       font-family: "Noto Nastaliq Urdu", "Amiri", serif;
       font-weight: 700;
-      font-size: 46px;
-      line-height: 1.65;
+      font-size: 44px;
+      line-height: 1.88;
+      padding-top: 10px;
       color: var(--gold-bright);
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
 
     /* Act VI Finale RSVP & Couple Lockup */
@@ -490,17 +491,17 @@
       background: var(--plaque-bg);
       border: 2px solid #D8B160;
       border-radius: 20px;
-      padding: 20px 36px;
+      padding: 24px 36px;
       width: 956px;
       box-shadow: 0 20px 48px rgba(0, 0, 0, 0.7);
     }
 
     .finale-couple {
       font-family: "Great Vibes", cursive;
-      font-size: 92px;
+      font-size: 90px;
       line-height: 1.08;
       color: var(--gold-bright);
-      margin-bottom: 16px;
+      margin-bottom: 28px;
     }
 
     .finale-date {
@@ -682,22 +683,22 @@
 
       // Backdrop crossfades + gentle continuous drift (zero dead static holds)
       tl.set("#bg-garnet", { autoAlpha: 1, scale: 1.0 }, 0)
-        .to("#bg-garnet", { scale: 1.045, duration: 20.5, ease: "none" }, 0)
+        .to("#bg-garnet", { scale: 1.022, duration: 20.5, ease: "none" }, 0)
         .to("#bg-garnet", { autoAlpha: 0, duration: 1.2, ease: "power2.inOut" }, 19.2)
 
-        .set("#bg-palace", { autoAlpha: 0, scale: 1.03 }, 18.8)
+        .set("#bg-palace", { autoAlpha: 0, scale: 1.02 }, 18.8)
         .to("#bg-palace", { autoAlpha: 1, duration: 1.2, ease: "power2.inOut" }, 19.0)
         .to("#bg-palace", { scale: 1.0, duration: 24.5, ease: "none" }, 19.0)
         .to("#bg-palace", { autoAlpha: 0, duration: 1.2, ease: "power2.inOut" }, 42.8)
 
         .set("#bg-emerald", { autoAlpha: 0, scale: 1.0 }, 42.5)
         .to("#bg-emerald", { autoAlpha: 1, duration: 1.2, ease: "power2.inOut" }, 42.8)
-        .to("#bg-emerald", { scale: 1.04, duration: 12.0, ease: "none" }, 42.8)
+        .to("#bg-emerald", { scale: 1.022, duration: 12.0, ease: "none" }, 42.8)
         .to("#bg-emerald", { autoAlpha: 0, duration: 1.2, ease: "power2.inOut" }, 53.3)
 
-        .set("#bg-garnet", { scale: 1.01 }, 53.25)
+        .set("#bg-garnet", { scale: 1.005 }, 53.25)
         .to("#bg-garnet", { autoAlpha: 1, duration: 1.2, ease: "power2.inOut" }, 53.3)
-        .to("#bg-garnet", { scale: 1.045, duration: 9.4, ease: "none" }, 54.6);
+        .to("#bg-garnet", { scale: 1.022, duration: 9.4, ease: "none" }, 54.6);
 
       // Finite ambient candlelight motes across 64s (NO repeat: -1)
       const motes = [".m1", ".m2", ".m3", ".m4", ".m5", ".m6"];
