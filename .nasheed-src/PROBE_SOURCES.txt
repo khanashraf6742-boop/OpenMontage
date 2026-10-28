@@ -1,0 +1,3 @@
+wedding_nasheed_slowed_reverb.mp3: dur=242.59s bitrate=320kbps 48000Hz 2ch size=9.70MB
+wedding_nasheed_slowed_reverb_b.mp3: dur=242.65s bitrate=192kbps 44100Hz 2ch size=5.82MB
+wedding_nasheed_original.mp3: dur=164.83s bitrate=192kbps 44100Hz 2ch size=3.96MB
