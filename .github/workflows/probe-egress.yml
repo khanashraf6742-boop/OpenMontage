@@ -1,0 +1,55 @@
+name: Probe runner egress (nasheed)
+
+# Cheap capability probe: can a non-Linux runner reach YouTube for this video?
+on:
+  push:
+    paths:
+      - ".github/workflows/probe-egress.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Try yt-dlp metadata (no download)
+        shell: bash
+        continue-on-error: true
+        run: |
+          mkdir -p .nasheed-probe
+          python3 -m pip install --quiet --upgrade pip yt-dlp 2>/dev/null || python -m pip install --quiet --upgrade pip yt-dlp
+          PY=$(command -v python3 || command -v python)
+          TAG="${{ matrix.os }}"
+          {
+            echo "=== $TAG"
+            echo "yt-dlp: $($PY -m yt_dlp --version)"
+            echo "--- simulate"
+            $PY -m yt_dlp --no-playlist --simulate --no-warnings \
+              --print "%(title)s | %(duration)s s | %(format_id)s" \
+              "https://www.youtube.com/watch?v=dWBgNHT4ipE" 2>&1 | tail -20
+            echo "exit=$?"
+          } > ".nasheed-probe/${TAG}.log" 2>&1
+          cat ".nasheed-probe/${TAG}.log"
+      - name: Commit probe result
+        if: always()
+        shell: bash
+        run: |
+          git config user.name  "nasheed-probe-bot"
+          git config user.email "nasheed-probe@users.noreply.github.com"
+          git add -f .nasheed-probe || true
+          git commit -m "chore: egress probe [${{ matrix.os }}]" || echo "nothing"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+            git push origin "HEAD:${GITHUB_REF_NAME}" && break
+            sleep 8
+          done
