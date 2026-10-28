@@ -1,0 +1,1136 @@
+
+### query: (creator:(Muqit) OR creator:(المقيط)) AND mediatype:(audio)  -> 10 items
+
+### query: (creator:(Muqit) OR creator:(المقيط)) AND mediatype:(audio)  -> 10 items
+
+ITEM tabsirah-nasheed :: A Clarification - Muhammad Al-Muqit | تبصرة - محمد المقيط (بتوزيع جديد)
+
+ITEM tabsirah-nasheed :: A Clarification - Muhammad Al-Muqit | تبصرة - محمد المقيط (بتوزيع جديد)
+
+ITEM facebook..hzatni :: نشيد مولاي قد نامي عيون إم بي ثري
+
+ITEM facebook..hzatni :: نشيد مولاي قد نامي عيون إم بي ثري
+
+ITEM sunaa :: Life Maker - Muhammad Al-Muqit | صناع الحياة - محمد المقيط (إيقاع + موسيقى)
+
+ITEM sunaa :: Life Maker - Muhammad Al-Muqit | صناع الحياة - محمد المقيط (إيقاع + موسيقى)
+
+ITEM wedding-nasheed-muhammad-al-muqit-english-lyrics :: Wedding Nasheed Muhammad Al Muqit
+
+ITEM wedding-nasheed-muhammad-al-muqit-english-lyrics :: Wedding Nasheed Muhammad Al Muqit
+   CAND Wedding Nasheed _ Muhammad Al Muqit (English Lyrics).mp3  size=2.6MB  title=
+   CAND Wedding Nasheed _ Muhammad Al Muqit (English Lyrics).mp3  size=2.6MB  title=
+   -> downloaded .nasheed-probe/cand0_Wedding_Nasheed___Muhammad_Al_Muqit__English_Lyrics_.mp3 dur=164.3s
+   -> downloaded .nasheed-probe/cand0_Wedding_Nasheed___Muhammad_Al_Muqit__English_Lyrics_.mp3 dur=164.3s
+
+ITEM afrahan-instrumental :: Great Joys - Instrumental | افراحا كبرى - محمد المقيط (نسخة التوزيع)
+
+ITEM afrahan-instrumental :: Great Joys - Instrumental | افراحا كبرى - محمد المقيط (نسخة التوزيع)
+   CAND Afrahan Kubra - Muhammad Al-Muqit (-1).mp3  size=11.9MB  title=افراحا كبرى (-1)
+   CAND Afrahan Kubra - Muhammad Al-Muqit (-1).mp3  size=11.9MB  title=افراحا كبرى (-1)
+   -> downloaded .nasheed-probe/cand1_Afrahan_Kubra_-_Muhammad_Al-Muqit__-1_.mp3 dur=297.6s
+   -> downloaded .nasheed-probe/cand1_Afrahan_Kubra_-_Muhammad_Al-Muqit__-1_.mp3 dur=297.6s
+
+ITEM grieving-cry-muhammad-al-muqit :: Grieving Cry - Muhammad Al-Muqit | صرخة مكلومة - محمد المقيط (إيقاع)
+
+ITEM grieving-cry-muhammad-al-muqit :: Grieving Cry - Muhammad Al-Muqit | صرخة مكلومة - محمد المقيط (إيقاع)
+
+ITEM asfm_nasheed_mix :: ASFM Nasheeds Collection mix
+
+ITEM asfm_nasheed_mix :: ASFM Nasheeds Collection mix
+   CAND 02 Zain Bhikha_ Wedding Song_ogg_.mp3  size=2.1MB  title=Zain Bhikha_ Wedding Song.ogg.oga
+   CAND 02 Zain Bhikha_ Wedding Song_ogg_.mp3  size=2.1MB  title=Zain Bhikha_ Wedding Song.ogg.oga
+   -> downloaded .nasheed-probe/cand2_02_Zain_Bhikha__Wedding_Song_ogg_.mp3 dur=177.4s
+   -> downloaded .nasheed-probe/cand2_02_Zain_Bhikha__Wedding_Song_ogg_.mp3 dur=177.4s
+
+ITEM qalu-innaha :: Fading Forever - Ahmad Al-Muqit | زائلون للأبد - أداء وهندسة وتوزيع أحمد المقيط
+
+ITEM qalu-innaha :: Fading Forever - Ahmad Al-Muqit | زائلون للأبد - أداء وهندسة وتوزيع أحمد المقيط
+
+ITEM y-2mate.com-ya-rajaee-eng-subs-muhammad-al-muqit :: y2mate.com - Ya Rajaee (Eng Subs) _ محمد المقيط - يا رجائي _ Muhammad al Muqit
+
+ITEM y-2mate.com-ya-rajaee-eng-subs-muhammad-al-muqit :: y2mate.com - Ya Rajaee (Eng Subs) _ محمد المقيط - يا رجائي _ Muhammad al Muqit
+
+ITEM sabeel-ad-dumu :: The Way Of The Tears - Muhammad Al-Muqit | سبيل الدموع - محمد المقيط (إيقاع)
+
+ITEM sabeel-ad-dumu :: The Way Of The Tears - Muhammad Al-Muqit | سبيل الدموع - محمد المقيط (إيقاع)
+
+### query: title:("wedding nasheed")  -> 43 items
+
+### query: title:("wedding nasheed")  -> 43 items
+
+ITEM videoplayback_20260312_0641 :: Wedding Nasheed
+
+ITEM videoplayback_20260312_0641 :: Wedding Nasheed
+
+ITEM wedding-nasheed-salahuddin-sakib-salahuddin-sakib-128k :: عروسة النور Wedding Nasheed Salahuddin Sakib Salahuddin Sakib
+
+ITEM wedding-nasheed-salahuddin-sakib-salahuddin-sakib-128k :: عروسة النور Wedding Nasheed Salahuddin Sakib Salahuddin Sakib
+   CAND عروسة النور wedding nasheed salahuddin sakib - Salahuddin Sakib (128k).mp3  size=2.7MB  title=
+   CAND عروسة النور wedding nasheed salahuddin sakib - Salahuddin Sakib (128k).mp3  size=2.7MB  title=
+   -> downloaded .nasheed-probe/cand3_____________wedding_nasheed_salahuddin_sakib_-_Salahuddin_Sa dur=167.1s
+   -> downloaded .nasheed-probe/cand3_____________wedding_nasheed_salahuddin_sakib_-_Salahuddin_Sa dur=167.1s
+
+ITEM sue-lius-wedding-nasheed-muhammad-al-muqit_202606 :: Sue Lius Wedding Nasheed Muhammad Al Muqit
+
+ITEM sue-lius-wedding-nasheed-muhammad-al-muqit_202606 :: Sue Lius Wedding Nasheed Muhammad Al Muqit
+   CAND SueLius - Wedding Nasheed  Muhammad Al Muqit.mp3  size=4.0MB  title=
+   CAND SueLius - Wedding Nasheed  Muhammad Al Muqit.mp3  size=4.0MB  title=
+
+ITEM e39e013a664f18eb6cbbfa3ff781588e_17012026 :: Wedding nasheed
+
+ITEM e39e013a664f18eb6cbbfa3ff781588e_17012026 :: Wedding nasheed
+   CAND e39e013a664f18eb6cbbfa3ff781588e_17012026.m4a  size=0.3MB  title=
+   CAND e39e013a664f18eb6cbbfa3ff781588e_17012026.m4a  size=0.3MB  title=
+
+ITEM videoplayback_20260117_1200 :: Wedding Nasheed Muhammad
+
+ITEM videoplayback_20260117_1200 :: Wedding Nasheed Muhammad
+   CAND videoplayback.m4a  size=1.0MB  title=
+   CAND videoplayback.m4a  size=1.0MB  title=
+
+ITEM wedding-nasheed :: Wedding Nasheed
+
+ITEM wedding-nasheed :: Wedding Nasheed
+   CAND Wedding Nasheed.mp3  size=1.7MB  title=
+   CAND Wedding Nasheed.mp3  size=1.7MB  title=
+
+ITEM wedding-nasheed-muhammad-al-muqit-easy-lyrics_20260403 :: Wedding Nasheed Muhammad Al Muqit (easy Lyrics)
+   CAND wedding nasheed - muhammad al muqit (easy lyrics).mp3  size=3.0MB  title=wedding nasheed - muhammad al muqit
+
+ITEM wedding-nasheed-muhammad-al-muqit-easy-lyrics_20260403 :: Wedding Nasheed Muhammad Al Muqit (easy Lyrics)
+   CAND wedding nasheed - muhammad al muqit (easy lyrics).mp3  size=3.0MB  title=wedding nasheed - muhammad al muqit
+
+ITEM WeddingNasheed :: wedding nasheed
+
+ITEM WeddingNasheed :: wedding nasheed
+
+ITEM zafa-rakan-wa-jawahir :: Wedding Nasheed | زفة راكان وجواهر - عمر العمير
+
+ITEM zafa-rakan-wa-jawahir :: Wedding Nasheed | زفة راكان وجواهر - عمر العمير
+   CAND heyan ghames.mp3  size=5.0MB  title=
+   CAND heyan ghames.mp3  size=5.0MB  title=
+
+ITEM wedding-nasheed-muhammad-al-muqit-english-lyrics_202511 :: Wedding Nasheed Muhammad Al Muqit ( English Lyrics)
+
+ITEM wedding-nasheed-muhammad-al-muqit-english-lyrics_202511 :: Wedding Nasheed Muhammad Al Muqit ( English Lyrics)
+
+ITEM wedding-nasheed_202603 :: Wedding Nasheed
+
+ITEM wedding-nasheed_202603 :: Wedding Nasheed
+
+ITEM sue-lius-wedding-nasheed-muhammad-al-muqit :: Sue Lius Wedding Nasheed Muhammad Al Muqit
+
+ITEM sue-lius-wedding-nasheed-muhammad-al-muqit :: Sue Lius Wedding Nasheed Muhammad Al Muqit
+   CAND SueLius - Wedding Nasheed  Muhammad Al Muqit.mp3  size=4.0MB  title=
+   CAND SueLius - Wedding Nasheed  Muhammad Al Muqit.mp3  size=4.0MB  title=
+
+ITEM anasheed-mossad :: Wedding Nasheed - Muhammad Al-Musaad | ديمو شيلة حفل زواج المعاقين - محمد المساعد
+
+ITEM anasheed-mossad :: Wedding Nasheed - Muhammad Al-Musaad | ديمو شيلة حفل زواج المعاقين - محمد المساعد
+   CAND Hafil Zawaj Al-Maagin.mp3  size=3.8MB  title=شيلة حفل زواج المعاقين (إيقاع)
+   CAND Hafil Zawaj Al-Maagin.mp3  size=3.8MB  title=شيلة حفل زواج المعاقين (إيقاع)
+
+ITEM al-majalis_Abu_hadal :: Yemeni Wedding Nasheed
+
+ITEM al-majalis_Abu_hadal :: Yemeni Wedding Nasheed
+   CAND Abu_Hadal-1.mp3  size=35.5MB  title=Side A
+   CAND Abu_Hadal-1.mp3  size=35.5MB  title=Side A
+   CAND Abu_Hadal-1.ogg  size=17.5MB  title=
+   CAND Abu_Hadal-1.ogg  size=17.5MB  title=
+   CAND Abu_Hadal-1_64kb.mp3  size=14.3MB  title=Side A
+   CAND Abu_Hadal-2.mp3  size=32.1MB  title=Side B
+   CAND Abu_Hadal-2.ogg  size=16.5MB  title=
+   CAND Abu_Hadal-2_64kb.mp3  size=14.1MB  title=Side B
+   CAND Abu_Hadal-1_64kb.mp3  size=14.3MB  title=Side A
+   CAND Abu_Hadal-2.mp3  size=32.1MB  title=Side B
+   CAND Abu_Hadal-2.ogg  size=16.5MB  title=
+   CAND Abu_Hadal-2_64kb.mp3  size=14.1MB  title=Side B
+
+ITEM goomar-goomar :: Wedding Nasheed - Bilal Al-Batniji | زفة قمر قمر وش هالزين - بلال البطنيجي (إيقاع)
+
+ITEM goomar-goomar :: Wedding Nasheed - Bilal Al-Batniji | زفة قمر قمر وش هالزين - بلال البطنيجي (إيقاع)
+   CAND goomar goomar.mp3  size=14.6MB  title=قمر قمر (إيقاع)
+   CAND goomar goomar.mp3  size=14.6MB  title=قمر قمر (إيقاع)
+
+ITEM nazuf-al-tahani :: Wedding Nasheed (Daff/Drums only) - Abdul-Karim Mahyoub | نزف التهاني - عبدالكريم مهيوب (إيقاع, دف)
+
+ITEM nazuf-al-tahani :: Wedding Nasheed (Daff/Drums only) - Abdul-Karim Mahyoub | نزف التهاني - عبدالكريم مهيوب (إيقاع, دف)
+   CAND orusan.mp3  size=6.0MB  title=نزف التهاني (إيقاع)
+   CAND orusan.mp3  size=6.0MB  title=نزف التهاني (إيقاع)
+
+ITEM WeddingNasheed.3gp :: Wedding Nasheed. 3gp
+
+ITEM WeddingNasheed.3gp :: Wedding Nasheed. 3gp
+   CAND Wedding_Nasheed.3gp.mp3  size=1.9MB  title=Wedding_Nasheed.3gp
+   CAND Wedding_Nasheed.3gp.mp3  size=1.9MB  title=Wedding_Nasheed.3gp
+   CAND Wedding_Nasheed.3gp.ogg  size=1.5MB  title=
+   CAND Wedding_Nasheed.3gp.ogg  size=1.5MB  title=
+
+ITEM farhat-al-anam :: Wedding Nasheed (Daff/Drums Only) - Abdul-Karim Mahyoub | فرحة الأنام - عبدالكريم مهيوب (إيقاع، دف)
+
+ITEM farhat-al-anam :: Wedding Nasheed (Daff/Drums Only) - Abdul-Karim Mahyoub | فرحة الأنام - عبدالكريم مهيوب (إيقاع، دف)
+   CAND Farhat Al Anam.mp3  size=5.3MB  title=فرحة الأنام (إيقاع)
+   CAND Farhat Al Anam.mp3  size=5.3MB  title=فرحة الأنام (إيقاع)
+
+ITEM 11-nasyid-walimah-syari-no-music-resepsi :: wedding nasheed
+
+ITEM 11-nasyid-walimah-syari-no-music-resepsi :: wedding nasheed
+
+ITEM wedding-nasheed-muhammad-al-muqit-easy-lyrics_202604 :: Wedding Nasheed Muhammad Al Muqit (easy Lyrics)
+
+ITEM wedding-nasheed-muhammad-al-muqit-easy-lyrics_202604 :: Wedding Nasheed Muhammad Al Muqit (easy Lyrics)
+   CAND wedding nasheed - muhammad al muqit (easy lyrics).mp3  size=3.0MB  title=wedding nasheed - muhammad al muqit
+   CAND wedding nasheed - muhammad al muqit (easy lyrics).mp3  size=3.0MB  title=wedding nasheed - muhammad al muqit
+
+ITEM hyo-al-aroos :: Wedding Nasheed - Ahmed Al-Hajiri | زفة حيوا العروس - أحمد الهاجري (إيقاع)
+
+ITEM hyo-al-aroos :: Wedding Nasheed - Ahmed Al-Hajiri | زفة حيوا العروس - أحمد الهاجري (إيقاع)
+   CAND Hyo Al-Aroos.mp3  size=7.6MB  title=زفه حيو العروس (إيقاع، سريعه)
+   CAND Hyo Al-Aroos.mp3  size=7.6MB  title=زفه حيو العروس (إيقاع، سريعه)
+
+ITEM mebrouk :: Wedding Nasheed - Muhammad Al-Salman | مبروك يا أماني - محمد السلمان (إيقاع)
+
+ITEM mebrouk :: Wedding Nasheed - Muhammad Al-Salman | مبروك يا أماني - محمد السلمان (إيقاع)
+   CAND mebrouk.mp3  size=5.2MB  title=أماني (إيقاع)
+   CAND mebrouk.mp3  size=5.2MB  title=أماني (إيقاع)
+
+ITEM oQztmfJhJgwZDBrYdUvECbBQMBMFQf21mUmgFB :: Wedding nasheed
+
+ITEM oQztmfJhJgwZDBrYdUvECbBQMBMFQf21mUmgFB :: Wedding nasheed
+   CAND oQztmfJhJgwZDBrYdUvECbBQMBMFQf21mUmgFB.m4a  size=1.0MB  title=
+   CAND oQztmfJhJgwZDBrYdUvECbBQMBMFQf21mUmgFB.m4a  size=1.0MB  title=
+
+ITEM wedding-nasheed-muhammad-al-muqit-slowed-reverb_202609 :: Wedding Nasheed Muhammad Al Muqit Slowed Reverb
+
+ITEM wedding-nasheed-muhammad-al-muqit-slowed-reverb_202609 :: Wedding Nasheed Muhammad Al Muqit Slowed Reverb
+   CAND Wedding Nasheed - Muhammad Al Muqit  Slowed  Reverb.mp3  size=5.8MB  title=
+   CAND Wedding Nasheed - Muhammad Al Muqit  Slowed  Reverb.mp3  size=5.8MB  title=
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-8b-wru-2ip-ow-a_202511 :: Wedding Nasheed
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-8b-wru-2ip-ow-a_202511 :: Wedding Nasheed
+   CAND Wedding Nasheed - Muhammad Al Muqit _ Lyrics Arabic + Terjemahan _ 𝘈𝘳𝘢𝘣𝘪𝘤 𝘕𝘢𝘴𝘩𝘦𝘦𝘥 _ محمد المقيط [8bWRU2ipOwA].  size=2.8MB  title=Wedding Nasheed - Muhammad Al Muqit | Lyrics Arabic + Terjem
+   CAND Wedding Nasheed - Muhammad Al Muqit _ Lyrics Arabic + Terjemahan _ 𝘈𝘳𝘢𝘣𝘪𝘤 𝘕𝘢𝘴𝘩𝘦𝘦𝘥 _ محمد المقيط [8bWRU2ipOwA].  size=2.8MB  title=Wedding Nasheed - Muhammad Al Muqit | Lyrics Arabic + Terjem
+
+ITEM tiara-andini-feat-arsy-widianto-lagu-pernikahan-kita-lirik-demi-tuhan-aku-qdk-qov-42-hqi :: Wedding nasheed
+
+ITEM tiara-andini-feat-arsy-widianto-lagu-pernikahan-kita-lirik-demi-tuhan-aku-qdk-qov-42-hqi :: Wedding nasheed
+   CAND Tiara Andini feat Arsy Widianto - Lagu Pernikahan Kita (Lirik) __ demi tuhan aku [QDkQOv42HQI].mp3  size=3.7MB  title=Tiara Andini feat Arsy Widianto - Lagu Pernikahan Kita (Liri
+   CAND Tiara Andini feat Arsy Widianto - Lagu Pernikahan Kita (Lirik) __ demi tuhan aku [QDkQOv42HQI].mp3  size=3.7MB  title=Tiara Andini feat Arsy Widianto - Lagu Pernikahan Kita (Liri
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-laa :: Wedding Nasheed
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-laa :: Wedding Nasheed
+   CAND Wedding Nasheed - Muhammad Al Muqit  Lyrics Arabic + Terjemahan _ 𝘈𝘳𝘢𝘣𝘪𝘤 𝘕𝘢𝘴𝘩𝘦𝘦𝘥  محمد المقيط - Laa.mp3  size=6.6MB  title=Wedding Nasheed - Muhammad Al Muqit | Lyrics Arabic + Terjem
+   CAND Wedding Nasheed - Muhammad Al Muqit  Lyrics Arabic + Terjemahan _ 𝘈𝘳𝘢𝘣𝘪𝘤 𝘕𝘢𝘴𝘩𝘦𝘦𝘥  محمد المقيط - Laa.mp3  size=6.6MB  title=Wedding Nasheed - Muhammad Al Muqit | Lyrics Arabic + Terjem
+
+ITEM wedding-nasheed_202510 :: Wedding Nasheed
+
+ITEM wedding-nasheed_202510 :: Wedding Nasheed
+   CAND wedding nasheed.mp3  size=2.8MB  title=Wedding Nasheed - Muhammad Al Muqit | Lyrics Arabic + Terjem
+   CAND wedding nasheed.mp3  size=2.8MB  title=Wedding Nasheed - Muhammad Al Muqit | Lyrics Arabic + Terjem
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-8b-wru-2ip-ow-a_20251104 :: Wedding Nasheed
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-8b-wru-2ip-ow-a_20251104 :: Wedding Nasheed
+   CAND Wedding Nasheed - Muhammad Al Muqit _ Lyrics Arabic + Terjemahan _ 𝘈𝘳𝘢𝘣𝘪𝘤 𝘕𝘢𝘴𝘩𝘦𝘦𝘥 _ محمد المقيط [8bWRU2ipOwA].  size=2.8MB  title=Wedding Nasheed - Muhammad Al Muqit | Lyrics Arabic + Terjem
+   CAND Wedding Nasheed - Muhammad Al Muqit _ Lyrics Arabic + Terjemahan _ 𝘈𝘳𝘢𝘣𝘪𝘤 𝘕𝘢𝘴𝘩𝘦𝘦𝘥 _ محمد المقيط [8bWRU2ipOwA].  size=2.8MB  title=Wedding Nasheed - Muhammad Al Muqit | Lyrics Arabic + Terjem
+
+ITEM wedding-nasheed-muhammad-al-muqit-easy-lyrics :: Wedding Nasheed Muhammad Al Muqit (easy Lyrics)
+
+ITEM wedding-nasheed-muhammad-al-muqit-easy-lyrics :: Wedding Nasheed Muhammad Al Muqit (easy Lyrics)
+   CAND wedding nasheed - muhammad al muqit (easy lyrics).mp3  size=4.2MB  title=
+   CAND wedding nasheed - muhammad al muqit (easy lyrics).mp3  size=4.2MB  title=
+
+ITEM y-2mate.com-new-wedding-nasheed-music-free-muhammad-al-muqit :: Y 2mate.com New Wedding Nasheed Music Free محمد المقيط عروسة النور Muhammad Al Muqit
+
+ITEM y-2mate.com-new-wedding-nasheed-music-free-muhammad-al-muqit :: Y 2mate.com New Wedding Nasheed Music Free محمد المقيط عروسة النور Muhammad Al Muqit
+   CAND y2mate.com - New Wedding Nasheed Music Free محمد المقيط عروسة النور Muhammad al Muqit.mp3  size=2.8MB  title=
+   CAND y2mate.com - New Wedding Nasheed Music Free محمد المقيط عروسة النور Muhammad al Muqit.mp3  size=2.8MB  title=
+
+ITEM wedding-nasheed-muhammad-al-muqit-mp-3-160-k :: Wedding Nasheed Muhammad Al Muqit( MP 3 160 K)
+
+ITEM wedding-nasheed-muhammad-al-muqit-mp-3-160-k :: Wedding Nasheed Muhammad Al Muqit( MP 3 160 K)
+   CAND Wedding Nasheed - Muhammad Al Muqit(MP3_160K).mp3  size=3.4MB  title=Wedding
+   CAND Wedding Nasheed - Muhammad Al Muqit(MP3_160K).mp3  size=3.4MB  title=Wedding
+
+ITEM wedding-nasheed-muhammad-al-muqit :: Wedding Nasheed Muhammad Al Muqit
+
+ITEM wedding-nasheed-muhammad-al-muqit :: Wedding Nasheed Muhammad Al Muqit
+   CAND Wedding Nasheed - Muhammad Al Muqit.mp3  size=4.0MB  title=
+   CAND Wedding Nasheed - Muhammad Al Muqit.mp3  size=4.0MB  title=
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed_202608 :: Wedding Nasheed Muhammad Al Muqit Lyrics
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed_202608 :: Wedding Nasheed Muhammad Al Muqit Lyrics
+   CAND Wedding Nasheed - Muhammad Al Muqit  Lyrics Arabic  Terjemahan  𝘈𝘳𝘢𝘣𝘪𝘤 𝘕𝘢𝘴𝘩𝘦𝘦𝘥  محمد المقيط.mp3  size=3.9MB  title=
+   CAND Wedding Nasheed - Muhammad Al Muqit  Lyrics Arabic  Terjemahan  𝘈𝘳𝘢𝘣𝘪𝘤 𝘕𝘢𝘴𝘩𝘦𝘦𝘥  محمد المقيط.mp3  size=3.9MB  title=
+
+ITEM sue-lius-wedding-nasheed-muhammad-al-muqit-m-4-a-128-k :: Sue Lius Wedding Nasheed Muhammad Al Muqit( M 4 A 128 K)
+
+ITEM sue-lius-wedding-nasheed-muhammad-al-muqit-m-4-a-128-k :: Sue Lius Wedding Nasheed Muhammad Al Muqit( M 4 A 128 K)
+   CAND SueLius - Wedding Nasheed _ Muhammad Al Muqit(M4A_128K).m4a  size=2.7MB  title=Wedding
+   CAND SueLius - Wedding Nasheed _ Muhammad Al Muqit(M4A_128K).m4a  size=2.7MB  title=Wedding
+
+ITEM wedding-nasheed-spotdown.org :: Wedding Nasheed Spotdown.org
+
+ITEM wedding-nasheed-spotdown.org :: Wedding Nasheed Spotdown.org
+   CAND Wedding Nasheed_spotdown.org.mp3  size=5.6MB  title=Wedding Nasheed
+   CAND Wedding Nasheed_spotdown.org.mp3  size=5.6MB  title=Wedding Nasheed
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-8b-wru-2ip-ow-a_20251023 :: Wedding Nasheed
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-8b-wru-2ip-ow-a_20251023 :: Wedding Nasheed
+   CAND Wedding Nasheed - Muhammad Al Muqit _ Lyrics Arabic + Terjemahan _ 𝘈𝘳𝘢𝘣𝘪𝘤 𝘕𝘢𝘴𝘩𝘦𝘦𝘥 _ محمد المقيط [8bWRU2ipOwA].  size=2.8MB  title=Wedding Nasheed - Muhammad Al Muqit | Lyrics Arabic + Terjem
+   CAND Wedding Nasheed - Muhammad Al Muqit _ Lyrics Arabic + Terjemahan _ 𝘈𝘳𝘢𝘣𝘪𝘤 𝘕𝘢𝘴𝘩𝘦𝘦𝘥 _ محمد المقيط [8bWRU2ipOwA].  size=2.8MB  title=Wedding Nasheed - Muhammad Al Muqit | Lyrics Arabic + Terjem
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-8b-wru-2ip-ow-a_20251111 :: Wedding Nasheed
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-8b-wru-2ip-ow-a_20251111 :: Wedding Nasheed
+   CAND Wedding Nasheed - Muhammad Al Muqit _ Lyrics Arabic + Terjemahan _ 𝘈𝘳𝘢𝘣𝘪𝘤 𝘕𝘢𝘴𝘩𝘦𝘦𝘥 _ محمد المقيط [8bWRU2ipOwA].  size=2.8MB  title=Wedding Nasheed - Muhammad Al Muqit | Lyrics Arabic + Terjem
+   CAND Wedding Nasheed - Muhammad Al Muqit _ Lyrics Arabic + Terjemahan _ 𝘈𝘳𝘢𝘣𝘪𝘤 𝘕𝘢𝘴𝘩𝘦𝘦𝘥 _ محمد المقيط [8bWRU2ipOwA].  size=2.8MB  title=Wedding Nasheed - Muhammad Al Muqit | Lyrics Arabic + Terjem
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-128k_202512 :: Wedding Nasheed
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-128k_202512 :: Wedding Nasheed
+   CAND Wedding_Nasheed_-_Muhammad_Al_Muqit___Lyrics_Arabic___Terjemahan___𝘈𝘳𝘢𝘣𝘪𝘤_𝘕𝘢𝘴𝘩𝘦𝘦𝘥___محمد_المقيط(128k).mp3  size=2.6MB  title=
+   CAND Wedding_Nasheed_-_Muhammad_Al_Muqit___Lyrics_Arabic___Terjemahan___𝘈𝘳𝘢𝘣𝘪𝘤_𝘕𝘢𝘴𝘩𝘦𝘦𝘥___محمد_المقيط(128k).mp3  size=2.6MB  title=
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-128k :: wedding nasheed
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-128k :: wedding nasheed
+   CAND Wedding_Nasheed_-_Muhammad_Al_Muqit___Lyrics_Arabic___Terjemahan___𝘈𝘳𝘢𝘣𝘪𝘤_𝘕𝘢𝘴𝘩𝘦𝘦𝘥___محمد_المقيط(128k).mp3  size=2.6MB  title=
+   CAND Wedding_Nasheed_-_Muhammad_Al_Muqit___Lyrics_Arabic___Terjemahan___𝘈𝘳𝘢𝘣𝘪𝘤_𝘕𝘢𝘴𝘩𝘦𝘦𝘥___محمد_المقيط(128k).mp3  size=2.6MB  title=
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-8b-wru-2ip-ow-a_20251106 :: Wedding Nasheed
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed-8b-wru-2ip-ow-a_20251106 :: Wedding Nasheed
+   CAND Wedding Nasheed - Muhammad Al Muqit _ Lyrics Arabic + Terjemahan _ 𝘈𝘳𝘢𝘣𝘪𝘤 𝘕𝘢𝘴𝘩𝘦𝘦𝘥 _ محمد المقيط [8bWRU2ipOwA].  size=2.8MB  title=Wedding Nasheed - Muhammad Al Muqit | Lyrics Arabic + Terjem
+   CAND Wedding Nasheed - Muhammad Al Muqit _ Lyrics Arabic + Terjemahan _ 𝘈𝘳𝘢𝘣𝘪𝘤 𝘕𝘢𝘴𝘩𝘦𝘦𝘥 _ محمد المقيط [8bWRU2ipOwA].  size=2.8MB  title=Wedding Nasheed - Muhammad Al Muqit | Lyrics Arabic + Terjem
+
+ITEM wedding-nasheed-salahuddin-sakib-salahuddin-sakib-128k_202608 :: عروسة النور Wedding Nasheed Salahuddin Sakib Salahuddin Sakib ( 128k)
+
+ITEM wedding-nasheed-salahuddin-sakib-salahuddin-sakib-128k_202608 :: عروسة النور Wedding Nasheed Salahuddin Sakib Salahuddin Sakib ( 128k)
+   CAND عروسة النور wedding nasheed salahuddin sakib - Salahuddin Sakib (128k).mp3  size=2.7MB  title=
+   CAND عروسة النور wedding nasheed salahuddin sakib - Salahuddin Sakib (128k).mp3  size=2.7MB  title=
+
+### query: (title:(زفاف) OR title:(أفراح) OR title:(زفة)) AND mediatype:(audio)  -> 50 items
+
+### query: (title:(زفاف) OR title:(أفراح) OR title:(زفة)) AND mediatype:(audio)  -> 50 items
+
+ITEM weddingbox_55 :: زفة 5الاصلية
+
+ITEM weddingbox_55 :: زفة 5الاصلية
+   CAND زفة 5الاصلية.mp3  size=18.3MB  title=Untitled - 1
+   CAND زفة 5الاصلية.mp3  size=18.3MB  title=Untitled - 1
+   CAND زفة 5الاصلية.ogg  size=5.5MB  title=
+   CAND زفة 5الاصلية.ogg  size=5.5MB  title=
+
+ITEM weddingbox_77 :: زفة 7 الاصلية
+
+ITEM weddingbox_77 :: زفة 7 الاصلية
+   CAND زفة 7 الاصلية.mp3  size=37.0MB  title=Untitled - 1
+   CAND زفة 7 الاصلية.mp3  size=37.0MB  title=Untitled - 1
+   CAND زفة 7 الاصلية.ogg  size=16.2MB  title=
+   CAND زفة 7 الاصلية.ogg  size=16.2MB  title=
+
+ITEM weddingbox_88 :: زفة 8 الاصلية
+
+ITEM weddingbox_88 :: زفة 8 الاصلية
+   CAND زفة 8 الاصلية.mp3  size=44.1MB  title=Untitled - 1
+   CAND زفة 8 الاصلية.mp3  size=44.1MB  title=Untitled - 1
+   CAND زفة 8 الاصلية.ogg  size=16.6MB  title=
+   CAND زفة 8 الاصلية.ogg  size=16.6MB  title=
+
+ITEM 20230925_20230925_1817 :: فرقة النخبة - ليالي الأنس أفراح خليجي
+
+ITEM 20230925_20230925_1817 :: فرقة النخبة - ليالي الأنس أفراح خليجي
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/ألا شلوا بصوت الدان.m4a  size=4.5MB  title=ألا شلوا بصوت الدان
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/ألا شلوا بصوت الدان.m4a  size=4.5MB  title=ألا شلوا بصوت الدان
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/اليوم أنا جيت.m4a  size=6.4MB  title=اليوم أنا جيت
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/بن هاشم.m4a  size=3.1MB  title=بن هاشم
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/تجمعنا.m4a  size=6.1MB  title=تجمعنا
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/حكمة المولى.m4a  size=6.0MB  title=حكمة المولى
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/صلاة الله على المختار.m4a  size=4.5MB  title=صلاة الله على المختار
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/ليالي الأنس.m4a  size=4.2MB  title=ليالي الأنس
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/ليالي السعد.m4a  size=6.1MB  title=ليالي السعد
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/ليلة سمر.m4a  size=5.4MB  title=ليلة سمر
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/هنوا عرائسنا.m4a  size=4.6MB  title=هنوا عرائسنا
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/اليوم أنا جيت.m4a  size=6.4MB  title=اليوم أنا جيت
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/بن هاشم.m4a  size=3.1MB  title=بن هاشم
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/تجمعنا.m4a  size=6.1MB  title=تجمعنا
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/حكمة المولى.m4a  size=6.0MB  title=حكمة المولى
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/صلاة الله على المختار.m4a  size=4.5MB  title=صلاة الله على المختار
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/ليالي الأنس.m4a  size=4.2MB  title=ليالي الأنس
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/ليالي السعد.m4a  size=6.1MB  title=ليالي السعد
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/ليلة سمر.m4a  size=5.4MB  title=ليلة سمر
+   CAND فرقة النخبة - ليالي الأنس أفراح خليجي/هنوا عرائسنا.m4a  size=4.6MB  title=هنوا عرائسنا
+
+ITEM hussein-al-salman-zaffet-mililoo :: حسين السلمان زفة ميليلوا Hussein Al Salman Zaffet Mililoo
+
+ITEM hussein-al-salman-zaffet-mililoo :: حسين السلمان زفة ميليلوا Hussein Al Salman Zaffet Mililoo
+   CAND حسين السلمان - زفة ميليلوا  Hussein Al Salman - Zaffet Mililoo.mp3  size=19.3MB  title=حسين السلمان - زفة ميليلوا || Hussein Al Salman - Zaffet Mil
+   CAND حسين السلمان - زفة ميليلوا  Hussein Al Salman - Zaffet Mililoo.mp3  size=19.3MB  title=حسين السلمان - زفة ميليلوا || Hussein Al Salman - Zaffet Mil
+
+ITEM 20230927_20230927_1944 :: فرقة فجر - يا منورين أفراح شامي
+
+ITEM 20230927_20230927_1944 :: فرقة فجر - يا منورين أفراح شامي
+   CAND فرقة فجر - يا منورين أفراح شامي/أحلى قمر.mp3  size=1.8MB  title=أحلى قمر
+   CAND فرقة فجر - يا منورين أفراح شامي/أحلى قمر.mp3  size=1.8MB  title=أحلى قمر
+   CAND فرقة فجر - يا منورين أفراح شامي/رورو نوبى.mp3  size=2.8MB  title=رورو نوبى
+   CAND فرقة فجر - يا منورين أفراح شامي/غني يا موالي.mp3  size=1.8MB  title=غني يا موالي
+   CAND فرقة فجر - يا منورين أفراح شامي/ميل يا ليل.mp3  size=2.3MB  title=ميل يا ليل
+   CAND فرقة فجر - يا منورين أفراح شامي/رورو نوبى.mp3  size=2.8MB  title=رورو نوبى
+   CAND فرقة فجر - يا منورين أفراح شامي/غني يا موالي.mp3  size=1.8MB  title=غني يا موالي
+   CAND فرقة فجر - يا منورين أفراح شامي/ميل يا ليل.mp3  size=2.3MB  title=ميل يا ليل
+   CAND فرقة فجر - يا منورين أفراح شامي/هنقول بسم الله.mp3  size=1.7MB  title=هنقول بسم الله
+   CAND فرقة فجر - يا منورين أفراح شامي/هنقول بسم الله.mp3  size=1.7MB  title=هنقول بسم الله
+   CAND فرقة فجر - يا منورين أفراح شامي/يا منورين.mp3  size=2.2MB  title=يا منورين
+   CAND فرقة فجر - يا منورين أفراح شامي/يا منورين.mp3  size=2.2MB  title=يا منورين
+
+ITEM Afrah_Seraj_1 :: أفراح السراج الأول - فرقة السراج الفنية
+
+ITEM Afrah_Seraj_1 :: أفراح السراج الأول - فرقة السراج الفنية
+   CAND 1-عكفوف الراحة مشوا.mp3  size=4.8MB  title=ع كفوف الراحة مشوا
+   CAND 1-عكفوف الراحة مشوا.mp3  size=4.8MB  title=ع كفوف الراحة مشوا
+   CAND 1-عكفوف الراحة مشوا.ogg  size=2.1MB  title=
+   CAND 2-وصلة أفراح السراج.mp3  size=18.2MB  title=وصلة السراج
+   CAND 2-وصلة أفراح السراج.ogg  size=8.3MB  title=
+   CAND 3-ليلة فرح.mp3  size=4.2MB  title=ليلة فرح
+   CAND 3-ليلة فرح.ogg  size=1.9MB  title=
+   CAND 4-وغرد يا حادي وغني.mp3  size=12.0MB  title=وغرد يا حادي وغني
+   CAND 4-وغرد يا حادي وغني.ogg  size=5.5MB  title=
+   CAND 5-مد ايدك حنيها ياعريس.mp3  size=7.5MB  title=مد ايدك حنيها ياعريس
+   CAND 5-مد ايدك حنيها ياعريس.ogg  size=3.4MB  title=
+   CAND 1-عكفوف الراحة مشوا.ogg  size=2.1MB  title=
+   CAND 2-وصلة أفراح السراج.mp3  size=18.2MB  title=وصلة السراج
+   CAND 2-وصلة أفراح السراج.ogg  size=8.3MB  title=
+   CAND 3-ليلة فرح.mp3  size=4.2MB  title=ليلة فرح
+   CAND 3-ليلة فرح.ogg  size=1.9MB  title=
+   CAND 4-وغرد يا حادي وغني.mp3  size=12.0MB  title=وغرد يا حادي وغني
+   CAND 4-وغرد يا حادي وغني.ogg  size=5.5MB  title=
+   CAND 5-مد ايدك حنيها ياعريس.mp3  size=7.5MB  title=مد ايدك حنيها ياعريس
+   CAND 5-مد ايدك حنيها ياعريس.ogg  size=3.4MB  title=
+   CAND 6-بسم الله بدينا.mp3  size=4.4MB  title=بسم الله بدينا
+   CAND 6-بسم الله بدينا.ogg  size=1.9MB  title=
+   CAND 7-الحنا الحنا.mp3  size=4.2MB  title=الحنا الحنا
+   CAND 7-الحنا الحنا.ogg  size=1.9MB  title=
+   CAND 6-بسم الله بدينا.mp3  size=4.4MB  title=بسم الله بدينا
+   CAND 6-بسم الله بدينا.ogg  size=1.9MB  title=
+   CAND 7-الحنا الحنا.mp3  size=4.2MB  title=الحنا الحنا
+   CAND 7-الحنا الحنا.ogg  size=1.9MB  title=
+
+ITEM Wasla :: وصلة أفراح حررررررريقة
+
+ITEM Wasla :: وصلة أفراح حررررررريقة
+   CAND Naaaar.mp3  size=13.9MB  title=æÕáÉ ÔÚÈíÉ
+   CAND Naaaar.mp3  size=13.9MB  title=æÕáÉ ÔÚÈíÉ
+   CAND Naaaar.ogg  size=11.6MB  title=
+   CAND Naaaar.ogg  size=11.6MB  title=
+
+ITEM 7._20190715 :: زفة 7 يافاتنة . مقطع اعلاني موسيقى
+
+ITEM 7._20190715 :: زفة 7 يافاتنة . مقطع اعلاني موسيقى
+   CAND زفة 7 يافاتنة . مقطع اعلاني ايقاع.mp3  size=0.8MB  title=زفة 7 يافاتنة . مق
+   CAND زفة 7 يافاتنة . مقطع اعلاني ايقاع.ogg  size=0.6MB  title=
+   CAND زفة 7 يافاتنة . مقطع اعلاني دف.mp3  size=0.8MB  title=زفة 7 يافاتنة . مق
+   CAND زفة 7 يافاتنة . مقطع اعلاني دف.ogg  size=0.6MB  title=
+   CAND زفة 7 يافاتنة . مقطع اعلاني موسيقى.mp3  size=0.8MB  title=زفة 7 يافاتنة . مق
+   CAND زفة 7 يافاتنة . مقطع اعلاني موسيقى.ogg  size=0.6MB  title=
+   CAND زفة 7 يافاتنة . مقطع اعلاني ايقاع.mp3  size=0.8MB  title=زفة 7 يافاتنة . مق
+   CAND زفة 7 يافاتنة . مقطع اعلاني ايقاع.ogg  size=0.6MB  title=
+   CAND زفة 7 يافاتنة . مقطع اعلاني دف.mp3  size=0.8MB  title=زفة 7 يافاتنة . مق
+   CAND زفة 7 يافاتنة . مقطع اعلاني دف.ogg  size=0.6MB  title=
+   CAND زفة 7 يافاتنة . مقطع اعلاني موسيقى.mp3  size=0.8MB  title=زفة 7 يافاتنة . مق
+   CAND زفة 7 يافاتنة . مقطع اعلاني موسيقى.ogg  size=0.6MB  title=
+
+ITEM s_640 :: بوعيسى زفة
+
+ITEM s_640 :: بوعيسى زفة
+   CAND بوعيسى _ زفة.mp3  size=5.6MB  title=DR003053.mp3
+   CAND بوعيسى _ زفة.mp3  size=5.6MB  title=DR003053.mp3
+   CAND بوعيسى _ زفة.ogg  size=2.5MB  title=
+   CAND بوعيسى _ زفة.ogg  size=2.5MB  title=
+
+ITEM Zafat_huda3bad :: زفة هدى و عبيد
+
+ITEM Zafat_huda3bad :: زفة هدى و عبيد
+   CAND zafat_huda&3bad.mp3  size=20.5MB  title=zafat_huda&3bad
+   CAND zafat_huda&3bad.mp3  size=20.5MB  title=zafat_huda&3bad
+   CAND zafat_huda&3bad.ogg  size=8.7MB  title=
+   CAND zafat_huda&3bad.ogg  size=8.7MB  title=
+
+ITEM way2allah.comnashed :: أناشيد أفراح
+
+ITEM way2allah.comnashed :: أناشيد أفراح
+   CAND mabrook.MP3  size=4.4MB  title=
+   CAND mabrook.MP3  size=4.4MB  title=
+   CAND mabrook.mp3  size=5.5MB  title=
+   CAND mabrook.ogg  size=3.5MB  title=
+   CAND nabena.MP3  size=5.8MB  title=
+   CAND nabena.mp3  size=6.0MB  title=
+   CAND nabena.ogg  size=4.1MB  title=
+   CAND mabrook.mp3  size=5.5MB  title=
+   CAND mabrook.ogg  size=3.5MB  title=
+   CAND nabena.MP3  size=5.8MB  title=
+   CAND nabena.mp3  size=6.0MB  title=
+   CAND nabena.ogg  size=4.1MB  title=
+
+ITEM partybox_88 :: زفة 8 الاصلية
+
+ITEM partybox_88 :: زفة 8 الاصلية
+   CAND زفة 8 الاصلية.mp3  size=44.1MB  title=Untitled - 1
+   CAND زفة 8 الاصلية.mp3  size=44.1MB  title=Untitled - 1
+   CAND زفة 8 الاصلية.ogg  size=16.6MB  title=
+   CAND زفة 8 الاصلية.ogg  size=16.6MB  title=
+
+ITEM 20230923_20230923_1214 :: فرقة الاعتصام المغربية - أفراح المغرب العربي
+
+ITEM 20230923_20230923_1214 :: فرقة الاعتصام المغربية - أفراح المغرب العربي
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/أتيناكم.m4a  size=5.3MB  title=أتيناكم
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/أتيناكم.m4a  size=5.3MB  title=أتيناكم
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/أنغام الليلة.m4a  size=7.2MB  title=أنغام الليلة
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/أنغام الليلة.m4a  size=7.2MB  title=أنغام الليلة
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/أهل العروسة.m4a  size=5.3MB  title=أهل العروسة
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/أهل العروسة.m4a  size=5.3MB  title=أهل العروسة
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/بشرى وهنية.m4a  size=6.3MB  title=بشرى وهنية
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/بشرى وهنية.m4a  size=6.3MB  title=بشرى وهنية
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/تهانينا.m4a  size=5.1MB  title=تهانينا
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/تهانينا.m4a  size=5.1MB  title=تهانينا
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/شدا في روضة البشر الحمام.m4a  size=5.1MB  title=شدا في روضة البشر الحمام
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/شدا في روضة البشر الحمام.m4a  size=5.1MB  title=شدا في روضة البشر الحمام
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/عريسنا حبيبنا.m4a  size=6.5MB  title=عريسنا حبيبنا
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/عريسنا حبيبنا.m4a  size=6.5MB  title=عريسنا حبيبنا
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/عريسنا قمر.m4a  size=7.9MB  title=عريسنا قمر
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/عريسنا قمر.m4a  size=7.9MB  title=عريسنا قمر
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/عريسنا مبروك عليك.m4a  size=5.1MB  title=عريسنا مبروك عليك
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/عريسنا مبروك عليك.m4a  size=5.1MB  title=عريسنا مبروك عليك
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/عريسنا يا همام.m4a  size=4.0MB  title=عريسنا يا همام
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/عريسنا يا همام.m4a  size=4.0MB  title=عريسنا يا همام
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/للعروسين قد زفننا التهاني.m4a  size=2.0MB  title=للعروسين قد زفننا التهاني
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/للعروسين قد زفننا التهاني.m4a  size=2.0MB  title=للعروسين قد زفننا التهاني
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/مجمع الأحباب.m4a  size=5.2MB  title=مجمع الأحباب
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/مجمع الأحباب.m4a  size=5.2MB  title=مجمع الأحباب
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/مقدمة 1.m4a  size=1.2MB  title=مقدمة
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/مقدمة 1.m4a  size=1.2MB  title=مقدمة
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/مقدمة.m4a  size=1.8MB  title=مقدمة
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/مقدمة.m4a  size=1.8MB  title=مقدمة
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/يا عروسا فرحنا لك.m4a  size=4.1MB  title=يا عروسا فرحنا لك
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/يا عروسا فرحنا لك.m4a  size=4.1MB  title=يا عروسا فرحنا لك
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/يا عروسا.m4a  size=8.4MB  title=يا عروسا
+   CAND فرقة الاعتصام المغربية - أفراح المغرب العربي/يا عروسا.m4a  size=8.4MB  title=يا عروسا
+
+ITEM 10youtube.com20150509373620GiIOSTgZtM :: 10youtube.com زفة تخرج نجحنا طير الفرح بدون ايقاعات و بدون موسيقي 2015 ارتام 0509373620 Gi I OSTg Zt M
+
+ITEM 10youtube.com20150509373620GiIOSTgZtM :: 10youtube.com زفة تخرج نجحنا طير الفرح بدون ايقاعات و بدون موسيقي 2015 ارتام 0509373620 Gi I OSTg Zt M
+   CAND 10youtube.com_زفة-تخرج-نجحنا-طير-الفرح-بدون-ايقاعات-و-بدون-موسيقي-2015-ارتام-0509373620_Gi-iOSTgZtM.mp3  size=4.6MB  title=
+   CAND 10youtube.com_زفة-تخرج-نجحنا-طير-الفرح-بدون-ايقاعات-و-بدون-موسيقي-2015-ارتام-0509373620_Gi-iOSTgZtM.mp3  size=4.6MB  title=
+   CAND 10youtube.com_زفة-تخرج-نجحنا-طير-الفرح-بدون-ايقاعات-و-بدون-موسيقي-2015-ارتام-0509373620_Gi-iOSTgZtM.ogg  size=4.0MB  title=
+   CAND 10youtube.com_زفة-تخرج-نجحنا-طير-الفرح-بدون-ايقاعات-و-بدون-موسيقي-2015-ارتام-0509373620_Gi-iOSTgZtM.ogg  size=4.0MB  title=
+
+ITEM 20260306_20260306_1623 :: أفراح آل زقالى المساعيد الغربية
+
+ITEM 20260306_20260306_1623 :: أفراح آل زقالى المساعيد الغربية
+   CAND القارئ الشيخ محمود البدرى ابوعوض المنشاوي #أفراح آل زقالى #المساعيد الغربية فيديو بدوى ابوطربوش.mp3  size=83.9MB  title=
+   CAND القارئ الشيخ محمود البدرى ابوعوض المنشاوي #أفراح آل زقالى #المساعيد الغربية فيديو بدوى ابوطربوش.mp3  size=83.9MB  title=
+
+ITEM 6_20190715 :: زفة 6 ياقرة مقطع اعلاني ايقاع
+
+ITEM 6_20190715 :: زفة 6 ياقرة مقطع اعلاني ايقاع
+   CAND زفة 6 ياقرة مقطع اعلاني ايقاع.mp3  size=1.4MB  title=Ø²ÙØ© 6 ÙŠØ§Ù‚Ø±Ø© Ù…Ù‚Ø·Ø¹ Ø
+   CAND زفة 6 ياقرة مقطع اعلاني ايقاع.mp3  size=1.4MB  title=Ø²ÙØ© 6 ÙŠØ§Ù‚Ø±Ø© Ù…Ù‚Ø·Ø¹ Ø
+   CAND زفة 6 ياقرة مقطع اعلاني ايقاع.ogg  size=1.0MB  title=
+   CAND زفة 6 ياقرة مقطع اعلاني ايقاع.ogg  size=1.0MB  title=
+   CAND زفة 6 ياقرة مقطع اعلاني دف.mp3  size=1.4MB  title=Ø²ÙØ© 6 ÙŠØ§Ù‚Ø±Ø© Ù…Ù‚Ø·Ø¹ Ø
+   CAND زفة 6 ياقرة مقطع اعلاني دف.mp3  size=1.4MB  title=Ø²ÙØ© 6 ÙŠØ§Ù‚Ø±Ø© Ù…Ù‚Ø·Ø¹ Ø
+   CAND زفة 6 ياقرة مقطع اعلاني دف.ogg  size=1.0MB  title=
+   CAND زفة 6 ياقرة مقطع اعلاني دف.ogg  size=1.0MB  title=
+   CAND زفة 6 ياقرة مقطع اعلاني موسيقى.mp3  size=1.4MB  title=Ø²ÙØ© 6 ÙŠØ§Ù‚Ø±Ø© Ù…Ù‚Ø·Ø¹ Ø
+   CAND زفة 6 ياقرة مقطع اعلاني موسيقى.mp3  size=1.4MB  title=Ø²ÙØ© 6 ÙŠØ§Ù‚Ø±Ø© Ù…Ù‚Ø·Ø¹ Ø
+   CAND زفة 6 ياقرة مقطع اعلاني موسيقى.ogg  size=1.0MB  title=
+   CAND زفة 6 ياقرة مقطع اعلاني موسيقى.ogg  size=1.0MB  title=
+
+ITEM somayaaziz :: زفة آيه
+
+ITEM somayaaziz :: زفة آيه
+   CAND زفة آيه.mp3  size=53.0MB  title=Untitled - 1
+   CAND زفة آيه.mp3  size=53.0MB  title=Untitled - 1
+   CAND زفة آيه.ogg  size=19.9MB  title=
+   CAND زفة آيه.ogg  size=19.9MB  title=
+
+ITEM somayaaziz_3 :: زفة 3 مارس
+
+ITEM somayaaziz_3 :: زفة 3 مارس
+   CAND زفة 3 مارس.mp3  size=72.5MB  title=Untitled - 1
+   CAND زفة 3 مارس.mp3  size=72.5MB  title=Untitled - 1
+   CAND زفة 3 مارس.ogg  size=25.7MB  title=
+   CAND زفة 3 مارس.ogg  size=25.7MB  title=
+
+ITEM 018-18-19-15-5-2021 :: 018 18 19 سورة الكهف ومريم فوق الوصف الشيخ جمعة سليم الجهمي زفاف وليد بهجات عبد المقصود شرموخ ملوى 15 5 2021
+
+ITEM 018-18-19-15-5-2021 :: 018 18 19 سورة الكهف ومريم فوق الوصف الشيخ جمعة سليم الجهمي زفاف وليد بهجات عبد المقصود شرموخ ملوى 15 5 2021
+   CAND 018   18  19  سورة الكهف ومريم فوق الوصف الشيخ جمعة سليم الجهمي زفاف وليد بهجات عبد المقصود شرموخ ملوى 15_5_20  size=34.9MB  title=
+   CAND 018   18  19  سورة الكهف ومريم فوق الوصف الشيخ جمعة سليم الجهمي زفاف وليد بهجات عبد المقصود شرموخ ملوى 15_5_20  size=34.9MB  title=
+
+ITEM 20260302_20260302_1422 :: الشيخ محمود البدرى ابو عوض أفراح الديره بالصوامعة شــرق القصص
+
+ITEM 20260302_20260302_1422 :: الشيخ محمود البدرى ابو عوض أفراح الديره بالصوامعة شــرق القصص
+   CAND الشيخ محمود البدرى ابو عوض -  أفراح الديره بالصوامعةشــرق  - القصص.mp3  size=48.1MB  title=ÙÙØ±ÙØ¯ Ø£Ù ÙÙÙ Ø¹ÙÙ Ø§ÙØ°ÙÙ Ø§Ø³ØªØ¶Ø¹ÙÙØ§ Ù
+   CAND الشيخ محمود البدرى ابو عوض -  أفراح الديره بالصوامعةشــرق  - القصص.mp3  size=48.1MB  title=ÙÙØ±ÙØ¯ Ø£Ù ÙÙÙ Ø¹ÙÙ Ø§ÙØ°ÙÙ Ø§Ø³ØªØ¶Ø¹ÙÙØ§ Ù
+
+ITEM somayaaziz_1_201803 :: زفة 1 مارس
+
+ITEM somayaaziz_1_201803 :: زفة 1 مارس
+   CAND زفة1 مارس.mp3  size=69.0MB  title=Untitled - 1
+   CAND زفة1 مارس.mp3  size=69.0MB  title=Untitled - 1
+   CAND زفة1 مارس.ogg  size=24.1MB  title=
+   CAND زفة1 مارس.ogg  size=24.1MB  title=
+
+ITEM 20230928_20230928_1009 :: لقمان أبو عاصم - أفراح المغرب العربي
+
+ITEM 20230928_20230928_1009 :: لقمان أبو عاصم - أفراح المغرب العربي
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/العروسة يا القمر.m4a  size=4.0MB  title=العروسة يا القمر
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/العروسة يا القمر.m4a  size=4.0MB  title=العروسة يا القمر
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/جابوا الهدية.m4a  size=3.9MB  title=جابوا الهدية
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/جابوا الهدية.m4a  size=3.9MB  title=جابوا الهدية
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/جاية العروسة.m4a  size=9.7MB  title=جاية العروسة
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/دقوا الفرحة.m4a  size=9.7MB  title=دقوا الفرحة
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/صلوا على نبينا.m4a  size=4.0MB  title=صلوا على نبينا
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/عروسنا.m4a  size=4.0MB  title=عروسنا
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/عندو دين عندو إيمان.m4a  size=9.7MB  title=عندو دين عندو إيمان
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/فرحوا يا إخوان.m4a  size=4.1MB  title=فرحوا يا إخوان
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/مبروك.m4a  size=3.9MB  title=مبروك
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/مرحبا يا سيدي.m4a  size=4.0MB  title=مرحبا يا سيدي
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/من يعتصم بك يا خير الورى.m4a  size=9.7MB  title=من يعتصم بك يا خير الورى
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/نحنا جينا نباركم 1.m4a  size=3.9MB  title=نحنا جينا نباركم
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/نحنا جينا نباركم.m4a  size=9.6MB  title=نحنا جينا نباركم
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/هذي الليلة فرحي 1.m4a  size=4.0MB  title=هذي الليلة فرحي
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/هذي الليلة فرحي.m4a  size=9.7MB  title=هذي الليلة فرحي
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/هذي ساعة مباركة يا أحبابنا.m4a  size=4.0MB  title=هذي ساعة مباركة يا أحبابنا
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/واليوم ليلة عرسك.m4a  size=9.7MB  title=واليوم ليلة عرسك
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/وعريسنا راح اتزوج.m4a  size=9.6MB  title=وعريسنا راح اتزوج
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/يا لميمة لبسي البرنوس.m4a  size=3.9MB  title=يا لميمة لبسي البرنوس
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/جاية العروسة.m4a  size=9.7MB  title=جاية العروسة
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/دقوا الفرحة.m4a  size=9.7MB  title=دقوا الفرحة
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/صلوا على نبينا.m4a  size=4.0MB  title=صلوا على نبينا
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/عروسنا.m4a  size=4.0MB  title=عروسنا
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/عندو دين عندو إيمان.m4a  size=9.7MB  title=عندو دين عندو إيمان
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/فرحوا يا إخوان.m4a  size=4.1MB  title=فرحوا يا إخوان
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/مبروك.m4a  size=3.9MB  title=مبروك
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/مرحبا يا سيدي.m4a  size=4.0MB  title=مرحبا يا سيدي
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/من يعتصم بك يا خير الورى.m4a  size=9.7MB  title=من يعتصم بك يا خير الورى
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/نحنا جينا نباركم 1.m4a  size=3.9MB  title=نحنا جينا نباركم
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/نحنا جينا نباركم.m4a  size=9.6MB  title=نحنا جينا نباركم
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/هذي الليلة فرحي 1.m4a  size=4.0MB  title=هذي الليلة فرحي
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/هذي الليلة فرحي.m4a  size=9.7MB  title=هذي الليلة فرحي
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/هذي ساعة مباركة يا أحبابنا.m4a  size=4.0MB  title=هذي ساعة مباركة يا أحبابنا
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/واليوم ليلة عرسك.m4a  size=9.7MB  title=واليوم ليلة عرسك
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/وعريسنا راح اتزوج.m4a  size=9.6MB  title=وعريسنا راح اتزوج
+   CAND لقمان أبو عاصم - أفراح المغرب العربي/يا لميمة لبسي البرنوس.m4a  size=3.9MB  title=يا لميمة لبسي البرنوس
+
+ITEM 3_20190716_20190716_2050 :: زفة 3 الحب لك مقطع اعلاني موسيقى
+
+ITEM 3_20190716_20190716_2050 :: زفة 3 الحب لك مقطع اعلاني موسيقى
+   CAND زفة 3 الحب لك مقطع اعلاني ايقاع.mp3  size=0.8MB  title=Ø²ÙØ© 3 Ø§Ù„Ø­Ø¨ Ù„Ùƒ Ù…Ù‚Ø·Ø
+   CAND زفة 3 الحب لك مقطع اعلاني ايقاع.mp3  size=0.8MB  title=Ø²ÙØ© 3 Ø§Ù„Ø­Ø¨ Ù„Ùƒ Ù…Ù‚Ø·Ø
+   CAND زفة 3 الحب لك مقطع اعلاني ايقاع.ogg  size=0.6MB  title=
+   CAND زفة 3 الحب لك مقطع اعلاني ايقاع.ogg  size=0.6MB  title=
+   CAND زفة 3 الحب لك مقطع اعلاني دف.mp3  size=0.8MB  title=Ø²ÙØ© 3 Ø§Ù„Ø­Ø¨ Ù„Ùƒ Ù…Ù‚Ø·Ø
+   CAND زفة 3 الحب لك مقطع اعلاني دف.ogg  size=0.6MB  title=
+   CAND زفة 3 الحب لك مقطع اعلاني موسيقى.mp3  size=0.8MB  title=Ø²ÙØ© 3 Ø§Ù„Ø­Ø¨ Ù„Ùƒ Ù…Ù‚Ø·Ø
+   CAND زفة 3 الحب لك مقطع اعلاني موسيقى.ogg  size=0.6MB  title=
+   CAND زفة 3 الحب لك مقطع اعلاني دف.mp3  size=0.8MB  title=Ø²ÙØ© 3 Ø§Ù„Ø­Ø¨ Ù„Ùƒ Ù…Ù‚Ø·Ø
+   CAND زفة 3 الحب لك مقطع اعلاني دف.ogg  size=0.6MB  title=
+   CAND زفة 3 الحب لك مقطع اعلاني موسيقى.mp3  size=0.8MB  title=Ø²ÙØ© 3 Ø§Ù„Ø­Ø¨ Ù„Ùƒ Ù…Ù‚Ø·Ø
+   CAND زفة 3 الحب لك مقطع اعلاني موسيقى.ogg  size=0.6MB  title=
+
+ITEM hana-essafi-lubnan-afrah-wa-tahani :: Hana Essafi هناء الصافي - Lubnan لبنان - Afrah wa tahani أفراح وتهاني
+
+ITEM hana-essafi-lubnan-afrah-wa-tahani :: Hana Essafi هناء الصافي - Lubnan لبنان - Afrah wa tahani أفراح وتهاني
+   CAND Side A    Lubnan     لبنان   .mp3  size=11.1MB  title=
+   CAND Side A    Lubnan     لبنان   .mp3  size=11.1MB  title=
+   CAND Side B  Afrah wa tahani   أفراح وتهاني      .mp3  size=0.2MB  title=
+   CAND Side B  Afrah wa tahani   أفراح وتهاني      .mp3  size=0.2MB  title=
+
+ITEM 20230926_20230926_1944 :: فرقة رؤى - الأفراح أفراح شامي
+
+ITEM 20230926_20230926_1944 :: فرقة رؤى - الأفراح أفراح شامي
+   CAND فرقة رؤى - الأفراح أفراح شامي/الليلة يا محبوب.mp3  size=3.1MB  title=الليلة يا محبوب
+   CAND فرقة رؤى - الأفراح أفراح شامي/الليلة يا محبوب.mp3  size=3.1MB  title=الليلة يا محبوب
+   CAND فرقة رؤى - الأفراح أفراح شامي/صلوا على محمد.mp3  size=3.5MB  title=صلوا على محمد
+   CAND فرقة رؤى - الأفراح أفراح شامي/صلوا على محمد.mp3  size=3.5MB  title=صلوا على محمد
+   CAND فرقة رؤى - الأفراح أفراح شامي/طليت علينا.mp3  size=3.5MB  title=طليت علينا
+   CAND فرقة رؤى - الأفراح أفراح شامي/طليت علينا.mp3  size=3.5MB  title=طليت علينا
+   CAND فرقة رؤى - الأفراح أفراح شامي/علي الزغرودة.mp3  size=2.4MB  title=علي الزغرودة
+   CAND فرقة رؤى - الأفراح أفراح شامي/علي الزغرودة.mp3  size=2.4MB  title=علي الزغرودة
+   CAND فرقة رؤى - الأفراح أفراح شامي/لعمري اشتكيت.mp3  size=5.5MB  title=لعمري اشتكيت
+   CAND فرقة رؤى - الأفراح أفراح شامي/لعمري اشتكيت.mp3  size=5.5MB  title=لعمري اشتكيت
+   CAND فرقة رؤى - الأفراح أفراح شامي/مبروك مبروك.mp3  size=2.5MB  title=مبروك مبروك
+   CAND فرقة رؤى - الأفراح أفراح شامي/مبروك مبروك.mp3  size=2.5MB  title=مبروك مبروك
+   CAND فرقة رؤى - الأفراح أفراح شامي/يا فرحة هلي علينا.mp3  size=2.8MB  title=يا فرحة هلي علينا
+   CAND فرقة رؤى - الأفراح أفراح شامي/يا فرحة هلي علينا.mp3  size=2.8MB  title=يا فرحة هلي علينا
+   CAND فرقة رؤى - الأفراح أفراح شامي/يا فرحة هلي كمان.mp3  size=3.7MB  title=يا فرحة هلي كمان
+   CAND فرقة رؤى - الأفراح أفراح شامي/يا فرحة هلي كمان.mp3  size=3.7MB  title=يا فرحة هلي كمان
+   CAND فرقة رؤى - الأفراح أفراح شامي/يا مسلم صل على محمد.mp3  size=3.4MB  title=يا مسلم صل على محمد
+   CAND فرقة رؤى - الأفراح أفراح شامي/يا مسلم صل على محمد.mp3  size=3.4MB  title=يا مسلم صل على محمد
+   CAND فرقة رؤى - الأفراح أفراح شامي/يا هلا ومرحب.mp3  size=2.1MB  title=يا هلا ومرحب
+   CAND فرقة رؤى - الأفراح أفراح شامي/يا هلا ومرحب.mp3  size=2.1MB  title=يا هلا ومرحب
+
+ITEM 20230924_20230924_1044 :: فرقة الرباط - طلة عريس أفراح شامي
+
+ITEM 20230924_20230924_1044 :: فرقة الرباط - طلة عريس أفراح شامي
+   CAND فرقة الرباط - طلة عريس أفراح شامي/استقبال - طل العريس.mp3  size=23.6MB  title=استقبال - طل العريس
+   CAND فرقة الرباط - طلة عريس أفراح شامي/استقبال - طل العريس.mp3  size=23.6MB  title=استقبال - طل العريس
+   CAND فرقة الرباط - طلة عريس أفراح شامي/ربيتك صغيرون - مزيونة يا أبواب الدار - ليش يا ابني.mp3  size=10.4MB  title=ربيتك صغيرون - مزيونة يا أبواب الدار - ليش يا ابني
+   CAND فرقة الرباط - طلة عريس أفراح شامي/ربيتك صغيرون - مزيونة يا أبواب الدار - ليش يا ابني.mp3  size=10.4MB  title=ربيتك صغيرون - مزيونة يا أبواب الدار - ليش يا ابني
+   CAND فرقة الرباط - طلة عريس أفراح شامي/صبوا القهيوة - يا حلالي يا مالي.mp3  size=5.5MB  title=صبوا القهيوة - يا حلالي يا مالي
+   CAND فرقة الرباط - طلة عريس أفراح شامي/صبوا القهيوة - يا حلالي يا مالي.mp3  size=5.5MB  title=صبوا القهيوة - يا حلالي يا مالي
+   CAND فرقة الرباط - طلة عريس أفراح شامي/يا هلا حي الضيوف - المثمن.mp3  size=5.4MB  title=يا هلا حي الضيوف - المثمن
+   CAND فرقة الرباط - طلة عريس أفراح شامي/يا هلا حي الضيوف - المثمن.mp3  size=5.4MB  title=يا هلا حي الضيوف - المثمن
+
+ITEM 20230921_20230921_1700 :: عماد أبو العطا - أفراح الأمواج 3 شامي
+
+ITEM 20230921_20230921_1700 :: عماد أبو العطا - أفراح الأمواج 3 شامي
+   CAND عماد أبو العطا - أفراح الأمواج 3 شامي/راية الأفراح.mp3  size=4.2MB  title=راية الأفراح
+   CAND عماد أبو العطا - أفراح الأمواج 3 شامي/راية الأفراح.mp3  size=4.2MB  title=راية الأفراح
+   CAND عماد أبو العطا - أفراح الأمواج 3 شامي/سهرتنا.mp3  size=3.1MB  title=سهرتنا
+   CAND عماد أبو العطا - أفراح الأمواج 3 شامي/سهرتنا.mp3  size=3.1MB  title=سهرتنا
+   CAND عماد أبو العطا - أفراح الأمواج 3 شامي/ليلة أحلى ليلة.mp3  size=4.1MB  title=ليلة أحلى ليلة
+   CAND عماد أبو العطا - أفراح الأمواج 3 شامي/ليلة أحلى ليلة.mp3  size=4.1MB  title=ليلة أحلى ليلة
+   CAND عماد أبو العطا - أفراح الأمواج 3 شامي/مرحبا.mp3  size=8.6MB  title=مرحبا
+   CAND عماد أبو العطا - أفراح الأمواج 3 شامي/مرحبا.mp3  size=8.6MB  title=مرحبا
+   CAND عماد أبو العطا - أفراح الأمواج 3 شامي/هل علينا.mp3  size=5.2MB  title=هل علينا
+   CAND عماد أبو العطا - أفراح الأمواج 3 شامي/هل علينا.mp3  size=5.2MB  title=هل علينا
+   CAND عماد أبو العطا - أفراح الأمواج 3 شامي/يا عريس.mp3  size=7.6MB  title=يا عريس
+   CAND عماد أبو العطا - أفراح الأمواج 3 شامي/يا عريس.mp3  size=7.6MB  title=يا عريس
+   CAND عماد أبو العطا - أفراح الأمواج 3 شامي/يا ناس.mp3  size=3.5MB  title=يا ناس
+   CAND عماد أبو العطا - أفراح الأمواج 3 شامي/يا ناس.mp3  size=3.5MB  title=يا ناس
+
+ITEM 20230927_20230927_2014 :: فرقة نداء الاسلام - سيارة الزفة أفراح شامي
+
+ITEM 20230927_20230927_2014 :: فرقة نداء الاسلام - سيارة الزفة أفراح شامي
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/أويها.mp3  size=2.6MB  title=أويها
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/أويها.mp3  size=2.6MB  title=أويها
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/المقدمة.mp3  size=0.6MB  title=المقدمة
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/سيارة الزفة.mp3  size=4.6MB  title=سيارة الزفة
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/عريس الزين.mp3  size=2.7MB  title=عريس الزين
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/ليلة فرح.mp3  size=3.3MB  title=ليلة فرح
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/هذا وجهك.mp3  size=4.0MB  title=هذا وجهك
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/هلا بالزينة والزين.mp3  size=3.4MB  title=هلا بالزينة والزين
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/هوهو.mp3  size=4.2MB  title=هوهو
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/وصل دبكة.mp3  size=9.1MB  title=وصل دبكة
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/يا دقات.mp3  size=3.0MB  title=يا دقات
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/يللا نشبك.mp3  size=2.5MB  title=يللا نشبك
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/المقدمة.mp3  size=0.6MB  title=المقدمة
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/سيارة الزفة.mp3  size=4.6MB  title=سيارة الزفة
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/عريس الزين.mp3  size=2.7MB  title=عريس الزين
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/ليلة فرح.mp3  size=3.3MB  title=ليلة فرح
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/هذا وجهك.mp3  size=4.0MB  title=هذا وجهك
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/هلا بالزينة والزين.mp3  size=3.4MB  title=هلا بالزينة والزين
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/هوهو.mp3  size=4.2MB  title=هوهو
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/وصل دبكة.mp3  size=9.1MB  title=وصل دبكة
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/يا دقات.mp3  size=3.0MB  title=يا دقات
+   CAND فرقة نداء الاسلام - سيارة الزفة أفراح شامي/يللا نشبك.mp3  size=2.5MB  title=يللا نشبك
+
+ITEM 20191106_20191106_2047 :: الحاج احمد زفة الحجاج
+
+ITEM 20191106_20191106_2047 :: الحاج احمد زفة الحجاج
+
+ITEM 9_20190714 :: زفة 9 للرجال مقطع اعلاني موسيقى
+
+ITEM 9_20190714 :: زفة 9 للرجال مقطع اعلاني موسيقى
+   CAND زفة 9 للرجال مقطع اعلاني ايقاع.mp3  size=1.0MB  title=زفة 9 للرجال مقطع
+   CAND زفة 9 للرجال مقطع اعلاني ايقاع.mp3  size=1.0MB  title=زفة 9 للرجال مقطع
+   CAND زفة 9 للرجال مقطع اعلاني ايقاع.ogg  size=0.7MB  title=
+   CAND زفة 9 للرجال مقطع اعلاني دف.mp3  size=1.0MB  title=زفة 9 للرجال مقطع
+   CAND زفة 9 للرجال مقطع اعلاني دف.ogg  size=0.7MB  title=
+   CAND زفة 9 للرجال مقطع اعلاني موسيقى.mp3  size=1.0MB  title=زفة 9 للرجال مقطع
+   CAND زفة 9 للرجال مقطع اعلاني موسيقى.ogg  size=0.7MB  title=
+   CAND زفة 9 للرجال مقطع اعلاني ايقاع.ogg  size=0.7MB  title=
+   CAND زفة 9 للرجال مقطع اعلاني دف.mp3  size=1.0MB  title=زفة 9 للرجال مقطع
+   CAND زفة 9 للرجال مقطع اعلاني دف.ogg  size=0.7MB  title=
+   CAND زفة 9 للرجال مقطع اعلاني موسيقى.mp3  size=1.0MB  title=زفة 9 للرجال مقطع
+   CAND زفة 9 للرجال مقطع اعلاني موسيقى.ogg  size=0.7MB  title=
+
+ITEM 022-22-1-5-2022 :: 022 22 سورة الحج والمؤمنون روعة الشيخ جمعة سليم الجهمي زفاف سعودي عادل احمد الإدارة ملوى المنيا 1 5 2022
+
+ITEM 022-22-1-5-2022 :: 022 22 سورة الحج والمؤمنون روعة الشيخ جمعة سليم الجهمي زفاف سعودي عادل احمد الإدارة ملوى المنيا 1 5 2022
+   CAND 022   22  سورة الحج والمؤمنون روعة الشيخ جمعة سليم الجهمي زفاف سعودي عادل احمد الإدارة ملوى المنيا 1_5_2022.mp  size=48.6MB  title=
+   CAND 022   22  سورة الحج والمؤمنون روعة الشيخ جمعة سليم الجهمي زفاف سعودي عادل احمد الإدارة ملوى المنيا 1_5_2022.mp  size=48.6MB  title=
+
+ITEM 20230921_20230921_1749 :: عماد رامي - أعراس أفراح شامي
+
+ITEM 20230921_20230921_1749 :: عماد رامي - أعراس أفراح شامي
+   CAND عماد رامي - أعراس أفراح شامي/أتيناكم محيينا.mp3  size=5.6MB  title=أتيناكم محيينا
+   CAND عماد رامي - أعراس أفراح شامي/أتيناكم محيينا.mp3  size=5.6MB  title=أتيناكم محيينا
+   CAND عماد رامي - أعراس أفراح شامي/أجمل مغنى.mp3  size=4.5MB  title=أجمل مغنى
+   CAND عماد رامي - أعراس أفراح شامي/بالحب والهنا.mp3  size=2.3MB  title=بالحب والهنا
+   CAND عماد رامي - أعراس أفراح شامي/حل الهنا.mp3  size=4.3MB  title=حل الهنا
+   CAND عماد رامي - أعراس أفراح شامي/صلوا على من دعانا.mp3  size=3.2MB  title=صلوا على من دعانا
+   CAND عماد رامي - أعراس أفراح شامي/طاب المساء.mp3  size=2.5MB  title=طاب المساء
+   CAND عماد رامي - أعراس أفراح شامي/غرد بنشيدك.mp3  size=2.7MB  title=غرد بنشيدك
+   CAND عماد رامي - أعراس أفراح شامي/يا قلب.mp3  size=5.0MB  title=يا قلب
+   CAND عماد رامي - أعراس أفراح شامي/أجمل مغنى.mp3  size=4.5MB  title=أجمل مغنى
+   CAND عماد رامي - أعراس أفراح شامي/بالحب والهنا.mp3  size=2.3MB  title=بالحب والهنا
+   CAND عماد رامي - أعراس أفراح شامي/حل الهنا.mp3  size=4.3MB  title=حل الهنا
+   CAND عماد رامي - أعراس أفراح شامي/صلوا على من دعانا.mp3  size=3.2MB  title=صلوا على من دعانا
+   CAND عماد رامي - أعراس أفراح شامي/طاب المساء.mp3  size=2.5MB  title=طاب المساء
+   CAND عماد رامي - أعراس أفراح شامي/غرد بنشيدك.mp3  size=2.7MB  title=غرد بنشيدك
+   CAND عماد رامي - أعراس أفراح شامي/يا قلب.mp3  size=5.0MB  title=يا قلب
+
+ITEM 20230925_20230925_1917 :: فرقة النور - أفراح النور شامي
+
+ITEM 20230925_20230925_1917 :: فرقة النور - أفراح النور شامي
+   CAND فرقة النور - أفراح النور شامي/ادللي يا عروسة.mp3  size=4.1MB  title=ادللي يا عروسة
+   CAND فرقة النور - أفراح النور شامي/ادللي يا عروسة.mp3  size=4.1MB  title=ادللي يا عروسة
+   CAND فرقة النور - أفراح النور شامي/دخول العروسة الفرح.mp3  size=8.9MB  title=دخول العروسة الفرح
+   CAND فرقة النور - أفراح النور شامي/طلي علينا.mp3  size=9.1MB  title=طلي علينا
+   CAND فرقة النور - أفراح النور شامي/يا عريس لبس.mp3  size=6.1MB  title=يا عريس لبس
+   CAND فرقة النور - أفراح النور شامي/يا هلا حيوا الضيوف.mp3  size=13.8MB  title=يا هلا حيوا الضيوف
+   CAND فرقة النور - أفراح النور شامي/دخول العروسة الفرح.mp3  size=8.9MB  title=دخول العروسة الفرح
+   CAND فرقة النور - أفراح النور شامي/طلي علينا.mp3  size=9.1MB  title=طلي علينا
+   CAND فرقة النور - أفراح النور شامي/يا عريس لبس.mp3  size=6.1MB  title=يا عريس لبس
+   CAND فرقة النور - أفراح النور شامي/يا هلا حيوا الضيوف.mp3  size=13.8MB  title=يا هلا حيوا الضيوف
+
+ITEM 20230924_20230924_1454 :: فرقة الروابي - شرقية غربية أفراح شامي
+
+ITEM 20230924_20230924_1454 :: فرقة الروابي - شرقية غربية أفراح شامي
+   CAND فرقة الروابي - شرقية غربية أفراح شامي/تلبيسة - اسم الله على العريس.mp3  size=12.4MB  title=تلبيسة - اسم الله على العريس
+   CAND فرقة الروابي - شرقية غربية أفراح شامي/تلبيسة - اسم الله على العريس.mp3  size=12.4MB  title=تلبيسة - اسم الله على العريس
+   CAND فرقة الروابي - شرقية غربية أفراح شامي/مباركين أعز الاثنين.mp3  size=9.1MB  title=مباركين أعز الاثنين
+   CAND فرقة الروابي - شرقية غربية أفراح شامي/مباركين أعز الاثنين.mp3  size=9.1MB  title=مباركين أعز الاثنين
+   CAND فرقة الروابي - شرقية غربية أفراح شامي/وصلة هلا بيك.mp3  size=15.6MB  title=وصلة هلا بيك
+   CAND فرقة الروابي - شرقية غربية أفراح شامي/وصلة هلا بيك.mp3  size=15.6MB  title=وصلة هلا بيك
+   CAND فرقة الروابي - شرقية غربية أفراح شامي/يا حلالي يا مالي.mp3  size=4.5MB  title=يا حلالي يا مالي
+   CAND فرقة الروابي - شرقية غربية أفراح شامي/يا حلالي يا مالي.mp3  size=4.5MB  title=يا حلالي يا مالي
+
+ITEM 20230928_20230928_1039 :: مازن السعدي - قمر الليالي أفراح شامي
+
+ITEM 20230928_20230928_1039 :: مازن السعدي - قمر الليالي أفراح شامي
+   CAND مازن السعدي - قمر الليالي أفراح شامي/الفرح معانا.mp3  size=7.0MB  title=الفرح معانا
+   CAND مازن السعدي - قمر الليالي أفراح شامي/الفرح معانا.mp3  size=7.0MB  title=الفرح معانا
+   CAND مازن السعدي - قمر الليالي أفراح شامي/بسم الهادي بدينا.mp3  size=4.8MB  title=بسم الهادي بدينا
+   CAND مازن السعدي - قمر الليالي أفراح شامي/بسم الهادي بدينا.mp3  size=4.8MB  title=بسم الهادي بدينا
+   CAND مازن السعدي - قمر الليالي أفراح شامي/عراضة شامية.mp3  size=3.7MB  title=عراضة شامية
+   CAND مازن السعدي - قمر الليالي أفراح شامي/عراضة شامية.mp3  size=3.7MB  title=عراضة شامية
+   CAND مازن السعدي - قمر الليالي أفراح شامي/على الهادي صل - قوموا لبونا.mp3  size=8.4MB  title=على الهادي صل - قوموا لبونا
+   CAND مازن السعدي - قمر الليالي أفراح شامي/على الهادي صل - قوموا لبونا.mp3  size=8.4MB  title=على الهادي صل - قوموا لبونا
+   CAND مازن السعدي - قمر الليالي أفراح شامي/على الهادي صل.mp3  size=2.0MB  title=على الهادي صل
+   CAND مازن السعدي - قمر الليالي أفراح شامي/على الهادي صل.mp3  size=2.0MB  title=على الهادي صل
+   CAND مازن السعدي - قمر الليالي أفراح شامي/ندعي وياكم.mp3  size=5.7MB  title=ندعي وياكم
+   CAND مازن السعدي - قمر الليالي أفراح شامي/ندعي وياكم.mp3  size=5.7MB  title=ندعي وياكم
+   CAND مازن السعدي - قمر الليالي أفراح شامي/يا قمر الليالي.mp3  size=5.1MB  title=يا قمر الليالي
+   CAND مازن السعدي - قمر الليالي أفراح شامي/يا قمر الليالي.mp3  size=5.1MB  title=يا قمر الليالي
+   CAND مازن السعدي - قمر الليالي أفراح شامي/يا هلا.mp3  size=11.5MB  title=يا هلا
+   CAND مازن السعدي - قمر الليالي أفراح شامي/يا هلا.mp3  size=11.5MB  title=يا هلا
+
+ITEM somayaaziz_2_201803 :: زفة 2مارس
+
+ITEM somayaaziz_2_201803 :: زفة 2مارس
+   CAND زفة 2مارس.mp3  size=70.8MB  title=Untitled - 1
+   CAND زفة 2مارس.mp3  size=70.8MB  title=Untitled - 1
+   CAND زفة 2مارس.ogg  size=24.4MB  title=
+   CAND زفة 2مارس.ogg  size=24.4MB  title=
+
+ITEM somayaaziz_2 :: زفة 2 مارس
+
+ITEM somayaaziz_2 :: زفة 2 مارس
+   CAND زفة 2 مارس.mp3  size=78.3MB  title=Untitled - 1
+   CAND زفة 2 مارس.mp3  size=78.3MB  title=Untitled - 1
+   CAND زفة 2 مارس.ogg  size=26.6MB  title=
+   CAND زفة 2 مارس.ogg  size=26.6MB  title=
+
+ITEM 20230926_20230926_1716 :: فرقة الهلال - ألبوم ألف ليلة وليلة أفراح شامي
+
+ITEM 20230926_20230926_1716 :: فرقة الهلال - ألبوم ألف ليلة وليلة أفراح شامي
+   CAND فرقة الهلال - ألبوم ألف ليلة وليلة أفراح شامي/أهو يا هو.mp3  size=4.1MB  title=أهو يا هو
+   CAND فرقة الهلال - ألبوم ألف ليلة وليلة أفراح شامي/أهو يا هو.mp3  size=4.1MB  title=أهو يا هو
+   CAND فرقة الهلال - ألبوم ألف ليلة وليلة أفراح شامي/بسم الله توكلنا.mp3  size=4.1MB  title=بسم الله توكلنا
+   CAND فرقة الهلال - ألبوم ألف ليلة وليلة أفراح شامي/بسم الله توكلنا.mp3  size=4.1MB  title=بسم الله توكلنا
+   CAND فرقة الهلال - ألبوم ألف ليلة وليلة أفراح شامي/بنبارك.mp3  size=3.4MB  title=بنبارك
+   CAND فرقة الهلال - ألبوم ألف ليلة وليلة أفراح شامي/بنبارك.mp3  size=3.4MB  title=بنبارك
+   CAND فرقة الهلال - ألبوم ألف ليلة وليلة أفراح شامي/زين ما اخترت.mp3  size=4.2MB  title=زين ما اخترت
+   CAND فرقة الهلال - ألبوم ألف ليلة وليلة أفراح شامي/زين ما اخترت.mp3  size=4.2MB  title=زين ما اخترت
+   CAND فرقة الهلال - ألبوم ألف ليلة وليلة أفراح شامي/قالوا القمر.mp3  size=4.4MB  title=قالوا القمر
+   CAND فرقة الهلال - ألبوم ألف ليلة وليلة أفراح شامي/قالوا القمر.mp3  size=4.4MB  title=قالوا القمر
+   CAND فرقة الهلال - ألبوم ألف ليلة وليلة أفراح شامي/هلا هلا.mp3  size=3.2MB  title=هلا هلا
+   CAND فرقة الهلال - ألبوم ألف ليلة وليلة أفراح شامي/هلا هلا.mp3  size=3.2MB  title=هلا هلا
+
+ITEM 20230924_20230924_1019 :: فرقة البيارق - أفراح البيارق شامي
+
+ITEM 20230924_20230924_1019 :: فرقة البيارق - أفراح البيارق شامي
+   CAND فرقة البيارق - أفراح البيارق شامي/البداوية.mp3  size=24.8MB  title=البداوية
+   CAND فرقة البيارق - أفراح البيارق شامي/البداوية.mp3  size=24.8MB  title=البداوية
+   CAND فرقة البيارق - أفراح البيارق شامي/الدبكة الشعبية.mp3  size=14.9MB  title=الدبكة الشعبية
+   CAND فرقة البيارق - أفراح البيارق شامي/الدبكة الشعبية.mp3  size=14.9MB  title=الدبكة الشعبية
+   CAND فرقة البيارق - أفراح البيارق شامي/الفرحة الإسلامية.mp3  size=5.4MB  title=الفرحة الإسلامية
+   CAND فرقة البيارق - أفراح البيارق شامي/الفرحة الإسلامية.mp3  size=5.4MB  title=الفرحة الإسلامية
+   CAND فرقة البيارق - أفراح البيارق شامي/المقدمة.mp3  size=0.6MB  title=المقدمة
+   CAND فرقة البيارق - أفراح البيارق شامي/المقدمة.mp3  size=0.6MB  title=المقدمة
+   CAND فرقة البيارق - أفراح البيارق شامي/راية إسلامية.mp3  size=3.9MB  title=راية إسلامية
+   CAND فرقة البيارق - أفراح البيارق شامي/راية إسلامية.mp3  size=3.9MB  title=راية إسلامية
+   CAND فرقة البيارق - أفراح البيارق شامي/طاب الغنى.mp3  size=5.7MB  title=طاب الغنى
+   CAND فرقة البيارق - أفراح البيارق شامي/طاب الغنى.mp3  size=5.7MB  title=طاب الغنى
+   CAND فرقة البيارق - أفراح البيارق شامي/طيب الأحباب.mp3  size=3.0MB  title=طيب الأحباب
+   CAND فرقة البيارق - أفراح البيارق شامي/طيب الأحباب.mp3  size=3.0MB  title=طيب الأحباب
+   CAND فرقة البيارق - أفراح البيارق شامي/طير يا حمام.mp3  size=4.9MB  title=طير يا حمام
+   CAND فرقة البيارق - أفراح البيارق شامي/طير يا حمام.mp3  size=4.9MB  title=طير يا حمام
+   CAND فرقة البيارق - أفراح البيارق شامي/نسايم طيبة.mp3  size=3.2MB  title=نسايم طيبة
+   CAND فرقة البيارق - أفراح البيارق شامي/نسايم طيبة.mp3  size=3.2MB  title=نسايم طيبة
+   CAND فرقة البيارق - أفراح البيارق شامي/هيها طلت.mp3  size=3.9MB  title=هيها طلت
+   CAND فرقة البيارق - أفراح البيارق شامي/هيها طلت.mp3  size=3.9MB  title=هيها طلت
+
+ITEM 20230927_20230927_2004 :: فرقة ليالي مصر - قريب مني أفراح مصري
+
+ITEM 20230927_20230927_2004 :: فرقة ليالي مصر - قريب مني أفراح مصري
+   CAND فرقة ليالي مصر - قريب مني أفراح مصري/إفرد الوعك.mp3  size=5.1MB  title=افرد الوعك
+   CAND فرقة ليالي مصر - قريب مني أفراح مصري/إفرد الوعك.mp3  size=5.1MB  title=افرد الوعك
+   CAND فرقة ليالي مصر - قريب مني أفراح مصري/انسى همومك.mp3  size=4.6MB  title=انسى همومك
+   CAND فرقة ليالي مصر - قريب مني أفراح مصري/تعال نفتكر.mp3  size=5.3MB  title=تعال نفتكر
+   CAND فرقة ليالي مصر - قريب مني أفراح مصري/علمني ترابك.mp3  size=3.1MB  title=علمني ترابك
+   CAND فرقة ليالي مصر - قريب مني أفراح مصري/قريب مني.mp3  size=4.3MB  title=قريب مني
+   CAND فرقة ليالي مصر - قريب مني أفراح مصري/لما القلبين.mp3  size=5.5MB  title=لما القلبين
+   CAND فرقة ليالي مصر - قريب مني أفراح مصري/انسى همومك.mp3  size=4.6MB  title=انسى همومك
+   CAND فرقة ليالي مصر - قريب مني أفراح مصري/تعال نفتكر.mp3  size=5.3MB  title=تعال نفتكر
+   CAND فرقة ليالي مصر - قريب مني أفراح مصري/علمني ترابك.mp3  size=3.1MB  title=علمني ترابك
+   CAND فرقة ليالي مصر - قريب مني أفراح مصري/قريب مني.mp3  size=4.3MB  title=قريب مني
+   CAND فرقة ليالي مصر - قريب مني أفراح مصري/لما القلبين.mp3  size=5.5MB  title=لما القلبين
+
+ITEM Wjdan_201605 :: زفة وجدان & عبدالمجيد ..
+
+ITEM Wjdan_201605 :: زفة وجدان & عبدالمجيد ..
+   CAND زفة وجدان & عبدالمجيد ...ogg  size=3.2MB  title=
+   CAND زفة وجدان & عبدالمجيد ...ogg  size=3.2MB  title=
+
+ITEM 20230927_20230927_2005 :: فرقة مودة - هلت الفرحة 2010 أفراح شامي
+
+ITEM 20230927_20230927_2005 :: فرقة مودة - هلت الفرحة 2010 أفراح شامي
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/صلوا ع محمد.mp3  size=4.6MB  title=صلوا ع محمد
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/صلوا ع محمد.mp3  size=4.6MB  title=صلوا ع محمد
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/علوا الزغاريد.mp3  size=4.4MB  title=علوا الزغاريد
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/على دلعونة.mp3  size=4.2MB  title=على دلعونة
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/مبروك.mp3  size=3.7MB  title=مبروك
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/نجحنا.mp3  size=4.3MB  title=نجحنا
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/وصلة الأفراح.mp3  size=5.1MB  title=وصلة الأفراح
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/يا سلام.mp3  size=4.1MB  title=يا سلام
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/يا غالي.mp3  size=3.7MB  title=يا غالي
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/علوا الزغاريد.mp3  size=4.4MB  title=علوا الزغاريد
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/على دلعونة.mp3  size=4.2MB  title=على دلعونة
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/مبروك.mp3  size=3.7MB  title=مبروك
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/نجحنا.mp3  size=4.3MB  title=نجحنا
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/وصلة الأفراح.mp3  size=5.1MB  title=وصلة الأفراح
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/يا سلام.mp3  size=4.1MB  title=يا سلام
+   CAND فرقة مودة - هلت الفرحة 2010 أفراح شامي/يا غالي.mp3  size=3.7MB  title=يا غالي
+
+ITEM 20231006_20231006_1418 :: نصر حبيب الله - بنت البلد أفراح شامي
+
+ITEM 20231006_20231006_1418 :: نصر حبيب الله - بنت البلد أفراح شامي
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/افتتاحية القرآن.mp3  size=1.7MB  title=افتتاحية القرآن
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/الله يحماها عروستنا - الفل الفل.mp3  size=7.2MB  title=الله يحماها عروستنا - الفل الفل
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/بنت البلد.mp3  size=4.5MB  title=بنت البلد
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/دق الطبل.mp3  size=4.0MB  title=دق الطبل
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/زينت الدار.mp3  size=4.9MB  title=زينت الدار
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/طل العريس.mp3  size=5.1MB  title=طل العريس
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/طلة العروسة + قمر منور علينا.mp3  size=5.4MB  title=طلة العروسة + قمر منور علينا
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/عامر فرحكم.mp3  size=8.6MB  title=عامر فرحكم
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/والله محتاجك يا خي - يا ريح وصلني.mp3  size=11.3MB  title=والله محتاجك يا خي - يا ريح وصلني
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/يا خوي لدار الأهل أشواقي.mp3  size=7.0MB  title=يا خوي لدار الأهل أشواقي
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/يا فتى العشرين.mp3  size=7.4MB  title=يا فتى العشرين
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/افتتاحية القرآن.mp3  size=1.7MB  title=افتتاحية القرآن
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/الله يحماها عروستنا - الفل الفل.mp3  size=7.2MB  title=الله يحماها عروستنا - الفل الفل
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/بنت البلد.mp3  size=4.5MB  title=بنت البلد
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/دق الطبل.mp3  size=4.0MB  title=دق الطبل
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/زينت الدار.mp3  size=4.9MB  title=زينت الدار
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/طل العريس.mp3  size=5.1MB  title=طل العريس
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/طلة العروسة + قمر منور علينا.mp3  size=5.4MB  title=طلة العروسة + قمر منور علينا
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/عامر فرحكم.mp3  size=8.6MB  title=عامر فرحكم
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/والله محتاجك يا خي - يا ريح وصلني.mp3  size=11.3MB  title=والله محتاجك يا خي - يا ريح وصلني
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/يا خوي لدار الأهل أشواقي.mp3  size=7.0MB  title=يا خوي لدار الأهل أشواقي
+   CAND نصر حبيب الله - بنت البلد أفراح شامي/يا فتى العشرين.mp3  size=7.4MB  title=يا فتى العشرين
+
+ITEM 3_20190716_20190716_2047 :: زفة 3 الحب لك مقطع اعلاني موسيقى
+
+ITEM 3_20190716_20190716_2047 :: زفة 3 الحب لك مقطع اعلاني موسيقى
+   CAND زفة 3 الحب لك مقطع اعلاني ايقاع.mp3  size=0.8MB  title=Ø²ÙØ© 3 Ø§Ù„Ø­Ø¨ Ù„Ùƒ Ù…Ù‚Ø·Ø
+   CAND زفة 3 الحب لك مقطع اعلاني ايقاع.ogg  size=0.6MB  title=
+   CAND زفة 3 الحب لك مقطع اعلاني دف.mp3  size=0.8MB  title=Ø²ÙØ© 3 Ø§Ù„Ø­Ø¨ Ù„Ùƒ Ù…Ù‚Ø·Ø
+   CAND زفة 3 الحب لك مقطع اعلاني دف.ogg  size=0.6MB  title=
+   CAND زفة 3 الحب لك مقطع اعلاني موسيقى.mp3  size=0.8MB  title=Ø²ÙØ© 3 Ø§Ù„Ø­Ø¨ Ù„Ùƒ Ù…Ù‚Ø·Ø
+   CAND زفة 3 الحب لك مقطع اعلاني موسيقى.ogg  size=0.6MB  title=
+   CAND زفة 3 الحب لك مقطع اعلاني ايقاع.mp3  size=0.8MB  title=Ø²ÙØ© 3 Ø§Ù„Ø­Ø¨ Ù„Ùƒ Ù…Ù‚Ø·Ø
+   CAND زفة 3 الحب لك مقطع اعلاني ايقاع.ogg  size=0.6MB  title=
+   CAND زفة 3 الحب لك مقطع اعلاني دف.mp3  size=0.8MB  title=Ø²ÙØ© 3 Ø§Ù„Ø­Ø¨ Ù„Ùƒ Ù…Ù‚Ø·Ø
+   CAND زفة 3 الحب لك مقطع اعلاني دف.ogg  size=0.6MB  title=
+   CAND زفة 3 الحب لك مقطع اعلاني موسيقى.mp3  size=0.8MB  title=Ø²ÙØ© 3 Ø§Ù„Ø­Ø¨ Ù„Ùƒ Ù…Ù‚Ø·Ø
+   CAND زفة 3 الحب لك مقطع اعلاني موسيقى.ogg  size=0.6MB  title=
+
+ITEM 20250325_20250325_2306 :: البرنامج الخاص أفراح العودة برنامج خاص عن سيناء كتبه جمال بدران إخراج ملكة نجيب
+
+ITEM 20250325_20250325_2306 :: البرنامج الخاص أفراح العودة برنامج خاص عن سيناء كتبه جمال بدران إخراج ملكة نجيب
+   CAND البرنامج الخاص أفراح العودة برنامج خاص عن سيناء كتبه جمال بدران إخراج ملكة نجيب.MP3  size=57.5MB  title=
+   CAND البرنامج الخاص أفراح العودة برنامج خاص عن سيناء كتبه جمال بدران إخراج ملكة نجيب.MP3  size=57.5MB  title=
+
+ITEM 20260131_20260131_1305 :: الشيخ اشرف الهوي يتألق في المقامات في حفل زفاف احمد محمود ابراهيم الدكروني
+
+ITEM 20260131_20260131_1305 :: الشيخ اشرف الهوي يتألق في المقامات في حفل زفاف احمد محمود ابراهيم الدكروني
+   CAND الشيخ اشرف الهوي يتألق في المقامات في حفل زفاف احمد محمود ابراهيم الدكروني.mp3  size=40.7MB  title=الشيخ اشرف الهوي يتألق في المقامات في حفل زفاف احمد محمود اب
+   CAND الشيخ اشرف الهوي يتألق في المقامات في حفل زفاف احمد محمود ابراهيم الدكروني.mp3  size=40.7MB  title=الشيخ اشرف الهوي يتألق في المقامات في حفل زفاف احمد محمود اب
+
+ITEM partybox_22 :: زفة 2 الاصلية
+
+ITEM partybox_22 :: زفة 2 الاصلية
+   CAND زفة 2 الاصلية.mp3  size=49.8MB  title=Untitled - 1
+   CAND زفة 2 الاصلية.mp3  size=49.8MB  title=Untitled - 1
+   CAND زفة 2 الاصلية.ogg  size=19.4MB  title=
+   CAND زفة 2 الاصلية.ogg  size=19.4MB  title=
+
+ITEM 20260306_20260306_1627 :: أفراح آل الشيخ جزيرة دندرة قنا زواج الأستاذ محمد و محمود احمدبرعي
+
+ITEM 20260306_20260306_1627 :: أفراح آل الشيخ جزيرة دندرة قنا زواج الأستاذ محمد و محمود احمدبرعي
+   CAND الشيخ محمود البدرى ابوعوض المنشاوي أفراح آل الشيخ جزيرة دندرة قنا زواج الأستاذ محمد و محمود احمدبرعي.mp3  size=156.1MB  title=
+   CAND الشيخ محمود البدرى ابوعوض المنشاوي أفراح آل الشيخ جزيرة دندرة قنا زواج الأستاذ محمد و محمود احمدبرعي.mp3  size=156.1MB  title=
+
+### query: "Muhammad Al Muqit" AND mediatype:(audio)  -> 50 items
+
+### query: "Muhammad Al Muqit" AND mediatype:(audio)  -> 50 items
+
+ITEM my-dream-slowed-reverb-by-muhammad-al-muqit-vocals-only_202401 :: My Dream Slowed + Reverb By Muhammad Al Muqit Vocals Only!
+
+ITEM my-dream-slowed-reverb-by-muhammad-al-muqit-vocals-only_202401 :: My Dream Slowed + Reverb By Muhammad Al Muqit Vocals Only!
+
+ITEM muhammad-al-muqit :: Muhammad Al-Muqit - محمد المقيط
+
+ITEM muhammad-al-muqit :: Muhammad Al-Muqit - محمد المقيط
+
+ITEM Ana-Moslimon :: Ana-Moslimon
+
+ITEM Ana-Moslimon :: Ana-Moslimon
+
+ITEM SurahAlMulkMuhammadAlMuqit :: سورة الملك محمد المقيط Surah Al Mulk Muhammad Al Muqit
+
+ITEM SurahAlMulkMuhammadAlMuqit :: سورة الملك محمد المقيط Surah Al Mulk Muhammad Al Muqit
+
+ITEM my-dream-muhammad-al-muqitnasheed-sped-up-version :: My Dream Muhammad Al Muqit(nasheed) Sped Up Version
+
+ITEM my-dream-muhammad-al-muqitnasheed-sped-up-version :: My Dream Muhammad Al Muqit(nasheed) Sped Up Version
+
+ITEM the-way-of-the-tears-exclusive-nasheed-muhammad-al-muqit_202205 :: The Way Of The Tears Exclusive Nasheed Muhammad Al Muqit
+
+ITEM the-way-of-the-tears-exclusive-nasheed-muhammad-al-muqit_202205 :: The Way Of The Tears Exclusive Nasheed Muhammad Al Muqit
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed :: Backsound Wedding
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed :: Backsound Wedding
+
+ITEM TheWayOfTheTearsExclusiveNasheedMuhammadAlMuqit_201501 :: The Way Of The Tears Exclusive Nasheed Muhammad Al Muqit
+
+ITEM TheWayOfTheTearsExclusiveNasheedMuhammadAlMuqit_201501 :: The Way Of The Tears Exclusive Nasheed Muhammad Al Muqit
+
+ITEM admin_idealwoman_201309 :: غراس الأخلاق محمد المقيط
+
+ITEM admin_idealwoman_201309 :: غراس الأخلاق محمد المقيط
+
+ITEM Muhammad-AlMuqit-nasheed :: Muhammad Al Muqit Nasheed
+
+ITEM Muhammad-AlMuqit-nasheed :: Muhammad Al Muqit Nasheed
+   CAND Afrahaan Kubraa.mp3  size=6.1MB  title=
+   CAND Afrahaan Kubraa.mp3  size=6.1MB  title=
+   CAND Afrahaan Kubraa.ogg  size=4.2MB  title=
+   CAND Afrahaan Kubraa.ogg  size=4.2MB  title=
+
+ITEM eidmubarakarabicnasheedahmedmuhammadalmuqit :: Eid Mubarak ( Arabic Nasheed) عيد مبارك Ahmed & Muhammad Al Muqit ( Bayram neşidi)
+
+ITEM eidmubarakarabicnasheedahmedmuhammadalmuqit :: Eid Mubarak ( Arabic Nasheed) عيد مبارك Ahmed & Muhammad Al Muqit ( Bayram neşidi)
+
+ITEM my-dream-slowed-reverb-by-muhammad-al-muqit-vocals-only_20240122 :: My Dream ( Slowed + Reverb) By Muhammad Al Muqit Vocals Only!
+
+ITEM my-dream-slowed-reverb-by-muhammad-al-muqit-vocals-only_20240122 :: My Dream ( Slowed + Reverb) By Muhammad Al Muqit Vocals Only!
+
+ITEM muhammad-al-muqit-wedding-mp-3.pm :: Pernikahan Muhammad Al Muqit (mp 3.pm)
+
+ITEM muhammad-al-muqit-wedding-mp-3.pm :: Pernikahan Muhammad Al Muqit (mp 3.pm)
+   CAND Muhammad_Al_Muqit_-_Wedding_(mp3.pm).mp3  size=3.0MB  title=
+   CAND Muhammad_Al_Muqit_-_Wedding_(mp3.pm).mp3  size=3.0MB  title=
+
+ITEM wedding-nasheed-muhammad-al-muqit-slowed-reverb :: 2023 Best Silent Nasheed Playlist
+
+ITEM wedding-nasheed-muhammad-al-muqit-slowed-reverb :: 2023 Best Silent Nasheed Playlist
+   CAND Wedding Nasheed - Muhammad Al Muqit _ Slowed + Reverb _.mp3  size=9.7MB  title=
+   CAND Wedding Nasheed - Muhammad Al Muqit _ Slowed + Reverb _.mp3  size=9.7MB  title=
+
+ITEM nasheed-slowed :: Slowed Down Nasheeds - 7 Nasheeds (slowed + reverb) | ΛΞＳＴＨΣＴＩＣ░ＮΛＳＨΣΣＤＳ　（ゃスほ）
+
+ITEM nasheed-slowed :: Slowed Down Nasheeds - 7 Nasheeds (slowed + reverb) | ΛΞＳＴＨΣＴＩＣ░ＮΛＳＨΣΣＤＳ　（ゃスほ）
+
+ITEM InniAlQaleiNasMuhammadAlMuqit :: Inni Al Qalei Nas Muhammad Al Muqit
+
+ITEM InniAlQaleiNasMuhammadAlMuqit :: Inni Al Qalei Nas Muhammad Al Muqit
+
+ITEM salamun-salamun-mashup-nasheed :: Nasheed Mashup - Hello, as you hold the ends - Ibrahim Tarsha, Hammoud Al-Khudir, Muhammad Al-Basheer, Ahmad Al-Nufais, 
+
+ITEM salamun-salamun-mashup-nasheed :: Nasheed Mashup - Hello, as you hold the ends - Ibrahim Tarsha, Hammoud Al-Khudir, Muhammad Al-Basheer, Ahmad Al-Nufais, 
+
+ITEM Anasheedul_Islamiya :: Arabic Nasheed
+
+ITEM Anasheedul_Islamiya :: Arabic Nasheed
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed_20250926 :: Backsound Wedding
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed_20250926 :: Backsound Wedding
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed_202509 :: Backsoud Wedding
+
+ITEM wedding-nasheed-muhammad-al-muqit-lyrics-arabic-terjemahan-arabic-nasheed_202509 :: Backsoud Wedding
+
+ITEM taweel-al-shawq-nasheed-muhammad-al-muqit :: Don't Smoke Guys! - Abdullah Al-Muhaidib | شيلة لا للتدخين يا رجال - عبدالله المهيدب (توزيع عبدالله السكيتي)
+
+ITEM taweel-al-shawq-nasheed-muhammad-al-muqit :: Don't Smoke Guys! - Abdullah Al-Muhaidib | شيلة لا للتدخين يا رجال - عبدالله المهيدب (توزيع عبدالله السكيتي)
+
+ITEM AnNooruAlBasanaMuslimmedya.org :: An Nooru Al Basana Muhammad al Muqit
+
+ITEM AnNooruAlBasanaMuslimmedya.org :: An Nooru Al Basana Muhammad al Muqit
+
+ITEM Ya_Hafidh_Al_Quran_Muhammad_al_Muqit :: Ya Hafidh Al Quran Ya Hafidh Al Quran
+
+ITEM Ya_Hafidh_Al_Quran_Muhammad_al_Muqit :: Ya Hafidh Al Quran Ya Hafidh Al Quran
+
+ITEM SurahAlMulkMuhammadAlMuqit_201610 :: Surah Al Mulk Muhammad Al Muqit
+
+ITEM SurahAlMulkMuhammadAlMuqit_201610 :: Surah Al Mulk Muhammad Al Muqit
+
+ITEM HarunAli :: HarunAli
+
+ITEM HarunAli :: HarunAli
+
+ITEM my-dream-slowed-reverb-by-muhammad-al-muqit-vocals-only :: My Dream Slowed + Reverb By Muhammad Al Muqit Vocals Only!
+
+ITEM my-dream-slowed-reverb-by-muhammad-al-muqit-vocals-only :: My Dream Slowed + Reverb By Muhammad Al Muqit Vocals Only!
+
+ITEM TwoSlowNasheedsMuhammadAlMuqit :: Two Slow Nasheeds Muhammad Al Muqit
+
+ITEM TwoSlowNasheedsMuhammadAlMuqit :: Two Slow Nasheeds Muhammad Al Muqit
+
+ITEM HibiAnsarAlHudaEngSubsMuhammadAlMuqit1 :: Hibi Ansar Al Hudaᴴᴰ محمد المقيط ( Eng Subs) Muhammad Al Muqit ( 1)
+
+ITEM HibiAnsarAlHudaEngSubsMuhammadAlMuqit1 :: Hibi Ansar Al Hudaᴴᴰ محمد المقيط ( Eng Subs) Muhammad Al Muqit ( 1)
+
+ITEM MuhammadAlMuqit-Qeerat :: Muhammad Al Muqit - Qeerat
+
+ITEM MuhammadAlMuqit-Qeerat :: Muhammad Al Muqit - Qeerat
+
+ITEM my-hope-muhammad-al-muqit-nasheeds :: My Hope-muhammad al muqit nasheeds
+
+ITEM my-hope-muhammad-al-muqit-nasheeds :: My Hope-muhammad al muqit nasheeds
+
+ITEM musliman-kuntu-wa-abqa-musliman-muhammad-al-muqit :: Musliman Kuntu Wa Abqa Musliman ( Muhammad Al Muqit )
+
+ITEM musliman-kuntu-wa-abqa-musliman-muhammad-al-muqit :: Musliman Kuntu Wa Abqa Musliman ( Muhammad Al Muqit )
+
+ITEM y-2mate.com-the-way-of-the-tears-exclusive-nasheed-muhammad-al-muqit :: The Way Of The Tears Exclusive Nasheed Muhammad Al Muqit
+
+ITEM y-2mate.com-the-way-of-the-tears-exclusive-nasheed-muhammad-al-muqit :: The Way Of The Tears Exclusive Nasheed Muhammad Al Muqit
+
+DONE candidates=4
+
+DONE candidates=4
