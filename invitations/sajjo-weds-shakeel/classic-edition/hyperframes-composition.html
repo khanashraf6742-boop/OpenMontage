@@ -66,13 +66,12 @@
       --bg-obsidian: #0E0405;
       --gold-bright: #F5DC9B;
       --gold-antique: #D8B160;
-      --gold-muted: #B88E42;
       --ivory-pure: #FFF9EE;
       --ivory-warm: #F8ECD8;
       --vellum-cream: #FAF1E2;
-      --ink-espresso: #1C0904;
+      --ink-espresso: #1B0804;
       --ink-crimson: #5B1416;
-      --plaque-bg: rgba(13, 4, 5, 0.94);
+      --plaque-bg: rgba(13, 4, 5, 0.95);
     }
 
     *, *::before, *::after {
@@ -100,7 +99,7 @@
       background: var(--bg-obsidian);
     }
 
-    /* Shared Seamless Classical Backdrops */
+    /* Static Crisp Classical Backdrops (Zero sub-pixel drift so WhatsApp P_SKIP frames lock crystal-sharp!) */
     .backdrop-stage {
       position: absolute;
       inset: 0;
@@ -111,12 +110,11 @@
 
     .bg-plate {
       position: absolute;
-      inset: -24px;
-      width: calc(100% + 48px);
-      height: calc(100% + 48px);
+      inset: 0;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       opacity: 0;
-      will-change: transform, opacity;
     }
 
     .bg-scrim {
@@ -125,49 +123,28 @@
       z-index: 2;
       background: radial-gradient(
         ellipse 82% 76% at 50% 50%,
-        rgba(12, 4, 5, 0.22) 0%,
-        rgba(12, 4, 5, 0.56) 72%,
-        rgba(10, 3, 4, 0.80) 100%
+        rgba(12, 4, 5, 0.24) 0%,
+        rgba(12, 4, 5, 0.58) 72%,
+        rgba(10, 3, 4, 0.82) 100%
       );
       pointer-events: none;
     }
 
-    /* Subtle Regal Filigree Border Frame */
     .imperial-border {
       position: absolute;
-      inset: 22px;
+      inset: 18px;
       z-index: 3;
       border: 1.5px solid rgba(216, 177, 96, 0.42);
       border-radius: 14px;
       pointer-events: none;
     }
-    .imperial-border::after {
-      content: "";
-      position: absolute;
-      inset: 7px;
-      border: 1px solid rgba(245, 220, 155, 0.22);
-      border-radius: 10px;
-    }
 
-    /* Soft Golden Candlelight Motes (strictly behind cards so they never obscure text) */
-    .motes-layer {
-      position: absolute;
-      inset: 0;
-      z-index: 3;
-      pointer-events: none;
-    }
-    .mote {
-      position: absolute;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(247, 224, 163, 0.85) 0%, rgba(216, 177, 96, 0.25) 55%, rgba(216, 177, 96, 0) 100%);
-    }
-
-    /* Act Scenes */
+    /* Act Scenes — Wider 996px usable width for maximum mobile & WhatsApp legibility */
     .act {
       position: absolute;
       inset: 0;
       z-index: 5;
-      padding: 58px 54px;
+      padding: 42px 24px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -186,15 +163,14 @@
       text-align: center;
     }
 
-    /* High-Contrast Regal Header Plaques */
     .header-plaque {
       background: var(--plaque-bg);
-      border: 1.6px solid rgba(216, 177, 96, 0.68);
+      border: 1.8px solid rgba(216, 177, 96, 0.72);
       border-radius: 18px;
-      padding: 20px 34px;
+      padding: 18px 30px;
       width: 100%;
-      max-width: 964px;
-      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.62);
+      max-width: 1032px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
     }
 
     .act-kicker {
@@ -204,7 +180,7 @@
       letter-spacing: 0.13em;
       text-transform: uppercase;
       color: var(--gold-bright);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .arabic-invocation {
@@ -232,7 +208,7 @@
       line-height: 1.16;
       letter-spacing: 0.04em;
       color: var(--ivory-pure);
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .act-sub {
@@ -240,11 +216,11 @@
       font-weight: 600;
       font-style: italic;
       font-size: 32px;
-      line-height: 1.3;
+      line-height: 1.28;
       color: var(--ivory-warm);
     }
 
-    /* Flat, Razor-Sharp 2D Card Mounts (ZERO 3D tilt, ZERO glare wash!) */
+    /* Flat, Locked-Still 2D Card Mounts + Inner Optical Magnifier Viewport */
     .card-frame {
       position: relative;
       z-index: 6;
@@ -252,34 +228,39 @@
       padding: 10px;
       background: linear-gradient(145deg, #E2BE72 0%, #9E7429 50%, #DFBA6D 100%);
       box-shadow:
-        0 28px 68px rgba(0, 0, 0, 0.76),
-        0 0 0 2px rgba(255, 244, 214, 0.32);
+        0 26px 64px rgba(0, 0, 0, 0.78),
+        0 0 0 2px rgba(255, 244, 214, 0.34);
       overflow: hidden;
-      transform-origin: 50% 50%;
     }
 
-    .card-frame img {
+    .card-viewport {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .card-viewport img {
       display: block;
       width: 100%;
       height: auto;
-      border-radius: 10px;
+      transform-origin: 50% 50%;
     }
 
-    .card-w-envelope { width: 964px; }
-    .card-w-wreath   { width: 912px; transform-origin: 50% 50.3%; }
-    .card-w-english  { width: 958px; }
-    .card-w-urdu     { width: 944px; }
-    .card-w-flap     { width: 956px; }
+    .card-w-envelope { width: 1032px; }
+    .card-w-wreath   { width: 1010px; }
+    .card-w-english  { width: 1032px; }
+    .card-w-urdu     { width: 1032px; }
+    .card-w-flap     { width: 1032px; }
 
-    /* High-Contrast Bottom Plaques */
     .footer-plaque {
       background: var(--plaque-bg);
-      border: 1.6px solid rgba(216, 177, 96, 0.68);
+      border: 1.8px solid rgba(216, 177, 96, 0.72);
       border-radius: 18px;
-      padding: 20px 34px;
+      padding: 18px 30px;
       width: 100%;
-      max-width: 964px;
-      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.65);
+      max-width: 1032px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
     }
 
     .plaque-eyebrow {
@@ -289,31 +270,31 @@
       letter-spacing: 0.13em;
       text-transform: uppercase;
       color: var(--gold-bright);
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
 
     .plaque-title {
       font-family: "Cinzel", Georgia, serif;
       font-weight: 700;
-      font-size: 42px;
-      line-height: 1.2;
+      font-size: 43px;
+      line-height: 1.18;
       color: var(--ivory-pure);
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
 
     .plaque-body {
       font-family: "Spectral", Georgia, serif;
       font-weight: 600;
       font-size: 31px;
-      line-height: 1.36;
+      line-height: 1.34;
       color: var(--ivory-warm);
     }
 
-    /* Act IV — Illuminated Royal Vellum Folio (Oversized Mobile-First Display) */
+    /* Act IV — Illuminated Royal Vellum Folio */
     .vellum-folio {
       position: relative;
       z-index: 6;
-      width: 964px;
+      width: 1032px;
       background: var(--vellum-cream);
       border: 4px solid #B58938;
       outline: 2px solid rgba(245, 220, 155, 0.55);
@@ -332,7 +313,7 @@
     .folio-hosts {
       font-family: "Cinzel", Georgia, serif;
       font-weight: 700;
-      font-size: 34px;
+      font-size: 35px;
       letter-spacing: 0.04em;
       color: var(--ink-espresso);
     }
@@ -341,24 +322,24 @@
       font-family: "Spectral", Georgia, serif;
       font-weight: 600;
       font-style: italic;
-      font-size: 31px;
+      font-size: 32px;
       line-height: 1.28;
       color: #2E130A;
     }
 
     .folio-script-name {
       font-family: "Great Vibes", cursive;
-      font-size: 104px;
+      font-size: 106px;
       line-height: 1.06;
       color: var(--ink-espresso);
-      -webkit-text-stroke: 0.8px var(--ink-espresso);
+      -webkit-text-stroke: 0.9px var(--ink-espresso);
       padding: 2px 10px;
     }
 
     .folio-lineage {
       font-family: "Spectral", Georgia, serif;
       font-weight: 600;
-      font-size: 32px;
+      font-size: 33px;
       line-height: 1.28;
       color: #2B1109;
     }
@@ -371,13 +352,13 @@
     }
     .folio-weds-badge span.rule {
       width: 110px;
-      height: 2px;
+      height: 2.2px;
       background: #8B5E2B;
     }
     .folio-weds-badge span.word {
       font-family: "Cinzel", Georgia, serif;
       font-weight: 700;
-      font-size: 30px;
+      font-size: 31px;
       letter-spacing: 0.22em;
       color: var(--ink-crimson);
     }
@@ -395,7 +376,7 @@
     .folio-date-main {
       font-family: "Cinzel", Georgia, serif;
       font-weight: 700;
-      font-size: 33px;
+      font-size: 34px;
       letter-spacing: 0.03em;
       color: var(--gold-bright);
       margin-bottom: 4px;
@@ -405,7 +386,7 @@
       font-family: "Spectral", Georgia, serif;
       font-weight: 600;
       font-style: italic;
-      font-size: 31px;
+      font-size: 32px;
       color: var(--ivory-pure);
     }
 
@@ -421,7 +402,7 @@
     .folio-venue-name {
       font-family: "Cinzel", Georgia, serif;
       font-weight: 700;
-      font-size: 52px;
+      font-size: 54px;
       line-height: 1.12;
       color: var(--ink-espresso);
     }
@@ -429,7 +410,7 @@
     .folio-venue-addr {
       font-family: "Spectral", Georgia, serif;
       font-weight: 600;
-      font-size: 34px;
+      font-size: 35px;
       color: #240E07;
     }
 
@@ -444,7 +425,7 @@
       font-family: "Spectral", Georgia, serif;
       font-weight: 600;
       font-style: italic;
-      font-size: 33px;
+      font-size: 34px;
       line-height: 1.3;
       color: var(--ink-crimson);
     }
@@ -458,7 +439,6 @@
       margin-top: 4px;
     }
 
-    /* Act V Urdu Blessing Line */
     .urdu-dua {
       font-family: "Noto Nastaliq Urdu", "Amiri", serif;
       font-weight: 700;
@@ -469,20 +449,19 @@
       margin-bottom: 6px;
     }
 
-    /* Act VI Finale RSVP & Couple Lockup */
     .rsvp-plaque {
       background: var(--plaque-bg);
       border: 1.8px solid rgba(216, 177, 96, 0.72);
       border-radius: 18px;
       padding: 22px 30px;
-      width: 956px;
+      width: 1032px;
       box-shadow: 0 18px 44px rgba(0, 0, 0, 0.65);
     }
 
     .rsvp-names {
       font-family: "Spectral", Georgia, serif;
       font-weight: 600;
-      font-size: 31px;
+      font-size: 32px;
       line-height: 1.44;
       color: var(--ivory-pure);
     }
@@ -492,13 +471,13 @@
       border: 2px solid #D8B160;
       border-radius: 20px;
       padding: 24px 36px;
-      width: 956px;
+      width: 1032px;
       box-shadow: 0 20px 48px rgba(0, 0, 0, 0.7);
     }
 
     .finale-couple {
       font-family: "Great Vibes", cursive;
-      font-size: 90px;
+      font-size: 92px;
       line-height: 1.08;
       color: var(--gold-bright);
       margin-bottom: 28px;
@@ -508,16 +487,15 @@
       font-family: "Cinzel", Georgia, serif;
       font-weight: 700;
       font-size: 30px;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.16em;
       color: var(--ivory-pure);
     }
   </style>
 </head>
 <body>
-  <div id="root" data-composition-id="root" data-width="1080" data-height="1920" data-fps="30" data-duration="64">
+  <div id="root" data-composition-id="root" data-width="1080" data-height="1920" data-fps="30" data-duration="64" data-hold>
     <audio id="bg-score" src="assets/audio/nocturne_imperiale.mp3" data-start="0" data-duration="64" preload="auto"></audio>
 
-    <!-- Shared Classical Backdrops -->
     <div class="backdrop-stage" data-layout-allow-overflow>
       <img id="bg-garnet" class="bg-plate" src="assets/bg_classic_garnet.jpg" alt="" />
       <img id="bg-palace" class="bg-plate" src="assets/bg_classic_palace.jpg" alt="" />
@@ -525,16 +503,6 @@
     </div>
     <div class="bg-scrim"></div>
     <div class="imperial-border"></div>
-
-    <!-- Ambient Candlelight Motes -->
-    <div class="motes-layer">
-      <div class="mote m1" style="width:14px;height:14px;left:12%;top:18%;"></div>
-      <div class="mote m2" style="width:18px;height:18px;left:86%;top:22%;"></div>
-      <div class="mote m3" style="width:12px;height:12px;left:16%;top:78%;"></div>
-      <div class="mote m4" style="width:16px;height:16px;left:84%;top:74%;"></div>
-      <div class="mote m5" style="width:10px;height:10px;left:48%;top:11%;"></div>
-      <div class="mote m6" style="width:14px;height:14px;left:52%;top:89%;"></div>
-    </div>
 
     <!-- ACT I (0.0s – 10.5s): Bismillah & Royal Envelope Front -->
     <section id="act-1" class="act">
@@ -545,7 +513,9 @@
       </div>
 
       <div class="card-frame card-w-envelope a1-card">
-        <img src="assets/cards/01_envelope_front.png" alt="Nikah Ceremony Envelope — Sajjo weds Shakeel" />
+        <div class="card-viewport">
+          <img class="a1-img" src="assets/cards/01_envelope_front.png" alt="Nikah Ceremony Envelope — Sajjo weds Shakeel" />
+        </div>
       </div>
 
       <div class="zone footer-plaque a1-bot">
@@ -555,7 +525,7 @@
       </div>
     </section>
 
-    <!-- ACT II (10.0s – 19.5s): Inner Floral Wreath & Glare-Free Brushed-Gold Coin -->
+    <!-- ACT II (10.0s – 19.5s): Inner Floral Wreath & Locked 1.56x Gold Coin Close-Up -->
     <section id="act-2" class="act">
       <div class="zone header-plaque a2-top">
         <div class="act-kicker">Chapter I · The Royal Crest</div>
@@ -563,7 +533,9 @@
       </div>
 
       <div class="card-frame card-w-wreath a2-card">
-        <img src="assets/cards/02_inner_cover_wreath.png" alt="Floral Wreath &amp; Brushed Gold Medallion — Sajjo weds Shakeel" />
+        <div class="card-viewport" data-layout-allow-overflow>
+          <img class="a2-img" src="assets/cards/02_inner_cover_wreath.png" alt="Floral Wreath &amp; Brushed Gold Medallion — Sajjo weds Shakeel" />
+        </div>
       </div>
 
       <div class="zone footer-plaque a2-bot">
@@ -572,16 +544,18 @@
       </div>
     </section>
 
-    <!-- ACT III (19.0s – 31.5s): Full Studio-Restored English Invitation Card -->
+    <!-- ACT III (19.0s – 31.5s): English Card — Full View + 2-Stop 1.42x Close-Up Read -->
     <section id="act-3" class="act">
-      <div class="zone header-plaque a3-top">
+      <div class="zone header-plaque a3-top" data-layout-allow-overlap>
         <div class="act-kicker">Chapter II · The Formal Invitation</div>
         <div class="act-heading">Mrs. &amp; Mr. Adalat Khan</div>
         <div class="act-sub">Request the Honour of Your Gracious Presence</div>
       </div>
 
       <div class="card-frame card-w-english a3-card">
-        <img src="assets/cards/03_english_card.png" alt="Formal English Nikah Invitation Card" />
+        <div class="card-viewport" data-layout-allow-overflow>
+          <img class="a3-img" src="assets/cards/03_english_card.png" alt="Formal English Nikah Invitation Card" />
+        </div>
       </div>
 
       <div class="zone footer-plaque a3-bot">
@@ -590,9 +564,9 @@
       </div>
     </section>
 
-    <!-- ACT IV (31.0s – 43.5s): Illuminated Royal Folio — Oversized Ceremony Details -->
+    <!-- ACT IV (31.0s – 43.5s): Illuminated Royal Folio — Oversized Ceremony Spotlight -->
     <section id="act-4" class="act">
-      <div class="zone header-plaque a4-top">
+      <div class="zone header-plaque a4-top" data-layout-allow-overlap>
         <div class="act-kicker">Chapter III · Ceremony &amp; Royal Venue</div>
         <div class="act-heading">The Sacred Nikah</div>
       </div>
@@ -602,7 +576,7 @@
         <div class="folio-invite-line a4-row">Cordially invite you to bless the Nikah Ceremony of their daughter</div>
 
         <div class="folio-script-name a4-row">Sajjo Bano</div>
-        <div class="folio-lineage a4-row">( Daughter of Mrs. &amp; Mr. Adalat Khan · Lucknow )</div>
+        <div class="folio-lineage a4-row">( Daughter of Mr. Adalat Khan · Lucknow )</div>
 
         <div class="folio-weds-badge a4-row">
           <span class="rule"></span>
@@ -631,7 +605,7 @@
       </div>
     </section>
 
-    <!-- ACT V (43.0s – 54.0s): Enlarged, Crystal-Sharp Urdu Dawatnama -->
+    <!-- ACT V (43.0s – 54.0s): Urdu Dawatnama — Full View + 2-Stop 1.42x Close-Up Read -->
     <section id="act-5" class="act">
       <div class="zone header-plaque a5-top">
         <div class="act-kicker">Chapter IV · Tehzeeb-e-Lucknow</div>
@@ -639,7 +613,9 @@
       </div>
 
       <div class="card-frame card-w-urdu a5-card">
-        <img src="assets/cards/04_urdu_card.png" alt="Traditional Urdu Nastaliq Nikah Card" />
+        <div class="card-viewport" data-layout-allow-overflow>
+          <img class="a5-img" src="assets/cards/04_urdu_card.png" alt="Traditional Urdu Nastaliq Nikah Card" />
+        </div>
       </div>
 
       <div class="zone footer-plaque a5-bot">
@@ -656,7 +632,9 @@
       </div>
 
       <div class="card-frame card-w-flap a6-card">
-        <img src="assets/cards/05_sender_seal_crop.png" alt="From Adalat Khan — Address and Contact Numbers" />
+        <div class="card-viewport">
+          <img class="a6-img" src="assets/cards/05_sender_seal_crop.png" alt="From Adalat Khan — Address and Contact Numbers" />
+        </div>
       </div>
 
       <div class="zone rsvp-plaque a6-rsvp">
@@ -681,87 +659,67 @@
       gsap.defaults({ overwrite: "auto" });
       const tl = gsap.timeline({ paused: true });
 
-      // Backdrop crossfades + gentle continuous drift (zero dead static holds)
-      tl.set("#bg-garnet", { autoAlpha: 1, scale: 1.0 }, 0)
-        .to("#bg-garnet", { scale: 1.022, duration: 20.5, ease: "none" }, 0)
-        .to("#bg-garnet", { autoAlpha: 0, duration: 1.2, ease: "power2.inOut" }, 19.2)
+      // Static rock-steady backdrop plates (0.00px motion during reading holds = 100% P_SKIP bitrate lock in WhatsApp!)
+      tl.set("#bg-garnet", { autoAlpha: 1 }, 0)
+        .to("#bg-garnet", { autoAlpha: 0, duration: 0.9, ease: "power2.inOut" }, 19.0)
 
-        .set("#bg-palace", { autoAlpha: 0, scale: 1.02 }, 18.8)
-        .to("#bg-palace", { autoAlpha: 1, duration: 1.2, ease: "power2.inOut" }, 19.0)
-        .to("#bg-palace", { scale: 1.0, duration: 24.5, ease: "none" }, 19.0)
-        .to("#bg-palace", { autoAlpha: 0, duration: 1.2, ease: "power2.inOut" }, 42.8)
+        .set("#bg-palace", { autoAlpha: 0 }, 18.9)
+        .to("#bg-palace", { autoAlpha: 1, duration: 0.9, ease: "power2.inOut" }, 19.0)
+        .to("#bg-palace", { autoAlpha: 0, duration: 0.9, ease: "power2.inOut" }, 43.0)
 
-        .set("#bg-emerald", { autoAlpha: 0, scale: 1.0 }, 42.5)
-        .to("#bg-emerald", { autoAlpha: 1, duration: 1.2, ease: "power2.inOut" }, 42.8)
-        .to("#bg-emerald", { scale: 1.022, duration: 12.0, ease: "none" }, 42.8)
-        .to("#bg-emerald", { autoAlpha: 0, duration: 1.2, ease: "power2.inOut" }, 53.3)
+        .set("#bg-emerald", { autoAlpha: 0 }, 42.9)
+        .to("#bg-emerald", { autoAlpha: 1, duration: 0.9, ease: "power2.inOut" }, 43.0)
+        .to("#bg-emerald", { autoAlpha: 0, duration: 0.9, ease: "power2.inOut" }, 53.5)
 
-        .set("#bg-garnet", { scale: 1.005 }, 53.25)
-        .to("#bg-garnet", { autoAlpha: 1, duration: 1.2, ease: "power2.inOut" }, 53.3)
-        .to("#bg-garnet", { scale: 1.022, duration: 9.4, ease: "none" }, 54.6);
+        .to("#bg-garnet", { autoAlpha: 1, duration: 0.9, ease: "power2.inOut" }, 53.5);
 
-      // Finite ambient candlelight motes across 64s (NO repeat: -1)
-      const motes = [".m1", ".m2", ".m3", ".m4", ".m5", ".m6"];
-      motes.forEach((sel, idx) => {
-        for (let seg = 0; seg < 8; seg++) {
-          const t0 = seg * 8 + (idx % 3) * 0.3;
-          const dy = seg % 2 === 0 ? -28 : 28;
-          const dx = (idx % 2 === 0 ? 1 : -1) * (seg % 2 === 0 ? 14 : -14);
-          if (t0 + 7.6 <= 64) {
-            tl.to(sel, { y: dy, x: dx, opacity: seg % 2 === 0 ? 0.85 : 0.35, duration: 7.6, ease: "sine.inOut" }, t0);
-          }
-        }
-      });
-
-      // ACT I (0.0s – 10.5s): Bismillah & Envelope Front (pure 2D flat sharp reveal)
+      // ACT I (0.0s – 10.5s): Envelope Front — Quick entrance, then LOCKED 100% STILL for 8.5 seconds!
       tl.set("#act-1", { autoAlpha: 1 }, 0.0)
-        .fromTo(".a1-top", { autoAlpha: 0, y: -24 }, { autoAlpha: 1, y: 0, duration: 0.9, ease: "power3.out" }, 0.15)
-        .fromTo(".a1-card", { autoAlpha: 0, y: 34, scale: 0.965 }, { autoAlpha: 1, y: 0, scale: 1.0, duration: 1.1, ease: "power3.out" }, 0.45)
-        .to(".a1-card", { scale: 1.018, duration: 8.2, ease: "sine.inOut" }, 1.6)
-        .fromTo(".a1-bot", { autoAlpha: 0, y: 24 }, { autoAlpha: 1, y: 0, duration: 0.85, ease: "power3.out" }, 0.85)
-        .to("#act-1", { autoAlpha: 0, duration: 0.7, ease: "power2.inOut" }, 9.8);
+        .fromTo(".a1-top", { autoAlpha: 0, y: -18 }, { autoAlpha: 1, y: 0, duration: 0.65, ease: "power3.out" }, 0.1)
+        .fromTo(".a1-card", { autoAlpha: 0, y: 22 }, { autoAlpha: 1, y: 0, duration: 0.75, ease: "power3.out" }, 0.3)
+        .fromTo(".a1-bot", { autoAlpha: 0, y: 18 }, { autoAlpha: 1, y: 0, duration: 0.65, ease: "power3.out" }, 0.5)
+        .to("#act-1", { autoAlpha: 0, duration: 0.6, ease: "power2.inOut" }, 9.9);
 
-      // ACT II (10.0s – 19.5s): Floral Wreath + Smooth Zoom-In onto Glare-Free Gold Coin!
+      // ACT II (10.0s – 19.5s): Full Wreath (2.3s still) -> Crisp Zoom to 1.56x Gold Coin -> LOCKED STILL (5.6s)!
       tl.set("#act-2", { autoAlpha: 1 }, 10.0)
-        .fromTo(".a2-top", { autoAlpha: 0, y: -22 }, { autoAlpha: 1, y: 0, duration: 0.85, ease: "power3.out" }, 10.2)
-        .fromTo(".a2-card", { autoAlpha: 0, y: 30, scale: 0.96 }, { autoAlpha: 1, y: 0, scale: 1.0, duration: 1.05, ease: "power3.out" }, 10.4)
-        .fromTo(".a2-bot", { autoAlpha: 0, y: 22 }, { autoAlpha: 1, y: 0, duration: 0.85, ease: "power3.out" }, 10.75)
-        // Smooth optical push-in toward the central brushed-gold coin so SAJJO weds SHAKEEL reads even larger!
-        .to(".a2-card", { scale: 1.14, duration: 6.8, ease: "sine.inOut" }, 11.8)
-        .to("#act-2", { autoAlpha: 0, duration: 0.7, ease: "power2.inOut" }, 18.8);
+        .fromTo(".a2-top", { autoAlpha: 0, y: -18 }, { autoAlpha: 1, y: 0, duration: 0.65, ease: "power3.out" }, 10.15)
+        .fromTo(".a2-card", { autoAlpha: 0, y: 22 }, { autoAlpha: 1, y: 0, duration: 0.75, ease: "power3.out" }, 10.3)
+        .fromTo(".a2-bot", { autoAlpha: 0, y: 18 }, { autoAlpha: 1, y: 0, duration: 0.65, ease: "power3.out" }, 10.5)
+        .to(".a2-img", { scale: 1.66, y: -10, duration: 0.8, ease: "power3.inOut" }, 12.6)
+        .to("#act-2", { autoAlpha: 0, duration: 0.6, ease: "power2.inOut" }, 18.9);
 
-      // ACT III (19.0s – 31.5s): Full Studio-Restored English Card
+      // ACT III (19.0s – 31.5s): English Card — Full Card (2.2s still) -> 1.42x Top Half Read (3.7s still) -> 1.42x Bottom Half Read (3.9s still)!
       tl.set("#act-3", { autoAlpha: 1 }, 19.0)
-        .fromTo(".a3-top", { autoAlpha: 0, y: -22 }, { autoAlpha: 1, y: 0, duration: 0.85, ease: "power3.out" }, 19.2)
-        .fromTo(".a3-card", { autoAlpha: 0, y: 30, scale: 0.97 }, { autoAlpha: 1, y: 0, scale: 1.0, duration: 1.05, ease: "power3.out" }, 19.45)
-        .fromTo(".a3-bot", { autoAlpha: 0, y: 22 }, { autoAlpha: 1, y: 0, duration: 0.85, ease: "power3.out" }, 19.8)
-        .to(".a3-card", { scale: 1.015, duration: 10.0, ease: "sine.inOut" }, 20.6)
-        .to("#act-3", { autoAlpha: 0, duration: 0.7, ease: "power2.inOut" }, 30.8);
+        .fromTo(".a3-top", { autoAlpha: 0, y: -18 }, { autoAlpha: 1, y: 0, duration: 0.65, ease: "power3.out" }, 19.15)
+        .fromTo(".a3-card", { autoAlpha: 0, y: 22 }, { autoAlpha: 1, y: 0, duration: 0.75, ease: "power3.out" }, 19.3)
+        .fromTo(".a3-bot", { autoAlpha: 0, y: 18 }, { autoAlpha: 1, y: 0, duration: 0.65, ease: "power3.out" }, 19.5)
+        // NO crop-zoom and NO micro-drift: any scale crop cuts the long card lines mid-word,
+        // and any sub-pixel drift forces WhatsApp to spend bitrate re-encoding texture instead of text.
+        // The English card is read as a 1032px full-width, pixel-locked still -> P_SKIP frames = no compression blur.
+        .to("#act-3", { autoAlpha: 0, duration: 0.6, ease: "power2.inOut" }, 30.9);
 
-      // ACT IV (31.0s – 43.5s): Illuminated Royal Folio — Oversized Ceremony Spotlight
+      // ACT IV (31.0s – 43.5s): Illuminated Royal Folio — Quick reveal, then LOCKED 100% STILL for 9.5 seconds!
       tl.set("#act-4", { autoAlpha: 1 }, 31.0)
-        .fromTo(".a4-top", { autoAlpha: 0, y: -22 }, { autoAlpha: 1, y: 0, duration: 0.8, ease: "power3.out" }, 31.2)
-        .fromTo(".a4-folio", { autoAlpha: 0, y: 28, scale: 0.975 }, { autoAlpha: 1, y: 0, scale: 1.0, duration: 0.95, ease: "power3.out" }, 31.4)
-        .fromTo(".a4-row", { autoAlpha: 0, y: 14 }, { autoAlpha: 1, y: 0, duration: 0.65, stagger: 0.14, ease: "power2.out" }, 31.7)
-        .to(".a4-folio", { scale: 1.012, duration: 9.2, ease: "sine.inOut" }, 33.4)
-        .to("#act-4", { autoAlpha: 0, duration: 0.7, ease: "power2.inOut" }, 42.8);
+        .fromTo(".a4-top", { autoAlpha: 0, y: -18 }, { autoAlpha: 1, y: 0, duration: 0.65, ease: "power3.out" }, 31.15)
+        .fromTo(".a4-folio", { autoAlpha: 0, y: 22 }, { autoAlpha: 1, y: 0, duration: 0.75, ease: "power3.out" }, 31.3)
+        .fromTo(".a4-row", { autoAlpha: 0, y: 10 }, { autoAlpha: 1, y: 0, duration: 0.5, stagger: 0.1, ease: "power2.out" }, 31.5)
+        .to("#act-4", { autoAlpha: 0, duration: 0.6, ease: "power2.inOut" }, 42.9);
 
-      // ACT V (43.0s – 54.0s): Enlarged, Crystal-Sharp Urdu Dawatnama
+      // ACT V (43.0s – 54.0s): Urdu Card — Full Card (2.0s still) -> 1.42x Top Half Read (3.2s still) -> 1.42x Bottom Half Read (3.3s still)!
       tl.set("#act-5", { autoAlpha: 1 }, 43.0)
-        .fromTo(".a5-top", { autoAlpha: 0, y: -22 }, { autoAlpha: 1, y: 0, duration: 0.85, ease: "power3.out" }, 43.2)
-        .fromTo(".a5-card", { autoAlpha: 0, y: 30, scale: 0.97 }, { autoAlpha: 1, y: 0, scale: 1.0, duration: 1.05, ease: "power3.out" }, 43.45)
-        .fromTo(".a5-bot", { autoAlpha: 0, y: 22 }, { autoAlpha: 1, y: 0, duration: 0.85, ease: "power3.out" }, 43.8)
-        .to(".a5-card", { scale: 1.02, duration: 8.4, ease: "sine.inOut" }, 44.6)
-        .to("#act-5", { autoAlpha: 0, duration: 0.7, ease: "power2.inOut" }, 53.3);
+        .fromTo(".a5-top", { autoAlpha: 0, y: -18 }, { autoAlpha: 1, y: 0, duration: 0.65, ease: "power3.out" }, 43.15)
+        .fromTo(".a5-card", { autoAlpha: 0, y: 22 }, { autoAlpha: 1, y: 0, duration: 0.75, ease: "power3.out" }, 43.3)
+        .fromTo(".a5-bot", { autoAlpha: 0, y: 18 }, { autoAlpha: 1, y: 0, duration: 0.65, ease: "power3.out" }, 43.5)
+        // Same for the Urdu card — Nastaliq ascenders are clipped by any horizontal crop,
+        // so it is read full-width and perfectly still.
+        .to("#act-5", { autoAlpha: 0, duration: 0.6, ease: "power2.inOut" }, 53.4);
 
-      // ACT VI (53.5s – 64.0s): Sender Flap, Large R.S.V.P. Roll & Finale Lockup
+      // ACT VI (53.5s – 64.0s): Sender Flap, Large R.S.V.P. Roll & Finale Lockup — LOCKED 100% STILL for 8.8 seconds!
       tl.set("#act-6", { autoAlpha: 1 }, 53.5)
-        .fromTo(".a6-top", { autoAlpha: 0, y: -20 }, { autoAlpha: 1, y: 0, duration: 0.8, ease: "power3.out" }, 53.7)
-        .fromTo(".a6-card", { autoAlpha: 0, y: 24, scale: 0.97 }, { autoAlpha: 1, y: 0, scale: 1.0, duration: 0.95, ease: "power3.out" }, 53.95)
-        .fromTo(".a6-rsvp", { autoAlpha: 0, y: 24 }, { autoAlpha: 1, y: 0, duration: 0.9, ease: "power3.out" }, 54.35)
-        .fromTo(".a6-fin", { autoAlpha: 0, y: 22, scale: 0.98 }, { autoAlpha: 1, y: 0, scale: 1.0, duration: 0.95, ease: "power3.out" }, 54.8)
-        .to(".a6-card", { scale: 1.015, duration: 7.8, ease: "sine.inOut" }, 55.4)
-        .to(".a6-fin", { scale: 1.012, duration: 7.5, ease: "sine.inOut" }, 55.8);
+        .fromTo(".a6-top", { autoAlpha: 0, y: -18 }, { autoAlpha: 1, y: 0, duration: 0.65, ease: "power3.out" }, 53.65)
+        .fromTo(".a6-card", { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 0.7, ease: "power3.out" }, 53.85)
+        .fromTo(".a6-rsvp", { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 0.7, ease: "power3.out" }, 54.1)
+        .fromTo(".a6-fin", { autoAlpha: 0, y: 18 }, { autoAlpha: 1, y: 0, duration: 0.7, ease: "power3.out" }, 54.35);
 
       window.__timelines = window.__timelines || {};
       window.__timelines["root"] = tl;
@@ -774,7 +732,6 @@
         timeline: tl
       };
 
-      // Live browser preview playback fallback
       if (!navigator.webdriver) {
         tl.play(0);
       }

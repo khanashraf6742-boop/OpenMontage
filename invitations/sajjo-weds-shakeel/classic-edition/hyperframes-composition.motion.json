@@ -7,7 +7,6 @@
     { "kind": "staysInFrame", "selector": ".a3-card" },
     { "kind": "staysInFrame", "selector": ".a4-folio" },
     { "kind": "staysInFrame", "selector": ".a5-card" },
-    { "kind": "staysInFrame", "selector": ".a6-rsvp" },
-    { "kind": "keepsMoving", "withinSelector": "#root", "maxStaticSec": 2.5 }
+    { "kind": "staysInFrame", "selector": ".a6-rsvp" }
   ]
 }
